@@ -1,0 +1,130 @@
+.bth-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+.header {
+  padding-top: 30px;
+  padding-bottom: 45px;
+}
+
+.header__top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 35px;
+}
+.header__logo {
+  display: flex;
+  margin-right: auto;
+}
+
+.header__logo-link {
+  flex-shrink: 0;
+}
+
+.header__container-info {
+  display: flex;
+}
+
+.header__text {
+  margin-right: 175px;
+}
+
+.header__btn-address {
+  display: flex;
+  align-items: center;
+}
+
+.header__text-address {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 105%;
+  color: var(--color-wet-asphalt);
+}
+
+.header__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__btn-item {
+  display: flex;
+  align-items: center;
+}
+
+.header__item {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 105%;
+  margin-left: 10px;
+  color: var(--color-wet-asphalt);
+}
+
+.header__btn-item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.header__nav {
+  padding: 10px 50px;
+  background-color: var(--color-lavender);
+  border-radius: 12px;
+}
+
+.header__nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.header__nav-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.header__nav-link {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 100%;
+  color: var(--color-wet-asphalt);
+}
+/*dropdown*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--color-lavender);
+  min-width: 190px;
+  padding: 10px;
+  box-shadow: 4px 4px 15px 0 rgba(13, 14, 86, 0.2);
+  border: 1px solid rgba(140, 133, 218, 0.1);
+  border-radius: 15px;
+  z-index: 11;
+}
+.header__nav-link-dropdown {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 249%;
+  padding: 0 10px;
+  text-decoration: none;
+  color: var(--color-grey);
+  border-bottom: 1px solid rgba(140, 133, 218, 0.1);
+}
+
+.dropdown-content a:last-child {
+  border-bottom: none;
+}
+
+.header__nav-link-dropdown:hover {
+  color: var(--color-almost-black);
+}
+
+/* Показываем меню при наведении на .dropdown */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
