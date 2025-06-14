@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Картачка Доктора</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style-doctorscard.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <div class="header__logo">
+          <a href="index.html" class="header__logo-link">
+            <img src="img/logo.png" alt="Логотип клиники">
+          </a>
+        </div>
+        <div class="header__container-info">
+          <div class="header__text">
+            <button class="header__btn-address bth-reset">
+              <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M23.9626 14.6527C23.9626 20.6203 17.4357 24.6455 15.5486 25.6846C15.2298 25.8601 14.8568 25.8601 14.538 25.6846C12.6509 24.6455 6.12402 20.6203 6.12402 14.6527C6.12402 9.30112 10.4457 5.7334 15.0433 5.7334C19.8003 5.7334 23.9626 9.30112 23.9626 14.6527Z"
+                  stroke="#897CFF" stroke-width="2.46972" />
+                <circle cx="15.0433" cy="14.6525" r="3.5221" stroke="#897CFF" stroke-width="2.46972" />
+              </svg>
+              <p class="header__text-address">
+                Адрес и режим работы
+              </p>
+            </button>
+          </div>
+          <ul class="header__list list-reset">
+            <button class="header__btn-item bth-reset">
+              <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="1.3195" y="0.861001" width="33.5827" height="33.5827" rx="4.33885" stroke="#BCCAF4"
+                  stroke-width="0.964189" />
+                <path
+                  d="M28.9067 14.0537V12.9022C28.9067 11.2898 28.9067 10.4836 28.593 9.86781C28.317 9.32611 27.8765 8.88569 27.3348 8.60968C26.719 8.2959 25.9128 8.2959 24.3005 8.2959H11.9212C10.3089 8.2959 9.50268 8.2959 8.88685 8.60968C8.34515 8.88569 7.90473 9.32611 7.62872 9.86781C7.31494 10.4836 7.31494 11.2898 7.31494 12.9022V14.0537M28.9067 14.0537V23.842C28.9067 25.4543 28.9067 26.2605 28.593 26.8763C28.317 27.418 27.8765 27.8585 27.3348 28.1345C26.719 28.4483 25.9128 28.4483 24.3005 28.4483H11.9212C10.3089 28.4483 9.50268 28.4483 8.88685 28.1345C8.34515 27.8585 7.90473 27.418 7.62872 26.8763C7.31494 26.2605 7.31494 25.4543 7.31494 23.842V14.0537M28.9067 14.0537H7.31494"
+                  stroke="#897CFF" stroke-width="1.92838" />
+                <path d="M13.0728 5.41699L13.0728 11.1748M23.1489 5.41699L23.1489 11.1748" stroke="#897CFF"
+                  stroke-width="1.92838" stroke-linecap="round" />
+                <path d="M18.1108 24.8496L18.1108 17.6523" stroke="#897CFF" stroke-width="1.92838"
+                  stroke-linecap="round" />
+                <path d="M21.7095 21.251L14.5122 21.251" stroke="#897CFF" stroke-width="1.92838"
+                  stroke-linecap="round" />
+              </svg>
+              <li class="header__item">
+                Записаться
+              </li>
+            </button>
+            <button class="header__btn-item bth-reset">
+              <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="1.32731" y="0.861001" width="33.5827" height="33.5827" rx="4.33885" stroke="#BCCAF4"
+                  stroke-width="0.964189" />
+                <circle cx="18.1187" cy="11.8945" r="4.79363" stroke="#897CFF" stroke-width="1.92838"
+                  stroke-linecap="round" />
+                <path
+                  d="M7.82531 24.7747C8.74613 21.3998 12.2381 19.8115 15.7364 19.8115H20.501C23.9992 19.8115 27.4912 21.3998 28.412 24.7747C28.6008 25.4667 28.7516 26.2156 28.8371 27.011C28.922 27.8015 28.2701 28.4482 27.4751 28.4482H8.76221C7.96722 28.4482 7.3153 27.8015 7.40023 27.011C7.4857 26.2156 7.63649 25.4667 7.82531 24.7747Z"
+                  stroke="#897CFF" stroke-width="1.92838" stroke-linecap="round" />
+              </svg>
+              <li class="header__item">
+                Медкарта
+              </li>
+            </button>
+          </ul>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <nav class="header__nav">
+          <ul class="header__nav-list list-reset">
+            <li class="header__nav-item"><a href="#" class="header__nav-link">Врачи</a></li>
+            <li class="header__nav-item"><a href="#" class="header__nav-link">Цены</a></li>
+            <li class="header__nav-item"><a href="#" class="header__nav-link">Услуги</a></li>
+            <li class="header__nav-item dropdown">
+              <a href="#" class="header__nav-link dropdown-button">Пациентам</a>
+              <div class="header__nav-dropdown dropdown-content">
+                <a class="header__nav-link-dropdown" href="#">Новости</a>
+                <a class="header__nav-link-dropdown" href="#">О нас</a>
+                <a class="header__nav-link-dropdown" href="#">Подготовка к визиту</a>
+                <a class="header__nav-link-dropdown" href="#">Налоговый вычет</a>
+              </div>
+            </li>
+            <li class="header__nav-item"><a href="#" class="header__nav-link">Калькулятор анализов</a></li>
+            <li class="header__nav-item"><a href="#" class="header__nav-link">Акции</a></li>
+            <li class="header__nav-item"><a href="#" class="header__nav-link">Контакты</a></li>
+            <li class="header__nav-item dropdown">
+              <a href="#" class="header__nav-link">Сотрудничество</a>
+              <div class="header__nav-dropdown dropdown-content">
+                <a class="header__nav-link-dropdown" href="#">ДМС</a>
+                <a class="header__nav-link-dropdown" href="#">Вакансии</a>
+                <a class="header__nav-link-dropdown" href="#">Предприятиям</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <section id="doctors__card">
+        <h2 class="doctors__title-card">
+          <svg class="doctors__card-svg" width="10" height="13" viewBox="0 0 10 13" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0.689864 5.8751L7.31669 1.23633C8.24457 0.586808 9.51953 1.25062 9.51953 2.38325L9.51953 11.0054C9.51953 12.1381 8.24457 12.8019 7.31668 12.1523L0.689862 7.51357C0.121145 7.11547 0.121147 6.2732 0.689864 5.8751Z"
+              fill="#B2ABFC" />
+          </svg>
+          Врачи
+        </h2>
+        <div class="doctors__container-card">
+          <img src="img/doccard1.png" alt="Фото Доктора">
+          <div class="doctors__container-profile">
+            <h1 class="doctors__card-name">Трофимова Галина Николаевна</h1>
+            <p class="doctors__text-profession">Офтальмолог</p>
+            <p class="doctors__text-service">Дети и взрослые</p>
+            <p class="doctors__text-degree">Звания и степени</p>
+            <h2 class="doctors__card-rank">Кандидат медицинских наук</h2>
+            <p class="doctors__text-price">Стоимость приема</p>
+            <p class="doctors__span-price">5000 ₽</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+
+</html>
