@@ -1,0 +1,71 @@
+@media (max-width: 1200px) {
+  .header__text {
+    margin-right: 60px;
+  }
+
+  .header__btn-item:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .header__nav {
+    padding: 10px 20px;
+  }
+
+  .header__nav-link {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1024px) {
+   .header__text {
+    margin-right: 20px;
+  }
+  #about {
+    align-items: center;
+  }
+  .swiper {
+    max-width: 480px;
+    height: 336px;
+}
+.about__btn {
+    width: 227px;
+}
+
+#job {
+    display: none;
+}
+}
+
+@media (max-width: 980px) {
+
+}
+
+
+@media (max-width: 767px) {
+  .header {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+
+  .header__logo img {
+    max-width: 130px;
+  }
+
+  .header__text-address,
+  .header__item {
+    font-size: 14px;
+  }
+
+  .header__nav {
+    display: none; /* до реализации бургера */
+  }
+
+  .burger {
+    display: block;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+  }
+}

@@ -6,7 +6,7 @@
   outline: none;
 }
 
-#about {
+.content__about {
   display: flex;
   justify-content: space-between;
   padding-bottom: 10px;
@@ -19,13 +19,14 @@
 
 .about {
   position: relative;
-  background-image: url('../img/plashka.png');
+  background-image: url("../img/plashka.png");
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 510px;
   display: flex;
   flex-direction: column;
   padding: 26px 39px 100px 39px;
+  margin-right: 10px;
 }
 
 .about__title {
@@ -73,8 +74,15 @@
   margin-bottom: 26px;
 }
 
-.about__item {
-  background-image: url(./img/home_light.png);
+.about__item-icon1 {
+  background-image: url(../img/home_light.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: left top;
+}
+
+.about__item-icon2 {
+  background-image: url(../img/group_add_light.png);
   background-repeat: no-repeat;
   background-size: auto;
   background-position: left top;

@@ -22,6 +22,7 @@
 
 .header__logo-link {
   flex-shrink: 0;
+  margin-right: 10px;
 }
 
 .header__container-info {
@@ -35,6 +36,7 @@
 .header__btn-address {
   display: flex;
   align-items: center;
+  margin-right: 10px;
 }
 
 .header__text-address {
@@ -78,6 +80,7 @@
   justify-content: space-between;
 }
 
+
 .header__nav-item:not(:last-child) {
   margin-right: 10px;
 }
@@ -91,12 +94,17 @@
 /*dropdown*/
 .dropdown {
   position: relative;
-  display: inline-block;
+  display: inline-flex;
 }
 
 .dropdown-content {
-  display: none;
   position: absolute;
+  top: 100%; 
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px); 
+  transition: opacity 0.3s ease, transform 0.3s ease;
   background-color: var(--color-lavender);
   min-width: 190px;
   padding: 10px;
@@ -105,6 +113,40 @@
   border-radius: 15px;
   z-index: 11;
 }
+
+.dropdown-content__services {
+  display: flex;
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px); 
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  background-color: var(--color-lavender);
+  min-width: 450px;
+  padding: 10px;
+  box-shadow: 4px 4px 15px 0 rgba(13, 14, 86, 0.2);
+  border: 1px solid rgba(140, 133, 218, 0.1);
+  border-radius: 15px;
+  z-index: 11;
+}
+
+
+.dropdown:hover .dropdown-content,
+.dropdown-content:hover {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.dropdown:hover .dropdown-content__services,
+.dropdown-content__services:hover {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
 .header__nav-link-dropdown {
   display: block;
   font-weight: 500;
@@ -121,10 +163,23 @@
 }
 
 .header__nav-link-dropdown:hover {
-  color: var(--color-almost-black);
+  color: var(--color-slate-blue)
 }
 
-/* Показываем меню при наведении на .dropdown */
+
 .dropdown:hover .dropdown-content {
-  display: block;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
 }
+
+
+.dropdown svg {
+  transition: transform 0.3s ease;
+}
+
+
+.dropdown:hover svg {
+  transform: rotate(180deg);
+}
+

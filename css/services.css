@@ -9,7 +9,7 @@
 
 .special-item1 {
   position: relative;
-  width: 605px;
+  width: 610px;
   background-color: var(--color-light-pinkish);
 }
 
@@ -48,7 +48,7 @@
 }
 
 .services__item:not(:last-child) {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .services__svg {
