@@ -1,8 +1,5 @@
 @import url("./header.css");
-@import url("./about.css");
-@import url("./job.css");
-@import url("./services.css");
-@import url("./map.css");
+@import url("./price.css");
 @import url("./footer.css");
 
 @font-face {
@@ -58,7 +55,6 @@ svg {
 body {
   min-width: 320px;
   font-family: "Inter", sans-serif;
-  background-color: var(--color-white);
 }
 
 :root {
@@ -85,6 +81,7 @@ body {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 50px;
+  background-color: var(--color-white);
 }
 
 .list-reset {
