@@ -1,8 +1,5 @@
 @import url("./header.css");
-@import url("./about.css");
-@import url("./job.css");
-@import url("./services.css");
-@import url("./map.css");
+@import url("./main.css");
 @import url("./footer.css");
 
 @font-face {
