@@ -103,6 +103,7 @@ body {
   justify-content: center;
   width: 350px;
   height: 505px;
+  margin-right: 35px;
   box-shadow: 0 4px 15px 0 rgba(13, 14, 86, 0.2);
 }
 
@@ -117,10 +118,13 @@ body {
 
 .container__wrap {
   display: flex;
-  justify-content: space-between;
 }
 
 /* accardion */
+.container__prise {
+  width: 71%;
+}
+
 .price__item:not(:last-child) {
   margin-bottom: 10px;
 }
