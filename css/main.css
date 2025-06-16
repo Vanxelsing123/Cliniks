@@ -1,4 +1,7 @@
 /* about */
+#about__mobile {
+  display: none;
+}
 
 .bth-reset {
   padding: 0;

@@ -118,11 +118,12 @@ body {
 
 .container__wrap {
   display: flex;
+  justify-content: center;
 }
 
 /* accardion */
 .container__prise {
-  width: 71%;
+  width: 90%;
 }
 
 .price__item:not(:last-child) {
@@ -154,7 +155,7 @@ body {
 .price__content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease, padding 0.3s ease;
+  transition: max-height 0.6s ease, padding 0.6s ease;
 }
 
 .price__block {
@@ -204,3 +205,15 @@ body {
   line-height: 159%;
   color: var(--color-signal-black);
 }
+
+.accordion__svg {
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+.accordion__svg.rotated {
+  transform: rotate(90deg);
+}
+
+
+

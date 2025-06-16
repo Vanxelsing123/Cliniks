@@ -17,6 +17,111 @@
 }
 
 @media (max-width: 1024px) {
+  .container {
+  padding: 0 30px;
+}
+
+  header {
+    background-color: var(--color-white);
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .header__top {
+    justify-content: space-around;
+    margin-bottom: 0;
+  }
+
+  .header__bottom {
+    display: none;
+  }
+
+  .header__text {
+    display: none;
+  }
+
+  .header__nav-list {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 32px 24px;
+  }
+
+  .nav__content {
+    display: flex;
+    justify-content: center;
+  }
+
+  .header__nav-item {
+    margin-bottom: 30px;
+  }
+
+  .header__nav-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .header__nav-item:not(:last-child) {
+    margin-right: 0;
+}
+
+  .header__nav-link {
+        font-size: 24px;
+        color: var(--color-almost-black);
+    }
+
+  .header__nav-link-dropdown {
+    font-size: 16px;
+    font-weight: 400;
+    border-bottom: none;
+    padding: 0;
+    padding-bottom: 14px;
+    
+  }
+
+  .header__nav-link-dropdown:last-child {
+    padding-bottom: 0;
+  }
+
+  .dropdown-button {
+    margin-bottom: 14px;
+  }
+
+  .dropdown {
+    display: flex;
+    flex-direction: column;
+  }
+
+  body {
+    background-color: #F5F4FF;
+  }
+
+  #about {
+    display: none;
+  }
+
+  #about__mobile {
+    display: block;
+  }
+
+  .about__title {
+    font-size: 28px;
+  }
+
+  .about {
+    background-image: none;
+  }
+
+  .about__text-span {
+    font-weight: 400;
+    color: var(--color-grey);
+    font-size: 14px;
+  }
+
+  .header__logo {
+    margin-right: 0;
+  }
+
    .header__text {
     margin-right: 20px;
   }
@@ -31,9 +136,25 @@
     width: 227px;
 }
 
+.content__about {
+  align-items: center;
+}
+
 #job {
     display: none;
 }
+
+
+.services__title-special {
+  max-width: 250px;
+}
+
+.map__container-wraps {
+  background-image: none;
+  justify-content: center;
+}
+
+
 }
 
 @media (max-width: 980px) {
@@ -41,31 +162,25 @@
 }
 
 
-@media (max-width: 767px) {
-  .header {
-    padding-top: 20px;
-    padding-bottom: 30px;
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+  .header__logo {
+    display: none;
   }
 
-  .header__logo img {
-    max-width: 130px;
-  }
-
-  .header__text-address,
-  .header__item {
-    font-size: 14px;
-  }
-
-  .header__nav {
-    display: none; /* до реализации бургера */
-  }
-
-  .burger {
+  .header__logo--mobile {
     display: block;
-    font-size: 28px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    margin-left: auto;
   }
+  .header__item {
+    display: none;
+  }
+  .header__nav-link {
+    font-size: 20px;
+  }
+  .header__btn-item:not(:last-child) {
+        margin-right: 14px;
+    }
+
 }
