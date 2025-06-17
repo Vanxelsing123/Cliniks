@@ -96,6 +96,8 @@
     background-color: #F5F4FF;
   }
 
+/*   about */
+
   #about {
     display: none;
   }
@@ -106,6 +108,11 @@
 
   .about__title {
     font-size: 28px;
+  }
+
+  .about__text {
+    max-width: 450px;
+    color: var(--color-grey);
   }
 
   .about {
@@ -129,14 +136,22 @@
     align-items: center;
   }
   .swiper {
-    max-width: 480px;
-    height: 336px;
+    margin-bottom: 25px;
+  }
+
+  .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-p .swiper-pagination-fraction {
+    bottom: var(--swiper-pagination-bottom, -1px);
+    top: var(--swiper-pagination-top, auto);
+    left: 0;
+    width: 100%;
 }
+
 .about__btn {
     width: 227px;
 }
 
 .content__about {
+  
   align-items: center;
 }
 
@@ -154,10 +169,6 @@
   justify-content: center;
 }
 
-
-}
-
-@media (max-width: 980px) {
 
 }
 
@@ -183,4 +194,172 @@
         margin-right: 14px;
     }
 
+    .about {
+      padding: 26px 39px 30px 39px;
+    }
+
+    .services__list {
+      display: grid;
+      justify-items: center;
+    }
+
+    .services__item:not(:last-child) {
+      margin-right: 0;
+    }
+
+  .services__item {
+    margin-bottom: 12px;
+    margin-right: 0;
+  }
+  .services__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .special-item2 {
+    width: 83%;
+  }
+
+  .special-item3 {
+    width: 83%;
+  }
+}
+
+@media (max-width: 425px) {
+  .about {
+    padding: 0;
+    padding-top: 12px;
+  }
+  .swiper {
+    max-width: 340px;
+    height: 240px;
+  }
+
+  .title__services--mob {
+    padding: 0;
+    margin: 0;
+    display: block;
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--color-asphalt);
+    margin-bottom: 20px;
+  }
+
+  .special-item1 {
+    width: 340px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+  }
+
+  #services {
+    padding-bottom: 50px;
+  }
+
+  .services__svg--cliniks {
+    width: 144px;
+    height: 144px;
+  }
+
+  .services__svg--arrow {
+    display: none;
+  }
+
+  .services__item {
+    height: 167px;
+  }
+
+  .special-item2 {
+    width: 100%;
+  }
+
+  .special-item3 {
+    width: 100%;
+  }
+  .services__title-special {
+        max-width: 240px;
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+  .services__item {
+    padding: 25px 20px 15px 10px;
+  }
+  .services__svg--cliniks {
+    right: 3px;
+  }
+  .services__svg {
+    top: 23px;
+  }
+  .services__svg--koc {
+    top: 7px;
+    right: 3px;
+  }
+  #map {
+    display: none;
+  }
+  #map__mobile {
+    display: block;
+  }
+
+  .map__list {
+    flex-direction: column;
+  }
+  .map__item:not(:last-child) {
+    margin-right: 0;
+}
+ 
+
+  .map__item--clinik {
+    cursor: pointer;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .map__item--clinik {
+    padding: 20px;
+    border: 3px solid var(--color-light-pinkish);
+  }
+
+  .map__item--koc {
+    cursor: pointer;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .map__container-wraps {
+    flex-direction: column;
+   
+  }
+
+  .map__contacts-list-icon  {
+    display: none;
+  }
+
+  .map__contacts-list-icon {
+    font-size: 28px;
+  }
+
+  .footer__container-top {
+    background-color: var(--color-white);
+  }
+
+  .svg__map {
+    margin-right: 10px;
+  }
+
+  .footer__container-top {
+    flex-direction: column;
+    padding: 25px;
+  }
+
+  .footer__btn-info {
+    margin-bottom: 10px;
+  }
+
+  .footer__contacts-link {
+    color: rgba(106, 106, 106, 0.8);
+  }
+
+  .footer__address--text {
+    color: rgba(106, 106, 106, 0.8);
+  }
 }

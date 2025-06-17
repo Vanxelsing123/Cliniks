@@ -177,6 +177,10 @@
 
 /* services */
 
+.title__services--mob {
+  display: none;
+}
+
 #services {
   padding-top: 25px;
   padding-bottom: 25px;
@@ -268,6 +272,10 @@
 }
 
 /* map */
+
+#map__mobile {
+  display: none;
+}
 
 #map {
   background-image: url("../img/map.png");
