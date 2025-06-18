@@ -244,9 +244,40 @@ body {
 }
 
 .help__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 100px 95px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 100px 60px;
+  counter-reset: card;
+}
+
+.help__list {
+  grid-template-areas:
+    "one one two two three three"
+    "four four five five six six";
+}
+
+.help__item:nth-child(1) {
+  grid-area: one;
+}
+
+.help__item:nth-child(2) {
+  grid-area: two;
+}
+
+.help__item:nth-child(3) {
+  grid-area: three;
+}
+
+.help__item:nth-child(4) {
+  grid-area: four;
+}
+
+.help__item:nth-child(5) {
+  grid-area: five;
+}
+
+.help__item:nth-child(6) {
+  grid-area: six;
 }
 
 .help__item {
