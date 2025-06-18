@@ -5,7 +5,7 @@ const input = document.querySelector('.doctors__search');
   const listItems = document.querySelectorAll('.doctors__item');
   const autocomplete = document.querySelector('.doctors__autocomplete');
 
-  // Соберём список врачей
+ 
   const doctorsData = Array.from(listItems).map(item => {
     const name = item.querySelector('.doctors__name').textContent.trim();
     const reception = item.querySelector('.doctors__reception').textContent.trim();
@@ -40,7 +40,7 @@ const input = document.querySelector('.doctors__search');
         const li = document.createElement('li');
         li.textContent = doc.name;
         li.addEventListener('click', () => {
-          window.location.href = doc.link; // Переход на страницу
+          window.location.href = doc.link; // 
         });
         autocomplete.appendChild(li);
       });

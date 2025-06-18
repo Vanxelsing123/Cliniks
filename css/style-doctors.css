@@ -338,9 +338,8 @@ body {
 }
 
 /* about */
-#about {
+#about__doctors {
   padding-top: 30px;
-  padding-bottom: 150px;
 }
 
 .about__container {
