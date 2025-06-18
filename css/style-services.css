@@ -245,15 +245,15 @@ body {
 
 .help__list {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 100px 60px;
   counter-reset: card;
 }
 
 .help__list {
   grid-template-areas:
-    "one one two two three three"
-    "four four five five six six";
+    "one two three"
+    "four five six";
 }
 
 .help__item:nth-child(1) {
