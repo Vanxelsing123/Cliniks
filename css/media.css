@@ -363,3 +363,40 @@
     color: rgba(106, 106, 106, 0.8);
   }
 }
+
+
+/* doctors */
+
+@media (max-width: 1200px)  {
+  .doctors__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .doctors__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .doctors__reception {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 425px) {
+
+  .doctors__title {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .doctors__name {
+    font-size: 16px;
+  }
+  .doctors__profession {
+    font-size: 13px;
+  }
+  .doctors__filters {
+    display: flex;
+  }
+}
