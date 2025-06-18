@@ -371,6 +371,10 @@
   .doctors__list {
     grid-template-columns: repeat(3, 1fr);
   }
+  .doctors__container-wrapp {
+    background-image: none;
+    padding: 40px 200px 50px 50px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -381,6 +385,34 @@
   .doctors__reception {
     font-size: 13px;
   }
+
+  .doctors__container-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .doctors__container-wrapp {
+    padding: 9px 53px 0px 0px;
+  }
+
+  .doctors__btn {
+    margin-top: 20px;
+    position: relative;
+    width: 340px;
+  }
+
+  .doctors__card-name {
+    font-size: 24px;
+  }
+
+  .doctors__text-profession {
+    font-size: 16px;
+  }
+
+  .about__container-info {
+    margin-right: 40px;
+  }
+
 }
 
 @media (max-width: 425px) {
@@ -399,4 +431,18 @@
   .doctors__filters {
     display: flex;
   }
+
+  .about__container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about__container-info {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+      .doctors__container-wrapp {
+        padding: 9px 0px 0px 0px;
+    }
+
 }

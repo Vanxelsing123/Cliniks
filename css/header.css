@@ -234,7 +234,7 @@
 #mobileNav {
   position: fixed; 
   top: 110px; 
-  left: 0;
+  left: -6px;
   width: 100%; 
   height: calc(100vh - 170px); 
   background-color: #fff;
