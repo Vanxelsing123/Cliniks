@@ -1,5 +1,4 @@
 @import url("./header.css");
-
 @import url("./footer.css");
 
 @font-face {
@@ -179,4 +178,176 @@ body {
   letter-spacing: -0.02em;
   text-align: center;
   color: var(--color-signa-black);
+}
+
+/* programs-medical */
+.programs__medical-title {
+  max-width: 290px;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  margin-bottom: 35px;
+  color: var(--color-dull-grey);
+}
+.programs__medical-title span {
+  font-weight: 500;
+  color: var(--color-slate-blue);
+}
+
+.programs__medical-svg {
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+
+.programs__medical-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  counter-reset: card;
+}
+
+.programs__medical-item {
+  padding: 40px;
+  border-radius: 30px;
+  background-color: var(--color-lavender);
+}
+
+.programs__medical-item:nth-child(1) {
+  grid-area: one;
+}
+
+.programs__medical-item:nth-child(2) {
+  grid-area: two;
+}
+
+.programs__medical-item:nth-child(3) {
+  grid-area: three;
+}
+
+.programs__medical-list {
+  grid-template-areas: "one two three";
+}
+
+.programs__medical-titles {
+  padding-bottom: 20px;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  border-bottom: 1px solid rgba(140, 133, 218, 0.4);
+  color: var(--color-gray-brown);
+}
+
+.programs__medical-wrap {
+  padding-top: 20px;
+}
+
+.programs__medical-info {
+  margin-bottom: 100px;
+}
+
+.programs__medical-wrap-section {
+  margin-bottom: 32px;
+}
+
+.programs__medical-wrap-title {
+  max-width: 230px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  margin-bottom: 25px;
+  color: var(--color-gray-brown);
+}
+
+.programs__medical-wrap-appointment {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 156%;
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+  color: var(--color-gray-brown);
+}
+
+.programs__medical-wrap-list:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.programs__medical-wrap-list-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 180%;
+  letter-spacing: -0.02em;
+  color: var(--color-dull-grey);
+}
+
+.programs__medical-wrap-list-item::before {
+  content: "— ";
+  color: var(--color-dull-grey);
+}
+
+.programs__medical-wrap-note {
+  color: var(--color-slate-blue);
+}
+
+.programs__medical-wrap-price {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  color: var(--color-dull-grey);
+}
+.programs__medical-wrap-price span {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  margin-bottom: 35px;
+  color: var(--color-slate-blue);
+}
+
+.programs__medical-wrap-price-btn {
+  width: 285px;
+  height: 52px;
+  padding: 0 5px 0 25px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 105%;
+  border-radius: 40px;
+  color: var(--color-signa-black);
+  background: linear-gradient(133deg, #c8d3ff 0%, #afa7ff 100%);
+}
+
+.programs__medical-wrap-price-link {
+  display: flex;
+  align-items: center;
+}
+
+.programs__medical-wrap-price-svg {
+  margin-left: auto;
+}
+
+.programs__medical-wraps {
+  max-width: 800px;
+}
+
+.programs__medical-wraps-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 156%;
+  letter-spacing: -0.02em;
+  color: var(--color-gray-brown);
+}
+
+.programs__medical-wraps-text:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.programs__medical-wraps-text span {
+  color: var(--color-slate-blue);
 }
