@@ -204,6 +204,7 @@
       <div class="container">
         <h1 class="programs__title">Комплексные программы</h1>
         <div class="programs__wrap">
+
           <div class="programs__children">
             <svg class="programs__svg" width="169" height="134" viewBox="0 0 169 134" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -219,6 +220,8 @@
               <a class="programs__btn-link" href="#">Дети от 1 года до 4 лет</a>
             </button>
           </div>
+
+
           <div class="programs__cardiology">
             <svg class="programs__svg" width="175" height="136" viewBox="0 0 175 136" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -227,18 +230,48 @@
                 fill="#D8D5FD" stroke="#D8D5FD" />
             </svg>
             <h2 class="programs__children-title">Медицинские<br>программы<br><span>по кардиологии</span></h2>
-            <button class="bth-reset programs__btn">
-              <a class="programs__btn-link" href="#">Аритмия, тахикардия</a>
+
+            <div class="programs__buttons">
+              <button class="bth-reset programs__btn" data-program="arrhythmia">
+                Аритмия, тахикардия
+              </button>
+              <button class="bth-reset programs__btn" data-program="hypertension">
+                Гипертония
+              </button>
+              <button class="bth-reset programs__btn" data-program="ischemic">
+                Ишемическая болезнь сердца
+              </button>
+              <button class="bth-reset programs__btn" data-program="full-checkup">
+                Полное кардиообследование
+              </button>
+            </div>
+
+            <div class="programs__details">
+              
+            </div>
+
+            <button class="programs__close-btn">
+              <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.7227 2.27721L2.1813 16.8186" stroke="#535353" stroke-width="2.6551"
+                  stroke-linecap="round" />
+                <path d="M2.18126 2.27734L16.7227 16.8187" stroke="#535353" stroke-width="2.6551"
+                  stroke-linecap="round" />
+              </svg>
             </button>
-            <button class="bth-reset programs__btn">
-              <a class="programs__btn-link" href="#">Гипертония</a>
-            </button>
-            <button class="bth-reset programs__btn">
-              <a class="programs__btn-link" href="#">Ишемическая болезнь сердца</a>
-            </button>
-            <button class="bth-reset programs__btn">
-              <a class="programs__btn-link" href="#">Полное кардиообследование</a>
-            </button>
+            <div class="modal" id="modal">
+              <div class="modal__content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+                <span class="modal__close" id="closeModalBtn" aria-label="Закрыть модальное окно">&times;</span>
+                <h2 class="modal__title" id="modalTitle">Запрос отправлен</h2>
+                <p class="modal__text">Наш оператор свяжется с Вами!</p>
+                <p class="modal__text"><strong>В рабочие часы</strong><br>мы перезвоним через несколько минут</p>
+                <p class="modal__text"><strong>В нерабочие часы</strong><br>мы перезвоним на следующий день</p>
+                <p class="modal__text"><strong>По записи в лист ожидания</strong><br>мы перезвоним, если освободится
+                  место</p>
+                <div class="modal__footer">
+                  <button class="modal__button" id="modalOkBtn">Понятно</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -328,6 +361,7 @@
     </div>
   </footer>
 
+  <script defer src="js/programs.js"></script>
   <script defer src="js/main.js"></script>
 </body>
 

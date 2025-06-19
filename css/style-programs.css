@@ -120,6 +120,7 @@ body {
 }
 
 .programs__children {
+  width: 570px;
   height: 505px;
   position: relative;
   display: flex;
@@ -131,6 +132,7 @@ body {
 }
 
 .programs__cardiology {
+  width: 570px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -159,24 +161,131 @@ body {
   color: var(--color-slate-blue);
 }
 
-.programs__btn {
-  padding: 0 120px;
-  height: 70px;
-  border-radius: 100px;
-  background: linear-gradient(139deg, #c8d3ff 0%, #afa7ff 97.4%);
-}
-
-.programs__btn:not(:last-child) {
+.programs__buttons {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   margin-bottom: 20px;
 }
 
-.programs__btn-link {
+.programs__details {
+  display: none;
+  width: 370px;
+}
+
+.programs__details h3 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+  color: var(--color-gray-brown);
+}
+
+.programs__details p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+  color: var(--color-gray-brown);
+}
+
+.programs__details .programs__medical-wrap-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  color: var(--color-dull-grey);
+}
+
+.programs__details .programs__buy-button {
+  display: block;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  margin-bottom: 35px;
+  color: var(--color-slate-blue);
+}
+
+.programs__details ul {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.programs__details li {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 180%;
+  letter-spacing: -0.02em;
+  color: var(--color-dull-grey);
+}
+
+.programs__medical-wrap-price span {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  margin-bottom: 35px;
+  color: var(--color-slate-blue);
+}
+
+.programs__details li::before {
+  content: "— ";
+  color: var(--color-dull-grey);
+}
+
+.programs__children.inactive {
+  pointer-events: none; /* Отключаем клики */
+  opacity: 0.5; /* Полупрозрачность */
+  user-select: none; /* Запретить выделение */
+  transition: opacity 0.3s;
+}
+
+.programs__buy-btn {
+  width: 285px;
+  height: 52px;
+  padding: 0 5px 0 25px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 105%;
+  border-radius: 40px;
+  color: var(--color-signa-black);
+  background: linear-gradient(133deg, #c8d3ff 0%, #afa7ff 100%);
+}
+
+.programs__close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: #d8d5fd;
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  color: var(--color-asphalt);
+  cursor: pointer;
+}
+
+.programs__btn {
+  padding: 0 80px;
+  height: 70px;
   font-weight: 400;
   font-size: 22px;
   line-height: 120%;
   letter-spacing: -0.02em;
   text-align: center;
   color: var(--color-signa-black);
+  border-radius: 100px;
+  background: linear-gradient(139deg, #c8d3ff 0%, #afa7ff 97.4%);
+}
+
+.programs__btn:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 /* programs-medical */
@@ -292,22 +401,17 @@ body {
   color: var(--color-slate-blue);
 }
 
-.programs__medical-wrap-price {
-  display: flex;
-  flex-direction: column;
+.programs__medical-wrap-text {
   font-weight: 400;
   font-size: 18px;
   line-height: 140%;
   letter-spacing: -0.02em;
   color: var(--color-dull-grey);
 }
-.programs__medical-wrap-price span {
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 140%;
-  letter-spacing: -0.02em;
-  margin-bottom: 35px;
-  color: var(--color-slate-blue);
+
+.programs__medical-wrap-price {
+  display: flex;
+  flex-direction: column;
 }
 
 .programs__medical-wrap-price-btn {
@@ -349,4 +453,68 @@ body {
 
 .programs__medical-wraps-text span {
   color: var(--color-slate-blue);
+}
+
+/* modal */
+.modal {
+  display: none; /* Скрыто по умолчанию */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* полупрозрачный фон */
+  justify-content: center;
+  align-items: center;
+}
+.modal.active {
+  display: flex; /* Показываем окно */
+}
+.modal__content {
+  background: white;
+  padding: 30px 25px;
+  border-radius: 8px;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.modal__close {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #888;
+  cursor: pointer;
+  user-select: none;
+}
+.modal__close:hover {
+  color: #555;
+}
+.modal__title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.modal__text {
+  font-size: 16px;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+.modal__footer {
+  margin-top: 20px;
+}
+.modal__button {
+  background-color: #007bff;
+  border: none;
+  padding: 10px 24px;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.modal__button:hover {
+  background-color: #0056b3;
 }
