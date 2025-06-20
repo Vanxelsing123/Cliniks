@@ -136,9 +136,6 @@
   z-index: 11;
 }
 
-
-
-
 .dropdown:hover .dropdown-content,
 .dropdown-content:hover {
   opacity: 1;
@@ -179,11 +176,9 @@
   transform: translateY(0);
 }
 
-
 .dropdown svg {
   transition: transform 0.3s ease;
 }
-
 
 .dropdown:hover svg {
   transform: rotate(180deg);
@@ -211,7 +206,6 @@
   transition: transform 0.3s, opacity 0.3s;
 }
 
-
 .burger.active span:nth-child(1) {
   transform: rotate(45deg) translateY(11px);
 }
@@ -222,14 +216,10 @@
   transform: rotate(-45deg) translateY(-11px);
 }
 
-
-
-
 .overlay.show {
   display: block;
   opacity: 1;
 }
-
 
 #mobileNav {
   position: fixed; 
