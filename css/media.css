@@ -18,8 +18,8 @@
 
 @media (max-width: 1024px) {
   .container {
-  padding: 0 30px;
-}
+    padding: 0 30px;
+  }
 
   header {
     background-color: var(--color-white);
@@ -45,12 +45,12 @@
   .header__nav-list {
     flex-wrap: nowrap;
     flex-direction: column;
-    padding: 32px 24px;
   }
 
   .nav__content {
     display: flex;
     justify-content: center;
+    padding-bottom: 50px;
   }
 
   .header__nav-item {
@@ -63,12 +63,12 @@
 
   .header__nav-item:not(:last-child) {
     margin-right: 0;
-}
+  }
 
   .header__nav-link {
-        font-size: 24px;
-        color: var(--color-almost-black);
-    }
+    font-size: 20px;
+    color: var(--color-almost-black);
+  }
 
   .header__nav-link-dropdown {
     font-size: 16px;
@@ -76,7 +76,6 @@
     border-bottom: none;
     padding: 0;
     padding-bottom: 14px;
-    
   }
 
   .header__nav-link-dropdown:last-child {
@@ -93,10 +92,10 @@
   }
 
   body {
-    background-color: #F5F4FF;
+    background-color: #f5f4ff;
   }
 
-/*   about */
+  /*   about */
 
   #about {
     display: none;
@@ -129,7 +128,7 @@
     margin-right: 0;
   }
 
-   .header__text {
+  .header__text {
     margin-right: 20px;
   }
   #about {
@@ -139,42 +138,38 @@
     margin-bottom: 25px;
   }
 
-  .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-p .swiper-pagination-fraction {
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-p .swiper-pagination-fraction {
     bottom: var(--swiper-pagination-bottom, -1px);
     top: var(--swiper-pagination-top, auto);
     left: 0;
     width: 100%;
-}
+  }
 
-.about__btn {
+  .about__btn {
     width: 227px;
-}
+  }
 
-.content__about {
-  
-  align-items: center;
-}
+  .content__about {
+    align-items: center;
+  }
 
-#job {
+  #job {
     display: none;
+  }
+
+  .services__title-special {
+    max-width: 250px;
+  }
+
+  .map__container-wraps {
+    background-image: none;
+    justify-content: center;
+  }
 }
-
-
-.services__title-special {
-  max-width: 250px;
-}
-
-.map__container-wraps {
-  background-image: none;
-  justify-content: center;
-}
-
-
-}
-
 
 @media (max-width: 768px) {
-
   .container {
     padding: 0 20px;
   }
@@ -188,25 +183,23 @@
   .header__item {
     display: none;
   }
-  .header__nav-link {
-    font-size: 20px;
-  }
+
   .header__btn-item:not(:last-child) {
-        margin-right: 14px;
-    }
+    margin-right: 14px;
+  }
 
-    .about {
-      padding: 26px 39px 30px 39px;
-    }
+  .about {
+    padding: 26px 39px 30px 39px;
+  }
 
-    .services__list {
-      display: grid;
-      justify-items: center;
-    }
+  .services__list {
+    display: grid;
+    justify-items: center;
+  }
 
-    .services__item:not(:last-child) {
-      margin-right: 0;
-    }
+  .services__item:not(:last-child) {
+    margin-right: 0;
+  }
 
   .services__item {
     margin-bottom: 12px;
@@ -277,10 +270,10 @@
     width: 100%;
   }
   .services__title-special {
-        max-width: 240px;
-        font-size: 28px;
-        margin-bottom: 20px;
-    }
+    max-width: 240px;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
   .services__item {
     padding: 25px 20px 15px 10px;
   }
@@ -306,8 +299,7 @@
   }
   .map__item:not(:last-child) {
     margin-right: 0;
-}
- 
+  }
 
   .map__item--clinik {
     cursor: pointer;
@@ -328,10 +320,9 @@
 
   .map__container-wraps {
     flex-direction: column;
-   
   }
 
-  .map__contacts-list-icon  {
+  .map__contacts-list-icon {
     display: none;
   }
 
@@ -365,10 +356,9 @@
   }
 }
 
-
 /* doctors */
 
-@media (max-width: 1200px)  {
+@media (max-width: 1200px) {
   .doctors__list {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -413,11 +403,9 @@
   .about__container-info {
     margin-right: 40px;
   }
-
 }
 
 @media (max-width: 425px) {
-
   .doctors__title {
     font-size: 32px;
     margin-bottom: 20px;
@@ -442,8 +430,7 @@
     margin-bottom: 20px;
   }
 
-      .doctors__container-wrapp {
-        padding: 9px 0px 0px 0px;
-    }
-
+  .doctors__container-wrapp {
+    padding: 9px 0px 0px 0px;
+  }
 }

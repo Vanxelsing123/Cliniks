@@ -81,9 +81,12 @@
 .header__nav-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
+.header__nav-list:not(:last-child) {
+  margin-right: 30px;
+}
 
 .header__nav-item:not(:last-child) {
   margin-right: 10px;
@@ -103,11 +106,11 @@
 
 .dropdown-content {
   position: absolute;
-  top: 100%; 
+  top: 100%;
   left: 0;
   opacity: 0;
   pointer-events: none;
-  transform: translateY(10px); 
+  transform: translateY(10px);
   transition: opacity 0.3s ease, transform 0.3s ease;
   background-color: var(--color-lavender);
   min-width: 190px;
@@ -121,11 +124,11 @@
 .dropdown-content__services {
   display: flex;
   position: absolute;
-  top: 100%; 
+  top: 100%;
   left: 0;
   opacity: 0;
   pointer-events: none;
-  transform: translateY(10px); 
+  transform: translateY(10px);
   transition: opacity 0.3s ease, transform 0.3s ease;
   background-color: var(--color-lavender);
   min-width: 450px;
@@ -154,7 +157,6 @@
   display: block;
   font-weight: 500;
   font-size: 14px;
-  line-height: 249%;
   padding: 0 10px;
   text-decoration: none;
   color: var(--color-grey);
@@ -166,9 +168,8 @@
 }
 
 .header__nav-link-dropdown:hover {
-  color: var(--color-slate-blue)
+  color: var(--color-slate-blue);
 }
-
 
 .dropdown:hover .dropdown-content {
   opacity: 1;
@@ -221,17 +222,14 @@
   opacity: 1;
 }
 
-<<<<<<< HEAD
-=======
 .burger-wrapper {
   position: relative;
 }
 
->>>>>>> ccfbdf4ab9f7875d6fd60b14dd9aebec8e44b9e0
 #mobileNav {
   position: absolute;
   top: 265%;
-  left: -31px;
+  left: -3px;
   width: 100vw;
   background-color: #fff;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
@@ -244,24 +242,23 @@
 }
 
 #mobileNav.open {
+  width: 340px;
   max-height: calc(100vh - 110px); /* высота экрана минус высота шапки */
   overflow-y: auto;
   opacity: 1;
   visibility: visible;
 }
 
-
 .header__top {
   position: relative;
-  z-index: 1100; 
+  z-index: 1100;
 }
 
 .header.menu-open {
-  background-color: #F5F4FF;
+  background-color: #f5f4ff;
 }
 
 body.menu-open {
   overflow: hidden;
 }
-
 
