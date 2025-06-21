@@ -1,5 +1,7 @@
 /* Burger */
 
+
+
   const burger = document.getElementById('burger');
   const mobileNav = document.getElementById('mobileNav');
   const overlay = document.getElementById('overlay');
@@ -30,6 +32,7 @@
       closeMenu();
     }
   });
+  
 
 /* map Yandex   */
 
