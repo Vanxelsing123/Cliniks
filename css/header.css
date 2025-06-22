@@ -191,6 +191,12 @@
   display: none;
 }
 
+.no-scroll {
+  overflow: hidden;
+  height: 100vh; 
+}
+
+
 .header__burger-btn {
   display: none;
   position: relative;
@@ -226,4 +232,9 @@ header.open .header__burger-btn span:nth-child(1) {
 
 header.open .header__burger-btn span:nth-child(3) {
   transform: translateY(0) rotate(-45deg);
+}
+
+header.open {
+  background-color: #f5f4ff;
+  
 }

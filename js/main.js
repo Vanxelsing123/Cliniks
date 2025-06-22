@@ -1,9 +1,14 @@
 // Бургер
 document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("burger").addEventListener("click", function () {
-    document.querySelector("header").classList.toggle("open")
-  })
-})
+    const header = document.querySelector("header");
+    header.classList.toggle("open");
+
+    // блокировка скролла
+    document.body.classList.toggle("no-scroll");
+  });
+});
+
 
 /* map Yandex   */
 const map = document.getElementById('yandex-map');
