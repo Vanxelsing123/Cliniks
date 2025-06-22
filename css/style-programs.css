@@ -323,22 +323,6 @@ body {
   background-color: var(--color-lavender);
 }
 
-.programs__medical-item:nth-child(1) {
-  grid-area: one;
-}
-
-.programs__medical-item:nth-child(2) {
-  grid-area: two;
-}
-
-.programs__medical-item:nth-child(3) {
-  grid-area: three;
-}
-
-.programs__medical-list {
-  grid-template-areas: "one two three";
-}
-
 .programs__medical-titles {
   padding-bottom: 20px;
   font-weight: 400;

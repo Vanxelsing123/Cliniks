@@ -137,35 +137,6 @@ body {
   counter-reset: card;
 }
 
-.news__list {
-  grid-template-areas:
-    "one two three"
-    "four five six";
-}
-
-.news__item :nth-child(1) {
-  grid-area: one;
-}
-
-.news__item :nth-child(2) {
-  grid-area: two;
-}
-
-.news__item :nth-child(3) {
-  grid-area: three;
-}
-
-.news__item :nth-child(4) {
-  grid-area: four;
-}
-
-.news__item :nth-child(5) {
-  grid-area: five;
-}
-.news__item :nth-child(6) {
-  grid-area: six;
-}
-
 .news__text {
   padding: 5px 10px;
   font-weight: 400;
