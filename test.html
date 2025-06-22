@@ -15,18 +15,73 @@
   <header class="header">
     <div class="container">
       <div class="header__top">
-        <button class="burger" id="burger" aria-label="Открыть меню">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+        <div class="burger-wrapper">
+
+          <button class="header__burger-btn bth-reset" id="burger" aria-label="Открыть меню">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="mobile-nav nav__content">
+            <ul class="header__nav-list list-reset">
+              <li class="header__nav-item"><a href="doctors.html" class="header__nav-link">Врачи</a></li>
+              <li class="header__nav-item"><a href="price.html" class="header__nav-link">Цены</a></li>
+              <li class="header__nav-item dropdown">
+                <a href="#" class="header__nav-link dropdown-button">Пациентам</a>
+                <div class="header__nav-dropdown ">
+                  <a class="header__nav-link-dropdown" href="#">Новости</a>
+                  <a class="header__nav-link-dropdown" href="#">О нас</a>
+                  <a class="header__nav-link-dropdown" href="#">Подготовка<br>к визиту</a>
+                  <a class="header__nav-link-dropdown" href="#">Налоговый вычет</a>
+                </div>
+              </li>
+              <li class="header__nav-item"><a href="#" class="header__nav-link">Калькулятор<br>анализов</a></li>
+              <li class="header__nav-item"><a href="#" class="header__nav-link">Акции</a></li>
+              <li class="header__nav-item"><a href="#" class="header__nav-link">Контакты</a></li>
+            </ul>
+
+            <ul class="header__nav-list list-reset">
+              <li class="header__nav-item dropdown">
+                <a href="#" class="header__nav-link dropdown-button">Сотрудничество</a>
+                <div class="header__nav-dropdown ">
+                  <a class="header__nav-link-dropdown" href="#">ДМС</a>
+                  <a class="header__nav-link-dropdown" href="#">Вакансии</a>
+                  <a class="header__nav-link-dropdown" href="#">Предприятиям</a>
+                </div>
+              </li>
+              <li class="header__nav-item dropdown "><a href="#" class="header__nav-link dropdown-button">Услуги </a>
+                <div class="header__nav-dropdown ">
+                  <div>
+                    <a class="header__nav-link-dropdown" href="#">Детское отделение</a>
+                    <a class="header__nav-link-dropdown" href="#">Взрослое отделение</a>
+                    <a class="header__nav-link-dropdown" href="services.html">Хирургия</a>
+                    <a class="header__nav-link-dropdown" href="#">Лабораторная<br>диагностика</a>
+                    <a class="header__nav-link-dropdown" href="#">УЗИ, ЭКГ</a>
+                    <a class="header__nav-link-dropdown" href="#">Нейросонография</a>
+                  </div>
+                  <div>
+                    <a class="header__nav-link-dropdown" href="#">Вызов врача на дом</a>
+                    <a class="header__nav-link-dropdown" href="#">Вакцинация</a>
+                    <a class="header__nav-link-dropdown" href="#">Логопед-дефектолог</a>
+                    <a class="header__nav-link-dropdown" href="#">Аудиометрия</a>
+                    <a class="header__nav-link-dropdown" href="#">Тимпанометрия</a>
+                    <a class="header__nav-link-dropdown" href="programs.html">Комплексные<br>программы</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+          </nav>
+        </div>
+
         <div class="header__logo">
-          <a href="index.html" class="header__logo-link">
+          <a href="#" class="header__logo-link">
             <img src="img/logo.png" alt="Логотип клиники">
           </a>
         </div>
         <div class="header__logo--mobile">
-          <a href="index.html" class="header__logo-link">
+          <a href="#" class="header__logo-link">
             <img src="img/Logo.mobile.png" alt="Логотип клиники">
           </a>
         </div>
@@ -83,6 +138,7 @@
       <div class="header__bottom">
         <nav class="header__nav">
           <ul class="header__nav-list list-reset">
+            <li class="header__nav-item"><a href="test.html" class="header__nav-link">Тест</a></li>
             <li class="header__nav-item"><a href="doctors.html" class="header__nav-link">Врачи</a></li>
             <li class="header__nav-item"><a href="price.html" class="header__nav-link">Цены</a></li>
             <li class="header__nav-item dropdown"><a href="#" class="header__nav-link ">Услуги </a>
@@ -145,84 +201,39 @@
       </div>
     </div>
   </header>
-  <nav class="mobile-nav nav__content" id="mobileNav">
-
-    <ul class="header__nav-list list-reset">
-      <li class="header__nav-item"><a href="doctors.html" class="header__nav-link">Врачи</a></li>
-      <li class="header__nav-item"><a href="price.html" class="header__nav-link">Цены</a></li>
-      <li class="header__nav-item dropdown">
-        <a href="#" class="header__nav-link dropdown-button">Пациентам</a>
-        <div class="header__nav-dropdown ">
-          <a class="header__nav-link-dropdown" href="#">Новости</a>
-          <a class="header__nav-link-dropdown" href="#">О нас</a>
-          <a class="header__nav-link-dropdown" href="#">Подготовка к визиту</a>
-          <a class="header__nav-link-dropdown" href="#">Налоговый вычет</a>
-        </div>
-      </li>
-
-
-      <li class="header__nav-item"><a href="#" class="header__nav-link">Калькулятор анализов</a></li>
-
-      <li class="header__nav-item"><a href="#" class="header__nav-link">Акции</a></li>
-      <li class="header__nav-item"><a href="#" class="header__nav-link">Контакты</a></li>
-
-    </ul>
-    <ul class="header__nav-list list-reset">
-      <li class="header__nav-item dropdown">
-        <a href="#" class="header__nav-link dropdown-button">Сотрудничество</a>
-        <div class="header__nav-dropdown ">
-          <a class="header__nav-link-dropdown" href="#">ДМС</a>
-          <a class="header__nav-link-dropdown" href="#">Вакансии</a>
-          <a class="header__nav-link-dropdown" href="#">Предприятиям</a>
-        </div>
-      </li>
-      <li class="header__nav-item dropdown "><a href="#" class="header__nav-link dropdown-button">Услуги </a>
-        <div class="header__nav-dropdown ">
-          <div>
-            <a class="header__nav-link-dropdown" href="#">Детское отделение</a>
-            <a class="header__nav-link-dropdown" href="#">Взрослое отделение</a>
-            <a class="header__nav-link-dropdown" href="services.html">Хирургия</a>
-            <a class="header__nav-link-dropdown" href="#">Лабораторная диагностика</a>
-            <a class="header__nav-link-dropdown" href="#">УЗИ, ЭКГ</a>
-            <a class="header__nav-link-dropdown" href="#">Нейросонография</a>
-          </div>
-          <div>
-            <a class="header__nav-link-dropdown" href="#">Вызов врача на дом</a>
-            <a class="header__nav-link-dropdown" href="#">Вакцинация</a>
-            <a class="header__nav-link-dropdown" href="#">Логопед-дефектолог</a>
-            <a class="header__nav-link-dropdown" href="#">Аудиометрия</a>
-            <a class="header__nav-link-dropdown" href="#">Тимпанометрия</a>
-            <a class="header__nav-link-dropdown" href="programs.html">Комплексные программы</a>
-          </div>
-        </div>
-      </li>
-    </ul>
-  </nav>
-  <div class="overlay" id="overlay"></div>
 
   <main class="main">
     <section class="price">
       <div class="container">
-        
+
         <h2 class="price__title">
           Цены
         </h2>
         <div class="container__wrap">
           <div class="catalog__filters">
-          <input class="input__price" type="text" id="search" placeholder="Направления" />
+            <input class="input__price" type="text" id="search" placeholder="Направления" />
             <ul id="autocomplete-list" class="autocomplete-list"></ul>
-          <div class="catalog__categories">
-            <label class="price__check"><input  type="checkbox" class="category-checkbox" value="alergolog" /> Аллерголог-иммунолог</label>
-            <label class="price__check"><input  type="checkbox" class="category-checkbox" value="vaccination" /> Вакцинация</label>
-            <label class="price__check"><input  type="checkbox" class="category-checkbox" value="dermatologist" /> Дерматолог</label>
-            <label class="price__check"><input  type="checkbox" class="category-checkbox" value="cardiologist" /> Кардиолог</label>
-            <label class="price__check"><input  type="checkbox" class="category-checkbox" value="cardiologist-children" /> Кардиолог детский</label>
-            <label class="price__check"><input  type="checkbox" class="category-checkbox" value="cosmetology" /> Косметология</label>
-            <label class="price__check"><input  type="checkbox" class="category-checkbox" value="therapist" /> Логопед</label>
-            <label class="price__check"><input  type="checkbox" class="category-checkbox" value="gynecologist" /> Гинеколог</label>
-            <label class="price__check"><input  type="checkbox" class="category-checkbox" value="gastroenterologist" /> Гастроэнтеролог</label>
+            <div class="catalog__categories">
+              <label class="price__check"><input type="checkbox" class="category-checkbox" value="alergolog" />
+                Аллерголог-иммунолог</label>
+              <label class="price__check"><input type="checkbox" class="category-checkbox" value="vaccination" />
+                Вакцинация</label>
+              <label class="price__check"><input type="checkbox" class="category-checkbox" value="dermatologist" />
+                Дерматолог</label>
+              <label class="price__check"><input type="checkbox" class="category-checkbox" value="cardiologist" />
+                Кардиолог</label>
+              <label class="price__check"><input type="checkbox" class="category-checkbox"
+                  value="cardiologist-children" /> Кардиолог детский</label>
+              <label class="price__check"><input type="checkbox" class="category-checkbox" value="cosmetology" />
+                Косметология</label>
+              <label class="price__check"><input type="checkbox" class="category-checkbox" value="therapist" />
+                Логопед</label>
+              <label class="price__check"><input type="checkbox" class="category-checkbox" value="gynecologist" />
+                Гинеколог</label>
+              <label class="price__check"><input type="checkbox" class="category-checkbox" value="gastroenterologist" />
+                Гастроэнтеролог</label>
+            </div>
           </div>
-        </div>
 
           <div class="container__prise">
             <div class="price__item" data-category="alergolog">
@@ -291,7 +302,7 @@
               </div>
             </div>
 
-            <div class="price__item"  data-category="vaccination">
+            <div class="price__item" data-category="vaccination">
               <div class="price__header">
                 <svg class="accordion__svg" width="11" height="13" viewBox="0 0 11 13" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -489,7 +500,7 @@
               </div>
             </div>
 
-            <div class="price__item"  data-category="dermatologist">
+            <div class="price__item" data-category="dermatologist">
               <div class="price__header">
                 <svg class="accordion__svg" width="11" height="13" viewBox="0 0 11 13" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -905,7 +916,7 @@
   </footer>
   <script defer src="js/main.js"></script>
   <script defer src="js/accardion.js"></script>
-  <script  src="js/filters-price.js"></script>
+  <script src="js/filters-price.js"></script>
 </body>
 
 </html>

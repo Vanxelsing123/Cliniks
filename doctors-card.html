@@ -14,18 +14,73 @@
   <header class="header">
     <div class="container">
       <div class="header__top">
-        <button class="burger" id="burger" aria-label="Открыть меню">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+        <div class="burger-wrapper">
+
+          <button class="header__burger-btn bth-reset" id="burger" aria-label="Открыть меню">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="mobile-nav nav__content">
+            <ul class="header__nav-list list-reset">
+              <li class="header__nav-item"><a href="doctors.html" class="header__nav-link">Врачи</a></li>
+              <li class="header__nav-item"><a href="price.html" class="header__nav-link">Цены</a></li>
+              <li class="header__nav-item dropdown">
+                <a href="#" class="header__nav-link dropdown-button">Пациентам</a>
+                <div class="header__nav-dropdown ">
+                  <a class="header__nav-link-dropdown" href="#">Новости</a>
+                  <a class="header__nav-link-dropdown" href="#">О нас</a>
+                  <a class="header__nav-link-dropdown" href="#">Подготовка<br>к визиту</a>
+                  <a class="header__nav-link-dropdown" href="#">Налоговый вычет</a>
+                </div>
+              </li>
+              <li class="header__nav-item"><a href="#" class="header__nav-link">Калькулятор<br>анализов</a></li>
+              <li class="header__nav-item"><a href="#" class="header__nav-link">Акции</a></li>
+              <li class="header__nav-item"><a href="#" class="header__nav-link">Контакты</a></li>
+            </ul>
+
+            <ul class="header__nav-list list-reset">
+              <li class="header__nav-item dropdown">
+                <a href="#" class="header__nav-link dropdown-button">Сотрудничество</a>
+                <div class="header__nav-dropdown ">
+                  <a class="header__nav-link-dropdown" href="#">ДМС</a>
+                  <a class="header__nav-link-dropdown" href="#">Вакансии</a>
+                  <a class="header__nav-link-dropdown" href="#">Предприятиям</a>
+                </div>
+              </li>
+              <li class="header__nav-item dropdown "><a href="#" class="header__nav-link dropdown-button">Услуги </a>
+                <div class="header__nav-dropdown ">
+                  <div>
+                    <a class="header__nav-link-dropdown" href="#">Детское отделение</a>
+                    <a class="header__nav-link-dropdown" href="#">Взрослое отделение</a>
+                    <a class="header__nav-link-dropdown" href="services.html">Хирургия</a>
+                    <a class="header__nav-link-dropdown" href="#">Лабораторная<br>диагностика</a>
+                    <a class="header__nav-link-dropdown" href="#">УЗИ, ЭКГ</a>
+                    <a class="header__nav-link-dropdown" href="#">Нейросонография</a>
+                  </div>
+                  <div>
+                    <a class="header__nav-link-dropdown" href="#">Вызов врача на дом</a>
+                    <a class="header__nav-link-dropdown" href="#">Вакцинация</a>
+                    <a class="header__nav-link-dropdown" href="#">Логопед-дефектолог</a>
+                    <a class="header__nav-link-dropdown" href="#">Аудиометрия</a>
+                    <a class="header__nav-link-dropdown" href="#">Тимпанометрия</a>
+                    <a class="header__nav-link-dropdown" href="programs.html">Комплексные<br>программы</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+          </nav>
+        </div>
+
         <div class="header__logo">
-          <a href="index.html" class="header__logo-link">
+          <a href="#" class="header__logo-link">
             <img src="img/logo.png" alt="Логотип клиники">
           </a>
         </div>
         <div class="header__logo--mobile">
-          <a href="index.html" class="header__logo-link">
+          <a href="#" class="header__logo-link">
             <img src="img/Logo.mobile.png" alt="Логотип клиники">
           </a>
         </div>
@@ -82,6 +137,7 @@
       <div class="header__bottom">
         <nav class="header__nav">
           <ul class="header__nav-list list-reset">
+            <li class="header__nav-item"><a href="test.html" class="header__nav-link">Тест</a></li>
             <li class="header__nav-item"><a href="doctors.html" class="header__nav-link">Врачи</a></li>
             <li class="header__nav-item"><a href="price.html" class="header__nav-link">Цены</a></li>
             <li class="header__nav-item dropdown"><a href="#" class="header__nav-link ">Услуги </a>
@@ -105,7 +161,7 @@
                   <a class="header__nav-link-dropdown" href="#">Логопед-дефектолог</a>
                   <a class="header__nav-link-dropdown" href="#">Аудиометрия</a>
                   <a class="header__nav-link-dropdown" href="#">Тимпанометрия</a>
-                  <a class="header__nav-link-dropdown" href="#">Комплексные программы</a>
+                  <a class="header__nav-link-dropdown" href="programs.html">Комплексные программы</a>
                 </div>
               </div>
             </li>
@@ -144,55 +200,6 @@
       </div>
     </div>
   </header>
-  <nav class="mobile-nav nav__content" id="mobileNav">
-    <ul class="header__nav-list list-reset">
-      <li class="header__nav-item"><a href="doctors.html" class="header__nav-link">Врачи</a></li>
-      <li class="header__nav-item"><a href="price.html" class="header__nav-link">Цены</a></li>
-      <li class="header__nav-item dropdown">
-        <a href="#" class="header__nav-link dropdown-button">Пациентам</a>
-        <div class="header__nav-dropdown ">
-          <a class="header__nav-link-dropdown" href="#">Новости</a>
-          <a class="header__nav-link-dropdown" href="#">О нас</a>
-          <a class="header__nav-link-dropdown" href="#">Подготовка к визиту</a>
-          <a class="header__nav-link-dropdown" href="#">Налоговый вычет</a>
-        </div>
-      </li>
-      <li class="header__nav-item"><a href="#" class="header__nav-link">Калькулятор анализов</a></li>
-      <li class="header__nav-item"><a href="#" class="header__nav-link">Акции</a></li>
-      <li class="header__nav-item"><a href="#" class="header__nav-link">Контакты</a></li>
-    </ul>
-    <ul class="header__nav-list list-reset">
-      <li class="header__nav-item dropdown">
-        <a href="#" class="header__nav-link dropdown-button">Сотрудничество</a>
-        <div class="header__nav-dropdown ">
-          <a class="header__nav-link-dropdown" href="#">ДМС</a>
-          <a class="header__nav-link-dropdown" href="#">Вакансии</a>
-          <a class="header__nav-link-dropdown" href="#">Предприятиям</a>
-        </div>
-      </li>
-      <li class="header__nav-item dropdown "><a href="#" class="header__nav-link dropdown-button">Услуги </a>
-        <div class="header__nav-dropdown ">
-          <div>
-            <a class="header__nav-link-dropdown" href="#">Детское отделение</a>
-            <a class="header__nav-link-dropdown" href="#">Взрослое отделение</a>
-            <a class="header__nav-link-dropdown" href="services.html">Хирургия</a>
-            <a class="header__nav-link-dropdown" href="#">Лабораторная диагностика</a>
-            <a class="header__nav-link-dropdown" href="#">УЗИ, ЭКГ</a>
-            <a class="header__nav-link-dropdown" href="#">Нейросонография</a>
-          </div>
-          <div>
-            <a class="header__nav-link-dropdown" href="#">Вызов врача на дом</a>
-            <a class="header__nav-link-dropdown" href="#">Вакцинация</a>
-            <a class="header__nav-link-dropdown" href="#">Логопед-дефектолог</a>
-            <a class="header__nav-link-dropdown" href="#">Аудиометрия</a>
-            <a class="header__nav-link-dropdown" href="#">Тимпанометрия</a>
-            <a class="header__nav-link-dropdown" href="#">Комплексные программы</a>
-          </div>
-        </div>
-      </li>
-    </ul>
-  </nav>
-  <div class="overlay" id="overlay"></div>
 
   <main class="main">
     <div class="container">
@@ -210,9 +217,9 @@
         </h2>
         <div class="doctors__container-card">
           <picture>
-              <source srcset="img/Photo.doctro.mob.png" media="(max-width: 1024px)" type="image/webp">
-              <img src="img/doccard1.png" alt="Фото Доктора">
-            </picture>
+            <source srcset="img/Photo.doctro.mob.png" media="(max-width: 1024px)" type="image/webp">
+            <img src="img/doccard1.png" alt="Фото Доктора">
+          </picture>
           <div class="doctors__container-wrapp">
             <div class="doctors__container-profile">
               <h1 class="doctors__card-name">Трофимова<br>Галина Николаевна</h1>
