@@ -81,7 +81,7 @@
 .header__nav-list {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
+  justify-content: space-between;
 }
 
 .header__nav-list:not(:last-child) {
@@ -187,78 +187,43 @@
 
 /* Бургер */
 
-.burger {
+.nav__content {
   display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 24px;
-  height: 18px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  z-index: 1001;
 }
 
-.burger span {
-  height: 2px;
-  width: 100%;
-  background: var(--color-almost-black);
-  border-radius: 2px;
-  transition: transform 0.3s, opacity 0.3s;
-}
-
-.burger.active span:nth-child(1) {
-  transform: rotate(45deg) translateY(11px);
-}
-.burger.active span:nth-child(2) {
-  opacity: 0;
-}
-.burger.active span:nth-child(3) {
-  transform: rotate(-45deg) translateY(-11px);
-}
-
-.overlay.show {
-  display: block;
-  opacity: 1;
-}
-
-.burger-wrapper {
+.header__burger-btn {
+  display: none;
   position: relative;
+  width: 20px;
+  height: 20px;
 }
 
-#mobileNav {
+.header__burger-btn span {
   position: absolute;
-  top: 265%;
-  left: -3px;
-  width: 100vw;
-  background-color: #fff;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-  max-height: 0;
-  overflow: hidden;
+  width: 20px;
+  height: 2px;
+  border-radius: 100px;
+  background-color: var(--color-gray-brown);
+  left: 0px;
+  transition: transform 0.5s;
+}
+
+.header__burger-btn span:nth-child(1) {
+  transform: translateY(-7px);
+}
+
+.header__burger-btn span:nth-child(3) {
+  transform: translateY(7px);
+}
+
+header.open .header__burger-btn span:nth-child(2) {
   opacity: 0;
-  visibility: hidden;
-  transition: max-height 0.6s ease, opacity 0.6s ease, visibility 0.6s ease;
-  z-index: 1000;
 }
 
-#mobileNav.open {
-  width: 340px;
-  max-height: calc(100vh - 110px); /* высота экрана минус высота шапки */
-  overflow-y: auto;
-  opacity: 1;
-  visibility: visible;
+header.open .header__burger-btn span:nth-child(1) {
+  transform: translateY(0) rotate(45deg);
 }
 
-.header__top {
-  position: relative;
-  z-index: 1100;
+header.open .header__burger-btn span:nth-child(3) {
+  transform: translateY(0) rotate(-45deg);
 }
-
-.header.menu-open {
-  background-color: #f5f4ff;
-}
-
-body.menu-open {
-  overflow: hidden;
-}
-
