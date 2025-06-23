@@ -6,6 +6,11 @@ const swiper = new Swiper('.swiper', {
   slidesPerView: 1,     // показывать по 1 слайду
   slidesPerGroup: 1,    // прокручивать по 1 слайду
 
+  navigation: {
+    nextEl: '.swiper-next',
+    prevEl: '.swiper-prev',
+  },
+
   autoplay: {
     delay: 5000,
     disableOnInteraction: false

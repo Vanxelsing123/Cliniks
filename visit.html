@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Подготовка к визиту</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style-visit.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <div class="burger-wrapper">
+
+          <button class="header__burger-btn bth-reset" id="burger" aria-label="Открыть меню">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="mobile-nav nav__content">
+            <ul class="header__nav-list list-reset">
+              <li class="header__nav-item"><a href="doctors.html" class="header__nav-link">Врачи</a></li>
+              <li class="header__nav-item"><a href="price.html" class="header__nav-link">Цены</a></li>
+              <li class="header__nav-item dropdown">
+                <a href="#" class="header__nav-link dropdown-button">Пациентам</a>
+                <div class="header__nav-dropdown ">
+                  <a class="header__nav-link-dropdown" href="news.html">Новости</a>
+                  <a class="header__nav-link-dropdown" href="#">О нас</a>
+                  <a class="header__nav-link-dropdown" href="#">Подготовка<br>к визиту</a>
+                  <a class="header__nav-link-dropdown" href="#">Налоговый вычет</a>
+                </div>
+              </li>
+              <li class="header__nav-item"><a href="#" class="header__nav-link">Калькулятор<br>анализов</a></li>
+              <li class="header__nav-item"><a href="#" class="header__nav-link">Акции</a></li>
+              <li class="header__nav-item"><a href="#" class="header__nav-link">Контакты</a></li>
+            </ul>
+
+            <ul class="header__nav-list list-reset">
+              <li class="header__nav-item dropdown">
+                <a href="#" class="header__nav-link dropdown-button">Сотрудничество</a>
+                <div class="header__nav-dropdown ">
+                  <a class="header__nav-link-dropdown" href="#">ДМС</a>
+                  <a class="header__nav-link-dropdown" href="#">Вакансии</a>
+                  <a class="header__nav-link-dropdown" href="#">Предприятиям</a>
+                </div>
+              </li>
+              <li class="header__nav-item dropdown "><a href="#" class="header__nav-link dropdown-button">Услуги </a>
+                <div class="header__nav-dropdown ">
+                  <div>
+                    <a class="header__nav-link-dropdown" href="#">Детское отделение</a>
+                    <a class="header__nav-link-dropdown" href="#">Взрослое отделение</a>
+                    <a class="header__nav-link-dropdown" href="services.html">Хирургия</a>
+                    <a class="header__nav-link-dropdown" href="#">Лабораторная<br>диагностика</a>
+                    <a class="header__nav-link-dropdown" href="#">УЗИ, ЭКГ</a>
+                    <a class="header__nav-link-dropdown" href="#">Нейросонография</a>
+                  </div>
+                  <div>
+                    <a class="header__nav-link-dropdown" href="#">Вызов врача на дом</a>
+                    <a class="header__nav-link-dropdown" href="#">Вакцинация</a>
+                    <a class="header__nav-link-dropdown" href="#">Логопед-дефектолог</a>
+                    <a class="header__nav-link-dropdown" href="#">Аудиометрия</a>
+                    <a class="header__nav-link-dropdown" href="#">Тимпанометрия</a>
+                    <a class="header__nav-link-dropdown" href="programs.html">Комплексные<br>программы</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="header__logo">
+          <a href="index.html" class="header__logo-link">
+            <img src="img/logo.png" alt="Логотип клиники">
+          </a>
+        </div>
+        <div class="header__logo--mobile">
+          <a href="index.html" class="header__logo-link">
+            <img src="img/Logo.mobile.png" alt="Логотип клиники">
+          </a>
+        </div>
+        <div class="header__container-info">
+          <div class="header__text">
+            <button class="header__btn-address bth-reset">
+              <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M23.9626 14.6527C23.9626 20.6203 17.4357 24.6455 15.5486 25.6846C15.2298 25.8601 14.8568 25.8601 14.538 25.6846C12.6509 24.6455 6.12402 20.6203 6.12402 14.6527C6.12402 9.30112 10.4457 5.7334 15.0433 5.7334C19.8003 5.7334 23.9626 9.30112 23.9626 14.6527Z"
+                  stroke="#897CFF" stroke-width="2.46972" />
+                <circle cx="15.0433" cy="14.6525" r="3.5221" stroke="#897CFF" stroke-width="2.46972" />
+              </svg>
+              <p class="header__text-address">
+                Адрес и режим работы
+              </p>
+            </button>
+          </div>
+          <ul class="header__list list-reset">
+            <button class="header__btn-item bth-reset">
+              <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="1.3195" y="0.861001" width="33.5827" height="33.5827" rx="4.33885" stroke="#BCCAF4"
+                  stroke-width="0.964189" />
+                <path
+                  d="M28.9067 14.0537V12.9022C28.9067 11.2898 28.9067 10.4836 28.593 9.86781C28.317 9.32611 27.8765 8.88569 27.3348 8.60968C26.719 8.2959 25.9128 8.2959 24.3005 8.2959H11.9212C10.3089 8.2959 9.50268 8.2959 8.88685 8.60968C8.34515 8.88569 7.90473 9.32611 7.62872 9.86781C7.31494 10.4836 7.31494 11.2898 7.31494 12.9022V14.0537M28.9067 14.0537V23.842C28.9067 25.4543 28.9067 26.2605 28.593 26.8763C28.317 27.418 27.8765 27.8585 27.3348 28.1345C26.719 28.4483 25.9128 28.4483 24.3005 28.4483H11.9212C10.3089 28.4483 9.50268 28.4483 8.88685 28.1345C8.34515 27.8585 7.90473 27.418 7.62872 26.8763C7.31494 26.2605 7.31494 25.4543 7.31494 23.842V14.0537M28.9067 14.0537H7.31494"
+                  stroke="#897CFF" stroke-width="1.92838" />
+                <path d="M13.0728 5.41699L13.0728 11.1748M23.1489 5.41699L23.1489 11.1748" stroke="#897CFF"
+                  stroke-width="1.92838" stroke-linecap="round" />
+                <path d="M18.1108 24.8496L18.1108 17.6523" stroke="#897CFF" stroke-width="1.92838"
+                  stroke-linecap="round" />
+                <path d="M21.7095 21.251L14.5122 21.251" stroke="#897CFF" stroke-width="1.92838"
+                  stroke-linecap="round" />
+              </svg>
+              <li class="header__item">
+                Записаться
+              </li>
+            </button>
+            <button class="header__btn-item bth-reset">
+              <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="1.32731" y="0.861001" width="33.5827" height="33.5827" rx="4.33885" stroke="#BCCAF4"
+                  stroke-width="0.964189" />
+                <circle cx="18.1187" cy="11.8945" r="4.79363" stroke="#897CFF" stroke-width="1.92838"
+                  stroke-linecap="round" />
+                <path
+                  d="M7.82531 24.7747C8.74613 21.3998 12.2381 19.8115 15.7364 19.8115H20.501C23.9992 19.8115 27.4912 21.3998 28.412 24.7747C28.6008 25.4667 28.7516 26.2156 28.8371 27.011C28.922 27.8015 28.2701 28.4482 27.4751 28.4482H8.76221C7.96722 28.4482 7.3153 27.8015 7.40023 27.011C7.4857 26.2156 7.63649 25.4667 7.82531 24.7747Z"
+                  stroke="#897CFF" stroke-width="1.92838" stroke-linecap="round" />
+              </svg>
+              <li class="header__item">
+                Медкарта
+              </li>
+            </button>
+          </ul>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <nav class="header__nav">
+          <ul class="header__nav-list list-reset">
+            <li class="header__nav-item"><a href="test.html" class="header__nav-link">Тест</a></li>
+            <li class="header__nav-item"><a href="doctors.html" class="header__nav-link">Врачи</a></li>
+            <li class="header__nav-item"><a href="price.html" class="header__nav-link">Цены</a></li>
+            <li class="header__nav-item dropdown"><a href="#" class="header__nav-link ">Услуги </a>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.96557 11.4763L4.67977 6.78231C4.21969 6.12506 4.68989 5.22196 5.49217 5.22196L11.5995 5.22196C12.4018 5.22196 12.872 6.12506 12.4119 6.78231L9.12615 11.4763C8.84416 11.8792 8.24756 11.8792 7.96557 11.4763Z"
+                  fill="#897CFF" />
+              </svg>
+              <div class="header__nav-dropdown dropdown-content__services">
+                <div>
+                  <a class="header__nav-link-dropdown" href="#">Детское отделение</a>
+                  <a class="header__nav-link-dropdown" href="#">Взрослое отделение</a>
+                  <a class="header__nav-link-dropdown" href="services.html">Хирургия</a>
+                  <a class="header__nav-link-dropdown" href="#">Лабораторная диагностика</a>
+                  <a class="header__nav-link-dropdown" href="#">УЗИ, ЭКГ</a>
+                  <a class="header__nav-link-dropdown" href="#">Нейросонография</a>
+                </div>
+                <div>
+                  <a class="header__nav-link-dropdown" href="#">Вызов врача на дом</a>
+                  <a class="header__nav-link-dropdown" href="#">Вакцинация</a>
+                  <a class="header__nav-link-dropdown" href="#">Логопед-дефектолог</a>
+                  <a class="header__nav-link-dropdown" href="#">Аудиометрия</a>
+                  <a class="header__nav-link-dropdown" href="#">Тимпанометрия</a>
+                  <a class="header__nav-link-dropdown" href="programs.html">Комплексные программы</a>
+                </div>
+              </div>
+            </li>
+            <li class="header__nav-item dropdown">
+              <a href="#" class="header__nav-link dropdown-button">Пациентам</a>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.96557 11.4763L4.67977 6.78231C4.21969 6.12506 4.68989 5.22196 5.49217 5.22196L11.5995 5.22196C12.4018 5.22196 12.872 6.12506 12.4119 6.78231L9.12615 11.4763C8.84416 11.8792 8.24756 11.8792 7.96557 11.4763Z"
+                  fill="#897CFF" />
+              </svg>
+              <div class="header__nav-dropdown dropdown-content">
+                <a class="header__nav-link-dropdown" href="news.html">Новости</a>
+                <a class="header__nav-link-dropdown" href="#">О нас</a>
+                <a class="header__nav-link-dropdown" href="#">Подготовка к визиту</a>
+                <a class="header__nav-link-dropdown" href="#">Налоговый вычет</a>
+              </div>
+            </li>
+            <li class="header__nav-item"><a href="#" class="header__nav-link">Калькулятор анализов</a></li>
+            <li class="header__nav-item"><a href="#" class="header__nav-link">Акции</a></li>
+            <li class="header__nav-item"><a href="#" class="header__nav-link">Контакты</a></li>
+            <li class="header__nav-item dropdown">
+              <a href="#" class="header__nav-link">Сотрудничество</a>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.96557 11.4763L4.67977 6.78231C4.21969 6.12506 4.68989 5.22196 5.49217 5.22196L11.5995 5.22196C12.4018 5.22196 12.872 6.12506 12.4119 6.78231L9.12615 11.4763C8.84416 11.8792 8.24756 11.8792 7.96557 11.4763Z"
+                  fill="#897CFF" />
+              </svg>
+              <div class="header__nav-dropdown dropdown-content">
+                <a class="header__nav-link-dropdown" href="#">ДМС</a>
+                <a class="header__nav-link-dropdown" href="#">Вакансии</a>
+                <a class="header__nav-link-dropdown" href="#">Предприятиям</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+
+  <main class="main">
+    <section class="visit">
+      <div class="container">
+        <h1 class="visit__title">Подготовка к визиту</h1>
+        <div class="container__visit">
+          <p class="visit__text-span">Уважаемые<span>пациенты!</span></p>
+          <ul class="visit__list list-reset">
+            <li class="visit__item">
+              <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M40.5441 8.01758L39.963 13.2476C39.1215 20.8212 32.7199 26.5509 25.0997 26.5509V26.5509C17.4795 26.5509 11.0779 32.2806 10.2364 39.8541L9.65527 45.0841"
+                  stroke="#897CFF" stroke-width="2.05925" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M9.65527 8.01758L10.2364 13.2476C10.7238 17.6344 13.0767 21.4027 16.4514 23.7971M40.5441 45.0841L39.963 39.8541C39.1215 32.2806 32.7199 26.5509 25.0997 26.5509"
+                  stroke="#897CFF" stroke-width="2.05925" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M39.5145 14.1953H10.6849" stroke="#897CFF" stroke-width="2.05925" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M39.5145 38.9062H10.6849" stroke="#897CFF" stroke-width="2.05925" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M37.4552 32.7285H12.7441" stroke="#897CFF" stroke-width="2.05925" stroke-linejoin="round" />
+                <path d="M36.4256 20.373H13.7738" stroke="#897CFF" stroke-width="2.05925" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              <p class="visit__text">Просим Вас ознакомиться с рекомендациями для подготовки к отдельным видам
+                исследований.
+              </p>
+            </li>
+            <li class="visit__item">
+              <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M40.5441 8.01758L39.963 13.2476C39.1215 20.8212 32.7199 26.5509 25.0997 26.5509V26.5509C17.4795 26.5509 11.0779 32.2806 10.2364 39.8541L9.65527 45.0841"
+                  stroke="#897CFF" stroke-width="2.05925" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M9.65527 8.01758L10.2364 13.2476C10.7238 17.6344 13.0767 21.4027 16.4514 23.7971M40.5441 45.0841L39.963 39.8541C39.1215 32.2806 32.7199 26.5509 25.0997 26.5509"
+                  stroke="#897CFF" stroke-width="2.05925" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M39.5145 14.1953H10.6849" stroke="#897CFF" stroke-width="2.05925" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M39.5145 38.9062H10.6849" stroke="#897CFF" stroke-width="2.05925" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M37.4552 32.7285H12.7441" stroke="#897CFF" stroke-width="2.05925" stroke-linejoin="round" />
+                <path d="M36.4256 20.373H13.7738" stroke="#897CFF" stroke-width="2.05925" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              <p class="visit__text">Соблюдение рекомендаций положительно влияет на точность и достоверность результата.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="container__visit-wrap">
+          <ul class="container__visit-wrap-list list-reset">
+            <li class="container__visit-wrap-item">
+              <a href="#">
+                <p class="container__visit-wrap-text">Подготовка пациента<br><span>к процедуре сдачи крови</span></p>
+                <svg width="126" height="127" viewBox="0 0 126 127" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M47.1424 84.3326L83.6188 47.8563C90.8135 40.6615 90.8135 28.9965 83.6188 21.8017C76.424 14.6069 64.759 14.6069 57.5642 21.8017L21.0878 58.2781C13.8931 65.4728 13.8931 77.1379 21.0878 84.3326C28.2826 91.5274 39.9476 91.5274 47.1424 84.3326Z"
+                    stroke="#E4E3FF" stroke-width="5.21091" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M65.3805 66.0946V66.0946C53.6726 61.0769 44.3436 51.7479 39.3259 40.04V40.04"
+                    stroke="#E4E3FF" stroke-width="5.21091" stroke-linecap="round" stroke-linejoin="round" />
+                  <circle cx="86.2243" cy="86.9393" r="20.8437" stroke="#E4E3FF" stroke-width="5.21091"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M99.2515 73.9121L73.1969 99.9667" stroke="#E4E3FF" stroke-width="5.21091"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </li>
+            <li class="container__visit-wrap-item">
+              <a href="#">
+                <p class="container__visit-wrap-text">Подготовка пациента<br><span>к процедуре сдачи мочи, кала</span>
+                </p>
+                <svg width="126" height="127" viewBox="0 0 126 127" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M47.1424 84.3326L83.6188 47.8563C90.8135 40.6615 90.8135 28.9965 83.6188 21.8017C76.424 14.6069 64.759 14.6069 57.5642 21.8017L21.0878 58.2781C13.8931 65.4728 13.8931 77.1379 21.0878 84.3326C28.2826 91.5274 39.9476 91.5274 47.1424 84.3326Z"
+                    stroke="#E4E3FF" stroke-width="5.21091" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M65.3805 66.0946V66.0946C53.6726 61.0769 44.3436 51.7479 39.3259 40.04V40.04"
+                    stroke="#E4E3FF" stroke-width="5.21091" stroke-linecap="round" stroke-linejoin="round" />
+                  <circle cx="86.2243" cy="86.9393" r="20.8437" stroke="#E4E3FF" stroke-width="5.21091"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M99.2515 73.9121L73.1969 99.9667" stroke="#E4E3FF" stroke-width="5.21091"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </li>
+            <li class="container__visit-wrap-item">
+              <a href="#">
+                <p class="container__visit-wrap-text">Подготовка<br><span>для сдачи мазков из зева и носа</span></p>
+                <svg width="126" height="127" viewBox="0 0 126 127" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M47.1424 84.3326L83.6188 47.8563C90.8135 40.6615 90.8135 28.9965 83.6188 21.8017C76.424 14.6069 64.759 14.6069 57.5642 21.8017L21.0878 58.2781C13.8931 65.4728 13.8931 77.1379 21.0878 84.3326C28.2826 91.5274 39.9476 91.5274 47.1424 84.3326Z"
+                    stroke="#E4E3FF" stroke-width="5.21091" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M65.3805 66.0946V66.0946C53.6726 61.0769 44.3436 51.7479 39.3259 40.04V40.04"
+                    stroke="#E4E3FF" stroke-width="5.21091" stroke-linecap="round" stroke-linejoin="round" />
+                  <circle cx="86.2243" cy="86.9393" r="20.8437" stroke="#E4E3FF" stroke-width="5.21091"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M99.2515 73.9121L73.1969 99.9667" stroke="#E4E3FF" stroke-width="5.21091"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </li>
+            <li class="container__visit-wrap-item">
+              <a href="visit-card.html">
+                <p class="container__visit-wrap-text">Подготовка<br><span>для сдачи соскоба ногтевой<br>пластины и
+                    кожи</span></p>
+                <svg width="126" height="127" viewBox="0 0 126 127" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M47.1424 84.3326L83.6188 47.8563C90.8135 40.6615 90.8135 28.9965 83.6188 21.8017C76.424 14.6069 64.759 14.6069 57.5642 21.8017L21.0878 58.2781C13.8931 65.4728 13.8931 77.1379 21.0878 84.3326C28.2826 91.5274 39.9476 91.5274 47.1424 84.3326Z"
+                    stroke="#E4E3FF" stroke-width="5.21091" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M65.3805 66.0946V66.0946C53.6726 61.0769 44.3436 51.7479 39.3259 40.04V40.04"
+                    stroke="#E4E3FF" stroke-width="5.21091" stroke-linecap="round" stroke-linejoin="round" />
+                  <circle cx="86.2243" cy="86.9393" r="20.8437" stroke="#E4E3FF" stroke-width="5.21091"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M99.2515 73.9121L73.1969 99.9667" stroke="#E4E3FF" stroke-width="5.21091"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </li>
+            <li class="container__visit-wrap-item">
+              <a href="#">
+                <p class="container__visit-wrap-text">Забор анализов на дому<br><span>взрослым и детям</span></p>
+                <svg width="126" height="127" viewBox="0 0 126 127" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M47.1424 84.3326L83.6188 47.8563C90.8135 40.6615 90.8135 28.9965 83.6188 21.8017C76.424 14.6069 64.759 14.6069 57.5642 21.8017L21.0878 58.2781C13.8931 65.4728 13.8931 77.1379 21.0878 84.3326C28.2826 91.5274 39.9476 91.5274 47.1424 84.3326Z"
+                    stroke="#E4E3FF" stroke-width="5.21091" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M65.3805 66.0946V66.0946C53.6726 61.0769 44.3436 51.7479 39.3259 40.04V40.04"
+                    stroke="#E4E3FF" stroke-width="5.21091" stroke-linecap="round" stroke-linejoin="round" />
+                  <circle cx="86.2243" cy="86.9393" r="20.8437" stroke="#E4E3FF" stroke-width="5.21091"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M99.2515 73.9121L73.1969 99.9667" stroke="#E4E3FF" stroke-width="5.21091"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contacts" class="footer">
+    <div class="container">
+      <div class="footer__container-top">
+        <div class="footer__container-info">
+          <ul class="footer__list-info">
+            <li class="footer__list-info">Лицензии</li>
+            <li class="footer__list-info">Контакты контролирующих органов</li>
+            <li class="footer__list-info">Нормативные документы</li>
+          </ul>
+          <button class="footer__btn-info bth-reset">Написать гендиректору
+            <svg class="footer__btn-icon" width="35" height="36" viewBox="0 0 35 36" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <circle cx="17.5138" cy="18.0416" r="17.1275" fill="white" />
+              <path d="M23.2933 21.239V12.2622M23.2933 12.2622H14.3165M23.2933 12.2622L11.7352 23.8203" stroke="#535353"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <div class="footer__container-contacts">
+          <ul class="footer__contacts-list-tel">
+            <li class="footer__contacts-item-tel">
+              <a class="footer__contacts-link" href="tel:+74955557177">+7(495)555-71-77</a>
+            </li>
+            <li class="footer__contacts-item-tel">
+              <a class="footer__contacts-link" href="tel:+79953009911">+7(995)300-99-11</a>
+            </li>
+            <li class="footer__contacts-item-tel">
+              <a class="footer__contacts-link" href="tel:+79951009911">+7(995)100-99-11</a>
+            </li>
+          </ul>
+          <div class="footer__container-address">
+            <address class="footer__address">
+              <svg class="footer__address-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M19.5526 12.0247C19.5526 16.8573 14.267 20.117 12.7388 20.9584C12.4807 21.1005 12.1786 21.1005 11.9204 20.9584C10.3922 20.117 5.10669 16.8573 5.10669 12.0247C5.10669 7.69093 8.60645 4.80176 12.3296 4.80176C16.1819 4.80176 19.5526 7.69093 19.5526 12.0247Z"
+                  stroke="#897CFF" stroke-width="2" />
+                <circle cx="12.3296" cy="12.0241" r="2.85223" stroke="#897CFF" stroke-width="2" />
+              </svg>
+              <div>
+                <p class="footer__address--text">г. Лыткарино, кв-л 3A, д.29</p>
+                <br>
+                <p class="footer__address--text">г. Лыткарино, кв-л 2, д.13</p>
+              </div>
+            </address>
+          </div>
+          <ul class="footer__contacts-list-icon">
+            <li class="footer__contacts-item-icon">
+              <a href="#">
+                <svg width="43" height="42" viewBox="0 0 43 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M21.7177 3.4824C31.2433 3.4824 38.993 11.2321 38.993 20.7577C38.993 30.2833 31.2433 38.033 21.7177 38.033C12.1921 38.033 4.44236 30.2833 4.44236 20.7577C4.44236 11.2321 12.1921 3.4824 21.7177 3.4824ZM21.7177 0.0273438C10.2693 0.0273438 0.987305 9.30936 0.987305 20.7577C0.987305 32.206 10.2693 41.488 21.7177 41.488C33.166 41.488 42.448 32.206 42.448 20.7577C42.448 9.30936 33.166 0.0273438 21.7177 0.0273438ZM11.4026 31.1229L12.8606 25.8004C11.9623 24.2421 11.489 22.4749 11.489 20.6644C11.4907 14.9998 16.098 10.3925 21.7608 10.3925C24.5093 10.3942 27.0885 11.4636 29.0268 13.4053C30.9669 15.3471 32.0345 17.928 32.0327 20.673C32.031 26.3376 27.422 30.9449 21.7608 30.9449C20.042 30.9449 18.3472 30.5131 16.8478 29.6942L11.4026 31.1229ZM17.1 27.8354C18.5476 28.694 19.9297 29.2105 21.7574 29.2105C26.4632 29.2105 30.2966 25.3806 30.2983 20.673C30.3 15.9552 26.4839 12.1304 21.7643 12.1287C17.0551 12.1287 13.2251 15.9586 13.2234 20.6661C13.2234 22.5872 13.7866 24.0279 14.7315 25.5326L13.8695 28.6836L17.1 27.8354ZM26.9365 23.1158C26.8726 23.0087 26.7016 22.9447 26.4442 22.8152C26.1868 22.6873 24.9257 22.0654 24.6907 21.9808C24.4558 21.8944 24.2848 21.8529 24.1137 22.1086C23.9427 22.366 23.4504 22.943 23.3018 23.1158C23.1515 23.2868 23.0029 23.3093 22.7455 23.1797C22.4881 23.0519 21.6624 22.7806 20.6811 21.9065C19.9176 21.2259 19.4028 20.3846 19.2525 20.1289C19.1022 19.8715 19.2369 19.7333 19.3648 19.6054L19.75 19.1563L20.0074 18.7278C20.0938 18.5568 20.0506 18.4065 19.9867 18.2787L19.1955 16.3732C18.9864 15.8722 18.7757 15.9413 18.6185 15.9327L18.1244 15.9206C17.9534 15.9206 17.6752 15.9845 17.4403 16.2419C17.2054 16.4993 16.542 17.1195 16.542 18.3841C16.542 19.6469 17.461 20.8683 17.5906 21.0393C17.7184 21.2103 19.401 23.8033 21.9751 24.9141C22.5866 25.1784 23.0651 25.3374 23.4383 25.4548C24.0533 25.6501 24.613 25.6224 25.0552 25.5568C25.5476 25.4825 26.5737 24.9366 26.788 24.3371C27.0004 23.736 27.0004 23.2229 26.9365 23.1158Z"
+                    fill="#897CFF" />
+                </svg>
+              </a>
+            </li>
+            <li class="footer__contacts-item-icon">
+              <a href="#">
+                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M21.1786 0.0273438C9.73026 0.0273438 0.448242 9.30936 0.448242 20.7577C0.448242 32.206 9.73026 41.488 21.1786 41.488C32.6269 41.488 41.9089 32.206 41.9089 20.7577C41.9089 9.30936 32.6269 0.0273438 21.1786 0.0273438ZM21.1786 3.4824C30.7042 3.4824 38.4539 11.2321 38.4539 20.7577C38.4539 30.2833 30.7042 38.033 21.1786 38.033C11.653 38.033 3.9033 30.2833 3.9033 20.7577C3.9033 11.2321 11.653 3.4824 21.1786 3.4824ZM25.8291 29.2036C26.1072 29.4023 26.4648 29.4506 26.7844 29.3297C27.104 29.2088 27.3407 28.9358 27.4098 28.6041C28.1613 25.0765 29.9821 16.1469 30.6645 12.9389C30.7163 12.697 30.6316 12.4466 30.4416 12.2842C30.2516 12.1235 29.9873 12.0769 29.7523 12.1632C26.1314 13.5038 14.9768 17.6879 10.4178 19.3757C10.1276 19.4828 9.93929 19.7609 9.94965 20.0667C9.96002 20.3725 10.1656 20.6368 10.461 20.7249C12.5064 21.3364 15.191 22.1881 15.191 22.1881C15.191 22.1881 16.4434 25.9766 17.0982 27.9028C17.1794 28.1429 17.3694 28.3346 17.6182 28.3986C17.8686 28.4642 18.133 28.3968 18.3195 28.2206C19.3699 27.229 20.9937 25.6967 20.9937 25.6967C20.9937 25.6967 24.0791 27.958 25.8291 29.2036ZM16.3191 21.7096L17.7702 26.4931L18.0915 23.463C18.0915 23.463 23.6939 18.41 26.8881 15.5285C26.9831 15.4455 26.9952 15.3039 26.9174 15.2037C26.8397 15.1052 26.6998 15.081 26.5927 15.1484C22.8906 17.5117 16.3191 21.7096 16.3191 21.7096Z"
+                    fill="#897CFF" />
+                </svg>
+              </a>
+            </li>
+            <li class="footer__contacts-item-icon">
+              <a href="#">
+                <svg width="43" height="42" viewBox="0 0 43 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M21.6395 0.0273438C10.1912 0.0273438 0.90918 9.30936 0.90918 20.7577C0.90918 32.206 10.1912 41.488 21.6395 41.488C33.0879 41.488 42.3699 32.206 42.3699 20.7577C42.3699 9.30936 33.0879 0.0273438 21.6395 0.0273438ZM21.6395 3.4824C31.1651 3.4824 38.9148 11.2321 38.9148 20.7577C38.9148 30.2833 31.1651 38.033 21.6395 38.033C12.1139 38.033 4.36424 30.2833 4.36424 20.7577C4.36424 11.2321 12.1139 3.4824 21.6395 3.4824ZM29.6639 13.6852C29.1215 13.1859 26.9258 11.5932 22.0369 11.5707C22.0369 11.5707 16.2704 11.2235 13.4597 13.8027C11.8963 15.3661 11.3452 17.6551 11.2864 20.4951C11.2294 23.3352 11.1534 28.6542 16.2825 30.0967L16.2876 30.0984L16.2842 32.2993C16.2842 32.2993 16.2514 33.1907 16.8387 33.3738C17.5487 33.5932 17.9651 32.916 18.6423 32.1853C19.0154 31.7845 19.5285 31.1954 19.9155 30.7463C23.4223 31.04 26.1207 30.3662 26.4265 30.2677C27.1348 30.0363 31.1427 29.5232 31.794 24.2041C32.466 18.7192 31.4674 15.2503 29.6639 13.6852ZM30.2582 23.8085C29.7071 28.25 26.4593 28.5299 25.8599 28.7233C25.6042 28.8045 23.234 29.3936 20.2558 29.2001C20.2558 29.2001 18.0359 31.8778 17.3432 32.574C17.2343 32.6828 17.1065 32.7277 17.0218 32.707C16.9026 32.6777 16.8698 32.536 16.8716 32.3287L16.8906 28.6715H16.8888C12.551 27.4657 12.8049 22.9378 12.8533 20.5659C12.9034 18.1958 13.3491 16.2523 14.6724 14.9463C17.0495 12.7921 21.947 13.1151 21.947 13.1151C26.0827 13.1324 28.0642 14.3779 28.5237 14.796C30.0491 16.102 30.8265 19.2271 30.2582 23.8085ZM22.4515 24.0746C22.4515 24.0746 22.8402 24.1091 23.0492 23.85L23.4586 23.3369C23.6538 23.0812 24.1289 22.9188 24.5953 23.178C25.2103 23.5269 26.0067 24.0728 26.5526 24.5807C26.8532 24.8364 26.9223 25.2095 26.7185 25.6034L26.7167 25.6103C26.506 25.9835 26.2244 26.3307 25.8668 26.6572L25.8599 26.6624C25.4591 26.9975 24.9979 27.191 24.5055 27.0304L24.4951 27.0165C23.6106 26.7678 21.4875 25.6846 20.1331 24.6049C17.9184 22.8566 16.3447 19.9751 15.9093 18.4307L15.8955 18.4221C15.7348 17.928 15.93 17.4668 16.2635 17.0677L16.2704 17.0591C16.5951 16.7032 16.9441 16.4216 17.3155 16.2108L17.3242 16.2091C17.718 16.0035 18.0912 16.0726 18.3451 16.375C18.6785 16.7187 19.3074 17.5497 19.7479 18.3322C20.007 18.797 19.8446 19.272 19.5907 19.469L19.0759 19.8767C18.8167 20.0857 18.8513 20.4744 18.8513 20.4744C18.8513 20.4744 19.6114 23.349 22.4515 24.0746ZM26.924 21.6923H26.9206C26.7686 21.6923 26.6459 21.5696 26.6442 21.4176C26.6321 19.7505 26.1311 18.4221 25.1568 17.4702C24.179 16.5183 22.9455 16.0312 21.4875 16.0208C21.3355 16.0191 21.2128 15.8947 21.2146 15.7427C21.2146 15.5907 21.3389 15.468 21.491 15.468H21.4927C23.0976 15.4801 24.4606 16.0208 25.542 17.0746C26.6269 18.1336 27.1832 19.5933 27.197 21.4124C27.1987 21.5662 27.0761 21.6906 26.924 21.6923ZM25.4677 21.1239H25.4626C25.3088 21.1205 25.1879 20.9926 25.1913 20.8406C25.2138 19.8957 24.9426 19.1304 24.3673 18.5015C23.792 17.8727 23.0043 17.5307 21.9574 17.4547C21.8054 17.4426 21.6914 17.3113 21.7017 17.1593C21.7121 17.0055 21.8451 16.8915 21.9971 16.9036C23.1753 16.99 24.1099 17.4011 24.775 18.1284C25.4418 18.8574 25.7683 19.773 25.7441 20.8527C25.7407 21.003 25.618 21.1239 25.4677 21.1239ZM24.0494 20.6471C23.9026 20.6471 23.7817 20.5331 23.773 20.3846C23.7264 19.4465 23.2841 18.987 22.3824 18.9386C22.2303 18.93 22.1129 18.8004 22.1215 18.6484C22.1302 18.4946 22.2597 18.3789 22.4117 18.3858C23.6037 18.4514 24.2654 19.1321 24.3258 20.3569C24.3328 20.5107 24.2153 20.6402 24.0633 20.6471H24.0494Z"
+                    fill="#897CFF" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__container-bootom">
+        <p class="footer__bootom-text">Семейная клиника «Здоровые дети» © 2012</p>
+      </div>
+    </div>
+  </footer>
+
+  <script defer src="js/main.js"></script>
+</body>
+
+</html>
