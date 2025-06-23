@@ -136,6 +136,10 @@ body {
   color: var(--color-gray-brown);
 }
 
+.surgery__svg--mobile {
+  display: none;
+}
+
 .surgery__info-title span {
   color: var(--color-slate-blue);
 }
@@ -250,34 +254,8 @@ body {
   counter-reset: card;
 }
 
-.help__list {
-  grid-template-areas:
-    "one two three"
-    "four five six";
-}
-
-.help__item:nth-child(1) {
-  grid-area: one;
-}
-
-.help__item:nth-child(2) {
-  grid-area: two;
-}
-
-.help__item:nth-child(3) {
-  grid-area: three;
-}
-
-.help__item:nth-child(4) {
-  grid-area: four;
-}
-
-.help__item:nth-child(5) {
-  grid-area: five;
-}
-
-.help__item:nth-child(6) {
-  grid-area: six;
+.help__list--mob {
+  display: none;
 }
 
 .help__item {
@@ -361,6 +339,10 @@ body {
   right: 0;
 }
 
+.jobs__item--svg-mob {
+  display: none;
+}
+
 /* technologies */
 .technologies {
   padding-top: 60px;
@@ -428,4 +410,8 @@ body {
 .technologies__item-text span {
   font-weight: 500;
   color: var(--color-slate-blue);
+}
+
+.technologies-swiper {
+  display: none;
 }
