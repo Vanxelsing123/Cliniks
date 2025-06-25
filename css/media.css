@@ -1,4 +1,4 @@
-@import url("/css/media/surgery-media.css");
+@import url("media/surgery-media.css");
 
 @media (max-width: 1200px) {
   .header__text {
