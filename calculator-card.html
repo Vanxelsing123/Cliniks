@@ -31,7 +31,7 @@
                 <div class="header__nav-dropdown ">
                   <a class="header__nav-link-dropdown" href="news.html">Новости</a>
                   <a class="header__nav-link-dropdown" href="#">О нас</a>
-                  <a class="header__nav-link-dropdown" href="#">Подготовка<br>к визиту</a>
+                  <a class="header__nav-link-dropdown" href="visit-card.html">Подготовка<br>к визиту</a>
                   <a class="header__nav-link-dropdown" href="#">Налоговый вычет</a>
                 </div>
               </li>
@@ -175,7 +175,7 @@
               <div class="header__nav-dropdown dropdown-content">
                 <a class="header__nav-link-dropdown" href="news.html">Новости</a>
                 <a class="header__nav-link-dropdown" href="#">О нас</a>
-                <a class="header__nav-link-dropdown" href="#">Подготовка к визиту</a>
+                <a class="header__nav-link-dropdown" href="visit-card.html">Подготовка к визиту</a>
                 <a class="header__nav-link-dropdown" href="#">Налоговый вычет</a>
               </div>
             </li>
@@ -202,10 +202,1036 @@
   </header>
 
   <main class="main">
-    <section class="calculator">
+    <section class="calculator__card">
       <div class="container">
+        <div class="calculator__card-container">
+          <div class="calculator__card-wrap">
+            <h1 class="calculator__card-title">
+              <svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0.564864 5.87535L7.19169 1.23657C8.11957 0.587052 9.39453 1.25087 9.39453 2.3835L9.39453 11.0057C9.39453 12.1383 8.11957 12.8021 7.19168 12.1526L0.564862 7.51381C-0.00385492 7.11571 -0.00385312 6.27345 0.564864 5.87535Z"
+                  fill="#B2ABFC"></path>
+              </svg>
+              <a class="calculator__card-link" href="calculator.html">Лаборатория ДиаЛаб</a>
+            </h1>
+            <p class="calculator__card-text">Здесь Вы можете выбрать необходимые<br>анализы, кликнув на них в таблице
+            </p>
+          </div>
+          <div class="calculator__card-contacts">
+            <p class="calculator__card-contacts-text">
+              Если Вы по какой-то причинене<br>нашли нужный Вам анализ,<br>позвоните по телефону
+            </p>
+            <a class="calculator__card-contacts-link" href="tel:+74955557177">+7(495)555-71-77</a>
+          </div>
+        </div>
 
-      </div>
+        <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="calculator__card-form" id="">
+          <svg width="40" height="40" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="22.5556" cy="22.5483" r="11.8676" stroke="#8E9CC0" stroke-width="2" />
+            <path d="M40.3569 40.3498L34.4231 34.416" stroke="#8E9CC0" stroke-width="2" stroke-linecap="round" />
+          </svg>
+          <input class="calculator__card-input" type="text" id="card-input" placeholder="Введите название">
+        </form>
+
+        <div class="calculator__card-accardion">
+          <div class="calculator__card-accardion-item" data-category="generalclinical">
+            <div class="calculator__card-accardion-title">
+              <svg class="  accordion__svg" width="11" height="13" viewBox="0 0 11 13" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.61678 7.5038L2.98996 12.1426C2.06207 12.7921 0.787108 12.1283 0.787108 10.9957V2.37349C0.787108 1.24086 2.06207 0.577043 2.98996 1.22656L9.61678 5.86534C10.1855 6.26344 10.1855 7.1057 9.61678 7.5038Z"
+                  fill="#B2ABFC" />
+              </svg>
+              Общеклинические исследования
+            </div>
+            <div class="calculator__card-price-content">
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">З102, З103, З104</span>
+                <p class="calculator__card-block-text">
+                  Комплексная оценка интерферонового статуса
+                  с определением чувствительности к препаратам (сывороточный ИФН, спонтанный ИФН,альфа и гамма ИФН,
+                  чувствительность к ИФН- реаферон, интрон А, реальдирон, роферон, гаммаферон, чувствительность к
+                  индукторам ИФН -ам)
+                </p>
+                <p class="calculator__card-block-price">1 430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Комплексный анализ ацилкарнитинов (свободный карнитин, ацетилкарнитин, пропионилкарнитин и другие.
+                  Всего 32 показателя ). Метод ВЭЖХ-МС
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">250₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">K1</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">1 000₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">1 000₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">K2</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">687₽</p>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="calculator__card-accardion">
+          <div class="calculator__card-accardion-item" data-category="generalclinical">
+            <div class="calculator__card-accardion-title">
+              <svg class="  accordion__svg" width="11" height="13" viewBox="0 0 11 13" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.61678 7.5038L2.98996 12.1426C2.06207 12.7921 0.787108 12.1283 0.787108 10.9957V2.37349C0.787108 1.24086 2.06207 0.577043 2.98996 1.22656L9.61678 5.86534C10.1855 6.26344 10.1855 7.1057 9.61678 7.5038Z"
+                  fill="#B2ABFC" />
+              </svg>
+              Микроскопические исследова
+            </div>
+            <div class="calculator__card-price-content">
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Комплексный анализ ацилкарнитинов (свободный карнитин, ацетилкарнитин, пропионилкарнитин и другие.
+                  Всего 32 показателя ). Метод ВЭЖХ-МС
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">250₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">K1</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">1 000₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">K2</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">687₽</p>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="calculator__card-accardion">
+          <div class="calculator__card-accardion-item" data-category="generalclinical">
+            <div class="calculator__card-accardion-title">
+              <svg class="  accordion__svg" width="11" height="13" viewBox="0 0 11 13" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.61678 7.5038L2.98996 12.1426C2.06207 12.7921 0.787108 12.1283 0.787108 10.9957V2.37349C0.787108 1.24086 2.06207 0.577043 2.98996 1.22656L9.61678 5.86534C10.1855 6.26344 10.1855 7.1057 9.61678 7.5038Z"
+                  fill="#B2ABFC" />
+              </svg>
+              Гистологические исследования
+            </div>
+            <div class="calculator__card-price-content">
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Комплексный анализ ацилкарнитинов (свободный карнитин, ацетилкарнитин, пропионилкарнитин и другие.
+                  Всего 32 показателя ). Метод ВЭЖХ-МС
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">250₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">K1</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">1 000₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">K2</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">687₽</p>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="calculator__card-accardion">
+          <div class="calculator__card-accardion-item" data-category="generalclinical">
+            <div class="calculator__card-accardion-title">
+              <svg class="  accordion__svg" width="11" height="13" viewBox="0 0 11 13" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.61678 7.5038L2.98996 12.1426C2.06207 12.7921 0.787108 12.1283 0.787108 10.9957V2.37349C0.787108 1.24086 2.06207 0.577043 2.98996 1.22656L9.61678 5.86534C10.1855 6.26344 10.1855 7.1057 9.61678 7.5038Z"
+                  fill="#B2ABFC" />
+              </svg>
+              Иммунологическое исследования
+            </div>
+            <div class="calculator__card-price-content">
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Комплексный анализ ацилкарнитинов (свободный карнитин, ацетилкарнитин, пропионилкарнитин и другие.
+                  Всего 32 показателя ). Метод ВЭЖХ-МС
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">250₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">K1</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">1 000₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">K2</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">687₽</p>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="calculator__card-accardion">
+          <div class="calculator__card-accardion-item" data-category="generalclinical">
+            <div class="calculator__card-accardion-title">
+              <svg class="  accordion__svg" width="11" height="13" viewBox="0 0 11 13" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.61678 7.5038L2.98996 12.1426C2.06207 12.7921 0.787108 12.1283 0.787108 10.9957V2.37349C0.787108 1.24086 2.06207 0.577043 2.98996 1.22656L9.61678 5.86534C10.1855 6.26344 10.1855 7.1057 9.61678 7.5038Z"
+                  fill="#B2ABFC" />
+              </svg>
+              Гастроэнтерологический исследования
+            </div>
+            <div class="calculator__card-price-content">
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Комплексный анализ ацилкарнитинов (свободный карнитин, ацетилкарнитин, пропионилкарнитин и другие.
+                  Всего 32 показателя ). Метод ВЭЖХ-МС
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">250₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">K1</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">1 000₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">K2</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">687₽</p>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="calculator__card-accardion">
+          <div class="calculator__card-accardion-item" data-category="generalclinical">
+            <div class="calculator__card-accardion-title">
+              <svg class="  accordion__svg" width="11" height="13" viewBox="0 0 11 13" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.61678 7.5038L2.98996 12.1426C2.06207 12.7921 0.787108 12.1283 0.787108 10.9957V2.37349C0.787108 1.24086 2.06207 0.577043 2.98996 1.22656L9.61678 5.86534C10.1855 6.26344 10.1855 7.1057 9.61678 7.5038Z"
+                  fill="#B2ABFC" />
+              </svg>
+              Общеклинические исследования
+            </div>
+            <div class="calculator__card-price-content">
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">З102, З103, З104</span>
+                <p class="calculator__card-block-text">
+                  Комплексная оценка интерферонового статуса
+                  с определением чувствительности к препаратам (сывороточный ИФН, спонтанный ИФН,альфа и гамма ИФН,
+                  чувствительность к ИФН- реаферон, интрон А, реальдирон, роферон, гаммаферон, чувствительность к
+                  индукторам ИФН -ам)
+                </p>
+                <p class="calculator__card-block-price">1 430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Комплексный анализ ацилкарнитинов (свободный карнитин, ацетилкарнитин, пропионилкарнитин и другие.
+                  Всего 32 показателя ). Метод ВЭЖХ-МС
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">250₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">K1</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">1 000₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">1 000₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">K2</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">687₽</p>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="calculator__card-accardion">
+          <div class="calculator__card-accardion-item" data-category="generalclinical">
+            <div class="calculator__card-accardion-title">
+              <svg class="  accordion__svg" width="11" height="13" viewBox="0 0 11 13" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.61678 7.5038L2.98996 12.1426C2.06207 12.7921 0.787108 12.1283 0.787108 10.9957V2.37349C0.787108 1.24086 2.06207 0.577043 2.98996 1.22656L9.61678 5.86534C10.1855 6.26344 10.1855 7.1057 9.61678 7.5038Z"
+                  fill="#B2ABFC" />
+              </svg>
+              Микроскопические исследова
+            </div>
+            <div class="calculator__card-price-content">
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Комплексный анализ ацилкарнитинов (свободный карнитин, ацетилкарнитин, пропионилкарнитин и другие.
+                  Всего 32 показателя ). Метод ВЭЖХ-МС
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">250₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">K1</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">1 000₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">K2</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">687₽</p>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="calculator__card-accardion">
+          <div class="calculator__card-accardion-item" data-category="generalclinical">
+            <div class="calculator__card-accardion-title">
+              <svg class="  accordion__svg" width="11" height="13" viewBox="0 0 11 13" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.61678 7.5038L2.98996 12.1426C2.06207 12.7921 0.787108 12.1283 0.787108 10.9957V2.37349C0.787108 1.24086 2.06207 0.577043 2.98996 1.22656L9.61678 5.86534C10.1855 6.26344 10.1855 7.1057 9.61678 7.5038Z"
+                  fill="#B2ABFC" />
+              </svg>
+              Гистологические исследования
+            </div>
+            <div class="calculator__card-price-content">
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Комплексный анализ ацилкарнитинов (свободный карнитин, ацетилкарнитин, пропионилкарнитин и другие.
+                  Всего 32 показателя ). Метод ВЭЖХ-МС
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">250₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">K1</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">1 000₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">K2</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">687₽</p>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="calculator__card-accardion">
+          <div class="calculator__card-accardion-item" data-category="generalclinical">
+            <div class="calculator__card-accardion-title">
+              <svg class="  accordion__svg" width="11" height="13" viewBox="0 0 11 13" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.61678 7.5038L2.98996 12.1426C2.06207 12.7921 0.787108 12.1283 0.787108 10.9957V2.37349C0.787108 1.24086 2.06207 0.577043 2.98996 1.22656L9.61678 5.86534C10.1855 6.26344 10.1855 7.1057 9.61678 7.5038Z"
+                  fill="#B2ABFC" />
+              </svg>
+              Иммунологическое исследования
+            </div>
+            <div class="calculator__card-price-content">
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Комплексный анализ ацилкарнитинов (свободный карнитин, ацетилкарнитин, пропионилкарнитин и другие.
+                  Всего 32 показателя ). Метод ВЭЖХ-МС
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">250₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">K1</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">1 000₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">K2</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">687₽</p>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="calculator__card-accardion">
+          <div class="calculator__card-accardion-item" data-category="generalclinical">
+            <div class="calculator__card-accardion-title">
+              <svg class="  accordion__svg" width="11" height="13" viewBox="0 0 11 13" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.61678 7.5038L2.98996 12.1426C2.06207 12.7921 0.787108 12.1283 0.787108 10.9957V2.37349C0.787108 1.24086 2.06207 0.577043 2.98996 1.22656L9.61678 5.86534C10.1855 6.26344 10.1855 7.1057 9.61678 7.5038Z"
+                  fill="#B2ABFC" />
+              </svg>
+              Гастроэнтерологический исследования
+            </div>
+            <div class="calculator__card-price-content">
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Комплексный анализ ацилкарнитинов (свободный карнитин, ацетилкарнитин, пропионилкарнитин и другие.
+                  Всего 32 показателя ). Метод ВЭЖХ-МС
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">250₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">K1</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">1 000₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">K2</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">687₽</p>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="calculator__card-accardion">
+          <div class="calculator__card-accardion-item" data-category="generalclinical">
+            <div class="calculator__card-accardion-title">
+              <svg class="  accordion__svg" width="11" height="13" viewBox="0 0 11 13" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.61678 7.5038L2.98996 12.1426C2.06207 12.7921 0.787108 12.1283 0.787108 10.9957V2.37349C0.787108 1.24086 2.06207 0.577043 2.98996 1.22656L9.61678 5.86534C10.1855 6.26344 10.1855 7.1057 9.61678 7.5038Z"
+                  fill="#B2ABFC" />
+              </svg>
+              Общеклинические исследования
+            </div>
+            <div class="calculator__card-price-content">
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">З102, З103, З104</span>
+                <p class="calculator__card-block-text">
+                  Комплексная оценка интерферонового статуса
+                  с определением чувствительности к препаратам (сывороточный ИФН, спонтанный ИФН,альфа и гамма ИФН,
+                  чувствительность к ИФН- реаферон, интрон А, реальдирон, роферон, гаммаферон, чувствительность к
+                  индукторам ИФН -ам)
+                </p>
+                <p class="calculator__card-block-price">1 430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Комплексный анализ ацилкарнитинов (свободный карнитин, ацетилкарнитин, пропионилкарнитин и другие.
+                  Всего 32 показателя ). Метод ВЭЖХ-МС
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">250₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">K1</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">1 000₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">1 000₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">K2</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">687₽</p>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="calculator__card-accardion">
+          <div class="calculator__card-accardion-item" data-category="generalclinical">
+            <div class="calculator__card-accardion-title">
+              <svg class="  accordion__svg" width="11" height="13" viewBox="0 0 11 13" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.61678 7.5038L2.98996 12.1426C2.06207 12.7921 0.787108 12.1283 0.787108 10.9957V2.37349C0.787108 1.24086 2.06207 0.577043 2.98996 1.22656L9.61678 5.86534C10.1855 6.26344 10.1855 7.1057 9.61678 7.5038Z"
+                  fill="#B2ABFC" />
+              </svg>
+              Микроскопические исследова
+            </div>
+            <div class="calculator__card-price-content">
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Комплексный анализ ацилкарнитинов (свободный карнитин, ацетилкарнитин, пропионилкарнитин и другие.
+                  Всего 32 показателя ). Метод ВЭЖХ-МС
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">250₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">K1</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">1 000₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">K2</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">687₽</p>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="calculator__card-accardion">
+          <div class="calculator__card-accardion-item" data-category="generalclinical">
+            <div class="calculator__card-accardion-title">
+              <svg class="  accordion__svg" width="11" height="13" viewBox="0 0 11 13" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.61678 7.5038L2.98996 12.1426C2.06207 12.7921 0.787108 12.1283 0.787108 10.9957V2.37349C0.787108 1.24086 2.06207 0.577043 2.98996 1.22656L9.61678 5.86534C10.1855 6.26344 10.1855 7.1057 9.61678 7.5038Z"
+                  fill="#B2ABFC" />
+              </svg>
+              Гистологические исследования
+            </div>
+            <div class="calculator__card-price-content">
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Комплексный анализ ацилкарнитинов (свободный карнитин, ацетилкарнитин, пропионилкарнитин и другие.
+                  Всего 32 показателя ). Метод ВЭЖХ-МС
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">250₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">K1</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">1 000₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">K2</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">687₽</p>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="calculator__card-accardion">
+          <div class="calculator__card-accardion-item" data-category="generalclinical">
+            <div class="calculator__card-accardion-title">
+              <svg class="  accordion__svg" width="11" height="13" viewBox="0 0 11 13" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.61678 7.5038L2.98996 12.1426C2.06207 12.7921 0.787108 12.1283 0.787108 10.9957V2.37349C0.787108 1.24086 2.06207 0.577043 2.98996 1.22656L9.61678 5.86534C10.1855 6.26344 10.1855 7.1057 9.61678 7.5038Z"
+                  fill="#B2ABFC" />
+              </svg>
+              Иммунологическое исследования
+            </div>
+            <div class="calculator__card-price-content">
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Комплексный анализ ацилкарнитинов (свободный карнитин, ацетилкарнитин, пропионилкарнитин и другие.
+                  Всего 32 показателя ). Метод ВЭЖХ-МС
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">250₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">K1</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">1 000₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">K2</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">687₽</p>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="calculator__card-accardion">
+          <div class="calculator__card-accardion-item" data-category="generalclinical">
+            <div class="calculator__card-accardion-title">
+              <svg class="  accordion__svg" width="11" height="13" viewBox="0 0 11 13" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.61678 7.5038L2.98996 12.1426C2.06207 12.7921 0.787108 12.1283 0.787108 10.9957V2.37349C0.787108 1.24086 2.06207 0.577043 2.98996 1.22656L9.61678 5.86534C10.1855 6.26344 10.1855 7.1057 9.61678 7.5038Z"
+                  fill="#B2ABFC" />
+              </svg>
+              Гастроэнтерологический исследования
+            </div>
+            <div class="calculator__card-price-content">
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Комплексный анализ ацилкарнитинов (свободный карнитин, ацетилкарнитин, пропионилкарнитин и другие.
+                  Всего 32 показателя ). Метод ВЭЖХ-МС
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">250₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">K1</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">1 000₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">П103</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">430₽</p>
+              </button>
+              <button class="calculator__card-price-block bth-reset">
+                <span class="calculator__card-block-span">K2</span>
+                <p class="calculator__card-block-text">
+                  Общий анализ крови (18 параметров) с лейкоцитарной формулой + СОЭ
+                </p>
+                <p class="calculator__card-block-price">687₽</p>
+              </button>
+            </div>
+          </div>
+        </div>
+
     </section>
   </main>
 
@@ -295,6 +1321,7 @@
 
 
   <script defer src="js/main.js"></script>
+  <script defer src="js/accardion-calculator.js"></script>
 </body>
 
 </html>
