@@ -1,6 +1,7 @@
 @import url("./header.css");
 @import url("./footer.css");
 
+
 @font-face {
   font-family: "Inter";
   src: local("InterMedium"), url("../fonts/InterMedium.woff2") format("woff2"),
@@ -146,6 +147,14 @@ body {
   position: absolute;
   top: 35px;
   right: 40px;
+}
+
+.programs__svg--mobile {
+  display: none;
+}
+
+.hidden {
+  display: none;
 }
 
 .programs__children-title {
@@ -539,3 +548,28 @@ body {
 .modal__content-wraps-svg {
   margin-left: auto;
 }
+
+/* Кнопки табов */
+.programs__tab-btn {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  background-color: var(--color-white);
+  cursor: pointer;
+  margin-right: 10px;
+  font-weight: 400;
+  color: var(--color-grey);
+  border-radius: 20px;
+}
+
+.programs__tab-btn.active {
+  background-color: var(--color-slate-blue);
+  color: var(--color-white);
+  
+}
+
+.programs__tabs {
+    display: none;
+  }
+
+
+

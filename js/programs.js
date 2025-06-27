@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const cardiologyBlock = document.querySelector('.programs__cardiology');
-  const svg = cardiologyBlock.querySelector('.programs__svg');
+  const svg = cardiologyBlock.querySelector('.programs__svg--mobile');
   const title = cardiologyBlock.querySelector('.programs__children-title');
   const buttonsContainer = cardiologyBlock.querySelector('.programs__buttons');
   const details = cardiologyBlock.querySelector('.programs__details');
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
     modal.style.display = 'none';
   });
 
-  // Закрытие модального окна при клике вне содержимого
+  // Закрытие модального окна при клике 
   modal.addEventListener('click', (e) => {
     if (e.target === modal) {
       modal.style.display = 'none';
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const programDetails = {
     arrhythmia: `
       <h3>Аритмия, тахикардия</h3>
-      <p>Состав комплексной программы:</p>
+      <p>Состав комплексной <br>программы:</p>
       <ul>
         <li>Консультация врача кардиолога;</li>
         <li>ЭКГ с расшифровкой;</li>
@@ -177,29 +177,37 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   buttonsContainer.addEventListener('click', (e) => {
-    if (e.target.classList.contains('programs__btn')) {
-      const programKey = e.target.dataset.program;
-      if (!programDetails[programKey]) return;
+    
+  if (e.target.classList.contains('programs__btn')) {
+    const programKey = e.target.dataset.program;
+    if (!programDetails[programKey]) return;
 
-      // Скрываем исходные элементы
-      svg.style.display = 'none';
-      title.style.display = 'none';
-      buttonsContainer.style.display = 'none';
+    // Скрываем исходные элементы
+    
+    svg.style.display = 'none';
+    title.style.display = 'none';
+    buttonsContainer.style.display = 'none';
+    
 
-      // Показываем и наполняем блок с деталями
-      details.innerHTML = programDetails[programKey];
-      const h3 = details.querySelector('h3');
-      if (h3) {
-        h3.style.fontSize = '38px'; // здесь можно изменить размер
-      }
+    // Показываем и наполняем блок с деталями
+    details.innerHTML = programDetails[programKey];
+ 
+    const h3 = details.querySelector('h3');
+    const ul = details.querySelector('ul');
 
-      details.style.display = 'block';
+    if (h3 && window.innerWidth <= 768) {
+  h3.style.fontSize = '30px';
+  h3.style.maxWidth = '300px';
+  ul.style.maxWidth = '313px';
+}
 
-      // Показываем кнопку закрытия
-      closeBtn.style.display = 'flex';
+    details.style.display = 'block';
+    
 
-    }
-  });
+    // Показываем кнопку закрытия
+    closeBtn.style.display = 'flex';
+  }
+});
 
   // Обработка клика по кнопке закрытия деталей
   closeBtn.addEventListener('click', () => {
