@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const cardiologyBlock = document.querySelector('.programs__cardiology');
-  const svg = cardiologyBlock.querySelector('.programs__svg--mobile');
+  const svg = cardiologyBlock.querySelector('.programs__svg');
+  const svgMobile = cardiologyBlock.querySelector('.programs__svg--mobile');
   const title = cardiologyBlock.querySelector('.programs__children-title');
   const buttonsContainer = cardiologyBlock.querySelector('.programs__buttons');
   const details = cardiologyBlock.querySelector('.programs__details');
@@ -184,6 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Скрываем исходные элементы
     
+    svgMobile.style.display = 'none';
     svg.style.display = 'none';
     title.style.display = 'none';
     buttonsContainer.style.display = 'none';
@@ -199,6 +201,7 @@ document.addEventListener('DOMContentLoaded', () => {
   h3.style.fontSize = '30px';
   h3.style.maxWidth = '300px';
   ul.style.maxWidth = '313px';
+  details.style.maxWidth = '300px'
 }
 
     details.style.display = 'block';
@@ -212,6 +215,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Обработка клика по кнопке закрытия деталей
   closeBtn.addEventListener('click', () => {
     svg.style.display = '';
+    svgMobile.style.display = '';
     title.style.display = '';
     buttonsContainer.style.display = 'flex';
 
