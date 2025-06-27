@@ -274,6 +274,7 @@ body {
 .calculator__card-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 55px;
 }
 
@@ -306,6 +307,8 @@ body {
 }
 
 .calculator__card-contacts-text {
+  display: flex;
+  align-items: flex-start;
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
@@ -314,9 +317,15 @@ body {
   color: var(--color-gray-brown);
 }
 
+.calculator__card-contacts-text svg {
+  display: block;
+  margin-right: 10px;
+}
+
 .calculator__card-contacts-link {
   font-weight: 500;
   font-size: 24px;
+  padding-left: 55px;
   line-height: 160%;
   letter-spacing: -0.02em;
   color: var(--color-slate-blue);
@@ -364,6 +373,7 @@ body {
 .accordion__svg {
   margin-right: 5px;
 }
+
 .calculator__card-accardion-title {
   display: flex;
   align-items: center;
@@ -446,4 +456,200 @@ body {
 
 .calculator__card-accardion:not(:last-child) {
   margin-bottom: 10px;
+}
+
+.calculator__card-price-block.active {
+  background-color: #897cff;
+}
+
+.calculator__card-price-block.active .calculator__card-block-span,
+.calculator__card-price-block.active .calculator__card-block-text,
+.calculator__card-price-block.active .calculator__card-block-price {
+  color: #ffffff;
+}
+
+.selected-count {
+  display: block;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 159%;
+  margin-left: auto;
+  white-space: nowrap;
+  color: var(--color-slate-blue);
+}
+
+/* стили для блока итоги */
+.calculator__card-summary {
+  display: none;
+  width: 400px;
+  padding: 25px 30px 5px 30px;
+  border: 1.04px solid #c9c6f0;
+  border-radius: 25px;
+  box-shadow: 0 4px 15px 0 rgba(13, 14, 86, 0.2);
+  background: var(--color-white);
+}
+
+.calculator__summary-count-container {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 21px;
+  padding-bottom: 10px;
+  color: var(--color-dull-grey);
+  border-bottom: 1px solid rgba(140, 133, 218, 0.4);
+}
+
+.calculator__summary-total-container {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  padding-top: 10px;
+  color: var(--color-gray-brown);
+}
+
+.calculator__card-summary .calculator__show-list-btn {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 105%;
+  width: 115%;
+  height: 52px;
+  margin-top: 35px;
+  margin-left: -25px;
+  margin-right: -25px;
+  padding: 10px 5px 10px 40px;
+  color: var(--color-signa-black);
+  border-radius: 32px;
+  background: linear-gradient(133deg, #c8d3ff 0%, #afa7ff 100%);
+}
+
+.calculator__show-btn {
+  margin-left: auto;
+}
+
+/* модалка */
+
+.custom-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(131, 125, 162, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+.custom-modal {
+  max-width: 950px;
+  height: auto;
+  overflow-y: auto;
+  position: relative;
+  padding: 35px 20px 35px 40px;
+  background: var(--color-white);
+  border-radius: 30px;
+  box-shadow: 0 4px 15px rgba(13, 14, 86, 0.2);
+  font-family: "Inter", sans-serif;
+}
+
+.custom-modal-title {
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 156%;
+  letter-spacing: -0.02em;
+  margin-bottom: 30px;
+  color: var(--color-gray-brown);
+}
+
+.custom-modal-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  width: 44px;
+  height: 45px;
+  border-radius: 100px;
+  background-color: var(--color-lavender);
+}
+
+.custom-modal-list {
+  list-style: none;
+  padding: 0;
+  max-height: 50vh;
+  overflow-y: auto;
+}
+
+.custom-modal-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 100%;
+  color: var(--color-dull-grey);
+  padding-top: 35px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgba(140, 133, 218, 0.4);
+}
+.custom-modal-total-sum {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 159%;
+  text-align: right;
+  color: var(--color-gray-brown);
+}
+
+.custom-modal-buttons {
+  display: flex;
+  gap: 40px;
+  justify-content: flex-end;
+  padding-top: 35px;
+}
+
+.share-btn {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 105%;
+  color: var(--color-gray-brown);
+}
+.share-btn svg {
+  margin-right: 10px;
+}
+
+.profile-btn {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 105%;
+  color: var(--color-gray-brown);
+}
+
+.profile-btn svg {
+  margin-right: 10px;
+}
+
+.print-btn {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 105%;
+  color: var(--color-gray-brown);
+}
+
+.print-btn svg {
+  margin-right: 10px;
 }
