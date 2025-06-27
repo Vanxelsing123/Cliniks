@@ -206,8 +206,13 @@
       <div class="container">
         <h1 class="news__title">Новости</h1>
         <div class="container__news">
+          <div class="news__tabs" id="newsTabs">
+          <button class="news__tab-btn active" data-tab="0">Новости клиники</button>
+          <button class="news__tab-btn" data-tab="1">Новые услуги</button>
+          <button class="news__tab-btn" data-tab="2">Комплексные программы</button>
+          </div>
           <ul class="news__list list-reset">
-            <li class="news__item">
+            <li class="news__item" data-tab="0">
               <img class="news__img" src="img/pills.png" alt="Фото Витаминов">
               <div class="news__wrap">
                 <p class="news__text">Комплексные программы</p>
@@ -215,7 +220,7 @@
               </div>
               <h2 class="news__titles">Лечении аллергии<br>стало удобнее и выгоднее</h2>
             </li>
-            <li class="news__item">
+            <li class="news__item" data-tab="0">
               <img class="news__img" src="img/pills.png" alt="Фото Витаминов">
               <div class="news__wrap">
                 <p class="news__text">Комплексные программы</p>
@@ -223,7 +228,7 @@
               </div>
               <h2 class="news__titles">Лечении аллергии<br>стало удобнее и выгоднее</h2>
             </li>
-            <li class="news__item">
+            <li class="news__item" data-tab="1">
               <img class="news__img" src="img/pills.png" alt="Фото Витаминов">
               <div class="news__wrap">
                 <p class="news__text">Комплексные программы</p>
@@ -231,7 +236,7 @@
               </div>
               <h2 class="news__titles">Лечении аллергии<br>стало удобнее и выгоднее</h2>
             </li>
-            <li class="news__item">
+            <li class="news__item" data-tab="1">
               <img class="news__img" src="img/pills.png" alt="Фото Витаминов">
               <div class="news__wrap">
                 <p class="news__text">Комплексные программы</p>
@@ -239,7 +244,7 @@
               </div>
               <h2 class="news__titles">Лечении аллергии<br>стало удобнее и выгоднее</h2>
             </li>
-            <li class="news__item">
+            <li class="news__item" data-tab="2">
               <img class="news__img" src="img/pills.png" alt="Фото Витаминов">
               <div class="news__wrap">
                 <p class="news__text">Комплексные программы</p>
@@ -247,7 +252,7 @@
               </div>
               <h2 class="news__titles">Лечении аллергии<br>стало удобнее и выгоднее</h2>
             </li>
-            <li class="news__item">
+            <li class="news__item" >
               <img class="news__img" src="img/pills.png" alt="Фото Витаминов">
               <div class="news__wrap">
                 <p class="news__text">Комплексные программы</p>
@@ -344,6 +349,7 @@
     </div>
   </footer>
 
+  <script defer src="js/news.tabs.js"></script>
   <script defer src="js/main.js"></script>
 </body>
 
