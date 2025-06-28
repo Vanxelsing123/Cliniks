@@ -546,7 +546,6 @@ body {
 }
 
 .custom-modal {
-  max-width: 950px;
   height: auto;
   overflow-y: auto;
   position: relative;
@@ -614,6 +613,57 @@ body {
   gap: 40px;
   justify-content: flex-end;
   padding-top: 35px;
+}
+
+.custom-modal-price-block {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 145px;
+  padding: 15px 35px 15px 15px;
+  background-color: #f5f7ff;
+  border-radius: 12px;
+}
+
+.custom-modal-block {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 15px 20px;
+  background-color: #f5f7ff;
+  border-radius: 12px;
+}
+
+.custom-modal-span {
+  text-align: start;
+  flex: 0 0 205px;
+  width: 205px;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 156%;
+  letter-spacing: -0.02em;
+  color: var(--color-slate-blue);
+}
+
+.custom-modal-text {
+  width: 380px;
+  flex: 1 1 auto;
+  text-align: start;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 156%;
+  letter-spacing: -0.02em;
+  color: var(--color-signal-black);
+}
+
+.custom-modal-price {
+  flex: 0 0 80px;
+  width: 80px;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 159%;
+  text-align: right;
+  color: var(--color-signal-black);
 }
 
 .share-btn {
