@@ -131,6 +131,7 @@ body {
 
 .visit__text-span span {
   color: var(--color-slate-blue);
+  padding-left: 10px;
 }
 
 .visit__list {
