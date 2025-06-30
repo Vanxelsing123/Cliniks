@@ -3,6 +3,7 @@
 @import url('media/news.css');
 @import url('media/company.css');
 @import url('media/visit.css');
+@import url('media/calculator.css');
 
 @media (max-width: 1200px) {
   .header__text {

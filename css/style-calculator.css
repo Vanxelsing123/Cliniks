@@ -175,6 +175,7 @@ body {
   padding-bottom: 15px;
   border-bottom: 1px solid rgba(140, 133, 218, 0.4);
   color: var(--color-gray-brown);
+  max-width: 500px;
 }
 
 .calculator__wrap-spectrum-text span {
@@ -359,6 +360,14 @@ body {
   font-size: 20px;
   line-height: 122%;
   color: #8e9cc0;
+}
+
+.calculator-swiper {
+  display: none;
+}
+
+.t1148__scroll-icon-wrapper {
+  display: none;
 }
 
 /* accordion__svg */

@@ -1,0 +1,88 @@
+@media (max-width: 1024px) {
+    .calculator__title {
+        margin-top: 20px;
+    }
+    .calculator__container-item {
+        background-color: var(--color-white);
+        padding: 20px 20px 20px 10px;
+    }
+    .calculator__container-item-title {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .calculator__title {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+    .calculator__list {
+        flex-wrap: wrap;
+    }
+    .calculator__item {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .calculator__item:last-child {
+        margin-bottom: 0;
+    }
+    .calculator__list-laboratory {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+        padding: 0;
+        background-color: transparent;
+        justify-items: center;
+    }
+    .calculator__list-spectrum {
+        flex-wrap: wrap;
+    }
+    .calculator__item-spectrum-text {
+        margin-bottom: 30px;
+    }
+    .calculator__container-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 425px) {
+    .calculator__list {
+       justify-content: flex-start;
+    }
+    .calculator__item {
+        text-align: start;
+        margin-bottom: 40px;
+    }
+    .calculator__wrap-spectrum  {
+        margin-bottom: 70px;
+    }
+    .calculator__wrap-spectrum-text {
+        font-size: 18px;
+    }
+    .calculator__list-spectrum {
+        justify-content: flex-start;
+    }
+    .calculator__item-spectrum-text {
+        margin-bottom: 40px;
+    }
+    .calculator__item-spectrum {
+        margin-bottom: 40px;
+    }
+    .calculator__item-spectrum:last-child {
+        margin-bottom: 0;
+    }
+    .calculator__container-list {
+        display: none;
+    }
+    .calculator-swiper {
+        display: block;
+        height: 450px;
+        margin-bottom: 50px;
+    }
+    .t1148__scroll-icon-wrapper {
+        display: block;
+    }
+    .calculator__content {
+        display: flex;
+        align-items: center;
+    }
+}
