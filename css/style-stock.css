@@ -140,7 +140,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 55px 120px;
+  gap: 120px 120px;
 }
 
 .stock__item {
@@ -196,4 +196,21 @@ body {
   position: absolute;
   right: 0;
   bottom: 0;
+}
+
+.stock__item-btn {
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  padding: 6px 12px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  border-radius: 15px;
+  color: #202020;
+  background-color: #d8d5fd;
+}
+.stock__item-btn-one {
+  left: 115px;
 }
