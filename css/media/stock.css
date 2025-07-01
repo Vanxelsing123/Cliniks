@@ -1,0 +1,179 @@
+
+@media (max-width: 1280px) {
+  .container {
+    padding: 0 30px;
+  }
+
+  .stock__list {
+    gap: 80px;
+  }
+
+  .stock__item-span {
+    font-size: 100px;
+  }
+
+  .stock__item-text {
+    margin-bottom: 40px;
+  }
+
+  .stock__item-btn {
+    bottom: -50px;
+  }
+
+  .stock__item-btn-one {
+    left: 100px;
+  }
+}
+
+
+@media (max-width: 1024px) {
+    .stock__title {
+        margin-top: 20px;
+    }
+
+  .stock__list {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .stock__wrap {
+    flex-direction: column;
+  }
+
+  .stock__wrap svg {
+    margin-bottom: 10px;
+  }
+
+  .stock__wrap-text {
+    max-width: 100%;
+    font-size: 18px;
+  }
+
+  .stock__item {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .stock__svg {
+    display: none;
+  }
+
+  .stock__item-span {
+    font-size: 90px;
+  }
+
+  .stock__item-title {
+    font-size: 32px;
+  }
+
+  .stock__item-text {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .stock__item-btn {
+    bottom: -45px;
+    font-size: 16px;
+  }
+
+  .stock__item-btn-one {
+    left: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .stock__title {
+    font-size: 32px;
+  }
+
+  .stock__wrap-text {
+    font-size: 16px;
+  }
+
+  .stock__item {
+    padding: 20px;
+  }
+
+  .stock__item-title {
+    font-size: 28px;
+  }
+
+  .stock__item-text {
+    font-size: 18px;
+  }
+
+  .stock__item-span {
+    font-size: 70px;
+  }
+
+  .stock__item-btn {
+    font-size: 14px;
+    bottom: -40px;
+  }
+
+  .stock__item-btn-one {
+    left: 90px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  
+  .stock__item-title {
+    font-size: 22px;
+  }
+
+  .stock__item-text {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  .stock__item-btn {
+    
+    margin-top: 15px;
+  }
+
+  .stock__item-btn-one {
+    margin-top: 10px;
+   
+  }
+
+  .stock__item-discount {
+    margin-bottom: 10px;
+  }
+
+  .stock__img {
+    width: 60%;
+  }
+
+  .main {
+    padding-bottom: 50px;
+  }
+  
+}
+
+
+@media (max-width: 375px) {
+  .stock__title {
+    font-size: 26px;
+  }
+
+  .stock__wrap-text {
+    font-size: 14px;
+  }
+
+  .stock__item-title {
+    font-size: 20px;
+  }
+
+  .stock__item-text {
+    font-size: 14px;
+  }
+
+  /* .stock__item-btn,
+  .stock__item-btn-one {
+    font-size: 14px;
+    padding: 4px 10px;
+  } */
+}
