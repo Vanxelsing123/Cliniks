@@ -105,7 +105,7 @@ function updateModalContent(selectedBlocks) {
     };
 
     const li = document.createElement('li');
-    li.style.cssText = 'display:flex; margin-bottom:10px';
+    li.style.cssText = 'display:flex; margin-bottom:10px; position: relative';
     li.append(wrapper, btn);
     listEl.appendChild(li);
   });
