@@ -92,6 +92,15 @@
   margin-right: 10px;
 }
 
+.header__nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.header__nav-item svg {
+  margin-left: 5px;
+}
+
 .header__nav-link {
   font-weight: 400;
   font-size: 17px;
@@ -193,9 +202,8 @@
 
 .no-scroll {
   overflow: hidden;
-  height: 100vh; 
+  height: 100vh;
 }
-
 
 .header__burger-btn {
   display: none;
@@ -236,5 +244,4 @@ header.open .header__burger-btn span:nth-child(3) {
 
 header.open {
   background-color: #f5f4ff;
-  
 }

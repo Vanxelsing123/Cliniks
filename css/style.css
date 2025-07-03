@@ -269,6 +269,10 @@ body {
   color: var(--color-signal-black);
 }
 
+.job__item-icon {
+  margin-right: 10px;
+}
+
 /* services */
 
 .title__services--mob {
