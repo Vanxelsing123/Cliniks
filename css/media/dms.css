@@ -4,4 +4,113 @@
   }
 }
 
+/* Базовые стили (380px) — оставляем без изменений */
 
+/* От 480px и выше — немного увеличить шрифты и задать flex-shrink для SVG */
+@media (min-width: 480px) {
+  .dms__title {
+    font-size: 35px; /* с 32px на 28px — можно корректировать по желанию */
+  }
+  .dms__titles {
+    font-size: 25px; /* с 23px */
+  }
+  .dms__titles span {
+    font-size: 25px;
+  }
+  .dms__text {
+    font-size: 18px; /* с 16px */
+  }
+  .dms__insurance-text {
+    font-size: 18px;
+  }
+  .dms__insurance-texts {
+    font-size: 18px;
+  }
+  .dms__insurance-texts span {
+    font-size: 18px;
+  }
+  .dms__spectrum-text {
+    font-size: 20px; /* с 18px */
+  }
+  .dms__spectrum-text span {
+    font-size: 20px;
+  }
+  .dms__spectrum-title {
+    font-size: 25px; /* с 24px */
+  }
+  .dms__spectrum-items {
+    font-size: 20px; /* с 18px */
+  }
+  .dms__cooperation-title {
+    font-size: 30px; /* с 28px */
+  }
+  .dms__cooperation-title span {
+    font-size: 30px;
+  }
+  .dms__cooperation-text {
+    font-size: 30px; /* с 28px */
+  }
+  .dms__cooperation-span {
+    font-size: 18px; /* с 16px */
+  }
+
+  /* SVG: flex-shrink: 0 */
+  .dms__svg,
+  .dms__spectrum-svg {
+    flex-shrink: 0;
+  }
+}
+
+/* От 768px и выше — увеличить шрифты ещё чуть больше */
+@media (min-width: 768px) {
+  .dms__title {
+    font-size: 40px;
+  }
+  .dms__titles {
+    font-size: 30px;
+  }
+  .dms__titles span {
+    font-size: 30px;
+  }
+  .dms__text {
+    font-size: 20px;
+  }
+  .dms__insurance-text {
+    font-size: 20px;
+  }
+  .dms__insurance-texts {
+    font-size: 20px;
+  }
+  .dms__insurance-texts span {
+    font-size: 20px;
+  }
+  .dms__spectrum-text {
+    font-size: 20px;
+  }
+  .dms__spectrum-text span {
+    font-size: 20px;
+  }
+  .dms__spectrum-title {
+    font-size: 28px;
+  }
+  .dms__spectrum-items {
+    font-size: 20px;
+  }
+  .dms__cooperation-title {
+    font-size: 32px;
+  }
+  .dms__cooperation-title span {
+    font-size: 32px;
+  }
+  .dms__cooperation-text {
+    font-size: 32px;
+  }
+  .dms__cooperation-span {
+    font-size: 20px;
+  }
+}
+
+/* От 1024px и выше — можно оставить такие же размеры, либо чуть увеличить */
+@media (min-width: 1024px) {
+  /* Если нужно — подкорректируй здесь */
+}
