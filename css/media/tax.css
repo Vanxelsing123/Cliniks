@@ -1,0 +1,106 @@
+/* --- Адаптив для экранов от 600px --- */
+@media (min-width: 600px) {
+  .tax__licenses {
+    max-width: 600px;
+  }
+
+  .tax__licenses-dl {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    column-gap: 30px;
+    row-gap: 20px;
+  }
+
+  .tax__licenses-dt {
+    font-size: 18px;
+    align-self: center;
+  }
+
+  .tax__licenses-dd {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+}
+
+/* --- Адаптив для экранов от 900px --- */
+@media (min-width: 900px) {
+  .tax__licenses {
+    max-width: 900px;
+  }
+
+  .tax__licenses-dl {
+    grid-template-columns: 220px 1fr;
+    column-gap: 50px;
+    row-gap: 28px;
+  }
+
+  .tax__licenses-dt {
+    font-size: 20px;
+  }
+
+  .tax__licenses-dd {
+    font-size: 20px;
+  }
+
+  .tax__licenses-btn-svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .tax__list {
+    max-width: 900px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 20px;
+  }
+
+  .tax__list li {
+    margin-bottom: 0;
+  }
+}
+
+/* --- Адаптив для экранов от 1200px --- */
+@media (min-width: 1200px) {
+  .tax__licenses {
+    max-width: 1100px;
+  }
+
+  .tax__licenses-dl {
+    grid-template-columns: 240px 1fr;
+    column-gap: 60px;
+    row-gap: 32px;
+  }
+
+  .tax__licenses-dt {
+    font-size: 22px;
+  }
+
+  .tax__licenses-dd {
+    font-size: 22px;
+  }
+
+  .tax__licenses-btn-svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .tax__list {
+    max-width: 1100px;
+    margin-bottom: 40px;
+    column-gap: 80px;
+    row-gap: 24px;
+  }
+
+  .tax__list li {
+    font-size: 18px;
+  }
+}
+
+/* --- Максимальная ширина контейнера --- */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1400px;
+  }
+}
