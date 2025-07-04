@@ -188,4 +188,48 @@
     .custom-modal-close {
         display: none;
     }
+    .custom-modal-list {
+  max-height: 50vh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch; 
+  scrollbar-width: thin; 
+  scrollbar-color: #bbb transparent;
+}
+
+    .custom-modal-list::-webkit-scrollbar {
+    width: 6px;
+    }
+
+    .custom-modal-list::-webkit-scrollbar-thumb {
+    background-color: #bbb;
+    border-radius: 4px;
+    }
+
+    .custom-modal-list::-webkit-scrollbar-track {
+    background: transparent;
+    }
+    .custom-modal-total {
+        padding-top: 15px;
+        padding-bottom: 10px;
+        border-bottom: none;
+    }
+    .custom-modal-buttons {
+        padding-top: 0;
+    }
+.calculator__show-list-btn {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 105%;
+  width: 110%;
+  height: 52px;
+  margin-top: 10px;
+  margin-left: -20px;
+  margin-right: -25px;
+  padding: 10px 5px 10px 40px;
+  color: var(--color-signa-black);
+  border-radius: 32px;
+  background: linear-gradient(133deg, #c8d3ff 0%, #afa7ff 100%);
+}
 }
