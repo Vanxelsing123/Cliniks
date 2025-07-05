@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Расписание</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style-schedule.css">
+  <link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <div class="burger-wrapper">
+
+          <button class="header__burger-btn bth-reset" id="burger" aria-label="Открыть меню">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="mobile-nav nav__content">
+            <ul class="header__nav-list list-reset">
+              <li class="header__nav-item"><a href="doctors.html" class="header__nav-link">Врачи</a></li>
+              <li class="header__nav-item"><a href="price.html" class="header__nav-link">Цены</a></li>
+              <li class="header__nav-item dropdown">
+                <a href="#" class="header__nav-link dropdown-button">Пациентам</a>
+                <div class="header__nav-dropdown ">
+                  <a class="header__nav-link-dropdown" href="news.html">Новости</a>
+                  <a class="header__nav-link-dropdown" href="news.html">О нас</a>
+                  <a class="header__nav-link-dropdown" href="visit.html">Подготовка<br>к визиту</a>
+                  <a class="header__nav-link-dropdown" href="tax.html">Налоговый вычет</a>
+                </div>
+              </li>
+              <li class="header__nav-item"><a href="calculator.html"
+                  class="header__nav-link">Калькулятор<br>анализов</a></li>
+              <li class="header__nav-item"><a href="stock.html" class="header__nav-link">Акции</a></li>
+              <li class="header__nav-item"><a href="contacts.html" class="header__nav-link">Контакты</a></li>
+            </ul>
+
+            <ul class="header__nav-list list-reset">
+              <li class="header__nav-item dropdown">
+                <a href="#" class="header__nav-link dropdown-button">Сотрудничество</a>
+                <div class="header__nav-dropdown ">
+                  <a class="header__nav-link-dropdown" href="dms.html">ДМС</a>
+                  <a class="header__nav-link-dropdown" href="vacancies.html">Вакансии</a>
+                  <a class="header__nav-link-dropdown" href="#">Предприятиям</a>
+                </div>
+              </li>
+              <li class="header__nav-item dropdown "><a href="#" class="header__nav-link dropdown-button">Услуги </a>
+                <div class="header__nav-dropdown ">
+                  <div>
+                    <a class="header__nav-link-dropdown" href="#">Детское отделение</a>
+                    <a class="header__nav-link-dropdown" href="#">Взрослое отделение</a>
+                    <a class="header__nav-link-dropdown" href="services.html">Хирургия</a>
+                    <a class="header__nav-link-dropdown" href="#">Лабораторная<br>диагностика</a>
+                    <a class="header__nav-link-dropdown" href="#">УЗИ, ЭКГ</a>
+                    <a class="header__nav-link-dropdown" href="#">Нейросонография</a>
+                  </div>
+                  <div>
+                    <a class="header__nav-link-dropdown" href="#">Вызов врача на дом</a>
+                    <a class="header__nav-link-dropdown" href="#">Вакцинация</a>
+                    <a class="header__nav-link-dropdown" href="#">Логопед-дефектолог</a>
+                    <a class="header__nav-link-dropdown" href="#">Аудиометрия</a>
+                    <a class="header__nav-link-dropdown" href="#">Тимпанометрия</a>
+                    <a class="header__nav-link-dropdown" href="programs.html">Комплексные<br>программы</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+          </nav>
+        </div>
+
+        <div class="header__logo">
+          <a href="index.html" class="header__logo-link">
+            <img src="img/logo.png" alt="Логотип клиники">
+          </a>
+        </div>
+        <div class="header__logo--mobile">
+          <a href="index.html" class="header__logo-link">
+            <img src="img/Logo.mobile.png" alt="Логотип клиники">
+          </a>
+        </div>
+        <div class="header__container-info">
+          <div class="header__text">
+            <button class="header__btn-address bth-reset">
+              <svg class="header__btn-address-icon" width="30" height="29" aria-hidden="true">
+                <use xlink:href="svg/sprite.svg#icon-address"></use>
+              </svg>
+              <p class="header__text-address">
+                Адрес и режим работы
+              </p>
+            </button>
+          </div>
+          <ul class="header__list list-reset">
+            <button class="header__btn-item bth-reset">
+              <svg class="header__btn-icon" width="30" height="29" aria-hidden="true">
+                <use xlink:href="svg/sprite.svg#icon-booking"></use>
+              </svg>
+              <li class="header__item">
+                Записаться
+              </li>
+            </button>
+            <button class="header__btn-item bth-reset">
+              <svg class="header__btn-icon" width="30" height="29" aria-hidden="true">
+                <use xlink:href="svg/sprite.svg#icon-medcard"></use>
+              </svg>
+              <li class="header__item">
+                Медкарта
+              </li>
+            </button>
+          </ul>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <nav class="header__nav">
+          <ul class="header__nav-list list-reset">
+            <li class="header__nav-item"><a href="test.html" class="header__nav-link">Тест</a></li>
+            <li class="header__nav-item"><a href="doctors.html" class="header__nav-link">Врачи</a></li>
+            <li class="header__nav-item"><a href="price.html" class="header__nav-link">Цены</a></li>
+            <li class="header__nav-item dropdown"><a href="#" class="header__nav-link ">Услуги</a>
+              <svg width="9" height="7" aria-hidden="true">
+                <use xlink:href="svg/sprite.svg#icon-dropdown-arrow"></use>
+              </svg>
+              <div class="header__nav-dropdown dropdown-content__services">
+                <div>
+                  <a class="header__nav-link-dropdown" href="#">Детское отделение</a>
+                  <a class="header__nav-link-dropdown" href="#">Взрослое отделение</a>
+                  <a class="header__nav-link-dropdown" href="services.html">Хирургия</a>
+                  <a class="header__nav-link-dropdown" href="#">Лабораторная диагностика</a>
+                  <a class="header__nav-link-dropdown" href="#">УЗИ, ЭКГ</a>
+                  <a class="header__nav-link-dropdown" href="#">Нейросонография</a>
+                </div>
+                <div>
+                  <a class="header__nav-link-dropdown" href="#">Вызов врача на дом</a>
+                  <a class="header__nav-link-dropdown" href="#">Вакцинация</a>
+                  <a class="header__nav-link-dropdown" href="#">Логопед-дефектолог</a>
+                  <a class="header__nav-link-dropdown" href="#">Аудиометрия</a>
+                  <a class="header__nav-link-dropdown" href="#">Тимпанометрия</a>
+                  <a class="header__nav-link-dropdown" href="programs.html">Комплексные программы</a>
+                </div>
+              </div>
+            </li>
+            <li class="header__nav-item dropdown">
+              <a href="#" class="header__nav-link dropdown-button">Пациентам</a>
+              <svg width="9" height="7" aria-hidden="true">
+                <use xlink:href="svg/sprite.svg#icon-dropdown-arrow"></use>
+              </svg>
+              <div class="header__nav-dropdown dropdown-content">
+                <a class="header__nav-link-dropdown" href="news.html">Новости</a>
+                <a class="header__nav-link-dropdown" href="news.html">О нас</a>
+                <a class="header__nav-link-dropdown" href="visit.html">Подготовка к визиту</a>
+                <a class="header__nav-link-dropdown" href="tax.html">Налоговый вычет</a>
+              </div>
+            </li>
+            <li class="header__nav-item"><a href="calculator.html" class="header__nav-link">Калькулятор анализов</a>
+            </li>
+            <li class="header__nav-item"><a href="stock.html" class="header__nav-link">Акции</a></li>
+            <li class="header__nav-item"><a href="contacts.html" class="header__nav-link">Контакты</a></li>
+            <li class="header__nav-item dropdown">
+              <a href="#" class="header__nav-link">Сотрудничество</a>
+              <svg width="9" height="7" aria-hidden="true">
+                <use xlink:href="svg/sprite.svg#icon-dropdown-arrow"></use>
+              </svg>
+              <div class="header__nav-dropdown dropdown-content">
+                <a class="header__nav-link-dropdown" href="dms.html">ДМС</a>
+                <a class="header__nav-link-dropdown" href="vacancies.html">Вакансии</a>
+                <a class="header__nav-link-dropdown" href="#">Предприятиям</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="schedule">
+      <div class="container">
+        <h1 class="schedule__title">
+          Расписание
+        </h1>
+
+        <div class="container__schedule">
+          <div class="schedule__item" data-category="alergolog">
+            <div class="schedule__header">
+              <svg class="accordion__svg" width="11" height="13" viewBox="0 0 11 13" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.61678 7.5038L2.98996 12.1426C2.06207 12.7921 0.787108 12.1283 0.787108 10.9957V2.37349C0.787108 1.24086 2.06207 0.577043 2.98996 1.22656L9.61678 5.86534C10.1855 6.26344 10.1855 7.1057 9.61678 7.5038Z"
+                  fill="#B2ABFC" />
+              </svg>
+              Аллерголог-иммунолог
+            </div>
+            <div class="schedule__content">
+              <div class="schedule__block">
+                <div class="schedule__block-doctor">
+                  <img src="img/doc1.png" alt="Фото Доктора">
+                  <h2 class="schedule__block-doctor-name">Трофимова Галина Николаевна</h2>
+                </div>
+                <ul class="schedule__list list-reset">
+                  <li class="schedule__items">
+                    <div class="card-day">Пн</div>
+                    <div class="card-date">04.11.2024</div>
+                    <div class="card-time">13:00-19:00</div>
+                    <div class="card-status">Свободно</div>
+                    <div class="card-spots">10 мест</div>
+                  </li>
+                  <li class="schedule__items">
+                    <div class="card-day">Вт</div>
+                    <div class="card-date">04.11.2024</div>
+                    <div class="card-time">13:00-19:00</div>
+                    <div class="card-status">Свободно</div>
+                    <div class="card-spots">10 мест</div>
+                  </li>
+                  <li class="schedule__items">
+                    <div class="card-day">Ср</div>
+                    <div class="card-date">04.11.2024</div>
+                    <div class="card-time">13:00-19:00</div>
+                    <div class="card-status">Свободно</div>
+                    <div class="card-spots">10 мест</div>
+                  </li>
+                  <li class="schedule__items">
+                    <div class="card-day">Чт</div>
+                    <div class="card-date">04.11.2024</div>
+                    <div class="card-time">13:00-19:00</div>
+                    <div class="card-status">Свободно</div>
+                    <div class="card-spots">10 мест</div>
+                  </li>
+                  <li class="schedule__items">
+                    <div class="card-day">Пт</div>
+                    <div class="card-date">04.11.2024</div>
+                    <div class="card-waitlist">Лист ожидания</div>
+                  </li>
+                  <li class="schedule__items">
+                    <div class="card-day">Сб</div>
+                    <div class="card-date">04.11.2024</div>
+                    <div class="card-time">13:00-19:00</div>
+                    <div class="card-status">Свободно</div>
+                    <div class="card-spots">10 мест</div>
+                  </li>
+                  <li class="schedule__items">
+                    <div class="card-day">Вс</div>
+                    <div class="card-date">04.11.2024</div>
+                    <div class="card-time">13:00-19:00</div>
+                    <div class="card-status">Свободно</div>
+                    <div class="card-spots">10 мест</div>
+                  </li>
+                </ul>
+              </div>
+              <div class="schedule__block">
+                <div class="schedule__block-doctor">
+                  <div class="vacation">
+                    Отпуск с 16.10.24-04.11.24
+                  </div>
+                  <img src="img/doc2.png" alt="Фото Доктора">
+                  <h2 class="schedule__block-doctor-name">Трофимова Галина Николаевна</h2>
+                  <div class="specialists-list">
+                    <ul class="list-reset schedule__specialists-list">
+                      <li class="schedule__specialists-item">Стоматолог-терапевт</li>
+                      <li class="schedule__specialists-item">Хирург</li>
+                      <li class="schedule__specialists-item">Имплантолог</li>
+                      <li class="schedule__specialists-item">Ортопед</li>
+                    </ul>
+                  </div>
+                </div>
+                <ul class="schedule__list list-reset">
+                  <li class="schedule__items">
+                    <div class="card-day">Пн</div>
+                    <div class="card-date">04.11.2024</div>
+                    <div class="card-time">13:00-19:00</div>
+                    <div class="card-status">Свободно</div>
+                    <div class="card-spots">10 мест</div>
+                  </li>
+                  <li class="schedule__items">
+                    <div class="card-day">Вт</div>
+                    <div class="card-date">04.11.2024</div>
+                    <div class="card-waitlist">Лист ожидания</div>
+                  </li>
+                  <li class="schedule__items">
+                    <div class="card-day">Ср</div>
+                    <div class="card-date">04.11.2024</div>
+                    <div class="card-time">13:00-19:00</div>
+                    <div class="card-status">Свободно</div>
+                    <div class="card-spots">10 мест</div>
+                  </li>
+                  <li class="schedule__items">
+                    <div class="card-day">Чт</div>
+                    <div class="card-date">04.11.2024</div>
+                    <div class="card-time">13:00-19:00</div>
+                    <div class="card-status">Свободно</div>
+                    <div class="card-spots">10 мест</div>
+                  </li>
+                  <li class="schedule__items">
+                    <div class="card-day">Пт</div>
+                    <div class="card-date">04.11.2024</div>
+                    <div class="card-waitlist">Лист ожидания</div>
+                  </li>
+                  <li class="schedule__items">
+                    <div class="card-day">Сб</div>
+                    <div class="card-date">04.11.2024</div>
+                    <div class="card-time">13:00-19:00</div>
+                    <div class="card-status">Свободно</div>
+                    <div class="card-spots">10 мест</div>
+                  </li>
+                  <li class="schedule__items">
+                    <div class="card-day">Вс</div>
+                    <div class="card-date">04.11.2024</div>
+                    <div class="card-time">13:00-19:00</div>
+                    <div class="card-status">Свободно</div>
+                    <div class="card-spots">10 мест</div>
+                  </li>
+                </ul>
+              </div>
+              <div class="schedule__block">
+                <div class="schedule__block-doctor">
+                  <img src="img/doc1.png" alt="Фото Доктора">
+                  <h2 class="schedule__block-doctor-name">Трофимова Галина Николаевна</h2>
+                </div>
+                <ul class="schedule__list list-reset">
+                  <li class="schedule__items">
+                    <div class="card-day">Пн</div>
+                    <div class="card-date">04.11.2024</div>
+                    <div class="card-time">13:00-19:00</div>
+                    <div class="card-status">Свободно</div>
+                    <div class="card-spots">10 мест</div>
+                  </li>
+                  <li class="schedule__items">
+                    <div class="card-day">Вт</div>
+                    <div class="card-date">04.11.2024</div>
+                    <div class="card-waitlist">Лист ожидания</div>
+                  </li>
+                  <li class="schedule__items">
+                    <div class="card-day">Ср</div>
+                    <div class="card-date">04.11.2024</div>
+                    <div class="card-time">13:00-19:00</div>
+                    <div class="card-status">Свободно</div>
+                    <div class="card-spots">10 мест</div>
+                  </li>
+                  <li class="schedule__items">
+                    <div class="card-day">Чт</div>
+                    <div class="card-date">04.11.2024</div>
+                    <div class="card-time">13:00-19:00</div>
+                    <div class="card-status">Свободно</div>
+                    <div class="card-spots">10 мест</div>
+                  </li>
+                  <li class="schedule__items">
+                    <div class="card-day">Пт</div>
+                    <div class="card-date">04.11.2024</div>
+                    <div class="card-waitlist">Лист ожидания</div>
+                  </li>
+                  <li class="schedule__items">
+                    <div class="card-day">Сб</div>
+                    <div class="card-date">04.11.2024</div>
+                    <div class="card-time">13:00-19:00</div>
+                    <div class="card-status">Свободно</div>
+                    <div class="card-spots">10 мест</div>
+                  </li>
+                  <li class="schedule__items">
+                    <div class="card-day">Вс</div>
+                    <div class="card-date">04.11.2024</div>
+                    <div class="card-time">13:00-19:00</div>
+                    <div class="card-status">Свободно</div>
+                    <div class="card-spots">10 мест</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="price__item" data-category="vaccination">
+            <div class="price__header">
+              <svg class="accordion__svg" width="11" height="13" viewBox="0 0 11 13" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.61678 7.5038L2.98996 12.1426C2.06207 12.7921 0.787108 12.1283 0.787108 10.9957V2.37349C0.787108 1.24086 2.06207 0.577043 2.98996 1.22656L9.61678 5.86534C10.1855 6.26344 10.1855 7.1057 9.61678 7.5038Z"
+                  fill="#B2ABFC" />
+              </svg>
+              Вакцинация
+            </div>
+            <div class="price__content">
+              <div class="price__block">
+                <p class="price__block-text">Вакцинация</p>
+                <button class="price__block-btn bth-reset">
+                  Записаться
+                  <svg class="price__btn-icon" width="45" height="45" viewBox="0 0 45 45" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="22.399" cy="22.7616" r="21.8817" fill="white"></circle>
+                    <path d="M29.7828 26.8467V15.3781M29.7828 15.3781H18.3143M29.7828 15.3781L15.0165 30.1445"
+                      stroke="#535353" stroke-width="2.66" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+                <p class="price__block-price">1 600 ₽</p>
+              </div>
+              <div class="price__block">
+                <p class="price__block-text">Вакцинация</p>
+                <button class="price__block-btn bth-reset">
+                  Записаться
+                  <svg class="price__btn-icon" width="45" height="45" viewBox="0 0 45 45" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="22.399" cy="22.7616" r="21.8817" fill="white"></circle>
+                    <path d="M29.7828 26.8467V15.3781M29.7828 15.3781H18.3143M29.7828 15.3781L15.0165 30.1445"
+                      stroke="#535353" stroke-width="2.66" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+                <p class="price__block-price">1 600 ₽</p>
+              </div>
+              <div class="price__block">
+                <p class="price__block-text">Вакцинация</p>
+                <button class="price__block-btn bth-reset">
+                  Записаться
+                  <svg class="price__btn-icon" width="45" height="45" viewBox="0 0 45 45" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="22.399" cy="22.7616" r="21.8817" fill="white"></circle>
+                    <path d="M29.7828 26.8467V15.3781M29.7828 15.3781H18.3143M29.7828 15.3781L15.0165 30.1445"
+                      stroke="#535353" stroke-width="2.66" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+                <p class="price__block-price">1 600 ₽</p>
+              </div>
+              <div class="price__block">
+                <p class="price__block-text">Вакцинация</p>
+                <button class="price__block-btn bth-reset">
+                  Записаться
+                  <svg class="price__btn-icon" width="45" height="45" viewBox="0 0 45 45" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="22.399" cy="22.7616" r="21.8817" fill="white"></circle>
+                    <path d="M29.7828 26.8467V15.3781M29.7828 15.3781H18.3143M29.7828 15.3781L15.0165 30.1445"
+                      stroke="#535353" stroke-width="2.66" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+                <p class="price__block-price">1 600 ₽</p>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- <div class="price__item" data-category="gastroenterologist">
+            <div class="price__header">
+              <svg class="accordion__svg" width="11" height="13" viewBox="0 0 11 13" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.61678 7.5038L2.98996 12.1426C2.06207 12.7921 0.787108 12.1283 0.787108 10.9957V2.37349C0.787108 1.24086 2.06207 0.577043 2.98996 1.22656L9.61678 5.86534C10.1855 6.26344 10.1855 7.1057 9.61678 7.5038Z"
+                  fill="#B2ABFC" />
+              </svg>
+              Гастроэнтеролог
+            </div>
+            <div class="price__content">
+              <div class="price__block">
+                <p class="price__block-text">Гастроэнтеролог</p>
+                <button class="price__block-btn bth-reset">
+                  Записаться
+                  <svg class="price__btn-icon" width="45" height="45" viewBox="0 0 45 45" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="22.399" cy="22.7616" r="21.8817" fill="white"></circle>
+                    <path d="M29.7828 26.8467V15.3781M29.7828 15.3781H18.3143M29.7828 15.3781L15.0165 30.1445"
+                      stroke="#535353" stroke-width="2.66" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+                <p class="price__block-price">1 600 ₽</p>
+              </div>
+              <div class="price__block">
+                <p class="price__block-text">Гастроэнтеролог</p>
+                <button class="price__block-btn bth-reset">
+                  Записаться
+                  <svg class="price__btn-icon" width="45" height="45" viewBox="0 0 45 45" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="22.399" cy="22.7616" r="21.8817" fill="white"></circle>
+                    <path d="M29.7828 26.8467V15.3781M29.7828 15.3781H18.3143M29.7828 15.3781L15.0165 30.1445"
+                      stroke="#535353" stroke-width="2.66" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+                <p class="price__block-price">1 600 ₽</p>
+              </div>
+              <div class="price__block">
+                <p class="price__block-text">Гастроэнтеролог</p>
+                <button class="price__block-btn bth-reset">
+                  Записаться
+                  <svg class="price__btn-icon" width="45" height="45" viewBox="0 0 45 45" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="22.399" cy="22.7616" r="21.8817" fill="white"></circle>
+                    <path d="M29.7828 26.8467V15.3781M29.7828 15.3781H18.3143M29.7828 15.3781L15.0165 30.1445"
+                      stroke="#535353" stroke-width="2.66" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+                <p class="price__block-price">1 600 ₽</p>
+              </div>
+              <div class="price__block">
+                <p class="price__block-text">Гастроэнтеролог</p>
+                <button class="price__block-btn bth-reset">
+                  Записаться
+                  <svg class="price__btn-icon" width="45" height="45" viewBox="0 0 45 45" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="22.399" cy="22.7616" r="21.8817" fill="white"></circle>
+                    <path d="M29.7828 26.8467V15.3781M29.7828 15.3781H18.3143M29.7828 15.3781L15.0165 30.1445"
+                      stroke="#535353" stroke-width="2.66" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+                <p class="price__block-price">1 600 ₽</p>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- <div class="price__item" data-category="gynecologist">
+            <div class="price__header">
+              <svg class="accordion__svg" width="11" height="13" viewBox="0 0 11 13" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.61678 7.5038L2.98996 12.1426C2.06207 12.7921 0.787108 12.1283 0.787108 10.9957V2.37349C0.787108 1.24086 2.06207 0.577043 2.98996 1.22656L9.61678 5.86534C10.1855 6.26344 10.1855 7.1057 9.61678 7.5038Z"
+                  fill="#B2ABFC" />
+              </svg>
+              Гинеколог
+            </div>
+            <div class="price__content">
+              <div class="price__block">
+                <p class="price__block-text">Гинеколог</p>
+                <button class="price__block-btn bth-reset">
+                  Записаться
+                  <svg class="price__btn-icon" width="45" height="45" viewBox="0 0 45 45" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="22.399" cy="22.7616" r="21.8817" fill="white"></circle>
+                    <path d="M29.7828 26.8467V15.3781M29.7828 15.3781H18.3143M29.7828 15.3781L15.0165 30.1445"
+                      stroke="#535353" stroke-width="2.66" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+                <p class="price__block-price">1 600 ₽</p>
+              </div>
+              <div class="price__block">
+                <p class="price__block-text">Гинеколог</p>
+                <button class="price__block-btn bth-reset">
+                  Записаться
+                  <svg class="price__btn-icon" width="45" height="45" viewBox="0 0 45 45" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="22.399" cy="22.7616" r="21.8817" fill="white"></circle>
+                    <path d="M29.7828 26.8467V15.3781M29.7828 15.3781H18.3143M29.7828 15.3781L15.0165 30.1445"
+                      stroke="#535353" stroke-width="2.66" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+                <p class="price__block-price">1 600 ₽</p>
+              </div>
+              <div class="price__block">
+                <p class="price__block-text">Гинеколог</p>
+                <button class="price__block-btn bth-reset">
+                  Записаться
+                  <svg class="price__btn-icon" width="45" height="45" viewBox="0 0 45 45" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="22.399" cy="22.7616" r="21.8817" fill="white"></circle>
+                    <path d="M29.7828 26.8467V15.3781M29.7828 15.3781H18.3143M29.7828 15.3781L15.0165 30.1445"
+                      stroke="#535353" stroke-width="2.66" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+                <p class="price__block-price">1 600 ₽</p>
+              </div>
+              <div class="price__block">
+                <p class="price__block-text">Гинеколог</p>
+                <button class="price__block-btn bth-reset">
+                  Записаться
+                  <svg class="price__btn-icon" width="45" height="45" viewBox="0 0 45 45" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="22.399" cy="22.7616" r="21.8817" fill="white"></circle>
+                    <path d="M29.7828 26.8467V15.3781M29.7828 15.3781H18.3143M29.7828 15.3781L15.0165 30.1445"
+                      stroke="#535353" stroke-width="2.66" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+                <p class="price__block-price">1 600 ₽</p>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- <div class="price__item" data-category="dermatologist">
+            <div class="price__header">
+              <svg class="accordion__svg" width="11" height="13" viewBox="0 0 11 13" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.61678 7.5038L2.98996 12.1426C2.06207 12.7921 0.787108 12.1283 0.787108 10.9957V2.37349C0.787108 1.24086 2.06207 0.577043 2.98996 1.22656L9.61678 5.86534C10.1855 6.26344 10.1855 7.1057 9.61678 7.5038Z"
+                  fill="#B2ABFC" />
+              </svg>
+              Дерматолог
+            </div>
+            <div class="price__content">
+              <div class="price__block">
+                <p class="price__block-text">Дерматолог</p>
+                <button class="price__block-btn bth-reset">
+                  Записаться
+                  <svg class="price__btn-icon" width="45" height="45" viewBox="0 0 45 45" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="22.399" cy="22.7616" r="21.8817" fill="white"></circle>
+                    <path d="M29.7828 26.8467V15.3781M29.7828 15.3781H18.3143M29.7828 15.3781L15.0165 30.1445"
+                      stroke="#535353" stroke-width="2.66" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+                <p class="price__block-price">1 600 ₽</p>
+              </div>
+              <div class="price__block">
+                <p class="price__block-text">Дерматолог</p>
+                <button class="price__block-btn bth-reset">
+                  Записаться
+                  <svg class="price__btn-icon" width="45" height="45" viewBox="0 0 45 45" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="22.399" cy="22.7616" r="21.8817" fill="white"></circle>
+                    <path d="M29.7828 26.8467V15.3781M29.7828 15.3781H18.3143M29.7828 15.3781L15.0165 30.1445"
+                      stroke="#535353" stroke-width="2.66" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+                <p class="price__block-price">1 600 ₽</p>
+              </div>
+              <div class="price__block">
+                <p class="price__block-text">Дерматолог</p>
+                <button class="price__block-btn bth-reset">
+                  Записаться
+                  <svg class="price__btn-icon" width="45" height="45" viewBox="0 0 45 45" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="22.399" cy="22.7616" r="21.8817" fill="white"></circle>
+                    <path d="M29.7828 26.8467V15.3781M29.7828 15.3781H18.3143M29.7828 15.3781L15.0165 30.1445"
+                      stroke="#535353" stroke-width="2.66" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+                <p class="price__block-price">1 600 ₽</p>
+              </div>
+              <div class="price__block">
+                <p class="price__block-text">Дерматолог</p>
+                <button class="price__block-btn bth-reset">
+                  Записаться
+                  <svg class="price__btn-icon" width="45" height="45" viewBox="0 0 45 45" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="22.399" cy="22.7616" r="21.8817" fill="white"></circle>
+                    <path d="M29.7828 26.8467V15.3781M29.7828 15.3781H18.3143M29.7828 15.3781L15.0165 30.1445"
+                      stroke="#535353" stroke-width="2.66" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+                <p class="price__block-price">1 600 ₽</p>
+              </div>
+            </div>
+          </div> -->
+          <!-- 
+          <div class="price__item" data-category="cardiologist">
+            <div class="price__header">
+              <svg class="accordion__svg" width="11" height="13" viewBox="0 0 11 13" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.61678 7.5038L2.98996 12.1426C2.06207 12.7921 0.787108 12.1283 0.787108 10.9957V2.37349C0.787108 1.24086 2.06207 0.577043 2.98996 1.22656L9.61678 5.86534C10.1855 6.26344 10.1855 7.1057 9.61678 7.5038Z"
+                  fill="#B2ABFC" />
+              </svg>
+              Кардиолог
+            </div>
+            <div class="price__content">
+              <div class="price__block">
+                <p class="price__block-text">Кардиолог</p>
+                <button class="price__block-btn bth-reset">
+                  Записаться
+                  <svg class="price__btn-icon" width="45" height="45" viewBox="0 0 45 45" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="22.399" cy="22.7616" r="21.8817" fill="white"></circle>
+                    <path d="M29.7828 26.8467V15.3781M29.7828 15.3781H18.3143M29.7828 15.3781L15.0165 30.1445"
+                      stroke="#535353" stroke-width="2.66" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+                <p class="price__block-price">1 600 ₽</p>
+              </div>
+              <div class="price__block">
+                <p class="price__block-text">Кардиолог</p>
+                <button class="price__block-btn bth-reset">
+                  Записаться
+                  <svg class="price__btn-icon" width="45" height="45" viewBox="0 0 45 45" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="22.399" cy="22.7616" r="21.8817" fill="white"></circle>
+                    <path d="M29.7828 26.8467V15.3781M29.7828 15.3781H18.3143M29.7828 15.3781L15.0165 30.1445"
+                      stroke="#535353" stroke-width="2.66" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+                <p class="price__block-price">1 600 ₽</p>
+              </div>
+              <div class="price__block">
+                <p class="price__block-text">Кардиолог</p>
+                <button class="price__block-btn bth-reset">
+                  Записаться
+                  <svg class="price__btn-icon" width="45" height="45" viewBox="0 0 45 45" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="22.399" cy="22.7616" r="21.8817" fill="white"></circle>
+                    <path d="M29.7828 26.8467V15.3781M29.7828 15.3781H18.3143M29.7828 15.3781L15.0165 30.1445"
+                      stroke="#535353" stroke-width="2.66" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+                <p class="price__block-price">1 600 ₽</p>
+              </div>
+              <div class="price__block">
+                <p class="price__block-text">Кардиолог</p>
+                <button class="price__block-btn bth-reset">
+                  Записаться
+                  <svg class="price__btn-icon" width="45" height="45" viewBox="0 0 45 45" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="22.399" cy="22.7616" r="21.8817" fill="white"></circle>
+                    <path d="M29.7828 26.8467V15.3781M29.7828 15.3781H18.3143M29.7828 15.3781L15.0165 30.1445"
+                      stroke="#535353" stroke-width="2.66" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+                <p class="price__block-price">1 600 ₽</p>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- <div class="price__item" data-category="cardiologist-children">
+            <div class="price__header">
+              <svg class="accordion__svg" width="11" height="13" viewBox="0 0 11 13" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.61678 7.5038L2.98996 12.1426C2.06207 12.7921 0.787108 12.1283 0.787108 10.9957V2.37349C0.787108 1.24086 2.06207 0.577043 2.98996 1.22656L9.61678 5.86534C10.1855 6.26344 10.1855 7.1057 9.61678 7.5038Z"
+                  fill="#B2ABFC" />
+              </svg>
+              Кардиолог детский
+            </div>
+            <div class="price__content">
+              <div class="price__block">
+                <p class="price__block-text">Кардиолог детский</p>
+                <button class="price__block-btn bth-reset">
+                  Записаться
+                  <svg class="price__btn-icon" width="45" height="45" viewBox="0 0 45 45" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="22.399" cy="22.7616" r="21.8817" fill="white"></circle>
+                    <path d="M29.7828 26.8467V15.3781M29.7828 15.3781H18.3143M29.7828 15.3781L15.0165 30.1445"
+                      stroke="#535353" stroke-width="2.66" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+                <p class="price__block-price">1 600 ₽</p>
+              </div>
+              <div class="price__block">
+                <p class="price__block-text">Кардиолог детский</p>
+                <button class="price__block-btn bth-reset">
+                  Записаться
+                  <svg class="price__btn-icon" width="45" height="45" viewBox="0 0 45 45" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="22.399" cy="22.7616" r="21.8817" fill="white"></circle>
+                    <path d="M29.7828 26.8467V15.3781M29.7828 15.3781H18.3143M29.7828 15.3781L15.0165 30.1445"
+                      stroke="#535353" stroke-width="2.66" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+                <p class="price__block-price">1 600 ₽</p>
+              </div>
+              <div class="price__block">
+                <p class="price__block-text">Кардиолог детский</p>
+                <button class="price__block-btn bth-reset">
+                  Записаться
+                  <svg class="price__btn-icon" width="45" height="45" viewBox="0 0 45 45" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="22.399" cy="22.7616" r="21.8817" fill="white"></circle>
+                    <path d="M29.7828 26.8467V15.3781M29.7828 15.3781H18.3143M29.7828 15.3781L15.0165 30.1445"
+                      stroke="#535353" stroke-width="2.66" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+                <p class="price__block-price">1 600 ₽</p>
+              </div>
+              <div class="price__block">
+                <p class="price__block-text">Кардиолог детский</p>
+                <button class="price__block-btn bth-reset">
+                  Записаться
+                  <svg class="price__btn-icon" width="45" height="45" viewBox="0 0 45 45" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="22.399" cy="22.7616" r="21.8817" fill="white"></circle>
+                    <path d="M29.7828 26.8467V15.3781M29.7828 15.3781H18.3143M29.7828 15.3781L15.0165 30.1445"
+                      stroke="#535353" stroke-width="2.66" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+                <p class="price__block-price">1 600 ₽</p>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- <div class="price__item" data-category="cosmetology">
+            <div class="price__header">
+              <svg class="accordion__svg" width="11" height="13" viewBox="0 0 11 13" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.61678 7.5038L2.98996 12.1426C2.06207 12.7921 0.787108 12.1283 0.787108 10.9957V2.37349C0.787108 1.24086 2.06207 0.577043 2.98996 1.22656L9.61678 5.86534C10.1855 6.26344 10.1855 7.1057 9.61678 7.5038Z"
+                  fill="#B2ABFC" />
+              </svg>
+              Косметология
+            </div>
+            <div class="price__content">
+              <div class="price__block">
+                <p class="price__block-text">Косметология</p>
+                <button class="price__block-btn bth-reset">
+                  Записаться
+                  <svg class="price__btn-icon" width="45" height="45" viewBox="0 0 45 45" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="22.399" cy="22.7616" r="21.8817" fill="white"></circle>
+                    <path d="M29.7828 26.8467V15.3781M29.7828 15.3781H18.3143M29.7828 15.3781L15.0165 30.1445"
+                      stroke="#535353" stroke-width="2.66" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+                <p class="price__block-price">1 600 ₽</p>
+              </div>
+              <div class="price__block">
+                <p class="price__block-text">Косметология</p>
+                <button class="price__block-btn bth-reset">
+                  Записаться
+                  <svg class="price__btn-icon" width="45" height="45" viewBox="0 0 45 45" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="22.399" cy="22.7616" r="21.8817" fill="white"></circle>
+                    <path d="M29.7828 26.8467V15.3781M29.7828 15.3781H18.3143M29.7828 15.3781L15.0165 30.1445"
+                      stroke="#535353" stroke-width="2.66" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+                <p class="price__block-price">1 600 ₽</p>
+              </div>
+              <div class="price__block">
+                <p class="price__block-text">Косметология</p>
+                <button class="price__block-btn bth-reset">
+                  Записаться
+                  <svg class="price__btn-icon" width="45" height="45" viewBox="0 0 45 45" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="22.399" cy="22.7616" r="21.8817" fill="white"></circle>
+                    <path d="M29.7828 26.8467V15.3781M29.7828 15.3781H18.3143M29.7828 15.3781L15.0165 30.1445"
+                      stroke="#535353" stroke-width="2.66" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+                <p class="price__block-price">1 600 ₽</p>
+              </div>
+              <div class="price__block">
+                <p class="price__block-text">Косметология</p>
+                <button class="price__block-btn bth-reset">
+                  Записаться
+                  <svg class="price__btn-icon" width="45" height="45" viewBox="0 0 45 45" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="22.399" cy="22.7616" r="21.8817" fill="white"></circle>
+                    <path d="M29.7828 26.8467V15.3781M29.7828 15.3781H18.3143M29.7828 15.3781L15.0165 30.1445"
+                      stroke="#535353" stroke-width="2.66" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+                <p class="price__block-price">1 600 ₽</p>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- <div class="price__item" data-category="therapist">
+            <div class="price__header">
+              <svg class="accordion__svg" width="11" height="13" viewBox="0 0 11 13" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.61678 7.5038L2.98996 12.1426C2.06207 12.7921 0.787108 12.1283 0.787108 10.9957V2.37349C0.787108 1.24086 2.06207 0.577043 2.98996 1.22656L9.61678 5.86534C10.1855 6.26344 10.1855 7.1057 9.61678 7.5038Z"
+                  fill="#B2ABFC" />
+              </svg>
+              Логопедия
+            </div>
+            <div class="price__content">
+              <div class="price__block">
+                <p class="price__block-text">Логопедия</p>
+                <button class="price__block-btn bth-reset">
+                  Записаться
+                  <svg class="price__btn-icon" width="45" height="45" viewBox="0 0 45 45" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="22.399" cy="22.7616" r="21.8817" fill="white"></circle>
+                    <path d="M29.7828 26.8467V15.3781M29.7828 15.3781H18.3143M29.7828 15.3781L15.0165 30.1445"
+                      stroke="#535353" stroke-width="2.66" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+                <p class="price__block-price">1 600 ₽</p>
+              </div>
+              <div class="price__block">
+                <p class="price__block-text">Логопедия</p>
+                <button class="price__block-btn bth-reset">
+                  Записаться
+                  <svg class="price__btn-icon" width="45" height="45" viewBox="0 0 45 45" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="22.399" cy="22.7616" r="21.8817" fill="white"></circle>
+                    <path d="M29.7828 26.8467V15.3781M29.7828 15.3781H18.3143M29.7828 15.3781L15.0165 30.1445"
+                      stroke="#535353" stroke-width="2.66" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+                <p class="price__block-price">1 600 ₽</p>
+              </div>
+              <div class="price__block">
+                <p class="price__block-text">Логопедия</p>
+                <button class="price__block-btn bth-reset">
+                  Записаться
+                  <svg class="price__btn-icon" width="45" height="45" viewBox="0 0 45 45" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="22.399" cy="22.7616" r="21.8817" fill="white"></circle>
+                    <path d="M29.7828 26.8467V15.3781M29.7828 15.3781H18.3143M29.7828 15.3781L15.0165 30.1445"
+                      stroke="#535353" stroke-width="2.66" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+                <p class="price__block-price">1 600 ₽</p>
+              </div>
+              <div class="price__block">
+                <p class="price__block-text">Логопедия</p>
+                <button class="price__block-btn bth-reset">
+                  Записаться
+                  <svg class="price__btn-icon" width="45" height="45" viewBox="0 0 45 45" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="22.399" cy="22.7616" r="21.8817" fill="white"></circle>
+                    <path d="M29.7828 26.8467V15.3781M29.7828 15.3781H18.3143M29.7828 15.3781L15.0165 30.1445"
+                      stroke="#535353" stroke-width="2.66" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+                <p class="price__block-price">1 600 ₽</p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer id="contacts" class="footer">
+    <div class="container">
+      <div class="footer__container-top">
+        <div class="footer__container-info">
+          <ul class="footer__list-info">
+            <li class="footer__list-info">Лицензии</li>
+            <li class="footer__list-info">Контакты контролирующих органов</li>
+            <li class="footer__list-info">Нормативные документы</li>
+          </ul>
+          <button class="footer__btn-info bth-reset">Написать гендиректору
+            <svg class="footer__btn-icon" width="35" height="35" viewBox="0 0 35 36" aria-hidden="true">
+              <use xlink:href="svg/sprite.svg#icon-button-arrow"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="footer__container-contacts">
+          <ul class="footer__contacts-list-tel">
+            <li class="footer__contacts-item-tel">
+              <a class="footer__contacts-link" href="tel:+74955557177">+7(495)555-71-77</a>
+            </li>
+            <li class="footer__contacts-item-tel">
+              <a class="footer__contacts-link" href="tel:+79953009911">+7(995)300-99-11</a>
+            </li>
+            <li class="footer__contacts-item-tel">
+              <a class="footer__contacts-link" href="tel:+79951009911">+7(995)100-99-11</a>
+            </li>
+          </ul>
+          <div class="footer__container-address">
+            <address class="footer__address">
+              <svg class="job__item-icon" width="24" height="24" aria-hidden="true">
+                <use xlink:href="svg/sprite.svg#icon-map-pin"></use>
+              </svg>
+              г. Лыткарино, кв-л 3A, д.29
+              <br>
+              г. Лыткарино, кв-л 2, д.13
+            </address>
+          </div>
+          <ul class="footer__contacts-list-icon">
+            <li class="footer__contacts-item-icon">
+              <a href="#">
+                <svg width="42" height="42" aria-hidden="true">
+                  <use xlink:href="svg/sprite.svg#icon-social-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__contacts-item-icon">
+              <a href="#">
+                <svg width="42" height="42" aria-hidden="true">
+                  <use xlink:href="svg/sprite.svg#icon-social-telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__contacts-item-icon">
+              <a href="#">
+                <svg width="42" height="42" aria-hidden="true">
+                  <use xlink:href="svg/sprite.svg#icon-social-facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__container-bootom">
+        <p class="footer__bootom-text">Семейная клиника «Здоровые дети» © 2012</p>
+      </div>
+    </div>
+  </footer>
+
+  <script defer src="js/main.js"></script>
+  <script defer src="js/accardion-schedule.js"></script>
+</body>
+
+</html>
