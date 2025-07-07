@@ -8,6 +8,7 @@
 @import url("media/dms.css");
 @import url("media/tax.css");
 @import url("media/vacancies.css");
+@import url("media/price.css");
 
 @media (max-width: 1200px) {
   .header__text {

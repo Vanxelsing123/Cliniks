@@ -18,3 +18,7 @@ const technologiesSwiper = new Swiper('.technologies-swiper', {
     },
   },
   });
+
+ 
+
+  
