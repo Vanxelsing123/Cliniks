@@ -19,6 +19,7 @@ headers.forEach(header => {
 
   function createButtons() {
     btnContainer = document.createElement('div');
+    btnContainer.classList.add('schedule__btns');
     btnContainer.style.display = 'flex';
     btnContainer.style.gap = '20px';
     btnContainer.style.marginLeft = 'auto';
@@ -50,13 +51,14 @@ headers.forEach(header => {
 
   function updateContentVisibility() {
     contents.forEach((content, idx) => {
+      const list = content.querySelector('.schedule__list');
       if (idx === currentIndex) {
         content.classList.add('active');
-        // Плавное раскрытие
         content.style.maxHeight = content.scrollHeight + 'px';
+        // Сброс прокрутки горизонтального списка в начало
+        if (list) list.scrollLeft = 0;
       } else {
         content.classList.remove('active');
-        // Плавное закрытие
         content.style.maxHeight = '0';
         content.style.paddingTop = '0';
         content.style.paddingBottom = '0';
@@ -82,18 +84,19 @@ headers.forEach(header => {
         header.removeChild(btnContainer);
       }
     } else {
-      // Открываем первый блок
       currentIndex = 0;
       updateContentVisibility();
 
       header.classList.add('transparent');
       svg?.classList.add('rotated');
 
-      if (!btnContainer) {
-        createButtons();
-      }
-      if (!header.contains(btnContainer)) {
-        header.appendChild(btnContainer);
+      if (window.innerWidth > 767) {
+        if (!btnContainer) {
+          createButtons();
+        }
+        if (!header.contains(btnContainer)) {
+          header.appendChild(btnContainer);
+        }
       }
     }
   });

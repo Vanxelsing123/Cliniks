@@ -1,0 +1,110 @@
+@media screen and (max-width: 1200px) {
+    .schedule__list {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .schedule__block {
+        align-items: center;
+    }
+    .schedule__block-doctor {
+        max-height: 260px;
+    }
+    .schedule__block:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .schedule__list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .schedule__block-doctor {
+        background-color: var(--color-white);
+    }
+    .schedule__items {
+        background-color: var(--color-white);
+    }
+    .schedule__header {
+        background-color: var(--color-white);
+    }
+    .schedule__header.transparent {
+        background-color: transparent;
+    }
+}   
+
+@media screen and (max-width: 767px) {
+    .schedule__block {
+        flex-direction: column;
+    }
+    .schedule__block-doctor {
+        margin-bottom: 30px;
+    }
+    .schedule__list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .schedule__header {
+        font-size: 20px;
+    }
+   .schedule__list {
+  display: flex;              
+  flex-wrap: nowrap;          
+  overflow-x: auto;           
+  -webkit-overflow-scrolling: touch; 
+  scroll-behavior: smooth;    
+  scrollbar-width: none;      
+  -ms-overflow-style: none;   
+  gap: 12px;                 
+  padding-bottom: 10px;       
+  max-width: 100%;            
+}
+
+.schedule__list::-webkit-scrollbar {
+  display: none; 
+}
+
+.schedule__items {
+  flex: 0 0 auto;            
+  min-width: 220px;          
+  scroll-snap-align: start;  
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.modal__phone {
+    width: 300px;
+}
+.programs__buy-btn {
+    width: 310px;
+}
+
+.modal__phone--content {
+    align-items: center;
+}
+
+.modal__title--overlay {
+    font-size: 27px;
+}
+
+.modal__text--title  {
+    font-size: 15px;
+}
+
+}
+
+@media screen and (max-width: 425px) {
+    .schedule__items {
+         min-width: 176px; 
+    }
+    .modal__text span {
+        display: block;
+       margin-top: 7px;
+        max-width: 160px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .schedule__items {
+         min-width: 153px; 
+    }
+}
+
+

@@ -1,0 +1,260 @@
+@import url("./header.css");
+@import url("./footer.css");
+
+@font-face {
+  font-family: "Inter";
+  src: local("InterMedium"), url("../fonts/InterMedium.woff2") format("woff2"),
+    url("../fonts/InterMedium.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: local("InterRegular"), url("../fonts/InterRegular.woff2") format("woff2"),
+    url("../fonts/InterRegular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+body {
+  min-width: 380px;
+  font-family: "Inter", sans-serif;
+  background-color: var(--color-white);
+}
+
+:root {
+  --color-smoky-white: #f5f5f5;
+  --color-white: #ffffff;
+  --color-wet-asphalt: #4e4e4e;
+  --color-lavender: #eff3fc;
+  --color-slate-blue: #897cff;
+  --color-signal-black: #313131;
+  --color-signa-black: #2c2c2c;
+  --color-grey: #7a7a7a;
+  --color-almost-black: #141414;
+  --color-light-pinkish: #dad7ff;
+  --color-lavender-pink: #f7b7efb5;
+  --color-heavenly: #a3b5ffb3;
+  --color-asphalt: #535353;
+  --color-gray-brown: #3d3d3d;
+  --color-dull-grey: #6a6a6a;
+}
+
+/*Blog*/
+.main {
+  padding-bottom: 100px;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.bth-reset {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+.med__title {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 150%;
+    padding-left: 20px;
+    margin-bottom: 70px;
+    color: var(--color-grey);
+}
+
+.med__content {
+    display: flex
+}
+
+.sidebar {
+      width: 260px;
+      background: #fff;
+      padding: 20px;
+    }
+    .user-info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    .username {
+        font-weight: 400;
+        font-size: 20px;
+        color: var(--color-signa-black);
+    }
+    .avatar {
+      width: 50px;
+      height: 50px;
+      background: #2563eb;
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 10px;
+    }
+    .menu button {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 14px;
+      transition: background 0.2s;
+      color: var(--color-signa-black);
+    }
+    .menu button.active,
+    .menu button:hover {
+      background: var(--color-light-pinkish);
+    
+    }
+    .menu svg {
+      width: 35px;
+      height: 35px;
+    }
+    .content {
+      flex-grow: 1;
+      padding: 40px;
+    }
+
+    .episode {
+  border: 1px solid var(--color-light-pinkish);
+  padding: 20px 30px 30px 50px;
+  margin-bottom: 20px;
+  border-radius: 25px;
+  max-width: 920px;
+  font-family: Arial, sans-serif;
+}
+
+.episode-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.episode-header h3 {
+  margin: 0 0 4px 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #8E9CC0;
+}
+
+.episode-header p {
+  margin: 0;
+  color: var(--color-gray-brown);
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.episode-date {
+  font-size: 14px;
+  color: #888;
+}
+
+.episode-body {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.doctor-photo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.doctor-info {
+  flex-grow: 1;
+}
+
+.doctor-name {
+  font-weight: 400;
+  font-size: 19px;
+  color: var(--color-signa-black);
+  margin: 0 0 4px 0;
+}
+
+.doctor-specialties {
+  font-weight: 500;
+  margin: 0;
+  font-size: 13px;
+  color: #666;
+}
+
+.episode-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.episode-actions button {
+  padding: 8px 20px;
+  border: none;
+  background-color: #897CFF;
+  color: white;
+  border-radius: 39px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background-color ease-in-out 0.3s;
+}
+
+.episode-actions button:hover {
+  background-color: #6f63e5;
+}
