@@ -101,6 +101,7 @@
     }
     .visit__card-wrap-list {
         flex-direction: column;
+       
     }
     .visit__card-wrap-titles {
         font-size: 20px;
@@ -113,5 +114,8 @@
     }
     .visit__card-wraps-list {
         padding-left: 0;
+    }
+    .container__visit-wrap-list {
+        gap: 30px;
     }
 }

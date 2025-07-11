@@ -10,6 +10,13 @@
 @import url("media/vacancies.css");
 @import url("media/price.css");
 @import url('media/schedule.css');
+@import url('media/doctors.css');
+
+@media (max-width: 1400px) {
+  .map__container-wraps {
+    background-image: none;
+  }
+}
 
 @media (max-width: 1200px) {
   .header__text {
@@ -141,6 +148,15 @@
     display: block;
   }
 
+  .about {
+    max-width: none;
+    padding: 26px 39px 40px 39px;
+  }
+
+  .content__about {
+    justify-content: center;
+  }
+
   .about__title {
     font-size: 28px;
   }
@@ -195,6 +211,38 @@
     display: none;
   }
 
+  .title__services--mob {
+    padding: 0;
+    margin: 0;
+    display: block;
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--color-asphalt);
+    margin-bottom: 20px;
+  }
+
+  .services__list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .special-item1 {
+    width: 70%;
+  }
+
+  .special-item2 {
+    width: 70%;
+  }
+
+  .special-item3 {
+    width: 70%;
+  }
+
+  .services__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
   .services__title-special {
     max-width: 250px;
   }
@@ -202,6 +250,10 @@
   .map__container-wraps {
     background-image: none;
     justify-content: center;
+  }
+
+  .map__container {
+    padding: 50px;
   }
 }
 
@@ -248,13 +300,35 @@
   .services__item:last-child {
     margin-bottom: 0;
   }
+}
 
-  .special-item2 {
-    width: 83%;
+@media (max-width: 767px) {
+  .swiper {
+    max-width: 420px;
+    height: 280px;
   }
-
-  .special-item3 {
-    width: 83%;
+  .services__svg--cliniks {
+    width: 144px;
+    height: 144px;
+  }
+  .map__container {
+    padding: 15px;
+  }
+  .map__contacts-title {
+    font-size: 28px;
+  }
+  .map__container-wrap {
+    padding: 20px;
+  }
+  .map__container-wraps {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .map__contacts {
+    margin-right: 0;
+  }
+  .map__container-info {
+    margin-bottom: 20px;
   }
 }
 
@@ -268,18 +342,10 @@
     height: 240px;
   }
 
-  .title__services--mob {
-    padding: 0;
-    margin: 0;
-    display: block;
-    font-size: 28px;
-    font-weight: 400;
-    color: var(--color-asphalt);
-    margin-bottom: 20px;
-  }
+  
 
   .special-item1 {
-    width: 340px;
+    width: 100%;
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-around;
@@ -336,6 +402,7 @@
 
   .map__list {
     flex-direction: column;
+    
   }
   .map__item:not(:last-child) {
     margin-right: 0;
@@ -360,6 +427,7 @@
 
   .map__container-wraps {
     flex-direction: column;
+    align-items: flex-start;
   }
 
   .map__contacts-list-icon {
@@ -396,81 +464,3 @@
   }
 }
 
-/* doctors */
-
-@media (max-width: 1200px) {
-  .doctors__list {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .doctors__container-wrapp {
-    background-image: none;
-    padding: 40px 200px 50px 50px;
-  }
-}
-
-@media (max-width: 768px) {
-  .doctors__list {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .doctors__reception {
-    font-size: 13px;
-  }
-
-  .doctors__container-card {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .doctors__container-wrapp {
-    padding: 9px 53px 0px 0px;
-  }
-
-  .doctors__btn {
-    margin-top: 20px;
-    position: relative;
-    width: 340px;
-  }
-
-  .doctors__card-name {
-    font-size: 24px;
-  }
-
-  .doctors__text-profession {
-    font-size: 16px;
-  }
-
-  .about__container-info {
-    margin-right: 40px;
-  }
-}
-
-@media (max-width: 425px) {
-  .doctors__title {
-    font-size: 32px;
-    margin-bottom: 20px;
-  }
-
-  .doctors__name {
-    font-size: 16px;
-  }
-  .doctors__profession {
-    font-size: 13px;
-  }
-  .doctors__filters {
-    display: flex;
-  }
-
-  .about__container {
-    flex-direction: column;
-    align-items: center;
-  }
-  .about__container-info {
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-
-  .doctors__container-wrapp {
-    padding: 9px 0px 0px 0px;
-  }
-}

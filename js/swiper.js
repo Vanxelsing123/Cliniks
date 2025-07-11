@@ -1,7 +1,7 @@
 const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
 
-  loop: true,
+  /* loop: true, */
 
   slidesPerView: 1,     // показывать по 1 слайду
   slidesPerGroup: 1,    // прокручивать по 1 слайду

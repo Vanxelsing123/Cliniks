@@ -171,6 +171,10 @@
     font-size: 14px;
   }
 
+  .stock__wrap {
+    margin-bottom: 20px;
+  }
+
   /* .stock__item-btn,
   .stock__item-btn-one {
     font-size: 14px;

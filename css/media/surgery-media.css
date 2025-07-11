@@ -20,8 +20,12 @@
 }
 
 @media (max-width: 1024px) {
+  .surgery {
+    padding-bottom: 25px;
+  }
   .surgery__title {
     margin-top: 20px;
+    font-size: 32px;
   }
 
   .surgery__svg {
@@ -81,6 +85,7 @@
   }
   .help {
     padding-top: 0;
+    padding-bottom: 0;
   }
   .help__title {
     font-size: 18px;
@@ -172,10 +177,20 @@
 }
 
 @media (max-width: 425px) {
+  
   .help__item {
     width: 330px;
   }
-  
+  .surgery__info {
+    background-color: transparent;
+    border: none;
+  }
+  .jobs__title {
+    font-size: 20px;
+  }
+  .jobs__text {
+    font-size: 16px;
+  }
 }
 
 

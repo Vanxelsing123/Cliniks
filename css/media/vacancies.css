@@ -55,9 +55,7 @@
     .vacancies__dental-surgeon:not(:first-child) {
         margin-bottom: 50px;
     }
-    .main {
-        padding-bottom: 0;
-    }
+   
     .vacancies__modal-content {
         width: 350px;
     }
