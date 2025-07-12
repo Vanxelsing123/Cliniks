@@ -112,6 +112,10 @@ body {
     color: var(--color-grey);
 }
 
+#backToMenu {
+  display: none;
+}
+
 .med__content {
     display: flex
 }
@@ -196,7 +200,7 @@ body {
   color: #8E9CC0;
 }
 
-.episode-header p {
+.episode-consult {
   margin: 0;
   color: var(--color-gray-brown);
   font-size: 28px;
@@ -244,7 +248,7 @@ body {
   gap: 8px;
 }
 
-.episode-actions button {
+.btn-card {
   padding: 8px 20px;
   border: none;
   background-color: #897CFF;
@@ -257,4 +261,276 @@ body {
 
 .episode-actions button:hover {
   background-color: #6f63e5;
+}
+
+.header-border {
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--color-heavenly);
+}
+
+.episode__date {
+  display: flex;
+}
+
+.episode__time {
+  font-weight: 400;
+  font-size: 27px;
+  color: #3d3d3d;
+  margin-right: 50px;
+}
+
+.episode__address {
+  font-weight: 400;
+  font-size: 27px;
+  color: #3d3d3d;
+}
+
+.body-visit {
+  padding-top: 25px;
+}
+
+.btn-visit {
+  padding: 8px 20px;
+  border: none;
+  background-color:#EFF3FF;
+  color: var(--color-black-brown);
+  border-radius: 39px;
+  cursor: pointer;
+  font-size: 13px;
+  border: 1px solid var(--color-slate-blue);
+  transition: background-color ease-in-out 0.3s;
+}
+
+.profile-field {
+      margin-bottom: 60px;
+    }
+
+    .profile-field label {
+      display: block;
+      font-weight: 500;
+      font-size: 20px;
+      margin-bottom: 35px;
+      color: #8E9CC0;
+    }
+
+    .profile-value {
+      position: relative;
+      border-bottom: 1px solid var(--color-light-pinkish);
+      padding-right: 30px;
+      cursor: default;
+      min-height: 24px;
+    }
+
+    .field-text {
+      font-size: 16px;
+      line-height: 1.3;
+      display: inline-block;
+      vertical-align: middle;
+      user-select: text;
+    }
+
+    .edit-btn,
+    .save-btn {
+      position: absolute;
+      right: 0;
+      top: -13%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      padding: 4px;
+      cursor: pointer;
+      color: #333;
+      width: 45px;
+      height: 45px;
+    }
+
+    .edit-input {
+      width: 100%;
+      border: none;
+      outline: none;
+      font-size: 16px;
+      line-height: 1.3;
+      padding: 2px 0;
+      background: transparent;
+      box-sizing: border-box;
+    }
+
+  @media (max-width: 1024px) {
+    .med__title {
+      margin-bottom: 40px;
+      margin-top: 20px;
+    }
+    .episode-body {
+      flex-direction: column;
+      align-items: self-start;
+    }
+    .episode {
+      background-color: var(--color-white);
+      max-width: 500px;
+    }
+    .episode__date {
+      flex-direction: column;
+    }
+    .episode__time {
+      font-size: 21px;
+    }
+    .episode__address {
+      font-size: 21px;
+    }
+    .body-visit {
+      padding-top: 8px;
+    }
+  }
+
+    @media (max-width: 768px) {
+      #backToMenu {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        background-color: transparent;
+        border: none;
+        color: var(--color-dull-grey);
+      }
+      .med__title {
+        margin-bottom: 5px;
+      }
+      .content {
+        flex-direction: column;
+        align-items: center;
+      }
+  .container {
+    padding: 0 20px;
+  }
+
+  .doctor__card {
+    display: flex;
+    align-items: center;
+  }
+
+  .doctor-photo {
+    margin-right: 10px;
+  }
+
+  .episode-body {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .episode-actions {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .menu {
+    justify-content: center;
+  }
+
+  .menu button {
+    flex: 1 1 auto;
+    min-width: 120px;
+    text-align: center;
+  }
+
+  .doctor-photo img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .edit-input {
+    width: 100%;
+  }
+
+  .profile-value {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-card,
+  .btn-visit {
+    width: 100%;
+  }
+  .sidebar {
+    display: block;
+  }
+
+  .main-content {
+    display: none;
+  }
+
+  #backToMenu {
+    display: none;
+  }
+
+  .med__content {
+    flex-direction: column;
+  }
+}
+
+.back-to-menu {
+  display: none;
+  padding: 16px 20px;
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: var(--color-smoky-white);
+  border-bottom: 1px solid #e5e5e5;
+}
+
+@media (max-width: 480px) {
+  .doctor-photo img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .episode {
+    padding: 20px;
+  }
+  .episode-actions {
+    width: 100%;
+  }
+  .episode-consult {
+    font-size: 21px;
+  }
+  .episode-header h3 {
+    font-size: 16px;
+  }
+  .header-border {
+    border: none;
+    padding-bottom: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: block;
+    width: 100%;
+  }
+
+  .main-content {
+    
+    width: 100%;
+    padding: 20px;
+  }
+
+  .back-to-menu {
+    display: block;
+  }
+
+  .menu button {
+    width: 100%;
+    text-align: left;
+    padding: 16px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .episode {
+    flex-direction: column;
+  }
+
+
+
+  .doctor-photo img {
+    width: 50px;
+    height: 50px;
+  }
 }
