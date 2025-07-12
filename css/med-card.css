@@ -508,6 +508,15 @@ body {
     font-size: 20px;
     border-radius: 16px;
   }
+  .med__title {
+    display: none;
+  }
+  .med__content {
+    margin-top: 20px;
+  }
+  .sidebar {
+    padding: 10px;
+  }
 }
 
 @media (max-width: 768px) {
