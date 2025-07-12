@@ -498,6 +498,16 @@ body {
     border: none;
     padding-bottom: 5px;
   }
+
+  .sidebar {
+    background-color: transparent;
+  }
+  .menu button {
+    color: var(--color-white);
+    background-color: var(--color-slate-blue);
+    font-size: 20px;
+    border-radius: 16px;
+  }
 }
 
 @media (max-width: 768px) {
