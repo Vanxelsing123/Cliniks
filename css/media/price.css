@@ -81,3 +81,18 @@
     flex-shrink: 0;
   }
 }
+
+@media screen and (max-width: 425px) {
+.price__item:not(:last-child) {
+    margin-bottom: 8px;
+}
+.price__header {
+  font-size: 18px;
+}
+.accordion__svg {
+  margin-right: 8px;
+}
+.price__block {
+  border-bottom: 5px solid rgba(140, 133, 218, 0.2);
+}
+}

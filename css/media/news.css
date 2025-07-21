@@ -19,6 +19,7 @@
 
 @media (max-width: 768px) {
     .news__title {
+        font-size: 32px;
         margin-bottom: 25px;
     }
     .news__tabs {
@@ -38,5 +39,11 @@
      .news__list {
         grid-template-columns: repeat(1, 1fr);
         justify-items: center
+    }
+}
+
+@media (max-width: 425px) {
+    .news__titles {
+        font-size: 24px;
     }
 }

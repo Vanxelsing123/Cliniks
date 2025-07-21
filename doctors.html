@@ -186,12 +186,23 @@
             <input type="text" class="doctors__search" placeholder="Поиск по ФИО">
             <ul class="doctors__autocomplete list-reset"></ul>
           </div>
-          <select class="doctors__select">
-            <option value="">Все специализации</option>
-            <option value="Дети и взрослые">Дети и взрослые</option>
-            <option value="Дети до 18 лет">Дети до 18 лет</option>
-            <option value="Взрослые">Взрослые</option>
-          </select>
+          <div class="doctors__custom-select">
+  <div class="doctors__select-trigger">
+    <span class="doctors__select-placeholder">Все специализации</span>
+    <span class="doctors__arrow">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M5 12.5L10 7.5L15 12.5" stroke="#897CFF" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </span>
+  </div>
+  <ul class="doctors__select-options">
+    <li data-value="">Все специализации</li>
+    <li data-value="Дети и взрослые">Дети и взрослые</li>
+    <li data-value="Дети до 18 лет">Дети до 18 лет</li>
+    <li data-value="Взрослые">Взрослые</li>
+  </ul>
+</div>
+
         </div>
         <div class="doctors__container">
           <ul class="doctors__list list-reset">
@@ -265,7 +276,7 @@
     </div>
   </main>
 
-  <footer id="contacts">
+  <footer class="footer" id="contacts">
     <div class="container">
       <div class="footer__container-top">
         <div class="footer__container-info">

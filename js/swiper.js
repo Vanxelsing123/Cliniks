@@ -4,7 +4,8 @@ const swiper = new Swiper('.swiper', {
   /* loop: true, */
 
   slidesPerView: 1,     // показывать по 1 слайду
-  slidesPerGroup: 1,    // прокручивать по 1 слайду
+  slidesPerGroup: 1,
+  spaceBetween: 8,    // прокручивать по 1 слайду
 
   navigation: {
     nextEl: '.swiper-next',

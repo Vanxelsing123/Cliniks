@@ -1,5 +1,6 @@
 .footer {
   padding-top: 25px;
+  background-color: var(--color-white);
 }
 .footer__container-top {
   display: flex;

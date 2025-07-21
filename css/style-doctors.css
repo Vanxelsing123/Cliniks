@@ -119,14 +119,113 @@ body {
 .doctors__select {
   padding: 10px 14px;
   border-radius: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid #C4C3D3;
   font-size: 14px;
   width: 100%;
+  color: #C4C3D3;
+  background-color: transparent;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
-.doctors__search-wrap {
-  position: relative;
+input::placeholder {
+  color: #C4C3D3;
 }
+
+select option {
+  color: #6A6A6A;
+}
+
+select:focus-visible {
+  border-color: transparent;
+}
+
+.doctors__search-wrap input {
+  background-color: var(--color-white);
+}
+
+.doctors__custom-select {
+  position: relative;
+  width: 100%;
+  font-size: 14px;
+  user-select: none;
+}
+
+.doctors__select-trigger {
+  padding: 10px 40px 10px 14px;
+  border: 1px solid #C4C3D3;
+  border-radius: 8px;
+  color: #C4C3D3;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+}
+
+.doctors__arrow {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%) rotate(0deg);
+  transition: transform 0.3s ease;
+  pointer-events: none;
+}
+
+.doctors__custom-select.open .doctors__arrow {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.doctors__select-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin: 6px 0 0 0;
+  padding: 0;
+  list-style: none;
+  border-radius: 8px;
+  background: white;
+  max-height: 200px;
+  overflow-y: auto;
+  box-shadow: 0 2px 6px rgba(137,124,255,0.3);
+  display: none;
+  z-index: 10;
+}
+
+.doctors__select-options li {
+  border-bottom: 1px solid var(--color-light-pinkish);
+}
+
+.doctors__custom-select.open .doctors__select-options {
+  display: block;
+}
+
+
+
+.doctors__select-options li {
+  padding: 10px 14px;
+  cursor: pointer;
+  color: #6A6A6A;
+  transition: background-color 0.2s ease;
+}
+
+.doctors__select-options li:hover {
+  background-color: #f0f0ff;
+}
+
+.doctors__arrow svg path {
+  stroke: #6A6A6A;
+  transition: stroke 0.3s ease;
+}
+
+/* При открытом селекте цвет стрелки */
+.doctors__custom-select.open .doctors__arrow svg path {
+  stroke: #897CFF;
+}
+
 
 .doctors__autocomplete {
   position: absolute;
@@ -187,6 +286,7 @@ body {
 
 .doctors__img {
   margin-bottom: 20px;
+  
 }
 
 .doctors__item {
@@ -205,8 +305,10 @@ body {
 }
 
 
-.doctors__item:hover {
+.doctors__img:hover {
   box-shadow: 0 0 0 2px var(--color-slate-blue);
+  border-radius: 7px;
+  
 }
 
 /* doctors-card */

@@ -158,7 +158,8 @@
   }
 
   .about__title {
-    font-size: 28px;
+    font-size: 32px;
+    line-height: 120%;
   }
 
   .about__text {
@@ -240,7 +241,7 @@
 
   .services__item:not(:last-child) {
     margin-right: 0;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
 
   .services__title-special {
@@ -263,7 +264,7 @@
   }
 
   .container {
-    padding: 0 20px;
+    padding: 0 16px;
   }
   .header__logo {
     display: none;
@@ -355,11 +356,6 @@
     padding-bottom: 50px;
   }
 
-  .services__svg--cliniks {
-    width: 144px;
-    height: 144px;
-  }
-
   .services__svg--arrow {
     display: none;
   }
@@ -379,20 +375,33 @@
     max-width: 240px;
     font-size: 28px;
     margin-bottom: 20px;
+    color: var(--color-white);
   }
   .services__item {
-    padding: 25px 20px 15px 10px;
+    padding: 25px 20px 15px 15px;
   }
   .services__svg--cliniks {
     right: 3px;
+    display: none;
   }
+
   .services__svg {
-    top: 23px;
+    display: none;
+
   }
   .services__svg--koc {
+    display: none;
+  }
+
+  .services__svg--koc-mob {
     top: 7px;
     right: 3px;
   }
+
+  .services__svg-mob {
+    top: 23px;
+  }
+
   #map {
     display: none;
   }
@@ -444,6 +453,11 @@
 
   .svg__map {
     margin-right: 10px;
+  }
+
+  .map__time--span {
+    display: block;
+    margin-bottom: 5px;
   }
 
   .footer__container-top {

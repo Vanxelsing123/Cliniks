@@ -292,19 +292,19 @@ body {
 .special-item1 {
   position: relative;
   width: 610px;
-  background-color: var(--color-light-pinkish);
+  background-color: #D8D5FD;
 }
 
 .special-item2 {
   position: relative;
   width: 25%;
-  background-color: var(--color-heavenly);
+  background-color: #C9DAFF;
 }
 
 .special-item3 {
   position: relative;
   width: 25%;
-  background-color: var(--color-lavender-pink);
+  background-color: #F1D5FD;
 }
 
 .services__item {
@@ -347,6 +347,20 @@ body {
   right: 17px;
 }
 
+.services__svg-mob {
+  position: absolute;
+  top: 88px;
+  bottom: 10px;
+  right: 17px;
+}
+
+.services__svg--koc-mob {
+  position: absolute;
+  top: 60px;
+  bottom: 10px;
+  right: 17px;
+}
+
 .services__svg--arrow {
   position: absolute;
   top: 165px;
@@ -354,13 +368,22 @@ body {
   right: 12px;
 }
 
+.services__svg--cliniks-mob {
+  position: absolute;
+  top: 15px;
+  bottom: 10px;
+  right: 17px;
+}
+
+
 .services__item--text {
   color: var(--color-white);
-  background-color: #c1bbff;
+  background-color: #A59CFF;
   max-width: 100px;
   border-radius: 30px;
   text-align: center;
   margin-bottom: 50px;
+  padding: 4px 12px;
 }
 
 .services__svg--cliniks {
@@ -517,6 +540,6 @@ body {
   align-items: center;
   font-weight: 500;
   font-size: 15px;
-  line-height: 105%;
+  line-height: 150%;
   color: var(--color-dull-grey);
 }
