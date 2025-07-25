@@ -492,7 +492,6 @@ body {
 }
 
 .map__contacts-list-tel {
-  padding: 0 25px;
   margin-bottom: 25px;
   list-style: none;
 }
@@ -537,9 +536,13 @@ body {
 
 .map__time {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   font-weight: 500;
   font-size: 15px;
   line-height: 150%;
   color: var(--color-dull-grey);
+}
+
+.tell__wrap {
+  display: flex;
 }
