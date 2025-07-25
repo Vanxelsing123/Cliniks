@@ -302,6 +302,7 @@ body {
   max-width: 290px;
   display: flex;
   align-items: center;
+  margin-top: 24px;
   font-weight: 400;
   font-size: 21px;
   line-height: 150%;

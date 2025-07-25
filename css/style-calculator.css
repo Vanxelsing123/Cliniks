@@ -142,6 +142,10 @@ body {
   color: var(--color-gray-brown);
 }
 
+.calculator__text-bottom svg {
+  margin-right: 8px;
+}
+
 .calculator__list-laboratory {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

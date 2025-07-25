@@ -104,12 +104,12 @@ body {
 }
 
 .med__title {
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 150%;
-    padding-left: 20px;
-    margin-bottom: 70px;
-    color: var(--color-grey);
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 150%;
+  padding-left: 20px;
+  margin-bottom: 70px;
+  color: var(--color-grey);
 }
 
 #backToMenu {
@@ -117,67 +117,77 @@ body {
 }
 
 .med__content {
-    display: flex
+  display: flex;
 }
 
 .sidebar {
-      width: 260px;
-      background: #fff;
-      padding: 20px;
-    }
-    .user-info {
-      display: flex;
-      align-items: center;
-      margin-bottom: 30px;
-    }
-    .username {
-        font-weight: 400;
-        font-size: 20px;
-        color: var(--color-signa-black);
-    }
-    .avatar {
-      width: 50px;
-      height: 50px;
-      background: #2563eb;
-      color: #fff;
-      font-size: 24px;
-      font-weight: bold;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-right: 10px;
-    }
-    .menu button {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 10px;
-      background: none;
-      border: none;
-      cursor: pointer;
-      border-radius: 5px;
-      font-size: 14px;
-      transition: background 0.2s;
-      color: var(--color-signa-black);
-    }
-    .menu button.active,
-    .menu button:hover {
-      background: var(--color-light-pinkish);
-    
-    }
-    .menu svg {
-      width: 35px;
-      height: 35px;
-    }
-    .content {
-      flex-grow: 1;
-      padding: 40px;
-    }
+  width: 260px;
+  background: #fff;
+  padding: 20px;
+}
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.user-info svg {
+  margin-left: 8px;
+}
 
-    .episode {
+.username {
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--color-signa-black);
+}
+.avatar {
+  width: 50px;
+  height: 50px;
+  background: #e5e5ff;
+  color: #b2abfc;
+  font-size: 24px;
+  font-weight: 400;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+.menu button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background 0.2s;
+  color: var(--color-signa-black);
+}
+.menu button:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.menu__med {
+  height: 76px;
+}
+
+.menu button.active,
+.menu button:hover {
+  background: var(--color-light-pinkish);
+}
+.menu svg {
+  width: 35px;
+  height: 35px;
+}
+.content {
+  flex-grow: 1;
+  padding: 40px;
+}
+
+.episode {
   border: 1px solid var(--color-light-pinkish);
   padding: 20px 30px 30px 50px;
   margin-bottom: 20px;
@@ -194,10 +204,10 @@ body {
 }
 
 .episode-header h3 {
-  margin: 0 0 4px 0;
+  margin: 0 0 16px 0;
   font-size: 18px;
   font-weight: 500;
-  color: #8E9CC0;
+  color: #8e9cc0;
 }
 
 .episode-consult {
@@ -251,7 +261,7 @@ body {
 .btn-card {
   padding: 8px 20px;
   border: none;
-  background-color: #897CFF;
+  background-color: #897cff;
   color: white;
   border-radius: 39px;
   cursor: pointer;
@@ -292,7 +302,7 @@ body {
 .btn-visit {
   padding: 8px 20px;
   border: none;
-  background-color:#EFF3FF;
+  background-color: #eff3ff;
   color: var(--color-black-brown);
   border-radius: 39px;
   cursor: pointer;
@@ -302,102 +312,102 @@ body {
 }
 
 .profile-field {
-      margin-bottom: 60px;
-    }
+  margin-bottom: 60px;
+}
 
-    .profile-field label {
-      display: block;
-      font-weight: 500;
-      font-size: 20px;
-      margin-bottom: 35px;
-      color: #8E9CC0;
-    }
+.profile-field label {
+  display: block;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 35px;
+  color: #8e9cc0;
+}
 
-    .profile-value {
-      position: relative;
-      border-bottom: 1px solid var(--color-light-pinkish);
-      padding-right: 30px;
-      cursor: default;
-      min-height: 24px;
-    }
+.profile-value {
+  position: relative;
+  border-bottom: 1px solid var(--color-light-pinkish);
+  padding-right: 30px;
+  cursor: default;
+  min-height: 24px;
+}
 
-    .field-text {
-      font-size: 16px;
-      line-height: 1.3;
-      display: inline-block;
-      vertical-align: middle;
-      user-select: text;
-    }
+.field-text {
+  font-size: 16px;
+  line-height: 1.3;
+  display: inline-block;
+  vertical-align: middle;
+  user-select: text;
+}
 
-    .edit-btn,
-    .save-btn {
-      position: absolute;
-      right: 0;
-      top: -13%;
-      transform: translateY(-50%);
-      background: none;
-      border: none;
-      padding: 4px;
-      cursor: pointer;
-      color: #333;
-      width: 45px;
-      height: 45px;
-    }
+.edit-btn,
+.save-btn {
+  position: absolute;
+  right: 0;
+  top: -13%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  color: #333;
+  width: 45px;
+  height: 45px;
+}
 
-    .edit-input {
-      width: 100%;
-      border: none;
-      outline: none;
-      font-size: 16px;
-      line-height: 1.3;
-      padding: 2px 0;
-      background: transparent;
-      box-sizing: border-box;
-    }
+.edit-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  line-height: 1.3;
+  padding: 2px 0;
+  background: transparent;
+  box-sizing: border-box;
+}
 
-  @media (max-width: 1024px) {
-    .med__title {
-      margin-bottom: 40px;
-      margin-top: 20px;
-    }
-    .episode-body {
-      flex-direction: column;
-      align-items: self-start;
-    }
-    .episode {
-      background-color: var(--color-white);
-      max-width: 500px;
-    }
-    .episode__date {
-      flex-direction: column;
-    }
-    .episode__time {
-      font-size: 21px;
-    }
-    .episode__address {
-      font-size: 21px;
-    }
-    .body-visit {
-      padding-top: 8px;
-    }
+@media (max-width: 1024px) {
+  .med__title {
+    margin-bottom: 40px;
+    margin-top: 20px;
   }
+  .episode-body {
+    flex-direction: column;
+    align-items: self-start;
+  }
+  .episode {
+    background-color: var(--color-white);
+    max-width: 500px;
+  }
+  .episode__date {
+    flex-direction: column;
+  }
+  .episode__time {
+    font-size: 21px;
+  }
+  .episode__address {
+    font-size: 21px;
+  }
+  .body-visit {
+    padding-top: 8px;
+  }
+}
 
-    @media (max-width: 768px) {
-      #backToMenu {
-        display: flex;
-        align-items: center;
-        margin-top: 20px;
-        background-color: transparent;
-        border: none;
-        color: var(--color-dull-grey);
-      }
-      .med__title {
-        margin-bottom: 5px;
-      }
-      .content {
-        flex-direction: column;
-        align-items: center;
-      }
+@media (max-width: 768px) {
+  #backToMenu {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    background-color: transparent;
+    border: none;
+    color: var(--color-dull-grey);
+  }
+  .med__title {
+    margin-bottom: 5px;
+  }
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
   .container {
     padding: 0 20px;
   }
@@ -509,13 +519,20 @@ body {
     border-radius: 16px;
   }
   .med__title {
-    display: none;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    display: block;
+    font-size: 15px;
   }
   .med__content {
-    margin-top: 20px;
+    margin-top: 12px;
+  }
+
+  .content {
+    padding: 0;
   }
   .sidebar {
-    padding: 10px;
+    padding: 0px;
   }
 }
 
@@ -526,9 +543,7 @@ body {
   }
 
   .main-content {
-    
-    width: 100%;
-    padding: 20px;
+    padding: 0px;
   }
 
   .back-to-menu {
@@ -545,8 +560,6 @@ body {
   .episode {
     flex-direction: column;
   }
-
-
 
   .doctor-photo img {
     width: 50px;

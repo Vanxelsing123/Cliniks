@@ -224,10 +224,10 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   // При наведении на правый блок кардиологии деактивируем левый блок
-  const leftBlock = document.querySelector('.programs__children');
-  const rightBlock = cardiology;
+  // const leftBlock = document.querySelector('.programs__children');
+  // const rightBlock = cardiology;
 
-  rightBlock.onmouseenter = () => leftBlock.classList.add('inactive');
-  rightBlock.onmouseleave = () => leftBlock.classList.remove('inactive');
+  // rightBlock.onmouseenter = () => leftBlock.classList.add('inactive');
+  // rightBlock.onmouseleave = () => leftBlock.classList.remove('inactive');
 });
 

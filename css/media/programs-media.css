@@ -1,16 +1,16 @@
 @media (max-width: 1200px) {
-    .programs__medical-item {
-        padding: 15px;
-    }
-    .programs__wrap {
-        flex-wrap: wrap;
-        flex-direction: column-reverse;
-        align-items: center;
-    }
+  .programs__medical-item {
+    padding: 15px;
+  }
+  .programs__wrap {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 
-    .programs__cardiology {
-        margin-bottom: 30px;
-    }
+  .programs__cardiology {
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -36,6 +36,7 @@
     margin-top: 20px;
     font-size: 32px;
     margin-bottom: 20px;
+    line-height: 120%;
   }
 
   .programs__cardiology {
@@ -45,24 +46,23 @@
   .programs__children {
     background-color: var(--color-white);
   }
-
 }
 
 @media (max-width: 600px) {
-    .programs__svg {
-        display: none;
-    }
-    .programs__svg--mobile {
+  .programs__svg {
+    display: none;
+  }
+  .programs__svg--mobile {
     display: block;
     position: absolute;
     top: 13px;
     right: 40px;
-    }
-    .programs__children-title {
-        font-size: 24px;
-        margin-bottom: 50px;
-    }
-    .programs__cardiology {
+  }
+  .programs__children-title {
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
+  .programs__cardiology {
     max-width: 400px;
   }
   .programs__btn {
@@ -80,45 +80,50 @@
 }
 
 @media (max-width: 425px) {
-    .programs__cardiology {
-        max-width: 340px;
-        padding: 35px 15px;   
-    }
-    .programs__children {
-        max-width: 340px;
-        padding: 35px 15px;
-    }
-    .programs__svg--mobile {
+  .programs__medical-title {
+    align-items: flex-start;
+    line-height: 100%;
+    font-size: 16px;
+  }
+  .programs__cardiology {
+    max-width: 340px;
+    padding: 15px;
+  }
+  .programs__children {
+    max-width: 340px;
+    padding: 35px 15px;
+  }
+  .programs__svg--mobile {
     display: block;
     position: absolute;
     top: 13px;
     right: 5px;
-    }
-    .modal__content {
-        max-width: 340px;
-        padding: 25px 10px;
-    }
-    .modal__title {
-        font-size: 28px;
-    }
-    .modal__text {
-        font-size: 16px;
-        line-height: 50%;
-        padding-bottom: 15px;
-    }
-    .modal__content-wrap {
-        padding-top: 20px;
-    }
-    .modal__content-wraps {
-        margin-bottom: 25px;
-    }
-    .modal__content-wraps:nth-child(3) {
-        display: none;
-    }
-    .modal__button {
-        width: 100%;
-        margin-left: 0;
-        margin-bottom: -17px;
-        margin-top: 30px;
-    }
+  }
+  .modal__content {
+    max-width: 340px;
+    padding: 25px 10px;
+  }
+  .modal__title {
+    font-size: 28px;
+  }
+  .modal__text {
+    font-size: 16px;
+    line-height: 50%;
+    padding-bottom: 15px;
+  }
+  .modal__content-wrap {
+    padding-top: 20px;
+  }
+  .modal__content-wraps {
+    margin-bottom: 25px;
+  }
+  .modal__content-wraps:nth-child(3) {
+    display: none;
+  }
+  .modal__button {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: -17px;
+    margin-top: 30px;
+  }
 }
