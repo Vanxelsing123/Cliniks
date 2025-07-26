@@ -1,4 +1,3 @@
-
 @media (max-width: 1280px) {
   .container {
     padding: 0 30px;
@@ -25,11 +24,10 @@
   }
 }
 
-
 @media (max-width: 1024px) {
-    .stock__title {
-        margin-top: 20px;
-    }
+  .stock__title {
+    margin-top: 20px;
+  }
 
   .stock__list {
     grid-template-columns: 1fr;
@@ -119,9 +117,7 @@
   }
 }
 
-
 @media (max-width: 480px) {
-  
   .stock__item-title {
     font-size: 28px;
   }
@@ -132,13 +128,11 @@
   }
 
   .stock__item-btn {
-    
     margin-top: 15px;
   }
 
   .stock__item-btn-one {
     margin-top: 10px;
-   
   }
 
   .stock__item-discount {
@@ -152,9 +146,7 @@
   .main {
     padding-bottom: 50px;
   }
-  
 }
-
 
 @media (max-width: 375px) {
   .stock__title {

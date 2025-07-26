@@ -6,6 +6,7 @@ const phoneInput = document.getElementById('phone');
 
 // Элементы закрытия и оверлеи
 const bookingCloseBtn = bookingModal.querySelector(".modal__close");
+const successCloseBtn = successModal.querySelector(".modal__close");
 const bookingOverlay = bookingModal.querySelector(".modal__overlay");
 const successOverlay = successModal.querySelector(".modal__overlay");
 const modalOkBtn = document.getElementById("modalOkBtn");
@@ -43,6 +44,10 @@ document.querySelectorAll(".schedule__items").forEach((item) => {
 // Закрытие bookingModal по крестику
 bookingCloseBtn.addEventListener("click", () => {
   bookingModal.classList.remove("active");
+});
+
+successCloseBtn.addEventListener("click", () => {
+  successModal.classList.remove("active");
 });
 
 // Закрытие bookingModal по клику на оверлей

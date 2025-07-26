@@ -69,23 +69,91 @@
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   }
+
   .modal__phone {
     width: 300px;
   }
   .programs__buy-btn {
-    width: 310px;
-  }
-
-  .modal__phone--content {
-    align-items: center;
+    width: 325px;
+    margin-left: -12px;
+    margin-right: -5px;
+    margin-bottom: -20px;
   }
 
   .modal__title--overlay {
-    font-size: 27px;
+    font-size: 28px;
+    margin-bottom: 0;
   }
 
   .modal__text--title {
+    font-size: 16px;
+    padding-bottom: 12px;
+  }
+
+  .modal__details {
+    padding-top: 24px;
+  }
+
+  .modal__close {
+    width: 36px;
+    height: 36px;
+  }
+
+  .modal__content {
+    max-width: 340px;
+    padding: 25px 20px;
+  }
+
+  .modal__title {
+    font-size: 28px;
+  }
+
+  .modal__time-text {
+    font-size: 20px;
+  }
+
+  .modal__doctor {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  .modal__text--phone {
+    margin-bottom: 5px;
+  }
+
+  .modal__doctor-name {
+    font-size: 20px;
+  }
+
+  .modal__label {
+    font-weight: 500;
     font-size: 15px;
+    color: var(--color-gray-brown);
+    margin-bottom: 5px;
+  }
+  .modal__text {
+    font-size: 18px;
+    line-height: 140%;
+  }
+  .modal__content-wrap {
+    padding-top: 20px;
+  }
+  .modal__content-wraps {
+    margin-bottom: 25px;
+  }
+  .modal__content-wraps:nth-child(3) {
+    display: none;
+  }
+  .modal__button {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: -17px;
+    margin-top: 30px;
+  }
+
+  .modal__item:not(:last-child) {
+    margin-bottom: 25px;
+  
   }
 }
 
@@ -95,8 +163,9 @@
   }
   .modal__text span {
     display: block;
-    margin-top: 7px;
+    margin-top: 5px;
     max-width: 160px;
+    color: #8e8e8e;
   }
 }
 

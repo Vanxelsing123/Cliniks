@@ -338,28 +338,27 @@ body {
   position: relative;
   border-radius: 30px;
   max-width: 468px;
-  max-height: 600px;
 }
 
 .modal__close {
   position: absolute;
-  top: 10px;
-  right: 15px;
+  top: -55px;
+  right: 0px;
   font-size: 24px;
   background: none;
   border: none;
   cursor: pointer;
 }
 
-.modal__doctor {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+.modal__doctor-text {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: var(--color-dull-grey);
 }
 
 .modal__doctor-img {
-  width: 60px;
-  height: 60px;
+  margin-right: 10px;
   object-fit: cover;
   border-radius: 50%;
 }
@@ -369,7 +368,7 @@ body {
   font-size: 38px;
   padding-bottom: 20px;
   border-bottom: 1px solid var(--color-light-pinkish);
-  margin-bottom: 40px;
+  margin-bottom: 24px;
 }
 
 .modal__label {
@@ -392,14 +391,21 @@ body {
 .modal__note {
   font-weight: 400;
   font-size: 14px;
-  color: #6C6C6C;
+  color: #6c6c6c;
 }
 
 .modal__doctor {
+  display: flex;
+  flex-direction: column;
   margin-top: 40px;
   margin-bottom: 30px;
   padding-bottom: 40px;
   border-bottom: 1px solid var(--color-light-pinkish);
+}
+
+.modal__doctor-wrap {
+  display: flex;
+  align-items: center;
 }
 
 .modal__doctor-name {
@@ -410,7 +416,7 @@ body {
 .modal__doctor-specialty {
   font-weight: 500;
   font-size: 15px;
-  color: #6C6C6C;
+  color: #6c6c6c;
 }
 
 .modal__phone--content {
@@ -420,8 +426,10 @@ body {
 }
 
 .programs__buy-btn {
-  width: 400px;
+  width: 450px;
   height: 52px;
+  margin-left: -31px;
+  margin-bottom: -28px;
   padding: 0 5px 0 25px;
   font-weight: 400;
   font-size: 18px;
@@ -444,7 +452,7 @@ body {
 .modal__text--phone {
   font-weight: 500;
   font-size: 15px;
-  color: #6C6C6C;
+  color: #6c6c6c;
   margin-bottom: 20px;
   display: block;
 }
@@ -486,6 +494,10 @@ body {
 
 .modal__item {
   display: flex;
+  align-items: center;
+}
+
+.modal__item:not(:last-child) {
   margin-bottom: 50px;
   align-items: center;
 }
@@ -511,5 +523,3 @@ body {
   outline: none;
   box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.2);
 }
-
-
