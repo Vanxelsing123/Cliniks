@@ -167,7 +167,7 @@
 	font-size: 14px;
 	padding: 10px 10px;
 	text-decoration: none;
-	color: var(--color-grey);
+	color: var(--color-almost-black);
 	border-bottom: 1px solid rgba(140, 133, 218, 0.1);
 }
 
@@ -242,5 +242,5 @@ header.open .header__burger-btn span:nth-child(3) {
 }
 
 header.open {
-	background-color: #f5f4ff;
+	background-color: var(--color-white);
 }

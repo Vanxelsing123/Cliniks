@@ -241,7 +241,7 @@ body {
 }
 
 .schedule__items {
-  height: 165px;
+  height: 125px;
   padding: 15px 15px;
   border-radius: 8px;
   background-color: var(--color-lavender);
