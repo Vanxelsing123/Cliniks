@@ -59,15 +59,16 @@
 	.nav__content {
 		padding: 30px 20px 50px 20px;
 		width: 380px;
-		height: 675px;
+		max-height: calc(100vh - 50px);
 		display: flex;
 		position: absolute;
 		top: 145px;
 		left: -380px;
 		border-radius: 10px;
-		background-color: #F5F4FF;
+		background-color: #f5f4ff;
 		z-index: 1000;
 		transition: transform 0.5s;
+		overflow-y: auto;
 	}
 
 	.header__nav-list {
@@ -127,7 +128,7 @@
 
 	.dropdown-button {
 		margin-bottom: 14px;
-    color: var(--color-grey);
+		color: #c4c3d3;
 	}
 
 	.dropdown {
@@ -261,7 +262,7 @@
 
 @media (max-width: 768px) {
 	.nav__content {
-		top: 68px;
+		top: 90px;
 	}
 
 	.container {
@@ -337,7 +338,7 @@
 @media (max-width: 425px) {
 	.about {
 		padding: 0;
-		padding-top: 12px;
+		padding-top: 24px;
 	}
 	.swiper {
 		max-width: 340px;
@@ -346,7 +347,6 @@
 
 	.special-item1 {
 		width: 100%;
-		
 	}
 
 	#services {
@@ -456,9 +456,16 @@
 		margin-bottom: 5px;
 	}
 
+	.footer__container-info {
+		margin-right: 0;
+	}
+
+	.footer__contacts-list-icon {
+		padding-left: 0;
+	}
+
 	.footer__container-top {
 		flex-direction: column;
-		padding: 25px;
 	}
 
 	.footer__btn-info {

@@ -25,6 +25,10 @@
 	height: 52px;
 }
 
+.header__dropdown-container {
+	margin-bottom: 14px;
+}
+
 .header__logo--mobile {
 	display: none;
 }
