@@ -1,27 +1,27 @@
-@import url("./header.css");
-@import url("./footer.css");
+@import url('./header.css');
+@import url('./footer.css');
 
 @font-face {
-  font-family: "Inter";
-  src: local("InterMedium"), url("../fonts/InterMedium.woff2") format("woff2"),
-    url("../fonts/InterMedium.woff") format("woff");
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
+	font-family: 'Inter';
+	src: local('InterMedium'), url('../fonts/InterMedium.woff2') format('woff2'),
+		url('../fonts/InterMedium.woff') format('woff');
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: "Inter";
-  src: local("InterRegular"), url("../fonts/InterRegular.woff2") format("woff2"),
-    url("../fonts/InterRegular.woff") format("woff");
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
+	font-family: 'Inter';
+	src: local('InterRegular'), url('../fonts/InterRegular.woff2') format('woff2'),
+		url('../fonts/InterRegular.woff') format('woff');
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
 }
 
 html {
-  box-sizing: border-box;
-  scroll-behavior: smooth;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 *,
@@ -31,538 +31,542 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 }
 
 img,
 svg {
-  max-width: 100%;
+	max-width: 100%;
 }
 
 body {
-  min-width: 380px;
-  font-family: "Inter", sans-serif;
-  background-color: var(--color-white);
+	min-width: 380px;
+	font-family: 'Inter', sans-serif;
+	background-color: var(--color-white);
 }
 
 :root {
-  --color-smoky-white: #f5f5f5;
-  --color-white: #ffffff;
-  --color-wet-asphalt: #4e4e4e;
-  --color-lavender: #eff3fc;
-  --color-slate-blue: #897cff;
-  --color-signal-black: #313131;
-  --color-signa-black: #2c2c2c;
-  --color-grey: #7a7a7a;
-  --color-almost-black: #141414;
-  --color-light-pinkish: #dad7ff;
-  --color-lavender-pink: #f7b7efb5;
-  --color-heavenly: #a3b5ffb3;
-  --color-asphalt: #535353;
-  --color-gray-brown: #3d3d3d;
-  --color-dull-grey: #6a6a6a;
+	--color-smoky-white: #f5f5f5;
+	--color-white: #ffffff;
+	--color-wet-asphalt: #4e4e4e;
+	--color-lavender: #eff3fc;
+	--color-slate-blue: #897cff;
+	--color-signal-black: #313131;
+	--color-signa-black: #2c2c2c;
+	--color-grey: #7a7a7a;
+	--color-almost-black: #141414;
+	--color-light-pinkish: #dad7ff;
+	--color-lavender-pink: #f7b7efb5;
+	--color-heavenly: #a3b5ffb3;
+	--color-asphalt: #535353;
+	--color-gray-brown: #3d3d3d;
+	--color-dull-grey: #6a6a6a;
 }
 
 /*Blog*/
 .main {
-  padding-bottom: 100px;
+	padding-bottom: 100px;
 }
 
 .container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 50px;
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 0 50px;
 }
 
 .list-reset {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 .flex {
-  display: flex;
+	display: flex;
 }
 
 .bth-reset {
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  outline: none;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	outline: none;
 }
 
 .med__title {
-  font-weight: 400;
-  font-size: 25px;
-  line-height: 150%;
-  padding-left: 20px;
-  margin-bottom: 70px;
-  color: var(--color-grey);
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 150%;
+	padding-left: 20px;
+	margin-bottom: 70px;
+	color: var(--color-grey);
 }
 
 #backToMenu {
-  display: none;
+	display: none;
 }
 
 .med__content {
-  display: flex;
+	display: flex;
 }
 
 .sidebar {
-  width: 260px;
-  background: #fff;
-  padding: 20px;
+	width: 260px;
+	background: #fff;
+	padding: 20px;
 }
 .user-info {
-  display: flex;
-  align-items: center;
-  margin-bottom: 30px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
 }
 .user-info svg {
-  margin-left: 8px;
+	margin-left: 8px;
 }
 
 .username {
-  font-weight: 400;
-  font-size: 20px;
-  color: var(--color-signa-black);
+	font-weight: 400;
+	font-size: 20px;
+	color: var(--color-signa-black);
 }
 .avatar {
-  width: 50px;
-  height: 50px;
-  background: #e5e5ff;
-  color: #b2abfc;
-  font-size: 24px;
-  font-weight: 400;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 10px;
+	width: 50px;
+	height: 50px;
+	background: #e5e5ff;
+	color: #b2abfc;
+	font-size: 24px;
+	font-weight: 400;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 10px;
 }
 .menu button {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  width: 100%;
-  padding: 10px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: 14px;
-  transition: background 0.2s;
-  color: var(--color-signa-black);
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	width: 100%;
+	padding: 10px;
+	background: none;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	font-size: 14px;
+	transition: background 0.2s;
+	color: var(--color-signa-black);
 }
 .menu button:not(:last-child) {
-  margin-bottom: 16px;
+	margin-bottom: 16px;
 }
 
 .menu__med {
-  height: 76px;
+	height: 76px;
 }
 
 .menu button.active,
 .menu button:hover {
-  background: var(--color-light-pinkish);
+	background: var(--color-light-pinkish);
 }
 .menu svg {
-  width: 35px;
-  height: 35px;
+	width: 35px;
+	height: 35px;
 }
 .content {
-  flex-grow: 1;
-  padding: 40px;
+	flex-grow: 1;
+	padding: 40px;
 }
 
 .episode {
-  border: 1px solid var(--color-light-pinkish);
-  padding: 20px 30px 30px 50px;
-  margin-bottom: 20px;
-  border-radius: 25px;
-  max-width: 920px;
-  font-family: Arial, sans-serif;
+	border: 1px solid var(--color-light-pinkish);
+	padding: 20px 30px 30px 50px;
+	margin-bottom: 20px;
+	border-radius: 25px;
+	max-width: 920px;
+	font-family: Arial, sans-serif;
 }
 
 .episode-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 12px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-bottom: 12px;
 }
 
 .episode-header h3 {
-  margin: 0 0 16px 0;
-  font-size: 18px;
-  font-weight: 500;
-  color: #8e9cc0;
+	margin: 0 0 16px 0;
+	font-size: 18px;
+	font-weight: 500;
+	color: #8e9cc0;
 }
 
 .episode-consult {
-  margin: 0;
-  color: var(--color-gray-brown);
-  font-size: 28px;
-  font-weight: 400;
+	margin: 0;
+	color: var(--color-gray-brown);
+	font-size: 28px;
+	font-weight: 400;
 }
 
 .episode-date {
-  font-size: 14px;
-  color: #888;
+	font-size: 14px;
+	color: #888;
 }
 
 .episode-body {
-  display: flex;
-  align-items: center;
-  gap: 15px;
+	display: flex;
+	align-items: center;
+	gap: 15px;
 }
 
 .doctor-photo img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  object-fit: cover;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	object-fit: cover;
 }
 
 .doctor-info {
-  flex-grow: 1;
+	flex-grow: 1;
 }
 
 .doctor-name {
-  font-weight: 400;
-  font-size: 19px;
-  color: var(--color-signa-black);
-  margin: 0 0 4px 0;
+	font-weight: 400;
+	font-size: 19px;
+	color: var(--color-signa-black);
+	margin: 0 0 4px 0;
 }
 
 .doctor-specialties {
-  font-weight: 500;
-  margin: 0;
-  font-size: 13px;
-  color: #666;
+	font-weight: 500;
+	margin: 0;
+	font-size: 13px;
+	color: #666;
 }
 
 .episode-actions {
-  display: flex;
-  gap: 8px;
+	display: flex;
 }
 
 .btn-card {
-  padding: 8px 20px;
-  border: none;
-  background-color: #897cff;
-  color: white;
-  border-radius: 39px;
-  cursor: pointer;
-  font-size: 13px;
-  transition: background-color ease-in-out 0.3s;
+	padding: 8px 20px;
+	border: none;
+	background-color: #897cff;
+	color: white;
+	border-radius: 39px;
+	cursor: pointer;
+	font-size: 13px;
+	transition: background-color ease-in-out 0.3s;
+	margin-bottom: 12px;
 }
 
 .episode-actions button:hover {
-  background-color: #6f63e5;
+	background-color: #6f63e5;
 }
 
 .header-border {
-  padding-bottom: 30px;
-  border-bottom: 1px solid var(--color-heavenly);
+	padding-bottom: 30px;
+	border-bottom: 1px solid var(--color-heavenly);
 }
 
 .episode__date {
-  display: flex;
+	display: flex;
 }
 
 .episode__time {
-  font-weight: 400;
-  font-size: 27px;
-  color: #3d3d3d;
-  margin-right: 50px;
+	font-weight: 400;
+	font-size: 27px;
+	color: #3d3d3d;
+	margin-right: 50px;
 }
 
 .episode__address {
-  font-weight: 400;
-  font-size: 27px;
-  color: #3d3d3d;
+	font-weight: 400;
+	font-size: 27px;
+	color: #3d3d3d;
 }
 
 .body-visit {
-  padding-top: 25px;
+	padding-top: 25px;
 }
 
 .btn-visit {
-  padding: 8px 20px;
-  border: none;
-  background-color: #eff3ff;
-  color: var(--color-black-brown);
-  border-radius: 39px;
-  cursor: pointer;
-  font-size: 13px;
-  border: 1px solid var(--color-slate-blue);
-  transition: background-color ease-in-out 0.3s;
+	padding: 10px 20px;
+	border: none;
+	background-color: #eff3ff;
+	color: var(--color-black-brown);
+	border-radius: 39px;
+	cursor: pointer;
+	font-size: 13px;
+	border: 1px solid var(--color-slate-blue);
+	transition: background-color ease-in-out 0.3s;
+}
+
+.reschedule-btn {
+	margin-bottom: 12px;
 }
 
 .profile-field {
-  margin-bottom: 60px;
+	margin-bottom: 60px;
 }
 
 .profile-field label {
-  display: block;
-  font-weight: 500;
-  font-size: 20px;
-  margin-bottom: 35px;
-  color: #8e9cc0;
+	display: block;
+	font-weight: 500;
+	font-size: 20px;
+	margin-bottom: 35px;
+	color: #8e9cc0;
 }
 
 .profile-value {
-  position: relative;
-  border-bottom: 1px solid var(--color-light-pinkish);
-  padding-right: 30px;
-  cursor: default;
-  min-height: 24px;
+	position: relative;
+	border-bottom: 1px solid var(--color-light-pinkish);
+	padding-right: 30px;
+	cursor: default;
+	min-height: 24px;
 }
 
 .field-text {
-  font-size: 16px;
-  line-height: 1.3;
-  display: inline-block;
-  vertical-align: middle;
-  user-select: text;
+	font-size: 16px;
+	line-height: 1.3;
+	display: inline-block;
+	vertical-align: middle;
+	user-select: text;
 }
 
 .edit-btn,
 .save-btn {
-  position: absolute;
-  right: 0;
-  top: -13%;
-  transform: translateY(-50%);
-  background: none;
-  border: none;
-  padding: 4px;
-  cursor: pointer;
-  color: #333;
-  width: 45px;
-  height: 45px;
+	position: absolute;
+	right: 0;
+	top: -13%;
+	transform: translateY(-50%);
+	background: none;
+	border: none;
+	padding: 4px;
+	cursor: pointer;
+	color: #333;
+	width: 45px;
+	height: 45px;
 }
 
 .edit-input {
-  width: 100%;
-  border: none;
-  outline: none;
-  font-size: 16px;
-  line-height: 1.3;
-  padding: 2px 0;
-  background: transparent;
-  box-sizing: border-box;
+	width: 100%;
+	border: none;
+	outline: none;
+	font-size: 16px;
+	line-height: 1.3;
+	padding: 2px 0;
+	background: transparent;
+	box-sizing: border-box;
 }
 
 @media (max-width: 1024px) {
-  .med__title {
-    margin-bottom: 40px;
-    margin-top: 20px;
-  }
-  .episode-body {
-    flex-direction: column;
-    align-items: self-start;
-  }
-  .episode {
-    background-color: var(--color-white);
-    max-width: 500px;
-  }
-  .episode__date {
-    flex-direction: column;
-  }
-  .episode__time {
-    font-size: 21px;
-  }
-  .episode__address {
-    font-size: 21px;
-  }
-  .body-visit {
-    padding-top: 8px;
-  }
+	.med__title {
+		margin-bottom: 40px;
+		margin-top: 20px;
+	}
+	.episode-body {
+		flex-direction: column;
+		align-items: self-start;
+	}
+	.episode {
+		background-color: var(--color-white);
+		max-width: 500px;
+	}
+	.episode__date {
+		flex-direction: column;
+	}
+	.episode__time {
+		font-size: 21px;
+	}
+	.episode__address {
+		font-size: 21px;
+	}
+	.body-visit {
+		padding-top: 8px;
+	}
 }
 
 @media (max-width: 768px) {
-  #backToMenu {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-    background-color: transparent;
-    border: none;
-    color: var(--color-dull-grey);
-  }
-  .med__title {
-    margin-bottom: 5px;
-  }
-  .content {
-    flex-direction: column;
-    align-items: center;
-  }
-  .container {
-    padding: 0 20px;
-  }
+	#backToMenu {
+		display: flex;
+		align-items: center;
+		margin-top: 20px;
+		background-color: transparent;
+		border: none;
+		color: var(--color-dull-grey);
+	}
+	.med__title {
+		margin-bottom: 5px;
+	}
+	.content {
+		flex-direction: column;
+		align-items: center;
+	}
+	.container {
+		padding: 0 20px;
+	}
 
-  .doctor__card {
-    display: flex;
-    align-items: center;
-  }
+	.doctor__card {
+		display: flex;
+		align-items: center;
+	}
 
-  .doctor-photo {
-    margin-right: 10px;
-  }
+	.doctor-photo {
+		margin-right: 10px;
+	}
 
-  .episode-body {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+	.episode-body {
+		flex-direction: column;
+		align-items: flex-start;
+	}
 
-  .episode-actions {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
+	.episode-actions {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
 
-  .menu {
-    justify-content: center;
-  }
+	.menu {
+		justify-content: center;
+	}
 
-  .menu button {
-    flex: 1 1 auto;
-    min-width: 120px;
-    text-align: center;
-  }
+	.menu button {
+		flex: 1 1 auto;
+		min-width: 120px;
+		text-align: center;
+	}
 
-  .doctor-photo img {
-    width: 50px;
-    height: 50px;
-  }
+	.doctor-photo img {
+		width: 50px;
+		height: 50px;
+	}
 
-  .edit-input {
-    width: 100%;
-  }
+	.edit-input {
+		width: 100%;
+	}
 
-  .profile-value {
-    flex-direction: column;
-    align-items: stretch;
-  }
+	.profile-value {
+		flex-direction: column;
+		align-items: stretch;
+	}
 
-  .btn-card,
-  .btn-visit {
-    width: 100%;
-  }
-  .sidebar {
-    display: block;
-  }
+	.btn-card,
+	.btn-visit {
+		width: 100%;
+	}
+	.sidebar {
+		display: block;
+	}
 
-  .main-content {
-    display: none;
-  }
+	.main-content {
+		display: none;
+	}
 
-  #backToMenu {
-    display: none;
-  }
+	#backToMenu {
+		display: none;
+	}
 
-  .med__content {
-    flex-direction: column;
-  }
+	.med__content {
+		flex-direction: column;
+	}
 }
 
 .back-to-menu {
-  display: none;
-  padding: 16px 20px;
-  font-weight: 600;
-  font-size: 18px;
-  cursor: pointer;
-  background-color: var(--color-smoky-white);
-  border-bottom: 1px solid #e5e5e5;
+	display: none;
+	padding: 16px 20px;
+	font-weight: 600;
+	font-size: 18px;
+	cursor: pointer;
+	background-color: var(--color-smoky-white);
+	border-bottom: 1px solid #e5e5e5;
 }
 
 @media (max-width: 480px) {
-  .doctor-photo img {
-    width: 48px;
-    height: 48px;
-  }
+	.doctor-photo img {
+		width: 48px;
+		height: 48px;
+	}
 
-  .episode {
-    padding: 20px;
-  }
-  .episode-actions {
-    width: 100%;
-  }
-  .episode-consult {
-    font-size: 21px;
-  }
-  .episode-header h3 {
-    font-size: 16px;
-  }
-  .header-border {
-    border: none;
-    padding-bottom: 5px;
-  }
+	.episode {
+		padding: 20px;
+	}
+	.episode-actions {
+		width: 100%;
+	}
+	.episode-consult {
+		font-size: 21px;
+	}
+	.episode-header h3 {
+		font-size: 16px;
+	}
+	.header-border {
+		border: none;
+		padding-bottom: 5px;
+	}
 
-  .sidebar {
-    background-color: transparent;
-  }
-  .menu button {
-    color: var(--color-white);
-    background-color: var(--color-slate-blue);
-    font-size: 20px;
-    border-radius: 16px;
-  }
-  .med__title {
-    margin-top: 15px;
-    margin-bottom: 0px;
-    display: block;
-    font-size: 15px;
-  }
-  .med__content {
-    margin-top: 12px;
-  }
+	.sidebar {
+		background-color: transparent;
+	}
+	.menu button {
+		color: var(--color-white);
+		background-color: var(--color-slate-blue);
+		font-size: 20px;
+		border-radius: 16px;
+	}
+	.med__title {
+		margin-top: 15px;
+		margin-bottom: 0px;
+		display: block;
+		font-size: 15px;
+	}
+	.med__content {
+		margin-top: 12px;
+	}
 
-  .content {
-    padding: 0;
-  }
-  .sidebar {
-    padding: 0px;
-  }
+	.content {
+		padding: 0;
+	}
+	.sidebar {
+		padding: 0px;
+	}
 }
 
 @media (max-width: 768px) {
-  .sidebar {
-    display: block;
-    width: 100%;
-  }
+	.sidebar {
+		display: block;
+		width: 100%;
+	}
 
-  .main-content {
-    padding: 0px;
-  }
+	.main-content {
+		padding: 0px;
+	}
 
-  .back-to-menu {
-    display: block;
-  }
+	.back-to-menu {
+		display: block;
+	}
 
-  .menu button {
-    width: 100%;
-    text-align: left;
-    padding: 16px;
-    border-bottom: 1px solid #ddd;
-  }
+	.menu button {
+		width: 100%;
+		text-align: left;
+		padding: 16px;
+		border-bottom: 1px solid #ddd;
+	}
 
-  .episode {
-    flex-direction: column;
-  }
+	.episode {
+		flex-direction: column;
+	}
 
-  .doctor-photo img {
-    width: 50px;
-    height: 50px;
-  }
+	.doctor-photo img {
+		width: 50px;
+		height: 50px;
+	}
 }
