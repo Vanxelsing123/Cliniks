@@ -36,8 +36,19 @@
     flex-direction: column;
   }
   .schedule__block-doctor {
+    width: 340px;
+    margin-right: 0;
     margin-bottom: 30px;
   }
+
+  .card-date {
+    padding-bottom: 8px;
+  }
+
+  .card-time {
+    margin-top: 16px;
+  }
+  
   .schedule__list {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -74,8 +85,8 @@
     width: 300px;
   }
   .programs__buy-btn {
-    width: 325px;
-    margin-left: -12px;
+    width: 336px;
+    margin-left: -14px;
     margin-right: -5px;
     margin-bottom: -20px;
   }
@@ -153,11 +164,16 @@
 
   .modal__item:not(:last-child) {
     margin-bottom: 25px;
-  
   }
 }
 
 @media screen and (max-width: 425px) {
+  .schedule__title {
+    margin-top: 24px;
+    font-size: 32px;
+    line-height: 120%;
+  }
+
   .schedule__items {
     min-width: 176px;
   }

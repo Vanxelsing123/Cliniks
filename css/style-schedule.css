@@ -142,7 +142,7 @@ body {
   line-height: 156%;
   letter-spacing: -0.02em;
   padding: 15px 20px;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   cursor: pointer;
   border-radius: 12px;
   color: var(--color-gray-brown);
@@ -183,17 +183,15 @@ body {
 
 .schedule__block-doctor {
   width: 270px;
-  position: relative;
-  padding: 30px 15px 15px 15px;
+  padding: 16px 15px 15px 15px;
   margin-right: 20px;
   border-radius: 8px;
   background-color: var(--color-lavender);
 }
 
 .vacation {
-  position: absolute;
-  top: 0;
   padding: 4px 8px;
+  margin-bottom: 16px;
   font-weight: 400;
   font-size: 13px;
   line-height: 120%;
@@ -344,6 +342,8 @@ body {
   position: absolute;
   top: -55px;
   right: 0px;
+  width: 36px;
+  height: 36px;
   font-size: 24px;
   background: none;
   border: none;

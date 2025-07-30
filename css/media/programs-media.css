@@ -82,7 +82,7 @@
 @media (max-width: 425px) {
   .programs__medical-title {
     align-items: flex-start;
-    line-height: 100%;
+    line-height: 130%;
     font-size: 16px;
   }
   .programs__cardiology {

@@ -13,6 +13,15 @@ document.addEventListener('DOMContentLoaded', () => {
   modal.className = 'modal';
   modal.innerHTML = `
     <div class="modal__content">
+    <button class="modal__close" aria-label="Закрыть">
+            <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="22.4516" cy="22.2612" r="21.0592" fill="#EFF3FC" stroke="#535353" stroke-width="0.978148"></circle>
+              <path d="M24.7485 30.2466L32.7345 22.2606M32.7345 22.2606L24.7485 14.2747M32.7345 22.2606L12.1699 22.2607" stroke="#535353" stroke-width="2.6551" stroke-linecap="round" stroke-linejoin="round"></path>
+              <circle cx="22.4506" cy="22.2612" r="21.5483" fill="#EFF3FC"></circle>
+              <path d="M29.7227 14.9899L15.1813 29.5313" stroke="#535353" stroke-width="2.6551" stroke-linecap="round"></path>
+              <path d="M15.1813 14.9902L29.7227 29.5316" stroke="#535353" stroke-width="2.6551" stroke-linecap="round"></path>
+            </svg>
+          </button>
       <h2 class="modal__title">Запрос отправлен</h2>
       <p class="modal__text">Наш оператор свяжется с Вами!</p>
       <div class="modal__content-wrap">

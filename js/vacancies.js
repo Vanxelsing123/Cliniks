@@ -1,9 +1,14 @@
 const openBtn = document.getElementById('openModalBtn');
+const opensBtn = document.getElementById('opensModalBtn');
 const modal = document.getElementById('modal');
 const closeBtn = document.getElementById('closeModalBtn');
 const closesModalBtn = document.getElementById('closesModalBtn');
 
 openBtn.addEventListener('click', () => {
+  modal.style.display = 'flex';
+});
+
+opensBtn.addEventListener('click', () => {
   modal.style.display = 'flex';
 });
 
