@@ -56,11 +56,13 @@
 		display: block;
 	}
 
+	/* Оставляем прокрутку и ограничения внутри меню */
 	.nav__content {
+		display: flex;
+		flex-wrap: nowrap;
 		padding: 30px 20px 100px 20px;
 		width: 380px;
 		max-height: calc(100vh - 50px);
-		display: flex;
 		position: absolute;
 		top: 145px;
 		left: -380px;
@@ -69,12 +71,12 @@
 		z-index: 1000;
 		transition: transform 0.5s;
 		overflow-y: auto;
+		-webkit-overflow-scrolling: touch;
 	}
 
 	.header__nav-list {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: flex-start;
+		display: block;
+		width: 100%;
 	}
 
 	/*  */
