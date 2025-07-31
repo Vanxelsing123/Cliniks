@@ -256,13 +256,6 @@ body {
   margin-left: auto;
 }
 
-.tax__licenses {
-  padding: 30px;
-  border-radius: 20px;
-  border: 1px solid #d9d5ff;
-  background-color: var(--color-white);
-}
-
 .tax__licenses-title {
   font-weight: 400;
   font-size: 25px;
@@ -316,4 +309,334 @@ body {
 
 .tax__licenses-btn-svg {
   margin-left: auto;
+}
+
+/* modal */
+.modal {
+  display: none; /* Скрыто по умолчанию */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Контейнер содержимого */
+.modal-content {
+  position: relative;
+  width: 340px;
+  background-color: #fff;
+  margin: 5% auto;
+  padding: 20px 30px;
+  border-radius: 20px;
+  max-width: 600px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.modal__close {
+  position: absolute;
+  top: -55px;
+  right: 0px;
+  width: 36px;
+  height: 36px;
+}
+#modalTitle {
+  width: 280px;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  margin-bottom: 5px;
+  color: var(--color-gray-brown);
+}
+
+.tax__modal-text {
+  width: 280px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 156%;
+  letter-spacing: -0.02em;
+  padding-bottom: 16px;
+  color: var(--color-dull-grey);
+  border-bottom: 1px solid rgba(140, 133, 218, 0.4);
+}
+
+.tax__modal-strong {
+  width: 280px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  padding-top: 16px;
+  margin-bottom: 16px;
+  color: var(--color-gray-brown);
+}
+
+/* Кнопка закрытия */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.close:hover,
+.close:focus {
+  color: black;
+}
+
+/* Стили формы */
+form label {
+  display: block;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 100%;
+  color: var(--color-dull-grey);
+}
+
+.tax__label {
+  margin-bottom: 12px;
+}
+
+.checkbox-label input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkbox-label p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 156%;
+  letter-spacing: -0.02em;
+  margin-bottom: 20px;
+  color: var(--color-dull-grey);
+}
+
+.checkbox-terms {
+  display: flex;
+  align-items: baseline;
+}
+
+.checkbox-label p span {
+  color: var(--color-slate-blue);
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: baseline;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  user-select: none;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #333;
+}
+
+.checkbox-label .checkmark {
+  position: absolute;
+  left: 0;
+  top: 15%;
+  transform: translateY(-50%);
+  height: 20px;
+  width: 20px;
+  border: 1px solid #c7c7f0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+.checkbox-label .checkmarks {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 20px;
+  width: 20px;
+  border: 1px solid #c7c7f0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.custom-checkbox {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  user-select: none;
+  display: inline-block;
+  line-height: 20px;
+  font-size: 14px;
+  color: #333;
+}
+
+.checkbox-label .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.checkbox-label input[type="checkbox"]:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox-label .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 6px;
+  height: 12px;
+  border: solid var(--color-slate-blue);
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="email"],
+form select,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #c7c7f0;
+  border-radius: 24px;
+  font-size: 14px;
+  color: var(--color-almost-black);
+}
+form textarea {
+  resize: vertical;
+  min-height: 60px;
+  border-radius: 4px;
+  border: 0.8px solid #c7c7f0;
+  margin-bottom: 30px;
+}
+
+input::placeholder {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 122%;
+  color: #c4c3d3;
+}
+
+.tax__modal-year {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  margin-bottom: 16px;
+  color: var(--color-gray-brown);
+}
+
+.checkbox-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.checkbox-group label {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 100%;
+  color: var(--color-dull-grey);
+}
+
+.checkbox-inline {
+  display: inline-block;
+}
+.checkbox-inline:not(:last-child) {
+  margin-right: 42px;
+}
+
+.tax__modal-wrap {
+  align-items: baseline;
+  display: flex;
+  width: 280px;
+  margin-bottom: 16px;
+}
+
+.tax__modal-wrap p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 156%;
+  letter-spacing: -0.02em;
+  color: var(--color-grey);
+}
+
+.tax__modal-wrap p span {
+  color: var(--color-slate-blue);
+}
+
+#copyPayerData {
+  margin-right: 12px;
+}
+
+.tax__modal-texts {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  margin-bottom: 16px;
+  color: var(--color-gray-brown);
+}
+
+.tax__indents {
+  margin-bottom: 20px;
+}
+
+.btn-submit {
+  margin-top: 25px;
+  padding: 10px 20px;
+  background-color: #2f80ed;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn-submit:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+.tax__modal-btn {
+  width: 328px;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: -24px;
+  background: linear-gradient(139deg, #c8d3ff 0%, #afa7ff 97.4%);
+  color: var(--color-signa-black);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 105%;
+  border: none;
+  padding: 4px 4px 4px 30px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.tax__modal-btn-submit {
+  width: 328px;
+  display: flex;
+  align-items: center;
+  margin-bottom: -12px;
+  margin-left: -24px;
+  background: linear-gradient(139deg, #c8d3ff 0%, #afa7ff 97.4%);
+  color: var(--color-signa-black);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 105%;
+  border: none;
+  padding: 4px 4px 4px 30px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.tax__modal-btn-svg {
+  margin-left: auto;
+}
+
+.tax__modal-dops {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 100%;
+  margin-bottom: 12px;
+  color: var(--color-dull-grey);
 }

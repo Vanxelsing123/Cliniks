@@ -48,7 +48,7 @@
   .card-time {
     margin-top: 16px;
   }
-  
+
   .schedule__list {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -106,6 +106,9 @@
   }
 
   .modal__close {
+    position: absolute;
+    top: -55px;
+    right: 0px;
     width: 36px;
     height: 36px;
   }
