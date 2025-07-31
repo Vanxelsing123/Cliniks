@@ -1,49 +1,47 @@
 @media screen and (max-width: 1200px) {
-  .schedule__list {
-    grid-template-columns: repeat(5, 1fr);
-  }
-  .schedule__block {
-    align-items: center;
-  }
-  .schedule__block-doctor {
-    max-height: 260px;
-  }
-  .schedule__block:not(:last-child) {
-    margin-bottom: 30px;
-  }
+	.schedule__list {
+		grid-template-columns: repeat(5, 1fr);
+	}
+
+	.schedule__block-doctor {
+		max-height: 280px;
+	}
+	.schedule__block:not(:last-child) {
+		margin-bottom: 30px;
+	}
 }
 
 @media screen and (max-width: 1024px) {
-  .schedule__list {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .schedule__block-doctor {
-    background-color: var(--color-white);
-  }
-  .schedule__items {
-    background-color: var(--color-white);
-  }
-  .schedule__header {
-    background-color: var(--color-white);
-  }
-  .schedule__header.transparent {
-    background-color: transparent;
-  }
+	.schedule__list {
+		grid-template-columns: repeat(4, 1fr);
+	}
+	.schedule__block-doctor {
+		background-color: var(--color-white);
+	}
+	.schedule__items {
+		background-color: var(--color-white);
+	}
+	.schedule__header {
+		background-color: var(--color-white);
+	}
+	.schedule__header.transparent {
+		background-color: transparent;
+	}
 }
 
 @media screen and (max-width: 767px) {
-  .schedule__block {
-    flex-direction: column;
-  }
-  .schedule__block-doctor {
-    width: 340px;
-    margin-right: 0;
-    margin-bottom: 30px;
-  }
+	.schedule__block {
+		flex-direction: column;
+	}
+	.schedule__block-doctor {
+		width: 340px;
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
 
-  .card-date {
-    padding-bottom: 8px;
-  }
+	.card-date {
+		padding-bottom: 8px;
+	}
 
   .card-time {
     margin-top: 16px;
@@ -68,42 +66,57 @@
     max-width: 100%;
   }
 
-  .schedule__list::-webkit-scrollbar {
-    display: none;
-  }
+	.schedule__list {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.schedule__header {
+		font-size: 20px;
+	}
+	.schedule__list {
+		display: flex;
+		flex-wrap: nowrap;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+		scroll-behavior: smooth;
+		scrollbar-width: none;
+		-ms-overflow-style: none;
+		gap: 12px;
+		padding-bottom: 10px;
+		max-width: 100%;
+	}
 
-  .schedule__items {
-    flex: 0 0 auto;
-    min-width: 220px;
-    scroll-snap-align: start;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  }
+	.schedule__list::-webkit-scrollbar {
+		display: none;
+	}
 
-  .modal__phone {
-    width: 300px;
-  }
-  .programs__buy-btn {
-    width: 336px;
-    margin-left: -14px;
-    margin-right: -5px;
-    margin-bottom: -20px;
-  }
+	.schedule__items {
+		flex: 0 0 auto;
+		min-width: 220px;
+		scroll-snap-align: start;
+		background: #fff;
+		border-radius: 8px;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+	}
 
-  .modal__title--overlay {
-    font-size: 28px;
-    margin-bottom: 0;
-  }
+	.modal__phone {
+		width: 300px;
+	}
+	.programs__buy-btn {
+		width: 336px;
+		margin-left: -14px;
+		margin-right: -5px;
+		margin-bottom: -20px;
+	}
 
-  .modal__text--title {
-    font-size: 16px;
-    padding-bottom: 12px;
-  }
+	.modal__title--overlay {
+		font-size: 28px;
+		margin-bottom: 0;
+	}
 
-  .modal__details {
-    padding-top: 24px;
-  }
+	.modal__text--title {
+		font-size: 16px;
+		padding-bottom: 12px;
+	}
 
   .modal__close {
     position: absolute;
@@ -113,83 +126,88 @@
     height: 36px;
   }
 
-  .modal__content {
-    max-width: 340px;
-    padding: 25px 20px;
-  }
+	.modal__close {
+		width: 36px;
+		height: 36px;
+	}
 
-  .modal__title {
-    font-size: 28px;
-  }
+	.modal__content {
+		max-width: 340px;
+		padding: 25px 20px;
+	}
 
-  .modal__time-text {
-    font-size: 20px;
-  }
+	.modal__title {
+		font-size: 28px;
+	}
 
-  .modal__doctor {
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-  }
+	.modal__time-text {
+		font-size: 20px;
+	}
 
-  .modal__text--phone {
-    margin-bottom: 5px;
-  }
+	.modal__doctor {
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+	}
 
-  .modal__doctor-name {
-    font-size: 20px;
-  }
+	.modal__text--phone {
+		margin-bottom: 5px;
+	}
 
-  .modal__label {
-    font-weight: 500;
-    font-size: 15px;
-    color: var(--color-gray-brown);
-    margin-bottom: 5px;
-  }
-  .modal__text {
-    font-size: 18px;
-    line-height: 140%;
-  }
-  .modal__content-wrap {
-    padding-top: 20px;
-  }
-  .modal__content-wraps {
-    margin-bottom: 25px;
-  }
-  .modal__content-wraps:nth-child(3) {
-    display: none;
-  }
-  .modal__button {
-    width: 100%;
-    margin-left: 0;
-    margin-bottom: -17px;
-    margin-top: 30px;
-  }
+	.modal__doctor-name {
+		font-size: 20px;
+	}
 
-  .modal__item:not(:last-child) {
-    margin-bottom: 25px;
-  }
+	.modal__label {
+		font-weight: 500;
+		font-size: 15px;
+		color: var(--color-gray-brown);
+		margin-bottom: 5px;
+	}
+	.modal__text {
+		font-size: 18px;
+		line-height: 140%;
+	}
+	.modal__content-wrap {
+		padding-top: 20px;
+	}
+	.modal__content-wraps {
+		margin-bottom: 25px;
+	}
+	.modal__content-wraps:nth-child(3) {
+		display: none;
+	}
+	.modal__button {
+		width: 100%;
+		margin-left: 0;
+		margin-bottom: -17px;
+		margin-top: 30px;
+	}
+
+	.modal__item:not(:last-child) {
+		margin-bottom: 25px;
+	}
 }
 
 @media screen and (max-width: 425px) {
-  .schedule__title {
-    margin-top: 24px;
-    font-size: 32px;
-    line-height: 120%;
-  }
+	.schedule__title {
+		margin-top: 24px;
+		font-size: 32px;
+		line-height: 120%;
+	}
 
-  .schedule__items {
-    min-width: 176px;
-  }
-  .modal__text span {
-    display: block;
-    margin-top: 5px;
-    max-width: 160px;
-    color: #8e8e8e;
-  }
+	.schedule__items {
+		min-width: 176px;
+	}
+	.modal__text span {
+		display: block;
+		margin-top: 5px;
+		max-width: 160px;
+		color: #8e8e8e;
+	}
 }
 
 @media screen and (max-width: 425px) {
-  .schedule__items {
-    min-width: 153px;
-  }
+	.schedule__items {
+		min-width: 153px;
+	}
 }
