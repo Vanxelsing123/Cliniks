@@ -7,7 +7,7 @@ const acceptTerms = document.getElementById('acceptTerms');
 
 // Открыть модальное окно
 openBtn.addEventListener('click', () => {
-  modal.style.display = 'block';
+  modal.style.display = 'flex';
 });
 
 // Закрыть модальное окно
