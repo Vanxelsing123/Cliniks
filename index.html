@@ -1,670 +1,1229 @@
 <!DOCTYPE html>
 <html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Клиника для Детей</title>
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/media.css" />
+	</head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Клиника для Детей</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/media.css">
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__top">
+					<div class="burger-wrapper">
+						<button
+							class="header__burger-btn bth-reset"
+							id="burger"
+							aria-label="Открыть меню"
+						>
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+						<div class="mobile-nav-wrapper">
+							<nav class="mobile-nav nav__content">
+								<ul class="header__nav-list list-reset">
+									<li class="header__nav-item">
+										<a href="doctors.html" class="header__nav-link">Врачи</a>
+									</li>
+									<li class="header__nav-item">
+										<a href="price.html" class="header__nav-link">Цены</a>
+									</li>
+									<li class="header__nav-item dropdown">
+										<a href="#" class="header__nav-link dropdown-button"
+											>Пациентам</a
+										>
+										<div class="header__nav-dropdown">
+											<a class="header__nav-link-dropdown" href="news.html"
+												>Новости</a
+											>
+											<a class="header__nav-link-dropdown" href="company.html"
+												>О нас</a
+											>
+											<a class="header__nav-link-dropdown" href="visit.html"
+												>Подготовка<br />к визиту</a
+											>
+											<a class="header__nav-link-dropdown" href="tax.html"
+												>Налоговый вычет</a
+											>
+										</div>
+									</li>
+									<li class="header__nav-item">
+										<a href="calculator.html" class="header__nav-link"
+											>Калькулятор<br />анализов</a
+										>
+									</li>
+									<li class="header__nav-item">
+										<a href="stock.html" class="header__nav-link">Акции</a>
+									</li>
+									<li class="header__nav-item">
+										<a href="contacts.html" class="header__nav-link"
+											>Контакты</a
+										>
+									</li>
+								</ul>
 
-</head>
+								<ul class="header__nav-list list-reset">
+									<li class="header__nav-item dropdown">
+										<a href="#" class="header__nav-link dropdown-button"
+											>Сотрудничество</a
+										>
+										<div class="header__nav-dropdown">
+											<a class="header__nav-link-dropdown" href="dms.html"
+												>ДМС</a
+											>
+											<a class="header__nav-link-dropdown" href="vacancies.html"
+												>Вакансии</a
+											>
+											<a class="header__nav-link-dropdown" href="#"
+												>Предприятиям</a
+											>
+										</div>
+									</li>
+									<li class="header__nav-item dropdown">
+										<a href="#" class="header__nav-link dropdown-button"
+											>Услуги
+										</a>
+										<div class="header__nav-dropdown">
+											<div class="header__dropdown-container">
+												<a class="header__nav-link-dropdown" href="#"
+													>Детское отделение</a
+												>
+												<a class="header__nav-link-dropdown" href="#"
+													>Взрослое отделение</a
+												>
+												<a
+													class="header__nav-link-dropdown"
+													href="services.html"
+													>Хирургия</a
+												>
+												<a class="header__nav-link-dropdown" href="#"
+													>Лабораторная<br />диагностика</a
+												>
+												<a class="header__nav-link-dropdown" href="#"
+													>УЗИ, ЭКГ</a
+												>
+												<a class="header__nav-link-dropdown" href="#"
+													>Нейросонография</a
+												>
+											</div>
+											<div>
+												<a class="header__nav-link-dropdown" href="#"
+													>Вызов врача на дом</a
+												>
+												<a class="header__nav-link-dropdown" href="#"
+													>Вакцинация</a
+												>
+												<a class="header__nav-link-dropdown" href="#"
+													>Логопед-дефектолог</a
+												>
+												<a class="header__nav-link-dropdown" href="#"
+													>Аудиометрия</a
+												>
+												<a class="header__nav-link-dropdown" href="#"
+													>Тимпанометрия</a
+												>
+												<a
+													class="header__nav-link-dropdown"
+													href="programs.html"
+													>Комплексные<br />программы</a
+												>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
 
-<body>
-  <header class="header">
-    <div class="container">
-      <div class="header__top">
-        <div class="burger-wrapper">
+					<div class="header__logo">
+						<a href="index.html" class="header__logo-link">
+							<img src="img/logo.png" alt="Логотип клиники" />
+						</a>
+					</div>
+					<div class="header__logo--mobile">
+						<a href="index.html" class="header__logo-link">
+							<img
+								class="clinic__logo"
+								src="img/Clinic_logo.svg"
+								alt="Логотип клиники"
+							/>
+						</a>
+					</div>
+					<div class="header__container-info">
+						<div class="header__text">
+							<a href="contacts.html" class="header__btn-address bth-reset">
+								<svg
+									class="header__btn-address-icon"
+									width="30"
+									height="29"
+									aria-hidden="true"
+								>
+									<use xlink:href="svg/sprite.svg#icon-address"></use>
+								</svg>
+								<p class="header__text-address">Адрес и режим работы</p>
+							</a>
+						</div>
+						<div class="header__list list-reset">
+							<a href="schedule.html" class="header__btn-item bth-reset">
+								<svg
+									class="header__btn-icon"
+									width="30"
+									height="29"
+									aria-hidden="true"
+								>
+									<use xlink:href="svg/sprite.svg#icon-booking"></use>
+								</svg>
+								<p class="header__item">Записаться</p>
+							</a>
+							<a href="med-card.html" class="header__btn-item bth-reset">
+								<svg
+									class="header__btn-icon"
+									width="30"
+									height="29"
+									aria-hidden="true"
+								>
+									<use xlink:href="svg/sprite.svg#icon-medcard"></use>
+								</svg>
+								<p class="header__item">Медкарта</p>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="header__bottom">
+					<nav class="header__nav">
+						<ul class="header__nav-list list-reset">
+							<li class="header__nav-item">
+								<a href="doctors.html" class="header__nav-link">Врачи</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="price.html" class="header__nav-link">Цены</a>
+							</li>
+							<li class="header__nav-item dropdown">
+								<a href="#" class="header__nav-link">Услуги </a>
+								<svg width="9" height="7" aria-hidden="true">
+									<use xlink:href="svg/sprite.svg#icon-dropdown-arrow"></use>
+								</svg>
+								<div class="header__nav-dropdown dropdown-content__services">
+									<div>
+										<a class="header__nav-link-dropdown" href="#"
+											>Детское отделение</a
+										>
+										<a class="header__nav-link-dropdown" href="#"
+											>Взрослое отделение</a
+										>
+										<a class="header__nav-link-dropdown" href="services.html"
+											>Хирургия</a
+										>
+										<a class="header__nav-link-dropdown" href="#"
+											>Лабораторная диагностика</a
+										>
+										<a class="header__nav-link-dropdown" href="#">УЗИ, ЭКГ</a>
+										<a class="header__nav-link-dropdown" href="#"
+											>Нейросонография</a
+										>
+									</div>
+									<div>
+										<a class="header__nav-link-dropdown" href="#"
+											>Вызов врача на дом</a
+										>
+										<a class="header__nav-link-dropdown" href="#">Вакцинация</a>
+										<a class="header__nav-link-dropdown" href="#"
+											>Логопед-дефектолог</a
+										>
+										<a class="header__nav-link-dropdown" href="#"
+											>Аудиометрия</a
+										>
+										<a class="header__nav-link-dropdown" href="#"
+											>Тимпанометрия</a
+										>
+										<a class="header__nav-link-dropdown" href="programs.html"
+											>Комплексные программы</a
+										>
+									</div>
+								</div>
+							</li>
+							<li class="header__nav-item dropdown">
+								<a href="#" class="header__nav-link dropdown-button"
+									>Пациентам</a
+								>
+								<svg width="9" height="7" aria-hidden="true">
+									<use xlink:href="svg/sprite.svg#icon-dropdown-arrow"></use>
+								</svg>
+								<div class="header__nav-dropdown dropdown-content">
+									<a class="header__nav-link-dropdown" href="news.html"
+										>Новости</a
+									>
+									<a class="header__nav-link-dropdown" href="company.html"
+										>О нас</a
+									>
+									<a class="header__nav-link-dropdown" href="visit.html"
+										>Подготовка к визиту</a
+									>
+									<a class="header__nav-link-dropdown" href="tax.html"
+										>Налоговый вычет</a
+									>
+								</div>
+							</li>
+							<li class="header__nav-item">
+								<a href="calculator.html" class="header__nav-link"
+									>Калькулятор анализов</a
+								>
+							</li>
+							<li class="header__nav-item">
+								<a href="stock.html" class="header__nav-link">Акции</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="contacts.html" class="header__nav-link">Контакты</a>
+							</li>
+							<li class="header__nav-item dropdown">
+								<a href="#" class="header__nav-link">Сотрудничество</a>
+								<svg width="9" height="7" aria-hidden="true">
+									<use xlink:href="svg/sprite.svg#icon-dropdown-arrow"></use>
+								</svg>
+								<div class="header__nav-dropdown dropdown-content">
+									<a class="header__nav-link-dropdown" href="dms.html">ДМС</a>
+									<a class="header__nav-link-dropdown" href="vacancies.html"
+										>Вакансии</a
+									>
+									<a class="header__nav-link-dropdown" href="#">Предприятиям</a>
+								</div>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
 
-          <button class="header__burger-btn bth-reset" id="burger" aria-label="Открыть меню">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
+		<main class="main">
+			<section id="about">
+				<div class="container">
+					<div class="content__about">
+						<div class="about">
+							<h1 class="about__title">
+								О <span class="about__title-span">клинике</span>
+							</h1>
+							<p class="about__text">
+								Девиз нашей клиники —
+								<span class="about__text-span"
+									>«Здоровые дети и родители - счастье семьи».</span
+								>
+							</p>
+							<ul class="about__list list-reset">
+								<li class="about__item about__item-icon1">
+									<p class="about__item-text">
+										<span class="about__item-span">СК «Здоровые дети»</span>—
+										это современное амбулаторно-поликлиническое учреждение,
+										оказывающее высококвалифицированную медицинскую помощь.
+									</p>
+								</li>
+								<li class="about__item about__item-icon2">
+									<p class="about__item-text">
+										<span class="about__item-span"> СК «Здоровые дети» </span>
+										— предлагает полный спектр медицинских услуг для детей и
+										взрослых.
+									</p>
+								</li>
+							</ul>
+							<button class="about__btn bth-reset about__btn-icon">
+								Записаться
+								<svg
+									class="about__btn-icon"
+									width="44"
+									height="44"
+									aria-hidden="true"
+								>
+									<use xlink:href="svg/sprite.svg#icon-button-arrow"></use>
+								</svg>
+							</button>
+						</div>
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img
+										src="img/image.png"
+										alt="Фото-картинка процедурного кабинета"
+									/>
+								</div>
+								<div class="swiper-slide">
+									<img
+										src="img/image.png"
+										alt="Фото-картинка процедурного кабинета"
+									/>
+								</div>
+								<div class="swiper-slide">
+									<img
+										src="img/image.png"
+										alt="Фото-картинка процедурного кабинета"
+									/>
+								</div>
+								<div class="swiper-slide">
+									<img
+										src="img/image.png"
+										alt="Фото-картинка процедурного кабинета"
+									/>
+								</div>
+								<div class="swiper-slide">
+									<img
+										src="img/image.png"
+										alt="Фото-картинка процедурного кабинета"
+									/>
+								</div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-          <nav class="mobile-nav nav__content">
-            <ul class="header__nav-list list-reset">
-              <li class="header__nav-item"><a href="doctors.html" class="header__nav-link">Врачи</a></li>
-              <li class="header__nav-item"><a href="price.html" class="header__nav-link">Цены</a></li>
-              <li class="header__nav-item dropdown">
-                <a href="#" class="header__nav-link dropdown-button">Пациентам</a>
-                <div class="header__nav-dropdown ">
-                  <a class="header__nav-link-dropdown" href="news.html">Новости</a>
-                  <a class="header__nav-link-dropdown" href="company.html">О нас</a>
-                  <a class="header__nav-link-dropdown" href="visit.html">Подготовка<br>к визиту</a>
-                  <a class="header__nav-link-dropdown" href="tax.html">Налоговый вычет</a>
-                </div>
-              </li>
-              <li class="header__nav-item"><a href="calculator.html"
-                  class="header__nav-link">Калькулятор<br>анализов</a></li>
-              <li class="header__nav-item"><a href="stock.html" class="header__nav-link">Акции</a></li>
-              <li class="header__nav-item"><a href="contacts.html" class="header__nav-link">Контакты</a></li>
-            </ul>
+			<section id="about__mobile">
+				<div class="container">
+					<div class="content__about">
+						<div class="about">
+							<h2 class="about__title">
+								<span class="about__title-span">Семейная</span> клиника
+							</h2>
+							<p class="about__text">
+								«Здоровые дети» приветствует Вас на сайте!
+							</p>
+							<div class="swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<img
+											src="img/image.png"
+											alt="Фото-картинка процедурного кабинета"
+										/>
+									</div>
+									<div class="swiper-slide">
+										<img
+											src="img/image.png"
+											alt="Фото-картинка процедурного кабинета"
+										/>
+									</div>
+									<div class="swiper-slide">
+										<img
+											src="img/image.png"
+											alt="Фото-картинка процедурного кабинета"
+										/>
+									</div>
+									<div class="swiper-slide">
+										<img
+											src="img/image.png"
+											alt="Фото-картинка процедурного кабинета"
+										/>
+									</div>
+									<div class="swiper-slide">
+										<img
+											src="img/image.png"
+											alt="Фото-картинка процедурного кабинета"
+										/>
+									</div>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+							<ul class="about__list list-reset">
+								<li class="about__item about__item-icon1">
+									<p class="about__item-text">
+										<span class="about__item-span">СК «Здоровые дети»</span>—
+										это современное амбулаторно-поликлиническое учреждение,
+										оказывающее высококвалифицированную медицинскую помощь.
+									</p>
+								</li>
+								<li class="about__item about__item-icon2">
+									<p class="about__item-text">
+										<span class="about__item-span"> СК «Здоровые дети» </span>
+										— предлагает полный спектр медицинских услуг для детей и
+										взрослых.
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
 
-            <ul class="header__nav-list list-reset">
-              <li class="header__nav-item dropdown">
-                <a href="#" class="header__nav-link dropdown-button">Сотрудничество</a>
-                <div class="header__nav-dropdown ">
-                  <a class="header__nav-link-dropdown" href="dms.html">ДМС</a>
-                  <a class="header__nav-link-dropdown" href="vacancies.html">Вакансии</a>
-                  <a class="header__nav-link-dropdown" href="#">Предприятиям</a>
-                </div>
-              </li>
-              <li class="header__nav-item dropdown "><a href="#" class="header__nav-link dropdown-button">Услуги </a>
-                <div class="header__nav-dropdown ">
-                  <div  class="header__dropdown-container">
-                    <a class="header__nav-link-dropdown" href="#">Детское отделение</a>
-                    <a class="header__nav-link-dropdown" href="#">Взрослое отделение</a>
-                    <a class="header__nav-link-dropdown" href="services.html">Хирургия</a>
-                    <a class="header__nav-link-dropdown" href="#">Лабораторная<br>диагностика</a>
-                    <a class="header__nav-link-dropdown" href="#">УЗИ, ЭКГ</a>
-                    <a class="header__nav-link-dropdown" href="#">Нейросонография</a>
-                  </div>
-                  <div>
-                    <a class="header__nav-link-dropdown" href="#">Вызов врача на дом</a>
-                    <a class="header__nav-link-dropdown" href="#">Вакцинация</a>
-                    <a class="header__nav-link-dropdown" href="#">Логопед-дефектолог</a>
-                    <a class="header__nav-link-dropdown" href="#">Аудиометрия</a>
-                    <a class="header__nav-link-dropdown" href="#">Тимпанометрия</a>
-                    <a class="header__nav-link-dropdown" href="programs.html">Комплексные<br>программы</a>
-                  </div>
-                </div>
-              </li>
-            </ul>
+			<section id="job">
+				<div class="container">
+					<div class="job__container">
+						<p class="job__text">
+							<span class="job__span"> Каждый день </span>
+							мы:
+						</p>
+						<ul class="job__list">
+							<li class="job__item">
+								<svg
+									class="job__item-icon"
+									width="61"
+									height="61"
+									aria-hidden="true"
+								>
+									<use xlink:href="svg/sprite.svg#icon-health"></use>
+								</svg>
+								<p class="job__item-text">
+									Боремся за здоровье<br />детей и взрослых
+								</p>
+							</li>
+							<li class="job__item">
+								<svg
+									class="job__item-icon"
+									width="61"
+									height="61"
+									aria-hidden="true"
+								>
+									<use xlink:href="svg/sprite.svg#icon-prevent"></use>
+								</svg>
+								<p class="job__item-text">Предупреждаем<br />болезни</p>
+							</li>
+							<li class="job__item">
+								<svg
+									class="job__item-icon"
+									width="61"
+									height="61"
+									aria-hidden="true"
+								>
+									<use xlink:href="svg/sprite.svg#icon-pain"></use>
+								</svg>
+								<p class="job__item-text">Побеждаем<br />боль</p>
+							</li>
+							<li class="job__item">
+								<svg
+									class="job__item-icon"
+									width="53"
+									height="42"
+									aria-hidden="true"
+								>
+									<use xlink:href="svg/sprite.svg#icon-future"></use>
+								</svg>
+								<p class="job__item-text">Заботимся о будущем<br />поколении</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
 
-          </nav>
-        </div>
+			<section id="services">
+				<div class="container">
+					<h2 class="title__services--mob">Наши направления</h2>
+					<div class="services__container">
+						<ul class="services__list list-reset">
+							<li class="services__item special__desktop special-item1">
+								<h2 class="services__title-special">Семейная клиника</h2>
+								<p class="services__item--text">Вы здесь</p>
+								<svg
+									class="services__svg--cliniks"
+									width="180"
+									height="193"
+									aria-hidden="true"
+								>
+									<use xlink:href="svg/sprite.svg#services__svg--cliniks"></use>
+								</svg>
+								<svg
+									class="services__svg--cliniks-mob"
+									width="136"
+									height="137"
+									viewBox="0 0 136 137"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M110.73 73.9935C108.508 73.9918 106.327 74.5832 104.41 75.7065C102.494 76.8297 100.912 78.4443 99.8279 80.3833C98.744 82.3223 98.1973 84.5155 98.2444 86.7364C98.2914 88.9573 98.9305 91.1253 100.096 93.0167C97.1152 93.3991 94.2316 92.0747 91.4399 90.7922C88.1013 89.2625 84.6493 87.678 81.3158 89.3543C77.6776 91.1836 75.0899 96.5529 72.9228 106.765C69.9832 120.623 63.1186 124.886 58.1356 124.322C56.288 124.116 54.5907 123.207 53.3956 121.782C52.2006 120.358 51.5996 118.529 51.7172 116.674L52.3928 79.4834C53.3289 79.3962 54.1987 78.963 54.8324 78.2685C55.4661 77.574 55.818 76.6681 55.8193 75.728V69.0202C55.8181 69.0046 55.82 68.989 55.8248 68.9741C55.8297 68.9593 55.8374 68.9455 55.8476 68.9337C55.8578 68.9218 55.8703 68.9121 55.8842 68.9051C55.8982 68.8981 55.9134 68.8939 55.929 68.8927C61.1615 68.345 66.2202 66.7023 70.7762 64.0714C75.3323 61.4406 79.2838 57.8804 82.3738 53.6224L83.0469 52.6778C83.5436 51.9801 83.7543 51.1186 83.6358 50.2704C83.5172 49.4222 83.0785 48.6516 82.4095 48.1167C85.6553 41.9109 87.7916 29.0061 88.7221 22.0649C88.9198 20.8144 88.8433 19.5359 88.498 18.3178C88.1528 17.0998 87.547 15.9713 86.7226 15.0105C85.8981 14.0496 84.8748 13.2794 83.7233 12.7531C82.5719 12.2269 81.3198 11.9571 80.0538 11.9624H75.2734C74.9463 11.1057 74.367 10.3683 73.6121 9.8476C72.8572 9.32688 71.9621 9.04731 71.0451 9.04578H66.7427C66.1478 9.04578 65.5587 9.16296 65.009 9.39064C64.4593 9.61832 63.9599 9.95203 63.5392 10.3727C63.1185 10.7934 62.7848 11.2929 62.5571 11.8425C62.3294 12.3922 62.2122 12.9813 62.2122 13.5763C62.2122 14.1712 62.3294 14.7603 62.5571 15.31C62.7848 15.8597 63.1185 16.3591 63.5392 16.7798C63.9599 17.2005 64.4593 17.5342 65.009 17.7619C65.5587 17.9896 66.1478 18.1068 66.7427 18.1068H71.0451C71.9619 18.1052 72.8568 17.8257 73.6117 17.3052C74.3665 16.7848 74.9459 16.0478 75.2734 15.1914H80.0576C80.8575 15.1869 81.6489 15.3566 82.3766 15.6887C83.1043 16.0209 83.751 16.5074 84.2718 17.1147C84.7925 17.7219 85.1749 18.4353 85.3922 19.2051C85.6095 19.975 85.6565 20.7829 85.5301 21.5728C84.6645 28.04 82.6999 40.4912 79.7211 46.2964C79.0191 46.0031 78.2384 45.957 77.5068 46.1654C76.7752 46.3738 76.1361 46.8245 75.6941 47.4436L75.021 48.3882C69.783 55.7436 60.731 60.1351 50.8006 60.1351C40.8702 60.1351 31.8233 55.7449 26.5802 48.3882L25.9071 47.4436C25.4654 46.8241 24.8263 46.3732 24.0946 46.1647C23.3628 45.9562 22.582 46.0027 21.8801 46.2964C18.9051 40.4905 16.9439 28.0393 16.0813 21.5728C15.9549 20.7829 16.002 19.975 16.2193 19.2051C16.4366 18.4353 16.8189 17.7219 17.3396 17.1147C17.8604 16.5074 18.5071 16.0209 19.2348 15.6887C19.9625 15.3566 20.7539 15.1869 21.5538 15.1914H26.3392C26.6662 16.0479 27.2453 16.785 28 17.3056C28.7547 17.8261 29.6496 18.1054 30.5664 18.1068H34.8687C36.0702 18.1068 37.2226 17.6294 38.0722 16.7798C38.9218 15.9302 39.3992 14.7778 39.3992 13.5763C39.3992 12.3747 38.9218 11.2224 38.0722 10.3727C37.2226 9.52309 36.0702 9.04578 34.8687 9.04578H30.5664C29.6493 9.04731 28.7542 9.32688 27.9993 9.8476C27.2444 10.3683 26.6652 11.1057 26.338 11.9624H21.5538C20.2878 11.9571 19.0357 12.2269 17.8842 12.7531C16.7328 13.2794 15.7094 14.0496 14.885 15.0105C14.0606 15.9713 13.4548 17.0998 13.1095 18.3178C12.7643 19.5359 12.6878 20.8144 12.8854 22.0649C13.8177 29.0058 15.9562 41.9098 19.2044 48.1142C18.5352 48.6488 18.0962 49.4195 17.9777 50.2678C17.8592 51.1161 18.07 51.9776 18.567 52.6752L19.2401 53.6198C22.3288 57.8788 26.2792 61.4402 30.8343 64.0726C35.3895 66.705 40.4476 68.3494 45.6799 68.8991C45.6955 68.9002 45.7107 68.9044 45.7246 68.9115C45.7386 68.9185 45.751 68.9282 45.7612 68.94C45.7714 68.9519 45.7791 68.9656 45.784 68.9805C45.7889 68.9953 45.7907 69.011 45.7895 69.0266V75.7254C45.7915 76.6565 46.1373 77.554 46.7605 78.2457C47.3838 78.9374 48.2405 79.3746 49.1664 79.4732L48.4971 116.62C48.3744 119.277 49.2646 121.881 50.988 123.906C52.7114 125.931 55.1393 127.227 57.7812 127.531C58.1824 127.576 58.5859 127.599 58.9897 127.598C65.1582 127.598 72.91 122.413 76.0867 107.434C77.9517 98.6384 80.2004 93.5317 82.7716 92.2391C84.7181 91.2601 87.2115 92.4035 90.0989 93.7267C93.5509 95.31 97.7908 97.2515 102.436 95.8008C103.947 97.1457 105.761 98.1035 107.724 98.5917C109.687 99.0799 111.738 99.084 113.703 98.6035C115.668 98.1231 117.486 97.1725 119.002 95.8336C120.518 94.4946 121.686 92.8074 122.405 90.9172C123.124 89.0269 123.374 86.9902 123.131 84.9823C122.889 82.9743 122.163 81.0553 121.015 79.3903C119.866 77.7253 118.331 76.3642 116.54 75.4241C114.749 74.484 112.757 73.993 110.735 73.9935H110.73ZM71.0451 14.8778H66.7427C66.3976 14.8778 66.0665 14.7407 65.8224 14.4966C65.5783 14.2525 65.4412 13.9215 65.4412 13.5763C65.4412 13.2311 65.5783 12.9 65.8224 12.6559C66.0665 12.4119 66.3976 12.2747 66.7427 12.2747H71.0451C71.3902 12.2747 71.7213 12.4119 71.9654 12.6559C72.2095 12.9 72.3466 13.2311 72.3466 13.5763C72.3466 13.9215 72.2095 14.2525 71.9654 14.4966C71.7213 14.7407 71.3902 14.8778 71.0451 14.8778ZM30.5664 12.2747H34.8687C35.2139 12.2747 35.5449 12.4119 35.789 12.6559C36.0331 12.9 36.1702 13.2311 36.1702 13.5763C36.1702 13.9215 36.0331 14.2525 35.789 14.4966C35.5449 14.7407 35.2139 14.8778 34.8687 14.8778H30.5664C30.2212 14.8778 29.8901 14.7407 29.646 14.4966C29.4019 14.2525 29.2648 13.9215 29.2648 13.5763C29.2648 13.2311 29.4019 12.9 29.646 12.6559C29.8901 12.4119 30.2212 12.2747 30.5664 12.2747ZM46.0751 65.6944C41.2877 65.1979 36.6583 63.6998 32.4878 61.2974C28.3172 58.8949 24.6987 55.642 21.8674 51.7498L21.1956 50.8052C21.186 50.7919 21.1793 50.7768 21.1758 50.7608C21.1722 50.7448 21.1721 50.7282 21.1752 50.7121C21.1771 50.6957 21.1825 50.6799 21.1911 50.6658C21.1996 50.6517 21.2112 50.6397 21.2249 50.6305L23.1128 49.2857C23.1332 49.2707 23.1577 49.2627 23.1829 49.2627H23.2059C23.2385 49.2681 23.2678 49.2859 23.2875 49.3124L23.9605 50.257C29.8028 58.4614 39.839 63.3603 50.8057 63.3603C61.7725 63.3603 71.8086 58.4639 77.6508 50.2596L78.3239 49.315C78.3436 49.2884 78.3727 49.2705 78.4053 49.265C78.4379 49.2596 78.4713 49.267 78.4986 49.2857L80.3878 50.6305C80.414 50.6501 80.4316 50.6791 80.4371 50.7113C80.4426 50.7436 80.4354 50.7768 80.4171 50.8039L79.744 51.7498C76.9129 55.6418 73.2946 58.8947 69.1242 61.2971C64.9539 63.6995 60.3248 65.1977 55.5376 65.6944C54.7255 65.795 53.9781 66.1888 53.4358 66.8017C52.8936 67.4146 52.5938 68.2044 52.5929 69.0228V75.7254C52.5909 75.8691 52.5329 76.0062 52.4312 76.1077C52.3295 76.2091 52.1922 76.2668 52.0486 76.2685H49.5628C49.4192 76.2668 49.2819 76.2091 49.1802 76.1077C49.0785 76.0062 49.0205 75.8691 49.0185 75.7254V69.0202C49.017 68.2025 48.7171 67.4135 48.1752 66.8011C47.6333 66.1888 46.8865 65.7952 46.0751 65.6944ZM110.731 95.7383C108.9 95.7386 107.109 95.1958 105.587 94.1786C104.064 93.1614 102.877 91.7155 102.176 90.0237C101.475 88.332 101.292 86.4703 101.649 84.6743C102.006 82.8782 102.888 81.2284 104.182 79.9334C105.477 78.6384 107.127 77.7565 108.923 77.3992C110.719 77.0418 112.581 77.2251 114.272 77.9258C115.964 78.6265 117.41 79.8132 118.428 81.3358C119.445 82.8584 119.988 84.6485 119.988 86.4797C119.986 88.9345 119.01 91.2881 117.274 93.0239C115.538 94.7597 113.186 95.736 110.731 95.7383ZM110.731 79.8484C109.42 79.8484 108.138 80.2372 107.048 80.9656C105.958 81.694 105.108 82.7292 104.607 83.9405C104.105 85.1517 103.974 86.4845 104.229 87.7704C104.485 89.0562 105.117 90.2374 106.044 91.1644C106.971 92.0915 108.152 92.7228 109.438 92.9786C110.723 93.2343 112.056 93.1031 113.268 92.6014C114.479 92.0996 115.514 91.25 116.242 90.1599C116.971 89.0698 117.36 87.7882 117.36 86.4772C117.357 84.7198 116.657 83.0354 115.414 81.7929C114.172 80.5503 112.488 79.8511 110.731 79.8484ZM110.731 89.8833C110.058 89.8836 109.399 89.6842 108.84 89.3104C108.28 88.9365 107.843 88.405 107.585 87.7831C107.328 87.1612 107.26 86.4768 107.391 85.8165C107.522 85.1562 107.846 84.5496 108.322 84.0735C108.798 83.5973 109.405 83.2731 110.065 83.1416C110.725 83.0102 111.41 83.0775 112.032 83.3351C112.654 83.5927 113.185 84.0289 113.559 84.5887C113.934 85.1484 114.133 85.8065 114.133 86.4797C114.132 87.3821 113.773 88.2473 113.135 88.8853C112.497 89.5234 111.633 89.8823 110.731 89.8833Z"
+										fill="#C1BAFF"
+										stroke="#C1BAFF"
+										stroke-width="0.837209"
+									/>
+								</svg>
 
-        <div class="header__logo">
-          <a href="index.html" class="header__logo-link">
-            <img src="img/logo.png" alt="Логотип клиники">
-          </a>
-        </div>
-        <div class="header__logo--mobile">
-          <a href="index.html" class="header__logo-link">
-            <img class="clinic__logo" src="img/Clinic_logo.svg" alt="Логотип клиники">
-          </a>
-        </div>
-        <div class="header__container-info">
-          <div class="header__text">
-            <a href="contacts.html" class="header__btn-address bth-reset">
-              <svg class="header__btn-address-icon" width="30" height="29" aria-hidden="true">
-                <use xlink:href="svg/sprite.svg#icon-address"></use>
-              </svg>
-              <p class="header__text-address">
-                Адрес и режим работы
-              </p>
-            </a>
-          </div>
-          <div class="header__list list-reset">
-            <a href="schedule.html" class="header__btn-item bth-reset">
-              <svg class="header__btn-icon" width="30" height="29" aria-hidden="true">
-                <use xlink:href="svg/sprite.svg#icon-booking"></use>
-              </svg>
-              <p class="header__item">
-                Записаться
-              </p>
-            </a>
-            <a href="med-card.html" class="header__btn-item bth-reset">
-              <svg class="header__btn-icon" width="30" height="29" aria-hidden="true">
-                <use xlink:href="svg/sprite.svg#icon-medcard"></use>
-              </svg>
-              <p class="header__item">
-                Медкарта
-              </p>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="header__bottom">
-        <nav class="header__nav">
-          <ul class="header__nav-list list-reset">
-            <li class="header__nav-item"><a href="doctors.html" class="header__nav-link">Врачи</a></li>
-            <li class="header__nav-item"><a href="price.html" class="header__nav-link">Цены</a></li>
-            <li class="header__nav-item dropdown"><a href="#" class="header__nav-link ">Услуги </a>
-              <svg width="9" height="7" aria-hidden="true">
-                <use xlink:href="svg/sprite.svg#icon-dropdown-arrow"></use>
-              </svg>
-              <div class="header__nav-dropdown dropdown-content__services">
-                <div>
-                  <a class="header__nav-link-dropdown" href="#">Детское отделение</a>
-                  <a class="header__nav-link-dropdown" href="#">Взрослое отделение</a>
-                  <a class="header__nav-link-dropdown" href="services.html">Хирургия</a>
-                  <a class="header__nav-link-dropdown" href="#">Лабораторная диагностика</a>
-                  <a class="header__nav-link-dropdown" href="#">УЗИ, ЭКГ</a>
-                  <a class="header__nav-link-dropdown" href="#">Нейросонография</a>
-                </div>
-                <div>
-                  <a class="header__nav-link-dropdown" href="#">Вызов врача на дом</a>
-                  <a class="header__nav-link-dropdown" href="#">Вакцинация</a>
-                  <a class="header__nav-link-dropdown" href="#">Логопед-дефектолог</a>
-                  <a class="header__nav-link-dropdown" href="#">Аудиометрия</a>
-                  <a class="header__nav-link-dropdown" href="#">Тимпанометрия</a>
-                  <a class="header__nav-link-dropdown" href="programs.html">Комплексные программы</a>
-                </div>
-              </div>
-            </li>
-            <li class="header__nav-item dropdown">
-              <a href="#" class="header__nav-link dropdown-button">Пациентам</a>
-              <svg width="9" height="7" aria-hidden="true">
-                <use xlink:href="svg/sprite.svg#icon-dropdown-arrow"></use>
-              </svg>
-              <div class="header__nav-dropdown dropdown-content">
-                <a class="header__nav-link-dropdown" href="news.html">Новости</a>
-                <a class="header__nav-link-dropdown" href="company.html">О нас</a>
-                <a class="header__nav-link-dropdown" href="visit.html">Подготовка к визиту</a>
-                <a class="header__nav-link-dropdown" href="tax.html">Налоговый вычет</a>
-              </div>
-            </li>
-            <li class="header__nav-item"><a href="calculator.html" class="header__nav-link">Калькулятор анализов</a>
-            </li>
-            <li class="header__nav-item"><a href="stock.html" class="header__nav-link">Акции</a></li>
-            <li class="header__nav-item"><a href="contacts.html" class="header__nav-link">Контакты</a></li>
-            <li class="header__nav-item dropdown">
-              <a href="#" class="header__nav-link">Сотрудничество</a>
-              <svg width="9" height="7" aria-hidden="true">
-                <use xlink:href="svg/sprite.svg#icon-dropdown-arrow"></use>
-              </svg>
-              <div class="header__nav-dropdown dropdown-content">
-                <a class="header__nav-link-dropdown" href="dms.html">ДМС</a>
-                <a class="header__nav-link-dropdown" href="vacancies.html">Вакансии</a>
-                <a class="header__nav-link-dropdown" href="#">Предприятиям</a>
-              </div>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
+								<svg
+									class="services__svg--arrow"
+									width="42"
+									height="42"
+									aria-hidden="true"
+								>
+									<use xlink:href="svg/sprite.svg#icon-button-arrow"></use>
+								</svg>
+							</li>
+							<li class="services__item special-item2">
+								<h2 class="services__title-special">Семейная клиника</h2>
+								<svg
+									class="services__svg"
+									width="115"
+									height="126"
+									aria-hidden="true"
+								>
+									<use xlink:href="svg/sprite.svg#services-svg"></use>
+								</svg>
+								<svg
+									class="services__svg-mob"
+									width="136"
+									height="137"
+									viewBox="0 0 136 137"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M82.3908 119.06C75.5112 119.06 73.689 112.703 73.689 109.334V89.8832C73.689 86.7812 71.1603 84.2526 68.0584 84.2526C64.9564 84.2526 62.4278 86.7812 62.4278 89.8832V109.334C62.4278 112.703 60.8205 119.06 54.7496 119.06C48.1158 119.06 39.1273 110.727 35.0732 92.4221C34.244 88.6854 33.814 84.7235 33.7423 80.3112C33.599 71.425 32.6879 67.8317 23.3615 49.9366C22.7985 48.8616 22.4197 47.8379 22.1842 46.8039C18.7342 31.2225 26.699 22.2852 35.3087 19.1115C39.7006 17.494 44.6145 17.3507 49.5183 18.702C52.436 19.5006 54.9339 20.2786 57.0633 20.985C57.5035 20.7291 58.0666 20.7086 58.5478 20.9645C58.732 21.0567 60.0117 21.6914 61.1788 22.2647C61.4757 22.408 61.7726 22.5616 62.0387 22.6844C63.902 23.3294 65.4478 23.8515 66.0109 23.8515H67.8843C68.9593 23.6058 75.3372 22.0804 82.9232 19.347C87.6938 17.6271 92.6283 17.1562 97.184 17.9752C108.271 19.9817 114.639 28.6529 114.639 41.7671C114.639 46.9268 112.346 51.4824 109.694 56.7547C106.244 63.5831 102.354 71.3227 102.354 82.717C102.354 104.564 90.3351 119.06 82.3908 119.06ZM68.0584 81.1813C72.8597 81.1813 76.7602 85.0818 76.7602 89.8832V109.334C76.7602 110.01 76.9547 115.989 82.3908 115.989C88.1955 115.989 99.2827 103.028 99.2827 82.717C99.2827 70.5958 103.531 62.1601 106.951 55.3727C109.428 50.4484 111.568 46.1897 111.568 41.7671C111.568 35.0206 109.623 23.3499 96.6312 20.9952C92.6078 20.2684 88.2262 20.6983 83.9674 22.234C77.9887 24.3941 72.8393 25.7864 70.2287 26.4416C82.8515 31.2429 88.0726 27.7827 88.134 27.7417C88.8097 27.2299 89.772 27.3732 90.2839 28.0489C90.7958 28.7245 90.6525 29.6869 89.9768 30.1987C89.639 30.4547 81.5206 36.2593 61.8647 26.0218C61.7828 25.9809 61.3938 25.7864 60.8717 25.5304C60.7079 25.469 60.5441 25.4178 60.37 25.3564C57.5957 24.3941 53.7976 23.0632 48.7198 21.6709C44.4405 20.4936 40.1715 20.6062 36.3836 22.0087C25.1019 26.1447 23.1977 37.1909 25.1838 46.1282C25.3579 46.896 25.6445 47.6741 26.0847 48.5033C35.1551 65.8866 36.66 70.3399 36.8136 80.2497C36.875 84.4573 37.2947 88.2247 38.0728 91.7464C42.0142 109.529 50.2042 115.979 54.7496 115.979C59.2746 115.979 59.3565 109.59 59.3565 109.324V89.873C59.3565 85.0818 63.257 81.1813 68.0584 81.1813ZM34.7763 49.9571C34.3259 49.9571 33.8857 49.7625 33.5785 49.3838C33.3943 49.1483 28.9922 43.5382 31.2751 36.679C34.0085 27.5677 42.3316 26.6668 46.3447 27.4653C47.1739 27.6291 47.7165 28.4379 47.5527 29.2671C47.3889 30.0964 46.5699 30.6389 45.7509 30.4751C45.3926 30.4035 36.8341 28.8576 34.2133 37.6004C32.4524 42.8932 35.9536 47.4182 35.9946 47.4693C36.5167 48.1348 36.4041 49.0971 35.7489 49.6295C35.452 49.8444 35.1142 49.9571 34.7763 49.9571Z"
+										fill="#A9B8FF"
+									/>
+								</svg>
 
-  <main class="main">
+								<svg
+									class="services__svg--arrow"
+									width="42"
+									height="42"
+									aria-hidden="true"
+								>
+									<use xlink:href="svg/sprite.svg#icon-button-arrow"></use>
+								</svg>
+							</li>
+							<li class="services__item special-item3">
+								<h2 class="services__title-special">Семейная клиника</h2>
+								<svg
+									class="services__svg--koc"
+									width="152"
+									height="151"
+									aria-hidden="true"
+								>
+									<use xlink:href="svg/sprite.svg#services__svg--koc"></use>
+								</svg>
 
-    <section id="about">
-      <div class="container">
-        <div class="content__about">
-          <div class="about">
-            <h1 class="about__title">О <span class="about__title-span">клинике</span></h1>
-            <p class="about__text">Девиз нашей клиники — <span class="about__text-span">«Здоровые дети и родители -
-                счастье семьи».</span></p>
-            <ul class="about__list list-reset">
-              <li class="about__item about__item-icon1">
-                <p class="about__item-text"><span class="about__item-span">СК «Здоровые дети»</span>— это современное
-                  амбулаторно-поликлиническое учреждение,
-                  оказывающее высококвалифицированную медицинскую помощь.</p>
-              </li>
-              <li class="about__item about__item-icon2">
-                <p class="about__item-text">
-                  <span class="about__item-span">
-                    СК «Здоровые дети»
-                  </span>
-                  — предлагает полный спектр медицинских услуг для детей
-                  и взрослых.
-                </p>
-              </li>
-            </ul>
-            <button class="about__btn bth-reset about__btn-icon">
-              Записаться
-              <svg class="about__btn-icon" width="44" height="44" aria-hidden="true">
-                <use xlink:href="svg/sprite.svg#icon-button-arrow"></use>
-              </svg>
-            </button>
-          </div>
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="img/image.png" alt="Фото-картинка процедурного кабинета"></div>
-              <div class="swiper-slide"><img src="img/image.png" alt="Фото-картинка процедурного кабинета"></div>
-              <div class="swiper-slide"><img src="img/image.png" alt="Фото-картинка процедурного кабинета"></div>
-              <div class="swiper-slide"><img src="img/image.png" alt="Фото-картинка процедурного кабинета"></div>
-              <div class="swiper-slide"><img src="img/image.png" alt="Фото-картинка процедурного кабинета"></div>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-      </div>
-    </section>
+								<svg
+									class="services__svg--koc-mob"
+									width="136"
+									height="137"
+									viewBox="0 0 136 137"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M66.4216 5.53969C73.6766 5.32864 81.8647 9.31755 85.1277 17.9401C85.2162 18.1529 85.2879 18.3758 85.3679 18.5953C98.5037 23.9396 106.07 35.7212 102.38 50.5719V50.5905C100.871 56.7913 98.1687 57.8971 97.8025 63.9411C99.5139 64.5184 100.816 65.6088 101.714 66.8961C105.081 64.4897 113.642 55.7289 116.962 52.5612C118.442 51.1088 120.694 53.7326 119.285 55.1071L109.467 64.7145C102.358 72.242 96.854 71.3378 95.1492 84.3082C95.1339 84.4768 95.0685 84.6356 94.9714 84.7702L87.1218 94.527C85.2779 97.1782 85.4651 99.0394 86.032 99.9098C86.6979 100.93 87.4612 101.242 88.3826 100.399L99.5496 90.1618C100.232 89.5318 101.615 90.3386 100.532 91.3756L90.0291 101.514C89.3734 102.143 87.8745 102.809 86.6687 102.604L79.7322 106.651C77.3211 108.061 76.9826 109.968 77.0642 111.29C77.1153 112.221 77.7805 112.337 78.489 111.928L103.219 97.9313C105.498 96.6438 107.086 94.6409 107.779 92.2975C109.119 87.7403 112.382 80.7155 113.118 79.2164C114.698 76.013 115.426 74.8158 116.844 73.61L127.872 64.5358C129.752 62.9913 131.836 65.7502 130.203 67.0905L119.087 76.2711C118.075 77.1056 117.782 77.6377 116.248 80.7594C115.61 82.0478 112.284 89.2658 111.096 93.2848C110.148 96.495 107.937 99.2546 104.931 100.958L84.9851 112.253L85.1619 118.47L107.968 126.781C110.34 127.689 109.041 131.246 106.646 130.419L86.3865 123.04C81.0951 121.328 81.1018 121.325 81.1287 114.442L80.2039 114.967C76.631 117.218 72.7294 113.703 73.7478 109.723C69.3727 111.954 65.8016 111.958 61.4265 109.723C62.4295 113.69 58.5448 117.223 54.9685 114.967L54.0466 114.442C54.0678 121.241 54.0468 121.249 48.7761 123.04L28.5173 130.419C26.1059 131.258 24.8374 127.683 27.2029 126.781L50.0085 118.479L50.1873 112.253L30.2293 100.96C27.2199 99.2565 25.0128 96.497 24.0642 93.2868C22.8754 89.2675 19.5481 82.0479 18.9197 80.7604C17.3836 77.6371 17.0812 77.1059 16.0798 76.2731L4.95777 67.0924C3.33304 65.7521 5.40863 62.993 7.28882 64.5377L18.3132 73.611C19.742 74.8167 20.4603 76.0143 22.0388 79.2174C22.7745 80.7161 26.0396 87.7488 27.3884 92.2995C28.0799 94.6513 29.6672 96.6458 31.9373 97.9332L56.6726 111.939C57.3913 112.339 58.0485 112.223 58.1013 111.292C58.1796 109.979 57.853 108.063 55.4402 106.653L48.4929 102.615C47.2872 102.819 45.7882 102.155 45.1326 101.516L34.6296 91.3864C33.5468 90.3391 34.9419 89.5419 35.6248 90.1618L46.7898 100.408C47.7043 101.249 48.4677 100.928 49.1335 99.9186C49.7006 99.0398 49.888 97.1765 48.0505 94.525L40.1902 84.777C38.4224 71.7962 33.0056 72.1652 25.696 64.7125L15.8865 55.1139C14.4764 53.7311 16.7188 51.1156 18.2107 52.5592C21.5538 55.7524 30.1746 64.5831 33.5808 67.0016C34.4698 65.927 35.7119 65.0398 37.1834 64.4284C37.0761 58.1015 34.4053 56.9072 32.7839 50.5905V50.5827C29.4664 36.6515 35.465 25.8627 46.8943 19.9547C47.223 15.8384 49.1909 12.3889 52.0027 9.95863C55.0989 7.29673 59.4646 5.53969 66.4216 5.53969ZM66.0261 42.9371C56.0427 47.142 41.7561 54.9068 41.2605 65.3619C41.2519 66.2679 40.9313 67.1973 39.5486 67.3932C37.7297 67.6504 36.8965 68.2454 36.3992 69.2741C39.2654 71.7929 42.0678 75.8542 43.1697 82.9508L50.7449 92.3639C52.1497 94.2405 52.829 96.3284 52.8103 98.1012C56.6371 102.589 65.1206 107.884 67.5798 107.557C70.0465 107.884 78.5084 102.6 82.3572 98.1207C82.3384 96.3735 82.9311 94.4829 84.2712 92.5602C84.3155 92.487 84.3681 92.4252 84.4226 92.3639L91.99 82.9508C93.0987 75.8458 95.9001 71.7827 98.7664 69.2741C98.2691 68.2369 97.4358 67.6401 95.617 67.3932C94.6531 67.2586 93.9681 66.719 93.905 65.4674C93.624 60.3565 89.6494 57.5702 85.2214 54.5319C79.8636 51.0287 72.7073 47.5337 66.0261 42.9371ZM70.7918 96.9489C71.6705 96.3289 72.272 96.3796 72.5037 96.7526C72.7607 97.1784 72.5367 98.0032 71.7312 98.7848C69.3588 101.223 64.7083 101.23 62.3377 98.7848C61.4112 97.8515 61.0161 96.6884 62.072 96.4772C62.3735 96.4602 62.7809 96.6032 63.2781 96.9489C65.3048 98.3383 68.7686 98.3351 70.7918 96.9489ZM67.031 92.778C68.2997 92.4525 69.432 90.7806 71.1638 91.3493C72.5927 91.7154 73.5417 92.8665 75.5632 92.4323C76.3618 92.2552 76.8587 92.5733 77.0359 93.1334C77.6149 95.7817 72.2589 94.997 70.8709 94.2936C70.1438 94.0281 69.7453 94.3734 69.2566 94.7633C68.7679 95.1448 68.0323 95.6948 67.031 95.695C66.0364 95.695 65.2898 95.1533 64.8113 94.7633C64.3226 94.3819 63.9139 94.028 63.197 94.2936C61.3271 94.9782 60.0937 95.2092 58.1335 94.7545C56.4939 94.5583 56.5552 92.0186 58.5066 92.4323C60.8296 92.9398 61.7701 91.3044 63.6248 91.2448C64.9684 91.1768 65.9956 92.5719 67.031 92.778ZM71.1267 61.7955C75.0915 57.2824 83.0892 56.6468 87.6892 61.2008C88.9596 62.4066 87.9202 64.4662 86.1814 63.2672C75.6718 56.7139 66.8553 67.2556 71.8572 79.2877C73.5346 83.0617 71.7567 88.1312 67.0222 87.1979C65.389 86.8249 65.3008 84.7222 67.0652 84.7682C69.1852 84.8105 69.832 83.0645 68.8562 80.4215C66.0088 72.7034 67.0377 65.7875 71.1267 61.7955ZM72.7498 69.36C73.2743 68.7846 74.1598 68.739 74.7371 69.2633C77.7191 71.9592 82.0379 72.2521 85.6296 69.6364C86.6668 68.8836 87.7926 70.5318 86.6941 71.5621C82.8264 75.3515 76.7131 74.9036 72.8386 71.3561C72.2528 70.8315 72.2184 69.9373 72.7498 69.36ZM59.321 69.2633C59.9068 68.7389 60.7925 68.7848 61.3171 69.36C61.8399 69.9372 61.8063 70.8315 61.2293 71.3561C57.3565 74.9002 51.2337 75.3515 47.3728 71.5621C46.2746 70.5318 47.3999 68.8839 48.4285 69.6364C52.0202 72.2522 56.3492 71.9591 59.321 69.2633ZM47.4353 61.0846C51.8207 56.7554 58.7868 57.2905 63.1892 61.3063C63.8449 61.9109 63.8905 62.9309 63.2859 63.5866C62.6915 64.2337 61.6799 64.2869 61.0242 63.7028C57.6351 60.6238 52.7218 60.2877 48.6414 63.2662C47.4611 64.128 46.1835 62.2563 47.4353 61.0846ZM86.197 23.2213C86.4437 32.1637 80.0191 38.3817 70.4529 41.234C79.1044 47.0499 88.7826 50.3984 95.1316 58.0348C102.831 44.389 100.359 30.27 86.197 23.2213ZM81.5222 19.317C76.9764 6.12717 54.7586 6.13967 51.114 18.0934C52.6042 17.5348 54.1118 17.0796 55.7263 16.8327C57.9604 16.4974 58.9276 18.8813 56.658 19.6188C42.7712 24.2971 32.7071 33.7202 36.532 49.6608V49.6793C37.3375 52.973 38.6338 54.7038 39.7527 57.3707C46.5088 46.9428 58.7714 41.34 70.8972 36.987C80.1073 33.8771 84.1637 27.2277 81.5222 19.317Z"
+										fill="#E7B5FC"
+									/>
+								</svg>
 
-    <section id="about__mobile">
-      <div class="container">
-        <div class="content__about">
-          <div class="about">
-            <h2 class="about__title"><span class="about__title-span">Семейная</span> клиника</h2>
-            <p class="about__text">«Здоровые дети» приветствует Вас на сайте!</p>
-            <div class="swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="img/image.png" alt="Фото-картинка процедурного кабинета"></div>
-                <div class="swiper-slide"><img src="img/image.png" alt="Фото-картинка процедурного кабинета"></div>
-                <div class="swiper-slide"><img src="img/image.png" alt="Фото-картинка процедурного кабинета"></div>
-                <div class="swiper-slide"><img src="img/image.png" alt="Фото-картинка процедурного кабинета"></div>
-                <div class="swiper-slide"><img src="img/image.png" alt="Фото-картинка процедурного кабинета"></div>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-            <ul class="about__list list-reset">
-              <li class="about__item about__item-icon1">
-                <p class="about__item-text"><span class="about__item-span">СК «Здоровые дети»</span>— это современное
-                  амбулаторно-поликлиническое учреждение,
-                  оказывающее высококвалифицированную медицинскую помощь.</p>
-              </li>
-              <li class="about__item about__item-icon2">
-                <p class="about__item-text">
-                  <span class="about__item-span">
-                    СК «Здоровые дети»
-                  </span>
-                  — предлагает полный спектр медицинских услуг для детей
-                  и взрослых.
-                </p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+								<svg
+									class="services__svg--arrow"
+									width="42"
+									height="42"
+									aria-hidden="true"
+								>
+									<use xlink:href="svg/sprite.svg#icon-button-arrow"></use>
+								</svg>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
 
-    <section id="job">
-      <div class="container">
-        <div class="job__container">
-          <p class="job__text">
-            <span class="job__span">
-              Каждый день
-            </span>
-            мы:
-          </p>
-          <ul class="job__list">
-            <li class="job__item">
-              <svg class="job__item-icon" width="61" height="61" aria-hidden="true">
-                <use xlink:href="svg/sprite.svg#icon-health"></use>
-              </svg>
-              <p class="job__item-text">Боремся за здоровье<br>детей и взрослых</p>
-            </li>
-            <li class="job__item">
-              <svg class="job__item-icon" width="61" height="61" aria-hidden="true">
-                <use xlink:href="svg/sprite.svg#icon-prevent"></use>
-              </svg>
-              <p class="job__item-text">Предупреждаем<br>болезни</p>
-            </li>
-            <li class="job__item">
-              <svg class="job__item-icon" width="61" height="61" aria-hidden="true">
-                <use xlink:href="svg/sprite.svg#icon-pain"></use>
-              </svg>
-              <p class="job__item-text">Побеждаем<br>боль</p>
-            </li>
-            <li class="job__item">
-              <svg class="job__item-icon" width="53" height="42" aria-hidden="true">
-                <use xlink:href="svg/sprite.svg#icon-future"></use>
-              </svg>
-              <p class="job__item-text">Заботимся о будущем<br>поколении</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
+			<section class="contacts__section" id="map">
+				<div class="map__container">
+					<div class="container">
+						<div class="map__container-wrap">
+							<ul class="map__list">
+								<li class="map__item">
+									<p class="map__text">Семейная клиника</p>
+									<span class="map__span">г.Лыткарино, кв-л 3A, д.29</span>
+								</li>
+								<li class="map__item">
+									<p class="map__text">Стоматология, Косметология</p>
+									<span class="map__span">г.Лыткарино, кв-л 3A, д.29</span>
+								</li>
+							</ul>
+							<div class="map__container-wraps">
+								<div class="map__contacts">
+									<h3 class="map__contacts-title">Контакты</h3>
+									<ul class="map__contacts-list">
+										<li class="map__contacts-item">
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M4.61453 11.2239L18.6698 6.53885C18.7591 6.50907 18.8441 6.59406 18.8143 6.68341L14.1293 20.7386C14.0935 20.8459 13.9403 20.8417 13.9106 20.7326L11.937 13.4963C11.9264 13.4573 11.8959 13.4268 11.8569 13.4161L4.6206 11.4426C4.51151 11.4129 4.50726 11.2597 4.61453 11.2239Z"
+													stroke="#897CFF"
+													stroke-width="2"
+													stroke-linecap="round"
+												></path>
+											</svg>
+											<a
+												class="map__contacts-link"
+												href="https://t.me/@ZdClinic_bot"
+												>Telegram: @ZdClinic_bot</a
+											>
+										</li>
+										<li class="map__contacts-item">
+											<svg
+												width="25"
+												height="25"
+												viewBox="0 0 25 25"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<rect
+													x="4.65332"
+													y="6.43457"
+													width="16"
+													height="12"
+													rx="2"
+													stroke="#897CFF"
+													stroke-width="2"
+												></rect>
+												<path
+													d="M4.65332 9.43457L11.7589 12.9874C12.3219 13.2689 12.9847 13.2689 13.5477 12.9874L20.6533 9.43457"
+													stroke="#897CFF"
+													stroke-width="2"
+												></path>
+											</svg>
+											<a
+												class="map__contacts-link"
+												href="mailto:zd-clinic@yandex.ru"
+												>zd-clinic@yandex.ru</a
+											>
+										</li>
+									</ul>
+									<div class="tell__wrap">
+										<svg
+											width="24"
+											height="25"
+											viewBox="0 0 24 25"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M20.3864 17.2903C20.3864 17.5099 20.3467 17.7967 20.2673 18.1506C20.1879 18.5045 20.1045 18.7832 20.0171 18.9866C19.8504 19.3934 19.3659 19.8246 18.5638 20.2802C17.8173 20.6951 17.0787 20.9026 16.3481 20.9026C16.1336 20.9026 15.9252 20.8884 15.7227 20.8599C15.5201 20.8314 15.2918 20.7806 15.0377 20.7073C14.7835 20.6341 14.5949 20.5751 14.4718 20.5304C14.3487 20.4856 14.1283 20.4022 13.8107 20.2802C13.493 20.1582 13.2984 20.0849 13.227 20.0606C12.4487 19.7758 11.7538 19.4381 11.1423 19.0476C10.1257 18.4049 9.07545 17.5282 7.9914 16.4177C6.90735 15.3071 6.05162 14.2311 5.42423 13.1898C5.04304 12.5633 4.71346 11.8514 4.4355 11.0541C4.41166 10.9808 4.3402 10.7815 4.22107 10.4561C4.10194 10.1306 4.02053 9.90486 3.97685 9.77875C3.93318 9.65265 3.8756 9.45942 3.80412 9.19906C3.73266 8.93871 3.68301 8.70481 3.65523 8.49734C3.6274 8.2899 3.61353 8.07634 3.61353 7.85665C3.61353 7.10815 3.81605 6.35151 4.22105 5.58674C4.6658 4.76501 5.08672 4.26871 5.4838 4.09786C5.68234 4.00837 5.95434 3.92294 6.29981 3.84159C6.64526 3.76022 6.92522 3.71954 7.13965 3.71954C7.25084 3.71954 7.33423 3.73174 7.3898 3.75616C7.53277 3.80497 7.74321 4.11413 8.02118 4.68366C8.10853 4.83824 8.22766 5.05791 8.37855 5.34265C8.52944 5.62742 8.66842 5.88573 8.7955 6.1176C8.92256 6.34947 9.04565 6.56712 9.16478 6.77053C9.18861 6.80306 9.2581 6.90477 9.37325 7.07561C9.4884 7.24647 9.57378 7.39088 9.62938 7.50884C9.68497 7.62681 9.71275 7.74276 9.71275 7.85665C9.71275 8.01937 9.5996 8.22278 9.37325 8.46685C9.14691 8.71094 8.90072 8.93467 8.63468 9.13806C8.36863 9.34146 8.12244 9.55707 7.8961 9.78488C7.66975 10.0127 7.55658 10.1998 7.55658 10.3462C7.55658 10.4195 7.57643 10.511 7.61615 10.6208C7.65586 10.7307 7.6896 10.8141 7.7174 10.871C7.74519 10.928 7.80079 11.0256 7.88418 11.1639C7.96757 11.3022 8.01325 11.3795 8.02118 11.3958C8.62474 12.5104 9.31567 13.4664 10.094 14.2637C10.8723 15.061 11.8054 15.7688 12.8934 16.3872C12.9093 16.3953 12.9847 16.4421 13.1198 16.5275C13.2548 16.6129 13.3501 16.6699 13.4057 16.6984C13.4612 16.7269 13.5427 16.7614 13.6499 16.8021C13.7571 16.8428 13.8464 16.8631 13.9179 16.8631C14.0608 16.8631 14.2435 16.7472 14.4659 16.5153C14.6882 16.2834 14.8987 16.0312 15.0972 15.7587C15.2958 15.4861 15.5142 15.2339 15.7524 15.002C15.9907 14.7701 16.1892 14.6542 16.3481 14.6542C16.4592 14.6542 16.5724 14.6827 16.6876 14.7396C16.8027 14.7966 16.9437 14.8841 17.1105 15.002C17.2772 15.12 17.3765 15.1912 17.4083 15.2156C17.6068 15.3376 17.8193 15.4637 18.0456 15.5939C18.2719 15.7241 18.5241 15.8665 18.8021 16.0211C19.08 16.1756 19.2944 16.2977 19.4453 16.3872C20.0013 16.6719 20.303 16.8875 20.3507 17.034C20.3745 17.0909 20.3864 17.1763 20.3864 17.2903Z"
+												stroke="#897CFF"
+												stroke-width="2"
+											/>
+										</svg>
 
-    <section id="services">
-      <div class="container">
-        <h2 class="title__services--mob">
-          Наши направления
-        </h2>
-        <div class="services__container">
-          <ul class="services__list list-reset">
-            <li class="services__item special__desktop special-item1">
-              
-              <h2 class="services__title-special">Семейная клиника</h2>
-              <p class="services__item--text">
-                Вы здесь
-              </p>
-              <svg class="services__svg--cliniks" width="180" height="193" aria-hidden="true">
-                <use xlink:href="svg/sprite.svg#services__svg--cliniks"></use>
-              </svg>
-              <svg class="services__svg--cliniks-mob" width="136" height="137" viewBox="0 0 136 137" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M110.73 73.9935C108.508 73.9918 106.327 74.5832 104.41 75.7065C102.494 76.8297 100.912 78.4443 99.8279 80.3833C98.744 82.3223 98.1973 84.5155 98.2444 86.7364C98.2914 88.9573 98.9305 91.1253 100.096 93.0167C97.1152 93.3991 94.2316 92.0747 91.4399 90.7922C88.1013 89.2625 84.6493 87.678 81.3158 89.3543C77.6776 91.1836 75.0899 96.5529 72.9228 106.765C69.9832 120.623 63.1186 124.886 58.1356 124.322C56.288 124.116 54.5907 123.207 53.3956 121.782C52.2006 120.358 51.5996 118.529 51.7172 116.674L52.3928 79.4834C53.3289 79.3962 54.1987 78.963 54.8324 78.2685C55.4661 77.574 55.818 76.6681 55.8193 75.728V69.0202C55.8181 69.0046 55.82 68.989 55.8248 68.9741C55.8297 68.9593 55.8374 68.9455 55.8476 68.9337C55.8578 68.9218 55.8703 68.9121 55.8842 68.9051C55.8982 68.8981 55.9134 68.8939 55.929 68.8927C61.1615 68.345 66.2202 66.7023 70.7762 64.0714C75.3323 61.4406 79.2838 57.8804 82.3738 53.6224L83.0469 52.6778C83.5436 51.9801 83.7543 51.1186 83.6358 50.2704C83.5172 49.4222 83.0785 48.6516 82.4095 48.1167C85.6553 41.9109 87.7916 29.0061 88.7221 22.0649C88.9198 20.8144 88.8433 19.5359 88.498 18.3178C88.1528 17.0998 87.547 15.9713 86.7226 15.0105C85.8981 14.0496 84.8748 13.2794 83.7233 12.7531C82.5719 12.2269 81.3198 11.9571 80.0538 11.9624H75.2734C74.9463 11.1057 74.367 10.3683 73.6121 9.8476C72.8572 9.32688 71.9621 9.04731 71.0451 9.04578H66.7427C66.1478 9.04578 65.5587 9.16296 65.009 9.39064C64.4593 9.61832 63.9599 9.95203 63.5392 10.3727C63.1185 10.7934 62.7848 11.2929 62.5571 11.8425C62.3294 12.3922 62.2122 12.9813 62.2122 13.5763C62.2122 14.1712 62.3294 14.7603 62.5571 15.31C62.7848 15.8597 63.1185 16.3591 63.5392 16.7798C63.9599 17.2005 64.4593 17.5342 65.009 17.7619C65.5587 17.9896 66.1478 18.1068 66.7427 18.1068H71.0451C71.9619 18.1052 72.8568 17.8257 73.6117 17.3052C74.3665 16.7848 74.9459 16.0478 75.2734 15.1914H80.0576C80.8575 15.1869 81.6489 15.3566 82.3766 15.6887C83.1043 16.0209 83.751 16.5074 84.2718 17.1147C84.7925 17.7219 85.1749 18.4353 85.3922 19.2051C85.6095 19.975 85.6565 20.7829 85.5301 21.5728C84.6645 28.04 82.6999 40.4912 79.7211 46.2964C79.0191 46.0031 78.2384 45.957 77.5068 46.1654C76.7752 46.3738 76.1361 46.8245 75.6941 47.4436L75.021 48.3882C69.783 55.7436 60.731 60.1351 50.8006 60.1351C40.8702 60.1351 31.8233 55.7449 26.5802 48.3882L25.9071 47.4436C25.4654 46.8241 24.8263 46.3732 24.0946 46.1647C23.3628 45.9562 22.582 46.0027 21.8801 46.2964C18.9051 40.4905 16.9439 28.0393 16.0813 21.5728C15.9549 20.7829 16.002 19.975 16.2193 19.2051C16.4366 18.4353 16.8189 17.7219 17.3396 17.1147C17.8604 16.5074 18.5071 16.0209 19.2348 15.6887C19.9625 15.3566 20.7539 15.1869 21.5538 15.1914H26.3392C26.6662 16.0479 27.2453 16.785 28 17.3056C28.7547 17.8261 29.6496 18.1054 30.5664 18.1068H34.8687C36.0702 18.1068 37.2226 17.6294 38.0722 16.7798C38.9218 15.9302 39.3992 14.7778 39.3992 13.5763C39.3992 12.3747 38.9218 11.2224 38.0722 10.3727C37.2226 9.52309 36.0702 9.04578 34.8687 9.04578H30.5664C29.6493 9.04731 28.7542 9.32688 27.9993 9.8476C27.2444 10.3683 26.6652 11.1057 26.338 11.9624H21.5538C20.2878 11.9571 19.0357 12.2269 17.8842 12.7531C16.7328 13.2794 15.7094 14.0496 14.885 15.0105C14.0606 15.9713 13.4548 17.0998 13.1095 18.3178C12.7643 19.5359 12.6878 20.8144 12.8854 22.0649C13.8177 29.0058 15.9562 41.9098 19.2044 48.1142C18.5352 48.6488 18.0962 49.4195 17.9777 50.2678C17.8592 51.1161 18.07 51.9776 18.567 52.6752L19.2401 53.6198C22.3288 57.8788 26.2792 61.4402 30.8343 64.0726C35.3895 66.705 40.4476 68.3494 45.6799 68.8991C45.6955 68.9002 45.7107 68.9044 45.7246 68.9115C45.7386 68.9185 45.751 68.9282 45.7612 68.94C45.7714 68.9519 45.7791 68.9656 45.784 68.9805C45.7889 68.9953 45.7907 69.011 45.7895 69.0266V75.7254C45.7915 76.6565 46.1373 77.554 46.7605 78.2457C47.3838 78.9374 48.2405 79.3746 49.1664 79.4732L48.4971 116.62C48.3744 119.277 49.2646 121.881 50.988 123.906C52.7114 125.931 55.1393 127.227 57.7812 127.531C58.1824 127.576 58.5859 127.599 58.9897 127.598C65.1582 127.598 72.91 122.413 76.0867 107.434C77.9517 98.6384 80.2004 93.5317 82.7716 92.2391C84.7181 91.2601 87.2115 92.4035 90.0989 93.7267C93.5509 95.31 97.7908 97.2515 102.436 95.8008C103.947 97.1457 105.761 98.1035 107.724 98.5917C109.687 99.0799 111.738 99.084 113.703 98.6035C115.668 98.1231 117.486 97.1725 119.002 95.8336C120.518 94.4946 121.686 92.8074 122.405 90.9172C123.124 89.0269 123.374 86.9902 123.131 84.9823C122.889 82.9743 122.163 81.0553 121.015 79.3903C119.866 77.7253 118.331 76.3642 116.54 75.4241C114.749 74.484 112.757 73.993 110.735 73.9935H110.73ZM71.0451 14.8778H66.7427C66.3976 14.8778 66.0665 14.7407 65.8224 14.4966C65.5783 14.2525 65.4412 13.9215 65.4412 13.5763C65.4412 13.2311 65.5783 12.9 65.8224 12.6559C66.0665 12.4119 66.3976 12.2747 66.7427 12.2747H71.0451C71.3902 12.2747 71.7213 12.4119 71.9654 12.6559C72.2095 12.9 72.3466 13.2311 72.3466 13.5763C72.3466 13.9215 72.2095 14.2525 71.9654 14.4966C71.7213 14.7407 71.3902 14.8778 71.0451 14.8778ZM30.5664 12.2747H34.8687C35.2139 12.2747 35.5449 12.4119 35.789 12.6559C36.0331 12.9 36.1702 13.2311 36.1702 13.5763C36.1702 13.9215 36.0331 14.2525 35.789 14.4966C35.5449 14.7407 35.2139 14.8778 34.8687 14.8778H30.5664C30.2212 14.8778 29.8901 14.7407 29.646 14.4966C29.4019 14.2525 29.2648 13.9215 29.2648 13.5763C29.2648 13.2311 29.4019 12.9 29.646 12.6559C29.8901 12.4119 30.2212 12.2747 30.5664 12.2747ZM46.0751 65.6944C41.2877 65.1979 36.6583 63.6998 32.4878 61.2974C28.3172 58.8949 24.6987 55.642 21.8674 51.7498L21.1956 50.8052C21.186 50.7919 21.1793 50.7768 21.1758 50.7608C21.1722 50.7448 21.1721 50.7282 21.1752 50.7121C21.1771 50.6957 21.1825 50.6799 21.1911 50.6658C21.1996 50.6517 21.2112 50.6397 21.2249 50.6305L23.1128 49.2857C23.1332 49.2707 23.1577 49.2627 23.1829 49.2627H23.2059C23.2385 49.2681 23.2678 49.2859 23.2875 49.3124L23.9605 50.257C29.8028 58.4614 39.839 63.3603 50.8057 63.3603C61.7725 63.3603 71.8086 58.4639 77.6508 50.2596L78.3239 49.315C78.3436 49.2884 78.3727 49.2705 78.4053 49.265C78.4379 49.2596 78.4713 49.267 78.4986 49.2857L80.3878 50.6305C80.414 50.6501 80.4316 50.6791 80.4371 50.7113C80.4426 50.7436 80.4354 50.7768 80.4171 50.8039L79.744 51.7498C76.9129 55.6418 73.2946 58.8947 69.1242 61.2971C64.9539 63.6995 60.3248 65.1977 55.5376 65.6944C54.7255 65.795 53.9781 66.1888 53.4358 66.8017C52.8936 67.4146 52.5938 68.2044 52.5929 69.0228V75.7254C52.5909 75.8691 52.5329 76.0062 52.4312 76.1077C52.3295 76.2091 52.1922 76.2668 52.0486 76.2685H49.5628C49.4192 76.2668 49.2819 76.2091 49.1802 76.1077C49.0785 76.0062 49.0205 75.8691 49.0185 75.7254V69.0202C49.017 68.2025 48.7171 67.4135 48.1752 66.8011C47.6333 66.1888 46.8865 65.7952 46.0751 65.6944ZM110.731 95.7383C108.9 95.7386 107.109 95.1958 105.587 94.1786C104.064 93.1614 102.877 91.7155 102.176 90.0237C101.475 88.332 101.292 86.4703 101.649 84.6743C102.006 82.8782 102.888 81.2284 104.182 79.9334C105.477 78.6384 107.127 77.7565 108.923 77.3992C110.719 77.0418 112.581 77.2251 114.272 77.9258C115.964 78.6265 117.41 79.8132 118.428 81.3358C119.445 82.8584 119.988 84.6485 119.988 86.4797C119.986 88.9345 119.01 91.2881 117.274 93.0239C115.538 94.7597 113.186 95.736 110.731 95.7383ZM110.731 79.8484C109.42 79.8484 108.138 80.2372 107.048 80.9656C105.958 81.694 105.108 82.7292 104.607 83.9405C104.105 85.1517 103.974 86.4845 104.229 87.7704C104.485 89.0562 105.117 90.2374 106.044 91.1644C106.971 92.0915 108.152 92.7228 109.438 92.9786C110.723 93.2343 112.056 93.1031 113.268 92.6014C114.479 92.0996 115.514 91.25 116.242 90.1599C116.971 89.0698 117.36 87.7882 117.36 86.4772C117.357 84.7198 116.657 83.0354 115.414 81.7929C114.172 80.5503 112.488 79.8511 110.731 79.8484ZM110.731 89.8833C110.058 89.8836 109.399 89.6842 108.84 89.3104C108.28 88.9365 107.843 88.405 107.585 87.7831C107.328 87.1612 107.26 86.4768 107.391 85.8165C107.522 85.1562 107.846 84.5496 108.322 84.0735C108.798 83.5973 109.405 83.2731 110.065 83.1416C110.725 83.0102 111.41 83.0775 112.032 83.3351C112.654 83.5927 113.185 84.0289 113.559 84.5887C113.934 85.1484 114.133 85.8065 114.133 86.4797C114.132 87.3821 113.773 88.2473 113.135 88.8853C112.497 89.5234 111.633 89.8823 110.731 89.8833Z" fill="#C1BAFF" stroke="#C1BAFF" stroke-width="0.837209"/>
-              </svg>
+										<ul class="map__contacts-list-tel">
+											<li class="map__contacts-item-tel">
+												<a class="map__contacts-link" href="tel:+74955557177"
+													>+7(495)555-71-77</a
+												>
+											</li>
+											<li class="map__contacts-item-tel">
+												<a class="map__contacts-link" href="tel:+79953009911"
+													>+7(995)300-99-11</a
+												>
+											</li>
+											<li class="map__contacts-item-tel">
+												<a class="map__contacts-link" href="tel:+79951009911"
+													>+7(995)100-99-11</a
+												>
+											</li>
+										</ul>
+									</div>
+									<ul class="map__contacts-list-icon">
+										<li class="map__contacts-item-icon">
+											<a href="#">
+												<svg
+													width="43"
+													height="42"
+													viewBox="0 0 43 42"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M21.7177 3.4824C31.2433 3.4824 38.993 11.2321 38.993 20.7577C38.993 30.2833 31.2433 38.033 21.7177 38.033C12.1921 38.033 4.44236 30.2833 4.44236 20.7577C4.44236 11.2321 12.1921 3.4824 21.7177 3.4824ZM21.7177 0.0273438C10.2693 0.0273438 0.987305 9.30936 0.987305 20.7577C0.987305 32.206 10.2693 41.488 21.7177 41.488C33.166 41.488 42.448 32.206 42.448 20.7577C42.448 9.30936 33.166 0.0273438 21.7177 0.0273438ZM11.4026 31.1229L12.8606 25.8004C11.9623 24.2421 11.489 22.4749 11.489 20.6644C11.4907 14.9998 16.098 10.3925 21.7608 10.3925C24.5093 10.3942 27.0885 11.4636 29.0268 13.4053C30.9669 15.3471 32.0345 17.928 32.0327 20.673C32.031 26.3376 27.422 30.9449 21.7608 30.9449C20.042 30.9449 18.3472 30.5131 16.8478 29.6942L11.4026 31.1229ZM17.1 27.8354C18.5476 28.694 19.9297 29.2105 21.7574 29.2105C26.4632 29.2105 30.2966 25.3806 30.2983 20.673C30.3 15.9552 26.4839 12.1304 21.7643 12.1287C17.0551 12.1287 13.2251 15.9586 13.2234 20.6661C13.2234 22.5872 13.7866 24.0279 14.7315 25.5326L13.8695 28.6836L17.1 27.8354ZM26.9365 23.1158C26.8726 23.0087 26.7016 22.9447 26.4442 22.8152C26.1868 22.6873 24.9257 22.0654 24.6907 21.9808C24.4558 21.8944 24.2848 21.8529 24.1137 22.1086C23.9427 22.366 23.4504 22.943 23.3018 23.1158C23.1515 23.2868 23.0029 23.3093 22.7455 23.1797C22.4881 23.0519 21.6624 22.7806 20.6811 21.9065C19.9176 21.2259 19.4028 20.3846 19.2525 20.1289C19.1022 19.8715 19.2369 19.7333 19.3648 19.6054L19.75 19.1563L20.0074 18.7278C20.0938 18.5568 20.0506 18.4065 19.9867 18.2787L19.1955 16.3732C18.9864 15.8722 18.7757 15.9413 18.6185 15.9327L18.1244 15.9206C17.9534 15.9206 17.6752 15.9845 17.4403 16.2419C17.2054 16.4993 16.542 17.1195 16.542 18.3841C16.542 19.6469 17.461 20.8683 17.5906 21.0393C17.7184 21.2103 19.401 23.8033 21.9751 24.9141C22.5866 25.1784 23.0651 25.3374 23.4383 25.4548C24.0533 25.6501 24.613 25.6224 25.0552 25.5568C25.5476 25.4825 26.5737 24.9366 26.788 24.3371C27.0004 23.736 27.0004 23.2229 26.9365 23.1158Z"
+														fill="#897CFF"
+													></path>
+												</svg>
+											</a>
+										</li>
+										<li class="map__contacts-item-icon">
+											<a href="#">
+												<svg
+													width="42"
+													height="42"
+													viewBox="0 0 42 42"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M21.1786 0.0273438C9.73026 0.0273438 0.448242 9.30936 0.448242 20.7577C0.448242 32.206 9.73026 41.488 21.1786 41.488C32.6269 41.488 41.9089 32.206 41.9089 20.7577C41.9089 9.30936 32.6269 0.0273438 21.1786 0.0273438ZM21.1786 3.4824C30.7042 3.4824 38.4539 11.2321 38.4539 20.7577C38.4539 30.2833 30.7042 38.033 21.1786 38.033C11.653 38.033 3.9033 30.2833 3.9033 20.7577C3.9033 11.2321 11.653 3.4824 21.1786 3.4824ZM25.8291 29.2036C26.1072 29.4023 26.4648 29.4506 26.7844 29.3297C27.104 29.2088 27.3407 28.9358 27.4098 28.6041C28.1613 25.0765 29.9821 16.1469 30.6645 12.9389C30.7163 12.697 30.6316 12.4466 30.4416 12.2842C30.2516 12.1235 29.9873 12.0769 29.7523 12.1632C26.1314 13.5038 14.9768 17.6879 10.4178 19.3757C10.1276 19.4828 9.93929 19.7609 9.94965 20.0667C9.96002 20.3725 10.1656 20.6368 10.461 20.7249C12.5064 21.3364 15.191 22.1881 15.191 22.1881C15.191 22.1881 16.4434 25.9766 17.0982 27.9028C17.1794 28.1429 17.3694 28.3346 17.6182 28.3986C17.8686 28.4642 18.133 28.3968 18.3195 28.2206C19.3699 27.229 20.9937 25.6967 20.9937 25.6967C20.9937 25.6967 24.0791 27.958 25.8291 29.2036ZM16.3191 21.7096L17.7702 26.4931L18.0915 23.463C18.0915 23.463 23.6939 18.41 26.8881 15.5285C26.9831 15.4455 26.9952 15.3039 26.9174 15.2037C26.8397 15.1052 26.6998 15.081 26.5927 15.1484C22.8906 17.5117 16.3191 21.7096 16.3191 21.7096Z"
+														fill="#897CFF"
+													></path>
+												</svg>
+											</a>
+										</li>
+										<li class="map__contacts-item-icon">
+											<a href="#">
+												<svg
+													width="43"
+													height="42"
+													viewBox="0 0 43 42"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M21.6395 0.0273438C10.1912 0.0273438 0.90918 9.30936 0.90918 20.7577C0.90918 32.206 10.1912 41.488 21.6395 41.488C33.0879 41.488 42.3699 32.206 42.3699 20.7577C42.3699 9.30936 33.0879 0.0273438 21.6395 0.0273438ZM21.6395 3.4824C31.1651 3.4824 38.9148 11.2321 38.9148 20.7577C38.9148 30.2833 31.1651 38.033 21.6395 38.033C12.1139 38.033 4.36424 30.2833 4.36424 20.7577C4.36424 11.2321 12.1139 3.4824 21.6395 3.4824ZM29.6639 13.6852C29.1215 13.1859 26.9258 11.5932 22.0369 11.5707C22.0369 11.5707 16.2704 11.2235 13.4597 13.8027C11.8963 15.3661 11.3452 17.6551 11.2864 20.4951C11.2294 23.3352 11.1534 28.6542 16.2825 30.0967L16.2876 30.0984L16.2842 32.2993C16.2842 32.2993 16.2514 33.1907 16.8387 33.3738C17.5487 33.5932 17.9651 32.916 18.6423 32.1853C19.0154 31.7845 19.5285 31.1954 19.9155 30.7463C23.4223 31.04 26.1207 30.3662 26.4265 30.2677C27.1348 30.0363 31.1427 29.5232 31.794 24.2041C32.466 18.7192 31.4674 15.2503 29.6639 13.6852ZM30.2582 23.8085C29.7071 28.25 26.4593 28.5299 25.8599 28.7233C25.6042 28.8045 23.234 29.3936 20.2558 29.2001C20.2558 29.2001 18.0359 31.8778 17.3432 32.574C17.2343 32.6828 17.1065 32.7277 17.0218 32.707C16.9026 32.6777 16.8698 32.536 16.8716 32.3287L16.8906 28.6715H16.8888C12.551 27.4657 12.8049 22.9378 12.8533 20.5659C12.9034 18.1958 13.3491 16.2523 14.6724 14.9463C17.0495 12.7921 21.947 13.1151 21.947 13.1151C26.0827 13.1324 28.0642 14.3779 28.5237 14.796C30.0491 16.102 30.8265 19.2271 30.2582 23.8085ZM22.4515 24.0746C22.4515 24.0746 22.8402 24.1091 23.0492 23.85L23.4586 23.3369C23.6538 23.0812 24.1289 22.9188 24.5953 23.178C25.2103 23.5269 26.0067 24.0728 26.5526 24.5807C26.8532 24.8364 26.9223 25.2095 26.7185 25.6034L26.7167 25.6103C26.506 25.9835 26.2244 26.3307 25.8668 26.6572L25.8599 26.6624C25.4591 26.9975 24.9979 27.191 24.5055 27.0304L24.4951 27.0165C23.6106 26.7678 21.4875 25.6846 20.1331 24.6049C17.9184 22.8566 16.3447 19.9751 15.9093 18.4307L15.8955 18.4221C15.7348 17.928 15.93 17.4668 16.2635 17.0677L16.2704 17.0591C16.5951 16.7032 16.9441 16.4216 17.3155 16.2108L17.3242 16.2091C17.718 16.0035 18.0912 16.0726 18.3451 16.375C18.6785 16.7187 19.3074 17.5497 19.7479 18.3322C20.007 18.797 19.8446 19.272 19.5907 19.469L19.0759 19.8767C18.8167 20.0857 18.8513 20.4744 18.8513 20.4744C18.8513 20.4744 19.6114 23.349 22.4515 24.0746ZM26.924 21.6923H26.9206C26.7686 21.6923 26.6459 21.5696 26.6442 21.4176C26.6321 19.7505 26.1311 18.4221 25.1568 17.4702C24.179 16.5183 22.9455 16.0312 21.4875 16.0208C21.3355 16.0191 21.2128 15.8947 21.2146 15.7427C21.2146 15.5907 21.3389 15.468 21.491 15.468H21.4927C23.0976 15.4801 24.4606 16.0208 25.542 17.0746C26.6269 18.1336 27.1832 19.5933 27.197 21.4124C27.1987 21.5662 27.0761 21.6906 26.924 21.6923ZM25.4677 21.1239H25.4626C25.3088 21.1205 25.1879 20.9926 25.1913 20.8406C25.2138 19.8957 24.9426 19.1304 24.3673 18.5015C23.792 17.8727 23.0043 17.5307 21.9574 17.4547C21.8054 17.4426 21.6914 17.3113 21.7017 17.1593C21.7121 17.0055 21.8451 16.8915 21.9971 16.9036C23.1753 16.99 24.1099 17.4011 24.775 18.1284C25.4418 18.8574 25.7683 19.773 25.7441 20.8527C25.7407 21.003 25.618 21.1239 25.4677 21.1239ZM24.0494 20.6471C23.9026 20.6471 23.7817 20.5331 23.773 20.3846C23.7264 19.4465 23.2841 18.987 22.3824 18.9386C22.2303 18.93 22.1129 18.8004 22.1215 18.6484C22.1302 18.4946 22.2597 18.3789 22.4117 18.3858C23.6037 18.4514 24.2654 19.1321 24.3258 20.3569C24.3328 20.5107 24.2153 20.6402 24.0633 20.6471H24.0494Z"
+														fill="#897CFF"
+													></path>
+												</svg>
+											</a>
+										</li>
+									</ul>
+									<img src="img/qr.png" alt="QR-код" />
+								</div>
+								<div class="map__container-info">
+									<div class="map__container-address">
+										<h3 class="map__contacts-title">Адрес</h3>
+										<address class="map__address">
+											<svg
+												class="address__svg"
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M19.5526 12.0247C19.5526 16.8573 14.267 20.117 12.7388 20.9584C12.4807 21.1005 12.1786 21.1005 11.9204 20.9584C10.3922 20.117 5.10669 16.8573 5.10669 12.0247C5.10669 7.69093 8.60645 4.80176 12.3296 4.80176C16.1819 4.80176 19.5526 7.69093 19.5526 12.0247Z"
+													stroke="#897CFF"
+													stroke-width="2"
+												></path>
+												<circle
+													cx="12.3296"
+													cy="12.0241"
+													r="2.85223"
+													stroke="#897CFF"
+													stroke-width="2"
+												></circle>
+											</svg>
+											г. Лыткарино, кв-л 3A, д.29
+										</address>
+									</div>
+									<div class="map__container-watch">
+										<h3 class="map__contacts-title">Часы работы</h3>
+										<p class="map__time">
+											<svg
+												class="time__svg"
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<circle
+													cx="12.3296"
+													cy="12.2406"
+													r="8.70446"
+													stroke="#897CFF"
+													stroke-width="2"
+												></circle>
+												<path
+													d="M16.6633 12.2398H12.5704C12.4374 12.2398 12.3296 12.132 12.3296 11.9991V8.86914"
+													stroke="#897CFF"
+													stroke-width="2"
+													stroke-linecap="round"
+												></path>
+											</svg>
+											пн-пт: 08:00-20:00<br />
+											сб: 09:00-20:00
+										</p>
+									</div>
+									<div class="map__container-analysis">
+										<h3 class="map__contacts-title">Прием анализов</h3>
+										<p class="map__time">
+											<svg
+												class="time__svg"
+												width="25"
+												height="25"
+												viewBox="0 0 25 25"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M15.7727 5.7002V12.3974C15.7727 12.5948 15.8311 12.7879 15.9407 12.9521L20.7362 20.1455C21.1793 20.81 20.7029 21.7002 19.9042 21.7002H5.64122C4.84253 21.7002 4.36614 20.81 4.80917 20.1455L9.60476 12.9521C9.71427 12.7879 9.77271 12.5948 9.77271 12.3974V5.7002"
+													stroke="#897CFF"
+													stroke-width="2"
+													stroke-linejoin="round"
+												></path>
+												<path
+													d="M7.77271 5.7002H17.7727"
+													stroke="#897CFF"
+													stroke-width="2"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												></path>
+											</svg>
+											пн-пт: 08:00-20:00<br />
+											сб: 09:00-20:00
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="map__mobile">
+				<div class="container">
+					<ul class="map__list">
+						<li class="map__item--clinik">
+							<p class="map__text">Семейная клиника</p>
+							<span class="map__span">г.Лыткарино, кв-л 3A, д.29</span>
+						</li>
+						<li class="map__item--koc">
+							<p class="map__text">Стоматология, Косметология</p>
+							<span class="map__span">г.Лыткарино, кв-л 3A, д.29</span>
+						</li>
+					</ul>
+					<div
+						style="position: relative; overflow: hidden; padding-bottom: 20px"
+					>
+						<div style="position: relative; width: 100%; height: 400px">
+							<iframe
+								id="yandex-map"
+								src="https://yandex.ru/map-widget/v1/?pt=37.906578,55.588425&z=17&l=map&lang=ru_RU"
+								width="100%"
+								height="400"
+								frameborder="0"
+								style="pointer-events: none"
+							>
+							</iframe>
+						</div>
+					</div>
+					<div class="map__container-wraps">
+						<div class="map__contacts">
+							<h3 class="map__contacts-title">Контакты</h3>
+							<ul class="map__contacts-list">
+								<li class="map__contacts-item">
+									<svg
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M4.61453 11.2239L18.6698 6.53885C18.7591 6.50907 18.8441 6.59406 18.8143 6.68341L14.1293 20.7386C14.0935 20.8459 13.9403 20.8417 13.9106 20.7326L11.937 13.4963C11.9264 13.4573 11.8959 13.4268 11.8569 13.4161L4.6206 11.4426C4.51151 11.4129 4.50726 11.2597 4.61453 11.2239Z"
+											stroke="#897CFF"
+											stroke-width="2"
+											stroke-linecap="round"
+										/>
+									</svg>
+									<a
+										class="map__contacts-link"
+										href="https://t.me/@ZdClinic_bot"
+										>Telegram: @ZdClinic_bot</a
+									>
+								</li>
+								<li class="map__contacts-item">
+									<svg
+										width="25"
+										height="25"
+										viewBox="0 0 25 25"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<rect
+											x="4.65332"
+											y="6.43457"
+											width="16"
+											height="12"
+											rx="2"
+											stroke="#897CFF"
+											stroke-width="2"
+										/>
+										<path
+											d="M4.65332 9.43457L11.7589 12.9874C12.3219 13.2689 12.9847 13.2689 13.5477 12.9874L20.6533 9.43457"
+											stroke="#897CFF"
+											stroke-width="2"
+										/>
+									</svg>
+									<a
+										class="map__contacts-link"
+										href="mailto:zd-clinic@yandex.ru"
+										>zd-clinic@yandex.ru</a
+									>
+								</li>
+							</ul>
+							<div class="tell__wrap">
+								<svg
+									width="24"
+									height="25"
+									viewBox="0 0 24 25"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M20.3864 17.2903C20.3864 17.5099 20.3467 17.7967 20.2673 18.1506C20.1879 18.5045 20.1045 18.7832 20.0171 18.9866C19.8504 19.3934 19.3659 19.8246 18.5638 20.2802C17.8173 20.6951 17.0787 20.9026 16.3481 20.9026C16.1336 20.9026 15.9252 20.8884 15.7227 20.8599C15.5201 20.8314 15.2918 20.7806 15.0377 20.7073C14.7835 20.6341 14.5949 20.5751 14.4718 20.5304C14.3487 20.4856 14.1283 20.4022 13.8107 20.2802C13.493 20.1582 13.2984 20.0849 13.227 20.0606C12.4487 19.7758 11.7538 19.4381 11.1423 19.0476C10.1257 18.4049 9.07545 17.5282 7.9914 16.4177C6.90735 15.3071 6.05162 14.2311 5.42423 13.1898C5.04304 12.5633 4.71346 11.8514 4.4355 11.0541C4.41166 10.9808 4.3402 10.7815 4.22107 10.4561C4.10194 10.1306 4.02053 9.90486 3.97685 9.77875C3.93318 9.65265 3.8756 9.45942 3.80412 9.19906C3.73266 8.93871 3.68301 8.70481 3.65523 8.49734C3.6274 8.2899 3.61353 8.07634 3.61353 7.85665C3.61353 7.10815 3.81605 6.35151 4.22105 5.58674C4.6658 4.76501 5.08672 4.26871 5.4838 4.09786C5.68234 4.00837 5.95434 3.92294 6.29981 3.84159C6.64526 3.76022 6.92522 3.71954 7.13965 3.71954C7.25084 3.71954 7.33423 3.73174 7.3898 3.75616C7.53277 3.80497 7.74321 4.11413 8.02118 4.68366C8.10853 4.83824 8.22766 5.05791 8.37855 5.34265C8.52944 5.62742 8.66842 5.88573 8.7955 6.1176C8.92256 6.34947 9.04565 6.56712 9.16478 6.77053C9.18861 6.80306 9.2581 6.90477 9.37325 7.07561C9.4884 7.24647 9.57378 7.39088 9.62938 7.50884C9.68497 7.62681 9.71275 7.74276 9.71275 7.85665C9.71275 8.01937 9.5996 8.22278 9.37325 8.46685C9.14691 8.71094 8.90072 8.93467 8.63468 9.13806C8.36863 9.34146 8.12244 9.55707 7.8961 9.78488C7.66975 10.0127 7.55658 10.1998 7.55658 10.3462C7.55658 10.4195 7.57643 10.511 7.61615 10.6208C7.65586 10.7307 7.6896 10.8141 7.7174 10.871C7.74519 10.928 7.80079 11.0256 7.88418 11.1639C7.96757 11.3022 8.01325 11.3795 8.02118 11.3958C8.62474 12.5104 9.31567 13.4664 10.094 14.2637C10.8723 15.061 11.8054 15.7688 12.8934 16.3872C12.9093 16.3953 12.9847 16.4421 13.1198 16.5275C13.2548 16.6129 13.3501 16.6699 13.4057 16.6984C13.4612 16.7269 13.5427 16.7614 13.6499 16.8021C13.7571 16.8428 13.8464 16.8631 13.9179 16.8631C14.0608 16.8631 14.2435 16.7472 14.4659 16.5153C14.6882 16.2834 14.8987 16.0312 15.0972 15.7587C15.2958 15.4861 15.5142 15.2339 15.7524 15.002C15.9907 14.7701 16.1892 14.6542 16.3481 14.6542C16.4592 14.6542 16.5724 14.6827 16.6876 14.7396C16.8027 14.7966 16.9437 14.8841 17.1105 15.002C17.2772 15.12 17.3765 15.1912 17.4083 15.2156C17.6068 15.3376 17.8193 15.4637 18.0456 15.5939C18.2719 15.7241 18.5241 15.8665 18.8021 16.0211C19.08 16.1756 19.2944 16.2977 19.4453 16.3872C20.0013 16.6719 20.303 16.8875 20.3507 17.034C20.3745 17.0909 20.3864 17.1763 20.3864 17.2903Z"
+										stroke="#897CFF"
+										stroke-width="2"
+									/>
+								</svg>
 
-              <svg class="services__svg--arrow" width="42" height="42" aria-hidden="true">
-                <use xlink:href="svg/sprite.svg#icon-button-arrow"></use>
-              </svg>
-            </li>
-            <li class="services__item special-item2">
-              <h2 class="services__title-special">Семейная клиника</h2>
-              <svg class="services__svg" width="115" height="126" aria-hidden="true">
-                <use xlink:href="svg/sprite.svg#services-svg"></use>
-              </svg>
-              <svg class="services__svg-mob" width="136" height="137" viewBox="0 0 136 137" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M82.3908 119.06C75.5112 119.06 73.689 112.703 73.689 109.334V89.8832C73.689 86.7812 71.1603 84.2526 68.0584 84.2526C64.9564 84.2526 62.4278 86.7812 62.4278 89.8832V109.334C62.4278 112.703 60.8205 119.06 54.7496 119.06C48.1158 119.06 39.1273 110.727 35.0732 92.4221C34.244 88.6854 33.814 84.7235 33.7423 80.3112C33.599 71.425 32.6879 67.8317 23.3615 49.9366C22.7985 48.8616 22.4197 47.8379 22.1842 46.8039C18.7342 31.2225 26.699 22.2852 35.3087 19.1115C39.7006 17.494 44.6145 17.3507 49.5183 18.702C52.436 19.5006 54.9339 20.2786 57.0633 20.985C57.5035 20.7291 58.0666 20.7086 58.5478 20.9645C58.732 21.0567 60.0117 21.6914 61.1788 22.2647C61.4757 22.408 61.7726 22.5616 62.0387 22.6844C63.902 23.3294 65.4478 23.8515 66.0109 23.8515H67.8843C68.9593 23.6058 75.3372 22.0804 82.9232 19.347C87.6938 17.6271 92.6283 17.1562 97.184 17.9752C108.271 19.9817 114.639 28.6529 114.639 41.7671C114.639 46.9268 112.346 51.4824 109.694 56.7547C106.244 63.5831 102.354 71.3227 102.354 82.717C102.354 104.564 90.3351 119.06 82.3908 119.06ZM68.0584 81.1813C72.8597 81.1813 76.7602 85.0818 76.7602 89.8832V109.334C76.7602 110.01 76.9547 115.989 82.3908 115.989C88.1955 115.989 99.2827 103.028 99.2827 82.717C99.2827 70.5958 103.531 62.1601 106.951 55.3727C109.428 50.4484 111.568 46.1897 111.568 41.7671C111.568 35.0206 109.623 23.3499 96.6312 20.9952C92.6078 20.2684 88.2262 20.6983 83.9674 22.234C77.9887 24.3941 72.8393 25.7864 70.2287 26.4416C82.8515 31.2429 88.0726 27.7827 88.134 27.7417C88.8097 27.2299 89.772 27.3732 90.2839 28.0489C90.7958 28.7245 90.6525 29.6869 89.9768 30.1987C89.639 30.4547 81.5206 36.2593 61.8647 26.0218C61.7828 25.9809 61.3938 25.7864 60.8717 25.5304C60.7079 25.469 60.5441 25.4178 60.37 25.3564C57.5957 24.3941 53.7976 23.0632 48.7198 21.6709C44.4405 20.4936 40.1715 20.6062 36.3836 22.0087C25.1019 26.1447 23.1977 37.1909 25.1838 46.1282C25.3579 46.896 25.6445 47.6741 26.0847 48.5033C35.1551 65.8866 36.66 70.3399 36.8136 80.2497C36.875 84.4573 37.2947 88.2247 38.0728 91.7464C42.0142 109.529 50.2042 115.979 54.7496 115.979C59.2746 115.979 59.3565 109.59 59.3565 109.324V89.873C59.3565 85.0818 63.257 81.1813 68.0584 81.1813ZM34.7763 49.9571C34.3259 49.9571 33.8857 49.7625 33.5785 49.3838C33.3943 49.1483 28.9922 43.5382 31.2751 36.679C34.0085 27.5677 42.3316 26.6668 46.3447 27.4653C47.1739 27.6291 47.7165 28.4379 47.5527 29.2671C47.3889 30.0964 46.5699 30.6389 45.7509 30.4751C45.3926 30.4035 36.8341 28.8576 34.2133 37.6004C32.4524 42.8932 35.9536 47.4182 35.9946 47.4693C36.5167 48.1348 36.4041 49.0971 35.7489 49.6295C35.452 49.8444 35.1142 49.9571 34.7763 49.9571Z" fill="#A9B8FF"/>
-              </svg>
+								<ul class="map__contacts-list-tel">
+									<li class="map__contacts-item-tel">
+										<a class="map__contacts-link" href="tel:+74955557177"
+											>+7(495)555-71-77</a
+										>
+									</li>
+									<li class="map__contacts-item-tel">
+										<a class="map__contacts-link" href="tel:+79953009911"
+											>+7(995)300-99-11</a
+										>
+									</li>
+									<li class="map__contacts-item-tel">
+										<a class="map__contacts-link" href="tel:+79951009911"
+											>+7(995)100-99-11</a
+										>
+									</li>
+								</ul>
+							</div>
+							<ul class="map__contacts-list-icon">
+								<li class="map__contacts-item-icon">
+									<a href="#">
+										<svg
+											width="43"
+											height="42"
+											viewBox="0 0 43 42"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M21.7177 3.4824C31.2433 3.4824 38.993 11.2321 38.993 20.7577C38.993 30.2833 31.2433 38.033 21.7177 38.033C12.1921 38.033 4.44236 30.2833 4.44236 20.7577C4.44236 11.2321 12.1921 3.4824 21.7177 3.4824ZM21.7177 0.0273438C10.2693 0.0273438 0.987305 9.30936 0.987305 20.7577C0.987305 32.206 10.2693 41.488 21.7177 41.488C33.166 41.488 42.448 32.206 42.448 20.7577C42.448 9.30936 33.166 0.0273438 21.7177 0.0273438ZM11.4026 31.1229L12.8606 25.8004C11.9623 24.2421 11.489 22.4749 11.489 20.6644C11.4907 14.9998 16.098 10.3925 21.7608 10.3925C24.5093 10.3942 27.0885 11.4636 29.0268 13.4053C30.9669 15.3471 32.0345 17.928 32.0327 20.673C32.031 26.3376 27.422 30.9449 21.7608 30.9449C20.042 30.9449 18.3472 30.5131 16.8478 29.6942L11.4026 31.1229ZM17.1 27.8354C18.5476 28.694 19.9297 29.2105 21.7574 29.2105C26.4632 29.2105 30.2966 25.3806 30.2983 20.673C30.3 15.9552 26.4839 12.1304 21.7643 12.1287C17.0551 12.1287 13.2251 15.9586 13.2234 20.6661C13.2234 22.5872 13.7866 24.0279 14.7315 25.5326L13.8695 28.6836L17.1 27.8354ZM26.9365 23.1158C26.8726 23.0087 26.7016 22.9447 26.4442 22.8152C26.1868 22.6873 24.9257 22.0654 24.6907 21.9808C24.4558 21.8944 24.2848 21.8529 24.1137 22.1086C23.9427 22.366 23.4504 22.943 23.3018 23.1158C23.1515 23.2868 23.0029 23.3093 22.7455 23.1797C22.4881 23.0519 21.6624 22.7806 20.6811 21.9065C19.9176 21.2259 19.4028 20.3846 19.2525 20.1289C19.1022 19.8715 19.2369 19.7333 19.3648 19.6054L19.75 19.1563L20.0074 18.7278C20.0938 18.5568 20.0506 18.4065 19.9867 18.2787L19.1955 16.3732C18.9864 15.8722 18.7757 15.9413 18.6185 15.9327L18.1244 15.9206C17.9534 15.9206 17.6752 15.9845 17.4403 16.2419C17.2054 16.4993 16.542 17.1195 16.542 18.3841C16.542 19.6469 17.461 20.8683 17.5906 21.0393C17.7184 21.2103 19.401 23.8033 21.9751 24.9141C22.5866 25.1784 23.0651 25.3374 23.4383 25.4548C24.0533 25.6501 24.613 25.6224 25.0552 25.5568C25.5476 25.4825 26.5737 24.9366 26.788 24.3371C27.0004 23.736 27.0004 23.2229 26.9365 23.1158Z"
+												fill="#897CFF"
+											/>
+										</svg>
+									</a>
+								</li>
+								<li class="map__contacts-item-icon">
+									<a href="#">
+										<svg
+											width="42"
+											height="42"
+											viewBox="0 0 42 42"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M21.1786 0.0273438C9.73026 0.0273438 0.448242 9.30936 0.448242 20.7577C0.448242 32.206 9.73026 41.488 21.1786 41.488C32.6269 41.488 41.9089 32.206 41.9089 20.7577C41.9089 9.30936 32.6269 0.0273438 21.1786 0.0273438ZM21.1786 3.4824C30.7042 3.4824 38.4539 11.2321 38.4539 20.7577C38.4539 30.2833 30.7042 38.033 21.1786 38.033C11.653 38.033 3.9033 30.2833 3.9033 20.7577C3.9033 11.2321 11.653 3.4824 21.1786 3.4824ZM25.8291 29.2036C26.1072 29.4023 26.4648 29.4506 26.7844 29.3297C27.104 29.2088 27.3407 28.9358 27.4098 28.6041C28.1613 25.0765 29.9821 16.1469 30.6645 12.9389C30.7163 12.697 30.6316 12.4466 30.4416 12.2842C30.2516 12.1235 29.9873 12.0769 29.7523 12.1632C26.1314 13.5038 14.9768 17.6879 10.4178 19.3757C10.1276 19.4828 9.93929 19.7609 9.94965 20.0667C9.96002 20.3725 10.1656 20.6368 10.461 20.7249C12.5064 21.3364 15.191 22.1881 15.191 22.1881C15.191 22.1881 16.4434 25.9766 17.0982 27.9028C17.1794 28.1429 17.3694 28.3346 17.6182 28.3986C17.8686 28.4642 18.133 28.3968 18.3195 28.2206C19.3699 27.229 20.9937 25.6967 20.9937 25.6967C20.9937 25.6967 24.0791 27.958 25.8291 29.2036ZM16.3191 21.7096L17.7702 26.4931L18.0915 23.463C18.0915 23.463 23.6939 18.41 26.8881 15.5285C26.9831 15.4455 26.9952 15.3039 26.9174 15.2037C26.8397 15.1052 26.6998 15.081 26.5927 15.1484C22.8906 17.5117 16.3191 21.7096 16.3191 21.7096Z"
+												fill="#897CFF"
+											/>
+										</svg>
+									</a>
+								</li>
+								<li class="map__contacts-item-icon">
+									<a href="#">
+										<svg
+											width="43"
+											height="42"
+											viewBox="0 0 43 42"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M21.6395 0.0273438C10.1912 0.0273438 0.90918 9.30936 0.90918 20.7577C0.90918 32.206 10.1912 41.488 21.6395 41.488C33.0879 41.488 42.3699 32.206 42.3699 20.7577C42.3699 9.30936 33.0879 0.0273438 21.6395 0.0273438ZM21.6395 3.4824C31.1651 3.4824 38.9148 11.2321 38.9148 20.7577C38.9148 30.2833 31.1651 38.033 21.6395 38.033C12.1139 38.033 4.36424 30.2833 4.36424 20.7577C4.36424 11.2321 12.1139 3.4824 21.6395 3.4824ZM29.6639 13.6852C29.1215 13.1859 26.9258 11.5932 22.0369 11.5707C22.0369 11.5707 16.2704 11.2235 13.4597 13.8027C11.8963 15.3661 11.3452 17.6551 11.2864 20.4951C11.2294 23.3352 11.1534 28.6542 16.2825 30.0967L16.2876 30.0984L16.2842 32.2993C16.2842 32.2993 16.2514 33.1907 16.8387 33.3738C17.5487 33.5932 17.9651 32.916 18.6423 32.1853C19.0154 31.7845 19.5285 31.1954 19.9155 30.7463C23.4223 31.04 26.1207 30.3662 26.4265 30.2677C27.1348 30.0363 31.1427 29.5232 31.794 24.2041C32.466 18.7192 31.4674 15.2503 29.6639 13.6852ZM30.2582 23.8085C29.7071 28.25 26.4593 28.5299 25.8599 28.7233C25.6042 28.8045 23.234 29.3936 20.2558 29.2001C20.2558 29.2001 18.0359 31.8778 17.3432 32.574C17.2343 32.6828 17.1065 32.7277 17.0218 32.707C16.9026 32.6777 16.8698 32.536 16.8716 32.3287L16.8906 28.6715H16.8888C12.551 27.4657 12.8049 22.9378 12.8533 20.5659C12.9034 18.1958 13.3491 16.2523 14.6724 14.9463C17.0495 12.7921 21.947 13.1151 21.947 13.1151C26.0827 13.1324 28.0642 14.3779 28.5237 14.796C30.0491 16.102 30.8265 19.2271 30.2582 23.8085ZM22.4515 24.0746C22.4515 24.0746 22.8402 24.1091 23.0492 23.85L23.4586 23.3369C23.6538 23.0812 24.1289 22.9188 24.5953 23.178C25.2103 23.5269 26.0067 24.0728 26.5526 24.5807C26.8532 24.8364 26.9223 25.2095 26.7185 25.6034L26.7167 25.6103C26.506 25.9835 26.2244 26.3307 25.8668 26.6572L25.8599 26.6624C25.4591 26.9975 24.9979 27.191 24.5055 27.0304L24.4951 27.0165C23.6106 26.7678 21.4875 25.6846 20.1331 24.6049C17.9184 22.8566 16.3447 19.9751 15.9093 18.4307L15.8955 18.4221C15.7348 17.928 15.93 17.4668 16.2635 17.0677L16.2704 17.0591C16.5951 16.7032 16.9441 16.4216 17.3155 16.2108L17.3242 16.2091C17.718 16.0035 18.0912 16.0726 18.3451 16.375C18.6785 16.7187 19.3074 17.5497 19.7479 18.3322C20.007 18.797 19.8446 19.272 19.5907 19.469L19.0759 19.8767C18.8167 20.0857 18.8513 20.4744 18.8513 20.4744C18.8513 20.4744 19.6114 23.349 22.4515 24.0746ZM26.924 21.6923H26.9206C26.7686 21.6923 26.6459 21.5696 26.6442 21.4176C26.6321 19.7505 26.1311 18.4221 25.1568 17.4702C24.179 16.5183 22.9455 16.0312 21.4875 16.0208C21.3355 16.0191 21.2128 15.8947 21.2146 15.7427C21.2146 15.5907 21.3389 15.468 21.491 15.468H21.4927C23.0976 15.4801 24.4606 16.0208 25.542 17.0746C26.6269 18.1336 27.1832 19.5933 27.197 21.4124C27.1987 21.5662 27.0761 21.6906 26.924 21.6923ZM25.4677 21.1239H25.4626C25.3088 21.1205 25.1879 20.9926 25.1913 20.8406C25.2138 19.8957 24.9426 19.1304 24.3673 18.5015C23.792 17.8727 23.0043 17.5307 21.9574 17.4547C21.8054 17.4426 21.6914 17.3113 21.7017 17.1593C21.7121 17.0055 21.8451 16.8915 21.9971 16.9036C23.1753 16.99 24.1099 17.4011 24.775 18.1284C25.4418 18.8574 25.7683 19.773 25.7441 20.8527C25.7407 21.003 25.618 21.1239 25.4677 21.1239ZM24.0494 20.6471C23.9026 20.6471 23.7817 20.5331 23.773 20.3846C23.7264 19.4465 23.2841 18.987 22.3824 18.9386C22.2303 18.93 22.1129 18.8004 22.1215 18.6484C22.1302 18.4946 22.2597 18.3789 22.4117 18.3858C23.6037 18.4514 24.2654 19.1321 24.3258 20.3569C24.3328 20.5107 24.2153 20.6402 24.0633 20.6471H24.0494Z"
+												fill="#897CFF"
+											/>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="map__container-info">
+							<div class="map__container-watch">
+								<h3 class="map__contacts-title">Часы работы</h3>
+								<p class="map__time">
+									<svg
+										class="svg__map"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<circle
+											cx="12.3296"
+											cy="12.2406"
+											r="8.70446"
+											stroke="#897CFF"
+											stroke-width="2"
+										/>
+										<path
+											d="M16.6633 12.2398H12.5704C12.4374 12.2398 12.3296 12.132 12.3296 11.9991V8.86914"
+											stroke="#897CFF"
+											stroke-width="2"
+											stroke-linecap="round"
+										/>
+									</svg>
+									пн-пт: 08:00-20:00<br />
+									сб: 09:00-20:00
+								</p>
+							</div>
+							<div class="map__container-analysis">
+								<h3 class="map__contacts-title">Прием анализов</h3>
+								<p class="map__time">
+									<svg
+										class="svg__map"
+										width="25"
+										height="25"
+										viewBox="0 0 25 25"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M15.7727 5.7002V12.3974C15.7727 12.5948 15.8311 12.7879 15.9407 12.9521L20.7362 20.1455C21.1793 20.81 20.7029 21.7002 19.9042 21.7002H5.64122C4.84253 21.7002 4.36614 20.81 4.80917 20.1455L9.60476 12.9521C9.71427 12.7879 9.77271 12.5948 9.77271 12.3974V5.7002"
+											stroke="#897CFF"
+											stroke-width="2"
+											stroke-linejoin="round"
+										/>
+										<path
+											d="M7.77271 5.7002H17.7727"
+											stroke="#897CFF"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+									пн-пт: 08:00-20:00<br />
+									сб: 09:00-20:00
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
 
-              <svg class="services__svg--arrow" width="42" height="42" aria-hidden="true">
-                <use xlink:href="svg/sprite.svg#icon-button-arrow"></use>
-              </svg>
-            </li>
-            <li class="services__item special-item3">
-              <h2 class="services__title-special">Семейная клиника</h2>
-              <svg class="services__svg--koc" width="152" height="151" aria-hidden="true">
-                <use xlink:href="svg/sprite.svg#services__svg--koc"></use>
-              </svg>
+		<footer id="contacts" class="footer">
+			<div class="container">
+				<div class="footer__container-top">
+					<div class="footer__container-info">
+						<ul class="footer__list-info">
+							<li class="footer__list-info">Лицензии</li>
+							<li class="footer__list-info">Контакты контролирующих органов</li>
+							<li class="footer__list-info">Нормативные документы</li>
+						</ul>
+						<button class="footer__btn-info bth-reset">
+							Написать гендиректору
+							<svg
+								class="footer__btn-icon"
+								width="35"
+								height="35"
+								viewBox="0 0 35 36"
+								aria-hidden="true"
+							>
+								<use xlink:href="svg/sprite.svg#icon-button-arrow"></use>
+							</svg>
+						</button>
+					</div>
+					<div class="footer__container-contacts">
+						<div class="tell__wrap">
+							<svg
+								width="24"
+								height="25"
+								viewBox="0 0 24 25"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M20.3863 17.9508C20.3863 18.1705 20.3466 18.4573 20.2672 18.8112C20.1878 19.1651 20.1044 19.4438 20.017 19.6472C19.8502 20.054 19.3658 20.4852 18.5637 20.9408C17.8172 21.3557 17.0786 21.5632 16.348 21.5632C16.1335 21.5632 15.925 21.549 15.7225 21.5205C15.52 21.492 15.2917 21.4411 15.0376 21.3679C14.7834 21.2947 14.5948 21.2357 14.4717 21.191C14.3486 21.1462 14.1282 21.0628 13.8106 20.9408C13.4929 20.8187 13.2983 20.7455 13.2269 20.7211C12.4486 20.4364 11.7537 20.0987 11.1421 19.7082C10.1256 19.0655 9.07533 18.1888 7.99128 17.0783C6.90724 15.9677 6.05151 14.8917 5.42411 13.8503C5.04292 13.2239 4.71335 12.512 4.43538 11.7146C4.41155 11.6414 4.34008 11.4421 4.22095 11.1167C4.10182 10.7912 4.02042 10.5654 3.97673 10.4393C3.93306 10.3132 3.87549 10.12 3.80401 9.85964C3.73254 9.5993 3.68289 9.3654 3.65511 9.15792C3.62728 8.95049 3.61341 8.73692 3.61341 8.51723C3.61341 7.76873 3.81593 7.01209 4.22094 6.24733C4.66568 5.42559 5.08661 4.9293 5.48369 4.75844C5.68223 4.66895 5.95423 4.58352 6.2997 4.50217C6.64514 4.4208 6.92511 4.38013 7.13954 4.38013C7.25072 4.38013 7.33411 4.39233 7.38969 4.41674C7.53265 4.46556 7.7431 4.77472 8.02106 5.34424C8.10842 5.49882 8.22755 5.71849 8.37844 6.00324C8.52933 6.288 8.66831 6.54632 8.79538 6.77819C8.92244 7.01006 9.04554 7.2277 9.16467 7.43111C9.1885 7.46365 9.25798 7.56535 9.37313 7.73619C9.48828 7.90705 9.57367 8.05146 9.62926 8.16943C9.68486 8.28739 9.71264 8.40335 9.71264 8.51723C9.71264 8.67995 9.59948 8.88336 9.37313 9.12743C9.1468 9.37152 8.90061 9.59525 8.63457 9.79865C8.36851 10.002 8.12232 10.2177 7.89599 10.4455C7.66963 10.6733 7.55647 10.8604 7.55647 11.0068C7.55647 11.0801 7.57632 11.1716 7.61604 11.2814C7.65574 11.3913 7.68949 11.4747 7.71728 11.5316C7.74508 11.5886 7.80067 11.6862 7.88406 11.8245C7.96745 11.9628 8.01314 12.0401 8.02106 12.0564C8.62463 13.171 9.31556 14.127 10.0938 14.9243C10.8721 15.7216 11.8053 16.4294 12.8933 17.0478C12.9092 17.0559 12.9846 17.1027 13.1196 17.1881C13.2546 17.2735 13.3499 17.3305 13.4055 17.359C13.4611 17.3874 13.5425 17.422 13.6498 17.4627C13.757 17.5034 13.8463 17.5237 13.9178 17.5237C14.0607 17.5237 14.2434 17.4078 14.4658 17.1759C14.6881 16.944 14.8986 16.6918 15.0971 16.4193C15.2957 16.1467 15.5141 15.8945 15.7523 15.6626C15.9906 15.4307 16.1891 15.3148 16.348 15.3148C16.4591 15.3148 16.5723 15.3433 16.6875 15.4002C16.8026 15.4572 16.9436 15.5446 17.1104 15.6626C17.2771 15.7806 17.3764 15.8518 17.4082 15.8762C17.6067 15.9982 17.8191 16.1243 18.0455 16.2545C18.2718 16.3847 18.524 16.5271 18.8019 16.6816C19.0799 16.8362 19.2943 16.9583 19.4452 17.0478C20.0011 17.3325 20.3029 17.5481 20.3506 17.6946C20.3744 17.7515 20.3863 17.8369 20.3863 17.9508Z"
+									stroke="#897CFF"
+									stroke-width="2"
+								/>
+							</svg>
 
-              <svg class="services__svg--koc-mob" width="136" height="137" viewBox="0 0 136 137" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M66.4216 5.53969C73.6766 5.32864 81.8647 9.31755 85.1277 17.9401C85.2162 18.1529 85.2879 18.3758 85.3679 18.5953C98.5037 23.9396 106.07 35.7212 102.38 50.5719V50.5905C100.871 56.7913 98.1687 57.8971 97.8025 63.9411C99.5139 64.5184 100.816 65.6088 101.714 66.8961C105.081 64.4897 113.642 55.7289 116.962 52.5612C118.442 51.1088 120.694 53.7326 119.285 55.1071L109.467 64.7145C102.358 72.242 96.854 71.3378 95.1492 84.3082C95.1339 84.4768 95.0685 84.6356 94.9714 84.7702L87.1218 94.527C85.2779 97.1782 85.4651 99.0394 86.032 99.9098C86.6979 100.93 87.4612 101.242 88.3826 100.399L99.5496 90.1618C100.232 89.5318 101.615 90.3386 100.532 91.3756L90.0291 101.514C89.3734 102.143 87.8745 102.809 86.6687 102.604L79.7322 106.651C77.3211 108.061 76.9826 109.968 77.0642 111.29C77.1153 112.221 77.7805 112.337 78.489 111.928L103.219 97.9313C105.498 96.6438 107.086 94.6409 107.779 92.2975C109.119 87.7403 112.382 80.7155 113.118 79.2164C114.698 76.013 115.426 74.8158 116.844 73.61L127.872 64.5358C129.752 62.9913 131.836 65.7502 130.203 67.0905L119.087 76.2711C118.075 77.1056 117.782 77.6377 116.248 80.7594C115.61 82.0478 112.284 89.2658 111.096 93.2848C110.148 96.495 107.937 99.2546 104.931 100.958L84.9851 112.253L85.1619 118.47L107.968 126.781C110.34 127.689 109.041 131.246 106.646 130.419L86.3865 123.04C81.0951 121.328 81.1018 121.325 81.1287 114.442L80.2039 114.967C76.631 117.218 72.7294 113.703 73.7478 109.723C69.3727 111.954 65.8016 111.958 61.4265 109.723C62.4295 113.69 58.5448 117.223 54.9685 114.967L54.0466 114.442C54.0678 121.241 54.0468 121.249 48.7761 123.04L28.5173 130.419C26.1059 131.258 24.8374 127.683 27.2029 126.781L50.0085 118.479L50.1873 112.253L30.2293 100.96C27.2199 99.2565 25.0128 96.497 24.0642 93.2868C22.8754 89.2675 19.5481 82.0479 18.9197 80.7604C17.3836 77.6371 17.0812 77.1059 16.0798 76.2731L4.95777 67.0924C3.33304 65.7521 5.40863 62.993 7.28882 64.5377L18.3132 73.611C19.742 74.8167 20.4603 76.0143 22.0388 79.2174C22.7745 80.7161 26.0396 87.7488 27.3884 92.2995C28.0799 94.6513 29.6672 96.6458 31.9373 97.9332L56.6726 111.939C57.3913 112.339 58.0485 112.223 58.1013 111.292C58.1796 109.979 57.853 108.063 55.4402 106.653L48.4929 102.615C47.2872 102.819 45.7882 102.155 45.1326 101.516L34.6296 91.3864C33.5468 90.3391 34.9419 89.5419 35.6248 90.1618L46.7898 100.408C47.7043 101.249 48.4677 100.928 49.1335 99.9186C49.7006 99.0398 49.888 97.1765 48.0505 94.525L40.1902 84.777C38.4224 71.7962 33.0056 72.1652 25.696 64.7125L15.8865 55.1139C14.4764 53.7311 16.7188 51.1156 18.2107 52.5592C21.5538 55.7524 30.1746 64.5831 33.5808 67.0016C34.4698 65.927 35.7119 65.0398 37.1834 64.4284C37.0761 58.1015 34.4053 56.9072 32.7839 50.5905V50.5827C29.4664 36.6515 35.465 25.8627 46.8943 19.9547C47.223 15.8384 49.1909 12.3889 52.0027 9.95863C55.0989 7.29673 59.4646 5.53969 66.4216 5.53969ZM66.0261 42.9371C56.0427 47.142 41.7561 54.9068 41.2605 65.3619C41.2519 66.2679 40.9313 67.1973 39.5486 67.3932C37.7297 67.6504 36.8965 68.2454 36.3992 69.2741C39.2654 71.7929 42.0678 75.8542 43.1697 82.9508L50.7449 92.3639C52.1497 94.2405 52.829 96.3284 52.8103 98.1012C56.6371 102.589 65.1206 107.884 67.5798 107.557C70.0465 107.884 78.5084 102.6 82.3572 98.1207C82.3384 96.3735 82.9311 94.4829 84.2712 92.5602C84.3155 92.487 84.3681 92.4252 84.4226 92.3639L91.99 82.9508C93.0987 75.8458 95.9001 71.7827 98.7664 69.2741C98.2691 68.2369 97.4358 67.6401 95.617 67.3932C94.6531 67.2586 93.9681 66.719 93.905 65.4674C93.624 60.3565 89.6494 57.5702 85.2214 54.5319C79.8636 51.0287 72.7073 47.5337 66.0261 42.9371ZM70.7918 96.9489C71.6705 96.3289 72.272 96.3796 72.5037 96.7526C72.7607 97.1784 72.5367 98.0032 71.7312 98.7848C69.3588 101.223 64.7083 101.23 62.3377 98.7848C61.4112 97.8515 61.0161 96.6884 62.072 96.4772C62.3735 96.4602 62.7809 96.6032 63.2781 96.9489C65.3048 98.3383 68.7686 98.3351 70.7918 96.9489ZM67.031 92.778C68.2997 92.4525 69.432 90.7806 71.1638 91.3493C72.5927 91.7154 73.5417 92.8665 75.5632 92.4323C76.3618 92.2552 76.8587 92.5733 77.0359 93.1334C77.6149 95.7817 72.2589 94.997 70.8709 94.2936C70.1438 94.0281 69.7453 94.3734 69.2566 94.7633C68.7679 95.1448 68.0323 95.6948 67.031 95.695C66.0364 95.695 65.2898 95.1533 64.8113 94.7633C64.3226 94.3819 63.9139 94.028 63.197 94.2936C61.3271 94.9782 60.0937 95.2092 58.1335 94.7545C56.4939 94.5583 56.5552 92.0186 58.5066 92.4323C60.8296 92.9398 61.7701 91.3044 63.6248 91.2448C64.9684 91.1768 65.9956 92.5719 67.031 92.778ZM71.1267 61.7955C75.0915 57.2824 83.0892 56.6468 87.6892 61.2008C88.9596 62.4066 87.9202 64.4662 86.1814 63.2672C75.6718 56.7139 66.8553 67.2556 71.8572 79.2877C73.5346 83.0617 71.7567 88.1312 67.0222 87.1979C65.389 86.8249 65.3008 84.7222 67.0652 84.7682C69.1852 84.8105 69.832 83.0645 68.8562 80.4215C66.0088 72.7034 67.0377 65.7875 71.1267 61.7955ZM72.7498 69.36C73.2743 68.7846 74.1598 68.739 74.7371 69.2633C77.7191 71.9592 82.0379 72.2521 85.6296 69.6364C86.6668 68.8836 87.7926 70.5318 86.6941 71.5621C82.8264 75.3515 76.7131 74.9036 72.8386 71.3561C72.2528 70.8315 72.2184 69.9373 72.7498 69.36ZM59.321 69.2633C59.9068 68.7389 60.7925 68.7848 61.3171 69.36C61.8399 69.9372 61.8063 70.8315 61.2293 71.3561C57.3565 74.9002 51.2337 75.3515 47.3728 71.5621C46.2746 70.5318 47.3999 68.8839 48.4285 69.6364C52.0202 72.2522 56.3492 71.9591 59.321 69.2633ZM47.4353 61.0846C51.8207 56.7554 58.7868 57.2905 63.1892 61.3063C63.8449 61.9109 63.8905 62.9309 63.2859 63.5866C62.6915 64.2337 61.6799 64.2869 61.0242 63.7028C57.6351 60.6238 52.7218 60.2877 48.6414 63.2662C47.4611 64.128 46.1835 62.2563 47.4353 61.0846ZM86.197 23.2213C86.4437 32.1637 80.0191 38.3817 70.4529 41.234C79.1044 47.0499 88.7826 50.3984 95.1316 58.0348C102.831 44.389 100.359 30.27 86.197 23.2213ZM81.5222 19.317C76.9764 6.12717 54.7586 6.13967 51.114 18.0934C52.6042 17.5348 54.1118 17.0796 55.7263 16.8327C57.9604 16.4974 58.9276 18.8813 56.658 19.6188C42.7712 24.2971 32.7071 33.7202 36.532 49.6608V49.6793C37.3375 52.973 38.6338 54.7038 39.7527 57.3707C46.5088 46.9428 58.7714 41.34 70.8972 36.987C80.1073 33.8771 84.1637 27.2277 81.5222 19.317Z" fill="#E7B5FC"/>
-              </svg>
+							<ul class="footer__contacts-list-tel">
+								<li class="footer__contacts-item-tel">
+									<a class="footer__contacts-link" href="tel:+74955557177"
+										>+7(495)555-71-77</a
+									>
+								</li>
+								<li class="footer__contacts-item-tel">
+									<a class="footer__contacts-link" href="tel:+79953009911"
+										>+7(995)300-99-11</a
+									>
+								</li>
+								<li class="footer__contacts-item-tel">
+									<a class="footer__contacts-link" href="tel:+79951009911"
+										>+7(995)100-99-11</a
+									>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__container-address">
+							<address class="footer__address">
+								<svg
+									class="job__item-icon"
+									width="24"
+									height="24"
+									aria-hidden="true"
+								>
+									<use xlink:href="svg/sprite.svg#icon-map-pin"></use>
+								</svg>
+								<div>
+									<p class="footer__address--text">
+										г. Лыткарино, кв-л 3A, д.29
+									</p>
+									<br />
+									<p class="footer__address--text">
+										г. Лыткарино, кв-л 2, д.13
+									</p>
+								</div>
+							</address>
+						</div>
+						<ul class="footer__contacts-list-icon">
+							<li class="footer__contacts-item-icon">
+								<a href="#">
+									<svg width="42" height="42" aria-hidden="true">
+										<use xlink:href="svg/sprite.svg#icon-social-vk"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="footer__contacts-item-icon">
+								<a href="#">
+									<svg width="42" height="42" aria-hidden="true">
+										<use xlink:href="svg/sprite.svg#icon-social-telegram"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="footer__contacts-item-icon">
+								<a href="#">
+									<svg width="42" height="42" aria-hidden="true">
+										<use xlink:href="svg/sprite.svg#icon-social-facebook"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__container-bootom">
+					<p class="footer__bootom-text">
+						Семейная клиника «Здоровые дети» © 2012
+					</p>
+				</div>
+			</div>
+		</footer>
 
-              <svg class="services__svg--arrow" width="42" height="42" aria-hidden="true">
-                <use xlink:href="svg/sprite.svg#icon-button-arrow"></use>
-              </svg>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="map">
-      <div class="map__container">
-        <div class="container">
-          <div class="map__container-wrap">
-            <ul class="map__list">
-              <li class="map__item">
-                <p class="map__text">Семейная клиника</p>
-                <span class="map__span">г.Лыткарино, кв-л 3A, д.29</span>
-              </li>
-              <li class="map__item">
-                <p class="map__text">Стоматология, Косметология</p>
-                <span class="map__span">г.Лыткарино, кв-л 3A, д.29</span>
-              </li>
-            </ul>
-            <div class="map__container-wraps">
-                <h3 class="map__contacts-title">Контакты</h3>
-                <ul class="map__contacts-list">
-                  <li class="map__contacts-item">
-                    <svg width="24" height="24" aria-hidden="true">
-                      <use xlink:href="svg/sprite.svg#icon-telegram"></use>
-                    </svg>
-                    <a class="map__contacts-link" href="https://t.me/@ZdClinic_bot">Telegram: @ZdClinic_bot</a>
-                  </li>
-                  <li class="map__contacts-item">
-                    <svg width="25" height="24" aria-hidden="true">
-                      <use xlink:href="svg/sprite.svg#icon-mail"></use>
-                    </svg>
-                    <a class="map__contacts-link" href="mailto:zd-clinic@yandex.ru">zd-clinic@yandex.ru</a>
-                  </li>
-                </ul>
-                <ul class="map__contacts-list-tel">
-                  <li class="map__contacts-item-tel ">
-                    <a class="map__contacts-link" href="tel:+74955557177">+7(495)555-71-77</a>
-                  </li>
-                  <li class="map__contacts-item-tel">
-                    <a class="map__contacts-link" href="tel:+79953009911">+7(995)300-99-11</a>
-                  </li>
-                  <li class="map__contacts-item-tel">
-                    <a class="map__contacts-link" href="tel:+79951009911">+7(995)100-99-11</a>
-                  </li>
-                </ul>
-                <ul class="map__contacts-list-icon">
-                  <li class="map__contacts-item-icon">
-                    <a href="#">
-                      <svg width="42" height="42" aria-hidden="true">
-                        <use xlink:href="svg/sprite.svg#icon-social-vk"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="map__contacts-item-icon">
-                    <a href="#">
-                      <svg width="42" height="42" aria-hidden="true">
-                        <use xlink:href="svg/sprite.svg#icon-social-telegram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="map__contacts-item-icon">
-                    <a href="#">
-                      <svg width="42" height="42" aria-hidden="true">
-                        <use xlink:href="svg/sprite.svg#icon-social-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-                <img src="img/qr.png" alt="QR-код">
-              </div>
-              <div class="map__container-info">
-                <div class="map__container-address">
-                  <h3 class="map__contacts-title">Адрес</h3>
-                  <address class="map__address">
-                    <svg class="job__item-icon" width="24" height="24" aria-hidden="true">
-                      <use xlink:href="svg/sprite.svg#icon-map-pin"></use>
-                    </svg>
-                    г. Лыткарино, кв-л 3A, д.29
-                  </address>
-                </div>
-                <div class="map__container-watch">
-                  <h3 class="map__contacts-title">Часы работы</h3>
-                  <p class="map__time">
-                    <svg class="job__item-icon" width="24" height="24" aria-hidden="true">
-                      <use xlink:href="svg/sprite.svg#icon-clock"></use>
-                    </svg>
-                    пн-пт: 08:00-20:00<br>
-                    сб: 09:00-20:00
-                  </p>
-                </div>
-                <div class="map__container-analysis">
-                  <h3 class="map__contacts-title">Прием анализов</h3>
-                  <p class="map__time">
-                    <svg class="job__item-icon" width="24" height="24" aria-hidden="true">
-                      <use xlink:href="svg/sprite.svg#icon-analysis"></use>
-                    </svg>
-                    пн-пт: 08:00-20:00<br>
-                    сб: 09:00-20:00
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
-    </section>
-
-    <section id="map__mobile">
-      <div class="container">
-        <ul class="map__list">
-          <li class="map__item--clinik">
-            <p class="map__text">Семейная клиника</p>
-            <span class="map__span">г.Лыткарино, кв-л 3A, д.29</span>
-          </li>
-          <li class="map__item--koc">
-            <p class="map__text">Стоматология, Косметология</p>
-            <span class="map__span">г.Лыткарино, кв-л 3A, д.29</span>
-          </li>
-        </ul>
-        <div style="position:relative; overflow:hidden; padding-bottom:20px;">
-          <div style="position:relative; width:100%; height:400px;">
-            <iframe id="yandex-map" src="https://yandex.ru/map-widget/v1/?pt=37.906578,55.588425&z=17&l=map&lang=ru_RU"
-              width="100%" height="400" frameborder="0" style="pointer-events: none;">
-            </iframe>
-          </div>
-        </div>
-        <div class="map__container-wraps">
-          <div class="map__contacts">
-            <h3 class="map__contacts-title">Контакты</h3>
-            <ul class="map__contacts-list">
-              <li class="map__contacts-item">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M4.61453 11.2239L18.6698 6.53885C18.7591 6.50907 18.8441 6.59406 18.8143 6.68341L14.1293 20.7386C14.0935 20.8459 13.9403 20.8417 13.9106 20.7326L11.937 13.4963C11.9264 13.4573 11.8959 13.4268 11.8569 13.4161L4.6206 11.4426C4.51151 11.4129 4.50726 11.2597 4.61453 11.2239Z"
-                    stroke="#897CFF" stroke-width="2" stroke-linecap="round" />
-                </svg>
-                <a class="map__contacts-link" href="https://t.me/@ZdClinic_bot">Telegram: @ZdClinic_bot</a>
-              </li>
-              <li class="map__contacts-item">
-                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="4.65332" y="6.43457" width="16" height="12" rx="2" stroke="#897CFF" stroke-width="2" />
-                  <path
-                    d="M4.65332 9.43457L11.7589 12.9874C12.3219 13.2689 12.9847 13.2689 13.5477 12.9874L20.6533 9.43457"
-                    stroke="#897CFF" stroke-width="2" />
-                </svg>
-                <a class="map__contacts-link" href="mailto:zd-clinic@yandex.ru">zd-clinic@yandex.ru</a>
-              </li>
-            </ul>
-           <div class="tell__wrap">
-            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M20.3863 17.9508C20.3863 18.1705 20.3466 18.4573 20.2672 18.8112C20.1878 19.1651 20.1044 19.4438 20.017 19.6472C19.8502 20.054 19.3658 20.4852 18.5637 20.9408C17.8172 21.3557 17.0786 21.5632 16.348 21.5632C16.1335 21.5632 15.925 21.549 15.7225 21.5205C15.52 21.492 15.2917 21.4411 15.0376 21.3679C14.7834 21.2947 14.5948 21.2357 14.4717 21.191C14.3486 21.1462 14.1282 21.0628 13.8106 20.9408C13.4929 20.8187 13.2983 20.7455 13.2269 20.7211C12.4486 20.4364 11.7537 20.0987 11.1421 19.7082C10.1256 19.0655 9.07533 18.1888 7.99128 17.0783C6.90724 15.9677 6.05151 14.8917 5.42411 13.8503C5.04292 13.2239 4.71335 12.512 4.43538 11.7146C4.41155 11.6414 4.34008 11.4421 4.22095 11.1167C4.10182 10.7912 4.02042 10.5654 3.97673 10.4393C3.93306 10.3132 3.87549 10.12 3.80401 9.85964C3.73254 9.5993 3.68289 9.3654 3.65511 9.15792C3.62728 8.95049 3.61341 8.73692 3.61341 8.51723C3.61341 7.76873 3.81593 7.01209 4.22094 6.24733C4.66568 5.42559 5.08661 4.9293 5.48369 4.75844C5.68223 4.66895 5.95423 4.58352 6.2997 4.50217C6.64514 4.4208 6.92511 4.38013 7.13954 4.38013C7.25072 4.38013 7.33411 4.39233 7.38969 4.41674C7.53265 4.46556 7.7431 4.77472 8.02106 5.34424C8.10842 5.49882 8.22755 5.71849 8.37844 6.00324C8.52933 6.288 8.66831 6.54632 8.79538 6.77819C8.92244 7.01006 9.04554 7.2277 9.16467 7.43111C9.1885 7.46365 9.25798 7.56535 9.37313 7.73619C9.48828 7.90705 9.57367 8.05146 9.62926 8.16943C9.68486 8.28739 9.71264 8.40335 9.71264 8.51723C9.71264 8.67995 9.59948 8.88336 9.37313 9.12743C9.1468 9.37152 8.90061 9.59525 8.63457 9.79865C8.36851 10.002 8.12232 10.2177 7.89599 10.4455C7.66963 10.6733 7.55647 10.8604 7.55647 11.0068C7.55647 11.0801 7.57632 11.1716 7.61604 11.2814C7.65574 11.3913 7.68949 11.4747 7.71728 11.5316C7.74508 11.5886 7.80067 11.6862 7.88406 11.8245C7.96745 11.9628 8.01314 12.0401 8.02106 12.0564C8.62463 13.171 9.31556 14.127 10.0938 14.9243C10.8721 15.7216 11.8053 16.4294 12.8933 17.0478C12.9092 17.0559 12.9846 17.1027 13.1196 17.1881C13.2546 17.2735 13.3499 17.3305 13.4055 17.359C13.4611 17.3874 13.5425 17.422 13.6498 17.4627C13.757 17.5034 13.8463 17.5237 13.9178 17.5237C14.0607 17.5237 14.2434 17.4078 14.4658 17.1759C14.6881 16.944 14.8986 16.6918 15.0971 16.4193C15.2957 16.1467 15.5141 15.8945 15.7523 15.6626C15.9906 15.4307 16.1891 15.3148 16.348 15.3148C16.4591 15.3148 16.5723 15.3433 16.6875 15.4002C16.8026 15.4572 16.9436 15.5446 17.1104 15.6626C17.2771 15.7806 17.3764 15.8518 17.4082 15.8762C17.6067 15.9982 17.8191 16.1243 18.0455 16.2545C18.2718 16.3847 18.524 16.5271 18.8019 16.6816C19.0799 16.8362 19.2943 16.9583 19.4452 17.0478C20.0011 17.3325 20.3029 17.5481 20.3506 17.6946C20.3744 17.7515 20.3863 17.8369 20.3863 17.9508Z" stroke="#897CFF" stroke-width="2"/>
-</svg>
-             <ul class="map__contacts-list-tel">
-              <li class="map__contacts-item-tel ">
-                <a class="map__contacts-link" href="tel:+74955557177">+7(495)555-71-77</a>
-              </li>
-              <li class="map__contacts-item-tel">
-                <a class="map__contacts-link" href="tel:+79953009911">+7(995)300-99-11</a>
-              </li>
-              <li class="map__contacts-item-tel">
-                <a class="map__contacts-link" href="tel:+79951009911">+7(995)100-99-11</a>
-              </li>
-            </ul>
-           </div>
-            <ul class="map__contacts-list-icon">
-              <li class="map__contacts-item-icon">
-                <a href="#">
-                  <svg width="43" height="42" viewBox="0 0 43 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M21.7177 3.4824C31.2433 3.4824 38.993 11.2321 38.993 20.7577C38.993 30.2833 31.2433 38.033 21.7177 38.033C12.1921 38.033 4.44236 30.2833 4.44236 20.7577C4.44236 11.2321 12.1921 3.4824 21.7177 3.4824ZM21.7177 0.0273438C10.2693 0.0273438 0.987305 9.30936 0.987305 20.7577C0.987305 32.206 10.2693 41.488 21.7177 41.488C33.166 41.488 42.448 32.206 42.448 20.7577C42.448 9.30936 33.166 0.0273438 21.7177 0.0273438ZM11.4026 31.1229L12.8606 25.8004C11.9623 24.2421 11.489 22.4749 11.489 20.6644C11.4907 14.9998 16.098 10.3925 21.7608 10.3925C24.5093 10.3942 27.0885 11.4636 29.0268 13.4053C30.9669 15.3471 32.0345 17.928 32.0327 20.673C32.031 26.3376 27.422 30.9449 21.7608 30.9449C20.042 30.9449 18.3472 30.5131 16.8478 29.6942L11.4026 31.1229ZM17.1 27.8354C18.5476 28.694 19.9297 29.2105 21.7574 29.2105C26.4632 29.2105 30.2966 25.3806 30.2983 20.673C30.3 15.9552 26.4839 12.1304 21.7643 12.1287C17.0551 12.1287 13.2251 15.9586 13.2234 20.6661C13.2234 22.5872 13.7866 24.0279 14.7315 25.5326L13.8695 28.6836L17.1 27.8354ZM26.9365 23.1158C26.8726 23.0087 26.7016 22.9447 26.4442 22.8152C26.1868 22.6873 24.9257 22.0654 24.6907 21.9808C24.4558 21.8944 24.2848 21.8529 24.1137 22.1086C23.9427 22.366 23.4504 22.943 23.3018 23.1158C23.1515 23.2868 23.0029 23.3093 22.7455 23.1797C22.4881 23.0519 21.6624 22.7806 20.6811 21.9065C19.9176 21.2259 19.4028 20.3846 19.2525 20.1289C19.1022 19.8715 19.2369 19.7333 19.3648 19.6054L19.75 19.1563L20.0074 18.7278C20.0938 18.5568 20.0506 18.4065 19.9867 18.2787L19.1955 16.3732C18.9864 15.8722 18.7757 15.9413 18.6185 15.9327L18.1244 15.9206C17.9534 15.9206 17.6752 15.9845 17.4403 16.2419C17.2054 16.4993 16.542 17.1195 16.542 18.3841C16.542 19.6469 17.461 20.8683 17.5906 21.0393C17.7184 21.2103 19.401 23.8033 21.9751 24.9141C22.5866 25.1784 23.0651 25.3374 23.4383 25.4548C24.0533 25.6501 24.613 25.6224 25.0552 25.5568C25.5476 25.4825 26.5737 24.9366 26.788 24.3371C27.0004 23.736 27.0004 23.2229 26.9365 23.1158Z"
-                      fill="#897CFF" />
-                  </svg>
-                </a>
-              </li>
-              <li class="map__contacts-item-icon">
-                <a href="#">
-                  <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M21.1786 0.0273438C9.73026 0.0273438 0.448242 9.30936 0.448242 20.7577C0.448242 32.206 9.73026 41.488 21.1786 41.488C32.6269 41.488 41.9089 32.206 41.9089 20.7577C41.9089 9.30936 32.6269 0.0273438 21.1786 0.0273438ZM21.1786 3.4824C30.7042 3.4824 38.4539 11.2321 38.4539 20.7577C38.4539 30.2833 30.7042 38.033 21.1786 38.033C11.653 38.033 3.9033 30.2833 3.9033 20.7577C3.9033 11.2321 11.653 3.4824 21.1786 3.4824ZM25.8291 29.2036C26.1072 29.4023 26.4648 29.4506 26.7844 29.3297C27.104 29.2088 27.3407 28.9358 27.4098 28.6041C28.1613 25.0765 29.9821 16.1469 30.6645 12.9389C30.7163 12.697 30.6316 12.4466 30.4416 12.2842C30.2516 12.1235 29.9873 12.0769 29.7523 12.1632C26.1314 13.5038 14.9768 17.6879 10.4178 19.3757C10.1276 19.4828 9.93929 19.7609 9.94965 20.0667C9.96002 20.3725 10.1656 20.6368 10.461 20.7249C12.5064 21.3364 15.191 22.1881 15.191 22.1881C15.191 22.1881 16.4434 25.9766 17.0982 27.9028C17.1794 28.1429 17.3694 28.3346 17.6182 28.3986C17.8686 28.4642 18.133 28.3968 18.3195 28.2206C19.3699 27.229 20.9937 25.6967 20.9937 25.6967C20.9937 25.6967 24.0791 27.958 25.8291 29.2036ZM16.3191 21.7096L17.7702 26.4931L18.0915 23.463C18.0915 23.463 23.6939 18.41 26.8881 15.5285C26.9831 15.4455 26.9952 15.3039 26.9174 15.2037C26.8397 15.1052 26.6998 15.081 26.5927 15.1484C22.8906 17.5117 16.3191 21.7096 16.3191 21.7096Z"
-                      fill="#897CFF" />
-                  </svg>
-                </a>
-              </li>
-              <li class="map__contacts-item-icon">
-                <a href="#">
-                  <svg width="43" height="42" viewBox="0 0 43 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M21.6395 0.0273438C10.1912 0.0273438 0.90918 9.30936 0.90918 20.7577C0.90918 32.206 10.1912 41.488 21.6395 41.488C33.0879 41.488 42.3699 32.206 42.3699 20.7577C42.3699 9.30936 33.0879 0.0273438 21.6395 0.0273438ZM21.6395 3.4824C31.1651 3.4824 38.9148 11.2321 38.9148 20.7577C38.9148 30.2833 31.1651 38.033 21.6395 38.033C12.1139 38.033 4.36424 30.2833 4.36424 20.7577C4.36424 11.2321 12.1139 3.4824 21.6395 3.4824ZM29.6639 13.6852C29.1215 13.1859 26.9258 11.5932 22.0369 11.5707C22.0369 11.5707 16.2704 11.2235 13.4597 13.8027C11.8963 15.3661 11.3452 17.6551 11.2864 20.4951C11.2294 23.3352 11.1534 28.6542 16.2825 30.0967L16.2876 30.0984L16.2842 32.2993C16.2842 32.2993 16.2514 33.1907 16.8387 33.3738C17.5487 33.5932 17.9651 32.916 18.6423 32.1853C19.0154 31.7845 19.5285 31.1954 19.9155 30.7463C23.4223 31.04 26.1207 30.3662 26.4265 30.2677C27.1348 30.0363 31.1427 29.5232 31.794 24.2041C32.466 18.7192 31.4674 15.2503 29.6639 13.6852ZM30.2582 23.8085C29.7071 28.25 26.4593 28.5299 25.8599 28.7233C25.6042 28.8045 23.234 29.3936 20.2558 29.2001C20.2558 29.2001 18.0359 31.8778 17.3432 32.574C17.2343 32.6828 17.1065 32.7277 17.0218 32.707C16.9026 32.6777 16.8698 32.536 16.8716 32.3287L16.8906 28.6715H16.8888C12.551 27.4657 12.8049 22.9378 12.8533 20.5659C12.9034 18.1958 13.3491 16.2523 14.6724 14.9463C17.0495 12.7921 21.947 13.1151 21.947 13.1151C26.0827 13.1324 28.0642 14.3779 28.5237 14.796C30.0491 16.102 30.8265 19.2271 30.2582 23.8085ZM22.4515 24.0746C22.4515 24.0746 22.8402 24.1091 23.0492 23.85L23.4586 23.3369C23.6538 23.0812 24.1289 22.9188 24.5953 23.178C25.2103 23.5269 26.0067 24.0728 26.5526 24.5807C26.8532 24.8364 26.9223 25.2095 26.7185 25.6034L26.7167 25.6103C26.506 25.9835 26.2244 26.3307 25.8668 26.6572L25.8599 26.6624C25.4591 26.9975 24.9979 27.191 24.5055 27.0304L24.4951 27.0165C23.6106 26.7678 21.4875 25.6846 20.1331 24.6049C17.9184 22.8566 16.3447 19.9751 15.9093 18.4307L15.8955 18.4221C15.7348 17.928 15.93 17.4668 16.2635 17.0677L16.2704 17.0591C16.5951 16.7032 16.9441 16.4216 17.3155 16.2108L17.3242 16.2091C17.718 16.0035 18.0912 16.0726 18.3451 16.375C18.6785 16.7187 19.3074 17.5497 19.7479 18.3322C20.007 18.797 19.8446 19.272 19.5907 19.469L19.0759 19.8767C18.8167 20.0857 18.8513 20.4744 18.8513 20.4744C18.8513 20.4744 19.6114 23.349 22.4515 24.0746ZM26.924 21.6923H26.9206C26.7686 21.6923 26.6459 21.5696 26.6442 21.4176C26.6321 19.7505 26.1311 18.4221 25.1568 17.4702C24.179 16.5183 22.9455 16.0312 21.4875 16.0208C21.3355 16.0191 21.2128 15.8947 21.2146 15.7427C21.2146 15.5907 21.3389 15.468 21.491 15.468H21.4927C23.0976 15.4801 24.4606 16.0208 25.542 17.0746C26.6269 18.1336 27.1832 19.5933 27.197 21.4124C27.1987 21.5662 27.0761 21.6906 26.924 21.6923ZM25.4677 21.1239H25.4626C25.3088 21.1205 25.1879 20.9926 25.1913 20.8406C25.2138 19.8957 24.9426 19.1304 24.3673 18.5015C23.792 17.8727 23.0043 17.5307 21.9574 17.4547C21.8054 17.4426 21.6914 17.3113 21.7017 17.1593C21.7121 17.0055 21.8451 16.8915 21.9971 16.9036C23.1753 16.99 24.1099 17.4011 24.775 18.1284C25.4418 18.8574 25.7683 19.773 25.7441 20.8527C25.7407 21.003 25.618 21.1239 25.4677 21.1239ZM24.0494 20.6471C23.9026 20.6471 23.7817 20.5331 23.773 20.3846C23.7264 19.4465 23.2841 18.987 22.3824 18.9386C22.2303 18.93 22.1129 18.8004 22.1215 18.6484C22.1302 18.4946 22.2597 18.3789 22.4117 18.3858C23.6037 18.4514 24.2654 19.1321 24.3258 20.3569C24.3328 20.5107 24.2153 20.6402 24.0633 20.6471H24.0494Z"
-                      fill="#897CFF" />
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="map__container-info">
-            <div class="map__container-watch">
-              <h3 class="map__contacts-title">Часы работы</h3>
-              <p class="map__time">
-                <svg class="svg__map" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="12.3296" cy="12.2406" r="8.70446" stroke="#897CFF" stroke-width="2" />
-                  <path d="M16.6633 12.2398H12.5704C12.4374 12.2398 12.3296 12.132 12.3296 11.9991V8.86914"
-                    stroke="#897CFF" stroke-width="2" stroke-linecap="round" />
-                </svg>
-                пн-пт: 08:00-20:00<br>
-                сб: 09:00-20:00
-              </p>
-            </div>
-            <div class="map__container-analysis">
-              <h3 class="map__contacts-title">Прием анализов</h3>
-              <p class="map__time">
-                <svg class="svg__map" width="25" height="25" viewBox="0 0 25 25" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M15.7727 5.7002V12.3974C15.7727 12.5948 15.8311 12.7879 15.9407 12.9521L20.7362 20.1455C21.1793 20.81 20.7029 21.7002 19.9042 21.7002H5.64122C4.84253 21.7002 4.36614 20.81 4.80917 20.1455L9.60476 12.9521C9.71427 12.7879 9.77271 12.5948 9.77271 12.3974V5.7002"
-                    stroke="#897CFF" stroke-width="2" stroke-linejoin="round" />
-                  <path d="M7.77271 5.7002H17.7727" stroke="#897CFF" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-                пн-пт: 08:00-20:00<br>
-                сб: 09:00-20:00
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer id="contacts" class="footer">
-    <div class="container">
-      <div class="footer__container-top">
-        <div class="footer__container-info">
-          <ul class="footer__list-info">
-            <li class="footer__list-info">Лицензии</li>
-            <li class="footer__list-info">Контакты контролирующих органов</li>
-            <li class="footer__list-info">Нормативные документы</li>
-          </ul>
-          <button class="footer__btn-info bth-reset">Написать гендиректору
-            <svg class="footer__btn-icon" width="35" height="35" viewBox="0 0 35 36" aria-hidden="true">
-              <use xlink:href="svg/sprite.svg#icon-button-arrow"></use>
-            </svg>
-          </button>
-        </div>
-        <div class="footer__container-contacts">
-         <div class="tell__wrap">
-          <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M20.3863 17.9508C20.3863 18.1705 20.3466 18.4573 20.2672 18.8112C20.1878 19.1651 20.1044 19.4438 20.017 19.6472C19.8502 20.054 19.3658 20.4852 18.5637 20.9408C17.8172 21.3557 17.0786 21.5632 16.348 21.5632C16.1335 21.5632 15.925 21.549 15.7225 21.5205C15.52 21.492 15.2917 21.4411 15.0376 21.3679C14.7834 21.2947 14.5948 21.2357 14.4717 21.191C14.3486 21.1462 14.1282 21.0628 13.8106 20.9408C13.4929 20.8187 13.2983 20.7455 13.2269 20.7211C12.4486 20.4364 11.7537 20.0987 11.1421 19.7082C10.1256 19.0655 9.07533 18.1888 7.99128 17.0783C6.90724 15.9677 6.05151 14.8917 5.42411 13.8503C5.04292 13.2239 4.71335 12.512 4.43538 11.7146C4.41155 11.6414 4.34008 11.4421 4.22095 11.1167C4.10182 10.7912 4.02042 10.5654 3.97673 10.4393C3.93306 10.3132 3.87549 10.12 3.80401 9.85964C3.73254 9.5993 3.68289 9.3654 3.65511 9.15792C3.62728 8.95049 3.61341 8.73692 3.61341 8.51723C3.61341 7.76873 3.81593 7.01209 4.22094 6.24733C4.66568 5.42559 5.08661 4.9293 5.48369 4.75844C5.68223 4.66895 5.95423 4.58352 6.2997 4.50217C6.64514 4.4208 6.92511 4.38013 7.13954 4.38013C7.25072 4.38013 7.33411 4.39233 7.38969 4.41674C7.53265 4.46556 7.7431 4.77472 8.02106 5.34424C8.10842 5.49882 8.22755 5.71849 8.37844 6.00324C8.52933 6.288 8.66831 6.54632 8.79538 6.77819C8.92244 7.01006 9.04554 7.2277 9.16467 7.43111C9.1885 7.46365 9.25798 7.56535 9.37313 7.73619C9.48828 7.90705 9.57367 8.05146 9.62926 8.16943C9.68486 8.28739 9.71264 8.40335 9.71264 8.51723C9.71264 8.67995 9.59948 8.88336 9.37313 9.12743C9.1468 9.37152 8.90061 9.59525 8.63457 9.79865C8.36851 10.002 8.12232 10.2177 7.89599 10.4455C7.66963 10.6733 7.55647 10.8604 7.55647 11.0068C7.55647 11.0801 7.57632 11.1716 7.61604 11.2814C7.65574 11.3913 7.68949 11.4747 7.71728 11.5316C7.74508 11.5886 7.80067 11.6862 7.88406 11.8245C7.96745 11.9628 8.01314 12.0401 8.02106 12.0564C8.62463 13.171 9.31556 14.127 10.0938 14.9243C10.8721 15.7216 11.8053 16.4294 12.8933 17.0478C12.9092 17.0559 12.9846 17.1027 13.1196 17.1881C13.2546 17.2735 13.3499 17.3305 13.4055 17.359C13.4611 17.3874 13.5425 17.422 13.6498 17.4627C13.757 17.5034 13.8463 17.5237 13.9178 17.5237C14.0607 17.5237 14.2434 17.4078 14.4658 17.1759C14.6881 16.944 14.8986 16.6918 15.0971 16.4193C15.2957 16.1467 15.5141 15.8945 15.7523 15.6626C15.9906 15.4307 16.1891 15.3148 16.348 15.3148C16.4591 15.3148 16.5723 15.3433 16.6875 15.4002C16.8026 15.4572 16.9436 15.5446 17.1104 15.6626C17.2771 15.7806 17.3764 15.8518 17.4082 15.8762C17.6067 15.9982 17.8191 16.1243 18.0455 16.2545C18.2718 16.3847 18.524 16.5271 18.8019 16.6816C19.0799 16.8362 19.2943 16.9583 19.4452 17.0478C20.0011 17.3325 20.3029 17.5481 20.3506 17.6946C20.3744 17.7515 20.3863 17.8369 20.3863 17.9508Z" stroke="#897CFF" stroke-width="2"/>
-</svg>
-
-           <ul class="footer__contacts-list-tel">
-            <li class="footer__contacts-item-tel">
-              <a class="footer__contacts-link" href="tel:+74955557177">+7(495)555-71-77</a>
-            </li>
-            <li class="footer__contacts-item-tel">
-              <a class="footer__contacts-link" href="tel:+79953009911">+7(995)300-99-11</a>
-            </li>
-            <li class="footer__contacts-item-tel">
-              <a class="footer__contacts-link" href="tel:+79951009911">+7(995)100-99-11</a>
-            </li>
-          </ul>
-         </div>
-          <div class="footer__container-address">
-            <address class="footer__address">
-              <svg class="job__item-icon" width="24" height="24" aria-hidden="true">
-                <use xlink:href="svg/sprite.svg#icon-map-pin"></use>
-              </svg>
-              <div>
-                <p class="footer__address--text">г. Лыткарино, кв-л 3A, д.29</p>
-                <br>
-                <p class="footer__address--text">г. Лыткарино, кв-л 2, д.13</p>
-              </div>
-            </address>
-          </div>
-          <ul class="footer__contacts-list-icon">
-            <li class="footer__contacts-item-icon">
-              <a href="#">
-                <svg width="42" height="42" aria-hidden="true">
-                  <use xlink:href="svg/sprite.svg#icon-social-vk"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__contacts-item-icon">
-              <a href="#">
-                <svg width="42" height="42" aria-hidden="true">
-                  <use xlink:href="svg/sprite.svg#icon-social-telegram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__contacts-item-icon">
-              <a href="#">
-                <svg width="42" height="42" aria-hidden="true">
-                  <use xlink:href="svg/sprite.svg#icon-social-facebook"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer__container-bootom">
-        <p class="footer__bootom-text">Семейная клиника «Здоровые дети» © 2012</p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script defer src="js/swiper.js"></script>
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-  <script src="js/map.js"></script>
-  <script defer src="js/main.js"></script>
-</body>
-
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script defer src="js/swiper.js"></script>
+		<script
+			src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"
+			type="text/javascript"
+		></script>
+		<script src="js/map.js"></script>
+		<script defer src="js/main.js"></script>
+	</body>
 </html>

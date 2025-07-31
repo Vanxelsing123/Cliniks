@@ -559,3 +559,11 @@ body {
 .tell__wrap {
 	display: flex;
 }
+
+.time__svg {
+	margin-right: 8px;
+}
+
+.address__svg {
+	margin-right: 8px;
+}
