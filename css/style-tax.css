@@ -317,27 +317,24 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
+  background: rgba(131, 125, 162, 0.5);
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5);
-
-  display: flex;
-  justify-content: center;
-
-  align-items: flex-start;
   box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Контейнер содержимого */
 .modal-content {
+  top: 60%;
   position: relative;
-  top: 15%;
-  width: 340px;
   background-color: #fff;
   padding: 20px 30px;
   border-radius: 20px;
-  max-width: 600px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  width: 340px;
+  overflow: visible;
+  box-sizing: border-box;
 }
+
 .modal__close {
   position: absolute;
   top: -55px;
@@ -371,12 +368,12 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 140%;
-  padding-top: 16px;
-  margin-bottom: 16px;
+  padding-top: 34px;
+  margin-bottom: 34px;
   color: var(--color-gray-brown);
 }
 
-/* Кнопка закрытия */
+/* Кнопка закрытия
 .close {
   color: #aaa;
   float: right;
@@ -387,7 +384,7 @@ body {
 .close:hover,
 .close:focus {
   color: black;
-}
+} */
 
 /* Стили формы */
 form label {
@@ -525,14 +522,14 @@ input::placeholder {
   font-weight: 400;
   font-size: 18px;
   line-height: 140%;
-  margin-bottom: 16px;
+  margin-bottom: 34px;
   color: var(--color-gray-brown);
 }
 
 .checkbox-group {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 16px;
+  margin-bottom: 34px;
 }
 .checkbox-group label {
   font-weight: 500;
@@ -552,7 +549,7 @@ input::placeholder {
   align-items: baseline;
   display: flex;
   width: 280px;
-  margin-bottom: 16px;
+  margin-bottom: 34px;
 }
 
 .tax__modal-wrap p {
@@ -575,12 +572,12 @@ input::placeholder {
   font-weight: 400;
   font-size: 18px;
   line-height: 140%;
-  margin-bottom: 16px;
+  margin-bottom: 34px;
   color: var(--color-gray-brown);
 }
 
 .tax__indents {
-  margin-bottom: 20px;
+  margin-bottom: 34px;
 }
 
 .btn-submit {
