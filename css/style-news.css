@@ -129,7 +129,6 @@ body {
 .news__tab-btn.active {
   background-color: var(--color-slate-blue);
   color: var(--color-white);
-  
 }
 
 .news__title {

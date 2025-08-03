@@ -1,29 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Налоговый вычет</title>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style-tax.css" />
-    <link rel="stylesheet" href="css/media.css" />
-  </head>
+<html lang="ru">
 
-  <body>
-    <header class="header">
-      <div class="container">
-        <div class="header__top">
-          <div class="burger-wrapper">
-            <button
-              class="header__burger-btn bth-reset"
-              id="burger"
-              aria-label="Открыть меню"
-            >
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Налоговый вычет</title>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style-tax.css" />
+  <link rel="stylesheet" href="css/media.css" />
+</head>
 
+<body>
+ <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <div class="burger-wrapper">
+          <button class="header__burger-btn bth-reset" id="burger" aria-label="Открыть меню">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="mobile-nav-wrapper">
             <nav class="mobile-nav nav__content">
               <ul class="header__nav-list list-reset">
                 <li class="header__nav-item">
@@ -33,28 +30,16 @@
                   <a href="price.html" class="header__nav-link">Цены</a>
                 </li>
                 <li class="header__nav-item dropdown">
-                  <a href="#" class="header__nav-link dropdown-button"
-                    >Пациентам</a
-                  >
+                  <a href="#" class="header__nav-link dropdown-button">Пациентам</a>
                   <div class="header__nav-dropdown">
-                    <a class="header__nav-link-dropdown" href="news.html"
-                      >Новости</a
-                    >
-                    <a class="header__nav-link-dropdown" href="company.html"
-                      >О нас</a
-                    >
-                    <a class="header__nav-link-dropdown" href="visit.html"
-                      >Подготовка<br />к визиту</a
-                    >
-                    <a class="header__nav-link-dropdown" href="tax.html"
-                      >Налоговый вычет</a
-                    >
+                    <a class="header__nav-link-dropdown" href="news.html">Новости</a>
+                    <a class="header__nav-link-dropdown" href="company.html">О нас</a>
+                    <a class="header__nav-link-dropdown" href="visit.html">Подготовка<br />к визиту</a>
+                    <a class="header__nav-link-dropdown" href="tax.html">Налоговый вычет</a>
                   </div>
                 </li>
                 <li class="header__nav-item">
-                  <a href="calculator.html" class="header__nav-link"
-                    >Калькулятор<br />анализов</a
-                  >
+                  <a href="calculator.html" class="header__nav-link">Калькулятор<br />анализов</a>
                 </li>
                 <li class="header__nav-item">
                   <a href="stock.html" class="header__nav-link">Акции</a>
@@ -66,633 +51,417 @@
 
               <ul class="header__nav-list list-reset">
                 <li class="header__nav-item dropdown">
-                  <a href="#" class="header__nav-link dropdown-button"
-                    >Сотрудничество</a
-                  >
+                  <a href="#" class="header__nav-link dropdown-button">Сотрудничество</a>
                   <div class="header__nav-dropdown">
                     <a class="header__nav-link-dropdown" href="dms.html">ДМС</a>
-                    <a class="header__nav-link-dropdown" href="vacancies.html"
-                      >Вакансии</a
-                    >
-                    <a class="header__nav-link-dropdown" href="#"
-                      >Предприятиям</a
-                    >
+                    <a class="header__nav-link-dropdown" href="vacancies.html">Вакансии</a>
+                    <a class="header__nav-link-dropdown" href="#">Предприятиям</a>
                   </div>
                 </li>
                 <li class="header__nav-item dropdown">
-                  <a href="#" class="header__nav-link dropdown-button"
-                    >Услуги
+                  <a href="#" class="header__nav-link dropdown-button">Услуги
                   </a>
                   <div class="header__nav-dropdown">
-                    <div>
-                      <a class="header__nav-link-dropdown" href="#"
-                        >Детское отделение</a
-                      >
-                      <a class="header__nav-link-dropdown" href="#"
-                        >Взрослое отделение</a
-                      >
-                      <a class="header__nav-link-dropdown" href="services.html"
-                        >Хирургия</a
-                      >
-                      <a class="header__nav-link-dropdown" href="#"
-                        >Лабораторная<br />диагностика</a
-                      >
+                    <div class="header__dropdown-container">
+                      <a class="header__nav-link-dropdown" href="#">Детское отделение</a>
+                      <a class="header__nav-link-dropdown" href="#">Взрослое отделение</a>
+                      <a class="header__nav-link-dropdown" href="services.html">Хирургия</a>
+                      <a class="header__nav-link-dropdown" href="#">Лабораторная<br />диагностика</a>
                       <a class="header__nav-link-dropdown" href="#">УЗИ, ЭКГ</a>
-                      <a class="header__nav-link-dropdown" href="#"
-                        >Нейросонография</a
-                      >
+                      <a class="header__nav-link-dropdown" href="#">Нейросонография</a>
                     </div>
                     <div>
-                      <a class="header__nav-link-dropdown" href="#"
-                        >Вызов врача на дом</a
-                      >
-                      <a class="header__nav-link-dropdown" href="#"
-                        >Вакцинация</a
-                      >
-                      <a class="header__nav-link-dropdown" href="#"
-                        >Логопед-дефектолог</a
-                      >
-                      <a class="header__nav-link-dropdown" href="#"
-                        >Аудиометрия</a
-                      >
-                      <a class="header__nav-link-dropdown" href="#"
-                        >Тимпанометрия</a
-                      >
-                      <a class="header__nav-link-dropdown" href="programs.html"
-                        >Комплексные<br />программы</a
-                      >
+                      <a class="header__nav-link-dropdown" href="#">Вызов врача на дом</a>
+                      <a class="header__nav-link-dropdown" href="#">Вакцинация</a>
+                      <a class="header__nav-link-dropdown" href="#">Логопед-дефектолог</a>
+                      <a class="header__nav-link-dropdown" href="#">Аудиометрия</a>
+                      <a class="header__nav-link-dropdown" href="#">Тимпанометрия</a>
+                      <a class="header__nav-link-dropdown" href="programs.html">Комплексные<br />программы</a>
                     </div>
                   </div>
                 </li>
               </ul>
             </nav>
           </div>
-
-          <div class="header__logo">
-            <a href="index.html" class="header__logo-link">
-              <img src="img/logo.png" alt="Логотип клиники" />
-            </a>
-          </div>
-          <div class="header__logo--mobile">
-            <a href="index.html" class="header__logo-link">
-              <img src="img/Logo.mobile.png" alt="Логотип клиники" />
-            </a>
-          </div>
-          <div class="header__container-info">
-            <div class="header__text">
-              <a href="contacts.html" class="header__btn-address bth-reset">
-                <svg
-                  class="header__btn-address-icon"
-                  width="30"
-                  height="29"
-                  aria-hidden="true"
-                >
-                  <use xlink:href="svg/sprite.svg#icon-address"></use>
-                </svg>
-                <p class="header__text-address">Адрес и режим работы</p>
-              </a>
-            </div>
-            <div class="header__list list-reset">
-              <a href="schedule.html" class="header__btn-item bth-reset">
-                <svg
-                  class="header__btn-icon"
-                  width="30"
-                  height="29"
-                  aria-hidden="true"
-                >
-                  <use xlink:href="svg/sprite.svg#icon-booking"></use>
-                </svg>
-                <p class="header__item">Записаться</p>
-              </a>
-              <a href="med-card.html" class="header__btn-item bth-reset">
-                <svg
-                  class="header__btn-icon"
-                  width="30"
-                  height="29"
-                  aria-hidden="true"
-                >
-                  <use xlink:href="svg/sprite.svg#icon-medcard"></use>
-                </svg>
-                <p class="header__item">Медкарта</p>
-              </a>
-            </div>
-          </div>
         </div>
-        <div class="header__bottom">
-          <nav class="header__nav">
-            <ul class="header__nav-list list-reset">
-              <li class="header__nav-item">
-                <a href="doctors.html" class="header__nav-link">Врачи</a>
-              </li>
-              <li class="header__nav-item">
-                <a href="price.html" class="header__nav-link">Цены</a>
-              </li>
-              <li class="header__nav-item dropdown">
-                <a href="#" class="header__nav-link">Услуги </a>
-                <svg width="9" height="7" aria-hidden="true">
-                  <use xlink:href="svg/sprite.svg#icon-dropdown-arrow"></use>
-                </svg>
-                <div class="header__nav-dropdown dropdown-content__services">
-                  <div>
-                    <a class="header__nav-link-dropdown" href="#"
-                      >Детское отделение</a
-                    >
-                    <a class="header__nav-link-dropdown" href="#"
-                      >Взрослое отделение</a
-                    >
-                    <a class="header__nav-link-dropdown" href="services.html"
-                      >Хирургия</a
-                    >
-                    <a class="header__nav-link-dropdown" href="#"
-                      >Лабораторная диагностика</a
-                    >
-                    <a class="header__nav-link-dropdown" href="#">УЗИ, ЭКГ</a>
-                    <a class="header__nav-link-dropdown" href="#"
-                      >Нейросонография</a
-                    >
-                  </div>
-                  <div>
-                    <a class="header__nav-link-dropdown" href="#"
-                      >Вызов врача на дом</a
-                    >
-                    <a class="header__nav-link-dropdown" href="#">Вакцинация</a>
-                    <a class="header__nav-link-dropdown" href="#"
-                      >Логопед-дефектолог</a
-                    >
-                    <a class="header__nav-link-dropdown" href="#"
-                      >Аудиометрия</a
-                    >
-                    <a class="header__nav-link-dropdown" href="#"
-                      >Тимпанометрия</a
-                    >
-                    <a class="header__nav-link-dropdown" href="programs.html"
-                      >Комплексные программы</a
-                    >
-                  </div>
-                </div>
-              </li>
-              <li class="header__nav-item dropdown">
-                <a href="#" class="header__nav-link dropdown-button"
-                  >Пациентам</a
-                >
-                <svg width="9" height="7" aria-hidden="true">
-                  <use xlink:href="svg/sprite.svg#icon-dropdown-arrow"></use>
-                </svg>
-                <div class="header__nav-dropdown dropdown-content">
-                  <a class="header__nav-link-dropdown" href="news.html"
-                    >Новости</a
-                  >
-                  <a class="header__nav-link-dropdown" href="company.html"
-                    >О нас</a
-                  >
-                  <a class="header__nav-link-dropdown" href="visit.html"
-                    >Подготовка к визиту</a
-                  >
-                  <a class="header__nav-link-dropdown" href="tax.html"
-                    >Налоговый вычет</a
-                  >
-                </div>
-              </li>
-              <li class="header__nav-item">
-                <a href="calculator.html" class="header__nav-link"
-                  >Калькулятор анализов</a
-                >
-              </li>
-              <li class="header__nav-item">
-                <a href="stock.html" class="header__nav-link">Акции</a>
-              </li>
-              <li class="header__nav-item">
-                <a href="contacts.html" class="header__nav-link">Контакты</a>
-              </li>
-              <li class="header__nav-item dropdown">
-                <a href="#" class="header__nav-link">Сотрудничество</a>
-                <svg width="9" height="7" aria-hidden="true">
-                  <use xlink:href="svg/sprite.svg#icon-dropdown-arrow"></use>
-                </svg>
-                <div class="header__nav-dropdown dropdown-content">
-                  <a class="header__nav-link-dropdown" href="dms.html">ДМС</a>
-                  <a class="header__nav-link-dropdown" href="vacancies.html"
-                    >Вакансии</a
-                  >
-                  <a class="header__nav-link-dropdown" href="#">Предприятиям</a>
-                </div>
-              </li>
-            </ul>
-          </nav>
+
+        <div class="header__logo">
+          <a href="index.html" class="header__logo-link">
+            <img src="img/logos.svg" alt="Логотип клиники" />
+          </a>
+        </div>
+        <div class="header__logo--mobile">
+          <a href="index.html" class="header__logo-link">
+            <img class="clinic__logo" src="img/Clinic_logo.svg" alt="Логотип клиники" />
+          </a>
+        </div>
+        <div class="header__container-info">
+          <div class="header__text">
+            <a href="contacts.html" class="header__btn-address bth-reset">
+              <svg class="header__btn-address-icon" width="30" height="29" aria-hidden="true">
+                <use xlink:href="svg/sprite.svg#icon-address"></use>
+              </svg>
+              <p class="header__text-address">Адрес и режим работы</p>
+            </a>
+          </div>
+          <div class="header__list list-reset">
+            <a href="schedule.html" class="header__btn-item bth-reset">
+              <svg class="header__btn-icon" width="30" height="29" aria-hidden="true">
+                <use xlink:href="svg/sprite.svg#icon-booking"></use>
+              </svg>
+              <p class="header__item">Записаться</p>
+            </a>
+            <a href="med-card.html" class="header__btn-item bth-reset">
+              <svg class="header__btn-icon" width="30" height="29" aria-hidden="true">
+                <use xlink:href="svg/sprite.svg#icon-medcard"></use>
+              </svg>
+              <p class="header__item">Медкарта</p>
+            </a>
+          </div>
         </div>
       </div>
-    </header>
-
-    <main class="mains">
-      <section class="tax">
-        <div class="container">
-          <h1 class="tax__title">Налоговый вычет</h1>
-          <h2 class="tax__titles">
-            В сети клиник<span><br />«Здоровые дети» –</span>
-          </h2>
-          <p class="tax__text">
-            Вы можете получить документы для налогового вычета. Для этого Вам
-            необходимо заполнить заявку на нашем сайте или обратиться к
-            администраторам в регистратуру клиники.
-          </p>
-          <div class="tax__container">
-            <ul class="tax__list list-reset">
-              <li class="tax__item">
-                <svg class="tax__svg" width="40" height="40" aria-hidden="true">
-                  <use xlink:href="svg/sprite.svg#icon-human"></use>
-                </svg>
-                <h3 class="tax__item-title">
-                  Кто может получить налоговый вычет?
-                </h3>
-                <p class="tax__item-text">
-                  Налоговый вычет имеет право получать как сам пациент, так
-                  и&nbsp;его ближайшие родственники: родители за&nbsp;детей
-                  до&nbsp;18&nbsp;лет, в&nbsp;том числе приемных, дети
-                  за&nbsp;родителей, супруги, официальные опекуны, при условии:
-                </p>
-                <ul class="tax__info-list list-reset">
-                  <li class="tax__info-item">
-                    Ваш доход облагается НДФЛ (13%)
-                  </li>
-                  <li class="tax__info-item">
-                    Есть документы, подтверждающие факт оплаты медицинских услуг
-                  </li>
-                  <li class="tax__info-item">
-                    Медицинское учреждение имеет соответствующую лицензию
-                  </li>
-                </ul>
-                <div class="tax__info-wrap">
-                  <svg
-                    class="tax__info-svg"
-                    width="30"
-                    height="30"
-                    aria-hidden="true"
-                  >
-                    <use xlink:href="svg/sprite.svg#icon-ellipse-clock"></use>
-                  </svg>
-                  <p class="tax__info-wrap-text">
-                    Согласно требованию формирования пакета документов для
-                    налогового вычета
-                    <span
-                      >(письмо ФНС от&nbsp;31&nbsp;августа
-                      от&nbsp;31&nbsp;августа 2006&nbsp;г.
-                      N&nbsp;САЭ-6-04/876@&nbsp;/ пункт 2.4)</span
-                    >
-                    при наличии договора&nbsp;&mdash; заверенная лицензия
-                    на&nbsp;ведение медицинской деятельности не&nbsp;требуется,
-                    поскольку ее&nbsp;номер прописывается в&nbsp;договоре. При
-                    необходимости&nbsp;Вы можете самостоятельно
-                    <span>распечатать лицензии</span> c сайта.
-                  </p>
+      <div class="header__bottom">
+        <nav class="header__nav">
+          <ul class="header__nav-list list-reset">
+            <li class="header__nav-item">
+              <a href="doctors.html" class="header__nav-link">Врачи</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="price.html" class="header__nav-link">Цены</a>
+            </li>
+            <li class="header__nav-item dropdown">
+              <a href="#" class="header__nav-link">Услуги </a>
+              <svg width="9" height="7" aria-hidden="true">
+                <use xlink:href="svg/sprite.svg#icon-dropdown-arrow"></use>
+              </svg>
+              <div class="header__nav-dropdown dropdown-content__services">
+                <div>
+                  <a class="header__nav-link-dropdown" href="#">Детское отделение</a>
+                  <a class="header__nav-link-dropdown" href="#">Взрослое отделение</a>
+                  <a class="header__nav-link-dropdown" href="services.html">Хирургия</a>
+                  <a class="header__nav-link-dropdown" href="#">Лабораторная диагностика</a>
+                  <a class="header__nav-link-dropdown" href="#">УЗИ, ЭКГ</a>
+                  <a class="header__nav-link-dropdown" href="#">Нейросонография</a>
                 </div>
-              </li>
-              <li class="tax__item">
-                <svg class="tax__svg" width="40" height="40" aria-hidden="true">
-                  <use xlink:href="svg/sprite.svg#icon-rect-paths"></use>
+                <div>
+                  <a class="header__nav-link-dropdown" href="#">Вызов врача на дом</a>
+                  <a class="header__nav-link-dropdown" href="#">Вакцинация</a>
+                  <a class="header__nav-link-dropdown" href="#">Логопед-дефектолог</a>
+                  <a class="header__nav-link-dropdown" href="#">Аудиометрия</a>
+                  <a class="header__nav-link-dropdown" href="#">Тимпанометрия</a>
+                  <a class="header__nav-link-dropdown" href="programs.html">Комплексные программы</a>
+                </div>
+              </div>
+            </li>
+            <li class="header__nav-item dropdown">
+              <a href="#" class="header__nav-link dropdown-button">Пациентам</a>
+              <svg width="9" height="7" aria-hidden="true">
+                <use xlink:href="svg/sprite.svg#icon-dropdown-arrow"></use>
+              </svg>
+              <div class="header__nav-dropdown dropdown-content">
+                <a class="header__nav-link-dropdown" href="news.html">Новости</a>
+                <a class="header__nav-link-dropdown" href="company.html">О нас</a>
+                <a class="header__nav-link-dropdown" href="visit.html">Подготовка к визиту</a>
+                <a class="header__nav-link-dropdown" href="tax.html">Налоговый вычет</a>
+              </div>
+            </li>
+            <li class="header__nav-item">
+              <a href="calculator.html" class="header__nav-link">Калькулятор анализов</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="stock.html" class="header__nav-link">Акции</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="contacts.html" class="header__nav-link">Контакты</a>
+            </li>
+            <li class="header__nav-item dropdown">
+              <a href="#" class="header__nav-link">Сотрудничество</a>
+              <svg width="9" height="7" aria-hidden="true">
+                <use xlink:href="svg/sprite.svg#icon-dropdown-arrow"></use>
+              </svg>
+              <div class="header__nav-dropdown dropdown-content">
+                <a class="header__nav-link-dropdown" href="dms.html">ДМС</a>
+                <a class="header__nav-link-dropdown" href="vacancies.html">Вакансии</a>
+                <a class="header__nav-link-dropdown" href="#">Предприятиям</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="mains">
+    <section class="tax">
+      <div class="container">
+        <h1 class="tax__title">Налоговый вычет</h1>
+        <h2 class="tax__titles">
+          В сети клиник<span><br />«Здоровые дети» –</span>
+        </h2>
+        <p class="tax__text">
+          Вы можете получить документы для налогового вычета. Для этого Вам
+          необходимо заполнить заявку на нашем сайте или обратиться к
+          администраторам в регистратуру клиники.
+        </p>
+        <div class="tax__container">
+          <ul class="tax__list list-reset">
+            <li class="tax__item">
+              <svg class="tax__svg" width="40" height="40" aria-hidden="true">
+                <use xlink:href="svg/sprite.svg#icon-human"></use>
+              </svg>
+              <h3 class="tax__item-title">
+                Кто может получить налоговый вычет?
+              </h3>
+              <p class="tax__item-text">
+                Налоговый вычет имеет право получать как сам пациент, так
+                и&nbsp;его ближайшие родственники: родители за&nbsp;детей
+                до&nbsp;18&nbsp;лет, в&nbsp;том числе приемных, дети
+                за&nbsp;родителей, супруги, официальные опекуны, при условии:
+              </p>
+              <ul class="tax__info-list list-reset">
+                <li class="tax__info-item">
+                  Ваш доход облагается НДФЛ (13%)
+                </li>
+                <li class="tax__info-item">
+                  Есть документы, подтверждающие факт оплаты медицинских услуг
+                </li>
+                <li class="tax__info-item">
+                  Медицинское учреждение имеет соответствующую лицензию
+                </li>
+              </ul>
+              <div class="tax__info-wrap">
+                <svg class="tax__info-svg" width="30" height="30" aria-hidden="true">
+                  <use xlink:href="svg/sprite.svg#icon-ellipse-clock"></use>
                 </svg>
-                <h3 class="tax__item-title">
-                  За какой период можно получить налоговый вычет?
-                </h3>
-                <p class="tax__item-text">
-                  Налоговый вычет можно получить за&nbsp;последние 3&nbsp;года,
-                  например, в&nbsp;2025 году справку можно оформить
-                  за&nbsp;2022, 2023, 2024&nbsp;гг.
+                <p class="tax__info-wrap-text">
+                  Согласно требованию формирования пакета документов для
+                  налогового вычета
+                  <span>(письмо ФНС от&nbsp;31&nbsp;августа
+                    от&nbsp;31&nbsp;августа 2006&nbsp;г.
+                    N&nbsp;САЭ-6-04/876@&nbsp;/ пункт 2.4)</span>
+                  при наличии договора&nbsp;&mdash; заверенная лицензия
+                  на&nbsp;ведение медицинской деятельности не&nbsp;требуется,
+                  поскольку ее&nbsp;номер прописывается в&nbsp;договоре. При
+                  необходимости&nbsp;Вы можете самостоятельно
+                  <span>распечатать лицензии</span> c сайта.
                 </p>
-              </li>
-              <li class="tax__item">
-                <svg class="tax__svg" width="40" height="40" aria-hidden="true">
-                  <use xlink:href="svg/sprite.svg#icon-circle-clock"></use>
-                </svg>
-                <h3 class="tax__item-title">
-                  В какие сроки будут готовы документы?
-                </h3>
-                <p class="tax__item-text">
-                  Срок оформления справки для получения социального налогового
-                  вычета не&nbsp;превышает 5&nbsp;рабочих дней.
-                </p>
-              </li>
-              <li class="tax__item">
-                <svg class="tax__svg" width="40" height="40" aria-hidden="true">
-                  <use xlink:href="svg/sprite.svg#icon-shield-clock-alt"></use>
-                </svg>
-                <h3 class="tax__item-title">
-                  Как получить справку для налогового вычета в нашей клинике?
-                </h3>
-                <p class="tax__item-text">
-                  Заполните заявку на&nbsp;нашем сайте или обратитесь
-                  к&nbsp;администраторам в&nbsp;регистратуру клиники.
-                </p>
-                <span class="tax__item-span">Обратите внимание!</span>
-                <p class="tax__item-texts">
-                  Справка выдается на&nbsp;руки только налогоплательщику при
-                  предъявлении документа, удостоверяющего личность (паспорт).
-                </p>
-              </li>
-            </ul>
-            <button class="tax__btn bth-reset" id="openModalBtn">
-              Заказать справку
-              <svg
-                class="tax__btn-svg"
-                width="32"
-                height="32"
-                aria-hidden="true"
-              >
-                <use xlink:href="svg/sprite.svg#icon-button-arrow"></use>
+              </div>
+            </li>
+            <li class="tax__item">
+              <svg class="tax__svg" width="40" height="40" aria-hidden="true">
+                <use xlink:href="svg/sprite.svg#icon-rect-paths"></use>
+              </svg>
+              <h3 class="tax__item-title">
+                За какой период можно получить налоговый вычет?
+              </h3>
+              <p class="tax__item-text">
+                Налоговый вычет можно получить за&nbsp;последние 3&nbsp;года,
+                например, в&nbsp;2025 году справку можно оформить
+                за&nbsp;2022, 2023, 2024&nbsp;гг.
+              </p>
+            </li>
+            <li class="tax__item">
+              <svg class="tax__svg" width="40" height="40" aria-hidden="true">
+                <use xlink:href="svg/sprite.svg#icon-circle-clock"></use>
+              </svg>
+              <h3 class="tax__item-title">
+                В какие сроки будут готовы документы?
+              </h3>
+              <p class="tax__item-text">
+                Срок оформления справки для получения социального налогового
+                вычета не&nbsp;превышает 5&nbsp;рабочих дней.
+              </p>
+            </li>
+            <li class="tax__item">
+              <svg class="tax__svg" width="40" height="40" aria-hidden="true">
+                <use xlink:href="svg/sprite.svg#icon-shield-clock-alt"></use>
+              </svg>
+              <h3 class="tax__item-title">
+                Как получить справку для налогового вычета в нашей клинике?
+              </h3>
+              <p class="tax__item-text">
+                Заполните заявку на&nbsp;нашем сайте или обратитесь
+                к&nbsp;администраторам в&nbsp;регистратуру клиники.
+              </p>
+              <span class="tax__item-span">Обратите внимание!</span>
+              <p class="tax__item-texts">
+                Справка выдается на&nbsp;руки только налогоплательщику при
+                предъявлении документа, удостоверяющего личность (паспорт).
+              </p>
+            </li>
+          </ul>
+          <button class="tax__btn bth-reset" id="openModalBtn">
+            Заказать справку
+            <svg class="tax__btn-svg" width="32" height="32" aria-hidden="true">
+              <use xlink:href="svg/sprite.svg#icon-button-arrow"></use>
+            </svg>
+          </button>
+        </div>
+        <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+          <div class="modal-content">
+            <button class="modal__close bth-reset" id="modal__close" aria-label="Закрыть">
+              <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="22.4516" cy="22.2612" r="21.0592" fill="#EFF3FC" stroke="#535353" stroke-width="0.978148">
+                </circle>
+                <path
+                  d="M24.7485 30.2466L32.7345 22.2606M32.7345 22.2606L24.7485 14.2747M32.7345 22.2606L12.1699 22.2607"
+                  stroke="#535353" stroke-width="2.6551" stroke-linecap="round" stroke-linejoin="round"></path>
+                <circle cx="22.4506" cy="22.2612" r="21.5483" fill="#EFF3FC"></circle>
+                <path d="M29.7227 14.9899L15.1813 29.5313" stroke="#535353" stroke-width="2.6551"
+                  stroke-linecap="round"></path>
+                <path d="M15.1813 14.9902L29.7227 29.5316" stroke="#535353" stroke-width="2.6551"
+                  stroke-linecap="round"></path>
               </svg>
             </button>
-          </div>
-          <div
-            id="modal"
-            class="modal"
-            role="dialog"
-            aria-modal="true"
-            aria-labelledby="modalTitle"
-          >
-            <div class="modal-content">
-              <button class="modal__close bth-reset" id="modal__close" aria-label="Закрыть">
-                <svg
-                  width="44"
-                  height="44"
-                  viewBox="0 0 44 44"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle
-                    cx="22.4516"
-                    cy="22.2612"
-                    r="21.0592"
-                    fill="#EFF3FC"
-                    stroke="#535353"
-                    stroke-width="0.978148"
-                  ></circle>
-                  <path
-                    d="M24.7485 30.2466L32.7345 22.2606M32.7345 22.2606L24.7485 14.2747M32.7345 22.2606L12.1699 22.2607"
-                    stroke="#535353"
-                    stroke-width="2.6551"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                  <circle
-                    cx="22.4506"
-                    cy="22.2612"
-                    r="21.5483"
-                    fill="#EFF3FC"
-                  ></circle>
-                  <path
-                    d="M29.7227 14.9899L15.1813 29.5313"
-                    stroke="#535353"
-                    stroke-width="2.6551"
-                    stroke-linecap="round"
-                  ></path>
-                  <path
-                    d="M15.1813 14.9902L29.7227 29.5316"
-                    stroke="#535353"
-                    stroke-width="2.6551"
-                    stroke-linecap="round"
-                  ></path>
-                </svg>
-              </button>
-              <h1 id="modalTitle">Заявка на справку для налогового вычета</h1>
-              <p class="tax__modal-text">
-                Справка может быть заказана как для себя, так и для членов семьи
+            <h1 id="modalTitle">Заявка на справку для налогового вычета</h1>
+            <p class="tax__modal-text">
+              Справка может быть заказана как для себя, так и для членов семьи
+            </p>
+
+            <form id="taxForm">
+              <p class="tax__modal-strong">
+                Данные налогоплательщика (кому выдается справка):
               </p>
 
-              <form id="taxForm">
-                <p class="tax__modal-strong">
-                  Данные налогоплательщика (кому выдается справка):
+              <label class="tax__label" for="payerName">ФИО плательщика</label>
+              <input type="text" class="tax__indents" id="payerName" name="payerName" placeholder="Введите данные"
+                required />
+
+              <label class="tax__label" for="payerBirth">Дата рождения</label>
+              <input type="date" class="tax__indents" id="payerBirth" name="payerBirth" required />
+
+              <label class="tax__label" for="payerINN">ИНН плательщика</label>
+              <input type="text" class="tax__indents" id="payerINN" name="payerINN" placeholder="Введите данные"
+                required pattern="\d{10,12}" title="Введите 10-12 цифр" />
+
+              <label class="tax__label" for="payerPhone">Телефон</label>
+              <input type="text" class="tax__indents" id="payerPhone" name="payerPhone" placeholder="Введите данные"
+                required pattern="[\d\s\+\-\(\)]+" title="Введите корректный номер телефона" />
+
+              <label class="tax__label" for="payerEmail">E-mail</label>
+              <input class="tax__indents" type="email" id="payerEmail" name="payerEmail" placeholder="Введите данные"
+                required />
+
+              <p class="tax__modal-year">За какие годы нужна справка:</p>
+              <div class="checkbox-group" role="group" aria-label="Выбор годов">
+                <label class="checkbox-label">
+                  <input type="checkbox" name="years" value="2022" />
+                  <span class="checkmark checkmarks"></span>
+                  2022
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="years" value="2023" />
+                  <span class="checkmark checkmarks"></span>
+                  2023
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="years" value="2024" />
+                  <span class="checkmark checkmarks"></span>
+                  2024
+                </label>
+              </div>
+
+              <p class="tax__modal-texts">Данные пациента:</p>
+              <label class="checkbox-label" for="copyPayerData">
+                <input type="checkbox" id="copyPayerData" name="copyPayerData" />
+                <span class="checkmark"></span>
+                <p>
+                  Отметьте, если
+                  <span>пациент является налогоплательщиком.</span> Данные
+                  скопируются автоматически.
                 </p>
+              </label>
 
-                <label class="tax__label" for="payerName"
-                  >ФИО плательщика</label
-                >
-                <input
-                  type="text"
-                  class="tax__indents"
-                  id="payerName"
-                  name="payerName"
-                  placeholder="Введите данные"
-                  required
-                />
+              <label class="tax__label" for="patientName">ФИО плательщика</label>
+              <input class="tax__indents" type="text" id="patientName" name="patientName" placeholder="Введите данные"
+                required />
 
-                <label class="tax__label" for="payerBirth">Дата рождения</label>
-                <input
-                  type="date"
-                  class="tax__indents"
-                  id="payerBirth"
-                  name="payerBirth"
-                  required
-                />
+              <label class="tax__label" for="patientBirth">Дата рождения</label>
+              <input class="tax__indents" type="date" id="patientBirth" name="patientBirth" required />
 
-                <label class="tax__label" for="payerINN">ИНН плательщика</label>
-                <input
-                  type="text"
-                  class="tax__indents"
-                  id="payerINN"
-                  name="payerINN"
-                  placeholder="Введите данные"
-                  required
-                  pattern="\d{10,12}"
-                  title="Введите 10-12 цифр"
-                />
+              <label class="tax__label" for="patientRelation">Степень родства</label>
+              <select id="patientRelation" name="patientRelation" required>
+                <option class="option" value="" selected>
+                  Выберите из списка
+                </option>
+                <option value="parent">Родитель</option>
+                <option value="child">Ребёнок</option>
+                <option value="spouse">Супруг(а)</option>
+                <option value="other">Другой</option>
+              </select>
 
-                <label class="tax__label" for="payerPhone">Телефон</label>
-                <input
-                  type="text"
-                  class="tax__indents"
-                  id="payerPhone"
-                  name="payerPhone"
-                  placeholder="Введите данные"
-                  required
-                  pattern="[\d\s\+\-\(\)]+"
-                  title="Введите корректный номер телефона"
-                />
-
-                <label class="tax__label" for="payerEmail">E-mail</label>
-                <input
-                  class="tax__indents"
-                  type="email"
-                  id="payerEmail"
-                  name="payerEmail"
-                  placeholder="Введите данные"
-                  required
-                />
-
-                <p class="tax__modal-year">За какие годы нужна справка:</p>
-                <div
-                  class="checkbox-group"
-                  role="group"
-                  aria-label="Выбор годов"
-                >
-                  <label class="checkbox-label">
-                    <input type="checkbox" name="years" value="2022" />
-                    <span class="checkmark checkmarks"></span>
-                    2022
-                  </label>
-                  <label class="checkbox-label">
-                    <input type="checkbox" name="years" value="2023" />
-                    <span class="checkmark checkmarks"></span>
-                    2023
-                  </label>
-                  <label class="checkbox-label">
-                    <input type="checkbox" name="years" value="2024" />
-                    <span class="checkmark checkmarks"></span>
-                    2024
-                  </label>
-                </div>
-
-                <p class="tax__modal-texts">Данные пациента:</p>
-                <label class="checkbox-label" for="copyPayerData">
-                  <input
-                    type="checkbox"
-                    id="copyPayerData"
-                    name="copyPayerData"
-                  />
-                  <span class="checkmark"></span>
-                  <p>
-                    Отметьте, если
-                    <span>пациент является налогоплательщиком.</span> Данные
-                    скопируются автоматически.
-                  </p>
-                </label>
-
-                <label class="tax__label" for="patientName"
-                  >ФИО плательщика</label
-                >
-                <input
-                  class="tax__indents"
-                  type="text"
-                  id="patientName"
-                  name="patientName"
-                  placeholder="Введите данные"
-                  required
-                />
-
-                <label class="tax__label" for="patientBirth"
-                  >Дата рождения</label
-                >
-                <input
-                  class="tax__indents"
-                  type="date"
-                  id="patientBirth"
-                  name="patientBirth"
-                  required
-                />
-
-                <label class="tax__label" for="patientRelation"
-                  >Степень родства</label
-                >
-                <select id="patientRelation" name="patientRelation" required>
-                  <option class="option" value="" selected>
-                    Выберите из списка
-                  </option>
-                  <option value="parent">Родитель</option>
-                  <option value="child">Ребёнок</option>
-                  <option value="spouse">Супруг(а)</option>
-                  <option value="other">Другой</option>
-                </select>
-
-                <button
-                  class="tax__modal-btn bth-reset"
-                  type="button"
-                  id="addPatientBtn"
-                >
-                  Добавить пациента
-                  <svg
-                    class="tax__modal-btn-svg"
-                    width="32"
-                    height="32"
-                    aria-hidden="true"
-                  >
-                    <use xlink:href="svg/sprite.svg#icon-button-arrow"></use>
-                  </svg>
-                </button>
-
-                <p class="tax__modal-dops">Дополнительная информация:</p>
-                <textarea
-                  id="additionalInfo"
-                  name="additionalInfo"
-                  placeholder="Оставьте Ваш комментарий (необязательное поле)"
-                ></textarea>
-
-                <label class="checkbox-label" for="acceptTerms">
-                  <input
-                    type="checkbox"
-                    id="acceptTerms"
-                    name="acceptTerms"
-                    required
-                  />
-                  <span class="checkmark"></span>
-                  <p>
-                    Принимаю <span>условия соглашений</span> и даю разрешение на
-                    обработку персональных данных в соответствии с
-                    <span>Политикой Компании</span>
-                  </p>
-                </label>
-
-                <button
-                  class="tax__modal-btn-submit bth-reset"
-                  type="submit"
-                  id="submitBtn"
-                >
-                  Отправить
-                  <svg
-                    class="tax__modal-btn-svg"
-                    width="32"
-                    height="32"
-                    aria-hidden="true"
-                  >
-                    <use xlink:href="svg/sprite.svg#icon-button-arrow"></use>
-                  </svg>
-                </button>
-              </form>
-            </div>
-          </div>
-
-          <div class="tax__licenses">
-            <h4 class="tax__licenses-title">
-              Лицензия и реквизиты юридического лица
-            </h4>
-            <dl class="tax__licenses-dl">
-              <dt class="tax__licenses-dt">Полное наименование:</dt>
-              <dd class="tax__licenses-dd">
-                ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "МЕДЛАЙН"
-              </dd>
-
-              <dt class="tax__licenses-dt">Почтовый и юридический адрес:</dt>
-              <dd class="tax__licenses-dd">
-                140083, обл. Московская,<br />
-                г. Лыткарино, кв-л 3а, д. 29
-              </dd>
-
-              <dt class="tax__licenses-dt">ОГРН:</dt>
-              <dd class="tax__licenses-dd">1125027011339</dd>
-
-              <dt class="tax__licenses-dt">ИНН:</dt>
-              <dd class="tax__licenses-dd">5027188623</dd>
-
-              <dt class="tax__licenses-dt">ООО "МЕДЛАЙН"</dt>
-              <dd class="tax__licenses-dd">
-                Лицензия № Л041-01162-50/00366730<br />от 29.03.2018
-              </dd>
-
-              <button class="tax__licenses-btn bth-reset">
-                Скачать лицензию
-                <svg
-                  class="tax__licenses-btn-svg"
-                  width="32"
-                  height="32"
-                  aria-hidden="true"
-                >
+              <button class="tax__modal-btn bth-reset" type="button" id="addPatientBtn">
+                Добавить пациента
+                <svg class="tax__modal-btn-svg" width="32" height="32" aria-hidden="true">
                   <use xlink:href="svg/sprite.svg#icon-button-arrow"></use>
                 </svg>
               </button>
-            </dl>
+
+              <p class="tax__modal-dops">Дополнительная информация:</p>
+              <textarea id="additionalInfo" name="additionalInfo"
+                placeholder="Оставьте Ваш комментарий (необязательное поле)"></textarea>
+
+              <label class="checkbox-label" for="acceptTerms">
+                <input type="checkbox" id="acceptTerms" name="acceptTerms" required />
+                <span class="checkmark"></span>
+                <p>
+                  Принимаю <span>условия соглашений</span> и даю разрешение на
+                  обработку персональных данных в соответствии с
+                  <span>Политикой Компании</span>
+                </p>
+              </label>
+
+              <button class="tax__modal-btn-submit bth-reset" type="submit" id="submitBtn">
+                Отправить
+                <svg class="tax__modal-btn-svg" width="32" height="32" aria-hidden="true">
+                  <use xlink:href="svg/sprite.svg#icon-button-arrow"></use>
+                </svg>
+              </button>
+            </form>
           </div>
         </div>
-      </section>
-    </main>
 
-    <script defer src="js/main.js"></script>
-    <script defer src="js/tax.js"></script>
-  </body>
+        <div class="tax__licenses">
+          <h4 class="tax__licenses-title">
+            Лицензия и реквизиты юридического лица
+          </h4>
+          <dl class="tax__licenses-dl">
+            <dt class="tax__licenses-dt">Полное наименование:</dt>
+            <dd class="tax__licenses-dd">
+              ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "МЕДЛАЙН"
+            </dd>
+
+            <dt class="tax__licenses-dt">Почтовый и юридический адрес:</dt>
+            <dd class="tax__licenses-dd">
+              140083, обл. Московская,<br />
+              г. Лыткарино, кв-л 3а, д. 29
+            </dd>
+
+            <dt class="tax__licenses-dt">ОГРН:</dt>
+            <dd class="tax__licenses-dd">1125027011339</dd>
+
+            <dt class="tax__licenses-dt">ИНН:</dt>
+            <dd class="tax__licenses-dd">5027188623</dd>
+
+            <dt class="tax__licenses-dt">ООО "МЕДЛАЙН"</dt>
+            <dd class="tax__licenses-dd">
+              Лицензия № Л041-01162-50/00366730<br />от 29.03.2018
+            </dd>
+
+            <button class="tax__licenses-btn bth-reset">
+              Скачать лицензию
+              <svg class="tax__licenses-btn-svg" width="32" height="32" aria-hidden="true">
+                <use xlink:href="svg/sprite.svg#icon-button-arrow"></use>
+              </svg>
+            </button>
+          </dl>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script defer src="js/main.js"></script>
+  <script defer src="js/tax.js"></script>
+</body>
+
 </html>

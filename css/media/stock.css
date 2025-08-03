@@ -26,7 +26,7 @@
 
 @media (max-width: 1024px) {
   .stock__title {
-    margin-top: 20px;
+    margin-top: 24px;
   }
 
   .stock__list {
@@ -149,7 +149,7 @@
   }
 
   .main {
-    padding-bottom: 50px;
+    padding-bottom: 70px;
   }
 }
 

@@ -1,4 +1,3 @@
-
 @media (min-width: 600px) {
   .tax__licenses {
     max-width: 600px;
@@ -21,7 +20,6 @@
     margin-bottom: 0;
   }
 }
-
 
 @media (min-width: 900px) {
   .tax__licenses {
@@ -96,7 +94,6 @@
     font-size: 18px;
   }
 }
-
 
 @media (min-width: 1400px) {
   .container {

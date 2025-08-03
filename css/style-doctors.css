@@ -119,10 +119,10 @@ body {
 .doctors__select {
   padding: 10px 14px;
   border-radius: 8px;
-  border: 1px solid #C4C3D3;
+  border: 1px solid #c4c3d3;
   font-size: 14px;
   width: 100%;
-  color: #C4C3D3;
+  color: #c4c3d3;
   background-color: transparent;
   appearance: none;
   -webkit-appearance: none;
@@ -130,11 +130,11 @@ body {
 }
 
 input::placeholder {
-  color: #C4C3D3;
+  color: #c4c3d3;
 }
 
 select option {
-  color: #6A6A6A;
+  color: #6a6a6a;
 }
 
 select:focus-visible {
@@ -154,9 +154,9 @@ select:focus-visible {
 
 .doctors__select-trigger {
   padding: 10px 40px 10px 14px;
-  border: 1px solid #C4C3D3;
+  border: 1px solid #c4c3d3;
   border-radius: 8px;
-  color: #C4C3D3;
+  color: #c4c3d3;
   cursor: pointer;
   position: relative;
   display: flex;
@@ -190,7 +190,7 @@ select:focus-visible {
   background: white;
   max-height: 200px;
   overflow-y: auto;
-  box-shadow: 0 2px 6px rgba(137,124,255,0.3);
+  box-shadow: 0 2px 6px rgba(137, 124, 255, 0.3);
   display: none;
   z-index: 10;
 }
@@ -203,12 +203,10 @@ select:focus-visible {
   display: block;
 }
 
-
-
 .doctors__select-options li {
   padding: 10px 14px;
   cursor: pointer;
-  color: #6A6A6A;
+  color: #6a6a6a;
   transition: background-color 0.2s ease;
 }
 
@@ -217,15 +215,14 @@ select:focus-visible {
 }
 
 .doctors__arrow svg path {
-  stroke: #6A6A6A;
+  stroke: #6a6a6a;
   transition: stroke 0.3s ease;
 }
 
 /* При открытом селекте цвет стрелки */
 .doctors__custom-select.open .doctors__arrow svg path {
-  stroke: #897CFF;
+  stroke: #897cff;
 }
-
 
 .doctors__autocomplete {
   position: absolute;
@@ -249,7 +246,6 @@ select:focus-visible {
 .doctors__autocomplete li:hover {
   background-color: #f2f2f2;
 }
-
 
 .doctors__list {
   display: grid;
@@ -286,7 +282,6 @@ select:focus-visible {
 
 .doctors__img {
   margin-bottom: 20px;
-  
 }
 
 .doctors__item {
@@ -304,11 +299,9 @@ select:focus-visible {
   align-items: flex-start;
 }
 
-
 .doctors__img:hover {
   box-shadow: 0 0 0 2px var(--color-slate-blue);
   border-radius: 7px;
-  
 }
 
 /* doctors-card */

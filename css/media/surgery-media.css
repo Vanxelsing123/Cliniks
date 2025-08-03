@@ -24,7 +24,7 @@
     padding-bottom: 25px;
   }
   .surgery__title {
-    margin-top: 20px;
+    margin-top: 24px;
     font-size: 32px;
   }
 
@@ -177,7 +177,6 @@
 }
 
 @media (max-width: 425px) {
-  
   .help__item {
     width: 330px;
   }
@@ -193,8 +192,7 @@
   }
 }
 
-
 .on-sale {
-    color: red;
-    font-weight: 700;
+  color: red;
+  font-weight: 700;
 }

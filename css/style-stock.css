@@ -131,7 +131,7 @@ body {
   color: var(--color-signal-black);
 }
 
-.stock__wrap-text span {
+.stock__wrap-text a {
   font-weight: 500;
   color: var(--color-slate-blue);
 }

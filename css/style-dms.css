@@ -103,7 +103,7 @@ body {
 }
 
 .dms {
-  padding-top: 20px;
+  padding-top: 24px;
 }
 
 .dms__title {
@@ -287,6 +287,10 @@ body {
   color: var(--color-gray-brown);
 }
 
+.dms__cooperation-contacts {
+  padding-top: 32px;
+}
+
 .dms__footer-text {
   display: flex;
   align-items: center;
@@ -298,11 +302,12 @@ body {
   color: var(--color-gray-brown);
 }
 
-.dms__footer-svg {
+.dms__cooperation-svg {
   margin-right: 10px;
+  flex-shrink: 0;
 }
 
-.dms__footer-link {
+.dms__cooperation-link {
   padding-left: 55px;
   font-weight: 500;
   font-size: 24px;
@@ -316,16 +321,14 @@ body {
 }
 
 .dms__footer-list {
-  max-width: 340px;
+  width: 340px;
+  margin-top: 44px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
 
 .dms__footer-list:not(:last-child) {
   margin-bottom: 15px;
-}
-
-.dms__footer {
-  padding-bottom: 30px;
 }

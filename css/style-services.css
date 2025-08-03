@@ -1,27 +1,27 @@
-@import url('./header.css');
-@import url('./footer.css');
+@import url("./header.css");
+@import url("./footer.css");
 
 @font-face {
-	font-family: 'Inter';
-	src: local('InterMedium'), url('../fonts/InterMedium.woff2') format('woff2'),
-		url('../fonts/InterMedium.woff') format('woff');
-	font-style: normal;
-	font-weight: 500;
-	font-display: swap;
+  font-family: "Inter";
+  src: local("InterMedium"), url("../fonts/InterMedium.woff2") format("woff2"),
+    url("../fonts/InterMedium.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
 }
 
 @font-face {
-	font-family: 'Inter';
-	src: local('InterRegular'), url('../fonts/InterRegular.woff2') format('woff2'),
-		url('../fonts/InterRegular.woff') format('woff');
-	font-style: normal;
-	font-weight: 400;
-	font-display: swap;
+  font-family: "Inter";
+  src: local("InterRegular"), url("../fonts/InterRegular.woff2") format("woff2"),
+    url("../fonts/InterRegular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
 }
 
 html {
-	box-sizing: border-box;
-	scroll-behavior: smooth;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -31,391 +31,391 @@ h3,
 h4,
 h5,
 h6 {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 *,
 *::before,
 *::after {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 a {
-	color: inherit;
-	text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 img,
 svg {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 body {
-	min-width: 380px;
-	font-family: 'Inter', sans-serif;
-	background-color: var(--color-white);
+  min-width: 380px;
+  font-family: "Inter", sans-serif;
+  background-color: var(--color-white);
 }
 
 :root {
-	--color-smoky-white: #f5f5f5;
-	--color-white: #ffffff;
-	--color-wet-asphalt: #4e4e4e;
-	--color-lavender: #eff3fc;
-	--color-slate-blue: #897cff;
-	--color-signal-black: #313131;
-	--color-signa-black: #2c2c2c;
-	--color-grey: #7a7a7a;
-	--color-almost-black: #141414;
-	--color-light-pinkish: #dad7ff;
-	--color-lavender-pink: #f7b7efb5;
-	--color-heavenly: #a3b5ffb3;
-	--color-asphalt: #535353;
-	--color-gray-brown: #3d3d3d;
-	--color-dull-grey: #6a6a6a;
-	--color-blue-alice: #eff3ff;
+  --color-smoky-white: #f5f5f5;
+  --color-white: #ffffff;
+  --color-wet-asphalt: #4e4e4e;
+  --color-lavender: #eff3fc;
+  --color-slate-blue: #897cff;
+  --color-signal-black: #313131;
+  --color-signa-black: #2c2c2c;
+  --color-grey: #7a7a7a;
+  --color-almost-black: #141414;
+  --color-light-pinkish: #dad7ff;
+  --color-lavender-pink: #f7b7efb5;
+  --color-heavenly: #a3b5ffb3;
+  --color-asphalt: #535353;
+  --color-gray-brown: #3d3d3d;
+  --color-dull-grey: #6a6a6a;
+  --color-blue-alice: #eff3ff;
 }
 
 /*Blog*/
 
 .container {
-	max-width: 1400px;
-	margin: 0 auto;
-	padding: 0 50px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 50px;
 }
 
 .list-reset {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .flex {
-	display: flex;
+  display: flex;
 }
 
 /* content */
 .main {
-	padding-bottom: 100px;
+  padding-bottom: 100px;
 }
 
 .surgery {
-	padding-bottom: 60px;
+  padding-bottom: 60px;
 }
 
 .surgery__title {
-	font-weight: 400;
-	font-size: 45px;
-	line-height: 150%;
-	letter-spacing: -0.02em;
-	margin-bottom: 20px;
-	color: var(--color-gray-brown);
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  margin-bottom: 20px;
+  color: var(--color-gray-brown);
 }
 
 .surgery__container {
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .surgery__info {
-	display: flex;
-	flex-direction: column;
-	padding: 35px 80px;
-	max-width: 660px;
-	border: 1px solid #e7eafb;
-	border-radius: 30px;
-	background-color: rgba(222, 230, 254, 0.5);
+  display: flex;
+  flex-direction: column;
+  padding: 35px 80px;
+  max-width: 660px;
+  border: 1px solid #e7eafb;
+  border-radius: 30px;
+  background-color: rgba(222, 230, 254, 0.5);
 }
 
 .surgery__info-title {
-	font-weight: 400;
-	font-size: 37px;
-	line-height: 156%;
-	letter-spacing: -0.02em;
-	margin-bottom: 5px;
-	color: var(--color-gray-brown);
+  font-weight: 400;
+  font-size: 37px;
+  line-height: 156%;
+  letter-spacing: -0.02em;
+  margin-bottom: 5px;
+  color: var(--color-gray-brown);
 }
 
 .surgery__svg--mobile {
-	display: none;
+  display: none;
 }
 
 .surgery__info-title span {
-	color: var(--color-slate-blue);
+  color: var(--color-slate-blue);
 }
 
 .surgery__info-text {
-	max-width: 460px;
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 156%;
-	letter-spacing: -0.02em;
-	margin-bottom: 45px;
-	color: var(--color-gray-brown);
+  max-width: 460px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: -0.02em;
+  margin-bottom: 45px;
+  color: var(--color-gray-brown);
 }
 
 .surgery__list {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .surgery__item {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .surgery__item:not(:last-child) {
-	margin-bottom: 35px;
+  margin-bottom: 35px;
 }
 
 .surgery__item-title {
-	font-weight: 400;
-	font-size: 31px;
-	line-height: 120%;
-	letter-spacing: -0.02em;
-	margin-bottom: 5px;
-	color: var(--color-gray-brown);
+  font-weight: 400;
+  font-size: 31px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  margin-bottom: 5px;
+  color: var(--color-gray-brown);
 }
 
 .surgery__item-text {
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 156%;
-	letter-spacing: -0.02em;
-	color: var(--color-dull-grey);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 156%;
+  letter-spacing: -0.02em;
+  color: var(--color-dull-grey);
 }
 
 .surgery__treatment-wrap {
-	position: relative;
-	max-width: 550px;
-	padding: 20px 12px 20px 35px;
-	border-radius: 30px;
-	border: 1px solid #e7eafb;
-	background-color: rgba(222, 230, 254, 0.5);
+  position: relative;
+  max-width: 550px;
+  padding: 20px 12px 20px 35px;
+  border-radius: 30px;
+  border: 1px solid #e7eafb;
+  background-color: rgba(222, 230, 254, 0.5);
 }
 
 .surgery__treatment-svg {
-	position: absolute;
-	top: 0;
-	right: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .surgery__treatment-img {
-	display: flex;
-	margin-bottom: 15px;
+  display: flex;
+  margin-bottom: 15px;
 }
 
 .surgery__treatment-text {
-	font-weight: 400;
-	font-size: 24px;
-	line-height: 120%;
-	letter-spacing: -0.02em;
-	margin-bottom: 10px;
-	color: var(--color-gray-brown);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+  color: var(--color-gray-brown);
 }
 
 .surgery__treatment-text span {
-	color: var(--color-slate-blue);
+  color: var(--color-slate-blue);
 }
 
 .surgery__treatment-texts {
-	max-width: 255px;
-	font-weight: 400;
-	font-size: 17px;
-	line-height: 140%;
-	letter-spacing: -0.02em;
-	color: var(--color-dull-grey);
+  max-width: 255px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  color: var(--color-dull-grey);
 }
 
 /* help */
 .help {
-	padding-top: 60px;
-	padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .help__title {
-	max-width: 680px;
-	font-weight: 400;
-	font-size: 32px;
-	line-height: 130%;
-	letter-spacing: -0.02em;
-	margin-bottom: 120px;
-	color: var(--color-gray-brown);
+  max-width: 680px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 130%;
+  letter-spacing: -0.02em;
+  margin-bottom: 120px;
+  color: var(--color-gray-brown);
 }
 
 .help__title span {
-	color: var(--color-slate-blue);
+  color: var(--color-slate-blue);
 }
 
 .help__list {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 100px 60px;
-	counter-reset: card;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 100px 60px;
+  counter-reset: card;
 }
 
 .help__list--mob {
-	display: none;
+  display: none;
 }
 
 .help__item {
-	width: 370px;
-	display: flex;
+  width: 370px;
+  display: flex;
 }
 
 .doctors__item:nth-child(3n) {
-	margin-right: 0;
+  margin-right: 0;
 }
 
 .doctors__item:nth-last-child(-n + 3) {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .help__title-view {
-	font-weight: 400;
-	font-size: 26px;
-	line-height: 120%;
-	letter-spacing: -0.02em;
-	margin-bottom: 15px;
-	color: var(--color-gray-brown);
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  margin-bottom: 15px;
+  color: var(--color-gray-brown);
 }
 
 .help__text-view {
-	font-weight: 500;
-	font-size: 15px;
-	line-height: 140%;
-	letter-spacing: -0.02em;
-	color: var(--color-dull-grey);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  color: var(--color-dull-grey);
 }
 
 /* jobs */
 .jobs {
-	padding-top: 60px;
-	padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .container__jobs {
-	max-width: 950px;
-	padding: 50px 35px 50px 80px;
-	border-radius: 24px;
-	border: 1px solid #e7eafb;
-	background-color: var(--color-blue-alice);
+  max-width: 950px;
+  padding: 50px 35px 50px 80px;
+  border-radius: 24px;
+  border: 1px solid #e7eafb;
+  background-color: var(--color-blue-alice);
 }
 
 .jobs__item {
-	position: relative;
-	display: flex;
+  position: relative;
+  display: flex;
 }
 
 .jobs__title {
-	font-weight: 400;
-	font-size: 27px;
-	line-height: 156%;
-	letter-spacing: -0.02em;
-	margin-bottom: 10px;
-	color: var(--color-signal-black);
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 156%;
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+  color: var(--color-signal-black);
 }
 
 .jobs__text {
-	font-weight: 400;
-	font-size: 20px;
-	line-height: 156%;
-	letter-spacing: -0.02em;
-	color: var(--color-dull-grey);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 156%;
+  letter-spacing: -0.02em;
+  color: var(--color-dull-grey);
 }
 
 .jobs__item:not(:last-child) {
-	padding-bottom: 60px;
-	border-bottom: 1px solid rgba(140, 133, 218, 0.4);
+  padding-bottom: 60px;
+  border-bottom: 1px solid rgba(140, 133, 218, 0.4);
 }
 
 .jobs__item:nth-child(2) {
-	padding-top: 45px;
+  padding-top: 45px;
 }
 
 .jobs__svg {
-	position: absolute;
-	top: -55px;
-	right: 0;
+  position: absolute;
+  top: -55px;
+  right: 0;
 }
 
 .jobs__item--svg-mob {
-	display: none;
+  display: none;
 }
 
 /* technologies */
 .technologies {
-	padding-top: 60px;
+  padding-top: 60px;
 }
 
 .technologies__text {
-	max-width: 540px;
-	font-weight: 400;
-	font-size: 32px;
-	line-height: 156%;
-	letter-spacing: -0.02em;
-	margin-bottom: 85px;
-	color: var(--color-gray-brown);
+  max-width: 540px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 156%;
+  letter-spacing: -0.02em;
+  margin-bottom: 85px;
+  color: var(--color-gray-brown);
 }
 
 .technologies__text span {
-	color: var(--color-slate-blue);
+  color: var(--color-slate-blue);
 }
 
 .technologies__list {
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .technologies__item {
-	position: relative;
-	width: 30%;
-	padding: 35px 20px 75px 60px;
-	border-radius: 25px;
-	background-color: var(--color-blue-alice);
+  position: relative;
+  width: 30%;
+  padding: 35px 20px 75px 60px;
+  border-radius: 25px;
+  background-color: var(--color-blue-alice);
 }
 
 .technologies__item svg {
-	position: absolute;
-	top: 20px;
-	right: 10px;
+  position: absolute;
+  top: 20px;
+  right: 10px;
 }
 
 .technologies__texts {
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 130%;
-	letter-spacing: -0.02em;
-	margin-bottom: 45px;
-	color: var(--color-dull-grey);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  letter-spacing: -0.02em;
+  margin-bottom: 45px;
+  color: var(--color-dull-grey);
 }
 
 .technologies__title {
-	font-weight: 400;
-	font-size: 30px;
-	line-height: 110%;
-	letter-spacing: -0.02em;
-	margin-bottom: 15px;
-	color: var(--color-gray-brown);
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+  margin-bottom: 15px;
+  color: var(--color-gray-brown);
 }
 
 .technologies__item-text {
-	font-weight: 400;
-	font-size: 13px;
-	line-height: 190%;
-	letter-spacing: -0.02em;
-	color: var(--color-gray-brown);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 190%;
+  letter-spacing: -0.02em;
+  color: var(--color-gray-brown);
 }
 
 .technologies__item-text span {
-	font-weight: 500;
-	color: var(--color-slate-blue);
+  font-weight: 500;
+  color: var(--color-slate-blue);
 }
 
 .technologies-swiper {
-	display: none;
+  display: none;
 }
 
 .t1148__scroll-icon-wrapper {
-	display: none;
+  display: none;
 }

@@ -72,6 +72,23 @@
 		overflow-y: auto;
 		-webkit-overflow-scrolling: touch;
 	}
+	/* Оставляем прокрутку и ограничения внутри меню */
+	.nav__content {
+		display: flex;
+		flex-wrap: nowrap;
+		padding: 20px 20px 30px 20px;
+		width: 380px;
+
+		position: absolute;
+		top: 145px;
+		left: -380px;
+		border-radius: 10px;
+		background-color: #f5f4ff;
+		z-index: 1000;
+		transition: transform 0.5s;
+		overflow-y: auto;
+		-webkit-overflow-scrolling: touch;
+	}
 
 	.header__nav-list {
 		display: block;
@@ -273,6 +290,9 @@
 		top: -11px;
 		left: 0;
 		height: 100%;
+	}
+	.nav__content {
+		top: 90px;
 	}
 
 	.container {
