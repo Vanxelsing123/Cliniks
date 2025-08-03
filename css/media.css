@@ -281,7 +281,7 @@
 @media (max-width: 768px) {
 	.nav__content {
 		top: 90px;
-		bottom: 0;
+		bottom: 5px;
 	}
 
 	.mobile-nav-wrapper {
@@ -290,9 +290,6 @@
 		top: -11px;
 		left: 0;
 		height: 100%;
-	}
-	.nav__content {
-		top: 90px;
 	}
 
 	.container {
