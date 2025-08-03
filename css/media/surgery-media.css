@@ -177,7 +177,6 @@
 }
 
 @media (max-width: 425px) {
-  
   .help__item {
     width: 330px;
   }
@@ -193,8 +192,7 @@
   }
 }
 
-
 .on-sale {
-    color: red;
-    font-weight: 700;
+  color: red;
+  font-weight: 700;
 }

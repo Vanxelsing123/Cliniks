@@ -1,121 +1,118 @@
 @media (max-width: 1200px) {
-    .visit__list {
-        justify-content: space-around;
-    }
-    .container__visit-wrap-list {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .visit__list {
+    justify-content: space-around;
+  }
+  .container__visit-wrap-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 1024px) {
-    .visit__title {
-        margin-top: 20px;
-    }
-    .container__visit-wrap-item {
-        background-color: var(--color-white);
-    }
-   /*  card */
-    .visit__card-title {
-        margin-top: 20px;
-    }
-    .visit__card-text {
-        margin-bottom: 30px;
-    }
-    .visit__card-wraps {
-        background-color: var(--color-white);
-    }
-    .visit__card-wrap-list {
-        display: flex;
-        justify-content: space-around;
-    }
-    .visit__card-wrap-item:not(:last-child) {
-        margin-bottom: 10px;
-    }
-    .visit__card-wrap-text {
-        padding-left: 0;
-    }
-    .visit__card-container {
-        flex-direction: column;
-        height: 850px;
-    }
-    .main {
-        padding-bottom: 20px;
-    }
+  .visit__title {
+    margin-top: 20px;
+  }
+  .container__visit-wrap-item {
+    background-color: var(--color-white);
+  }
+  /*  card */
+  .visit__card-title {
+    margin-top: 20px;
+  }
+  .visit__card-text {
+    margin-bottom: 30px;
+  }
+  .visit__card-wraps {
+    background-color: var(--color-white);
+  }
+  .visit__card-wrap-list {
+    display: flex;
+    justify-content: space-around;
+  }
+  .visit__card-wrap-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .visit__card-wrap-text {
+    padding-left: 0;
+  }
+  .visit__card-container {
+    flex-direction: column;
+    height: 850px;
+  }
+  .main {
+    padding-bottom: 20px;
+  }
 }
 
 @media (max-width: 768px) {
-    .visit__title {
-        font-size: 30px;
-        margin-bottom: 30px;
-    }
-    .visit__text-span {
-        font-size: 25px;
-    }
-    .container__visit {
-        margin-bottom: 25px;
-    }
-    .visit__list {
-        flex-direction: column;
-        align-items: center;
-    }
-    .visit__item {
-        margin-bottom: 15px;
-    }
-    .visit__item:last-child {
-        margin-bottom: 0;
-    }
-    .container__visit-wrap-list {
-         grid-template-columns: repeat(1, 1fr);
-         justify-items: centers;
+  .visit__title {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .visit__text-span {
+    font-size: 25px;
+  }
+  .container__visit {
+    margin-bottom: 25px;
+  }
+  .visit__list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .visit__item {
+    margin-bottom: 15px;
+  }
+  .visit__item:last-child {
+    margin-bottom: 0;
+  }
+  .container__visit-wrap-list {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: centers;
+  }
+  .container__visit-wrap-item svg {
+    display: none;
+  }
 
-    }
-    .container__visit-wrap-item svg {
-        display: none;
-    }
-
-   /*  card */
-   .visit__card-wrap {
+  /*  card */
+  .visit__card-wrap {
     padding: 25px 20px 52px 20px;
-   }
-   .visit__card-container {
+  }
+  .visit__card-container {
     height: 754px;
-   }
+  }
 }
 
 @media (max-width: 425px) {
-    .container__visit-wrap-list {
-        justify-items: auto;
-    }
-    .container__visit-wrap-item {
-        padding: 50px 30px;
-    }
+  .container__visit-wrap-list {
+    justify-items: auto;
+  }
+  .container__visit-wrap-item {
+    padding: 50px 30px;
+  }
 
-    /* card */
-    .visit__card-title {
-        font-size: 21px;
-    }
-    .visit__card-container {
-        align-items: center;
-        height: 795px;
-        
-    }
-    .visit__card-wrap-list {
-        flex-direction: column;
-       
-    }
-    .visit__card-wrap-titles {
-        font-size: 20px;
-    }
-    .visit__card-wraps-svg {
-        display: none;
-    }
-    .visit__card-wraps {
-        padding: 30px 5px 10px 10px;
-    }
-    .visit__card-wraps-list {
-        padding-left: 0;
-    }
-    .container__visit-wrap-list {
-        gap: 30px;
-    }
+  /* card */
+  .visit__card-title {
+    font-size: 21px;
+  }
+  .visit__card-container {
+    align-items: center;
+    height: 795px;
+  }
+  .visit__card-wrap-list {
+    flex-direction: column;
+  }
+  .visit__card-wrap-titles {
+    font-size: 20px;
+  }
+  .visit__card-wraps-svg {
+    display: none;
+  }
+  .visit__card-wraps {
+    padding: 30px 5px 10px 10px;
+  }
+  .visit__card-wraps-list {
+    padding-left: 0;
+  }
+  .container__visit-wrap-list {
+    gap: 30px;
+  }
 }

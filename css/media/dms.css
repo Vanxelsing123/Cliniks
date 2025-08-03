@@ -4,21 +4,18 @@
   }
 }
 
-
-
-
 @media (min-width: 480px) {
   .dms__title {
-    font-size: 35px; 
+    font-size: 35px;
   }
   .dms__titles {
-    font-size: 25px; 
+    font-size: 25px;
   }
   .dms__titles span {
     font-size: 25px;
   }
   .dms__text {
-    font-size: 18px; 
+    font-size: 18px;
   }
   .dms__insurance-text {
     font-size: 18px;
@@ -36,31 +33,29 @@
     font-size: 20px;
   }
   .dms__spectrum-title {
-    font-size: 25px; 
+    font-size: 25px;
   }
   .dms__spectrum-items {
-    font-size: 20px; 
+    font-size: 20px;
   }
   .dms__cooperation-title {
-    font-size: 30px; 
+    font-size: 30px;
   }
   .dms__cooperation-title span {
     font-size: 30px;
   }
   .dms__cooperation-text {
-    font-size: 30px; 
+    font-size: 30px;
   }
   .dms__cooperation-span {
-    font-size: 18px; 
+    font-size: 18px;
   }
 
- 
   .dms__svg,
   .dms__spectrum-svg {
     flex-shrink: 0;
   }
 }
-
 
 @media (min-width: 768px) {
   .dms__title {
@@ -109,5 +104,3 @@
     font-size: 20px;
   }
 }
-
-
