@@ -16,74 +16,84 @@
     <div class="container">
       <div class="header__top">
         <div class="burger-wrapper">
-
           <button class="header__burger-btn bth-reset" id="burger" aria-label="Открыть меню">
             <span></span>
             <span></span>
             <span></span>
           </button>
-
-          <nav class="mobile-nav nav__content">
-            <ul class="header__nav-list list-reset">
-              <li class="header__nav-item"><a href="doctors.html" class="header__nav-link">Врачи</a></li>
-              <li class="header__nav-item"><a href="price.html" class="header__nav-link">Цены</a></li>
-              <li class="header__nav-item dropdown">
-                <a href="#" class="header__nav-link dropdown-button">Пациентам</a>
-                <div class="header__nav-dropdown ">
-                  <a class="header__nav-link-dropdown" href="news.html">Новости</a>
-                  <a class="header__nav-link-dropdown" href="company.html">О нас</a>
-                  <a class="header__nav-link-dropdown" href="visit.html">Подготовка<br>к визиту</a>
-                  <a class="header__nav-link-dropdown" href="tax.html">Налоговый вычет</a>
-                </div>
-              </li>
-              <li class="header__nav-item"><a href="calculator.html"
-                  class="header__nav-link">Калькулятор<br>анализов</a></li>
-              <li class="header__nav-item"><a href="stock.html" class="header__nav-link">Акции</a></li>
-              <li class="header__nav-item"><a href="contacts.html" class="header__nav-link">Контакты</a></li>
-            </ul>
-
-            <ul class="header__nav-list list-reset">
-              <li class="header__nav-item dropdown">
-                <a href="#" class="header__nav-link dropdown-button">Сотрудничество</a>
-                <div class="header__nav-dropdown ">
-                  <a class="header__nav-link-dropdown" href="dms.html">ДМС</a>
-                  <a class="header__nav-link-dropdown" href="vacancies.html">Вакансии</a>
-                  <a class="header__nav-link-dropdown" href="#">Предприятиям</a>
-                </div>
-              </li>
-              <li class="header__nav-item dropdown "><a href="#" class="header__nav-link dropdown-button">Услуги </a>
-                <div class="header__nav-dropdown ">
-                  <div>
-                    <a class="header__nav-link-dropdown" href="#">Детское отделение</a>
-                    <a class="header__nav-link-dropdown" href="#">Взрослое отделение</a>
-                    <a class="header__nav-link-dropdown" href="services.html">Хирургия</a>
-                    <a class="header__nav-link-dropdown" href="#">Лабораторная<br>диагностика</a>
-                    <a class="header__nav-link-dropdown" href="#">УЗИ, ЭКГ</a>
-                    <a class="header__nav-link-dropdown" href="#">Нейросонография</a>
+          <div class="mobile-nav-wrapper">
+            <nav class="mobile-nav nav__content">
+              <ul class="header__nav-list list-reset">
+                <li class="header__nav-item">
+                  <a href="doctors.html" class="header__nav-link">Врачи</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="price.html" class="header__nav-link">Цены</a>
+                </li>
+                <li class="header__nav-item dropdown">
+                  <a href="#" class="header__nav-link dropdown-button">Пациентам</a>
+                  <div class="header__nav-dropdown">
+                    <a class="header__nav-link-dropdown" href="news.html">Новости</a>
+                    <a class="header__nav-link-dropdown" href="company.html">О нас</a>
+                    <a class="header__nav-link-dropdown" href="visit.html">Подготовка<br />к визиту</a>
+                    <a class="header__nav-link-dropdown" href="tax.html">Налоговый вычет</a>
                   </div>
-                  <div>
-                    <a class="header__nav-link-dropdown" href="#">Вызов врача на дом</a>
-                    <a class="header__nav-link-dropdown" href="#">Вакцинация</a>
-                    <a class="header__nav-link-dropdown" href="#">Логопед-дефектолог</a>
-                    <a class="header__nav-link-dropdown" href="#">Аудиометрия</a>
-                    <a class="header__nav-link-dropdown" href="#">Тимпанометрия</a>
-                    <a class="header__nav-link-dropdown" href="programs.html">Комплексные<br>программы</a>
-                  </div>
-                </div>
-              </li>
-            </ul>
+                </li>
+                <li class="header__nav-item">
+                  <a href="calculator.html" class="header__nav-link">Калькулятор<br />анализов</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="stock.html" class="header__nav-link">Акции</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="contacts.html" class="header__nav-link">Контакты</a>
+                </li>
+              </ul>
 
-          </nav>
+              <ul class="header__nav-list list-reset">
+                <li class="header__nav-item dropdown">
+                  <a href="#" class="header__nav-link dropdown-button">Сотрудничество</a>
+                  <div class="header__nav-dropdown">
+                    <a class="header__nav-link-dropdown" href="dms.html">ДМС</a>
+                    <a class="header__nav-link-dropdown" href="vacancies.html">Вакансии</a>
+                    <a class="header__nav-link-dropdown" href="#">Предприятиям</a>
+                  </div>
+                </li>
+                <li class="header__nav-item dropdown">
+                  <a href="#" class="header__nav-link dropdown-button">Услуги
+                  </a>
+                  <div class="header__nav-dropdown">
+                    <div class="header__dropdown-container">
+                      <a class="header__nav-link-dropdown" href="#">Детское отделение</a>
+                      <a class="header__nav-link-dropdown" href="#">Взрослое отделение</a>
+                      <a class="header__nav-link-dropdown" href="services.html">Хирургия</a>
+                      <a class="header__nav-link-dropdown" href="#">Лабораторная<br />диагностика</a>
+                      <a class="header__nav-link-dropdown" href="#">УЗИ, ЭКГ</a>
+                      <a class="header__nav-link-dropdown" href="#">Нейросонография</a>
+                    </div>
+                    <div>
+                      <a class="header__nav-link-dropdown" href="#">Вызов врача на дом</a>
+                      <a class="header__nav-link-dropdown" href="#">Вакцинация</a>
+                      <a class="header__nav-link-dropdown" href="#">Логопед-дефектолог</a>
+                      <a class="header__nav-link-dropdown" href="#">Аудиометрия</a>
+                      <a class="header__nav-link-dropdown" href="#">Тимпанометрия</a>
+                      <a class="header__nav-link-dropdown" href="programs.html">Комплексные<br />программы</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
 
         <div class="header__logo">
           <a href="index.html" class="header__logo-link">
-            <img src="img/logo.png" alt="Логотип клиники">
+            <img src="img/logos.svg" alt="Логотип клиники" />
           </a>
         </div>
         <div class="header__logo--mobile">
           <a href="index.html" class="header__logo-link">
-            <img src="img/Logo.mobile.png" alt="Логотип клиники">
+            <img class="clinic__logo" src="img/Clinic_logo.svg" alt="Логотип клиники" />
           </a>
         </div>
         <div class="header__container-info">
@@ -92,9 +102,7 @@
               <svg class="header__btn-address-icon" width="30" height="29" aria-hidden="true">
                 <use xlink:href="svg/sprite.svg#icon-address"></use>
               </svg>
-              <p class="header__text-address">
-                Адрес и режим работы
-              </p>
+              <p class="header__text-address">Адрес и режим работы</p>
             </a>
           </div>
           <div class="header__list list-reset">
@@ -102,17 +110,13 @@
               <svg class="header__btn-icon" width="30" height="29" aria-hidden="true">
                 <use xlink:href="svg/sprite.svg#icon-booking"></use>
               </svg>
-              <p class="header__item">
-                Записаться
-              </p>
+              <p class="header__item">Записаться</p>
             </a>
             <a href="med-card.html" class="header__btn-item bth-reset">
               <svg class="header__btn-icon" width="30" height="29" aria-hidden="true">
                 <use xlink:href="svg/sprite.svg#icon-medcard"></use>
               </svg>
-              <p class="header__item">
-                Медкарта
-              </p>
+              <p class="header__item">Медкарта</p>
             </a>
           </div>
         </div>
@@ -120,9 +124,14 @@
       <div class="header__bottom">
         <nav class="header__nav">
           <ul class="header__nav-list list-reset">
-            <li class="header__nav-item"><a href="doctors.html" class="header__nav-link">Врачи</a></li>
-            <li class="header__nav-item"><a href="price.html" class="header__nav-link">Цены</a></li>
-            <li class="header__nav-item dropdown"><a href="#" class="header__nav-link ">Услуги </a>
+            <li class="header__nav-item">
+              <a href="doctors.html" class="header__nav-link">Врачи</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="price.html" class="header__nav-link">Цены</a>
+            </li>
+            <li class="header__nav-item dropdown">
+              <a href="#" class="header__nav-link">Услуги </a>
               <svg width="9" height="7" aria-hidden="true">
                 <use xlink:href="svg/sprite.svg#icon-dropdown-arrow"></use>
               </svg>
@@ -157,10 +166,15 @@
                 <a class="header__nav-link-dropdown" href="tax.html">Налоговый вычет</a>
               </div>
             </li>
-            <li class="header__nav-item"><a href="calculator.html" class="header__nav-link">Калькулятор анализов</a>
+            <li class="header__nav-item">
+              <a href="calculator.html" class="header__nav-link">Калькулятор анализов</a>
             </li>
-            <li class="header__nav-item"><a href="stock.html" class="header__nav-link">Акции</a></li>
-            <li class="header__nav-item"><a href="contacts.html" class="header__nav-link">Контакты</a></li>
+            <li class="header__nav-item">
+              <a href="stock.html" class="header__nav-link">Акции</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="contacts.html" class="header__nav-link">Контакты</a>
+            </li>
             <li class="header__nav-item dropdown">
               <a href="#" class="header__nav-link">Сотрудничество</a>
               <svg width="9" height="7" aria-hidden="true">
