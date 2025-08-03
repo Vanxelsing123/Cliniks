@@ -62,7 +62,6 @@
 		flex-wrap: nowrap;
 		padding: 20px 20px 30px 20px;
 		width: 380px;
-
 		position: absolute;
 		top: 145px;
 		left: -380px;
@@ -265,6 +264,15 @@
 @media (max-width: 768px) {
 	.nav__content {
 		top: 90px;
+		bottom: 0;
+	}
+
+	.mobile-nav-wrapper {
+		position: fixed;
+		z-index: 3;
+		top: -11px;
+		left: 0;
+		height: 100%;
 	}
 
 	.container {
