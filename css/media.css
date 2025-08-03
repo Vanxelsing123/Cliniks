@@ -281,13 +281,13 @@
 @media (max-width: 768px) {
 	.nav__content {
 		top: 90px;
-		bottom: 5px;
+		bottom: 0;
 	}
 
 	.mobile-nav-wrapper {
 		position: fixed;
 		z-index: 3;
-		top: -11px;
+		top: -20px;
 		left: 0;
 		height: 100%;
 	}
