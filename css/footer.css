@@ -13,7 +13,9 @@
   flex-direction: column;
   margin-right: auto;
 }
-
+.tell__wrap {
+  display: flex;
+}
 .footer__list-info {
   display: flex;
   flex-direction: column;
@@ -107,4 +109,7 @@
   line-height: 122%;
   color: var(--color-dull-grey);
   border-top: 1px solid rgba(140, 133, 218, 0.4);
+}
+.job__item-icon {
+  margin-right: 10px;
 }

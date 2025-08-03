@@ -9,7 +9,7 @@
 
 @media (max-width: 1024px) {
   .visit__title {
-    margin-top: 20px;
+    margin-top: 24px;
   }
   .container__visit-wrap-item {
     background-color: var(--color-white);

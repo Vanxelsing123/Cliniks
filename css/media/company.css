@@ -10,7 +10,7 @@
 
 @media (max-width: 1024px) {
   .company__title {
-    margin-top: 20px;
+    margin-top: 24px;
   }
   .company__clinic-warning {
     background-color: var(--color-white);
