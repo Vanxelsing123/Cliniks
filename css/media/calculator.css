@@ -65,6 +65,10 @@
 	.calculator__container-item-text {
 		font-size: 14px;
 	}
+
+	.calculator__card-accardion:not(:last-child) {
+		margin-bottom: 0;
+	}
 	.calculator__item-spectrum-text {
 		margin-bottom: 40px;
 	}
