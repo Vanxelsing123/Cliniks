@@ -1,27 +1,27 @@
-@import url("./header.css");
-@import url("./footer.css");
+@import url('./header.css');
+@import url('./footer.css');
 
 @font-face {
-  font-family: "Inter";
-  src: local("InterMedium"), url("../fonts/InterMedium.woff2") format("woff2"),
-    url("../fonts/InterMedium.woff") format("woff");
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
+	font-family: 'Inter';
+	src: local('InterMedium'), url('../fonts/InterMedium.woff2') format('woff2'),
+		url('../fonts/InterMedium.woff') format('woff');
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: "Inter";
-  src: local("InterRegular"), url("../fonts/InterRegular.woff2") format("woff2"),
-    url("../fonts/InterRegular.woff") format("woff");
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
+	font-family: 'Inter';
+	src: local('InterRegular'), url('../fonts/InterRegular.woff2') format('woff2'),
+		url('../fonts/InterRegular.woff') format('woff');
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
 }
 
 html {
-  box-sizing: border-box;
-  scroll-behavior: smooth;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 *,
@@ -31,282 +31,282 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 }
 
 img,
 svg {
-  max-width: 100%;
+	max-width: 100%;
 }
 
 body {
-  min-width: 380px;
-  font-family: "Inter", sans-serif;
-  background-color: var(--color-white);
+	min-width: 380px;
+	font-family: 'Inter', sans-serif;
+	background-color: var(--color-white);
 }
 
 :root {
-  --color-smoky-white: #f5f5f5;
-  --color-white: #ffffff;
-  --color-wet-asphalt: #4e4e4e;
-  --color-lavender: #eff3fc;
-  --color-slate-blue: #897cff;
-  --color-signal-black: #313131;
-  --color-signa-black: #2c2c2c;
-  --color-grey: #7a7a7a;
-  --color-almost-black: #141414;
-  --color-light-pinkish: #dad7ff;
-  --color-lavender-pink: #f7b7efb5;
-  --color-heavenly: #a3b5ffb3;
-  --color-asphalt: #535353;
-  --color-gray-brown: #3d3d3d;
-  --color-dull-grey: #6a6a6a;
+	--color-smoky-white: #f5f5f5;
+	--color-white: #ffffff;
+	--color-wet-asphalt: #4e4e4e;
+	--color-lavender: #eff3fc;
+	--color-slate-blue: #897cff;
+	--color-signal-black: #313131;
+	--color-signa-black: #2c2c2c;
+	--color-grey: #7a7a7a;
+	--color-almost-black: #141414;
+	--color-light-pinkish: #dad7ff;
+	--color-lavender-pink: #f7b7efb5;
+	--color-heavenly: #a3b5ffb3;
+	--color-asphalt: #535353;
+	--color-gray-brown: #3d3d3d;
+	--color-dull-grey: #6a6a6a;
 }
 
 /*Blog*/
 .main {
-  padding-bottom: 100px;
+	padding-bottom: 100px;
 }
 
 .container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 50px;
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 0 50px;
 }
 
 .list-reset {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 .flex {
-  display: flex;
+	display: flex;
 }
 
 .bth-reset {
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  outline: none;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	outline: none;
 }
 
 .vacancies__dental-surgeon {
-  position: relative;
-  border: 1px solid #c7c7f0;
-  border-radius: 30px;
-  align-items: center;
+	position: relative;
+	border: 1px solid #c7c7f0;
+	border-radius: 30px;
+	align-items: center;
 }
 
 .vacancies__dental-surgeon:not(:last-child) {
-  margin-bottom: 50px;
+	margin-bottom: 50px;
 }
 
 .vacancies__dental-surgeon-svg {
-  position: absolute;
-  bottom: 80px;
-  right: 0;
+	position: absolute;
+	bottom: 80px;
+	right: 0;
 }
 
 .vacancies__title {
-  font-weight: 400;
-  font-size: 45px;
-  line-height: 150%;
-  letter-spacing: -0.02em;
-  margin-bottom: 10px;
-  color: var(--color-signa-black);
+	font-weight: 400;
+	font-size: 45px;
+	line-height: 150%;
+	letter-spacing: -0.02em;
+	margin-bottom: 10px;
+	color: var(--color-signa-black);
 }
 
 .vacancies__dental-surgeon-wrap {
-  padding: 0 20px 60px 20px;
+	padding: 0 20px 60px 20px;
 }
 
 .vacancies__title-text-span {
-  max-width: 403px;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 150%;
-  letter-spacing: -0.02em;
-  margin-bottom: 40px;
-  color: var(--color-wet-asphalt);
+	max-width: 403px;
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 150%;
+	letter-spacing: -0.02em;
+	margin-bottom: 40px;
+	color: var(--color-wet-asphalt);
 }
 
 .vacancies__title-text-span span {
-  max-width: 403px;
-  font-weight: 400;
-  font-size: 21px;
-  line-height: 150%;
-  letter-spacing: -0.02em;
-  color: var(--color-slate-blue);
+	max-width: 403px;
+	font-weight: 400;
+	font-size: 21px;
+	line-height: 150%;
+	letter-spacing: -0.02em;
+	color: var(--color-slate-blue);
 }
 
 .vacancies__dental-surgeon-title {
-  width: 100%;
-  padding: 16px 20px;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 100%;
-  margin-bottom: 45px;
-  border-radius: 30px 30px 0 0;
-  color: var(--color-gray-brown);
-  background-color: var(--color-lavender);
+	width: 100%;
+	padding: 16px 20px;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 100%;
+	margin-bottom: 20px;
+	border-radius: 30px 30px 0 0;
+	color: var(--color-gray-brown);
+	background-color: var(--color-lavender);
 }
 
 .vacancies__dental-surgeon-item:not(:last-child) {
-  margin-bottom: 45px;
+	margin-bottom: 45px;
 }
 
 .vacancies__dental-surgeon-item-title {
-  display: flex;
-  align-items: center;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 130%;
-  letter-spacing: -0.02em;
-  margin-bottom: 25px;
-  color: var(--color-gray-brown);
+	display: flex;
+	align-items: center;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 130%;
+	letter-spacing: -0.02em;
+	margin-bottom: 25px;
+	color: var(--color-gray-brown);
 }
 
 .vacancies__dental-surgeon-item-title svg {
-  margin-right: 10px;
+	margin-right: 10px;
 }
 
 .vacancies__dental-surgeon-lists {
-  max-width: 645px;
+	max-width: 645px;
 }
 
 .vacancies__dental-surgeon-items {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 160%;
-  color: var(--color-dull-grey);
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 160%;
+	color: var(--color-dull-grey);
 }
 
 .vacancies__dental-surgeon-items:not(:last-child) {
-  margin-bottom: 25px;
+	margin-bottom: 25px;
 }
 
 .vacancies__dental-surgeon-btn {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  display: flex;
-  align-items: center;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 105%;
-  width: 360px;
-  height: 52px;
-  padding: 0 4px 0 20px;
-  border-radius: 30px;
-  color: var(--color-signa-black);
-  background: linear-gradient(133deg, #c8d3ff 0%, #afa7ff 100%);
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	display: flex;
+	align-items: center;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 105%;
+	width: 360px;
+	height: 52px;
+	padding: 0 4px 0 20px;
+	border-radius: 30px;
+	color: var(--color-signa-black);
+	background: linear-gradient(133deg, #c8d3ff 0%, #afa7ff 100%);
 }
 
 .vacancies__dental-surgeon-icon {
-  margin-left: auto;
+	margin-left: auto;
 }
 
 /* modal */
 .modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(131, 125, 162, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(131, 125, 162, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
 }
 .vacancies__modal-content {
-  position: relative;
-  background: white;
-  padding: 35px 40px;
-  border-radius: 30px;
-  text-align: center;
+	position: relative;
+	background: white;
+	padding: 35px 40px;
+	border-radius: 30px;
+	text-align: center;
 }
 
 .vacancies__modal-content-title {
-  text-align: start;
-  font-weight: 400;
-  font-size: 38px;
-  letter-spacing: -0.02em;
-  color: var(--color-gray-brown);
+	text-align: start;
+	font-weight: 400;
+	font-size: 38px;
+	letter-spacing: -0.02em;
+	color: var(--color-gray-brown);
 }
 
 .vacancies__modal-content-text {
-  text-align: start;
-  font-weight: 400;
-  font-size: 21px;
-  padding-bottom: 12px;
-  line-height: 156%;
-  letter-spacing: -0.02em;
-  color: var(--color-dull-grey);
-  border-bottom: 1px solid rgba(140, 133, 218, 0.4);
+	text-align: start;
+	font-weight: 400;
+	font-size: 21px;
+	padding-bottom: 12px;
+	line-height: 156%;
+	letter-spacing: -0.02em;
+	color: var(--color-dull-grey);
+	border-bottom: 1px solid rgba(140, 133, 218, 0.4);
 }
 
 .vacancies__modal-content-text-link {
-  text-align: start;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 130%;
-  letter-spacing: -0.02em;
-  color: var(--color-dull-grey);
+	text-align: start;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 130%;
+	letter-spacing: -0.02em;
+	color: var(--color-dull-grey);
 }
 .vacancies__modal-content-text-link a {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 100%;
-  color: var(--color-gray-brown);
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 100%;
+	color: var(--color-gray-brown);
 }
 
 .vacancies__modal-content-wrap {
-  padding-top: 24px;
-  display: flex;
-  align-items: center;
-  margin-bottom: 24px;
+	padding-top: 24px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 24px;
 }
 
 #closeModalBtn {
-  display: flex;
-  align-items: center;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 105%;
-  margin-right: -30px;
-  margin-left: -30px;
-  margin-bottom: -25px;
-  width: 450px;
-  height: 52px;
-  padding: 0 4px 0 20px;
-  border-radius: 30px;
-  color: var(--color-signa-black);
-  background: linear-gradient(133deg, #c8d3ff 0%, #afa7ff 100%);
+	display: flex;
+	align-items: center;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 105%;
+	margin-right: -30px;
+	margin-left: -30px;
+	margin-bottom: -25px;
+	width: 450px;
+	height: 52px;
+	padding: 0 4px 0 20px;
+	border-radius: 30px;
+	color: var(--color-signa-black);
+	background: linear-gradient(133deg, #c8d3ff 0%, #afa7ff 100%);
 }
 .close-btn {
-  width: 36px;
-  height: 36px;
-  position: absolute;
-  top: -45px;
-  right: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 33px;
-  border-radius: 100%;
-  background-color: var(--color-white);
+	width: 36px;
+	height: 36px;
+	position: absolute;
+	top: -45px;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 33px;
+	border-radius: 100%;
+	background-color: var(--color-white);
 }
