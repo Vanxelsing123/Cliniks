@@ -35,7 +35,7 @@
 	.programs__title {
 		margin-top: 24px;
 		font-size: 32px;
-		margin-bottom: 20px;
+		margin-bottom: 24px;
 		line-height: 120%;
 	}
 
@@ -79,7 +79,7 @@
 	}
 }
 
-@media (max-width: 425px) {
+@media screen and (max-width: 425px) {
 	.programs__medical-title {
 		line-height: 130%;
 		font-size: 16px;
@@ -97,5 +97,22 @@
 		position: absolute;
 		top: 13px;
 		right: 5px;
+	}
+	.programs__btn-buy {
+		width: 320px;
+		margin-left: -6px;
+		margin-right: -5px;
+		margin-bottom: -3px;
+	}
+	.programs__medical-wrap-price-link {
+		font-weight: 400;
+		font-size: 16px;
+	}
+	.programs__medical-wrap-price-svg {
+		width: 36px;
+		height: 36px;
+	}
+	.programs__btn-buy {
+		height: 44px;
 	}
 }

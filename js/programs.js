@@ -1,17 +1,19 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Получаем основные элементы блока кардиологии
-  const cardiology = document.querySelector('.programs__cardiology');
-  const svg = cardiology.querySelector('.programs__svg');
-  const svgMobile = cardiology.querySelector('.programs__svg--mobile');
-  const title = cardiology.querySelector('.programs__children-title');
-  const buttons = cardiology.querySelector('.programs__buttons');
-  const details = cardiology.querySelector('.programs__details');
-  const closeBtn = cardiology.querySelector('.programs__close-btn');
+	// Получаем основные элементы блока кардиологии
+	const cardiology = document.querySelector('.programs__cardiology')
+	const svg = cardiology.querySelector('.programs__svg')
+	const svgMobile = cardiology.querySelector('.programs__svg--mobile')
+	const title = cardiology.querySelector('.programs__children-title')
+	const buttons = cardiology.querySelector('.programs__buttons')
+	const details = cardiology.querySelector('.programs__details')
+	const closeBtn = cardiology.querySelector('.programs__close-btn')
 
-  // Создаем модальное окно один раз и добавляем в DOM
-  const modal = document.createElement('div');
-  modal.className = 'modal';
-  modal.innerHTML = `
+	const childrenProgram = document.querySelector('.programs__children')
+
+	// Создаем модальное окно один раз и добавляем в DOM
+	const modal = document.createElement('div')
+	modal.className = 'modal'
+	modal.innerHTML = `
     <div class="modal__content">
     <button class="modal__close" aria-label="Закрыть">
             <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -63,32 +65,35 @@ document.addEventListener('DOMContentLoaded', () => {
           </svg>
         </button>
       </div>
-    </div>`;
-  document.body.appendChild(modal);
+    </div>`
+	document.body.appendChild(modal)
 
-  // Кнопка "Понятно" закрывает модалку
-  const modalCloseBtn = modal.querySelector('button');
-  modalCloseBtn.onclick = () => modal.style.display = 'none';
+	// Кнопка "Понятно" закрывает модалку
+	const modalCloseBtn = modal.querySelector('.modal__button')
+	modalCloseBtn.onclick = () => (modal.style.display = 'none')
 
-  // Закрываем модалку при клике вне содержимого
-  modal.onclick = e => {
-    if (e.target === modal) modal.style.display = 'none';
-  };
+	const modalCloseBtnSvg = modal.querySelector('.modal__close')
+	modalCloseBtnSvg.onclick = () => (modal.style.display = 'none')
 
-  // Закрываем модалку при нажатии Esc
-  document.addEventListener('keydown', e => {
-    if (e.key === 'Escape' && modal.style.display === 'flex') {
-      modal.style.display = 'none';
-    }
-  });
+	// Закрываем модалку при клике вне содержимого
+	modal.onclick = e => {
+		if (e.target === modal) modal.style.display = 'none'
+	}
 
-  // Изначально скрываем детали и кнопку закрытия
-  closeBtn.style.display = 'none';
-  details.style.display = 'none';
+	// Закрываем модалку при нажатии Esc
+	document.addEventListener('keydown', e => {
+		if (e.key === 'Escape' && modal.style.display === 'flex') {
+			modal.style.display = 'none'
+		}
+	})
 
-  // Объект с подробным описанием каждой программы
-  const programDetails = {
-    arrhythmia: `
+	// Изначально скрываем детали и кнопку закрытия
+	closeBtn.style.display = 'none'
+	details.style.display = 'none'
+
+	// Объект с подробным описанием каждой программы
+	const programDetails = {
+		arrhythmia: `
       <h3>Аритмия, тахикардия</h3>
       <p>Состав комплексной <br>программы:</p>
       <ul>
@@ -102,17 +107,15 @@ document.addEventListener('DOMContentLoaded', () => {
         <li>Забор крови из вены;</li>
         <li>Консультация врача кардиолога по результатам обследования.</li>
       </ul>
-      <p class="programs__medical-wrap-text">Стоимость</p>
-      <span class="programs__buy-button">7 900 ₽</span>
-      <button class="programs__buy-btn bth-reset">
-        <a class="programs__medical-wrap-price-link" href="#">Купить
+      <button class="programs__btn-buy bth-reset">
+        <a class="programs__medical-wrap-price-link" href="#">Понятно
           <svg class="programs__medical-wrap-price-svg" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="22.399" cy="22.7616" r="21.8817" fill="white"></circle>
             <path d="M29.7828 26.8467V15.3781M29.7828 15.3781H18.3143M29.7828 15.3781L15.0165 30.1445" stroke="#535353" stroke-width="2.66" stroke-linecap="round" stroke-linejoin="round"></path>
           </svg>
         </a>
       </button>`,
-    hypertension: `
+		hypertension: `
       <h3>Гипертония</h3>
       <p>Состав программы:</p>
       <ul>
@@ -122,17 +125,16 @@ document.addEventListener('DOMContentLoaded', () => {
         <li>Анализы крови и мочи;</li>
         <li>Консультация по коррекции образа жизни.</li>
       </ul>
-      <p class="programs__medical-wrap-text">Стоимость</p>
-      <span class="programs__buy-button">6 500 ₽</span>
-      <button class="programs__buy-btn bth-reset">
-        <a class="programs__medical-wrap-price-link" href="#">Купить
+      
+       <button class="programs__btn-buy bth-reset">
+        <a class="programs__medical-wrap-price-link" href="#">Понятно
           <svg class="programs__medical-wrap-price-svg" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="22.399" cy="22.7616" r="21.8817" fill="white"></circle>
             <path d="M29.7828 26.8467V15.3781M29.7828 15.3781H18.3143M29.7828 15.3781L15.0165 30.1445" stroke="#535353" stroke-width="2.66" stroke-linecap="round" stroke-linejoin="round"></path>
           </svg>
         </a>
       </button>`,
-    ischemic: `
+		ischemic: `
       <h3>Ишемическая болезнь сердца</h3>
       <p>Состав программы:</p>
       <ul>
@@ -142,17 +144,16 @@ document.addEventListener('DOMContentLoaded', () => {
         <li>Анализы крови;</li>
         <li>Консультация по лечению и профилактике.</li>
       </ul>
-      <p class="programs__medical-wrap-text">Стоимость</p>
-      <span class="programs__buy-button">8 200 ₽</span>
-      <button class="programs__buy-btn bth-reset">
-        <a class="programs__medical-wrap-price-link" href="#">Купить
+     
+       <button class="programs__btn-buy bth-reset">
+        <a class="programs__medical-wrap-price-link" href="#">Понятно
           <svg class="programs__medical-wrap-price-svg" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="22.399" cy="22.7616" r="21.8817" fill="white"></circle>
             <path d="M29.7828 26.8467V15.3781M29.7828 15.3781H18.3143M29.7828 15.3781L15.0165 30.1445" stroke="#535353" stroke-width="2.66" stroke-linecap="round" stroke-linejoin="round"></path>
           </svg>
         </a>
       </button>`,
-    'full-checkup': `
+		'full-checkup': `
       <h3>Полное кардиообследование</h3>
       <p>Состав программы:</p>
       <ul>
@@ -163,80 +164,79 @@ document.addEventListener('DOMContentLoaded', () => {
         <li>Полный спектр лабораторных исследований;</li>
         <li>Индивидуальная консультация и рекомендации.</li>
       </ul>
-      <p class="programs__medical-wrap-text">Стоимость</p>
-      <span class="programs__buy-button">15 000 ₽</span>
-      <button class="programs__buy-btn bth-reset">
-        <a class="programs__medical-wrap-price-link" href="#">Купить
+     
+       <button class="programs__btn-buy bth-reset">
+        <a class="programs__medical-wrap-price-link" href="#">Понятно
           <svg class="programs__medical-wrap-price-svg" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="22.399" cy="22.7616" r="21.8817" fill="white"></circle>
             <path d="M29.7828 26.8467V15.3781M29.7828 15.3781H18.3143M29.7828 15.3781L15.0165 30.1445" stroke="#535353" stroke-width="2.66" stroke-linecap="round" stroke-linejoin="round"></path>
           </svg>
         </a>
-      </button>`
-  };
+      </button>`,
+	}
 
-  // Обработчик клика на кнопки выбора программ
-  buttons.onclick = e => {
-    if (!e.target.classList.contains('programs__btn')) return; // Проверяем, что клик по кнопке
-    const key = e.target.dataset.program; // Получаем ключ программы из data-атрибута
-    if (!programDetails[key]) return; // Если описание не найдено, ничего не делаем
+	// Обработчик клика на кнопки выбора программ
+	buttons.onclick = e => {
+		if (!e.target.classList.contains('programs__btn')) return // Проверяем, что клик по кнопке
+		const key = e.target.dataset.program // Получаем ключ программы из data-атрибута
+		if (!programDetails[key])
+			return // Если описание не найдено, ничего не делаем
+			// Скрываем основные элементы блока для показа деталей
+		;[svgMobile, svg, title, buttons].forEach(el => (el.style.display = 'none'))
 
-    // Скрываем основные элементы блока для показа деталей
-    [svgMobile, svg, title, buttons].forEach(el => el.style.display = 'none');
+		// Вставляем описание выбранной программы
+		details.innerHTML = programDetails[key]
 
-    // Вставляем описание выбранной программы
-    details.innerHTML = programDetails[key];
+		// Для мобильных устройств корректируем стили заголовка и списка
+		if (window.innerWidth <= 768) {
+			const h3 = details.querySelector('h3')
+			const ul = details.querySelector('ul')
+			if (h3) {
+				h3.style.fontSize = '28px'
+				h3.style.maxWidth = '300px'
+			}
+			if (ul) ul.style.maxWidth = '313px'
+			details.style.maxWidth = '300px'
+		}
 
-    // Для мобильных устройств корректируем стили заголовка и списка
-    if (window.innerWidth <= 768) {
-      const h3 = details.querySelector('h3');
-      const ul = details.querySelector('ul');
-      if (h3) {
-        h3.style.fontSize = '30px';
-        h3.style.maxWidth = '300px';
-      }
-      if (ul) ul.style.maxWidth = '313px';
-      details.style.maxWidth = '300px';
-    }
+		// Показываем блок с деталями и кнопку закрытия
+		details.style.display = 'block'
+		closeBtn.style.display = 'flex'
+		childrenProgram.style.opacity = '0.5'
+	}
 
-    // Показываем блок с деталями и кнопку закрытия
-    details.style.display = 'block';
-    closeBtn.style.display = 'flex';
-  };
+	// Обработчик кнопки закрытия деталей программы
+	closeBtn.onclick = () => {
+		// Возвращаем видимость основным элементам
+		;[svgMobile, svg, title].forEach(el => (el.style.display = ''))
+		buttons.style.display = 'flex'
 
-  // Обработчик кнопки закрытия деталей программы
-  closeBtn.onclick = () => {
-    // Возвращаем видимость основным элементам
-    [svgMobile, svg, title].forEach(el => el.style.display = '');
-    buttons.style.display = 'flex';
+		// Скрываем детали и очищаем их содержимое
+		details.style.display = 'none'
+		details.innerHTML = ''
+		childrenProgram.style.opacity = '1'
+		// Скрываем кнопку закрытия
+		closeBtn.style.display = 'none'
+	}
 
-    // Скрываем детали и очищаем их содержимое
-    details.style.display = 'none';
-    details.innerHTML = '';
+	// Обработка кликов внутри блока деталей
+	details.onclick = e => {
+		// Проверяем, был ли клик на кнопке "Купить"
+		let t = e.target
+		while (t && t !== details) {
+			if (t.classList?.contains('programs__btn-buy')) {
+				e.preventDefault() // Отменяем переход по ссылке
+				modal.style.display = 'flex' // Показываем модальное окно
+				break
+			}
+			t = t.parentNode // Поднимаемся вверх по DOM в поисках нужного элемента
+		}
+	}
 
-    // Скрываем кнопку закрытия
-    closeBtn.style.display = 'none';
-  };
-
-  // Обработка кликов внутри блока деталей
-  details.onclick = e => {
-    // Проверяем, был ли клик на кнопке "Купить"
-    let t = e.target;
-    while (t && t !== details) {
-      if (t.classList?.contains('programs__buy-btn')) {
-        e.preventDefault(); // Отменяем переход по ссылке
-        modal.style.display = 'flex'; // Показываем модальное окно
-        break;
-      }
-      t = t.parentNode; // Поднимаемся вверх по DOM в поисках нужного элемента
-    }
-  };
-
-  // При наведении на правый блок кардиологии деактивируем левый блок
-  // const leftBlock = document.querySelector('.programs__children');
-  // const rightBlock = cardiology;
-
-  // rightBlock.onmouseenter = () => leftBlock.classList.add('inactive');
-  // rightBlock.onmouseleave = () => leftBlock.classList.remove('inactive');
-});
-
+	/* При наведении на правый блок кардиологии деактивируем левый блок */
+	/* const leftBlock = document.querySelector('.programs__children')
+	const rightBlock = cardiology
+ */
+	/* rightBlock.onmouseenter = () => leftBlock.classList.add('inactive')
+	rightBlock.onmouseleave = () => leftBlock.classList.remove('inactive') */
+})
