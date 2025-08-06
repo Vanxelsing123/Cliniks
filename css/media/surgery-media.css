@@ -1,198 +1,199 @@
 @media (max-width: 1200px) {
-  .surgery__info {
-    padding: 35px 15px;
-    margin-bottom: 20px;
-  }
-  .surgery__container {
-    flex-direction: column;
-    align-items: center;
-  }
-  .help__list {
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-  }
-  .technologies__item {
-    padding: 35px 20px 75px 20px;
-  }
-  .technologies__title {
-    font-size: 26px;
-  }
+	.surgery__info {
+		padding: 35px 15px;
+		margin-bottom: 20px;
+	}
+	.surgery__container {
+		flex-direction: column;
+		align-items: center;
+	}
+	.help__list {
+		grid-template-columns: repeat(2, 1fr);
+		justify-items: center;
+	}
+	.technologies__item {
+		padding: 35px 20px 75px 20px;
+	}
+	.technologies__title {
+		font-size: 26px;
+	}
 }
 
 @media (max-width: 1024px) {
-  .surgery {
-    padding-bottom: 25px;
-  }
-  .surgery__title {
-    margin-top: 24px;
-    font-size: 32px;
-  }
+	.surgery {
+		padding-bottom: 25px;
+	}
+	.surgery__title {
+		margin-top: 24px;
+		font-size: 32px;
+	}
 
-  .surgery__svg {
-    display: none;
-  }
-  .surgery__svg--mobile {
-    display: block;
-  }
-  .jobs__svg {
-    display: none;
-  }
-  .help__title-view {
-    font-size: 20px;
-  }
-  .technologies__item svg {
-    display: none;
-  }
+	.surgery__svg {
+		display: none;
+	}
+	.surgery__svg--mobile {
+		display: block;
+	}
+	.jobs__svg {
+		display: none;
+	}
+	.help__title-view {
+		font-size: 20px;
+	}
+	.technologies__item svg {
+		display: none;
+	}
 
-  .technologies__item {
-    background-color: white;
-    padding: 20px;
-    box-sizing: border-box;
-    height: auto;
-    width: 100%;
-    margin: 0 auto;
-  }
+	.technologies__item {
+		background-color: white;
+		padding: 20px;
+		box-sizing: border-box;
+		height: auto;
+		width: 100%;
+		margin: 0 auto;
+	}
 
-  .technologies__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    max-width: 800px;
-    margin: 0 auto;
-  }
+	.technologies__list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 20px;
+		justify-content: center;
+		max-width: 800px;
+		margin: 0 auto;
+	}
 
-  .help__list {
-    gap: 60px 0;
-  }
+	.help__list {
+		gap: 60px 0;
+	}
 }
 
 @media (max-width: 768px) {
-  .surgery {
-    margin-bottom: 0;
-  }
-  .surgery__info-title {
-    font-size: 24px;
-  }
-  .surgery__info-text {
-    font-size: 16px;
-  }
-  .surgery__item-title {
-    font-size: 26px;
-  }
-  .surgery__treatment {
-    display: none;
-  }
-  .help {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  .help__title {
-    font-size: 18px;
-    border-bottom: 1px solid var(--color-light-pinkish);
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-  }
-  .help__list {
-    display: none;
-  }
-  .help__list--mob {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 35px;
-    justify-items: center;
-  }
-  .help__svg {
-    display: none;
-  }
+	.surgery {
+		margin-bottom: 0;
+	}
+	.surgery__info-title {
+		font-size: 24px;
+	}
+	.surgery__info-text {
+		font-size: 16px;
+	}
+	.surgery__item-title {
+		font-size: 26px;
+	}
+	.surgery__treatment {
+		display: none;
+	}
+	.help {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.help__title {
+		font-size: 18px;
+		border-bottom: 1px solid var(--color-light-pinkish);
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+	}
+	.help__list {
+		display: none;
+	}
+	.help__list--mob {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 35px;
+		justify-items: center;
+	}
+	.help__svg {
+		display: none;
+	}
 
-  .container__jobs {
-    background-color: transparent;
-    border: none;
-    padding: 10px;
-  }
+	.container__jobs {
+		background-color: transparent;
+		border: none;
+		padding: 10px;
+	}
 
-  .jobs {
-    padding-bottom: 40px;
-  }
+	.jobs {
+		padding-bottom: 40px;
+	}
 
-  .jobs__list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+	.jobs__list {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 
-  .jobs__item:not(:last-child) {
-    padding-bottom: 40px;
-    border-bottom: none;
-    padding-top: 20px;
-    border-top: 1px solid var(--color-light-pinkish);
-  }
+	.jobs__item:not(:last-child) {
+		padding-bottom: 40px;
+		border-bottom: none;
+		padding-top: 20px;
+		border-top: 1px solid var(--color-light-pinkish);
+	}
 
-  .jobs__item:nth-child(2) {
-    padding-bottom: 20px;
-    padding-top: 0;
-    border-bottom: 1px solid var(--color-light-pinkish);
-  }
+	.jobs__item:nth-child(2) {
+		padding-bottom: 20px;
+		padding-top: 0;
+		border-bottom: 1px solid var(--color-light-pinkish);
+	}
 
-  .jobs__item--svg-mob {
-    display: block;
-    margin-right: 15px;
-  }
+	.jobs__item--svg-mob {
+		display: block;
+		margin-right: 15px;
+	}
 
-  .jobs__svg--item {
-    display: none;
-  }
+	.jobs__svg--item {
+		display: none;
+	}
 
-  .job__item--content {
-    width: 300px;
-  }
-  .technologies__text {
-    font-size: 18px;
-    margin-bottom: 40px;
-  }
-  .technologies {
-    padding-top: 0;
-  }
+	.job__item--content {
+		width: 300px;
+	}
+	.technologies__text {
+		font-size: 18px;
+		margin-bottom: 40px;
+	}
+	.technologies {
+		padding-top: 0;
+	}
 
-  .technologies__list {
-    display: none;
-  }
+	.technologies__list {
+		display: none;
+	}
 
-  .technologies-swiper {
-    display: block;
-    width: 100%;
-  }
+	.technologies-swiper {
+		display: block;
+		width: 100%;
+	}
 
-  .technologies__swiper-2 .swiper {
-    height: 300px;
-  }
+	.technologies__swiper-2 .swiper {
+		height: 300px;
+	}
 
-  .technologies__item svg {
-    display: block;
-  }
-  .t1148__scroll-icon-wrapper {
-    display: block;
-  }
+	.technologies__item svg {
+		display: block;
+	}
+	.t1148__scroll-icon-wrapper {
+		display: block;
+	}
 }
 
 @media (max-width: 425px) {
-  .help__item {
-    width: 330px;
-  }
-  .surgery__info {
-    background-color: transparent;
-    border: none;
-  }
-  .jobs__title {
-    font-size: 20px;
-  }
-  .jobs__text {
-    font-size: 16px;
-  }
+	.help__item {
+		width: 330px;
+	}
+	.surgery__info {
+		background-color: transparent;
+		border: none;
+		padding: 0;
+	}
+	.jobs__title {
+		font-size: 20px;
+	}
+	.jobs__text {
+		font-size: 16px;
+	}
 }
 
 .on-sale {
-  color: red;
-  font-weight: 700;
+	color: red;
+	font-weight: 700;
 }

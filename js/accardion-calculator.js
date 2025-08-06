@@ -19,15 +19,16 @@ function createModal() {
         <h2 class="custom-modal-title">Список анализов</h2>
         <ul class="custom-modal-list"></ul>
         <div class="custom-modal-total">
-          <span>Итог сумма:</span>
+          <span class="custom__price">Итог:</span>
           <span class="custom-modal-total-sum">0 ₽</span>
         </div>
         <div class="custom-modal-buttons">
           <button class="custom-modal-btn share-btn bth-reset">
-          <svg width="55" height="54" viewBox="0 0 55 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M41.3804 12.3634C40.4855 12.5225 39.2434 12.9321 37.3571 13.5609L20.2571 19.2609C17.5909 20.1497 15.6764 20.7889 14.3171 21.354C12.88 21.9514 12.4287 22.3304 12.303 22.5128C11.6357 23.4806 11.6357 24.7601 12.303 25.7279C12.4287 25.9103 12.88 26.2893 14.3171 26.8867C15.6764 27.4518 17.5909 28.091 20.2571 28.9798C20.3095 28.9973 20.3613 29.0145 20.4124 29.0315C21.3229 29.3344 22.0287 29.5692 22.6469 29.958C23.4129 30.4396 24.0607 31.0875 24.5424 31.8534C24.9311 32.4717 25.1659 33.1774 25.4689 34.0879C25.4859 34.139 25.5031 34.1908 25.5206 34.2433C26.4093 36.9095 27.0485 38.8239 27.6137 40.1833C28.2111 41.6203 28.5901 42.0716 28.7725 42.1974C29.7403 42.8646 31.0197 42.8646 31.9876 42.1974C32.1699 42.0716 32.5489 41.6203 33.1464 40.1833C33.7115 38.8239 34.3507 36.9095 35.2394 34.2432L40.9394 17.1432C41.5682 15.2569 41.9778 14.0149 42.137 13.12C42.2141 12.6868 42.2083 12.4526 42.1897 12.3388C42.1882 12.3296 42.1867 12.3217 42.1853 12.3151C42.1786 12.3136 42.1707 12.3121 42.1616 12.3106C42.0478 12.292 41.8136 12.2863 41.3804 12.3634ZM40.8199 9.21281C41.9902 9.00464 43.3922 8.98274 44.4549 10.0454C45.5176 11.1081 45.4957 12.5102 45.2875 13.6804C45.0822 14.8349 44.5929 16.3025 44.0163 18.032L43.9752 18.1552L38.2752 35.2552L38.2526 35.3231C37.3913 37.9071 36.7162 39.9323 36.1012 41.4117C35.5131 42.8263 34.8418 44.1163 33.804 44.8319C31.7426 46.2531 29.0175 46.2531 26.9561 44.8319C25.9182 44.1163 25.2469 42.8263 24.6588 41.4117C24.0438 39.9322 23.3687 37.907 22.5074 35.3229L22.4848 35.2552C22.1058 34.1182 21.9908 33.8071 21.8334 33.5569C21.6073 33.1972 21.3031 32.8931 20.9435 32.6669C20.6932 32.5096 20.3822 32.3946 19.2452 32.0156L19.1775 31.993C16.5933 31.1316 14.5681 30.4566 13.0887 29.8415C11.6741 29.2534 10.384 28.5821 9.66848 27.5443C8.24723 25.4829 8.24723 22.7578 9.66848 20.6964C10.384 19.6585 11.6741 18.9872 13.0887 18.3992C14.5681 17.7841 16.5934 17.1091 19.1775 16.2477L19.2452 16.2251L36.3452 10.5251L36.4683 10.4841C38.1978 9.90749 39.6654 9.4182 40.8199 9.21281Z" fill="#897CFF"/>
-          </svg>
-          Поделиться
+          <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.3791 19.2233L32.9061 10.7143C33.0078 10.6804 33.1046 10.7772 33.0707 10.879L24.5617 36.406C24.521 36.5281 24.3466 36.5233 24.3127 36.399L20.7051 23.1713C20.693 23.1268 20.6582 23.0921 20.6138 23.0799L7.38601 19.4724C7.26177 19.4385 7.25693 19.2641 7.3791 19.2233Z" stroke="#897CFF" stroke-width="2" stroke-linecap="round"/>
+</svg>
+
+          Отправить
           </button>
           <button class="custom-modal-btn profile-btn bth-reset">
           <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -51,12 +52,12 @@ function createModal() {
         </div>
         <button class="calculator__show-list-btn bth-reset">
               Закрыть
-              <svg class="calculator__show-btn" width="45" height="45" viewBox="0 0 45 45" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <circle cx="22.399" cy="22.7616" r="21.8817" fill="white"></circle>
-                <path d="M29.7828 26.8467V15.3781M29.7828 15.3781H18.3143M29.7828 15.3781L15.0165 30.1445"
-                  stroke="#535353" stroke-width="2.66" stroke-linecap="round" stroke-linejoin="round"></path>
-              </svg>
+              <svg class="calculator__show-btn" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.5" y="0.5" width="35" height="35" rx="17.5" fill="white"/>
+<rect x="0.5" y="0.5" width="35" height="35" rx="17.5" stroke="#D8D5FD"/>
+<path d="M24.0742 21.3608V11.9267M24.0742 11.9267H14.6401M24.0742 11.9267L11.9273 24.0736" stroke="#6A6A6A" stroke-width="2.00111" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
             </button>
       </div>
     </div>`
@@ -103,17 +104,15 @@ function updateModalContent(selectedBlocks) {
 		btn.title = 'Удалить'
 		btn.textContent = '×'
 		btn.className = 'custom-modal-remove-btn'
+		btn.innerHTML = `
+  <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="36" height="36" rx="18" fill="white"/>
+<path d="M10.2929 11.7069C9.90237 11.3163 9.90237 10.6833 10.2929 10.2928C10.6834 9.90251 11.3165 9.90236 11.707 10.2928L17.9999 16.5858L24.2929 10.2928C24.6834 9.90251 25.3165 9.90235 25.707 10.2928C26.0974 10.6832 26.0972 11.3163 25.707 11.7069L19.414 17.9998L25.707 24.2928C26.0974 24.6832 26.0972 25.3163 25.707 25.7069C25.3164 26.0974 24.6834 26.0974 24.2929 25.7069L17.9999 19.4139L11.707 25.7069C11.3164 26.0974 10.6834 26.0974 10.2929 25.7069C9.90237 25.3163 9.90237 24.6833 10.2929 24.2928L16.5859 17.9998L10.2929 11.7069Z" fill="#6A6A6A"/>
+</svg>
+
+`
 		Object.assign(btn.style, {
-			background: '#f5f7ff',
 			border: 'none',
-			fontSize: '40px',
-			cursor: 'pointer',
-			width: '55px',
-			borderRadius: '12px',
-			color: '#535353',
-			lineHeight: '1',
-			marginLeft: '5px',
-			flexShrink: '0',
 		})
 		btn.onclick = () => {
 			block.classList.remove('active')
@@ -127,7 +126,7 @@ function updateModalContent(selectedBlocks) {
 		}
 
 		const li = document.createElement('li')
-		li.style.cssText = 'display:flex; margin-bottom:10px; position: relative'
+		li.classList.add('modal__li')
 		li.append(wrapper, btn)
 		listEl.appendChild(li)
 	})

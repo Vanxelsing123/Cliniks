@@ -336,6 +336,18 @@ body {
 	color: var(--color-slate-blue);
 }
 
+.modal__li {
+	display: flex;
+	margin-bottom: 12px;
+	position: relative;
+}
+
+.custom__price {
+	font-weight: 400;
+	font-size: 24px;
+	color: #3d3d3d;
+}
+
 .calculator__card-form {
 	padding: 5px 10px;
 	display: flex;
@@ -643,7 +655,7 @@ body {
 	align-items: center;
 	gap: 50px;
 	padding: 15px 20px;
-	background-color: #f5f7ff;
+	background-color: #eff3ff;
 	border-radius: 12px;
 }
 

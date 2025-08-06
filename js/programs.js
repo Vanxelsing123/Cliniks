@@ -194,6 +194,8 @@ document.addEventListener('DOMContentLoaded', () => {
 			if (h3) {
 				h3.style.fontSize = '28px'
 				h3.style.maxWidth = '300px'
+				h3.style.paddingBottom = '12px'
+				h3.style.borderBottom = '1px solid #8C85DA66'
 			}
 			if (ul) ul.style.maxWidth = '313px'
 			details.style.maxWidth = '300px'
