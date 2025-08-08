@@ -325,7 +325,7 @@ body {
 }
 
 .modal-content {
-	top: 80%;
+	top: 85%;
 	position: relative;
 	background-color: #fff;
 	padding: 20px 30px;
@@ -502,7 +502,14 @@ form textarea {
 	border-radius: 24px;
 	font-size: 14px;
 	color: var(--color-almost-black);
+
+	-webkit-appearance: none; /* для iOS Safari */
+	-moz-appearance: none; /* для Firefox */
+	appearance: none; /* общий стандарт */
+	background-color: #fff; /* фон обязательно */
+	box-sizing: border-box;
 }
+
 form textarea {
 	resize: vertical;
 	min-height: 60px;

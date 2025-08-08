@@ -281,6 +281,11 @@ body {
 	margin-bottom: 24px;
 }
 
+.vacancies__tell {
+	display: block;
+	margin-top: 4px;
+}
+
 #closeModalBtn {
 	display: flex;
 	align-items: center;

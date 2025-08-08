@@ -1,499 +1,801 @@
 <!DOCTYPE html>
 <html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Вакансии</title>
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/style-vacancies.css" />
+		<link rel="stylesheet" href="css/media.css" />
+	</head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Вакансии</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style-vacancies.css">
-  <link rel="stylesheet" href="css/media.css">
-</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__top">
+					<div class="burger-wrapper">
+						<button
+							class="header__burger-btn bth-reset"
+							id="burger"
+							aria-label="Открыть меню"
+						>
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+						<div class="mobile-nav-wrapper">
+							<nav class="mobile-nav nav__content">
+								<ul class="header__nav-list list-reset">
+									<li class="header__nav-item">
+										<a href="doctors.html" class="header__nav-link">Врачи</a>
+									</li>
+									<li class="header__nav-item">
+										<a href="price.html" class="header__nav-link">Цены</a>
+									</li>
+									<li class="header__nav-item dropdown">
+										<a href="#" class="header__nav-link dropdown-button"
+											>Пациентам</a
+										>
+										<div class="header__nav-dropdown">
+											<a class="header__nav-link-dropdown" href="news.html"
+												>Новости</a
+											>
+											<a class="header__nav-link-dropdown" href="company.html"
+												>О нас</a
+											>
+											<a class="header__nav-link-dropdown" href="visit.html"
+												>Подготовка<br />к визиту</a
+											>
+											<a class="header__nav-link-dropdown" href="tax.html"
+												>Налоговый вычет</a
+											>
+										</div>
+									</li>
+									<li class="header__nav-item">
+										<a href="calculator.html" class="header__nav-link"
+											>Калькулятор<br />анализов</a
+										>
+									</li>
+									<li class="header__nav-item">
+										<a href="stock.html" class="header__nav-link">Акции</a>
+									</li>
+									<li class="header__nav-item">
+										<a href="contacts.html" class="header__nav-link"
+											>Контакты</a
+										>
+									</li>
+								</ul>
 
-<body>
-  <header class="header">
-    <div class="container">
-      <div class="header__top">
-        <div class="burger-wrapper">
-          <button class="header__burger-btn bth-reset" id="burger" aria-label="Открыть меню">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-          <div class="mobile-nav-wrapper">
-            <nav class="mobile-nav nav__content">
-              <ul class="header__nav-list list-reset">
-                <li class="header__nav-item">
-                  <a href="doctors.html" class="header__nav-link">Врачи</a>
-                </li>
-                <li class="header__nav-item">
-                  <a href="price.html" class="header__nav-link">Цены</a>
-                </li>
-                <li class="header__nav-item dropdown">
-                  <a href="#" class="header__nav-link dropdown-button">Пациентам</a>
-                  <div class="header__nav-dropdown">
-                    <a class="header__nav-link-dropdown" href="news.html">Новости</a>
-                    <a class="header__nav-link-dropdown" href="company.html">О нас</a>
-                    <a class="header__nav-link-dropdown" href="visit.html">Подготовка<br />к визиту</a>
-                    <a class="header__nav-link-dropdown" href="tax.html">Налоговый вычет</a>
-                  </div>
-                </li>
-                <li class="header__nav-item">
-                  <a href="calculator.html" class="header__nav-link">Калькулятор<br />анализов</a>
-                </li>
-                <li class="header__nav-item">
-                  <a href="stock.html" class="header__nav-link">Акции</a>
-                </li>
-                <li class="header__nav-item">
-                  <a href="contacts.html" class="header__nav-link">Контакты</a>
-                </li>
-              </ul>
+								<ul class="header__nav-list list-reset">
+									<li class="header__nav-item dropdown">
+										<a href="#" class="header__nav-link dropdown-button"
+											>Сотрудничество</a
+										>
+										<div class="header__nav-dropdown">
+											<a class="header__nav-link-dropdown" href="dms.html"
+												>ДМС</a
+											>
+											<a class="header__nav-link-dropdown" href="vacancies.html"
+												>Вакансии</a
+											>
+											<a class="header__nav-link-dropdown" href="#"
+												>Предприятиям</a
+											>
+										</div>
+									</li>
+									<li class="header__nav-item dropdown">
+										<a href="#" class="header__nav-link dropdown-button"
+											>Услуги
+										</a>
+										<div class="header__nav-dropdown">
+											<div class="header__dropdown-container">
+												<a class="header__nav-link-dropdown" href="#"
+													>Детское отделение</a
+												>
+												<a class="header__nav-link-dropdown" href="#"
+													>Взрослое отделение</a
+												>
+												<a
+													class="header__nav-link-dropdown"
+													href="services.html"
+													>Хирургия</a
+												>
+												<a class="header__nav-link-dropdown" href="#"
+													>Лабораторная<br />диагностика</a
+												>
+												<a class="header__nav-link-dropdown" href="#"
+													>УЗИ, ЭКГ</a
+												>
+												<a class="header__nav-link-dropdown" href="#"
+													>Нейросонография</a
+												>
+											</div>
+											<div>
+												<a class="header__nav-link-dropdown" href="#"
+													>Вызов врача на дом</a
+												>
+												<a class="header__nav-link-dropdown" href="#"
+													>Вакцинация</a
+												>
+												<a class="header__nav-link-dropdown" href="#"
+													>Логопед-дефектолог</a
+												>
+												<a class="header__nav-link-dropdown" href="#"
+													>Аудиометрия</a
+												>
+												<a class="header__nav-link-dropdown" href="#"
+													>Тимпанометрия</a
+												>
+												<a
+													class="header__nav-link-dropdown"
+													href="programs.html"
+													>Комплексные<br />программы</a
+												>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
 
-              <ul class="header__nav-list list-reset">
-                <li class="header__nav-item dropdown">
-                  <a href="#" class="header__nav-link dropdown-button">Сотрудничество</a>
-                  <div class="header__nav-dropdown">
-                    <a class="header__nav-link-dropdown" href="dms.html">ДМС</a>
-                    <a class="header__nav-link-dropdown" href="vacancies.html">Вакансии</a>
-                    <a class="header__nav-link-dropdown" href="#">Предприятиям</a>
-                  </div>
-                </li>
-                <li class="header__nav-item dropdown">
-                  <a href="#" class="header__nav-link dropdown-button">Услуги
-                  </a>
-                  <div class="header__nav-dropdown">
-                    <div class="header__dropdown-container">
-                      <a class="header__nav-link-dropdown" href="#">Детское отделение</a>
-                      <a class="header__nav-link-dropdown" href="#">Взрослое отделение</a>
-                      <a class="header__nav-link-dropdown" href="services.html">Хирургия</a>
-                      <a class="header__nav-link-dropdown" href="#">Лабораторная<br />диагностика</a>
-                      <a class="header__nav-link-dropdown" href="#">УЗИ, ЭКГ</a>
-                      <a class="header__nav-link-dropdown" href="#">Нейросонография</a>
-                    </div>
-                    <div>
-                      <a class="header__nav-link-dropdown" href="#">Вызов врача на дом</a>
-                      <a class="header__nav-link-dropdown" href="#">Вакцинация</a>
-                      <a class="header__nav-link-dropdown" href="#">Логопед-дефектолог</a>
-                      <a class="header__nav-link-dropdown" href="#">Аудиометрия</a>
-                      <a class="header__nav-link-dropdown" href="#">Тимпанометрия</a>
-                      <a class="header__nav-link-dropdown" href="programs.html">Комплексные<br />программы</a>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
+					<div class="header__logo">
+						<a href="index.html" class="header__logo-link">
+							<img src="img/logos.svg" alt="Логотип клиники" />
+						</a>
+					</div>
+					<div class="header__logo--mobile">
+						<a href="index.html" class="header__logo-link">
+							<img
+								class="clinic__logo"
+								src="img/Clinic_logo.svg"
+								alt="Логотип клиники"
+							/>
+						</a>
+					</div>
+					<div class="header__container-info">
+						<div class="header__text">
+							<a href="contacts.html" class="header__btn-address bth-reset">
+								<svg
+									class="header__btn-address-icon"
+									width="30"
+									height="29"
+									aria-hidden="true"
+								>
+									<use xlink:href="svg/sprite.svg#icon-address"></use>
+								</svg>
+								<p class="header__text-address">Адрес и режим работы</p>
+							</a>
+						</div>
+						<div class="header__list list-reset">
+							<a href="schedule.html" class="header__btn-item bth-reset">
+								<svg
+									class="header__btn-icon"
+									width="30"
+									height="29"
+									aria-hidden="true"
+								>
+									<use xlink:href="svg/sprite.svg#icon-booking"></use>
+								</svg>
+								<p class="header__item">Записаться</p>
+							</a>
+							<a href="med-card.html" class="header__btn-item bth-reset">
+								<svg
+									class="header__btn-icon"
+									width="30"
+									height="29"
+									aria-hidden="true"
+								>
+									<use xlink:href="svg/sprite.svg#icon-medcard"></use>
+								</svg>
+								<p class="header__item">Медкарта</p>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="header__bottom">
+					<nav class="header__nav">
+						<ul class="header__nav-list list-reset">
+							<li class="header__nav-item">
+								<a href="doctors.html" class="header__nav-link">Врачи</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="price.html" class="header__nav-link">Цены</a>
+							</li>
+							<li class="header__nav-item dropdown">
+								<a href="#" class="header__nav-link">Услуги </a>
+								<svg width="9" height="7" aria-hidden="true">
+									<use xlink:href="svg/sprite.svg#icon-dropdown-arrow"></use>
+								</svg>
+								<div class="header__nav-dropdown dropdown-content__services">
+									<div>
+										<a class="header__nav-link-dropdown" href="#"
+											>Детское отделение</a
+										>
+										<a class="header__nav-link-dropdown" href="#"
+											>Взрослое отделение</a
+										>
+										<a class="header__nav-link-dropdown" href="services.html"
+											>Хирургия</a
+										>
+										<a class="header__nav-link-dropdown" href="#"
+											>Лабораторная диагностика</a
+										>
+										<a class="header__nav-link-dropdown" href="#">УЗИ, ЭКГ</a>
+										<a class="header__nav-link-dropdown" href="#"
+											>Нейросонография</a
+										>
+									</div>
+									<div>
+										<a class="header__nav-link-dropdown" href="#"
+											>Вызов врача на дом</a
+										>
+										<a class="header__nav-link-dropdown" href="#">Вакцинация</a>
+										<a class="header__nav-link-dropdown" href="#"
+											>Логопед-дефектолог</a
+										>
+										<a class="header__nav-link-dropdown" href="#"
+											>Аудиометрия</a
+										>
+										<a class="header__nav-link-dropdown" href="#"
+											>Тимпанометрия</a
+										>
+										<a class="header__nav-link-dropdown" href="programs.html"
+											>Комплексные программы</a
+										>
+									</div>
+								</div>
+							</li>
+							<li class="header__nav-item dropdown">
+								<a href="#" class="header__nav-link dropdown-button"
+									>Пациентам</a
+								>
+								<svg width="9" height="7" aria-hidden="true">
+									<use xlink:href="svg/sprite.svg#icon-dropdown-arrow"></use>
+								</svg>
+								<div class="header__nav-dropdown dropdown-content">
+									<a class="header__nav-link-dropdown" href="news.html"
+										>Новости</a
+									>
+									<a class="header__nav-link-dropdown" href="company.html"
+										>О нас</a
+									>
+									<a class="header__nav-link-dropdown" href="visit.html"
+										>Подготовка к визиту</a
+									>
+									<a class="header__nav-link-dropdown" href="tax.html"
+										>Налоговый вычет</a
+									>
+								</div>
+							</li>
+							<li class="header__nav-item">
+								<a href="calculator.html" class="header__nav-link"
+									>Калькулятор анализов</a
+								>
+							</li>
+							<li class="header__nav-item">
+								<a href="stock.html" class="header__nav-link">Акции</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="contacts.html" class="header__nav-link">Контакты</a>
+							</li>
+							<li class="header__nav-item dropdown">
+								<a href="#" class="header__nav-link">Сотрудничество</a>
+								<svg width="9" height="7" aria-hidden="true">
+									<use xlink:href="svg/sprite.svg#icon-dropdown-arrow"></use>
+								</svg>
+								<div class="header__nav-dropdown dropdown-content">
+									<a class="header__nav-link-dropdown" href="dms.html">ДМС</a>
+									<a class="header__nav-link-dropdown" href="vacancies.html"
+										>Вакансии</a
+									>
+									<a class="header__nav-link-dropdown" href="#">Предприятиям</a>
+								</div>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
 
-        <div class="header__logo">
-          <a href="index.html" class="header__logo-link">
-            <img src="img/logos.svg" alt="Логотип клиники" />
-          </a>
-        </div>
-        <div class="header__logo--mobile">
-          <a href="index.html" class="header__logo-link">
-            <img class="clinic__logo" src="img/Clinic_logo.svg" alt="Логотип клиники" />
-          </a>
-        </div>
-        <div class="header__container-info">
-          <div class="header__text">
-            <a href="contacts.html" class="header__btn-address bth-reset">
-              <svg class="header__btn-address-icon" width="30" height="29" aria-hidden="true">
-                <use xlink:href="svg/sprite.svg#icon-address"></use>
-              </svg>
-              <p class="header__text-address">Адрес и режим работы</p>
-            </a>
-          </div>
-          <div class="header__list list-reset">
-            <a href="schedule.html" class="header__btn-item bth-reset">
-              <svg class="header__btn-icon" width="30" height="29" aria-hidden="true">
-                <use xlink:href="svg/sprite.svg#icon-booking"></use>
-              </svg>
-              <p class="header__item">Записаться</p>
-            </a>
-            <a href="med-card.html" class="header__btn-item bth-reset">
-              <svg class="header__btn-icon" width="30" height="29" aria-hidden="true">
-                <use xlink:href="svg/sprite.svg#icon-medcard"></use>
-              </svg>
-              <p class="header__item">Медкарта</p>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="header__bottom">
-        <nav class="header__nav">
-          <ul class="header__nav-list list-reset">
-            <li class="header__nav-item">
-              <a href="doctors.html" class="header__nav-link">Врачи</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="price.html" class="header__nav-link">Цены</a>
-            </li>
-            <li class="header__nav-item dropdown">
-              <a href="#" class="header__nav-link">Услуги </a>
-              <svg width="9" height="7" aria-hidden="true">
-                <use xlink:href="svg/sprite.svg#icon-dropdown-arrow"></use>
-              </svg>
-              <div class="header__nav-dropdown dropdown-content__services">
-                <div>
-                  <a class="header__nav-link-dropdown" href="#">Детское отделение</a>
-                  <a class="header__nav-link-dropdown" href="#">Взрослое отделение</a>
-                  <a class="header__nav-link-dropdown" href="services.html">Хирургия</a>
-                  <a class="header__nav-link-dropdown" href="#">Лабораторная диагностика</a>
-                  <a class="header__nav-link-dropdown" href="#">УЗИ, ЭКГ</a>
-                  <a class="header__nav-link-dropdown" href="#">Нейросонография</a>
-                </div>
-                <div>
-                  <a class="header__nav-link-dropdown" href="#">Вызов врача на дом</a>
-                  <a class="header__nav-link-dropdown" href="#">Вакцинация</a>
-                  <a class="header__nav-link-dropdown" href="#">Логопед-дефектолог</a>
-                  <a class="header__nav-link-dropdown" href="#">Аудиометрия</a>
-                  <a class="header__nav-link-dropdown" href="#">Тимпанометрия</a>
-                  <a class="header__nav-link-dropdown" href="programs.html">Комплексные программы</a>
-                </div>
-              </div>
-            </li>
-            <li class="header__nav-item dropdown">
-              <a href="#" class="header__nav-link dropdown-button">Пациентам</a>
-              <svg width="9" height="7" aria-hidden="true">
-                <use xlink:href="svg/sprite.svg#icon-dropdown-arrow"></use>
-              </svg>
-              <div class="header__nav-dropdown dropdown-content">
-                <a class="header__nav-link-dropdown" href="news.html">Новости</a>
-                <a class="header__nav-link-dropdown" href="company.html">О нас</a>
-                <a class="header__nav-link-dropdown" href="visit.html">Подготовка к визиту</a>
-                <a class="header__nav-link-dropdown" href="tax.html">Налоговый вычет</a>
-              </div>
-            </li>
-            <li class="header__nav-item">
-              <a href="calculator.html" class="header__nav-link">Калькулятор анализов</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="stock.html" class="header__nav-link">Акции</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="contacts.html" class="header__nav-link">Контакты</a>
-            </li>
-            <li class="header__nav-item dropdown">
-              <a href="#" class="header__nav-link">Сотрудничество</a>
-              <svg width="9" height="7" aria-hidden="true">
-                <use xlink:href="svg/sprite.svg#icon-dropdown-arrow"></use>
-              </svg>
-              <div class="header__nav-dropdown dropdown-content">
-                <a class="header__nav-link-dropdown" href="dms.html">ДМС</a>
-                <a class="header__nav-link-dropdown" href="vacancies.html">Вакансии</a>
-                <a class="header__nav-link-dropdown" href="#">Предприятиям</a>
-              </div>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
+		<main class="main">
+			<section class="vacancies">
+				<div class="container">
+					<h1 class="vacancies__title">Вакансии</h1>
+					<p class="vacancies__title-text-span">
+						В связи с расширением в наш дружный коллектив<span>
+							требуются специалисты:</span
+						>
+					</p>
+					<div class="vacancies__dental-surgeon">
+						<h2 class="vacancies__dental-surgeon-title">
+							Врач стоматолог-хирург
+						</h2>
+						<div class="vacancies__dental-surgeon-wrap">
+							<ul class="vacancies__dental-surgeon-list list-reset">
+								<li class="vacancies__dental-surgeon-item">
+									<h3 class="vacancies__dental-surgeon-item-title">
+										<svg
+											width="30"
+											height="30"
+											viewBox="0 0 30 30"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M17.4414 4.80837H16.3666V4.86197L16.372 4.91531L17.4414 4.80837ZM17.4414 4.80836H18.5161V4.75476L18.5108 4.70142L17.4414 4.80836ZM17.799 6.57516L16.9443 7.22671L16.9443 7.22671L17.799 6.57516ZM18.9265 7.0422L18.7829 5.9771L18.7829 5.9771L18.9265 7.0422ZM20.4291 6.04543L21.1097 6.87723L21.1097 6.87723L20.4291 6.04543ZM21.2638 5.47238L21.5909 6.49615L21.5909 6.49615L21.2638 5.47238ZM22.1157 5.51487L22.543 4.52871L22.543 4.52871L22.1157 5.51487ZM22.889 6.16794L22.1291 6.92789L22.1291 6.92789L22.889 6.16794ZM23.9732 7.25205L23.2132 8.012L23.222 8.02084L23.2311 8.02947L23.9732 7.25205ZM23.9732 7.25207L24.7331 6.49211L24.7243 6.48328L24.7153 6.47465L23.9732 7.25207ZM24.6267 8.026L23.6404 8.45299L23.6404 8.45299L24.6267 8.026ZM24.6691 8.87724L25.693 9.20397L25.693 9.20397L24.6691 8.87724ZM24.0958 9.71245L23.264 9.03189L23.264 9.03189L24.0958 9.71245ZM23.0983 11.2167L24.1634 11.3596L24.1634 11.3596L23.0983 11.2167ZM23.5648 12.3429L22.9126 13.1972L22.9126 13.1972L23.5648 12.3429ZM25.3336 12.7012L25.4405 11.6318L25.4405 11.6318L25.3336 12.7012ZM26.3292 12.8863L26.8221 11.9312L26.8221 11.9312L26.3292 12.8863ZM26.9013 13.5184L25.9019 13.9138L25.9019 13.9138L26.9013 13.5184ZM26.9015 17.0691L25.9019 16.6742L25.9019 16.6742L26.9015 17.0691ZM26.3287 17.702L25.8363 16.7467L25.8363 16.7467L26.3287 17.702ZM25.3341 17.8868L25.4411 18.9562L25.4411 18.9562L25.3341 17.8868ZM23.5679 18.2442L24.2192 19.0991L24.2192 19.0991L23.5679 18.2442ZM23.1007 19.3723L22.0356 19.5163L22.0356 19.5163L23.1007 19.3723ZM24.0966 20.8736L24.9284 20.1931L24.9284 20.1931L24.0966 20.8736ZM24.6689 21.707L23.6453 22.0345L23.6453 22.0345L24.6689 21.707ZM24.6264 22.56L23.6404 22.1323L23.6404 22.1323L24.6264 22.56ZM22.889 24.4173L22.1291 23.6573L22.1291 23.6573L22.889 24.4173ZM22.1158 25.0703L21.6885 24.0841L21.6885 24.0841L22.1158 25.0703ZM21.2638 25.1127L21.5909 24.089L21.5909 24.089L21.2638 25.1127ZM20.4295 24.5399L21.11 23.7081L21.11 23.7081L20.4295 24.5399ZM18.9264 23.5431L18.7831 24.6082L18.7831 24.6082L18.9264 23.5431ZM17.7995 24.0099L16.945 23.3581L16.945 23.3581L17.7995 24.0099ZM17.4415 25.7784L18.5109 25.8853L18.5109 25.8853L17.4415 25.7784ZM17.2562 26.7748L16.3012 26.2818L16.3012 26.2818L17.2562 26.7748ZM16.6244 27.3466L16.2289 26.3473L16.2289 26.3473L16.6244 27.3466ZM13.0729 27.3467L13.4683 26.3473L13.4683 26.3473L13.0729 27.3467ZM12.4409 26.7747L11.4858 27.2676L11.4858 27.2676L12.4409 26.7747ZM12.2557 25.7787L13.3251 25.6717L13.3251 25.6717L12.2557 25.7787ZM11.8977 24.0103L11.0432 24.6622L11.0432 24.6622L11.8977 24.0103ZM10.7708 23.5436L10.9141 24.6087L10.9141 24.6087L10.7708 23.5436ZM9.26769 24.5405L8.58713 23.7087L8.58713 23.7087L9.26769 24.5405ZM8.43331 25.1133L8.76037 26.1371L8.76037 26.1371L8.43331 25.1133ZM7.58133 25.0708L7.15402 26.057L7.15402 26.057L7.58133 25.0708ZM6.80808 24.4178L7.56804 23.6578L7.56804 23.6578L6.80808 24.4178ZM5.72329 23.333L6.48324 22.573L6.46805 22.5579L6.45226 22.5433L5.72329 23.333ZM5.72327 23.333L4.96331 24.0929L4.97851 24.1081L4.9943 24.1227L5.72327 23.333ZM5.07072 22.5604L4.0847 22.988L4.0847 22.988L5.07072 22.5604ZM5.02819 21.7078L4.00452 21.3804L4.00452 21.3804L5.02819 21.7078ZM5.60065 20.874L6.43245 21.5546L6.43245 21.5546L5.60065 20.874ZM6.59694 19.3721L5.53186 19.2283L5.53185 19.2283L6.59694 19.3721ZM6.12983 18.2444L5.47835 19.0992L5.47835 19.0992L6.12983 18.2444ZM4.36311 17.8868L4.17086 18.9442L4.21328 18.9519L4.25618 18.9562L4.36311 17.8868ZM4.3631 17.8868L4.55535 16.8294L4.46001 16.8121H4.3631V17.8868ZM4.36309 17.8868L4.25615 18.9562L4.30949 18.9615H4.36309V17.8868ZM3.36842 17.702L2.87597 18.6573L2.87597 18.6573L3.36842 17.702ZM2.79575 17.0692L1.79621 17.4641L1.79621 17.4641L2.79575 17.0692ZM2.79597 13.5183L1.79663 13.1229L1.79663 13.1229L2.79597 13.5183ZM3.36789 12.8863L2.87496 11.9313L2.87496 11.9313L3.36789 12.8863ZM4.36373 12.7012V11.6264H4.31013L4.25679 11.6318L4.36373 12.7012ZM4.36374 12.7012V13.7759H4.41734L4.47068 13.7706L4.36374 12.7012ZM6.13292 12.3428L5.48069 11.4886L5.48069 11.4886L6.13292 12.3428ZM6.59933 11.2168L5.53412 11.3596L5.53412 11.3596L6.59933 11.2168ZM5.60152 9.71212L4.76972 10.3927L4.76972 10.3927L5.60152 9.71212ZM5.02797 8.87652L4.00405 9.20311L4.00405 9.20311L5.02797 8.87652ZM5.07041 8.02561L4.08407 7.59876L4.08407 7.59876L5.07041 8.02561ZM5.72414 7.25134L6.4841 8.0113L6.4841 8.0113L5.72414 7.25134ZM7.58146 5.5143L7.15421 4.52814L7.15421 4.52814L7.58146 5.5143ZM8.43329 5.47182L8.10629 6.4956L8.10629 6.4956L8.43329 5.47182ZM9.26813 6.04498L8.58756 6.87679L8.58756 6.87679L9.26813 6.04498ZM10.7705 7.04169L10.6267 8.10677L10.6267 8.10677L10.7705 7.04169ZM11.8984 6.57453L11.0435 5.92311L11.8984 6.57453ZM12.2558 4.80821L11.1864 4.70127L11.1864 4.70127L12.2558 4.80821ZM12.4406 3.81402L13.3959 4.30634L13.3959 4.30634L12.4406 3.81402ZM13.0736 3.24112L13.4684 4.24071L13.4684 4.24071L13.0736 3.24112ZM16.6237 3.24116L17.0186 2.24161L17.0186 2.24161L16.6237 3.24116ZM17.2566 3.81391L16.3013 4.30632L16.3013 4.30633L17.2566 3.81391ZM17.4414 4.80837H18.5161V4.80836H17.4414H16.3666V4.80837H17.4414ZM17.799 6.57516L18.6537 5.9236C18.7097 5.99704 18.6807 6.01434 18.6372 5.7724C18.5955 5.54073 18.5624 5.21731 18.5108 4.70143L17.4414 4.80837L16.372 4.91531C16.4199 5.39514 16.4615 5.81851 16.5217 6.15299C16.58 6.47721 16.68 6.88005 16.9443 7.22671L17.799 6.57516ZM18.9265 7.0422L18.7829 5.9771C18.7333 5.98378 18.684 5.96336 18.6537 5.9236L17.799 6.57516L16.9443 7.22671C17.4431 7.88106 18.2548 8.21727 19.0702 8.10729L18.9265 7.0422ZM20.4291 6.04543L19.7486 5.21362C19.3472 5.54204 19.0949 5.7474 18.9016 5.88181C18.6996 6.0222 18.6913 5.98945 18.7829 5.9771L18.9265 7.0422L19.0702 8.10729C19.5022 8.04902 19.8579 7.83483 20.1284 7.64679C20.4075 7.45278 20.7363 7.18271 21.1097 6.87723L20.4291 6.04543ZM21.2638 5.47238L20.9368 4.4486C20.6778 4.53133 20.4685 4.6599 20.2938 4.78432C20.1279 4.90254 19.9423 5.0551 19.7486 5.21362L20.4291 6.04543L21.1097 6.87723C21.3256 6.70063 21.4472 6.60185 21.5411 6.53492C21.6263 6.47418 21.6295 6.48379 21.5909 6.49615L21.2638 5.47238ZM22.1157 5.51487L22.543 4.52871C22.0349 4.30857 21.4643 4.28011 20.9368 4.4486L21.2638 5.47238L21.5909 6.49615C21.6229 6.48592 21.6576 6.48764 21.6884 6.50102L22.1157 5.51487ZM22.889 6.16794L23.649 5.40798C23.472 5.23103 23.3026 5.0608 23.1493 4.92668C22.9879 4.78551 22.7924 4.63678 22.543 4.52871L22.1157 5.51487L21.6884 6.50102C21.6512 6.48489 21.6553 6.47565 21.734 6.54451C21.8208 6.62042 21.9319 6.73075 22.1291 6.92789L22.889 6.16794ZM23.9732 7.25205L24.7331 6.49209L23.649 5.40798L22.889 6.16794L22.1291 6.92789L23.2132 8.012L23.9732 7.25205ZM23.9732 7.25207L24.7153 6.47465L24.7152 6.47463L23.9732 7.25205L23.2311 8.02947L23.2311 8.02949L23.9732 7.25207ZM24.6267 8.026L25.6129 7.59901C25.5049 7.34936 25.356 7.1537 25.2148 6.9922C25.0806 6.83877 24.9102 6.66919 24.7331 6.49211L23.9732 7.25207L23.2132 8.01202C23.4105 8.20931 23.5209 8.3205 23.5969 8.40735C23.6658 8.48613 23.6565 8.49026 23.6404 8.45299L24.6267 8.026ZM24.6691 8.87724L25.693 9.20397C25.8612 8.6769 25.8328 8.10673 25.6129 7.59901L24.6267 8.026L23.6404 8.45299C23.6537 8.48384 23.6555 8.51848 23.6453 8.5505L24.6691 8.87724ZM24.0958 9.71245L24.9276 10.393C25.0862 10.1992 25.2389 10.0135 25.3572 9.84742C25.4817 9.67266 25.6103 9.46315 25.693 9.20397L24.6691 8.87724L23.6453 8.5505C23.6576 8.5118 23.6672 8.51499 23.6065 8.60026C23.5395 8.69426 23.4407 8.81592 23.264 9.03189L24.0958 9.71245ZM23.0983 11.2167L24.1634 11.3596C24.1511 11.4513 24.1183 11.443 24.2588 11.2409C24.3933 11.0473 24.5989 10.7948 24.9276 10.393L24.0958 9.71245L23.264 9.03189C22.9582 9.40562 22.6879 9.73479 22.4937 10.0142C22.3055 10.2851 22.0911 10.6412 22.0331 11.0737L23.0983 11.2167ZM23.5648 12.3429L24.2169 11.4886C24.1772 11.4584 24.1568 11.4091 24.1634 11.3596L23.0983 11.2167L22.0331 11.0737C21.9238 11.8881 22.2595 12.6986 22.9126 13.1972L23.5648 12.3429ZM25.3336 12.7012L25.4405 11.6318C24.924 11.5801 24.6002 11.547 24.3682 11.5052C24.126 11.4616 24.1434 11.4325 24.2169 11.4886L23.5648 12.3429L22.9126 13.1972C23.2596 13.462 23.6629 13.5623 23.9875 13.6207C24.3223 13.681 24.7462 13.7226 25.2266 13.7706L25.3336 12.7012ZM26.3292 12.8863L26.8221 11.9312C26.5804 11.8065 26.3414 11.7493 26.1298 11.7138C25.9288 11.6801 25.6896 11.6567 25.4405 11.6318L25.3336 12.7012L25.2266 13.7706C25.5042 13.7984 25.66 13.8145 25.7738 13.8336C25.877 13.8509 25.8724 13.86 25.8364 13.8414L26.3292 12.8863ZM26.9013 13.5184L27.9006 13.123C27.697 12.6084 27.3139 12.185 26.8221 11.9312L26.3292 12.8863L25.8364 13.8414C25.8662 13.8568 25.8895 13.8825 25.9019 13.9138L26.9013 13.5184ZM26.9864 14.5275H28.0611C28.0611 14.2771 28.0617 14.0368 28.0481 13.8335C28.0338 13.6194 28.0007 13.3759 27.9006 13.123L26.9013 13.5184L25.9019 13.9138C25.8869 13.876 25.8964 13.8724 25.9034 13.9768C25.9111 14.0919 25.9116 14.2486 25.9116 14.5275H26.9864ZM26.9864 16.0613H28.0611V14.5275H26.9864H25.9116V16.0613H26.9864ZM26.9015 17.0691L27.901 17.464C28.0008 17.2114 28.0338 16.9682 28.0481 16.7544C28.0617 16.5513 28.0611 16.3113 28.0611 16.0613H26.9864H25.9116C25.9116 16.3399 25.9111 16.4963 25.9034 16.6113C25.8964 16.7155 25.887 16.7119 25.9019 16.6742L26.9015 17.0691ZM26.3287 17.702L26.8211 18.6573C27.3137 18.4034 27.6974 17.9794 27.901 17.464L26.9015 17.0691L25.9019 16.6742C25.8895 16.7055 25.8662 16.7313 25.8363 16.7467L26.3287 17.702ZM25.3341 17.8868L25.4411 18.9562C25.6899 18.9313 25.9288 18.908 26.1296 18.8743C26.3409 18.8388 26.5796 18.7818 26.8211 18.6573L26.3287 17.702L25.8363 16.7467C25.8724 16.7281 25.8769 16.7372 25.7738 16.7545C25.6601 16.7736 25.5044 16.7897 25.2272 16.8174L25.3341 17.8868ZM23.5679 18.2442L24.2192 19.0991C24.1458 19.1551 24.1285 19.1261 24.3704 19.0826C24.6021 19.0409 24.9254 19.0078 25.4411 18.9562L25.3341 17.8868L25.2272 16.8174C24.7475 16.8654 24.3243 16.9069 23.99 16.967C23.6659 17.0253 23.2632 17.1253 22.9166 17.3893L23.5679 18.2442ZM23.1007 19.3723L24.1657 19.2283C24.159 19.1788 24.1795 19.1294 24.2192 19.0991L23.5679 18.2442L22.9166 17.3893C22.2618 17.8882 21.9253 18.7004 22.0356 19.5163L23.1007 19.3723ZM24.0966 20.8736L24.9284 20.1931C24.6003 19.792 24.3952 19.5401 24.2609 19.3469C24.1206 19.1451 24.1533 19.1369 24.1657 19.2283L23.1007 19.3723L22.0356 19.5163C22.094 19.948 22.308 20.3034 22.4959 20.5737C22.6898 20.8526 22.9596 21.1812 23.2648 21.5542L24.0966 20.8736ZM24.6689 21.707L25.6925 21.3795C25.6098 21.1209 25.4814 20.9119 25.3571 20.7375C25.239 20.5718 25.0867 20.3865 24.9284 20.1931L24.0966 20.8736L23.2648 21.5542C23.4412 21.7697 23.5398 21.8911 23.6066 21.9849C23.6672 22.07 23.6576 22.0731 23.6453 22.0345L24.6689 21.707ZM24.6264 22.56L25.6123 22.9877C25.833 22.4791 25.8615 21.9076 25.6925 21.3795L24.6689 21.707L23.6453 22.0345C23.6555 22.0666 23.6538 22.1013 23.6404 22.1323L24.6264 22.56ZM23.974 23.3323L24.734 24.0922C24.9107 23.9155 25.0807 23.7463 25.2147 23.5932C25.3557 23.432 25.5043 23.2368 25.6123 22.9877L24.6264 22.56L23.6404 22.1323C23.6565 22.0951 23.6658 22.0992 23.597 22.1778C23.5211 22.2645 23.411 22.3754 23.2141 22.5723L23.974 23.3323ZM23.974 23.3323L24.734 24.0923L24.734 24.0922L23.974 23.3323L23.2141 22.5723L23.2141 22.5723L23.974 23.3323ZM22.889 24.4173L23.649 25.1772L24.734 24.0923L23.974 23.3323L23.2141 22.5723L22.1291 23.6573L22.889 24.4173ZM22.1158 25.0703L22.5432 26.0564C22.7926 25.9483 22.988 25.7996 23.1494 25.6585C23.3026 25.5244 23.4721 25.3542 23.649 25.1772L22.889 24.4173L22.1291 23.6573C21.932 23.8544 21.8209 23.9647 21.7341 24.0406C21.6554 24.1095 21.6513 24.1003 21.6885 24.0841L22.1158 25.0703ZM21.2638 25.1127L20.9367 26.1365C21.4643 26.3051 22.035 26.2766 22.5432 26.0564L22.1158 25.0703L21.6885 24.0841C21.6576 24.0975 21.623 24.0992 21.5909 24.089L21.2638 25.1127ZM20.4295 24.5399L19.7489 25.3717C19.9426 25.5302 20.1281 25.6827 20.2939 25.8009C20.4685 25.9253 20.6778 26.0538 20.9367 26.1365L21.2638 25.1127L21.5909 24.089C21.6295 24.1013 21.6264 24.1109 21.5412 24.0503C21.4473 23.9834 21.3258 23.8847 21.11 23.7081L20.4295 24.5399ZM18.9264 23.5431L18.7831 24.6082C18.6915 24.5959 18.6998 24.5631 18.9018 24.7035C19.0952 24.8379 19.3474 25.0433 19.7489 25.3717L20.4295 24.5399L21.11 23.7081C20.7366 23.4026 20.4077 23.1325 20.1285 22.9384C19.8578 22.7503 19.502 22.5361 19.0698 22.4779L18.9264 23.5431ZM17.7995 24.0099L18.654 24.6617C18.6843 24.622 18.7336 24.6016 18.7831 24.6082L18.9264 23.5431L19.0698 22.4779C18.2548 22.3683 17.4437 22.7043 16.945 23.3581L17.7995 24.0099ZM17.4415 25.7784L18.5109 25.8853C18.5625 25.3689 18.5957 25.0451 18.6374 24.8131C18.681 24.5708 18.7101 24.5882 18.654 24.6617L17.7995 24.0099L16.945 23.3581C16.6804 23.7049 16.5803 24.1081 16.5219 24.4325C16.4617 24.7673 16.4201 25.1911 16.3721 25.6715L17.4415 25.7784ZM17.2562 26.7748L18.2112 27.2678C18.3361 27.026 18.3933 26.7868 18.4288 26.5752C18.4626 26.3741 18.486 26.1347 18.5109 25.8853L17.4415 25.7784L16.3721 25.6715C16.3443 25.9492 16.3281 26.1053 16.309 26.2191C16.2917 26.3225 16.2826 26.3179 16.3012 26.2818L17.2562 26.7748ZM16.6244 27.3466L17.0199 28.3459C17.5343 28.1424 17.9575 27.7594 18.2112 27.2678L17.2562 26.7748L16.3012 26.2818C16.2858 26.3117 16.2601 26.3349 16.2289 26.3473L16.6244 27.3466ZM15.6149 27.4318V28.5065C15.8654 28.5065 16.1058 28.5071 16.3092 28.4935C16.5233 28.4792 16.7669 28.4461 17.0199 28.3459L16.6244 27.3466L16.2289 26.3473C16.2666 26.3324 16.2702 26.3418 16.1658 26.3488C16.0507 26.3565 15.8939 26.3571 15.6149 26.3571V27.4318ZM14.0821 27.4318V28.5065H15.6149V27.4318V26.3571H14.0821V27.4318ZM13.0729 27.3467L12.6775 28.346C12.9304 28.4461 13.174 28.4792 13.388 28.4935C13.5914 28.5071 13.8317 28.5065 14.0821 28.5065V27.4318V26.3571C13.8032 26.3571 13.6465 26.3565 13.5314 26.3488C13.427 26.3418 13.4306 26.3324 13.4683 26.3473L13.0729 27.3467ZM12.4409 26.7747L11.4858 27.2676C11.7396 27.7593 12.163 28.1424 12.6775 28.346L13.0729 27.3467L13.4683 26.3473C13.4371 26.3349 13.4114 26.3117 13.3959 26.2818L12.4409 26.7747ZM12.2557 25.7787L11.1863 25.8856C11.2112 26.1349 11.2346 26.3741 11.2684 26.5752C11.3039 26.7867 11.3611 27.0258 11.4858 27.2676L12.4409 26.7747L13.3959 26.2818C13.4146 26.3179 13.4055 26.3225 13.3882 26.2192C13.369 26.1053 13.3529 25.9494 13.3251 25.6717L12.2557 25.7787ZM11.8977 24.0103L11.0432 24.6622C10.9871 24.5887 11.0162 24.5713 11.0598 24.8136C11.1015 25.0455 11.1347 25.3692 11.1863 25.8856L12.2557 25.7787L13.3251 25.6717C13.2771 25.1914 13.2355 24.7677 13.1753 24.4329C13.1169 24.1085 13.0168 23.7053 12.7522 23.3585L11.8977 24.0103ZM10.7708 23.5436L10.9141 24.6087C10.9636 24.602 11.0129 24.6224 11.0432 24.6622L11.8977 24.0103L12.7522 23.3585C12.2535 22.7047 11.4424 22.3688 10.6275 22.4784L10.7708 23.5436ZM9.26769 24.5405L9.94826 25.3723C10.3498 25.0438 10.602 24.8384 10.7955 24.704C10.9974 24.5636 11.0057 24.5964 10.9141 24.6087L10.7708 23.5436L10.6275 22.4784C10.1953 22.5366 9.83944 22.7508 9.56876 22.9389C9.28952 23.133 8.96058 23.4031 8.58713 23.7087L9.26769 24.5405ZM8.43331 25.1133L8.76037 26.1371C9.01929 26.0544 9.22859 25.9258 9.40319 25.8014C9.56907 25.6832 9.7546 25.5307 9.94826 25.3723L9.26769 24.5405L8.58713 23.7087C8.37137 23.8852 8.24984 23.9839 8.15594 24.0508C8.07078 24.1115 8.06759 24.1019 8.10624 24.0895L8.43331 25.1133ZM7.58133 25.0708L7.15402 26.057C7.66214 26.2771 8.23287 26.3056 8.76037 26.1371L8.43331 25.1133L8.10624 24.0895C8.07419 24.0998 8.03951 24.0981 8.00864 24.0847L7.58133 25.0708ZM6.80808 24.4178L6.04813 25.1778C6.22506 25.3547 6.3945 25.5249 6.54779 25.659C6.70915 25.8002 6.90462 25.9489 7.15402 26.057L7.58133 25.0708L8.00865 24.0847C8.04588 24.1008 8.04175 24.11 7.96304 24.0412C7.87626 23.9653 7.76516 23.855 7.56804 23.6578L6.80808 24.4178ZM5.72329 23.333L4.96333 24.093L6.04813 25.1778L6.80808 24.4178L7.56804 23.6578L6.48324 22.573L5.72329 23.333ZM5.72327 23.333L4.9943 24.1227L4.99431 24.1227L5.72329 23.333L6.45226 22.5433L6.45224 22.5433L5.72327 23.333ZM5.07072 22.5604L4.0847 22.988C4.19276 23.2372 4.34139 23.4325 4.48244 23.5937C4.61644 23.7468 4.78652 23.9161 4.96331 24.0929L5.72327 23.333L6.48323 22.573C6.28627 22.3761 6.17604 22.2651 6.10018 22.1784C6.03138 22.0997 6.0406 22.0956 6.05673 22.1328L5.07072 22.5604ZM5.02819 21.7078L4.00452 21.3804C3.83571 21.9083 3.8642 22.4795 4.0847 22.988L5.07072 22.5604L6.05673 22.1328C6.04334 22.1019 6.0416 22.0672 6.05186 22.0351L5.02819 21.7078ZM5.60065 20.874L4.76884 20.1935C4.61052 20.387 4.45812 20.5724 4.34002 20.7381C4.21571 20.9126 4.08725 21.1217 4.00452 21.3804L5.02819 21.7078L6.05186 22.0351C6.03951 22.0737 6.02992 22.0706 6.09056 21.9854C6.15742 21.8916 6.25606 21.7702 6.43245 21.5546L5.60065 20.874ZM6.59694 19.3721L5.53185 19.2283C5.5442 19.1368 5.57693 19.1451 5.43665 19.3469C5.30232 19.5402 5.0971 19.7923 4.76884 20.1935L5.60065 20.874L6.43245 21.5546C6.73776 21.1814 7.00771 20.8527 7.20165 20.5737C7.38964 20.3033 7.60373 19.9477 7.66202 19.5158L6.59694 19.3721ZM6.12983 18.2444L5.47835 19.0992C5.51811 19.1295 5.53854 19.1788 5.53186 19.2283L6.59694 19.3721L7.66202 19.5158C7.77209 18.7003 7.43581 17.8885 6.78131 17.3896L6.12983 18.2444ZM4.36311 17.8868L4.25618 18.9562C4.77204 19.0078 5.09545 19.0409 5.32713 19.0826C5.56909 19.1261 5.5518 19.1551 5.47835 19.0992L6.12983 18.2444L6.78131 17.3896C6.43467 17.1254 6.03186 17.0254 5.70768 16.9671C5.37322 16.9069 4.94987 16.8654 4.47005 16.8174L4.36311 17.8868ZM4.3631 17.8868L4.17084 18.9442L4.17086 18.9442L4.36311 17.8868L4.55537 16.8294L4.55535 16.8294L4.3631 17.8868ZM4.36309 17.8868V18.9615H4.3631V17.8868V16.8121H4.36309V17.8868ZM3.36842 17.702L2.87597 18.6573C3.11745 18.7817 3.35623 18.8388 3.56756 18.8743C3.76833 18.908 4.00726 18.9313 4.25615 18.9562L4.36309 17.8868L4.47003 16.8174C4.19276 16.7897 4.03707 16.7735 3.9234 16.7545C3.82029 16.7372 3.82482 16.7281 3.86088 16.7467L3.36842 17.702ZM2.79575 17.0692L1.79621 17.4641C1.99983 17.9794 2.38348 18.4034 2.87597 18.6573L3.36842 17.702L3.86088 16.7467C3.83096 16.7313 3.80765 16.7055 3.79528 16.6742L2.79575 17.0692ZM2.71082 16.0612H1.63608C1.63608 16.3113 1.63552 16.5513 1.64908 16.7544C1.66335 16.9682 1.69638 17.2115 1.79621 17.4641L2.79575 17.0692L3.79528 16.6742C3.81019 16.7119 3.80075 16.7156 3.79378 16.6113C3.78611 16.4963 3.78555 16.3398 3.78555 16.0612H2.71082ZM2.71082 14.5276H1.63608V16.0612H2.71082H3.78555V14.5276H2.71082ZM2.79597 13.5183L1.79663 13.1229C1.69653 13.3758 1.66342 13.6194 1.64911 13.8335C1.63552 14.0368 1.63608 14.2772 1.63608 14.5276H2.71082H3.78555C3.78555 14.2486 3.78611 14.0919 3.79381 13.9768C3.80079 13.8724 3.81025 13.876 3.79531 13.9138L2.79597 13.5183ZM3.36789 12.8863L2.87496 11.9313C2.3833 12.1851 2.00022 12.6084 1.79663 13.1229L2.79597 13.5183L3.79531 13.9138C3.80768 13.8825 3.83095 13.8568 3.86082 13.8414L3.36789 12.8863ZM4.36373 12.7012L4.25679 11.6318C4.00761 11.6567 3.76838 11.6801 3.56736 11.7138C3.35576 11.7494 3.11669 11.8065 2.87496 11.9313L3.36789 12.8863L3.86082 13.8414C3.82474 13.86 3.82019 13.8509 3.9234 13.8336C4.03719 13.8145 4.19306 13.7983 4.47067 13.7706L4.36373 12.7012ZM4.36374 12.7012V11.6264H4.36373V12.7012V13.7759H4.36374V12.7012ZM6.13292 12.3428L5.48069 11.4886C5.55419 11.4325 5.57156 11.4615 5.3293 11.5052C5.0973 11.5469 4.77342 11.5801 4.2568 11.6318L4.36374 12.7012L4.47068 13.7706C4.9512 13.7225 5.37518 13.6809 5.71012 13.6206C6.03479 13.5622 6.43819 13.4619 6.78515 13.197L6.13292 12.3428ZM6.59933 11.2168L5.53412 11.3596C5.54075 11.4091 5.52036 11.4583 5.48069 11.4886L6.13292 12.3428L6.78515 13.197C7.43808 12.6985 7.7737 11.8882 7.66454 11.074L6.59933 11.2168ZM5.60152 9.71212L4.76972 10.3927C5.09857 10.7946 5.30418 11.0472 5.43873 11.2408C5.57926 11.443 5.54641 11.4513 5.53412 11.3596L6.59933 11.2168L7.66454 11.074C7.60652 10.6413 7.39213 10.2851 7.20386 10.0142C7.00963 9.73467 6.7392 9.4054 6.43332 9.03155L5.60152 9.71212ZM5.02797 8.87652L4.00405 9.20311C4.08676 9.46241 4.21543 9.67201 4.33998 9.84684C4.45831 10.0129 4.61104 10.1987 4.76972 10.3927L5.60152 9.71212L6.43332 9.03155C6.25654 8.81549 6.15767 8.69376 6.09068 8.59972C6.0299 8.5144 6.03953 8.51121 6.05188 8.54993L5.02797 8.87652ZM5.07041 8.02561L4.08407 7.59876C3.86442 8.10631 3.836 8.67622 4.00405 9.20311L5.02797 8.87652L6.05188 8.54993C6.04167 8.51792 6.0434 8.4833 6.05675 8.45246L5.07041 8.02561ZM5.72414 7.25134L4.96419 6.49139C4.78703 6.66854 4.6166 6.83819 4.48235 6.99168C4.34103 7.15326 4.19216 7.34899 4.08407 7.59876L5.07041 8.02561L6.05675 8.45246C6.04061 8.48974 6.03135 8.48561 6.10028 8.4068C6.17627 8.31991 6.28673 8.20867 6.4841 8.0113L5.72414 7.25134ZM6.80808 6.16741L6.04812 5.40746L4.96419 6.49139L5.72414 7.25134L6.4841 8.0113L7.56803 6.92737L6.80808 6.16741ZM7.58146 5.5143L7.15421 4.52814C6.90476 4.63621 6.70925 4.78495 6.54786 4.92613C6.39454 5.06025 6.22508 5.2305 6.04812 5.40746L6.80808 6.16741L7.56803 6.92737C7.76518 6.73022 7.87631 6.61988 7.9631 6.54396C8.04182 6.47509 8.04595 6.48433 8.00871 6.50047L7.58146 5.5143ZM8.43329 5.47182L8.76029 4.44803C8.23287 4.27957 7.66225 4.30803 7.15421 4.52814L7.58146 5.5143L8.00871 6.50047C8.03957 6.48709 8.07424 6.48537 8.10629 6.4956L8.43329 5.47182ZM9.26813 6.04498L9.94869 5.21318C9.7549 5.05462 9.56927 4.90203 9.40333 4.7838C9.22869 4.65936 9.01931 4.53076 8.76029 4.44803L8.43329 5.47182L8.10629 6.4956C8.06758 6.48324 8.07078 6.47362 8.15605 6.53438C8.25003 6.60134 8.37167 6.70015 8.58756 6.87679L9.26813 6.04498ZM10.7705 7.04169L10.9143 5.97662C11.0059 5.98899 10.9976 6.02173 10.7956 5.88132C10.6023 5.74691 10.35 5.54156 9.94869 5.21318L9.26813 6.04498L8.58756 6.87679C8.96089 7.18224 9.28968 7.45227 9.56876 7.64626C9.8392 7.83426 10.1948 8.04844 10.6267 8.10677L10.7705 7.04169ZM11.8984 6.57453L11.0435 5.92311C11.0132 5.96288 10.9639 5.98331 10.9143 5.97662L10.7705 7.04169L10.6267 8.10677C11.4423 8.2169 12.2543 7.88058 12.7532 7.22596L11.8984 6.57453ZM12.2558 4.80821L11.1864 4.70127C11.1349 5.21701 11.1017 5.54033 11.0601 5.77195C11.0166 6.01382 10.9876 5.99654 11.0435 5.92311L11.8984 6.57453L12.7532 7.22596C13.0173 6.87935 13.1173 6.47662 13.1756 6.15249C13.2357 5.8181 13.2773 5.39485 13.3252 4.91516L12.2558 4.80821ZM12.4406 3.81402L11.4852 3.3217C11.3608 3.5631 11.3038 3.80177 11.2683 4.01301C11.2346 4.2137 11.2113 4.45252 11.1864 4.70127L12.2558 4.80821L13.3252 4.91516C13.353 4.63802 13.3691 4.48242 13.3881 4.36882C13.4054 4.26577 13.4145 4.2703 13.3959 4.30634L12.4406 3.81402ZM13.0736 3.24112L12.6788 2.24153C12.1632 2.44515 11.7391 2.82898 11.4852 3.3217L12.4406 3.81402L13.3959 4.30634C13.4113 4.2764 13.4371 4.25308 13.4684 4.24071L13.0736 3.24112ZM14.0812 3.15625V2.08151C13.8312 2.08151 13.5913 2.08096 13.3882 2.0945C13.1745 2.10876 12.9314 2.14176 12.6788 2.24153L13.0736 3.24112L13.4684 4.24071C13.4307 4.2556 13.4271 4.24617 13.5314 4.23921C13.6463 4.23154 13.8027 4.23099 14.0812 4.23099V3.15625ZM15.6158 3.15625V2.08151H14.0812V3.15625V4.23099H15.6158V3.15625ZM16.6237 3.24116L17.0186 2.24161C16.766 2.1418 16.5228 2.10878 16.309 2.09451C16.1059 2.08096 15.8659 2.08151 15.6158 2.08151V3.15625V4.23099C15.8944 4.23099 16.0509 4.23154 16.1658 4.23922C16.2701 4.24618 16.2665 4.25562 16.2288 4.24072L16.6237 3.24116ZM17.2566 3.81391L18.2119 3.32149C17.958 2.82894 17.534 2.44523 17.0186 2.24161L16.6237 3.24116L16.2288 4.24072C16.2601 4.25309 16.2859 4.2764 16.3013 4.30632L17.2566 3.81391ZM17.4414 4.80836L18.5108 4.70142C18.4859 4.4526 18.4626 4.21371 18.4289 4.01297C18.3934 3.80168 18.3363 3.56294 18.2119 3.32148L17.2566 3.81391L16.3013 4.30633C16.2827 4.27028 16.2917 4.26575 16.309 4.36882C16.3281 4.48245 16.3442 4.63809 16.372 4.9153L17.4414 4.80836ZM19.7036 15.2938H18.6289C18.6289 17.3817 16.9364 19.0742 14.8485 19.0742V20.149V21.2237C18.1235 21.2237 20.7784 18.5688 20.7784 15.2938H19.7036ZM14.8485 10.4387V11.5135C16.9364 11.5135 18.6289 13.206 18.6289 15.2938H19.7036H20.7784C20.7784 12.0189 18.1235 9.364 14.8485 9.364V10.4387ZM9.99343 15.2938H11.0682C11.0682 13.206 12.7607 11.5135 14.8485 11.5135V10.4387V9.364C11.5736 9.364 8.91869 12.0189 8.91869 15.2938H9.99343ZM14.8485 20.149V19.0742C12.7607 19.0742 11.0682 17.3817 11.0682 15.2938H9.99343H8.91869C8.91869 18.5688 11.5736 21.2237 14.8485 21.2237V20.149Z"
+												fill="#897CFF"
+											/>
+										</svg>
 
-  <main class="main">
-    <section class="vacancies">
-      <div class="container">
-        <h1 class="vacancies__title">Вакансии</h1>
-        <p class="vacancies__title-text-span">
-          В связи с расширением в наш дружный коллектив<span> требуются
-            специалисты:</span>
-        </p>
-        <div class="vacancies__dental-surgeon">
-          <h2 class="vacancies__dental-surgeon-title">Врач стоматолог-хирург</h2>
-          <div class="vacancies__dental-surgeon-wrap">
-            <ul class="vacancies__dental-surgeon-list list-reset">
-              <li class="vacancies__dental-surgeon-item">
-                <h3 class="vacancies__dental-surgeon-item-title">
-                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M17.4414 4.80837H16.3666V4.86197L16.372 4.91531L17.4414 4.80837ZM17.4414 4.80836H18.5161V4.75476L18.5108 4.70142L17.4414 4.80836ZM17.799 6.57516L16.9443 7.22671L16.9443 7.22671L17.799 6.57516ZM18.9265 7.0422L18.7829 5.9771L18.7829 5.9771L18.9265 7.0422ZM20.4291 6.04543L21.1097 6.87723L21.1097 6.87723L20.4291 6.04543ZM21.2638 5.47238L21.5909 6.49615L21.5909 6.49615L21.2638 5.47238ZM22.1157 5.51487L22.543 4.52871L22.543 4.52871L22.1157 5.51487ZM22.889 6.16794L22.1291 6.92789L22.1291 6.92789L22.889 6.16794ZM23.9732 7.25205L23.2132 8.012L23.222 8.02084L23.2311 8.02947L23.9732 7.25205ZM23.9732 7.25207L24.7331 6.49211L24.7243 6.48328L24.7153 6.47465L23.9732 7.25207ZM24.6267 8.026L23.6404 8.45299L23.6404 8.45299L24.6267 8.026ZM24.6691 8.87724L25.693 9.20397L25.693 9.20397L24.6691 8.87724ZM24.0958 9.71245L23.264 9.03189L23.264 9.03189L24.0958 9.71245ZM23.0983 11.2167L24.1634 11.3596L24.1634 11.3596L23.0983 11.2167ZM23.5648 12.3429L22.9126 13.1972L22.9126 13.1972L23.5648 12.3429ZM25.3336 12.7012L25.4405 11.6318L25.4405 11.6318L25.3336 12.7012ZM26.3292 12.8863L26.8221 11.9312L26.8221 11.9312L26.3292 12.8863ZM26.9013 13.5184L25.9019 13.9138L25.9019 13.9138L26.9013 13.5184ZM26.9015 17.0691L25.9019 16.6742L25.9019 16.6742L26.9015 17.0691ZM26.3287 17.702L25.8363 16.7467L25.8363 16.7467L26.3287 17.702ZM25.3341 17.8868L25.4411 18.9562L25.4411 18.9562L25.3341 17.8868ZM23.5679 18.2442L24.2192 19.0991L24.2192 19.0991L23.5679 18.2442ZM23.1007 19.3723L22.0356 19.5163L22.0356 19.5163L23.1007 19.3723ZM24.0966 20.8736L24.9284 20.1931L24.9284 20.1931L24.0966 20.8736ZM24.6689 21.707L23.6453 22.0345L23.6453 22.0345L24.6689 21.707ZM24.6264 22.56L23.6404 22.1323L23.6404 22.1323L24.6264 22.56ZM22.889 24.4173L22.1291 23.6573L22.1291 23.6573L22.889 24.4173ZM22.1158 25.0703L21.6885 24.0841L21.6885 24.0841L22.1158 25.0703ZM21.2638 25.1127L21.5909 24.089L21.5909 24.089L21.2638 25.1127ZM20.4295 24.5399L21.11 23.7081L21.11 23.7081L20.4295 24.5399ZM18.9264 23.5431L18.7831 24.6082L18.7831 24.6082L18.9264 23.5431ZM17.7995 24.0099L16.945 23.3581L16.945 23.3581L17.7995 24.0099ZM17.4415 25.7784L18.5109 25.8853L18.5109 25.8853L17.4415 25.7784ZM17.2562 26.7748L16.3012 26.2818L16.3012 26.2818L17.2562 26.7748ZM16.6244 27.3466L16.2289 26.3473L16.2289 26.3473L16.6244 27.3466ZM13.0729 27.3467L13.4683 26.3473L13.4683 26.3473L13.0729 27.3467ZM12.4409 26.7747L11.4858 27.2676L11.4858 27.2676L12.4409 26.7747ZM12.2557 25.7787L13.3251 25.6717L13.3251 25.6717L12.2557 25.7787ZM11.8977 24.0103L11.0432 24.6622L11.0432 24.6622L11.8977 24.0103ZM10.7708 23.5436L10.9141 24.6087L10.9141 24.6087L10.7708 23.5436ZM9.26769 24.5405L8.58713 23.7087L8.58713 23.7087L9.26769 24.5405ZM8.43331 25.1133L8.76037 26.1371L8.76037 26.1371L8.43331 25.1133ZM7.58133 25.0708L7.15402 26.057L7.15402 26.057L7.58133 25.0708ZM6.80808 24.4178L7.56804 23.6578L7.56804 23.6578L6.80808 24.4178ZM5.72329 23.333L6.48324 22.573L6.46805 22.5579L6.45226 22.5433L5.72329 23.333ZM5.72327 23.333L4.96331 24.0929L4.97851 24.1081L4.9943 24.1227L5.72327 23.333ZM5.07072 22.5604L4.0847 22.988L4.0847 22.988L5.07072 22.5604ZM5.02819 21.7078L4.00452 21.3804L4.00452 21.3804L5.02819 21.7078ZM5.60065 20.874L6.43245 21.5546L6.43245 21.5546L5.60065 20.874ZM6.59694 19.3721L5.53186 19.2283L5.53185 19.2283L6.59694 19.3721ZM6.12983 18.2444L5.47835 19.0992L5.47835 19.0992L6.12983 18.2444ZM4.36311 17.8868L4.17086 18.9442L4.21328 18.9519L4.25618 18.9562L4.36311 17.8868ZM4.3631 17.8868L4.55535 16.8294L4.46001 16.8121H4.3631V17.8868ZM4.36309 17.8868L4.25615 18.9562L4.30949 18.9615H4.36309V17.8868ZM3.36842 17.702L2.87597 18.6573L2.87597 18.6573L3.36842 17.702ZM2.79575 17.0692L1.79621 17.4641L1.79621 17.4641L2.79575 17.0692ZM2.79597 13.5183L1.79663 13.1229L1.79663 13.1229L2.79597 13.5183ZM3.36789 12.8863L2.87496 11.9313L2.87496 11.9313L3.36789 12.8863ZM4.36373 12.7012V11.6264H4.31013L4.25679 11.6318L4.36373 12.7012ZM4.36374 12.7012V13.7759H4.41734L4.47068 13.7706L4.36374 12.7012ZM6.13292 12.3428L5.48069 11.4886L5.48069 11.4886L6.13292 12.3428ZM6.59933 11.2168L5.53412 11.3596L5.53412 11.3596L6.59933 11.2168ZM5.60152 9.71212L4.76972 10.3927L4.76972 10.3927L5.60152 9.71212ZM5.02797 8.87652L4.00405 9.20311L4.00405 9.20311L5.02797 8.87652ZM5.07041 8.02561L4.08407 7.59876L4.08407 7.59876L5.07041 8.02561ZM5.72414 7.25134L6.4841 8.0113L6.4841 8.0113L5.72414 7.25134ZM7.58146 5.5143L7.15421 4.52814L7.15421 4.52814L7.58146 5.5143ZM8.43329 5.47182L8.10629 6.4956L8.10629 6.4956L8.43329 5.47182ZM9.26813 6.04498L8.58756 6.87679L8.58756 6.87679L9.26813 6.04498ZM10.7705 7.04169L10.6267 8.10677L10.6267 8.10677L10.7705 7.04169ZM11.8984 6.57453L11.0435 5.92311L11.8984 6.57453ZM12.2558 4.80821L11.1864 4.70127L11.1864 4.70127L12.2558 4.80821ZM12.4406 3.81402L13.3959 4.30634L13.3959 4.30634L12.4406 3.81402ZM13.0736 3.24112L13.4684 4.24071L13.4684 4.24071L13.0736 3.24112ZM16.6237 3.24116L17.0186 2.24161L17.0186 2.24161L16.6237 3.24116ZM17.2566 3.81391L16.3013 4.30632L16.3013 4.30633L17.2566 3.81391ZM17.4414 4.80837H18.5161V4.80836H17.4414H16.3666V4.80837H17.4414ZM17.799 6.57516L18.6537 5.9236C18.7097 5.99704 18.6807 6.01434 18.6372 5.7724C18.5955 5.54073 18.5624 5.21731 18.5108 4.70143L17.4414 4.80837L16.372 4.91531C16.4199 5.39514 16.4615 5.81851 16.5217 6.15299C16.58 6.47721 16.68 6.88005 16.9443 7.22671L17.799 6.57516ZM18.9265 7.0422L18.7829 5.9771C18.7333 5.98378 18.684 5.96336 18.6537 5.9236L17.799 6.57516L16.9443 7.22671C17.4431 7.88106 18.2548 8.21727 19.0702 8.10729L18.9265 7.0422ZM20.4291 6.04543L19.7486 5.21362C19.3472 5.54204 19.0949 5.7474 18.9016 5.88181C18.6996 6.0222 18.6913 5.98945 18.7829 5.9771L18.9265 7.0422L19.0702 8.10729C19.5022 8.04902 19.8579 7.83483 20.1284 7.64679C20.4075 7.45278 20.7363 7.18271 21.1097 6.87723L20.4291 6.04543ZM21.2638 5.47238L20.9368 4.4486C20.6778 4.53133 20.4685 4.6599 20.2938 4.78432C20.1279 4.90254 19.9423 5.0551 19.7486 5.21362L20.4291 6.04543L21.1097 6.87723C21.3256 6.70063 21.4472 6.60185 21.5411 6.53492C21.6263 6.47418 21.6295 6.48379 21.5909 6.49615L21.2638 5.47238ZM22.1157 5.51487L22.543 4.52871C22.0349 4.30857 21.4643 4.28011 20.9368 4.4486L21.2638 5.47238L21.5909 6.49615C21.6229 6.48592 21.6576 6.48764 21.6884 6.50102L22.1157 5.51487ZM22.889 6.16794L23.649 5.40798C23.472 5.23103 23.3026 5.0608 23.1493 4.92668C22.9879 4.78551 22.7924 4.63678 22.543 4.52871L22.1157 5.51487L21.6884 6.50102C21.6512 6.48489 21.6553 6.47565 21.734 6.54451C21.8208 6.62042 21.9319 6.73075 22.1291 6.92789L22.889 6.16794ZM23.9732 7.25205L24.7331 6.49209L23.649 5.40798L22.889 6.16794L22.1291 6.92789L23.2132 8.012L23.9732 7.25205ZM23.9732 7.25207L24.7153 6.47465L24.7152 6.47463L23.9732 7.25205L23.2311 8.02947L23.2311 8.02949L23.9732 7.25207ZM24.6267 8.026L25.6129 7.59901C25.5049 7.34936 25.356 7.1537 25.2148 6.9922C25.0806 6.83877 24.9102 6.66919 24.7331 6.49211L23.9732 7.25207L23.2132 8.01202C23.4105 8.20931 23.5209 8.3205 23.5969 8.40735C23.6658 8.48613 23.6565 8.49026 23.6404 8.45299L24.6267 8.026ZM24.6691 8.87724L25.693 9.20397C25.8612 8.6769 25.8328 8.10673 25.6129 7.59901L24.6267 8.026L23.6404 8.45299C23.6537 8.48384 23.6555 8.51848 23.6453 8.5505L24.6691 8.87724ZM24.0958 9.71245L24.9276 10.393C25.0862 10.1992 25.2389 10.0135 25.3572 9.84742C25.4817 9.67266 25.6103 9.46315 25.693 9.20397L24.6691 8.87724L23.6453 8.5505C23.6576 8.5118 23.6672 8.51499 23.6065 8.60026C23.5395 8.69426 23.4407 8.81592 23.264 9.03189L24.0958 9.71245ZM23.0983 11.2167L24.1634 11.3596C24.1511 11.4513 24.1183 11.443 24.2588 11.2409C24.3933 11.0473 24.5989 10.7948 24.9276 10.393L24.0958 9.71245L23.264 9.03189C22.9582 9.40562 22.6879 9.73479 22.4937 10.0142C22.3055 10.2851 22.0911 10.6412 22.0331 11.0737L23.0983 11.2167ZM23.5648 12.3429L24.2169 11.4886C24.1772 11.4584 24.1568 11.4091 24.1634 11.3596L23.0983 11.2167L22.0331 11.0737C21.9238 11.8881 22.2595 12.6986 22.9126 13.1972L23.5648 12.3429ZM25.3336 12.7012L25.4405 11.6318C24.924 11.5801 24.6002 11.547 24.3682 11.5052C24.126 11.4616 24.1434 11.4325 24.2169 11.4886L23.5648 12.3429L22.9126 13.1972C23.2596 13.462 23.6629 13.5623 23.9875 13.6207C24.3223 13.681 24.7462 13.7226 25.2266 13.7706L25.3336 12.7012ZM26.3292 12.8863L26.8221 11.9312C26.5804 11.8065 26.3414 11.7493 26.1298 11.7138C25.9288 11.6801 25.6896 11.6567 25.4405 11.6318L25.3336 12.7012L25.2266 13.7706C25.5042 13.7984 25.66 13.8145 25.7738 13.8336C25.877 13.8509 25.8724 13.86 25.8364 13.8414L26.3292 12.8863ZM26.9013 13.5184L27.9006 13.123C27.697 12.6084 27.3139 12.185 26.8221 11.9312L26.3292 12.8863L25.8364 13.8414C25.8662 13.8568 25.8895 13.8825 25.9019 13.9138L26.9013 13.5184ZM26.9864 14.5275H28.0611C28.0611 14.2771 28.0617 14.0368 28.0481 13.8335C28.0338 13.6194 28.0007 13.3759 27.9006 13.123L26.9013 13.5184L25.9019 13.9138C25.8869 13.876 25.8964 13.8724 25.9034 13.9768C25.9111 14.0919 25.9116 14.2486 25.9116 14.5275H26.9864ZM26.9864 16.0613H28.0611V14.5275H26.9864H25.9116V16.0613H26.9864ZM26.9015 17.0691L27.901 17.464C28.0008 17.2114 28.0338 16.9682 28.0481 16.7544C28.0617 16.5513 28.0611 16.3113 28.0611 16.0613H26.9864H25.9116C25.9116 16.3399 25.9111 16.4963 25.9034 16.6113C25.8964 16.7155 25.887 16.7119 25.9019 16.6742L26.9015 17.0691ZM26.3287 17.702L26.8211 18.6573C27.3137 18.4034 27.6974 17.9794 27.901 17.464L26.9015 17.0691L25.9019 16.6742C25.8895 16.7055 25.8662 16.7313 25.8363 16.7467L26.3287 17.702ZM25.3341 17.8868L25.4411 18.9562C25.6899 18.9313 25.9288 18.908 26.1296 18.8743C26.3409 18.8388 26.5796 18.7818 26.8211 18.6573L26.3287 17.702L25.8363 16.7467C25.8724 16.7281 25.8769 16.7372 25.7738 16.7545C25.6601 16.7736 25.5044 16.7897 25.2272 16.8174L25.3341 17.8868ZM23.5679 18.2442L24.2192 19.0991C24.1458 19.1551 24.1285 19.1261 24.3704 19.0826C24.6021 19.0409 24.9254 19.0078 25.4411 18.9562L25.3341 17.8868L25.2272 16.8174C24.7475 16.8654 24.3243 16.9069 23.99 16.967C23.6659 17.0253 23.2632 17.1253 22.9166 17.3893L23.5679 18.2442ZM23.1007 19.3723L24.1657 19.2283C24.159 19.1788 24.1795 19.1294 24.2192 19.0991L23.5679 18.2442L22.9166 17.3893C22.2618 17.8882 21.9253 18.7004 22.0356 19.5163L23.1007 19.3723ZM24.0966 20.8736L24.9284 20.1931C24.6003 19.792 24.3952 19.5401 24.2609 19.3469C24.1206 19.1451 24.1533 19.1369 24.1657 19.2283L23.1007 19.3723L22.0356 19.5163C22.094 19.948 22.308 20.3034 22.4959 20.5737C22.6898 20.8526 22.9596 21.1812 23.2648 21.5542L24.0966 20.8736ZM24.6689 21.707L25.6925 21.3795C25.6098 21.1209 25.4814 20.9119 25.3571 20.7375C25.239 20.5718 25.0867 20.3865 24.9284 20.1931L24.0966 20.8736L23.2648 21.5542C23.4412 21.7697 23.5398 21.8911 23.6066 21.9849C23.6672 22.07 23.6576 22.0731 23.6453 22.0345L24.6689 21.707ZM24.6264 22.56L25.6123 22.9877C25.833 22.4791 25.8615 21.9076 25.6925 21.3795L24.6689 21.707L23.6453 22.0345C23.6555 22.0666 23.6538 22.1013 23.6404 22.1323L24.6264 22.56ZM23.974 23.3323L24.734 24.0922C24.9107 23.9155 25.0807 23.7463 25.2147 23.5932C25.3557 23.432 25.5043 23.2368 25.6123 22.9877L24.6264 22.56L23.6404 22.1323C23.6565 22.0951 23.6658 22.0992 23.597 22.1778C23.5211 22.2645 23.411 22.3754 23.2141 22.5723L23.974 23.3323ZM23.974 23.3323L24.734 24.0923L24.734 24.0922L23.974 23.3323L23.2141 22.5723L23.2141 22.5723L23.974 23.3323ZM22.889 24.4173L23.649 25.1772L24.734 24.0923L23.974 23.3323L23.2141 22.5723L22.1291 23.6573L22.889 24.4173ZM22.1158 25.0703L22.5432 26.0564C22.7926 25.9483 22.988 25.7996 23.1494 25.6585C23.3026 25.5244 23.4721 25.3542 23.649 25.1772L22.889 24.4173L22.1291 23.6573C21.932 23.8544 21.8209 23.9647 21.7341 24.0406C21.6554 24.1095 21.6513 24.1003 21.6885 24.0841L22.1158 25.0703ZM21.2638 25.1127L20.9367 26.1365C21.4643 26.3051 22.035 26.2766 22.5432 26.0564L22.1158 25.0703L21.6885 24.0841C21.6576 24.0975 21.623 24.0992 21.5909 24.089L21.2638 25.1127ZM20.4295 24.5399L19.7489 25.3717C19.9426 25.5302 20.1281 25.6827 20.2939 25.8009C20.4685 25.9253 20.6778 26.0538 20.9367 26.1365L21.2638 25.1127L21.5909 24.089C21.6295 24.1013 21.6264 24.1109 21.5412 24.0503C21.4473 23.9834 21.3258 23.8847 21.11 23.7081L20.4295 24.5399ZM18.9264 23.5431L18.7831 24.6082C18.6915 24.5959 18.6998 24.5631 18.9018 24.7035C19.0952 24.8379 19.3474 25.0433 19.7489 25.3717L20.4295 24.5399L21.11 23.7081C20.7366 23.4026 20.4077 23.1325 20.1285 22.9384C19.8578 22.7503 19.502 22.5361 19.0698 22.4779L18.9264 23.5431ZM17.7995 24.0099L18.654 24.6617C18.6843 24.622 18.7336 24.6016 18.7831 24.6082L18.9264 23.5431L19.0698 22.4779C18.2548 22.3683 17.4437 22.7043 16.945 23.3581L17.7995 24.0099ZM17.4415 25.7784L18.5109 25.8853C18.5625 25.3689 18.5957 25.0451 18.6374 24.8131C18.681 24.5708 18.7101 24.5882 18.654 24.6617L17.7995 24.0099L16.945 23.3581C16.6804 23.7049 16.5803 24.1081 16.5219 24.4325C16.4617 24.7673 16.4201 25.1911 16.3721 25.6715L17.4415 25.7784ZM17.2562 26.7748L18.2112 27.2678C18.3361 27.026 18.3933 26.7868 18.4288 26.5752C18.4626 26.3741 18.486 26.1347 18.5109 25.8853L17.4415 25.7784L16.3721 25.6715C16.3443 25.9492 16.3281 26.1053 16.309 26.2191C16.2917 26.3225 16.2826 26.3179 16.3012 26.2818L17.2562 26.7748ZM16.6244 27.3466L17.0199 28.3459C17.5343 28.1424 17.9575 27.7594 18.2112 27.2678L17.2562 26.7748L16.3012 26.2818C16.2858 26.3117 16.2601 26.3349 16.2289 26.3473L16.6244 27.3466ZM15.6149 27.4318V28.5065C15.8654 28.5065 16.1058 28.5071 16.3092 28.4935C16.5233 28.4792 16.7669 28.4461 17.0199 28.3459L16.6244 27.3466L16.2289 26.3473C16.2666 26.3324 16.2702 26.3418 16.1658 26.3488C16.0507 26.3565 15.8939 26.3571 15.6149 26.3571V27.4318ZM14.0821 27.4318V28.5065H15.6149V27.4318V26.3571H14.0821V27.4318ZM13.0729 27.3467L12.6775 28.346C12.9304 28.4461 13.174 28.4792 13.388 28.4935C13.5914 28.5071 13.8317 28.5065 14.0821 28.5065V27.4318V26.3571C13.8032 26.3571 13.6465 26.3565 13.5314 26.3488C13.427 26.3418 13.4306 26.3324 13.4683 26.3473L13.0729 27.3467ZM12.4409 26.7747L11.4858 27.2676C11.7396 27.7593 12.163 28.1424 12.6775 28.346L13.0729 27.3467L13.4683 26.3473C13.4371 26.3349 13.4114 26.3117 13.3959 26.2818L12.4409 26.7747ZM12.2557 25.7787L11.1863 25.8856C11.2112 26.1349 11.2346 26.3741 11.2684 26.5752C11.3039 26.7867 11.3611 27.0258 11.4858 27.2676L12.4409 26.7747L13.3959 26.2818C13.4146 26.3179 13.4055 26.3225 13.3882 26.2192C13.369 26.1053 13.3529 25.9494 13.3251 25.6717L12.2557 25.7787ZM11.8977 24.0103L11.0432 24.6622C10.9871 24.5887 11.0162 24.5713 11.0598 24.8136C11.1015 25.0455 11.1347 25.3692 11.1863 25.8856L12.2557 25.7787L13.3251 25.6717C13.2771 25.1914 13.2355 24.7677 13.1753 24.4329C13.1169 24.1085 13.0168 23.7053 12.7522 23.3585L11.8977 24.0103ZM10.7708 23.5436L10.9141 24.6087C10.9636 24.602 11.0129 24.6224 11.0432 24.6622L11.8977 24.0103L12.7522 23.3585C12.2535 22.7047 11.4424 22.3688 10.6275 22.4784L10.7708 23.5436ZM9.26769 24.5405L9.94826 25.3723C10.3498 25.0438 10.602 24.8384 10.7955 24.704C10.9974 24.5636 11.0057 24.5964 10.9141 24.6087L10.7708 23.5436L10.6275 22.4784C10.1953 22.5366 9.83944 22.7508 9.56876 22.9389C9.28952 23.133 8.96058 23.4031 8.58713 23.7087L9.26769 24.5405ZM8.43331 25.1133L8.76037 26.1371C9.01929 26.0544 9.22859 25.9258 9.40319 25.8014C9.56907 25.6832 9.7546 25.5307 9.94826 25.3723L9.26769 24.5405L8.58713 23.7087C8.37137 23.8852 8.24984 23.9839 8.15594 24.0508C8.07078 24.1115 8.06759 24.1019 8.10624 24.0895L8.43331 25.1133ZM7.58133 25.0708L7.15402 26.057C7.66214 26.2771 8.23287 26.3056 8.76037 26.1371L8.43331 25.1133L8.10624 24.0895C8.07419 24.0998 8.03951 24.0981 8.00864 24.0847L7.58133 25.0708ZM6.80808 24.4178L6.04813 25.1778C6.22506 25.3547 6.3945 25.5249 6.54779 25.659C6.70915 25.8002 6.90462 25.9489 7.15402 26.057L7.58133 25.0708L8.00865 24.0847C8.04588 24.1008 8.04175 24.11 7.96304 24.0412C7.87626 23.9653 7.76516 23.855 7.56804 23.6578L6.80808 24.4178ZM5.72329 23.333L4.96333 24.093L6.04813 25.1778L6.80808 24.4178L7.56804 23.6578L6.48324 22.573L5.72329 23.333ZM5.72327 23.333L4.9943 24.1227L4.99431 24.1227L5.72329 23.333L6.45226 22.5433L6.45224 22.5433L5.72327 23.333ZM5.07072 22.5604L4.0847 22.988C4.19276 23.2372 4.34139 23.4325 4.48244 23.5937C4.61644 23.7468 4.78652 23.9161 4.96331 24.0929L5.72327 23.333L6.48323 22.573C6.28627 22.3761 6.17604 22.2651 6.10018 22.1784C6.03138 22.0997 6.0406 22.0956 6.05673 22.1328L5.07072 22.5604ZM5.02819 21.7078L4.00452 21.3804C3.83571 21.9083 3.8642 22.4795 4.0847 22.988L5.07072 22.5604L6.05673 22.1328C6.04334 22.1019 6.0416 22.0672 6.05186 22.0351L5.02819 21.7078ZM5.60065 20.874L4.76884 20.1935C4.61052 20.387 4.45812 20.5724 4.34002 20.7381C4.21571 20.9126 4.08725 21.1217 4.00452 21.3804L5.02819 21.7078L6.05186 22.0351C6.03951 22.0737 6.02992 22.0706 6.09056 21.9854C6.15742 21.8916 6.25606 21.7702 6.43245 21.5546L5.60065 20.874ZM6.59694 19.3721L5.53185 19.2283C5.5442 19.1368 5.57693 19.1451 5.43665 19.3469C5.30232 19.5402 5.0971 19.7923 4.76884 20.1935L5.60065 20.874L6.43245 21.5546C6.73776 21.1814 7.00771 20.8527 7.20165 20.5737C7.38964 20.3033 7.60373 19.9477 7.66202 19.5158L6.59694 19.3721ZM6.12983 18.2444L5.47835 19.0992C5.51811 19.1295 5.53854 19.1788 5.53186 19.2283L6.59694 19.3721L7.66202 19.5158C7.77209 18.7003 7.43581 17.8885 6.78131 17.3896L6.12983 18.2444ZM4.36311 17.8868L4.25618 18.9562C4.77204 19.0078 5.09545 19.0409 5.32713 19.0826C5.56909 19.1261 5.5518 19.1551 5.47835 19.0992L6.12983 18.2444L6.78131 17.3896C6.43467 17.1254 6.03186 17.0254 5.70768 16.9671C5.37322 16.9069 4.94987 16.8654 4.47005 16.8174L4.36311 17.8868ZM4.3631 17.8868L4.17084 18.9442L4.17086 18.9442L4.36311 17.8868L4.55537 16.8294L4.55535 16.8294L4.3631 17.8868ZM4.36309 17.8868V18.9615H4.3631V17.8868V16.8121H4.36309V17.8868ZM3.36842 17.702L2.87597 18.6573C3.11745 18.7817 3.35623 18.8388 3.56756 18.8743C3.76833 18.908 4.00726 18.9313 4.25615 18.9562L4.36309 17.8868L4.47003 16.8174C4.19276 16.7897 4.03707 16.7735 3.9234 16.7545C3.82029 16.7372 3.82482 16.7281 3.86088 16.7467L3.36842 17.702ZM2.79575 17.0692L1.79621 17.4641C1.99983 17.9794 2.38348 18.4034 2.87597 18.6573L3.36842 17.702L3.86088 16.7467C3.83096 16.7313 3.80765 16.7055 3.79528 16.6742L2.79575 17.0692ZM2.71082 16.0612H1.63608C1.63608 16.3113 1.63552 16.5513 1.64908 16.7544C1.66335 16.9682 1.69638 17.2115 1.79621 17.4641L2.79575 17.0692L3.79528 16.6742C3.81019 16.7119 3.80075 16.7156 3.79378 16.6113C3.78611 16.4963 3.78555 16.3398 3.78555 16.0612H2.71082ZM2.71082 14.5276H1.63608V16.0612H2.71082H3.78555V14.5276H2.71082ZM2.79597 13.5183L1.79663 13.1229C1.69653 13.3758 1.66342 13.6194 1.64911 13.8335C1.63552 14.0368 1.63608 14.2772 1.63608 14.5276H2.71082H3.78555C3.78555 14.2486 3.78611 14.0919 3.79381 13.9768C3.80079 13.8724 3.81025 13.876 3.79531 13.9138L2.79597 13.5183ZM3.36789 12.8863L2.87496 11.9313C2.3833 12.1851 2.00022 12.6084 1.79663 13.1229L2.79597 13.5183L3.79531 13.9138C3.80768 13.8825 3.83095 13.8568 3.86082 13.8414L3.36789 12.8863ZM4.36373 12.7012L4.25679 11.6318C4.00761 11.6567 3.76838 11.6801 3.56736 11.7138C3.35576 11.7494 3.11669 11.8065 2.87496 11.9313L3.36789 12.8863L3.86082 13.8414C3.82474 13.86 3.82019 13.8509 3.9234 13.8336C4.03719 13.8145 4.19306 13.7983 4.47067 13.7706L4.36373 12.7012ZM4.36374 12.7012V11.6264H4.36373V12.7012V13.7759H4.36374V12.7012ZM6.13292 12.3428L5.48069 11.4886C5.55419 11.4325 5.57156 11.4615 5.3293 11.5052C5.0973 11.5469 4.77342 11.5801 4.2568 11.6318L4.36374 12.7012L4.47068 13.7706C4.9512 13.7225 5.37518 13.6809 5.71012 13.6206C6.03479 13.5622 6.43819 13.4619 6.78515 13.197L6.13292 12.3428ZM6.59933 11.2168L5.53412 11.3596C5.54075 11.4091 5.52036 11.4583 5.48069 11.4886L6.13292 12.3428L6.78515 13.197C7.43808 12.6985 7.7737 11.8882 7.66454 11.074L6.59933 11.2168ZM5.60152 9.71212L4.76972 10.3927C5.09857 10.7946 5.30418 11.0472 5.43873 11.2408C5.57926 11.443 5.54641 11.4513 5.53412 11.3596L6.59933 11.2168L7.66454 11.074C7.60652 10.6413 7.39213 10.2851 7.20386 10.0142C7.00963 9.73467 6.7392 9.4054 6.43332 9.03155L5.60152 9.71212ZM5.02797 8.87652L4.00405 9.20311C4.08676 9.46241 4.21543 9.67201 4.33998 9.84684C4.45831 10.0129 4.61104 10.1987 4.76972 10.3927L5.60152 9.71212L6.43332 9.03155C6.25654 8.81549 6.15767 8.69376 6.09068 8.59972C6.0299 8.5144 6.03953 8.51121 6.05188 8.54993L5.02797 8.87652ZM5.07041 8.02561L4.08407 7.59876C3.86442 8.10631 3.836 8.67622 4.00405 9.20311L5.02797 8.87652L6.05188 8.54993C6.04167 8.51792 6.0434 8.4833 6.05675 8.45246L5.07041 8.02561ZM5.72414 7.25134L4.96419 6.49139C4.78703 6.66854 4.6166 6.83819 4.48235 6.99168C4.34103 7.15326 4.19216 7.34899 4.08407 7.59876L5.07041 8.02561L6.05675 8.45246C6.04061 8.48974 6.03135 8.48561 6.10028 8.4068C6.17627 8.31991 6.28673 8.20867 6.4841 8.0113L5.72414 7.25134ZM6.80808 6.16741L6.04812 5.40746L4.96419 6.49139L5.72414 7.25134L6.4841 8.0113L7.56803 6.92737L6.80808 6.16741ZM7.58146 5.5143L7.15421 4.52814C6.90476 4.63621 6.70925 4.78495 6.54786 4.92613C6.39454 5.06025 6.22508 5.2305 6.04812 5.40746L6.80808 6.16741L7.56803 6.92737C7.76518 6.73022 7.87631 6.61988 7.9631 6.54396C8.04182 6.47509 8.04595 6.48433 8.00871 6.50047L7.58146 5.5143ZM8.43329 5.47182L8.76029 4.44803C8.23287 4.27957 7.66225 4.30803 7.15421 4.52814L7.58146 5.5143L8.00871 6.50047C8.03957 6.48709 8.07424 6.48537 8.10629 6.4956L8.43329 5.47182ZM9.26813 6.04498L9.94869 5.21318C9.7549 5.05462 9.56927 4.90203 9.40333 4.7838C9.22869 4.65936 9.01931 4.53076 8.76029 4.44803L8.43329 5.47182L8.10629 6.4956C8.06758 6.48324 8.07078 6.47362 8.15605 6.53438C8.25003 6.60134 8.37167 6.70015 8.58756 6.87679L9.26813 6.04498ZM10.7705 7.04169L10.9143 5.97662C11.0059 5.98899 10.9976 6.02173 10.7956 5.88132C10.6023 5.74691 10.35 5.54156 9.94869 5.21318L9.26813 6.04498L8.58756 6.87679C8.96089 7.18224 9.28968 7.45227 9.56876 7.64626C9.8392 7.83426 10.1948 8.04844 10.6267 8.10677L10.7705 7.04169ZM11.8984 6.57453L11.0435 5.92311C11.0132 5.96288 10.9639 5.98331 10.9143 5.97662L10.7705 7.04169L10.6267 8.10677C11.4423 8.2169 12.2543 7.88058 12.7532 7.22596L11.8984 6.57453ZM12.2558 4.80821L11.1864 4.70127C11.1349 5.21701 11.1017 5.54033 11.0601 5.77195C11.0166 6.01382 10.9876 5.99654 11.0435 5.92311L11.8984 6.57453L12.7532 7.22596C13.0173 6.87935 13.1173 6.47662 13.1756 6.15249C13.2357 5.8181 13.2773 5.39485 13.3252 4.91516L12.2558 4.80821ZM12.4406 3.81402L11.4852 3.3217C11.3608 3.5631 11.3038 3.80177 11.2683 4.01301C11.2346 4.2137 11.2113 4.45252 11.1864 4.70127L12.2558 4.80821L13.3252 4.91516C13.353 4.63802 13.3691 4.48242 13.3881 4.36882C13.4054 4.26577 13.4145 4.2703 13.3959 4.30634L12.4406 3.81402ZM13.0736 3.24112L12.6788 2.24153C12.1632 2.44515 11.7391 2.82898 11.4852 3.3217L12.4406 3.81402L13.3959 4.30634C13.4113 4.2764 13.4371 4.25308 13.4684 4.24071L13.0736 3.24112ZM14.0812 3.15625V2.08151C13.8312 2.08151 13.5913 2.08096 13.3882 2.0945C13.1745 2.10876 12.9314 2.14176 12.6788 2.24153L13.0736 3.24112L13.4684 4.24071C13.4307 4.2556 13.4271 4.24617 13.5314 4.23921C13.6463 4.23154 13.8027 4.23099 14.0812 4.23099V3.15625ZM15.6158 3.15625V2.08151H14.0812V3.15625V4.23099H15.6158V3.15625ZM16.6237 3.24116L17.0186 2.24161C16.766 2.1418 16.5228 2.10878 16.309 2.09451C16.1059 2.08096 15.8659 2.08151 15.6158 2.08151V3.15625V4.23099C15.8944 4.23099 16.0509 4.23154 16.1658 4.23922C16.2701 4.24618 16.2665 4.25562 16.2288 4.24072L16.6237 3.24116ZM17.2566 3.81391L18.2119 3.32149C17.958 2.82894 17.534 2.44523 17.0186 2.24161L16.6237 3.24116L16.2288 4.24072C16.2601 4.25309 16.2859 4.2764 16.3013 4.30632L17.2566 3.81391ZM17.4414 4.80836L18.5108 4.70142C18.4859 4.4526 18.4626 4.21371 18.4289 4.01297C18.3934 3.80168 18.3363 3.56294 18.2119 3.32148L17.2566 3.81391L16.3013 4.30633C16.2827 4.27028 16.2917 4.26575 16.309 4.36882C16.3281 4.48245 16.3442 4.63809 16.372 4.9153L17.4414 4.80836ZM19.7036 15.2938H18.6289C18.6289 17.3817 16.9364 19.0742 14.8485 19.0742V20.149V21.2237C18.1235 21.2237 20.7784 18.5688 20.7784 15.2938H19.7036ZM14.8485 10.4387V11.5135C16.9364 11.5135 18.6289 13.206 18.6289 15.2938H19.7036H20.7784C20.7784 12.0189 18.1235 9.364 14.8485 9.364V10.4387ZM9.99343 15.2938H11.0682C11.0682 13.206 12.7607 11.5135 14.8485 11.5135V10.4387V9.364C11.5736 9.364 8.91869 12.0189 8.91869 15.2938H9.99343ZM14.8485 20.149V19.0742C12.7607 19.0742 11.0682 17.3817 11.0682 15.2938H9.99343H8.91869C8.91869 18.5688 11.5736 21.2237 14.8485 21.2237V20.149Z"
-                      fill="#897CFF" />
-                  </svg>
+										Обязанности:
+									</h3>
+									<ul class="vacancies__dental-surgeon-lists list-reset">
+										<li class="vacancies__dental-surgeon-items">
+											– Встреча пациентов, консультации по услугам и ценам
+											клиники, запись на приём к специалистам, организация
+											записи докторов и координирование кабинетов, оформление
+											документации в электронной базе, помощь пациентам,
+											обеспечение их комфортного пребывания в клинике;
+										</li>
+										<li class="vacancies__dental-surgeon-items">
+											– Ведение кассовых операций, кассовая отчетность,
+											обеспечение высокого качества обслуживания пациентов
+										</li>
+									</ul>
+								</li>
+								<li class="vacancies__dental-surgeon-item">
+									<h3 class="vacancies__dental-surgeon-item-title">
+										<svg
+											width="30"
+											height="30"
+											viewBox="0 0 30 30"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M22.1312 4.47428V4.47428C24.1423 4.47427 25.7726 6.10455 25.7726 8.11561L25.7726 10.7166C25.7726 11.1221 25.7726 11.3249 25.6795 11.4729C25.631 11.5501 25.5658 11.6154 25.4886 11.6639C25.3405 11.7569 25.1377 11.7569 24.7322 11.7569L18.4899 11.7569M22.1312 4.47428V4.47428C20.1202 4.47428 18.4899 6.10456 18.4899 8.11561L18.4899 11.7569M22.1312 4.47428L8.77967 4.47428C6.49095 4.47428 5.34659 4.47427 4.63557 5.18529C3.92456 5.8963 3.92456 7.04066 3.92456 9.32939L3.92456 26.3223L7.56589 25.1085L11.2072 26.3223L14.8486 25.1085L18.4899 26.3223L18.4899 11.7569"
+												stroke="#897CFF"
+												stroke-width="2.14948"
+											/>
+											<path
+												d="M8.77966 9.32812L13.6348 9.32812"
+												stroke="#897CFF"
+												stroke-width="2.14948"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M9.99341 14.1836H8.77963"
+												stroke="#897CFF"
+												stroke-width="2.14948"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M8.77966 19.0391L12.421 19.0391"
+												stroke="#897CFF"
+												stroke-width="2.14948"
+												stroke-linecap="round"
+											/>
+										</svg>
+										Требования:
+									</h3>
+									<ul class="vacancies__dental-surgeon-lists list-reset">
+										<li class="vacancies__dental-surgeon-items">
+											– Пунктуальность и ответственность, внимательность,
+											клиентоориентированность, коммуникабельность и
+											стрессоустойчивость, умение предвосхитить и не допустить
+											конфликтную ситуацию;
+										</li>
+										<li class="vacancies__dental-surgeon-items">
+											– Умение работать в режиме многозадачности;
+										</li>
+										<li class="vacancies__dental-surgeon-items">
+											– Грамотная речь умение общаться с клиентами;
+										</li>
+										<li class="vacancies__dental-surgeon-items">
+											– ПК - уверенный пользователь, готовность быстро
+											обучаться;
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<svg
+								class="vacancies__dental-surgeon-svg"
+								width="291"
+								height="377"
+								viewBox="0 0 291 377"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<g clip-path="url(#clip0_3_9509)">
+									<path
+										d="M171.537 224.07C218.097 224.07 255.966 182.533 255.966 131.484C255.966 115.333 252.246 100.585 244.97 87.547L244.562 20.5092C244.546 17.9641 243.061 15.6635 240.744 14.6031C239.504 14.0321 209.697 0.703125 171.539 0.703125C133.38 0.703125 103.586 14.0485 102.333 14.6031C100.017 15.6473 98.5156 17.9639 98.5156 20.5092L98.1078 87.547C91.3209 99.6849 87.6664 113.341 87.2095 128.203C87.1931 128.481 87.1605 128.758 87.1768 129.019C87.1605 129.835 87.1116 130.65 87.1116 131.466C87.1116 182.533 124.994 224.052 171.541 224.052L171.537 224.07ZM109.248 94.5302C115.3 91.8547 138.075 82.9144 171.537 82.9144C204.998 82.9144 227.791 91.871 233.826 94.5302C238.932 103.879 241.836 114.353 242.571 125.724C179.434 133.131 157.198 96.7818 156.266 95.1993C155.108 93.1763 152.938 91.9201 150.605 91.9201C148.256 91.9201 146.102 93.1763 144.944 95.2156C129.037 123.146 109.524 124.468 100.664 123.342C101.643 112.868 104.514 103.226 109.278 94.5144L109.248 94.5302ZM171.537 211.019C133.638 211.019 102.64 177.916 100.372 136.312C112.135 137.34 133.312 134.926 151.063 109.867C161.064 121.124 184.019 139.918 225.966 139.918C231.17 139.918 236.766 139.494 242.574 138.874C239.213 179.269 208.653 211.019 171.537 211.019ZM111.549 24.9489C120.424 21.5554 143.852 13.7569 171.537 13.7569C199.239 13.7569 222.666 21.5554 231.525 24.9489L231.851 79.6993C220.496 75.6206 199.515 69.8614 171.521 69.8614C143.526 69.8614 122.559 75.6205 111.19 79.6993L111.517 24.9489H111.549Z"
+										fill="#EBEAF9"
+									/>
+									<path
+										d="M19.2727 392.261H323.802C325.727 392.261 327.554 391.412 328.81 389.928C330.05 388.443 330.572 386.502 330.23 384.593L312.855 286.77C309.82 269.689 299.705 256.082 286.49 251.285L220.058 227.107C217.529 226.177 214.69 226.911 212.912 228.951L171.555 276.313L130.197 228.951C128.435 226.911 125.58 226.177 123.051 227.107L56.6191 251.285C43.4041 256.098 33.2893 269.705 30.2546 286.786L12.8794 384.609C12.5367 386.502 13.0588 388.46 14.2987 389.944C15.5386 391.429 17.3659 392.277 19.3072 392.277L19.2727 392.261ZM243.666 322.287H243.715H243.748C248.805 322.319 252.9 326.431 252.9 331.488C252.9 336.546 248.773 340.69 243.699 340.69C238.625 340.69 234.498 336.562 234.498 331.488C234.498 326.415 238.609 322.303 243.666 322.287ZM43.079 289.054C45.3141 276.541 52.1989 266.768 61.0578 263.538L95.7103 250.927V280.163C78.9552 281.664 65.7239 295.629 65.7239 312.776V345.437C65.7239 353.693 71.6625 360.626 79.4935 362.209V363.351C79.4935 366.956 82.4139 369.877 86.0194 369.877C89.6249 369.877 92.5453 366.956 92.5453 363.351V349.5C92.5453 345.894 89.6249 342.974 86.0194 342.974C82.9196 342.974 80.4562 345.176 79.7872 348.064C79.1835 347.346 78.7756 346.465 78.7756 345.438V312.776C78.7756 301.829 87.6834 292.921 98.6306 292.921H105.842C116.789 292.921 125.697 301.829 125.697 312.776V345.438C125.697 346.449 125.305 347.346 124.685 348.064C124.016 345.177 121.553 342.974 118.453 342.974C114.847 342.974 111.927 345.894 111.927 349.5V363.351C111.927 366.956 114.847 369.877 118.453 369.877C122.058 369.877 124.979 366.956 124.979 363.351V362.209C132.81 360.626 138.748 353.692 138.748 345.437V312.776C138.748 295.629 125.517 281.664 108.762 280.163V246.179L123.282 240.893L166.614 290.523C169.094 293.362 173.972 293.362 176.436 290.523L219.767 240.893L237.159 247.223V310.327C228.072 313.133 221.415 321.519 221.415 331.503C221.415 343.772 231.4 353.756 243.669 353.756C255.937 353.756 265.922 343.772 265.922 331.503C265.922 321.519 259.265 313.149 250.194 310.327V251.968L281.975 263.535C290.834 266.765 297.735 276.538 299.954 289.051L315.975 379.206H27.0578L43.079 289.054Z"
+										fill="#EBEAF9"
+									/>
+									<path
+										d="M178.062 53.1617V48.4468H182.777C186.382 48.4468 189.303 45.5265 189.303 41.9209C189.303 38.3154 186.382 35.3951 182.777 35.3951H178.062V30.6802C178.062 27.0746 175.141 24.1543 171.536 24.1543C167.93 24.1543 165.01 27.0746 165.01 30.6802V35.3951H160.295C156.69 35.3951 153.769 38.3154 153.769 41.9209C153.769 45.5265 156.69 48.4468 160.295 48.4468H165.01V53.1617C165.01 56.7673 167.93 59.6876 171.536 59.6876C175.141 59.6876 178.062 56.7673 178.062 53.1617Z"
+										fill="#EBEAF9"
+									/>
+								</g>
+								<defs>
+									<clipPath id="clip0_3_9509">
+										<rect
+											width="291"
+											height="376"
+											fill="white"
+											transform="translate(0 0.28125)"
+										/>
+									</clipPath>
+								</defs>
+							</svg>
+						</div>
+						<button
+							class="vacancies__dental-surgeon-btn bth-reset"
+							id="opensModalBtn"
+						>
+							Откликнуться
+							<svg
+								class="vacancies__dental-surgeon-icon"
+								width="45"
+								height="45"
+								viewBox="0 0 45 45"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<circle
+									cx="22.399"
+									cy="22.7616"
+									r="21.8817"
+									fill="white"
+								></circle>
+								<path
+									d="M29.7828 26.8467V15.3781M29.7828 15.3781H18.3143M29.7828 15.3781L15.0165 30.1445"
+									stroke="#535353"
+									stroke-width="2.66"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								></path>
+							</svg>
+						</button>
+					</div>
 
-                  Обязанности:
-                </h3>
-                <ul class="vacancies__dental-surgeon-lists list-reset">
-                  <li class="vacancies__dental-surgeon-items">
-                    – Встреча пациентов, консультации по услугам и ценам клиники, запись на приём к специалистам,
-                    организация записи докторов и координирование кабинетов, оформление документации в электронной базе,
-                    помощь пациентам, обеспечение их комфортного пребывания в клинике;
-                  </li>
-                  <li class="vacancies__dental-surgeon-items">
-                    – Ведение кассовых операций, кассовая отчетность, обеспечение высокого качества обслуживания
-                    пациентов
-                  </li>
-                </ul>
-              </li>
-              <li class="vacancies__dental-surgeon-item">
-                <h3 class="vacancies__dental-surgeon-item-title">
-                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M22.1312 4.47428V4.47428C24.1423 4.47427 25.7726 6.10455 25.7726 8.11561L25.7726 10.7166C25.7726 11.1221 25.7726 11.3249 25.6795 11.4729C25.631 11.5501 25.5658 11.6154 25.4886 11.6639C25.3405 11.7569 25.1377 11.7569 24.7322 11.7569L18.4899 11.7569M22.1312 4.47428V4.47428C20.1202 4.47428 18.4899 6.10456 18.4899 8.11561L18.4899 11.7569M22.1312 4.47428L8.77967 4.47428C6.49095 4.47428 5.34659 4.47427 4.63557 5.18529C3.92456 5.8963 3.92456 7.04066 3.92456 9.32939L3.92456 26.3223L7.56589 25.1085L11.2072 26.3223L14.8486 25.1085L18.4899 26.3223L18.4899 11.7569"
-                      stroke="#897CFF" stroke-width="2.14948" />
-                    <path d="M8.77966 9.32812L13.6348 9.32812" stroke="#897CFF" stroke-width="2.14948"
-                      stroke-linecap="round" />
-                    <path d="M9.99341 14.1836H8.77963" stroke="#897CFF" stroke-width="2.14948" stroke-linecap="round" />
-                    <path d="M8.77966 19.0391L12.421 19.0391" stroke="#897CFF" stroke-width="2.14948"
-                      stroke-linecap="round" />
-                  </svg>
-                  Требования:
-                </h3>
-                <ul class="vacancies__dental-surgeon-lists list-reset">
-                  <li class="vacancies__dental-surgeon-items">
-                    – Пунктуальность и ответственность, внимательность, клиентоориентированность, коммуникабельность и
-                    стрессоустойчивость, умение предвосхитить и не допустить конфликтную ситуацию;
-                  </li>
-                  <li class="vacancies__dental-surgeon-items">
-                    – Умение работать в режиме многозадачности;
-                  </li>
-                  <li class="vacancies__dental-surgeon-items">
-                    – Грамотная речь умение общаться с клиентами;
-                  </li>
-                  <li class="vacancies__dental-surgeon-items">
-                    – ПК - уверенный пользователь, готовность быстро обучаться;
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            <svg class="vacancies__dental-surgeon-svg" width="291" height="377" viewBox="0 0 291 377" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_3_9509)">
-                <path
-                  d="M171.537 224.07C218.097 224.07 255.966 182.533 255.966 131.484C255.966 115.333 252.246 100.585 244.97 87.547L244.562 20.5092C244.546 17.9641 243.061 15.6635 240.744 14.6031C239.504 14.0321 209.697 0.703125 171.539 0.703125C133.38 0.703125 103.586 14.0485 102.333 14.6031C100.017 15.6473 98.5156 17.9639 98.5156 20.5092L98.1078 87.547C91.3209 99.6849 87.6664 113.341 87.2095 128.203C87.1931 128.481 87.1605 128.758 87.1768 129.019C87.1605 129.835 87.1116 130.65 87.1116 131.466C87.1116 182.533 124.994 224.052 171.541 224.052L171.537 224.07ZM109.248 94.5302C115.3 91.8547 138.075 82.9144 171.537 82.9144C204.998 82.9144 227.791 91.871 233.826 94.5302C238.932 103.879 241.836 114.353 242.571 125.724C179.434 133.131 157.198 96.7818 156.266 95.1993C155.108 93.1763 152.938 91.9201 150.605 91.9201C148.256 91.9201 146.102 93.1763 144.944 95.2156C129.037 123.146 109.524 124.468 100.664 123.342C101.643 112.868 104.514 103.226 109.278 94.5144L109.248 94.5302ZM171.537 211.019C133.638 211.019 102.64 177.916 100.372 136.312C112.135 137.34 133.312 134.926 151.063 109.867C161.064 121.124 184.019 139.918 225.966 139.918C231.17 139.918 236.766 139.494 242.574 138.874C239.213 179.269 208.653 211.019 171.537 211.019ZM111.549 24.9489C120.424 21.5554 143.852 13.7569 171.537 13.7569C199.239 13.7569 222.666 21.5554 231.525 24.9489L231.851 79.6993C220.496 75.6206 199.515 69.8614 171.521 69.8614C143.526 69.8614 122.559 75.6205 111.19 79.6993L111.517 24.9489H111.549Z"
-                  fill="#EBEAF9" />
-                <path
-                  d="M19.2727 392.261H323.802C325.727 392.261 327.554 391.412 328.81 389.928C330.05 388.443 330.572 386.502 330.23 384.593L312.855 286.77C309.82 269.689 299.705 256.082 286.49 251.285L220.058 227.107C217.529 226.177 214.69 226.911 212.912 228.951L171.555 276.313L130.197 228.951C128.435 226.911 125.58 226.177 123.051 227.107L56.6191 251.285C43.4041 256.098 33.2893 269.705 30.2546 286.786L12.8794 384.609C12.5367 386.502 13.0588 388.46 14.2987 389.944C15.5386 391.429 17.3659 392.277 19.3072 392.277L19.2727 392.261ZM243.666 322.287H243.715H243.748C248.805 322.319 252.9 326.431 252.9 331.488C252.9 336.546 248.773 340.69 243.699 340.69C238.625 340.69 234.498 336.562 234.498 331.488C234.498 326.415 238.609 322.303 243.666 322.287ZM43.079 289.054C45.3141 276.541 52.1989 266.768 61.0578 263.538L95.7103 250.927V280.163C78.9552 281.664 65.7239 295.629 65.7239 312.776V345.437C65.7239 353.693 71.6625 360.626 79.4935 362.209V363.351C79.4935 366.956 82.4139 369.877 86.0194 369.877C89.6249 369.877 92.5453 366.956 92.5453 363.351V349.5C92.5453 345.894 89.6249 342.974 86.0194 342.974C82.9196 342.974 80.4562 345.176 79.7872 348.064C79.1835 347.346 78.7756 346.465 78.7756 345.438V312.776C78.7756 301.829 87.6834 292.921 98.6306 292.921H105.842C116.789 292.921 125.697 301.829 125.697 312.776V345.438C125.697 346.449 125.305 347.346 124.685 348.064C124.016 345.177 121.553 342.974 118.453 342.974C114.847 342.974 111.927 345.894 111.927 349.5V363.351C111.927 366.956 114.847 369.877 118.453 369.877C122.058 369.877 124.979 366.956 124.979 363.351V362.209C132.81 360.626 138.748 353.692 138.748 345.437V312.776C138.748 295.629 125.517 281.664 108.762 280.163V246.179L123.282 240.893L166.614 290.523C169.094 293.362 173.972 293.362 176.436 290.523L219.767 240.893L237.159 247.223V310.327C228.072 313.133 221.415 321.519 221.415 331.503C221.415 343.772 231.4 353.756 243.669 353.756C255.937 353.756 265.922 343.772 265.922 331.503C265.922 321.519 259.265 313.149 250.194 310.327V251.968L281.975 263.535C290.834 266.765 297.735 276.538 299.954 289.051L315.975 379.206H27.0578L43.079 289.054Z"
-                  fill="#EBEAF9" />
-                <path
-                  d="M178.062 53.1617V48.4468H182.777C186.382 48.4468 189.303 45.5265 189.303 41.9209C189.303 38.3154 186.382 35.3951 182.777 35.3951H178.062V30.6802C178.062 27.0746 175.141 24.1543 171.536 24.1543C167.93 24.1543 165.01 27.0746 165.01 30.6802V35.3951H160.295C156.69 35.3951 153.769 38.3154 153.769 41.9209C153.769 45.5265 156.69 48.4468 160.295 48.4468H165.01V53.1617C165.01 56.7673 167.93 59.6876 171.536 59.6876C175.141 59.6876 178.062 56.7673 178.062 53.1617Z"
-                  fill="#EBEAF9" />
-              </g>
-              <defs>
-                <clipPath id="clip0_3_9509">
-                  <rect width="291" height="376" fill="white" transform="translate(0 0.28125)" />
-                </clipPath>
-              </defs>
-            </svg>
-          </div>
-          <button class="vacancies__dental-surgeon-btn bth-reset" id="opensModalBtn">
-            Откликнуться
-            <svg class="vacancies__dental-surgeon-icon" width="45" height="45" viewBox="0 0 45 45" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <circle cx="22.399" cy="22.7616" r="21.8817" fill="white"></circle>
-              <path d="M29.7828 26.8467V15.3781M29.7828 15.3781H18.3143M29.7828 15.3781L15.0165 30.1445"
-                stroke="#535353" stroke-width="2.66" stroke-linecap="round" stroke-linejoin="round"></path>
-            </svg>
-          </button>
-        </div>
+					<div class="vacancies__dental-surgeon">
+						<h2 class="vacancies__dental-surgeon-title">
+							Администратор медицинского центра
+						</h2>
+						<div class="vacancies__dental-surgeon-wrap">
+							<ul class="vacancies__dental-surgeon-list list-reset">
+								<li class="vacancies__dental-surgeon-item">
+									<h3 class="vacancies__dental-surgeon-item-title">
+										<svg
+											width="30"
+											height="30"
+											viewBox="0 0 30 30"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M17.4415 4.78397H18.5162V4.73037L18.5109 4.67703L17.4415 4.78397ZM17.2563 3.78799L16.3012 4.28087V4.28087L17.2563 3.78799ZM17.4415 4.78398H16.3667V4.83759L16.3721 4.89092L17.4415 4.78398ZM17.7994 6.55225L16.9449 7.20406L17.7994 6.55225ZM18.9264 7.01904L18.783 5.95391L18.9264 7.01904ZM20.4294 6.02218L21.11 6.85398L21.11 6.85398L20.4294 6.02218ZM21.2638 5.44938L21.5908 6.47314L21.5908 6.47313L21.2638 5.44938ZM22.1158 5.49188L21.6884 6.478L21.6884 6.478L22.1158 5.49188ZM22.889 6.14485L22.129 6.90481L22.889 6.14485ZM23.9738 7.22968L23.2139 7.98964L23.2679 8.04365L23.329 8.08947L23.9738 7.22968ZM23.9738 7.22969L24.7338 6.46974L24.6798 6.41573L24.6187 6.3699L23.9738 7.22969ZM24.6264 8.00229L25.6124 7.57469L25.6124 7.57468L24.6264 8.00229ZM24.6689 8.85493L23.6452 8.52756L23.6452 8.52757L24.6689 8.85493ZM24.0964 9.68864L24.8564 10.4486L24.8943 10.4107L24.9283 10.3692L24.0964 9.68864ZM24.0964 9.68865L23.3365 8.92869L23.2986 8.9666L23.2646 9.00808L24.0964 9.68865ZM23.1002 11.1906L22.0351 11.0468V11.0468L23.1002 11.1906ZM23.5673 12.3183L24.2188 11.4635V11.4635L23.5673 12.3183ZM25.334 12.6758L25.2271 13.7453H25.2271L25.334 12.6758ZM26.3288 12.8607L26.8213 11.9054L26.8213 11.9054L26.3288 12.8607ZM26.9014 13.4935L25.9019 13.8884V13.8884L26.9014 13.4935ZM26.9013 17.0441L27.9007 17.4394L26.9013 17.0441ZM26.3291 17.6764L25.8363 16.7213L25.8363 16.7213L26.3291 17.6764ZM25.3337 17.8615L25.2268 16.7921H25.2268L25.3337 17.8615ZM23.5654 18.2196L24.2174 19.074V19.074L23.5654 18.2196ZM23.0987 19.3461L24.1639 19.203L24.1639 19.203L23.0987 19.3461ZM24.096 20.8499L24.9278 20.1693V20.1693L24.096 20.8499ZM24.6691 21.6847L25.693 21.3579L24.6691 21.6847ZM24.6267 22.5363L25.6129 22.9634L25.6129 22.9634L24.6267 22.5363ZM22.8891 24.3942L22.1291 23.6342L22.1291 23.6342L22.8891 24.3942ZM22.1158 25.0473L21.6885 24.0611H21.6885L22.1158 25.0473ZM21.2639 25.0898L21.5909 24.066H21.5909L21.2639 25.0898ZM20.4293 24.5168L21.1099 23.685L21.1099 23.685L20.4293 24.5168ZM18.9264 23.5199L18.7829 24.585L18.9264 23.5199ZM17.7992 23.9868L16.9446 23.3351L16.9446 23.3351L17.7992 23.9868ZM17.4414 25.7541L18.5108 25.8611L17.4414 25.7541ZM17.2565 26.7489L18.2117 27.2414L18.2117 27.2414L17.2565 26.7489ZM16.6238 27.3214L16.2288 26.3219H16.2288L16.6238 27.3214ZM13.0735 27.3215L12.6785 28.321L12.6785 28.321L13.0735 27.3215ZM12.4406 26.7488L11.4853 27.2412H11.4853L12.4406 26.7488ZM12.2558 25.7543L13.3252 25.6473V25.6473L12.2558 25.7543ZM11.8982 23.9874L12.7529 23.3359L12.7529 23.3359L11.8982 23.9874ZM10.7707 23.5204L10.627 22.4553H10.627L10.7707 23.5204ZM9.26798 24.5172L8.58741 23.6854L8.5704 23.6993L8.55396 23.7139L9.26798 24.5172ZM9.26796 24.5172L9.94852 25.349L9.96554 25.3351L9.98197 25.3205L9.26796 24.5172ZM8.43323 25.0903L8.10624 24.0665L8.10623 24.0665L8.43323 25.0903ZM7.5814 25.0478L7.15415 26.034L7.15415 26.034L7.5814 25.0478ZM6.80803 24.3947L6.04808 25.1547L6.04808 25.1547L6.80803 24.3947ZM6.80802 24.3947L7.56798 23.6348V23.6348L6.80802 24.3947ZM5.72394 23.3106L4.87274 23.9668L4.91502 24.0216L4.96399 24.0706L5.72394 23.3106ZM5.72393 23.3106L6.57514 22.6545L6.53286 22.5996L6.48389 22.5507L5.72393 23.3106ZM5.07042 22.5367L4.08414 22.9637L4.08414 22.9637L5.07042 22.5367ZM5.02796 21.6854L6.05183 22.0122L5.02796 21.6854ZM5.60129 20.8502L6.4331 21.5308L6.45438 21.5048L6.474 21.4775L5.60129 20.8502ZM5.60131 20.8502L4.76951 20.1696L4.74822 20.1956L4.72861 20.2229L5.60131 20.8502ZM6.59885 19.346L7.66403 19.489L6.59885 19.346ZM6.13232 18.2197L6.78443 17.3654L6.78443 17.3654L6.13232 18.2197ZM4.36358 17.8615L4.25664 18.9309H4.25664L4.36358 17.8615ZM3.368 17.6764L2.87516 18.6315L2.87516 18.6315L3.368 17.6764ZM2.79593 17.0442L3.7953 16.6489L3.7953 16.6489L2.79593 17.0442ZM2.79579 13.4934L3.79529 13.8884L3.79529 13.8884L2.79579 13.4934ZM3.36832 12.8607L2.87576 11.9055L2.87576 11.9055L3.36832 12.8607ZM4.3632 12.6758V11.6011H4.3096L4.25626 11.6064L4.3632 12.6758ZM4.36322 12.6758V13.7506H4.41682L4.47016 13.7452L4.36322 12.6758ZM6.13048 12.3181L5.47883 11.4634H5.47883L6.13048 12.3181ZM6.59743 11.1908L7.66254 11.0472L6.59743 11.1908ZM5.60083 9.68825L4.76903 10.3688L4.76903 10.3688L5.60083 9.68825ZM5.0282 8.85421L4.00448 9.18144L4.00448 9.18144L5.0282 8.85421ZM5.07071 8.0019L6.05678 8.42936L6.05678 8.42936L5.07071 8.0019ZM5.72349 7.22898L6.48345 7.98893H6.48345L5.72349 7.22898ZM6.80814 6.14433L6.04819 5.38437L6.04819 5.38437L6.80814 6.14433ZM7.58139 5.49131L7.15407 4.50518H7.15407L7.58139 5.49131ZM8.43336 5.44882L8.10629 6.47258L8.43336 5.44882ZM9.26775 6.02165L8.58718 6.85345V6.85346L9.26775 6.02165ZM10.7709 7.01857L10.9142 5.95343H10.9142L10.7709 7.01857ZM11.8978 6.55181L12.7523 7.20365L12.7523 7.20365L11.8978 6.55181ZM12.2558 4.78369L13.3252 4.89063V4.89063L12.2558 4.78369ZM12.4408 3.78811L11.4857 3.29533V3.29533L12.4408 3.78811ZM13.0731 3.21594L12.6778 2.21654L12.6778 2.21654L13.0731 3.21594ZM16.6242 3.21599L16.2288 4.21535L16.2288 4.21535L16.6242 3.21599ZM18.5109 4.67703C18.4859 4.42779 18.4626 4.18854 18.4288 3.98751C18.3933 3.77593 18.3361 3.53685 18.2114 3.29511L16.3012 4.28087C16.2826 4.24476 16.2917 4.24022 16.309 4.34349C16.3281 4.45733 16.3443 4.61325 16.3721 4.89092L18.5109 4.67703ZM18.5162 4.78398V4.78397H16.3667V4.78398H18.5162ZM18.654 5.90043C18.71 5.97394 18.681 5.99127 18.6374 5.74905C18.5957 5.51714 18.5625 5.19339 18.5109 4.67704L16.3721 4.89092C16.4201 5.37121 16.4617 5.79493 16.5219 6.12967C16.5803 6.45409 16.6804 6.85724 16.9449 7.20406L18.654 5.90043ZM18.783 5.95391C18.7335 5.96057 18.6843 5.94016 18.654 5.90043L16.9449 7.20406C17.4436 7.85787 18.2548 8.19385 19.0697 8.08418L18.783 5.95391ZM19.7489 5.19038C19.3474 5.51886 19.0951 5.72423 18.9017 5.85864C18.6998 5.99901 18.6915 5.96623 18.783 5.95391L19.0697 8.08418C19.502 8.02601 19.8578 7.81181 20.1284 7.62371C20.4076 7.42965 20.7366 7.15951 21.11 6.85398L19.7489 5.19038ZM20.9367 4.42562C20.6778 4.50834 20.4685 4.63687 20.2939 4.76126C20.128 4.87943 19.9425 5.03194 19.7489 5.19038L21.11 6.85398C21.3257 6.67747 21.4473 6.57876 21.5411 6.51186C21.6263 6.45119 21.6295 6.46079 21.5908 6.47314L20.9367 4.42562ZM22.5431 4.50575C22.035 4.28554 21.4642 4.25707 20.9367 4.42563L21.5908 6.47313C21.6229 6.46289 21.6576 6.46462 21.6884 6.478L22.5431 4.50575ZM23.6489 5.38489C23.472 5.20797 23.3026 5.03777 23.1493 4.90368C22.988 4.76253 22.7925 4.61382 22.5431 4.50575L21.6884 6.478C21.6512 6.46187 21.6553 6.45263 21.734 6.52148C21.8208 6.59739 21.9319 6.7077 22.129 6.90481L23.6489 5.38489ZM24.7338 6.46973L23.6489 5.38489L22.129 6.90481L23.2139 7.98964L24.7338 6.46973ZM24.6187 6.3699L24.6187 6.36989L23.329 8.08947L23.329 8.08948L24.6187 6.3699ZM25.6124 7.57468C25.5043 7.32552 25.3557 7.13022 25.2146 6.96899C25.0806 6.81583 24.9106 6.64653 24.7338 6.46974L23.2139 7.98964C23.4108 8.1866 23.521 8.29762 23.5969 8.38432C23.6657 8.46297 23.6565 8.46709 23.6404 8.4299L25.6124 7.57468ZM25.6926 9.1823C25.8614 8.6544 25.8329 8.08317 25.6124 7.57469L23.6404 8.42989C23.6538 8.46079 23.6555 8.49549 23.6452 8.52756L25.6926 9.1823ZM24.9283 10.3692C25.0866 10.1757 25.239 9.99031 25.3571 9.82457C25.4814 9.65011 25.6098 9.44099 25.6926 9.1823L23.6452 8.52757C23.6576 8.48894 23.6672 8.49213 23.6065 8.57723C23.5397 8.67105 23.441 8.79249 23.2646 9.00807L24.9283 10.3692ZM24.8564 10.4486L24.8564 10.4486L23.3365 8.92868L23.3365 8.92869L24.8564 10.4486ZM24.1653 11.3343C24.1529 11.4258 24.1202 11.4175 24.2605 11.2157C24.3948 11.0225 24.6 10.7704 24.9282 10.3692L23.2646 9.00808C22.9593 9.38123 22.6894 9.70992 22.4955 9.98893C22.3075 10.2594 22.0934 10.6149 22.0351 11.0468L24.1653 11.3343ZM24.2188 11.4635C24.179 11.4332 24.1586 11.3839 24.1653 11.3343L22.0351 11.0468C21.925 11.8624 22.2613 12.6742 22.9158 13.1731L24.2188 11.4635ZM25.441 11.6064C24.9251 11.5549 24.6017 11.5217 24.37 11.48C24.128 11.4365 24.1453 11.4075 24.2188 11.4635L22.9158 13.1731C23.2625 13.4373 23.6653 13.5373 23.9894 13.5956C24.3239 13.6557 24.7473 13.6973 25.2271 13.7453L25.441 11.6064ZM26.8213 11.9054C26.5798 11.7809 26.341 11.7239 26.1296 11.6884C25.9288 11.6547 25.6899 11.6313 25.441 11.6064L25.2271 13.7453C25.5044 13.773 25.6601 13.7891 25.7738 13.8082C25.8769 13.8255 25.8724 13.8345 25.8363 13.816L26.8213 11.9054ZM27.901 13.0985C27.6973 12.5832 27.3137 12.1593 26.8213 11.9054L25.8363 13.816C25.8662 13.8314 25.8895 13.8571 25.9019 13.8884L27.901 13.0985ZM28.0611 14.5015C28.0611 14.2514 28.0617 14.0114 28.0481 13.8082C28.0338 13.5944 28.0008 13.3511 27.901 13.0985L25.9019 13.8884C25.887 13.8507 25.8964 13.8471 25.9034 13.9514C25.9111 14.0664 25.9116 14.2229 25.9116 14.5015H28.0611ZM28.0611 16.0353V14.5015H25.9116V16.0353H28.0611ZM27.9007 17.4394C28.0007 17.1866 28.0338 16.9431 28.0481 16.7291C28.0617 16.5259 28.0611 16.2856 28.0611 16.0353H25.9116C25.9116 16.3142 25.9111 16.4708 25.9034 16.5859C25.8964 16.6902 25.887 16.6866 25.9019 16.6489L27.9007 17.4394ZM26.8219 18.6315C27.3138 18.3777 27.6971 17.9542 27.9007 17.4394L25.9019 16.6489C25.8895 16.6802 25.8662 16.7059 25.8363 16.7213L26.8219 18.6315ZM25.4407 18.9309C25.6897 18.906 25.9288 18.8826 26.1298 18.8489C26.3413 18.8133 26.5802 18.7562 26.8219 18.6315L25.8363 16.7213C25.8724 16.7027 25.8769 16.7117 25.7738 16.7291C25.6601 16.7482 25.5043 16.7643 25.2268 16.7921L25.4407 18.9309ZM24.2174 19.074C24.1439 19.13 24.1265 19.101 24.3687 19.0574C24.6006 19.0157 24.9243 18.9825 25.4407 18.9309L25.2268 16.7921C24.7465 16.8401 24.3227 16.8817 23.9879 16.9419C23.6634 17.0003 23.2602 17.1005 22.9134 17.3652L24.2174 19.074ZM24.1639 19.203C24.1573 19.1535 24.1777 19.1043 24.2174 19.074L22.9134 17.3652C22.2599 17.8638 21.9241 18.6746 22.0336 19.4892L24.1639 19.203ZM24.9278 20.1693C24.5992 19.7676 24.3937 19.5152 24.2592 19.3217C24.1188 19.1197 24.1516 19.1114 24.1639 19.203L22.0336 19.4892C22.0917 19.9217 22.306 20.2776 22.4941 20.5484C22.6883 20.8277 22.9585 21.1568 23.2642 21.5304L24.9278 20.1693ZM25.693 21.3579C25.6102 21.0988 25.4816 20.8894 25.3572 20.7147C25.239 20.5487 25.0864 20.3631 24.9278 20.1693L23.2642 21.5304C23.4408 21.7463 23.5396 21.8679 23.6065 21.9619C23.6673 22.0471 23.6577 22.0503 23.6453 22.0116L25.693 21.3579ZM25.6129 22.9634C25.8328 22.4555 25.8613 21.8851 25.693 21.3579L23.6453 22.0116C23.6555 22.0436 23.6538 22.0783 23.6404 22.1092L25.6129 22.9634ZM24.7333 24.0699C24.9103 23.8929 25.0806 23.7234 25.2148 23.57C25.356 23.4085 25.5048 23.213 25.6129 22.9634L23.6404 22.1091C23.6566 22.0719 23.6658 22.076 23.5969 22.1548C23.521 22.2416 23.4106 22.3528 23.2134 22.55L24.7333 24.0699ZM23.649 25.1541L24.7333 24.0699L23.2134 22.55L22.1291 23.6342L23.649 25.1541ZM22.543 26.0334C22.7925 25.9253 22.988 25.7766 23.1493 25.6354C23.3027 25.5013 23.4721 25.3311 23.6491 25.1541L22.1291 23.6342C21.932 23.8314 21.8209 23.9417 21.7341 24.0176C21.6554 24.0865 21.6513 24.0772 21.6885 24.0611L22.543 26.0334ZM20.9368 26.1135C21.4643 26.282 22.035 26.2536 22.543 26.0334L21.6885 24.0611C21.6576 24.0745 21.623 24.0762 21.5909 24.066L20.9368 26.1135ZM19.7487 25.3486C19.9424 25.5071 20.128 25.6596 20.2939 25.7778C20.4685 25.9022 20.6779 26.0308 20.9368 26.1135L21.5909 24.066C21.6296 24.0783 21.6264 24.0879 21.5412 24.0272C21.4472 23.9603 21.3257 23.8615 21.1099 23.685L19.7487 25.3486ZM18.7829 24.585C18.6913 24.5727 18.6996 24.5399 18.9016 24.6803C19.095 24.8147 19.3473 25.0201 19.7487 25.3486L21.1099 23.685C20.7364 23.3794 20.4075 23.1093 20.1284 22.9153C19.8577 22.7272 19.502 22.513 19.0698 22.4548L18.7829 24.585ZM18.6538 24.6385C18.6841 24.5988 18.7334 24.5784 18.7829 24.585L19.0698 22.4548C18.2547 22.345 17.4433 22.6811 16.9446 23.3351L18.6538 24.6385ZM18.5108 25.8611C18.5624 25.345 18.5955 25.0215 18.6372 24.7898C18.6808 24.5477 18.7098 24.5651 18.6538 24.6385L16.9446 23.3351C16.6802 23.6818 16.5801 24.0848 16.5217 24.4091C16.4615 24.7437 16.42 25.1672 16.372 25.6472L18.5108 25.8611ZM18.2117 27.2414C18.3363 26.9999 18.3934 26.7611 18.4288 26.5497C18.4626 26.3489 18.4859 26.11 18.5108 25.8611L16.372 25.6472C16.3442 25.9245 16.3281 26.0802 16.309 26.1938C16.2917 26.2969 16.2827 26.2924 16.3013 26.2564L18.2117 27.2414ZM17.0189 28.321C17.534 28.1173 17.9579 27.7338 18.2117 27.2414L16.3013 26.2564C16.2859 26.2863 16.2601 26.3096 16.2288 26.3219L17.0189 28.321ZM15.6156 28.4812C15.8658 28.4812 16.1059 28.4817 16.309 28.4681C16.5229 28.4539 16.7662 28.4208 17.0189 28.321L16.2288 26.3219C16.2665 26.307 16.2701 26.3165 16.1658 26.3234C16.0508 26.3311 15.8943 26.3317 15.6156 26.3317V28.4812ZM14.0814 28.4812H15.6156V26.3317H14.0814V28.4812ZM12.6785 28.321C12.9312 28.4209 13.1744 28.4539 13.3882 28.4682C13.5913 28.4817 13.8313 28.4812 14.0814 28.4812V26.3317C13.8028 26.3317 13.6463 26.3311 13.5314 26.3234C13.4271 26.3165 13.4307 26.307 13.4684 26.3219L12.6785 28.321ZM11.4853 27.2412C11.7392 27.7337 12.1632 28.1174 12.6785 28.321L13.4684 26.322C13.4371 26.3096 13.4113 26.2863 13.3959 26.2563L11.4853 27.2412ZM11.1864 25.8612C11.2113 26.1101 11.2346 26.3489 11.2683 26.5497C11.3038 26.761 11.3609 26.9997 11.4853 27.2412L13.3959 26.2563C13.4145 26.2924 13.4055 26.2969 13.3881 26.1938C13.3691 26.0802 13.353 25.9246 13.3252 25.6473L11.1864 25.8612ZM11.0435 24.639C10.9875 24.5656 11.0165 24.5483 11.06 24.7902C11.1017 25.0219 11.1348 25.3453 11.1864 25.8612L13.3252 25.6473C13.2772 25.1675 13.2357 24.7441 13.1755 24.4096C13.1172 24.0854 13.0172 23.6825 12.7529 23.3359L11.0435 24.639ZM10.9143 24.5855C10.9639 24.5788 11.0132 24.5992 11.0435 24.639L12.7529 23.3359C12.2541 22.6815 11.4424 22.3454 10.627 22.4553L10.9143 24.5855ZM9.94855 25.349C10.35 25.0206 10.6022 24.8152 10.7956 24.6808C10.9976 24.5404 11.0059 24.5732 10.9143 24.5855L10.627 22.4553C10.195 22.5136 9.83932 22.7278 9.56879 22.9158C9.28965 23.1098 8.9608 23.3799 8.58741 23.6854L9.94855 25.349ZM9.98197 25.3205L9.982 25.3205L8.55396 23.7139L8.55394 23.714L9.98197 25.3205ZM8.76023 26.1141C9.01923 26.0314 9.22859 25.9028 9.40323 25.7784C9.56916 25.6601 9.75476 25.5076 9.94852 25.349L8.58739 23.6854C8.37154 23.862 8.24993 23.9608 8.15598 24.0278C8.07073 24.0885 8.06754 24.0789 8.10624 24.0665L8.76023 26.1141ZM7.15415 26.034C7.6622 26.2541 8.23281 26.2826 8.76024 26.1141L8.10623 24.0665C8.07419 24.0768 8.03952 24.075 8.00865 24.0617L7.15415 26.034ZM6.04808 25.1547C6.22503 25.3316 6.39449 25.5019 6.54781 25.636C6.7092 25.7772 6.9047 25.9259 7.15415 26.034L8.00866 24.0617C8.04589 24.0778 8.04176 24.087 7.96304 24.0182C7.87626 23.9423 7.76513 23.8319 7.56799 23.6348L6.04808 25.1547ZM6.04806 25.1547L6.04808 25.1547L7.56799 23.6348L7.56798 23.6348L6.04806 25.1547ZM4.96399 24.0706L6.04806 25.1547L7.56798 23.6348L6.4839 22.5507L4.96399 24.0706ZM4.87273 23.9668L4.87274 23.9668L6.57515 22.6545L6.57514 22.6545L4.87273 23.9668ZM4.08414 22.9637C4.19222 23.2133 4.34105 23.409 4.48232 23.5705C4.61653 23.7239 4.78689 23.8935 4.96398 24.0706L6.48389 22.5507C6.2866 22.3534 6.17618 22.2422 6.10021 22.1553C6.03131 22.0765 6.04056 22.0724 6.0567 22.1097L4.08414 22.9637ZM4.00409 21.3587C3.8359 21.8858 3.86434 22.4559 4.08414 22.9637L6.0567 22.1097C6.04334 22.0788 6.04162 22.0442 6.05183 22.0122L4.00409 21.3587ZM4.76949 20.1697C4.61088 20.3635 4.45822 20.5492 4.33994 20.7153C4.21543 20.89 4.0868 21.0995 4.00409 21.3587L6.05183 22.0122C6.03948 22.0509 6.02986 22.0477 6.09061 21.9624C6.15757 21.8684 6.25639 21.7468 6.4331 21.5308L4.76949 20.1697ZM4.72861 20.2229L4.72859 20.223L6.474 21.4775L6.47402 21.4775L4.72861 20.2229ZM5.53366 19.203C5.54596 19.1114 5.57879 19.1196 5.43831 19.3218C5.3038 19.5154 5.09825 19.7678 4.76951 20.1696L6.43311 21.5308C6.73889 21.157 7.00923 20.8279 7.20342 20.5484C7.39163 20.2776 7.60597 19.9215 7.66403 19.489L5.53366 19.203ZM5.48022 19.074C5.51991 19.1043 5.5403 19.1535 5.53366 19.203L7.66403 19.489C7.77335 18.6745 7.43762 17.864 6.78443 17.3654L5.48022 19.074ZM4.25664 18.9309C4.77313 18.9825 5.09693 19.0157 5.32886 19.0574C5.57107 19.101 5.55371 19.1301 5.48022 19.074L6.78443 17.3654C6.43752 17.1006 6.03423 17.0004 5.70964 16.942C5.37478 16.8817 4.95092 16.8401 4.47052 16.7921L4.25664 18.9309ZM2.87516 18.6315C3.11684 18.7562 3.35585 18.8133 3.5674 18.8489C3.76836 18.8826 4.00753 18.906 4.25664 18.9309L4.47053 16.7921C4.19299 16.7643 4.03716 16.7482 3.9234 16.7291C3.82022 16.7117 3.82476 16.7027 3.86083 16.7213L2.87516 18.6315ZM1.79655 17.4396C2.00014 17.9542 2.38334 18.3777 2.87516 18.6315L3.86084 16.7213C3.83095 16.7059 3.80767 16.6802 3.7953 16.6489L1.79655 17.4396ZM1.63608 16.0352C1.63608 16.2855 1.63552 16.5258 1.64911 16.7292C1.66341 16.9432 1.6965 17.1867 1.79655 17.4396L3.7953 16.6489C3.81024 16.6866 3.80078 16.6903 3.7938 16.5859C3.78611 16.4708 3.78555 16.3141 3.78555 16.0352H1.63608ZM1.63608 14.5017V16.0352H3.78555V14.5017H1.63608ZM1.7963 13.0983C1.69641 13.351 1.66337 13.5943 1.64909 13.8082C1.63552 14.0114 1.63608 14.2515 1.63608 14.5017H3.78555C3.78555 14.2229 3.78611 14.0664 3.79379 13.9514C3.80075 13.8471 3.8102 13.8507 3.79529 13.8884L1.7963 13.0983ZM2.87576 11.9055C2.38345 12.1594 1.99991 12.5832 1.7963 13.0983L3.79529 13.8884C3.80766 13.8571 3.83096 13.8314 3.86087 13.816L2.87576 11.9055ZM4.25626 11.6064C4.00732 11.6313 3.76833 11.6547 3.56751 11.6884C3.35613 11.7239 3.11729 11.781 2.87576 11.9055L3.86087 13.816C3.82481 13.8346 3.82028 13.8255 3.9234 13.8082C4.03709 13.7891 4.19281 13.773 4.47014 13.7452L4.25626 11.6064ZM4.36321 11.6011H4.3632V13.7506H4.36321V11.6011ZM4.36322 11.6011H4.36321V13.7506H4.36322V11.6011ZM5.47883 11.4634C5.55228 11.4074 5.5696 11.4364 5.32757 11.48C5.09582 11.5217 4.77231 11.5548 4.25628 11.6064L4.47016 13.7452C4.95013 13.6972 5.37362 13.6557 5.70819 13.5955C6.03248 13.5372 6.43542 13.4371 6.78214 13.1727L5.47883 11.4634ZM5.53231 11.3343C5.53899 11.3838 5.51857 11.4331 5.47883 11.4634L6.78214 13.1727C7.43627 12.6739 7.7724 11.8625 7.66254 11.0472L5.53231 11.3343ZM4.76903 10.3688C5.09741 10.7702 5.30271 11.0223 5.43708 11.2157C5.5774 11.4176 5.54465 11.4258 5.53231 11.3343L7.66254 11.0472C7.60431 10.6152 7.39016 10.2595 7.20211 9.98893C7.00811 9.7098 6.73806 9.38099 6.43263 9.00769L4.76903 10.3688ZM4.00448 9.18144C4.08721 9.44024 4.2157 9.64944 4.34005 9.82398C4.45819 9.98978 4.61064 10.1752 4.76903 10.3688L6.43263 9.00769C6.25618 8.79202 6.1575 8.67054 6.09063 8.57668C6.02997 8.49154 6.03956 8.48836 6.05191 8.52699L4.00448 9.18144ZM4.08463 7.57444C3.86428 8.08275 3.83581 8.65373 4.00448 9.18144L6.05191 8.52699C6.04166 8.49493 6.04339 8.46024 6.05678 8.42936L4.08463 7.57444ZM4.96353 6.46902C4.78667 6.64588 4.61652 6.81525 4.48247 6.96848C4.34137 7.12977 4.1927 7.32516 4.08463 7.57444L6.05678 8.42936C6.04065 8.46658 6.03142 8.46245 6.10025 8.38377C6.17613 8.29703 6.28641 8.18597 6.48345 7.98893L4.96353 6.46902ZM6.04819 5.38437L4.96353 6.46902L6.48345 7.98893L7.5681 6.90428L6.04819 5.38437ZM7.15407 4.50518C6.90467 4.61325 6.7092 4.76196 6.54784 4.90312C6.39455 5.03722 6.22512 5.20744 6.04819 5.38437L7.5681 6.90428C7.76522 6.70716 7.87632 6.59684 7.9631 6.52093C8.0418 6.45208 8.04593 6.46132 8.0087 6.47745L7.15407 4.50518ZM8.76043 4.42506C8.23292 4.25653 7.6622 4.285 7.15407 4.50518L8.0087 6.47745C8.03957 6.46407 8.07425 6.46235 8.10629 6.47258L8.76043 4.42506ZM9.94831 5.18985C9.75465 5.0314 9.56913 4.87889 9.40325 4.76071C9.22864 4.63631 9.01935 4.50778 8.76043 4.42506L8.10629 6.47258C8.06764 6.46024 8.07083 6.45063 8.156 6.51131C8.2499 6.57821 8.37143 6.67693 8.58718 6.85345L9.94831 5.18985ZM10.9142 5.95343C11.0058 5.96575 10.9975 5.99853 10.7955 5.85816C10.6021 5.72374 10.3498 5.51836 9.94831 5.18985L8.58718 6.85346C8.96063 7.159 9.28957 7.42916 9.56882 7.62323C9.83949 7.81135 10.1953 8.02556 10.6276 8.08372L10.9142 5.95343ZM11.0433 5.89996C11.013 5.93968 10.9637 5.96009 10.9142 5.95343L10.6276 8.08372C11.4425 8.19335 12.2536 7.85739 12.7523 7.20365L11.0433 5.89996ZM11.1863 4.67675C11.1347 5.19305 11.1016 5.51674 11.0598 5.74862C11.0163 5.99078 10.9872 5.97345 11.0433 5.89996L12.7523 7.20365C13.0168 6.85684 13.117 6.45371 13.1753 6.12928C13.2356 5.79455 13.2771 5.37086 13.3252 4.89063L11.1863 4.67675ZM11.4857 3.29533C11.361 3.53699 11.3039 3.77599 11.2684 3.98751C11.2346 4.18846 11.2113 4.42762 11.1863 4.67675L13.3252 4.89063C13.3529 4.61309 13.3691 4.45724 13.3882 4.34347C13.4055 4.24026 13.4145 4.2448 13.3959 4.28088L11.4857 3.29533ZM12.6778 2.21654C12.163 2.42014 11.7395 2.8034 11.4857 3.29533L13.3959 4.28089C13.4113 4.251 13.4371 4.22771 13.4684 4.21534L12.6778 2.21654ZM14.082 2.05612C13.8316 2.05612 13.5914 2.05556 13.3881 2.06915C13.1741 2.08344 12.9306 2.11653 12.6778 2.21654L13.4684 4.21535C13.4306 4.23027 13.427 4.22082 13.5314 4.21384C13.6464 4.20615 13.8031 4.2056 14.082 4.2056V2.05612ZM15.6151 2.05612H14.082V4.2056H15.6151V2.05612ZM17.0197 2.21663C16.7667 2.11656 16.5232 2.08346 16.3091 2.06915C16.1058 2.05556 15.8655 2.05612 15.6151 2.05612V4.2056C15.894 4.2056 16.0507 4.20616 16.1658 4.21385C16.2702 4.22083 16.2666 4.23029 16.2288 4.21535L17.0197 2.21663ZM18.2114 3.29511C17.9576 2.80336 17.5342 2.42022 17.0196 2.21663L16.2288 4.21535C16.2601 4.22772 16.2858 4.251 16.3012 4.28087L18.2114 3.29511ZM18.629 15.2685C18.629 17.3563 16.9365 19.0488 14.8487 19.0488V21.1983C18.1236 21.1983 20.7785 18.5434 20.7785 15.2685H18.629ZM14.8487 11.4881C16.9365 11.4881 18.629 13.1806 18.629 15.2685H20.7785C20.7785 11.9935 18.1236 9.33861 14.8487 9.33861V11.4881ZM11.0683 15.2685C11.0683 13.1806 12.7608 11.4881 14.8487 11.4881V9.33861C11.5737 9.33861 8.91881 11.9935 8.91881 15.2685H11.0683ZM14.8487 19.0488C12.7608 19.0488 11.0683 17.3563 11.0683 15.2685H8.91881C8.91881 18.5434 11.5737 21.1983 14.8487 21.1983V19.0488Z"
+												fill="#897CFF"
+											/>
+										</svg>
+										Обязанности:
+									</h3>
+									<ul class="vacancies__dental-surgeon-lists list-reset">
+										<li class="vacancies__dental-surgeon-items">
+											– Встреча пациентов, консультации по услугам и ценам
+											клиники, запись на приём к специалистам, организация
+											записи докторов и координирование кабинетов, оформление
+											документации в электронной базе, помощь пациентам,
+											обеспечение их комфортного пребывания в клинике;
+										</li>
+										<li class="vacancies__dental-surgeon-items">
+											– Ведение кассовых операций, кассовая отчетность,
+											обеспечение высокого качества обслуживания пациентов
+										</li>
+									</ul>
+								</li>
+								<li class="vacancies__dental-surgeon-item">
+									<h3 class="vacancies__dental-surgeon-item-title">
+										<svg
+											width="30"
+											height="30"
+											viewBox="0 0 30 30"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M22.1312 4.47428V4.47428C24.1423 4.47427 25.7726 6.10455 25.7726 8.11561L25.7726 10.7166C25.7726 11.1221 25.7726 11.3249 25.6795 11.4729C25.631 11.5501 25.5658 11.6154 25.4886 11.6639C25.3405 11.7569 25.1377 11.7569 24.7322 11.7569L18.4899 11.7569M22.1312 4.47428V4.47428C20.1202 4.47428 18.4899 6.10456 18.4899 8.11561L18.4899 11.7569M22.1312 4.47428L8.77967 4.47428C6.49095 4.47428 5.34659 4.47427 4.63557 5.18529C3.92456 5.8963 3.92456 7.04066 3.92456 9.32939L3.92456 26.3223L7.56589 25.1085L11.2072 26.3223L14.8486 25.1085L18.4899 26.3223L18.4899 11.7569"
+												stroke="#897CFF"
+												stroke-width="2.14948"
+											/>
+											<path
+												d="M8.77966 9.32812L13.6348 9.32812"
+												stroke="#897CFF"
+												stroke-width="2.14948"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M9.99341 14.1836H8.77963"
+												stroke="#897CFF"
+												stroke-width="2.14948"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M8.77966 19.0391L12.421 19.0391"
+												stroke="#897CFF"
+												stroke-width="2.14948"
+												stroke-linecap="round"
+											/>
+										</svg>
+										Требования:
+									</h3>
+									<ul class="vacancies__dental-surgeon-lists list-reset">
+										<li class="vacancies__dental-surgeon-items">
+											– Пунктуальность и ответственность, внимательность,
+											клиентоориентированность, коммуникабельность и
+											стрессоустойчивость, умение предвосхитить и не допустить
+											конфликтную ситуацию;
+										</li>
+										<li class="vacancies__dental-surgeon-items">
+											– Умение работать в режиме многозадачности;
+										</li>
+										<li class="vacancies__dental-surgeon-items">
+											– Грамотная речь умение общаться с клиентами;
+										</li>
+										<li class="vacancies__dental-surgeon-items">
+											– ПК - уверенный пользователь, готовность быстро
+											обучаться;
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<svg
+								class="vacancies__dental-surgeon-svg"
+								width="291"
+								height="377"
+								viewBox="0 0 291 377"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<g clip-path="url(#clip0_3_9539)">
+									<path
+										d="M171.553 224.095C218.113 224.095 255.982 182.558 255.982 131.509C255.982 22.8473 90.6337 17.3593 87.2253 128.228C87.209 128.505 87.1764 128.782 87.1927 129.044C87.1764 129.859 87.1274 130.675 87.1274 131.491C87.1274 182.557 125.01 224.077 171.556 224.077L171.553 224.095ZM171.553 62.3288C205.521 62.3288 225.947 86.0185 232.26 94.4907C238.917 103.425 241.852 114.377 242.587 125.749C179.45 133.155 157.214 96.8063 156.282 95.2238C155.124 93.2008 152.954 91.9446 150.621 91.9446C148.272 91.9446 146.118 93.2008 144.96 95.2401C129.053 123.171 109.54 124.492 100.68 123.367C101.659 112.893 104.326 105.309 109.675 95.2238C122.939 75.0889 146.523 62.3288 171.553 62.3288ZM171.553 211.043C133.654 211.043 102.656 177.94 100.388 136.337C112.151 137.365 133.328 134.95 151.079 109.891C161.08 121.148 184.035 139.943 225.981 139.943C231.186 139.943 236.782 139.518 242.59 138.898C239.229 179.294 208.669 211.043 171.553 211.043Z"
+										fill="#EBEAF9"
+									/>
+									<path
+										d="M19.2727 392.284H323.802C325.727 392.284 327.554 391.436 328.81 389.951C330.05 388.467 330.572 386.525 330.23 384.617L312.854 286.793C309.82 269.712 299.705 256.105 286.49 251.309L220.058 227.13C217.529 226.2 214.69 226.935 212.912 228.974L171.555 276.336L130.197 228.974C128.435 226.935 125.58 226.2 123.051 227.13L56.6191 251.309C43.4041 256.122 33.2893 269.728 30.2546 286.81L12.8794 384.633C12.5367 386.525 13.0588 388.483 14.2987 389.968C15.5386 391.452 17.3659 392.301 19.3072 392.301L19.2727 392.284ZM43.079 289.077C45.3141 276.564 52.1989 266.792 61.0578 263.561C104.737 247.665 61.0578 263.561 108.762 246.203L123.282 240.917L166.614 290.547C169.094 293.385 173.972 293.385 176.436 290.547L219.767 240.917L237.159 247.247C266.437 257.878 266.395 257.888 281.975 263.558C290.834 266.789 297.735 276.561 299.954 289.075L315.975 379.23H27.0578L43.079 289.077Z"
+										fill="#EBEAF9"
+									/>
+								</g>
+								<defs>
+									<clipPath id="clip0_3_9539">
+										<rect
+											width="291"
+											height="376"
+											fill="white"
+											transform="translate(0 0.306641)"
+										/>
+									</clipPath>
+								</defs>
+							</svg>
+						</div>
+						<button
+							class="vacancies__dental-surgeon-btn bth-reset"
+							id="openModalBtn"
+						>
+							Откликнуться
+							<svg
+								class="vacancies__dental-surgeon-icon"
+								width="45"
+								height="45"
+								viewBox="0 0 45 45"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<circle
+									cx="22.399"
+									cy="22.7616"
+									r="21.8817"
+									fill="white"
+								></circle>
+								<path
+									d="M29.7828 26.8467V15.3781M29.7828 15.3781H18.3143M29.7828 15.3781L15.0165 30.1445"
+									stroke="#535353"
+									stroke-width="2.66"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								></path>
+							</svg>
+						</button>
+					</div>
 
-        <div class="vacancies__dental-surgeon">
-          <h2 class="vacancies__dental-surgeon-title">Администратор медицинского центра</h2>
-          <div class="vacancies__dental-surgeon-wrap">
-            <ul class="vacancies__dental-surgeon-list list-reset">
-              <li class="vacancies__dental-surgeon-item">
-                <h3 class="vacancies__dental-surgeon-item-title">
-                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M17.4415 4.78397H18.5162V4.73037L18.5109 4.67703L17.4415 4.78397ZM17.2563 3.78799L16.3012 4.28087V4.28087L17.2563 3.78799ZM17.4415 4.78398H16.3667V4.83759L16.3721 4.89092L17.4415 4.78398ZM17.7994 6.55225L16.9449 7.20406L17.7994 6.55225ZM18.9264 7.01904L18.783 5.95391L18.9264 7.01904ZM20.4294 6.02218L21.11 6.85398L21.11 6.85398L20.4294 6.02218ZM21.2638 5.44938L21.5908 6.47314L21.5908 6.47313L21.2638 5.44938ZM22.1158 5.49188L21.6884 6.478L21.6884 6.478L22.1158 5.49188ZM22.889 6.14485L22.129 6.90481L22.889 6.14485ZM23.9738 7.22968L23.2139 7.98964L23.2679 8.04365L23.329 8.08947L23.9738 7.22968ZM23.9738 7.22969L24.7338 6.46974L24.6798 6.41573L24.6187 6.3699L23.9738 7.22969ZM24.6264 8.00229L25.6124 7.57469L25.6124 7.57468L24.6264 8.00229ZM24.6689 8.85493L23.6452 8.52756L23.6452 8.52757L24.6689 8.85493ZM24.0964 9.68864L24.8564 10.4486L24.8943 10.4107L24.9283 10.3692L24.0964 9.68864ZM24.0964 9.68865L23.3365 8.92869L23.2986 8.9666L23.2646 9.00808L24.0964 9.68865ZM23.1002 11.1906L22.0351 11.0468V11.0468L23.1002 11.1906ZM23.5673 12.3183L24.2188 11.4635V11.4635L23.5673 12.3183ZM25.334 12.6758L25.2271 13.7453H25.2271L25.334 12.6758ZM26.3288 12.8607L26.8213 11.9054L26.8213 11.9054L26.3288 12.8607ZM26.9014 13.4935L25.9019 13.8884V13.8884L26.9014 13.4935ZM26.9013 17.0441L27.9007 17.4394L26.9013 17.0441ZM26.3291 17.6764L25.8363 16.7213L25.8363 16.7213L26.3291 17.6764ZM25.3337 17.8615L25.2268 16.7921H25.2268L25.3337 17.8615ZM23.5654 18.2196L24.2174 19.074V19.074L23.5654 18.2196ZM23.0987 19.3461L24.1639 19.203L24.1639 19.203L23.0987 19.3461ZM24.096 20.8499L24.9278 20.1693V20.1693L24.096 20.8499ZM24.6691 21.6847L25.693 21.3579L24.6691 21.6847ZM24.6267 22.5363L25.6129 22.9634L25.6129 22.9634L24.6267 22.5363ZM22.8891 24.3942L22.1291 23.6342L22.1291 23.6342L22.8891 24.3942ZM22.1158 25.0473L21.6885 24.0611H21.6885L22.1158 25.0473ZM21.2639 25.0898L21.5909 24.066H21.5909L21.2639 25.0898ZM20.4293 24.5168L21.1099 23.685L21.1099 23.685L20.4293 24.5168ZM18.9264 23.5199L18.7829 24.585L18.9264 23.5199ZM17.7992 23.9868L16.9446 23.3351L16.9446 23.3351L17.7992 23.9868ZM17.4414 25.7541L18.5108 25.8611L17.4414 25.7541ZM17.2565 26.7489L18.2117 27.2414L18.2117 27.2414L17.2565 26.7489ZM16.6238 27.3214L16.2288 26.3219H16.2288L16.6238 27.3214ZM13.0735 27.3215L12.6785 28.321L12.6785 28.321L13.0735 27.3215ZM12.4406 26.7488L11.4853 27.2412H11.4853L12.4406 26.7488ZM12.2558 25.7543L13.3252 25.6473V25.6473L12.2558 25.7543ZM11.8982 23.9874L12.7529 23.3359L12.7529 23.3359L11.8982 23.9874ZM10.7707 23.5204L10.627 22.4553H10.627L10.7707 23.5204ZM9.26798 24.5172L8.58741 23.6854L8.5704 23.6993L8.55396 23.7139L9.26798 24.5172ZM9.26796 24.5172L9.94852 25.349L9.96554 25.3351L9.98197 25.3205L9.26796 24.5172ZM8.43323 25.0903L8.10624 24.0665L8.10623 24.0665L8.43323 25.0903ZM7.5814 25.0478L7.15415 26.034L7.15415 26.034L7.5814 25.0478ZM6.80803 24.3947L6.04808 25.1547L6.04808 25.1547L6.80803 24.3947ZM6.80802 24.3947L7.56798 23.6348V23.6348L6.80802 24.3947ZM5.72394 23.3106L4.87274 23.9668L4.91502 24.0216L4.96399 24.0706L5.72394 23.3106ZM5.72393 23.3106L6.57514 22.6545L6.53286 22.5996L6.48389 22.5507L5.72393 23.3106ZM5.07042 22.5367L4.08414 22.9637L4.08414 22.9637L5.07042 22.5367ZM5.02796 21.6854L6.05183 22.0122L5.02796 21.6854ZM5.60129 20.8502L6.4331 21.5308L6.45438 21.5048L6.474 21.4775L5.60129 20.8502ZM5.60131 20.8502L4.76951 20.1696L4.74822 20.1956L4.72861 20.2229L5.60131 20.8502ZM6.59885 19.346L7.66403 19.489L6.59885 19.346ZM6.13232 18.2197L6.78443 17.3654L6.78443 17.3654L6.13232 18.2197ZM4.36358 17.8615L4.25664 18.9309H4.25664L4.36358 17.8615ZM3.368 17.6764L2.87516 18.6315L2.87516 18.6315L3.368 17.6764ZM2.79593 17.0442L3.7953 16.6489L3.7953 16.6489L2.79593 17.0442ZM2.79579 13.4934L3.79529 13.8884L3.79529 13.8884L2.79579 13.4934ZM3.36832 12.8607L2.87576 11.9055L2.87576 11.9055L3.36832 12.8607ZM4.3632 12.6758V11.6011H4.3096L4.25626 11.6064L4.3632 12.6758ZM4.36322 12.6758V13.7506H4.41682L4.47016 13.7452L4.36322 12.6758ZM6.13048 12.3181L5.47883 11.4634H5.47883L6.13048 12.3181ZM6.59743 11.1908L7.66254 11.0472L6.59743 11.1908ZM5.60083 9.68825L4.76903 10.3688L4.76903 10.3688L5.60083 9.68825ZM5.0282 8.85421L4.00448 9.18144L4.00448 9.18144L5.0282 8.85421ZM5.07071 8.0019L6.05678 8.42936L6.05678 8.42936L5.07071 8.0019ZM5.72349 7.22898L6.48345 7.98893H6.48345L5.72349 7.22898ZM6.80814 6.14433L6.04819 5.38437L6.04819 5.38437L6.80814 6.14433ZM7.58139 5.49131L7.15407 4.50518H7.15407L7.58139 5.49131ZM8.43336 5.44882L8.10629 6.47258L8.43336 5.44882ZM9.26775 6.02165L8.58718 6.85345V6.85346L9.26775 6.02165ZM10.7709 7.01857L10.9142 5.95343H10.9142L10.7709 7.01857ZM11.8978 6.55181L12.7523 7.20365L12.7523 7.20365L11.8978 6.55181ZM12.2558 4.78369L13.3252 4.89063V4.89063L12.2558 4.78369ZM12.4408 3.78811L11.4857 3.29533V3.29533L12.4408 3.78811ZM13.0731 3.21594L12.6778 2.21654L12.6778 2.21654L13.0731 3.21594ZM16.6242 3.21599L16.2288 4.21535L16.2288 4.21535L16.6242 3.21599ZM18.5109 4.67703C18.4859 4.42779 18.4626 4.18854 18.4288 3.98751C18.3933 3.77593 18.3361 3.53685 18.2114 3.29511L16.3012 4.28087C16.2826 4.24476 16.2917 4.24022 16.309 4.34349C16.3281 4.45733 16.3443 4.61325 16.3721 4.89092L18.5109 4.67703ZM18.5162 4.78398V4.78397H16.3667V4.78398H18.5162ZM18.654 5.90043C18.71 5.97394 18.681 5.99127 18.6374 5.74905C18.5957 5.51714 18.5625 5.19339 18.5109 4.67704L16.3721 4.89092C16.4201 5.37121 16.4617 5.79493 16.5219 6.12967C16.5803 6.45409 16.6804 6.85724 16.9449 7.20406L18.654 5.90043ZM18.783 5.95391C18.7335 5.96057 18.6843 5.94016 18.654 5.90043L16.9449 7.20406C17.4436 7.85787 18.2548 8.19385 19.0697 8.08418L18.783 5.95391ZM19.7489 5.19038C19.3474 5.51886 19.0951 5.72423 18.9017 5.85864C18.6998 5.99901 18.6915 5.96623 18.783 5.95391L19.0697 8.08418C19.502 8.02601 19.8578 7.81181 20.1284 7.62371C20.4076 7.42965 20.7366 7.15951 21.11 6.85398L19.7489 5.19038ZM20.9367 4.42562C20.6778 4.50834 20.4685 4.63687 20.2939 4.76126C20.128 4.87943 19.9425 5.03194 19.7489 5.19038L21.11 6.85398C21.3257 6.67747 21.4473 6.57876 21.5411 6.51186C21.6263 6.45119 21.6295 6.46079 21.5908 6.47314L20.9367 4.42562ZM22.5431 4.50575C22.035 4.28554 21.4642 4.25707 20.9367 4.42563L21.5908 6.47313C21.6229 6.46289 21.6576 6.46462 21.6884 6.478L22.5431 4.50575ZM23.6489 5.38489C23.472 5.20797 23.3026 5.03777 23.1493 4.90368C22.988 4.76253 22.7925 4.61382 22.5431 4.50575L21.6884 6.478C21.6512 6.46187 21.6553 6.45263 21.734 6.52148C21.8208 6.59739 21.9319 6.7077 22.129 6.90481L23.6489 5.38489ZM24.7338 6.46973L23.6489 5.38489L22.129 6.90481L23.2139 7.98964L24.7338 6.46973ZM24.6187 6.3699L24.6187 6.36989L23.329 8.08947L23.329 8.08948L24.6187 6.3699ZM25.6124 7.57468C25.5043 7.32552 25.3557 7.13022 25.2146 6.96899C25.0806 6.81583 24.9106 6.64653 24.7338 6.46974L23.2139 7.98964C23.4108 8.1866 23.521 8.29762 23.5969 8.38432C23.6657 8.46297 23.6565 8.46709 23.6404 8.4299L25.6124 7.57468ZM25.6926 9.1823C25.8614 8.6544 25.8329 8.08317 25.6124 7.57469L23.6404 8.42989C23.6538 8.46079 23.6555 8.49549 23.6452 8.52756L25.6926 9.1823ZM24.9283 10.3692C25.0866 10.1757 25.239 9.99031 25.3571 9.82457C25.4814 9.65011 25.6098 9.44099 25.6926 9.1823L23.6452 8.52757C23.6576 8.48894 23.6672 8.49213 23.6065 8.57723C23.5397 8.67105 23.441 8.79249 23.2646 9.00807L24.9283 10.3692ZM24.8564 10.4486L24.8564 10.4486L23.3365 8.92868L23.3365 8.92869L24.8564 10.4486ZM24.1653 11.3343C24.1529 11.4258 24.1202 11.4175 24.2605 11.2157C24.3948 11.0225 24.6 10.7704 24.9282 10.3692L23.2646 9.00808C22.9593 9.38123 22.6894 9.70992 22.4955 9.98893C22.3075 10.2594 22.0934 10.6149 22.0351 11.0468L24.1653 11.3343ZM24.2188 11.4635C24.179 11.4332 24.1586 11.3839 24.1653 11.3343L22.0351 11.0468C21.925 11.8624 22.2613 12.6742 22.9158 13.1731L24.2188 11.4635ZM25.441 11.6064C24.9251 11.5549 24.6017 11.5217 24.37 11.48C24.128 11.4365 24.1453 11.4075 24.2188 11.4635L22.9158 13.1731C23.2625 13.4373 23.6653 13.5373 23.9894 13.5956C24.3239 13.6557 24.7473 13.6973 25.2271 13.7453L25.441 11.6064ZM26.8213 11.9054C26.5798 11.7809 26.341 11.7239 26.1296 11.6884C25.9288 11.6547 25.6899 11.6313 25.441 11.6064L25.2271 13.7453C25.5044 13.773 25.6601 13.7891 25.7738 13.8082C25.8769 13.8255 25.8724 13.8345 25.8363 13.816L26.8213 11.9054ZM27.901 13.0985C27.6973 12.5832 27.3137 12.1593 26.8213 11.9054L25.8363 13.816C25.8662 13.8314 25.8895 13.8571 25.9019 13.8884L27.901 13.0985ZM28.0611 14.5015C28.0611 14.2514 28.0617 14.0114 28.0481 13.8082C28.0338 13.5944 28.0008 13.3511 27.901 13.0985L25.9019 13.8884C25.887 13.8507 25.8964 13.8471 25.9034 13.9514C25.9111 14.0664 25.9116 14.2229 25.9116 14.5015H28.0611ZM28.0611 16.0353V14.5015H25.9116V16.0353H28.0611ZM27.9007 17.4394C28.0007 17.1866 28.0338 16.9431 28.0481 16.7291C28.0617 16.5259 28.0611 16.2856 28.0611 16.0353H25.9116C25.9116 16.3142 25.9111 16.4708 25.9034 16.5859C25.8964 16.6902 25.887 16.6866 25.9019 16.6489L27.9007 17.4394ZM26.8219 18.6315C27.3138 18.3777 27.6971 17.9542 27.9007 17.4394L25.9019 16.6489C25.8895 16.6802 25.8662 16.7059 25.8363 16.7213L26.8219 18.6315ZM25.4407 18.9309C25.6897 18.906 25.9288 18.8826 26.1298 18.8489C26.3413 18.8133 26.5802 18.7562 26.8219 18.6315L25.8363 16.7213C25.8724 16.7027 25.8769 16.7117 25.7738 16.7291C25.6601 16.7482 25.5043 16.7643 25.2268 16.7921L25.4407 18.9309ZM24.2174 19.074C24.1439 19.13 24.1265 19.101 24.3687 19.0574C24.6006 19.0157 24.9243 18.9825 25.4407 18.9309L25.2268 16.7921C24.7465 16.8401 24.3227 16.8817 23.9879 16.9419C23.6634 17.0003 23.2602 17.1005 22.9134 17.3652L24.2174 19.074ZM24.1639 19.203C24.1573 19.1535 24.1777 19.1043 24.2174 19.074L22.9134 17.3652C22.2599 17.8638 21.9241 18.6746 22.0336 19.4892L24.1639 19.203ZM24.9278 20.1693C24.5992 19.7676 24.3937 19.5152 24.2592 19.3217C24.1188 19.1197 24.1516 19.1114 24.1639 19.203L22.0336 19.4892C22.0917 19.9217 22.306 20.2776 22.4941 20.5484C22.6883 20.8277 22.9585 21.1568 23.2642 21.5304L24.9278 20.1693ZM25.693 21.3579C25.6102 21.0988 25.4816 20.8894 25.3572 20.7147C25.239 20.5487 25.0864 20.3631 24.9278 20.1693L23.2642 21.5304C23.4408 21.7463 23.5396 21.8679 23.6065 21.9619C23.6673 22.0471 23.6577 22.0503 23.6453 22.0116L25.693 21.3579ZM25.6129 22.9634C25.8328 22.4555 25.8613 21.8851 25.693 21.3579L23.6453 22.0116C23.6555 22.0436 23.6538 22.0783 23.6404 22.1092L25.6129 22.9634ZM24.7333 24.0699C24.9103 23.8929 25.0806 23.7234 25.2148 23.57C25.356 23.4085 25.5048 23.213 25.6129 22.9634L23.6404 22.1091C23.6566 22.0719 23.6658 22.076 23.5969 22.1548C23.521 22.2416 23.4106 22.3528 23.2134 22.55L24.7333 24.0699ZM23.649 25.1541L24.7333 24.0699L23.2134 22.55L22.1291 23.6342L23.649 25.1541ZM22.543 26.0334C22.7925 25.9253 22.988 25.7766 23.1493 25.6354C23.3027 25.5013 23.4721 25.3311 23.6491 25.1541L22.1291 23.6342C21.932 23.8314 21.8209 23.9417 21.7341 24.0176C21.6554 24.0865 21.6513 24.0772 21.6885 24.0611L22.543 26.0334ZM20.9368 26.1135C21.4643 26.282 22.035 26.2536 22.543 26.0334L21.6885 24.0611C21.6576 24.0745 21.623 24.0762 21.5909 24.066L20.9368 26.1135ZM19.7487 25.3486C19.9424 25.5071 20.128 25.6596 20.2939 25.7778C20.4685 25.9022 20.6779 26.0308 20.9368 26.1135L21.5909 24.066C21.6296 24.0783 21.6264 24.0879 21.5412 24.0272C21.4472 23.9603 21.3257 23.8615 21.1099 23.685L19.7487 25.3486ZM18.7829 24.585C18.6913 24.5727 18.6996 24.5399 18.9016 24.6803C19.095 24.8147 19.3473 25.0201 19.7487 25.3486L21.1099 23.685C20.7364 23.3794 20.4075 23.1093 20.1284 22.9153C19.8577 22.7272 19.502 22.513 19.0698 22.4548L18.7829 24.585ZM18.6538 24.6385C18.6841 24.5988 18.7334 24.5784 18.7829 24.585L19.0698 22.4548C18.2547 22.345 17.4433 22.6811 16.9446 23.3351L18.6538 24.6385ZM18.5108 25.8611C18.5624 25.345 18.5955 25.0215 18.6372 24.7898C18.6808 24.5477 18.7098 24.5651 18.6538 24.6385L16.9446 23.3351C16.6802 23.6818 16.5801 24.0848 16.5217 24.4091C16.4615 24.7437 16.42 25.1672 16.372 25.6472L18.5108 25.8611ZM18.2117 27.2414C18.3363 26.9999 18.3934 26.7611 18.4288 26.5497C18.4626 26.3489 18.4859 26.11 18.5108 25.8611L16.372 25.6472C16.3442 25.9245 16.3281 26.0802 16.309 26.1938C16.2917 26.2969 16.2827 26.2924 16.3013 26.2564L18.2117 27.2414ZM17.0189 28.321C17.534 28.1173 17.9579 27.7338 18.2117 27.2414L16.3013 26.2564C16.2859 26.2863 16.2601 26.3096 16.2288 26.3219L17.0189 28.321ZM15.6156 28.4812C15.8658 28.4812 16.1059 28.4817 16.309 28.4681C16.5229 28.4539 16.7662 28.4208 17.0189 28.321L16.2288 26.3219C16.2665 26.307 16.2701 26.3165 16.1658 26.3234C16.0508 26.3311 15.8943 26.3317 15.6156 26.3317V28.4812ZM14.0814 28.4812H15.6156V26.3317H14.0814V28.4812ZM12.6785 28.321C12.9312 28.4209 13.1744 28.4539 13.3882 28.4682C13.5913 28.4817 13.8313 28.4812 14.0814 28.4812V26.3317C13.8028 26.3317 13.6463 26.3311 13.5314 26.3234C13.4271 26.3165 13.4307 26.307 13.4684 26.3219L12.6785 28.321ZM11.4853 27.2412C11.7392 27.7337 12.1632 28.1174 12.6785 28.321L13.4684 26.322C13.4371 26.3096 13.4113 26.2863 13.3959 26.2563L11.4853 27.2412ZM11.1864 25.8612C11.2113 26.1101 11.2346 26.3489 11.2683 26.5497C11.3038 26.761 11.3609 26.9997 11.4853 27.2412L13.3959 26.2563C13.4145 26.2924 13.4055 26.2969 13.3881 26.1938C13.3691 26.0802 13.353 25.9246 13.3252 25.6473L11.1864 25.8612ZM11.0435 24.639C10.9875 24.5656 11.0165 24.5483 11.06 24.7902C11.1017 25.0219 11.1348 25.3453 11.1864 25.8612L13.3252 25.6473C13.2772 25.1675 13.2357 24.7441 13.1755 24.4096C13.1172 24.0854 13.0172 23.6825 12.7529 23.3359L11.0435 24.639ZM10.9143 24.5855C10.9639 24.5788 11.0132 24.5992 11.0435 24.639L12.7529 23.3359C12.2541 22.6815 11.4424 22.3454 10.627 22.4553L10.9143 24.5855ZM9.94855 25.349C10.35 25.0206 10.6022 24.8152 10.7956 24.6808C10.9976 24.5404 11.0059 24.5732 10.9143 24.5855L10.627 22.4553C10.195 22.5136 9.83932 22.7278 9.56879 22.9158C9.28965 23.1098 8.9608 23.3799 8.58741 23.6854L9.94855 25.349ZM9.98197 25.3205L9.982 25.3205L8.55396 23.7139L8.55394 23.714L9.98197 25.3205ZM8.76023 26.1141C9.01923 26.0314 9.22859 25.9028 9.40323 25.7784C9.56916 25.6601 9.75476 25.5076 9.94852 25.349L8.58739 23.6854C8.37154 23.862 8.24993 23.9608 8.15598 24.0278C8.07073 24.0885 8.06754 24.0789 8.10624 24.0665L8.76023 26.1141ZM7.15415 26.034C7.6622 26.2541 8.23281 26.2826 8.76024 26.1141L8.10623 24.0665C8.07419 24.0768 8.03952 24.075 8.00865 24.0617L7.15415 26.034ZM6.04808 25.1547C6.22503 25.3316 6.39449 25.5019 6.54781 25.636C6.7092 25.7772 6.9047 25.9259 7.15415 26.034L8.00866 24.0617C8.04589 24.0778 8.04176 24.087 7.96304 24.0182C7.87626 23.9423 7.76513 23.8319 7.56799 23.6348L6.04808 25.1547ZM6.04806 25.1547L6.04808 25.1547L7.56799 23.6348L7.56798 23.6348L6.04806 25.1547ZM4.96399 24.0706L6.04806 25.1547L7.56798 23.6348L6.4839 22.5507L4.96399 24.0706ZM4.87273 23.9668L4.87274 23.9668L6.57515 22.6545L6.57514 22.6545L4.87273 23.9668ZM4.08414 22.9637C4.19222 23.2133 4.34105 23.409 4.48232 23.5705C4.61653 23.7239 4.78689 23.8935 4.96398 24.0706L6.48389 22.5507C6.2866 22.3534 6.17618 22.2422 6.10021 22.1553C6.03131 22.0765 6.04056 22.0724 6.0567 22.1097L4.08414 22.9637ZM4.00409 21.3587C3.8359 21.8858 3.86434 22.4559 4.08414 22.9637L6.0567 22.1097C6.04334 22.0788 6.04162 22.0442 6.05183 22.0122L4.00409 21.3587ZM4.76949 20.1697C4.61088 20.3635 4.45822 20.5492 4.33994 20.7153C4.21543 20.89 4.0868 21.0995 4.00409 21.3587L6.05183 22.0122C6.03948 22.0509 6.02986 22.0477 6.09061 21.9624C6.15757 21.8684 6.25639 21.7468 6.4331 21.5308L4.76949 20.1697ZM4.72861 20.2229L4.72859 20.223L6.474 21.4775L6.47402 21.4775L4.72861 20.2229ZM5.53366 19.203C5.54596 19.1114 5.57879 19.1196 5.43831 19.3218C5.3038 19.5154 5.09825 19.7678 4.76951 20.1696L6.43311 21.5308C6.73889 21.157 7.00923 20.8279 7.20342 20.5484C7.39163 20.2776 7.60597 19.9215 7.66403 19.489L5.53366 19.203ZM5.48022 19.074C5.51991 19.1043 5.5403 19.1535 5.53366 19.203L7.66403 19.489C7.77335 18.6745 7.43762 17.864 6.78443 17.3654L5.48022 19.074ZM4.25664 18.9309C4.77313 18.9825 5.09693 19.0157 5.32886 19.0574C5.57107 19.101 5.55371 19.1301 5.48022 19.074L6.78443 17.3654C6.43752 17.1006 6.03423 17.0004 5.70964 16.942C5.37478 16.8817 4.95092 16.8401 4.47052 16.7921L4.25664 18.9309ZM2.87516 18.6315C3.11684 18.7562 3.35585 18.8133 3.5674 18.8489C3.76836 18.8826 4.00753 18.906 4.25664 18.9309L4.47053 16.7921C4.19299 16.7643 4.03716 16.7482 3.9234 16.7291C3.82022 16.7117 3.82476 16.7027 3.86083 16.7213L2.87516 18.6315ZM1.79655 17.4396C2.00014 17.9542 2.38334 18.3777 2.87516 18.6315L3.86084 16.7213C3.83095 16.7059 3.80767 16.6802 3.7953 16.6489L1.79655 17.4396ZM1.63608 16.0352C1.63608 16.2855 1.63552 16.5258 1.64911 16.7292C1.66341 16.9432 1.6965 17.1867 1.79655 17.4396L3.7953 16.6489C3.81024 16.6866 3.80078 16.6903 3.7938 16.5859C3.78611 16.4708 3.78555 16.3141 3.78555 16.0352H1.63608ZM1.63608 14.5017V16.0352H3.78555V14.5017H1.63608ZM1.7963 13.0983C1.69641 13.351 1.66337 13.5943 1.64909 13.8082C1.63552 14.0114 1.63608 14.2515 1.63608 14.5017H3.78555C3.78555 14.2229 3.78611 14.0664 3.79379 13.9514C3.80075 13.8471 3.8102 13.8507 3.79529 13.8884L1.7963 13.0983ZM2.87576 11.9055C2.38345 12.1594 1.99991 12.5832 1.7963 13.0983L3.79529 13.8884C3.80766 13.8571 3.83096 13.8314 3.86087 13.816L2.87576 11.9055ZM4.25626 11.6064C4.00732 11.6313 3.76833 11.6547 3.56751 11.6884C3.35613 11.7239 3.11729 11.781 2.87576 11.9055L3.86087 13.816C3.82481 13.8346 3.82028 13.8255 3.9234 13.8082C4.03709 13.7891 4.19281 13.773 4.47014 13.7452L4.25626 11.6064ZM4.36321 11.6011H4.3632V13.7506H4.36321V11.6011ZM4.36322 11.6011H4.36321V13.7506H4.36322V11.6011ZM5.47883 11.4634C5.55228 11.4074 5.5696 11.4364 5.32757 11.48C5.09582 11.5217 4.77231 11.5548 4.25628 11.6064L4.47016 13.7452C4.95013 13.6972 5.37362 13.6557 5.70819 13.5955C6.03248 13.5372 6.43542 13.4371 6.78214 13.1727L5.47883 11.4634ZM5.53231 11.3343C5.53899 11.3838 5.51857 11.4331 5.47883 11.4634L6.78214 13.1727C7.43627 12.6739 7.7724 11.8625 7.66254 11.0472L5.53231 11.3343ZM4.76903 10.3688C5.09741 10.7702 5.30271 11.0223 5.43708 11.2157C5.5774 11.4176 5.54465 11.4258 5.53231 11.3343L7.66254 11.0472C7.60431 10.6152 7.39016 10.2595 7.20211 9.98893C7.00811 9.7098 6.73806 9.38099 6.43263 9.00769L4.76903 10.3688ZM4.00448 9.18144C4.08721 9.44024 4.2157 9.64944 4.34005 9.82398C4.45819 9.98978 4.61064 10.1752 4.76903 10.3688L6.43263 9.00769C6.25618 8.79202 6.1575 8.67054 6.09063 8.57668C6.02997 8.49154 6.03956 8.48836 6.05191 8.52699L4.00448 9.18144ZM4.08463 7.57444C3.86428 8.08275 3.83581 8.65373 4.00448 9.18144L6.05191 8.52699C6.04166 8.49493 6.04339 8.46024 6.05678 8.42936L4.08463 7.57444ZM4.96353 6.46902C4.78667 6.64588 4.61652 6.81525 4.48247 6.96848C4.34137 7.12977 4.1927 7.32516 4.08463 7.57444L6.05678 8.42936C6.04065 8.46658 6.03142 8.46245 6.10025 8.38377C6.17613 8.29703 6.28641 8.18597 6.48345 7.98893L4.96353 6.46902ZM6.04819 5.38437L4.96353 6.46902L6.48345 7.98893L7.5681 6.90428L6.04819 5.38437ZM7.15407 4.50518C6.90467 4.61325 6.7092 4.76196 6.54784 4.90312C6.39455 5.03722 6.22512 5.20744 6.04819 5.38437L7.5681 6.90428C7.76522 6.70716 7.87632 6.59684 7.9631 6.52093C8.0418 6.45208 8.04593 6.46132 8.0087 6.47745L7.15407 4.50518ZM8.76043 4.42506C8.23292 4.25653 7.6622 4.285 7.15407 4.50518L8.0087 6.47745C8.03957 6.46407 8.07425 6.46235 8.10629 6.47258L8.76043 4.42506ZM9.94831 5.18985C9.75465 5.0314 9.56913 4.87889 9.40325 4.76071C9.22864 4.63631 9.01935 4.50778 8.76043 4.42506L8.10629 6.47258C8.06764 6.46024 8.07083 6.45063 8.156 6.51131C8.2499 6.57821 8.37143 6.67693 8.58718 6.85345L9.94831 5.18985ZM10.9142 5.95343C11.0058 5.96575 10.9975 5.99853 10.7955 5.85816C10.6021 5.72374 10.3498 5.51836 9.94831 5.18985L8.58718 6.85346C8.96063 7.159 9.28957 7.42916 9.56882 7.62323C9.83949 7.81135 10.1953 8.02556 10.6276 8.08372L10.9142 5.95343ZM11.0433 5.89996C11.013 5.93968 10.9637 5.96009 10.9142 5.95343L10.6276 8.08372C11.4425 8.19335 12.2536 7.85739 12.7523 7.20365L11.0433 5.89996ZM11.1863 4.67675C11.1347 5.19305 11.1016 5.51674 11.0598 5.74862C11.0163 5.99078 10.9872 5.97345 11.0433 5.89996L12.7523 7.20365C13.0168 6.85684 13.117 6.45371 13.1753 6.12928C13.2356 5.79455 13.2771 5.37086 13.3252 4.89063L11.1863 4.67675ZM11.4857 3.29533C11.361 3.53699 11.3039 3.77599 11.2684 3.98751C11.2346 4.18846 11.2113 4.42762 11.1863 4.67675L13.3252 4.89063C13.3529 4.61309 13.3691 4.45724 13.3882 4.34347C13.4055 4.24026 13.4145 4.2448 13.3959 4.28088L11.4857 3.29533ZM12.6778 2.21654C12.163 2.42014 11.7395 2.8034 11.4857 3.29533L13.3959 4.28089C13.4113 4.251 13.4371 4.22771 13.4684 4.21534L12.6778 2.21654ZM14.082 2.05612C13.8316 2.05612 13.5914 2.05556 13.3881 2.06915C13.1741 2.08344 12.9306 2.11653 12.6778 2.21654L13.4684 4.21535C13.4306 4.23027 13.427 4.22082 13.5314 4.21384C13.6464 4.20615 13.8031 4.2056 14.082 4.2056V2.05612ZM15.6151 2.05612H14.082V4.2056H15.6151V2.05612ZM17.0197 2.21663C16.7667 2.11656 16.5232 2.08346 16.3091 2.06915C16.1058 2.05556 15.8655 2.05612 15.6151 2.05612V4.2056C15.894 4.2056 16.0507 4.20616 16.1658 4.21385C16.2702 4.22083 16.2666 4.23029 16.2288 4.21535L17.0197 2.21663ZM18.2114 3.29511C17.9576 2.80336 17.5342 2.42022 17.0196 2.21663L16.2288 4.21535C16.2601 4.22772 16.2858 4.251 16.3012 4.28087L18.2114 3.29511ZM18.629 15.2685C18.629 17.3563 16.9365 19.0488 14.8487 19.0488V21.1983C18.1236 21.1983 20.7785 18.5434 20.7785 15.2685H18.629ZM14.8487 11.4881C16.9365 11.4881 18.629 13.1806 18.629 15.2685H20.7785C20.7785 11.9935 18.1236 9.33861 14.8487 9.33861V11.4881ZM11.0683 15.2685C11.0683 13.1806 12.7608 11.4881 14.8487 11.4881V9.33861C11.5737 9.33861 8.91881 11.9935 8.91881 15.2685H11.0683ZM14.8487 19.0488C12.7608 19.0488 11.0683 17.3563 11.0683 15.2685H8.91881C8.91881 18.5434 11.5737 21.1983 14.8487 21.1983V19.0488Z"
-                      fill="#897CFF" />
-                  </svg>
-                  Обязанности:
-                </h3>
-                <ul class="vacancies__dental-surgeon-lists list-reset">
-                  <li class="vacancies__dental-surgeon-items">
-                    – Встреча пациентов, консультации по услугам и ценам клиники, запись на приём к специалистам,
-                    организация записи докторов и координирование кабинетов, оформление документации в электронной базе,
-                    помощь пациентам, обеспечение их комфортного пребывания в клинике;
-                  </li>
-                  <li class="vacancies__dental-surgeon-items">
-                    – Ведение кассовых операций, кассовая отчетность, обеспечение высокого качества обслуживания
-                    пациентов
-                  </li>
-                </ul>
-              </li>
-              <li class="vacancies__dental-surgeon-item">
-                <h3 class="vacancies__dental-surgeon-item-title">
-                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M22.1312 4.47428V4.47428C24.1423 4.47427 25.7726 6.10455 25.7726 8.11561L25.7726 10.7166C25.7726 11.1221 25.7726 11.3249 25.6795 11.4729C25.631 11.5501 25.5658 11.6154 25.4886 11.6639C25.3405 11.7569 25.1377 11.7569 24.7322 11.7569L18.4899 11.7569M22.1312 4.47428V4.47428C20.1202 4.47428 18.4899 6.10456 18.4899 8.11561L18.4899 11.7569M22.1312 4.47428L8.77967 4.47428C6.49095 4.47428 5.34659 4.47427 4.63557 5.18529C3.92456 5.8963 3.92456 7.04066 3.92456 9.32939L3.92456 26.3223L7.56589 25.1085L11.2072 26.3223L14.8486 25.1085L18.4899 26.3223L18.4899 11.7569"
-                      stroke="#897CFF" stroke-width="2.14948" />
-                    <path d="M8.77966 9.32812L13.6348 9.32812" stroke="#897CFF" stroke-width="2.14948"
-                      stroke-linecap="round" />
-                    <path d="M9.99341 14.1836H8.77963" stroke="#897CFF" stroke-width="2.14948" stroke-linecap="round" />
-                    <path d="M8.77966 19.0391L12.421 19.0391" stroke="#897CFF" stroke-width="2.14948"
-                      stroke-linecap="round" />
-                  </svg>
-                  Требования:
-                </h3>
-                <ul class="vacancies__dental-surgeon-lists list-reset">
-                  <li class="vacancies__dental-surgeon-items">
-                    – Пунктуальность и ответственность, внимательность, клиентоориентированность, коммуникабельность и
-                    стрессоустойчивость, умение предвосхитить и не допустить конфликтную ситуацию;
-                  </li>
-                  <li class="vacancies__dental-surgeon-items">
-                    – Умение работать в режиме многозадачности;
-                  </li>
-                  <li class="vacancies__dental-surgeon-items">
-                    – Грамотная речь умение общаться с клиентами;
-                  </li>
-                  <li class="vacancies__dental-surgeon-items">
-                    – ПК - уверенный пользователь, готовность быстро обучаться;
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            <svg class="vacancies__dental-surgeon-svg" width="291" height="377" viewBox="0 0 291 377" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_3_9539)">
-                <path
-                  d="M171.553 224.095C218.113 224.095 255.982 182.558 255.982 131.509C255.982 22.8473 90.6337 17.3593 87.2253 128.228C87.209 128.505 87.1764 128.782 87.1927 129.044C87.1764 129.859 87.1274 130.675 87.1274 131.491C87.1274 182.557 125.01 224.077 171.556 224.077L171.553 224.095ZM171.553 62.3288C205.521 62.3288 225.947 86.0185 232.26 94.4907C238.917 103.425 241.852 114.377 242.587 125.749C179.45 133.155 157.214 96.8063 156.282 95.2238C155.124 93.2008 152.954 91.9446 150.621 91.9446C148.272 91.9446 146.118 93.2008 144.96 95.2401C129.053 123.171 109.54 124.492 100.68 123.367C101.659 112.893 104.326 105.309 109.675 95.2238C122.939 75.0889 146.523 62.3288 171.553 62.3288ZM171.553 211.043C133.654 211.043 102.656 177.94 100.388 136.337C112.151 137.365 133.328 134.95 151.079 109.891C161.08 121.148 184.035 139.943 225.981 139.943C231.186 139.943 236.782 139.518 242.59 138.898C239.229 179.294 208.669 211.043 171.553 211.043Z"
-                  fill="#EBEAF9" />
-                <path
-                  d="M19.2727 392.284H323.802C325.727 392.284 327.554 391.436 328.81 389.951C330.05 388.467 330.572 386.525 330.23 384.617L312.854 286.793C309.82 269.712 299.705 256.105 286.49 251.309L220.058 227.13C217.529 226.2 214.69 226.935 212.912 228.974L171.555 276.336L130.197 228.974C128.435 226.935 125.58 226.2 123.051 227.13L56.6191 251.309C43.4041 256.122 33.2893 269.728 30.2546 286.81L12.8794 384.633C12.5367 386.525 13.0588 388.483 14.2987 389.968C15.5386 391.452 17.3659 392.301 19.3072 392.301L19.2727 392.284ZM43.079 289.077C45.3141 276.564 52.1989 266.792 61.0578 263.561C104.737 247.665 61.0578 263.561 108.762 246.203L123.282 240.917L166.614 290.547C169.094 293.385 173.972 293.385 176.436 290.547L219.767 240.917L237.159 247.247C266.437 257.878 266.395 257.888 281.975 263.558C290.834 266.789 297.735 276.561 299.954 289.075L315.975 379.23H27.0578L43.079 289.077Z"
-                  fill="#EBEAF9" />
-              </g>
-              <defs>
-                <clipPath id="clip0_3_9539">
-                  <rect width="291" height="376" fill="white" transform="translate(0 0.306641)" />
-                </clipPath>
-              </defs>
-            </svg>
-          </div>
-          <button class="vacancies__dental-surgeon-btn bth-reset" id="openModalBtn">
-            Откликнуться
-            <svg class="vacancies__dental-surgeon-icon" width="45" height="45" viewBox="0 0 45 45" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <circle cx="22.399" cy="22.7616" r="21.8817" fill="white"></circle>
-              <path d="M29.7828 26.8467V15.3781M29.7828 15.3781H18.3143M29.7828 15.3781L15.0165 30.1445"
-                stroke="#535353" stroke-width="2.66" stroke-linecap="round" stroke-linejoin="round"></path>
-            </svg>
-          </button>
-        </div>
+					<div id="modal" class="modal" style="display: none">
+						<div class="vacancies__modal-content">
+							<span id="closesModalBtn" class="close-btn">
+								<svg
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M0.292893 1.70686C-0.0976316 1.31634 -0.0976318 0.683325 0.292892 0.2928C0.683436 -0.0974884 1.31651 -0.0976449 1.70695 0.2928L7.99992 6.58577L14.2929 0.292799L14.3691 0.22444C14.7618 -0.0956923 15.3409 -0.0732371 15.707 0.292799C16.073 0.658836 16.0954 1.23792 15.7753 1.63069L15.707 1.70686L9.41399 7.99983L15.707 14.2928C16.0974 14.6832 16.0972 15.3163 15.707 15.7069C15.3164 16.0974 14.6834 16.0974 14.2929 15.7069L7.99992 9.41389L1.70696 15.7069L1.63078 15.7752C1.23801 16.0956 0.659009 16.073 0.292893 15.7069C-0.0732224 15.3407 -0.0958165 14.7617 0.224534 14.369L0.292893 14.2928L6.58586 7.99983L0.292893 1.70686Z"
+										fill="#6A6A6A"
+									/>
+								</svg>
+							</span>
+							<h2 class="vacancies__modal-content-title">Свяжитесь с нами</h2>
+							<p class="vacancies__modal-content-text">
+								по вопросам трудоустройства
+							</p>
+							<div class="vacancies__modal-content-wrap">
+								<svg
+									width="51"
+									height="51"
+									viewBox="0 0 51 51"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M42.1553 35.5137C42.1553 35.9355 42.0772 36.4863 41.9209 37.166C41.7647 37.8457 41.6006 38.3809 41.4287 38.7715C41.1006 39.5527 40.1475 40.3809 38.5693 41.2559C37.1006 42.0527 35.6475 42.4512 34.21 42.4512C33.7881 42.4512 33.3779 42.4238 32.9795 42.3692C32.5811 42.3145 32.1318 42.2168 31.6319 42.0762C31.1318 41.9355 30.7608 41.8222 30.5186 41.7363C30.2764 41.6504 29.8428 41.4902 29.2178 41.2559C28.5928 41.0215 28.21 40.8809 28.0693 40.834C26.5381 40.2871 25.1709 39.6387 23.9678 38.8887C21.9678 37.6543 19.9014 35.9707 17.7686 33.8379C15.6357 31.7051 13.9521 29.6387 12.7178 27.6387C11.9678 26.4355 11.3194 25.0684 10.7725 23.5371C10.7256 23.3964 10.585 23.0136 10.3506 22.3887C10.1162 21.7637 9.95604 21.33 9.87009 21.0879C9.78417 20.8457 9.6709 20.4746 9.53026 19.9746C9.38966 19.4746 9.29198 19.0254 9.23732 18.6269C9.18257 18.2285 9.15527 17.8184 9.15527 17.3965C9.15527 15.959 9.55372 14.5058 10.3506 13.0371C11.2256 11.459 12.0537 10.5059 12.835 10.1777C13.2256 10.0059 13.7607 9.84179 14.4404 9.68556C15.1201 9.52929 15.6709 9.45117 16.0928 9.45117C16.3115 9.45117 16.4756 9.4746 16.5849 9.52149C16.8662 9.61524 17.2803 10.209 17.8272 11.3027C17.999 11.5996 18.2334 12.0215 18.5303 12.5684C18.8271 13.1152 19.1006 13.6113 19.3506 14.0566C19.6006 14.5019 19.8428 14.9199 20.0771 15.3106C20.124 15.3731 20.2607 15.5684 20.4873 15.8965C20.7138 16.2246 20.8818 16.502 20.9912 16.7285C21.1006 16.9551 21.1553 17.1777 21.1553 17.3965C21.1553 17.709 20.9326 18.0996 20.4873 18.5684C20.042 19.0371 19.5576 19.4668 19.0342 19.8574C18.5107 20.248 18.0264 20.6621 17.5811 21.0996C17.1357 21.5371 16.9131 21.8965 16.9131 22.1777C16.9131 22.3184 16.9521 22.4941 17.0303 22.7051C17.1084 22.916 17.1748 23.0762 17.2295 23.1856C17.2842 23.2949 17.3935 23.4824 17.5576 23.748C17.7217 24.0137 17.8116 24.1621 17.8272 24.1934C19.0146 26.334 20.374 28.1699 21.9053 29.7012C23.4365 31.2324 25.2725 32.5918 27.4131 33.7793C27.4444 33.7949 27.5928 33.8848 27.8584 34.0488C28.124 34.2129 28.3115 34.3223 28.4209 34.377C28.5303 34.4317 28.6904 34.498 28.9014 34.5762C29.1123 34.6543 29.2881 34.6934 29.4287 34.6934C29.71 34.6934 30.0693 34.4707 30.5068 34.0254C30.9443 33.5801 31.3584 33.0957 31.749 32.5723C32.1396 32.0488 32.5693 31.5645 33.0381 31.1192C33.5068 30.6738 33.8975 30.4512 34.21 30.4512C34.4287 30.4512 34.6514 30.5058 34.8779 30.6152C35.1045 30.7246 35.3818 30.8926 35.71 31.1192C36.0381 31.3457 36.2334 31.4824 36.2959 31.5293C36.6865 31.7637 37.1045 32.0059 37.5498 32.2558C37.9951 32.5059 38.4912 32.7793 39.0381 33.0762C39.585 33.373 40.0068 33.6074 40.3037 33.7793C41.3975 34.3262 41.9912 34.7402 42.085 35.0215C42.1318 35.1308 42.1553 35.2949 42.1553 35.5137Z"
+										stroke="#897CFF"
+										stroke-width="2.66"
+									/>
+								</svg>
+								<p class="vacancies__modal-content-text-link">
+									Наш контактный телефон<br /><a
+										class="vacancies__tell"
+										href="tel:+79031113851"
+										>+7 (903) 111-38-51</a
+									>
+								</p>
+							</div>
+							<button id="closeModalBtn" class="bth-reset">
+								Понятно
+								<svg
+									class="vacancies__dental-surgeon-icon"
+									width="45"
+									height="45"
+									viewBox="0 0 45 45"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<circle
+										cx="22.399"
+										cy="22.7616"
+										r="21.8817"
+										fill="white"
+									></circle>
+									<path
+										d="M29.7828 26.8467V15.3781M29.7828 15.3781H18.3143M29.7828 15.3781L15.0165 30.1445"
+										stroke="#535353"
+										stroke-width="2.66"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									></path>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
 
-        <div id="modal" class="modal" style="display:none;">
-          <div class="vacancies__modal-content">
-            <span id="closesModalBtn" class="close-btn">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M0.292893 1.70686C-0.0976316 1.31634 -0.0976318 0.683325 0.292892 0.2928C0.683436 -0.0974884 1.31651 -0.0976449 1.70695 0.2928L7.99992 6.58577L14.2929 0.292799L14.3691 0.22444C14.7618 -0.0956923 15.3409 -0.0732371 15.707 0.292799C16.073 0.658836 16.0954 1.23792 15.7753 1.63069L15.707 1.70686L9.41399 7.99983L15.707 14.2928C16.0974 14.6832 16.0972 15.3163 15.707 15.7069C15.3164 16.0974 14.6834 16.0974 14.2929 15.7069L7.99992 9.41389L1.70696 15.7069L1.63078 15.7752C1.23801 16.0956 0.659009 16.073 0.292893 15.7069C-0.0732224 15.3407 -0.0958165 14.7617 0.224534 14.369L0.292893 14.2928L6.58586 7.99983L0.292893 1.70686Z"
-                  fill="#6A6A6A" />
-              </svg>
-            </span>
-            <h2 class="vacancies__modal-content-title">Свяжитесь с нами</h2>
-            <p class="vacancies__modal-content-text">по вопросам трудоустройства</p>
-            <div class="vacancies__modal-content-wrap">
-              <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M42.1553 35.5137C42.1553 35.9355 42.0772 36.4863 41.9209 37.166C41.7647 37.8457 41.6006 38.3809 41.4287 38.7715C41.1006 39.5527 40.1475 40.3809 38.5693 41.2559C37.1006 42.0527 35.6475 42.4512 34.21 42.4512C33.7881 42.4512 33.3779 42.4238 32.9795 42.3692C32.5811 42.3145 32.1318 42.2168 31.6319 42.0762C31.1318 41.9355 30.7608 41.8222 30.5186 41.7363C30.2764 41.6504 29.8428 41.4902 29.2178 41.2559C28.5928 41.0215 28.21 40.8809 28.0693 40.834C26.5381 40.2871 25.1709 39.6387 23.9678 38.8887C21.9678 37.6543 19.9014 35.9707 17.7686 33.8379C15.6357 31.7051 13.9521 29.6387 12.7178 27.6387C11.9678 26.4355 11.3194 25.0684 10.7725 23.5371C10.7256 23.3964 10.585 23.0136 10.3506 22.3887C10.1162 21.7637 9.95604 21.33 9.87009 21.0879C9.78417 20.8457 9.6709 20.4746 9.53026 19.9746C9.38966 19.4746 9.29198 19.0254 9.23732 18.6269C9.18257 18.2285 9.15527 17.8184 9.15527 17.3965C9.15527 15.959 9.55372 14.5058 10.3506 13.0371C11.2256 11.459 12.0537 10.5059 12.835 10.1777C13.2256 10.0059 13.7607 9.84179 14.4404 9.68556C15.1201 9.52929 15.6709 9.45117 16.0928 9.45117C16.3115 9.45117 16.4756 9.4746 16.5849 9.52149C16.8662 9.61524 17.2803 10.209 17.8272 11.3027C17.999 11.5996 18.2334 12.0215 18.5303 12.5684C18.8271 13.1152 19.1006 13.6113 19.3506 14.0566C19.6006 14.5019 19.8428 14.9199 20.0771 15.3106C20.124 15.3731 20.2607 15.5684 20.4873 15.8965C20.7138 16.2246 20.8818 16.502 20.9912 16.7285C21.1006 16.9551 21.1553 17.1777 21.1553 17.3965C21.1553 17.709 20.9326 18.0996 20.4873 18.5684C20.042 19.0371 19.5576 19.4668 19.0342 19.8574C18.5107 20.248 18.0264 20.6621 17.5811 21.0996C17.1357 21.5371 16.9131 21.8965 16.9131 22.1777C16.9131 22.3184 16.9521 22.4941 17.0303 22.7051C17.1084 22.916 17.1748 23.0762 17.2295 23.1856C17.2842 23.2949 17.3935 23.4824 17.5576 23.748C17.7217 24.0137 17.8116 24.1621 17.8272 24.1934C19.0146 26.334 20.374 28.1699 21.9053 29.7012C23.4365 31.2324 25.2725 32.5918 27.4131 33.7793C27.4444 33.7949 27.5928 33.8848 27.8584 34.0488C28.124 34.2129 28.3115 34.3223 28.4209 34.377C28.5303 34.4317 28.6904 34.498 28.9014 34.5762C29.1123 34.6543 29.2881 34.6934 29.4287 34.6934C29.71 34.6934 30.0693 34.4707 30.5068 34.0254C30.9443 33.5801 31.3584 33.0957 31.749 32.5723C32.1396 32.0488 32.5693 31.5645 33.0381 31.1192C33.5068 30.6738 33.8975 30.4512 34.21 30.4512C34.4287 30.4512 34.6514 30.5058 34.8779 30.6152C35.1045 30.7246 35.3818 30.8926 35.71 31.1192C36.0381 31.3457 36.2334 31.4824 36.2959 31.5293C36.6865 31.7637 37.1045 32.0059 37.5498 32.2558C37.9951 32.5059 38.4912 32.7793 39.0381 33.0762C39.585 33.373 40.0068 33.6074 40.3037 33.7793C41.3975 34.3262 41.9912 34.7402 42.085 35.0215C42.1318 35.1308 42.1553 35.2949 42.1553 35.5137Z"
-                  stroke="#897CFF" stroke-width="2.66" />
-              </svg>
-              <p class="vacancies__modal-content-text-link">Наш контактный телефон<br><a href="tel:+79031113851">+7
-                  (903)
-                  111-38-51</a>
-              </p>
-            </div>
-            <button id="closeModalBtn" class="bth-reset">
-              Понятно
-              <svg class="vacancies__dental-surgeon-icon" width="45" height="45" viewBox="0 0 45 45" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <circle cx="22.399" cy="22.7616" r="21.8817" fill="white"></circle>
-                <path d="M29.7828 26.8467V15.3781M29.7828 15.3781H18.3143M29.7828 15.3781L15.0165 30.1445"
-                  stroke="#535353" stroke-width="2.66" stroke-linecap="round" stroke-linejoin="round"></path>
-              </svg>
-            </button>
-          </div>
-        </div>
+		<footer id="contacts" class="footer">
+			<div class="container">
+				<div class="footer__container-top">
+					<div class="footer__container-info">
+						<ul class="footer__list-info">
+							<li class="footer__list-info">Лицензии</li>
+							<li class="footer__list-info">Контакты контролирующих органов</li>
+							<li class="footer__list-info">Нормативные документы</li>
+						</ul>
+						<button class="footer__btn-info bth-reset">
+							Написать гендиректору
+							<svg
+								class="footer__btn-icon"
+								width="35"
+								height="35"
+								viewBox="0 0 35 36"
+								aria-hidden="true"
+							>
+								<use xlink:href="svg/sprite.svg#icon-button-arrow"></use>
+							</svg>
+						</button>
+					</div>
+					<div class="footer__container-contacts">
+						<div class="tell__wrap">
+							<svg
+								width="24"
+								height="25"
+								viewBox="0 0 24 25"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M20.3863 17.9508C20.3863 18.1705 20.3466 18.4573 20.2672 18.8112C20.1878 19.1651 20.1044 19.4438 20.017 19.6472C19.8502 20.054 19.3658 20.4852 18.5637 20.9408C17.8172 21.3557 17.0786 21.5632 16.348 21.5632C16.1335 21.5632 15.925 21.549 15.7225 21.5205C15.52 21.492 15.2917 21.4411 15.0376 21.3679C14.7834 21.2947 14.5948 21.2357 14.4717 21.191C14.3486 21.1462 14.1282 21.0628 13.8106 20.9408C13.4929 20.8187 13.2983 20.7455 13.2269 20.7211C12.4486 20.4364 11.7537 20.0987 11.1421 19.7082C10.1256 19.0655 9.07533 18.1888 7.99128 17.0783C6.90724 15.9677 6.05151 14.8917 5.42411 13.8503C5.04292 13.2239 4.71335 12.512 4.43538 11.7146C4.41155 11.6414 4.34008 11.4421 4.22095 11.1167C4.10182 10.7912 4.02042 10.5654 3.97673 10.4393C3.93306 10.3132 3.87549 10.12 3.80401 9.85964C3.73254 9.5993 3.68289 9.3654 3.65511 9.15792C3.62728 8.95049 3.61341 8.73692 3.61341 8.51723C3.61341 7.76873 3.81593 7.01209 4.22094 6.24733C4.66568 5.42559 5.08661 4.9293 5.48369 4.75844C5.68223 4.66895 5.95423 4.58352 6.2997 4.50217C6.64514 4.4208 6.92511 4.38013 7.13954 4.38013C7.25072 4.38013 7.33411 4.39233 7.38969 4.41674C7.53265 4.46556 7.7431 4.77472 8.02106 5.34424C8.10842 5.49882 8.22755 5.71849 8.37844 6.00324C8.52933 6.288 8.66831 6.54632 8.79538 6.77819C8.92244 7.01006 9.04554 7.2277 9.16467 7.43111C9.1885 7.46365 9.25798 7.56535 9.37313 7.73619C9.48828 7.90705 9.57367 8.05146 9.62926 8.16943C9.68486 8.28739 9.71264 8.40335 9.71264 8.51723C9.71264 8.67995 9.59948 8.88336 9.37313 9.12743C9.1468 9.37152 8.90061 9.59525 8.63457 9.79865C8.36851 10.002 8.12232 10.2177 7.89599 10.4455C7.66963 10.6733 7.55647 10.8604 7.55647 11.0068C7.55647 11.0801 7.57632 11.1716 7.61604 11.2814C7.65574 11.3913 7.68949 11.4747 7.71728 11.5316C7.74508 11.5886 7.80067 11.6862 7.88406 11.8245C7.96745 11.9628 8.01314 12.0401 8.02106 12.0564C8.62463 13.171 9.31556 14.127 10.0938 14.9243C10.8721 15.7216 11.8053 16.4294 12.8933 17.0478C12.9092 17.0559 12.9846 17.1027 13.1196 17.1881C13.2546 17.2735 13.3499 17.3305 13.4055 17.359C13.4611 17.3874 13.5425 17.422 13.6498 17.4627C13.757 17.5034 13.8463 17.5237 13.9178 17.5237C14.0607 17.5237 14.2434 17.4078 14.4658 17.1759C14.6881 16.944 14.8986 16.6918 15.0971 16.4193C15.2957 16.1467 15.5141 15.8945 15.7523 15.6626C15.9906 15.4307 16.1891 15.3148 16.348 15.3148C16.4591 15.3148 16.5723 15.3433 16.6875 15.4002C16.8026 15.4572 16.9436 15.5446 17.1104 15.6626C17.2771 15.7806 17.3764 15.8518 17.4082 15.8762C17.6067 15.9982 17.8191 16.1243 18.0455 16.2545C18.2718 16.3847 18.524 16.5271 18.8019 16.6816C19.0799 16.8362 19.2943 16.9583 19.4452 17.0478C20.0011 17.3325 20.3029 17.5481 20.3506 17.6946C20.3744 17.7515 20.3863 17.8369 20.3863 17.9508Z"
+									stroke="#897CFF"
+									stroke-width="2"
+								/>
+							</svg>
+							<ul class="footer__contacts-list-tel">
+								<li class="footer__contacts-item-tel">
+									<a class="footer__contacts-link" href="tel:+74955557177"
+										>+7(495)555-71-77</a
+									>
+								</li>
+								<li class="footer__contacts-item-tel">
+									<a class="footer__contacts-link" href="tel:+79953009911"
+										>+7(995)300-99-11</a
+									>
+								</li>
+								<li class="footer__contacts-item-tel">
+									<a class="footer__contacts-link" href="tel:+79951009911"
+										>+7(995)100-99-11</a
+									>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__container-address">
+							<address class="footer__address">
+								<svg
+									class="job__item-icon"
+									width="24"
+									height="24"
+									aria-hidden="true"
+								>
+									<use xlink:href="svg/sprite.svg#icon-map-pin"></use>
+								</svg>
+								<div>
+									<p class="footer__address--text">
+										г. Лыткарино, кв-л 3A, д.29
+									</p>
+									<p class="footer__address--text">
+										г. Лыткарино, кв-л 2, д.13
+									</p>
+								</div>
+							</address>
+						</div>
+						<ul class="footer__contacts-list-icon">
+							<li class="footer__contacts-item-icon">
+								<a href="#">
+									<svg width="42" height="42" aria-hidden="true">
+										<use xlink:href="svg/sprite.svg#icon-social-vk"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="footer__contacts-item-icon">
+								<a href="#">
+									<svg width="42" height="42" aria-hidden="true">
+										<use xlink:href="svg/sprite.svg#icon-social-telegram"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="footer__contacts-item-icon">
+								<a href="#">
+									<svg width="42" height="42" aria-hidden="true">
+										<use xlink:href="svg/sprite.svg#icon-social-facebook"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__container-bootom">
+					<p class="footer__bootom-text">
+						Семейная клиника «Здоровые дети» © 2012
+					</p>
+				</div>
+			</div>
+		</footer>
 
-      </div>
-    </section>
-  </main>
-
-  <footer id="contacts" class="footer">
-    <div class="container">
-      <div class="footer__container-top">
-        <div class="footer__container-info">
-          <ul class="footer__list-info">
-            <li class="footer__list-info">Лицензии</li>
-            <li class="footer__list-info">Контакты контролирующих органов</li>
-            <li class="footer__list-info">Нормативные документы</li>
-          </ul>
-          <button class="footer__btn-info bth-reset">
-            Написать гендиректору
-            <svg class="footer__btn-icon" width="35" height="35" viewBox="0 0 35 36" aria-hidden="true">
-              <use xlink:href="svg/sprite.svg#icon-button-arrow"></use>
-            </svg>
-          </button>
-        </div>
-        <div class="footer__container-contacts">
-          <div class="tell__wrap">
-            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M20.3863 17.9508C20.3863 18.1705 20.3466 18.4573 20.2672 18.8112C20.1878 19.1651 20.1044 19.4438 20.017 19.6472C19.8502 20.054 19.3658 20.4852 18.5637 20.9408C17.8172 21.3557 17.0786 21.5632 16.348 21.5632C16.1335 21.5632 15.925 21.549 15.7225 21.5205C15.52 21.492 15.2917 21.4411 15.0376 21.3679C14.7834 21.2947 14.5948 21.2357 14.4717 21.191C14.3486 21.1462 14.1282 21.0628 13.8106 20.9408C13.4929 20.8187 13.2983 20.7455 13.2269 20.7211C12.4486 20.4364 11.7537 20.0987 11.1421 19.7082C10.1256 19.0655 9.07533 18.1888 7.99128 17.0783C6.90724 15.9677 6.05151 14.8917 5.42411 13.8503C5.04292 13.2239 4.71335 12.512 4.43538 11.7146C4.41155 11.6414 4.34008 11.4421 4.22095 11.1167C4.10182 10.7912 4.02042 10.5654 3.97673 10.4393C3.93306 10.3132 3.87549 10.12 3.80401 9.85964C3.73254 9.5993 3.68289 9.3654 3.65511 9.15792C3.62728 8.95049 3.61341 8.73692 3.61341 8.51723C3.61341 7.76873 3.81593 7.01209 4.22094 6.24733C4.66568 5.42559 5.08661 4.9293 5.48369 4.75844C5.68223 4.66895 5.95423 4.58352 6.2997 4.50217C6.64514 4.4208 6.92511 4.38013 7.13954 4.38013C7.25072 4.38013 7.33411 4.39233 7.38969 4.41674C7.53265 4.46556 7.7431 4.77472 8.02106 5.34424C8.10842 5.49882 8.22755 5.71849 8.37844 6.00324C8.52933 6.288 8.66831 6.54632 8.79538 6.77819C8.92244 7.01006 9.04554 7.2277 9.16467 7.43111C9.1885 7.46365 9.25798 7.56535 9.37313 7.73619C9.48828 7.90705 9.57367 8.05146 9.62926 8.16943C9.68486 8.28739 9.71264 8.40335 9.71264 8.51723C9.71264 8.67995 9.59948 8.88336 9.37313 9.12743C9.1468 9.37152 8.90061 9.59525 8.63457 9.79865C8.36851 10.002 8.12232 10.2177 7.89599 10.4455C7.66963 10.6733 7.55647 10.8604 7.55647 11.0068C7.55647 11.0801 7.57632 11.1716 7.61604 11.2814C7.65574 11.3913 7.68949 11.4747 7.71728 11.5316C7.74508 11.5886 7.80067 11.6862 7.88406 11.8245C7.96745 11.9628 8.01314 12.0401 8.02106 12.0564C8.62463 13.171 9.31556 14.127 10.0938 14.9243C10.8721 15.7216 11.8053 16.4294 12.8933 17.0478C12.9092 17.0559 12.9846 17.1027 13.1196 17.1881C13.2546 17.2735 13.3499 17.3305 13.4055 17.359C13.4611 17.3874 13.5425 17.422 13.6498 17.4627C13.757 17.5034 13.8463 17.5237 13.9178 17.5237C14.0607 17.5237 14.2434 17.4078 14.4658 17.1759C14.6881 16.944 14.8986 16.6918 15.0971 16.4193C15.2957 16.1467 15.5141 15.8945 15.7523 15.6626C15.9906 15.4307 16.1891 15.3148 16.348 15.3148C16.4591 15.3148 16.5723 15.3433 16.6875 15.4002C16.8026 15.4572 16.9436 15.5446 17.1104 15.6626C17.2771 15.7806 17.3764 15.8518 17.4082 15.8762C17.6067 15.9982 17.8191 16.1243 18.0455 16.2545C18.2718 16.3847 18.524 16.5271 18.8019 16.6816C19.0799 16.8362 19.2943 16.9583 19.4452 17.0478C20.0011 17.3325 20.3029 17.5481 20.3506 17.6946C20.3744 17.7515 20.3863 17.8369 20.3863 17.9508Z"
-                stroke="#897CFF" stroke-width="2" />
-            </svg>
-            <ul class="footer__contacts-list-tel">
-              <li class="footer__contacts-item-tel">
-                <a class="footer__contacts-link" href="tel:+74955557177">+7(495)555-71-77</a>
-              </li>
-              <li class="footer__contacts-item-tel">
-                <a class="footer__contacts-link" href="tel:+79953009911">+7(995)300-99-11</a>
-              </li>
-              <li class="footer__contacts-item-tel">
-                <a class="footer__contacts-link" href="tel:+79951009911">+7(995)100-99-11</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__container-address">
-            <address class="footer__address">
-              <svg class="job__item-icon" width="24" height="24" aria-hidden="true">
-                <use xlink:href="svg/sprite.svg#icon-map-pin"></use>
-              </svg>
-              <div>
-                <p class="footer__address--text">
-                  г. Лыткарино, кв-л 3A, д.29
-                </p>
-                <p class="footer__address--text">
-                  г. Лыткарино, кв-л 2, д.13
-                </p>
-              </div>
-            </address>
-          </div>
-          <ul class="footer__contacts-list-icon">
-            <li class="footer__contacts-item-icon">
-              <a href="#">
-                <svg width="42" height="42" aria-hidden="true">
-                  <use xlink:href="svg/sprite.svg#icon-social-vk"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__contacts-item-icon">
-              <a href="#">
-                <svg width="42" height="42" aria-hidden="true">
-                  <use xlink:href="svg/sprite.svg#icon-social-telegram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__contacts-item-icon">
-              <a href="#">
-                <svg width="42" height="42" aria-hidden="true">
-                  <use xlink:href="svg/sprite.svg#icon-social-facebook"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer__container-bootom">
-        <p class="footer__bootom-text">
-          Семейная клиника «Здоровые дети» © 2012
-        </p>
-      </div>
-    </div>
-  </footer>
-
-  <script defer src="js/main.js"></script>
-  <script defer src="js/vacancies.js"></script>
-</body>
-
+		<script defer src="js/main.js"></script>
+		<script defer src="js/vacancies.js"></script>
+	</body>
 </html>
