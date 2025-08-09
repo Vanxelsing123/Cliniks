@@ -682,8 +682,6 @@ body {
 }
 
 .custom-modal-price {
-	flex: 0 0 80px;
-	width: 80px;
 	font-weight: 400;
 	font-size: 21px;
 	line-height: 159%;

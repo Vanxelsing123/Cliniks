@@ -231,8 +231,6 @@
 		color: var(--color-slate-blue);
 	}
 	.custom-modal-price {
-		flex: auto;
-		max-width: 30%;
 		color: var(--color-slate-blue);
 	}
 	.profile-btn {
