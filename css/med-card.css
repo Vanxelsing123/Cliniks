@@ -200,7 +200,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 12px;
+  border-bottom: 1.5px solid #c7c7f0;
 }
 
 .episode-header h3 {
@@ -211,6 +211,7 @@ body {
 }
 
 .episode-consult {
+  padding-bottom: 24px;
   margin: 0;
   color: var(--color-gray-brown);
   font-size: 28px;
@@ -223,9 +224,18 @@ body {
 }
 
 .episode-body {
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.doctor__card {
   display: flex;
   align-items: center;
-  gap: 15px;
+}
+
+.doctor-photo {
+  margin-right: 20px;
 }
 
 .doctor-photo img {
@@ -243,7 +253,6 @@ body {
   font-weight: 400;
   font-size: 19px;
   color: var(--color-signa-black);
-  margin: 0 0 4px 0;
 }
 
 .doctor-specialties {
@@ -258,20 +267,29 @@ body {
 }
 
 .btn-card {
-  padding: 8px 20px;
+  background: none;
+  padding: 9px 24px;
   border: none;
-  background-color: #897cff;
-  color: white;
+  background-color: #b6b3ff;
+  color: var(--color-gray-brown);
   border-radius: 39px;
   cursor: pointer;
-  font-size: 13px;
+  font-size: 14px;
+  line-height: 130%;
+  font-weight: 500;
   transition: background-color ease-in-out 0.3s;
-  margin-bottom: 12px;
+  outline: 2px solid #babbff;
+}
+.btn-card:nth-child(1) {
+  margin-right: 16px;
+  outline: 2px solid #babbff;
+  background-color: #eff3ff;
+  color: var(--color-gray-brown);
 }
 
-.episode-actions button:hover {
+/* .episode-actions button:hover {
   background-color: #6f63e5;
-}
+} */
 
 .header-border {
   padding-bottom: 30px;
@@ -300,23 +318,24 @@ body {
 }
 
 .btn-visit {
+  padding: 9px 24px;
   font-weight: 500;
   color: var(--color-gray-brown);
   border-radius: 39px;
-  background-color: #e5e5ff;
+  background-color: #eff3ff;
   cursor: pointer;
   font-size: 14px;
   border: 2px solid #c1baff;
   transition: background-color ease-in-out 0.3s;
 }
 
+.reschedule-btn {
+  margin-right: 16px;
+}
+
 .cancel-btn {
   border: none;
   background-color: #c1baff;
-}
-
-.reschedule-btn {
-  margin-bottom: 12px;
 }
 
 .profile-field {

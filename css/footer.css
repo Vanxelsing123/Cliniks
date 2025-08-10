@@ -1,6 +1,6 @@
 .footer {
 	padding-top: 25px;
-	background-color: var(--color-white);
+	background-color: #F5F4FF;
 }
 .footer__container-top {
 	display: flex;
@@ -110,7 +110,6 @@
 
 .footer__container-bootom {
 	display: flex;
-	justify-content: center;
 	padding: 35px 0;
 	font-weight: 500;
 	font-size: 15px;

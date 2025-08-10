@@ -412,6 +412,10 @@ select:focus-visible {
   letter-spacing: -0.02em;
   color: var(--color-gray-brown);
 }
+
+.picture {
+  display: flex;
+}
 .doctors__btn {
   width: 262px;
   height: 52px;
@@ -419,7 +423,7 @@ select:focus-visible {
   position: absolute;
   display: flex;
   align-items: center;
-  bottom: 0;
+  bottom: 2px;
   right: 0;
   font-weight: 400;
   font-size: 18px;

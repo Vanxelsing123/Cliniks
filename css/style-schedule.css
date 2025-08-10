@@ -159,7 +159,7 @@ body {
 }
 
 .accordion__svg {
-  margin-right: 5px;
+  margin-right: 12px;
   transition: transform 0.3s ease;
   transform-origin: center;
 }
