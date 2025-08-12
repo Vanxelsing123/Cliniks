@@ -1,383 +1,605 @@
 <!DOCTYPE html>
 <html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Карточка Доктора</title>
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/style-doctors.css" />
+		<link rel="stylesheet" href="css/media.css" />
+	</head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Карточка Доктора</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style-doctors.css">
-  <link rel="stylesheet" href="css/media.css">
-</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__top">
+					<div class="burger-wrapper">
+						<button
+							class="header__burger-btn bth-reset"
+							id="burger"
+							aria-label="Открыть меню"
+						>
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+						<div class="mobile-nav-wrapper">
+							<nav class="mobile-nav nav__content">
+								<ul class="header__nav-list list-reset">
+									<li class="header__nav-item">
+										<a href="doctors.html" class="header__nav-link">Врачи</a>
+									</li>
+									<li class="header__nav-item">
+										<a href="price.html" class="header__nav-link">Цены</a>
+									</li>
+									<li class="header__nav-item dropdown">
+										<a href="#" class="header__nav-link dropdown-button"
+											>Пациентам</a
+										>
+										<div class="header__nav-dropdown">
+											<a class="header__nav-link-dropdown" href="news.html"
+												>Новости</a
+											>
+											<a class="header__nav-link-dropdown" href="company.html"
+												>О нас</a
+											>
+											<a class="header__nav-link-dropdown" href="visit.html"
+												>Подготовка<br />к визиту</a
+											>
+											<a class="header__nav-link-dropdown" href="tax.html"
+												>Налоговый вычет</a
+											>
+										</div>
+									</li>
+									<li class="header__nav-item">
+										<a href="calculator.html" class="header__nav-link"
+											>Калькулятор<br />анализов</a
+										>
+									</li>
+									<li class="header__nav-item">
+										<a href="stock.html" class="header__nav-link">Акции</a>
+									</li>
+									<li class="header__nav-item">
+										<a href="contacts.html" class="header__nav-link"
+											>Контакты</a
+										>
+									</li>
+								</ul>
 
-<body>
-  <header class="header">
-    <div class="container">
-      <div class="header__top">
-        <div class="burger-wrapper">
-          <button class="header__burger-btn bth-reset" id="burger" aria-label="Открыть меню">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-          <div class="mobile-nav-wrapper">
-            <nav class="mobile-nav nav__content">
-              <ul class="header__nav-list list-reset">
-                <li class="header__nav-item">
-                  <a href="doctors.html" class="header__nav-link">Врачи</a>
-                </li>
-                <li class="header__nav-item">
-                  <a href="price.html" class="header__nav-link">Цены</a>
-                </li>
-                <li class="header__nav-item dropdown">
-                  <a href="#" class="header__nav-link dropdown-button">Пациентам</a>
-                  <div class="header__nav-dropdown">
-                    <a class="header__nav-link-dropdown" href="news.html">Новости</a>
-                    <a class="header__nav-link-dropdown" href="company.html">О нас</a>
-                    <a class="header__nav-link-dropdown" href="visit.html">Подготовка<br />к визиту</a>
-                    <a class="header__nav-link-dropdown" href="tax.html">Налоговый вычет</a>
-                  </div>
-                </li>
-                <li class="header__nav-item">
-                  <a href="calculator.html" class="header__nav-link">Калькулятор<br />анализов</a>
-                </li>
-                <li class="header__nav-item">
-                  <a href="stock.html" class="header__nav-link">Акции</a>
-                </li>
-                <li class="header__nav-item">
-                  <a href="contacts.html" class="header__nav-link">Контакты</a>
-                </li>
-              </ul>
+								<ul class="header__nav-list list-reset">
+									<li class="header__nav-item dropdown">
+										<a href="#" class="header__nav-link dropdown-button"
+											>Сотрудничество</a
+										>
+										<div class="header__nav-dropdown">
+											<a class="header__nav-link-dropdown" href="dms.html"
+												>ДМС</a
+											>
+											<a class="header__nav-link-dropdown" href="vacancies.html"
+												>Вакансии</a
+											>
+											<a class="header__nav-link-dropdown" href="#"
+												>Предприятиям</a
+											>
+										</div>
+									</li>
+									<li class="header__nav-item dropdown">
+										<a href="#" class="header__nav-link dropdown-button"
+											>Услуги
+										</a>
+										<div class="header__nav-dropdown">
+											<div class="header__dropdown-container">
+												<a class="header__nav-link-dropdown" href="#"
+													>Детское отделение</a
+												>
+												<a class="header__nav-link-dropdown" href="#"
+													>Взрослое отделение</a
+												>
+												<a
+													class="header__nav-link-dropdown"
+													href="services.html"
+													>Хирургия</a
+												>
+												<a class="header__nav-link-dropdown" href="#"
+													>Лабораторная<br />диагностика</a
+												>
+												<a class="header__nav-link-dropdown" href="#"
+													>УЗИ, ЭКГ</a
+												>
+												<a class="header__nav-link-dropdown" href="#"
+													>Нейросонография</a
+												>
+											</div>
+											<div>
+												<a class="header__nav-link-dropdown" href="#"
+													>Вызов врача на дом</a
+												>
+												<a class="header__nav-link-dropdown" href="#"
+													>Вакцинация</a
+												>
+												<a class="header__nav-link-dropdown" href="#"
+													>Логопед-дефектолог</a
+												>
+												<a class="header__nav-link-dropdown" href="#"
+													>Аудиометрия</a
+												>
+												<a class="header__nav-link-dropdown" href="#"
+													>Тимпанометрия</a
+												>
+												<a
+													class="header__nav-link-dropdown"
+													href="programs.html"
+													>Комплексные<br />программы</a
+												>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
 
-              <ul class="header__nav-list list-reset">
-                <li class="header__nav-item dropdown">
-                  <a href="#" class="header__nav-link dropdown-button">Сотрудничество</a>
-                  <div class="header__nav-dropdown">
-                    <a class="header__nav-link-dropdown" href="dms.html">ДМС</a>
-                    <a class="header__nav-link-dropdown" href="vacancies.html">Вакансии</a>
-                    <a class="header__nav-link-dropdown" href="#">Предприятиям</a>
-                  </div>
-                </li>
-                <li class="header__nav-item dropdown">
-                  <a href="#" class="header__nav-link dropdown-button">Услуги
-                  </a>
-                  <div class="header__nav-dropdown">
-                    <div class="header__dropdown-container">
-                      <a class="header__nav-link-dropdown" href="#">Детское отделение</a>
-                      <a class="header__nav-link-dropdown" href="#">Взрослое отделение</a>
-                      <a class="header__nav-link-dropdown" href="services.html">Хирургия</a>
-                      <a class="header__nav-link-dropdown" href="#">Лабораторная<br />диагностика</a>
-                      <a class="header__nav-link-dropdown" href="#">УЗИ, ЭКГ</a>
-                      <a class="header__nav-link-dropdown" href="#">Нейросонография</a>
-                    </div>
-                    <div>
-                      <a class="header__nav-link-dropdown" href="#">Вызов врача на дом</a>
-                      <a class="header__nav-link-dropdown" href="#">Вакцинация</a>
-                      <a class="header__nav-link-dropdown" href="#">Логопед-дефектолог</a>
-                      <a class="header__nav-link-dropdown" href="#">Аудиометрия</a>
-                      <a class="header__nav-link-dropdown" href="#">Тимпанометрия</a>
-                      <a class="header__nav-link-dropdown" href="programs.html">Комплексные<br />программы</a>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
+					<div class="header__logo">
+						<a href="index.html" class="header__logo-link">
+							<img src="img/logos.svg" alt="Логотип клиники" />
+						</a>
+					</div>
+					<div class="header__logo--mobile">
+						<a href="index.html" class="header__logo-link">
+							<img
+								class="clinic__logo"
+								src="img/Clinic_logo.svg"
+								alt="Логотип клиники"
+							/>
+						</a>
+					</div>
+					<div class="header__container-info">
+						<div class="header__text">
+							<a href="contacts.html" class="header__btn-address bth-reset">
+								<svg
+									class="header__btn-address-icon"
+									width="30"
+									height="29"
+									aria-hidden="true"
+								>
+									<use xlink:href="svg/sprite.svg#icon-address"></use>
+								</svg>
+								<p class="header__text-address">Адрес и режим работы</p>
+							</a>
+						</div>
+						<div class="header__list list-reset">
+							<a href="schedule.html" class="header__btn-item bth-reset">
+								<svg
+									class="header__btn-icon"
+									width="30"
+									height="29"
+									aria-hidden="true"
+								>
+									<use xlink:href="svg/sprite.svg#icon-booking"></use>
+								</svg>
+								<p class="header__item">Записаться</p>
+							</a>
+							<a href="med-card.html" class="header__btn-item bth-reset">
+								<svg
+									class="header__btn-icon"
+									width="30"
+									height="29"
+									aria-hidden="true"
+								>
+									<use xlink:href="svg/sprite.svg#icon-medcard"></use>
+								</svg>
+								<p class="header__item">Медкарта</p>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="header__bottom">
+					<nav class="header__nav">
+						<ul class="header__nav-list list-reset">
+							<li class="header__nav-item">
+								<a href="doctors.html" class="header__nav-link">Врачи</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="price.html" class="header__nav-link">Цены</a>
+							</li>
+							<li class="header__nav-item dropdown">
+								<a href="#" class="header__nav-link">Услуги </a>
+								<svg width="9" height="7" aria-hidden="true">
+									<use xlink:href="svg/sprite.svg#icon-dropdown-arrow"></use>
+								</svg>
+								<div class="header__nav-dropdown dropdown-content__services">
+									<div>
+										<a class="header__nav-link-dropdown" href="#"
+											>Детское отделение</a
+										>
+										<a class="header__nav-link-dropdown" href="#"
+											>Взрослое отделение</a
+										>
+										<a class="header__nav-link-dropdown" href="services.html"
+											>Хирургия</a
+										>
+										<a class="header__nav-link-dropdown" href="#"
+											>Лабораторная диагностика</a
+										>
+										<a class="header__nav-link-dropdown" href="#">УЗИ, ЭКГ</a>
+										<a class="header__nav-link-dropdown" href="#"
+											>Нейросонография</a
+										>
+									</div>
+									<div>
+										<a class="header__nav-link-dropdown" href="#"
+											>Вызов врача на дом</a
+										>
+										<a class="header__nav-link-dropdown" href="#">Вакцинация</a>
+										<a class="header__nav-link-dropdown" href="#"
+											>Логопед-дефектолог</a
+										>
+										<a class="header__nav-link-dropdown" href="#"
+											>Аудиометрия</a
+										>
+										<a class="header__nav-link-dropdown" href="#"
+											>Тимпанометрия</a
+										>
+										<a class="header__nav-link-dropdown" href="programs.html"
+											>Комплексные программы</a
+										>
+									</div>
+								</div>
+							</li>
+							<li class="header__nav-item dropdown">
+								<a href="#" class="header__nav-link dropdown-button"
+									>Пациентам</a
+								>
+								<svg width="9" height="7" aria-hidden="true">
+									<use xlink:href="svg/sprite.svg#icon-dropdown-arrow"></use>
+								</svg>
+								<div class="header__nav-dropdown dropdown-content">
+									<a class="header__nav-link-dropdown" href="news.html"
+										>Новости</a
+									>
+									<a class="header__nav-link-dropdown" href="company.html"
+										>О нас</a
+									>
+									<a class="header__nav-link-dropdown" href="visit.html"
+										>Подготовка к визиту</a
+									>
+									<a class="header__nav-link-dropdown" href="tax.html"
+										>Налоговый вычет</a
+									>
+								</div>
+							</li>
+							<li class="header__nav-item">
+								<a href="calculator.html" class="header__nav-link"
+									>Калькулятор анализов</a
+								>
+							</li>
+							<li class="header__nav-item">
+								<a href="stock.html" class="header__nav-link">Акции</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="contacts.html" class="header__nav-link">Контакты</a>
+							</li>
+							<li class="header__nav-item dropdown">
+								<a href="#" class="header__nav-link">Сотрудничество</a>
+								<svg width="9" height="7" aria-hidden="true">
+									<use xlink:href="svg/sprite.svg#icon-dropdown-arrow"></use>
+								</svg>
+								<div class="header__nav-dropdown dropdown-content">
+									<a class="header__nav-link-dropdown" href="dms.html">ДМС</a>
+									<a class="header__nav-link-dropdown" href="vacancies.html"
+										>Вакансии</a
+									>
+									<a class="header__nav-link-dropdown" href="#">Предприятиям</a>
+								</div>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
 
-        <div class="header__logo">
-          <a href="index.html" class="header__logo-link">
-            <img src="img/logos.svg" alt="Логотип клиники" />
-          </a>
-        </div>
-        <div class="header__logo--mobile">
-          <a href="index.html" class="header__logo-link">
-            <img class="clinic__logo" src="img/Clinic_logo.svg" alt="Логотип клиники" />
-          </a>
-        </div>
-        <div class="header__container-info">
-          <div class="header__text">
-            <a href="contacts.html" class="header__btn-address bth-reset">
-              <svg class="header__btn-address-icon" width="30" height="29" aria-hidden="true">
-                <use xlink:href="svg/sprite.svg#icon-address"></use>
-              </svg>
-              <p class="header__text-address">Адрес и режим работы</p>
-            </a>
-          </div>
-          <div class="header__list list-reset">
-            <a href="schedule.html" class="header__btn-item bth-reset">
-              <svg class="header__btn-icon" width="30" height="29" aria-hidden="true">
-                <use xlink:href="svg/sprite.svg#icon-booking"></use>
-              </svg>
-              <p class="header__item">Записаться</p>
-            </a>
-            <a href="med-card.html" class="header__btn-item bth-reset">
-              <svg class="header__btn-icon" width="30" height="29" aria-hidden="true">
-                <use xlink:href="svg/sprite.svg#icon-medcard"></use>
-              </svg>
-              <p class="header__item">Медкарта</p>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="header__bottom">
-        <nav class="header__nav">
-          <ul class="header__nav-list list-reset">
-            <li class="header__nav-item">
-              <a href="doctors.html" class="header__nav-link">Врачи</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="price.html" class="header__nav-link">Цены</a>
-            </li>
-            <li class="header__nav-item dropdown">
-              <a href="#" class="header__nav-link">Услуги </a>
-              <svg width="9" height="7" aria-hidden="true">
-                <use xlink:href="svg/sprite.svg#icon-dropdown-arrow"></use>
-              </svg>
-              <div class="header__nav-dropdown dropdown-content__services">
-                <div>
-                  <a class="header__nav-link-dropdown" href="#">Детское отделение</a>
-                  <a class="header__nav-link-dropdown" href="#">Взрослое отделение</a>
-                  <a class="header__nav-link-dropdown" href="services.html">Хирургия</a>
-                  <a class="header__nav-link-dropdown" href="#">Лабораторная диагностика</a>
-                  <a class="header__nav-link-dropdown" href="#">УЗИ, ЭКГ</a>
-                  <a class="header__nav-link-dropdown" href="#">Нейросонография</a>
-                </div>
-                <div>
-                  <a class="header__nav-link-dropdown" href="#">Вызов врача на дом</a>
-                  <a class="header__nav-link-dropdown" href="#">Вакцинация</a>
-                  <a class="header__nav-link-dropdown" href="#">Логопед-дефектолог</a>
-                  <a class="header__nav-link-dropdown" href="#">Аудиометрия</a>
-                  <a class="header__nav-link-dropdown" href="#">Тимпанометрия</a>
-                  <a class="header__nav-link-dropdown" href="programs.html">Комплексные программы</a>
-                </div>
-              </div>
-            </li>
-            <li class="header__nav-item dropdown">
-              <a href="#" class="header__nav-link dropdown-button">Пациентам</a>
-              <svg width="9" height="7" aria-hidden="true">
-                <use xlink:href="svg/sprite.svg#icon-dropdown-arrow"></use>
-              </svg>
-              <div class="header__nav-dropdown dropdown-content">
-                <a class="header__nav-link-dropdown" href="news.html">Новости</a>
-                <a class="header__nav-link-dropdown" href="company.html">О нас</a>
-                <a class="header__nav-link-dropdown" href="visit.html">Подготовка к визиту</a>
-                <a class="header__nav-link-dropdown" href="tax.html">Налоговый вычет</a>
-              </div>
-            </li>
-            <li class="header__nav-item">
-              <a href="calculator.html" class="header__nav-link">Калькулятор анализов</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="stock.html" class="header__nav-link">Акции</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="contacts.html" class="header__nav-link">Контакты</a>
-            </li>
-            <li class="header__nav-item dropdown">
-              <a href="#" class="header__nav-link">Сотрудничество</a>
-              <svg width="9" height="7" aria-hidden="true">
-                <use xlink:href="svg/sprite.svg#icon-dropdown-arrow"></use>
-              </svg>
-              <div class="header__nav-dropdown dropdown-content">
-                <a class="header__nav-link-dropdown" href="dms.html">ДМС</a>
-                <a class="header__nav-link-dropdown" href="vacancies.html">Вакансии</a>
-                <a class="header__nav-link-dropdown" href="#">Предприятиям</a>
-              </div>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
+		<main class="main">
+			<div class="container">
+				<section id="doctors__card">
+					<h2 class="doctors__title-card">
+						<a href="doctors.html">
+							<svg
+								class="doctors__card-svg"
+								width="10"
+								height="13"
+								viewBox="0 0 10 13"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M0.689864 5.8751L7.31669 1.23633C8.24457 0.586808 9.51953 1.25062 9.51953 2.38325L9.51953 11.0054C9.51953 12.1381 8.24457 12.8019 7.31668 12.1523L0.689862 7.51357C0.121145 7.11547 0.121147 6.2732 0.689864 5.8751Z"
+									fill="#B2ABFC"
+								/>
+							</svg>
+							Врачи
+						</a>
+					</h2>
+					<div class="doctors__container-card">
+						<picture class="picture">
+							<source
+								srcset="img/Photo.doctro.mob.png"
+								media="(max-width: 1024px)"
+								type="image/webp"
+							/>
+							<img
+								width="530"
+								height="413"
+								src="img/doccard1.png"
+								alt="Фото Доктора"
+							/>
+						</picture>
+						<div class="doctors__container-wrapp">
+							<div class="doctors__container-profile">
+								<h1 class="doctors__card-name">
+									Трофимова<br />Галина Николаевна
+								</h1>
+								<p class="doctors__text-profession">Офтальмолог</p>
+								<p class="doctors__text-service">Дети и взрослые</p>
+							</div>
+							<div class="doctors__container-profiles">
+								<p class="doctors__text-degree">Звания и степени</p>
+								<h2 class="doctors__card-rank">Кандидат медицинских наук</h2>
+								<p class="doctors__text-price">Стоимость приема</p>
+								<p class="doctors__span-price">5000 ₽</p>
+							</div>
+							<button class="doctors__btn bth-reset">
+								Записаться
+								<svg
+									class="doctors__btn-icon"
+									width="45"
+									height="45"
+									viewBox="0 0 45 45"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<circle cx="22.399" cy="22.7616" r="21.8817" fill="white" />
+									<path
+										d="M29.7828 26.8467V15.3781M29.7828 15.3781H18.3143M29.7828 15.3781L15.0165 30.1445"
+										stroke="#535353"
+										stroke-width="2.66"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</section>
+				<section id="about__doctors">
+					<div class="about__container">
+						<div class="about__container-info">
+							<h2 class="about__title">
+								<svg
+									width="49"
+									height="49"
+									viewBox="0 0 49 49"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<circle
+										cx="24.4227"
+										cy="16.0538"
+										r="7.025"
+										stroke="#897CFF"
+										stroke-width="2"
+										stroke-linecap="round"
+									/>
+									<path
+										d="M10.7567 31.9352C12.0156 28.6713 15.4247 27.0874 18.9229 27.0874H29.9223C33.4205 27.0874 36.8296 28.6713 38.0885 31.9352C38.7111 33.5495 39.2445 35.5008 39.4136 37.6858C39.475 38.4784 38.825 39.1249 38.03 39.1249H10.8152C10.0202 39.1249 9.37023 38.4784 9.43158 37.6858C9.60071 35.5008 10.1341 33.5495 10.7567 31.9352Z"
+										stroke="#897CFF"
+										stroke-width="2"
+										stroke-linecap="round"
+									/>
+								</svg>
+								Обо мне
+							</h2>
+							<p class="about__text">
+								Приветствую на моей странице,<span> уважаемые пациенты!</span>
+							</p>
+							<p class="about__text">
+								Несколько лет занимаюсь лечением боли. Почему именно боль? Это
+								активно развивающееся направление, которое требует наличия
+								знаний не только в неврологии, но и в смежных специальностях.
+							</p>
+							<p class="about__text">
+								Мне важно видеть, как качество жизни моих пациентов становится
+								лучше, как они возвращаются к своей привычной активной жизни.
+							</p>
+						</div>
+						<div class="about__container-biography">
+							<div class="about__container-education">
+								<h2 class="about__title">
+									<svg
+										width="49"
+										height="49"
+										viewBox="0 0 49 49"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M8.18849 16.3042L22.9232 9.7555C23.9606 9.29441 25.1448 9.29441 26.1823 9.7555L40.917 16.3042C41.5683 16.5937 41.5683 17.518 40.917 17.8075L26.1823 24.3563C25.1448 24.8173 23.9606 24.8173 22.9232 24.3563L8.18849 17.8075C7.5372 17.518 7.5372 16.5937 8.18849 16.3042Z"
+											stroke="#897CFF"
+											stroke-width="2.00616"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+										<path
+											d="M41.605 17.0557V25.0803"
+											stroke="#897CFF"
+											stroke-width="2.00616"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+										<path
+											d="M13.5186 21.0679V31.0987C13.5186 31.0987 14.5216 35.111 24.5524 35.111C34.5832 35.111 35.5863 31.0987 35.5863 31.0987V21.0679"
+											stroke="#897CFF"
+											stroke-width="2.00616"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+									Образование
+								</h2>
+								<p class="about__text">
+									<span>2016</span>– Первый Московский государственный
+									медицинский университет им.И.М.Сеченова, красный диплом,
+									Лечебное дело
+								</p>
+								<p class="about__text">
+									<span>2018-2020</span>– Магистратура по Общественному
+									здравоохранению
+								</p>
+								<p class="about__text">
+									<span>2022</span>– Ординатура: Первый МГМУ имени И.М.Сеченова
+									Минздрава России (Сеченовский Университет)
+								</p>
+							</div>
+							<div class="about__container-experience">
+								<h2 class="about__title">
+									<svg
+										width="49"
+										height="49"
+										viewBox="0 0 49 49"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M26.5212 10.7056C28.4829 10.7114 30.0726 12.3012 30.0785 14.2658L30.077 16.3526H37.7299C39.2888 16.3526 40.5535 17.6173 40.5535 19.1762V36.1173C40.5535 37.6761 39.2888 38.9409 37.7299 38.9409H11.377C9.81818 38.9409 8.55347 37.6761 8.55347 36.1173V19.1762C8.55347 17.6173 9.81818 16.3526 11.377 16.3526H19.0284V14.2629C19.0343 12.3012 20.624 10.71 22.5887 10.7056H26.5212ZM38.671 24.6203H10.4357V36.1173C10.4357 36.6364 10.8578 37.0585 11.3769 37.0585H37.7298C38.2489 37.0585 38.671 36.6364 38.671 36.1173V24.6203ZM37.7298 18.235H11.3769C10.8578 18.235 10.4357 18.657 10.4357 19.1762V22.7379H38.671V19.1762C38.671 18.657 38.2489 18.235 37.7298 18.235ZM26.5182 12.5879H22.5916C21.6651 12.5909 20.9136 13.3409 20.9107 14.2658V16.3526H28.1947L28.1961 14.2688C28.1932 13.3409 27.4417 12.5909 26.5182 12.5879Z"
+											fill="#897CFF"
+										/>
+									</svg>
+									Опыт работы
+								</h2>
+								<p class="about__text text">
+									<span>2019</span>– ФГБНУ "Научный центр неврологии"
+								</p>
+								<p class="about__text text">
+									<span>2019-2022</span>– клиника «Axis», врач-невролог
+								</p>
+								<p class="about__text text">
+									<span>2022</span>– н.в. клиника Чайка, врач-невролог
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
 
-  <main class="main">
-    <div class="container">
-      <section id="doctors__card">
-        <h2 class="doctors__title-card">
-          <a href="doctors.html">
-            <svg class="doctors__card-svg" width="10" height="13" viewBox="0 0 10 13" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M0.689864 5.8751L7.31669 1.23633C8.24457 0.586808 9.51953 1.25062 9.51953 2.38325L9.51953 11.0054C9.51953 12.1381 8.24457 12.8019 7.31668 12.1523L0.689862 7.51357C0.121145 7.11547 0.121147 6.2732 0.689864 5.8751Z"
-                fill="#B2ABFC" />
-            </svg>
-            Врачи
-          </a>
-        </h2>
-        <div class="doctors__container-card">
-          <picture class="picture">
-            <source srcset="img/Photo.doctro.mob.png" media="(max-width: 1024px)" type="image/webp">
-            <img width="600" height="413" src="img/doccard1.png" alt="Фото Доктора">
-          </picture>
-          <div class="doctors__container-wrapp">
-            <div class="doctors__container-profile">
-              <h1 class="doctors__card-name">Трофимова<br>Галина Николаевна</h1>
-              <p class="doctors__text-profession">Офтальмолог</p>
-              <p class="doctors__text-service">Дети и взрослые</p>
-            </div>
-            <div class="doctors__container-profiles">
-              <p class="doctors__text-degree">Звания и степени</p>
-              <h2 class="doctors__card-rank">Кандидат медицинских наук</h2>
-              <p class="doctors__text-price">Стоимость приема</p>
-              <p class="doctors__span-price">5000 ₽</p>
-            </div>
-            <button class="doctors__btn bth-reset">
-              Записаться
-              <svg class="doctors__btn-icon" width="45" height="45" viewBox="0 0 45 45" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <circle cx="22.399" cy="22.7616" r="21.8817" fill="white" />
-                <path d="M29.7828 26.8467V15.3781M29.7828 15.3781H18.3143M29.7828 15.3781L15.0165 30.1445"
-                  stroke="#535353" stroke-width="2.66" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </section>
-      <section id="about__doctors">
-        <div class="about__container">
-          <div class="about__container-info">
-            <h2 class="about__title"><svg width="49" height="49" viewBox="0 0 49 49" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <circle cx="24.4227" cy="16.0538" r="7.025" stroke="#897CFF" stroke-width="2" stroke-linecap="round" />
-                <path
-                  d="M10.7567 31.9352C12.0156 28.6713 15.4247 27.0874 18.9229 27.0874H29.9223C33.4205 27.0874 36.8296 28.6713 38.0885 31.9352C38.7111 33.5495 39.2445 35.5008 39.4136 37.6858C39.475 38.4784 38.825 39.1249 38.03 39.1249H10.8152C10.0202 39.1249 9.37023 38.4784 9.43158 37.6858C9.60071 35.5008 10.1341 33.5495 10.7567 31.9352Z"
-                  stroke="#897CFF" stroke-width="2" stroke-linecap="round" />
-              </svg>
-              Обо мне
-            </h2>
-            <p class="about__text">Приветствую на моей странице,<span> уважаемые пациенты!</span></p>
-            <p class="about__text">Несколько лет занимаюсь лечением боли. Почему именно боль? Это активно развивающееся
-              направление, которое требует наличия знаний не только в неврологии, но и в смежных специальностях. </p>
-            <p class="about__text">Мне важно видеть, как качество жизни моих пациентов становится лучше, как они
-              возвращаются к своей привычной активной жизни.</p>
-          </div>
-          <div class="about__container-biography">
-            <div class="about__container-education">
-              <h2 class="about__title">
-                <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M8.18849 16.3042L22.9232 9.7555C23.9606 9.29441 25.1448 9.29441 26.1823 9.7555L40.917 16.3042C41.5683 16.5937 41.5683 17.518 40.917 17.8075L26.1823 24.3563C25.1448 24.8173 23.9606 24.8173 22.9232 24.3563L8.18849 17.8075C7.5372 17.518 7.5372 16.5937 8.18849 16.3042Z"
-                    stroke="#897CFF" stroke-width="2.00616" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M41.605 17.0557V25.0803" stroke="#897CFF" stroke-width="2.00616" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                  <path
-                    d="M13.5186 21.0679V31.0987C13.5186 31.0987 14.5216 35.111 24.5524 35.111C34.5832 35.111 35.5863 31.0987 35.5863 31.0987V21.0679"
-                    stroke="#897CFF" stroke-width="2.00616" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-                Образование
-              </h2>
-              <p class="about__text"><span>2016</span>– Первый Московский государственный медицинский университет
-                им.И.М.Сеченова, красный
-                диплом, Лечебное дело</p>
-              <p class="about__text"><span>2018-2020</span>– Магистратура по Общественному здравоохранению</p>
-              <p class="about__text"><span>2022</span>– Ординатура: Первый МГМУ имени И.М.Сеченова Минздрава России
-                (Сеченовский Университет)</p>
-            </div>
-            <div class="about__container-experience">
-              <h2 class="about__title">
-                <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M26.5212 10.7056C28.4829 10.7114 30.0726 12.3012 30.0785 14.2658L30.077 16.3526H37.7299C39.2888 16.3526 40.5535 17.6173 40.5535 19.1762V36.1173C40.5535 37.6761 39.2888 38.9409 37.7299 38.9409H11.377C9.81818 38.9409 8.55347 37.6761 8.55347 36.1173V19.1762C8.55347 17.6173 9.81818 16.3526 11.377 16.3526H19.0284V14.2629C19.0343 12.3012 20.624 10.71 22.5887 10.7056H26.5212ZM38.671 24.6203H10.4357V36.1173C10.4357 36.6364 10.8578 37.0585 11.3769 37.0585H37.7298C38.2489 37.0585 38.671 36.6364 38.671 36.1173V24.6203ZM37.7298 18.235H11.3769C10.8578 18.235 10.4357 18.657 10.4357 19.1762V22.7379H38.671V19.1762C38.671 18.657 38.2489 18.235 37.7298 18.235ZM26.5182 12.5879H22.5916C21.6651 12.5909 20.9136 13.3409 20.9107 14.2658V16.3526H28.1947L28.1961 14.2688C28.1932 13.3409 27.4417 12.5909 26.5182 12.5879Z"
-                    fill="#897CFF" />
-                </svg>
-                Опыт работы
-              </h2>
-              <p class="about__text text"><span>2019</span>– ФГБНУ "Научный центр неврологии"</p>
-              <p class="about__text text"><span>2019-2022</span>– клиника «Axis», врач-невролог</p>
-              <p class="about__text text"><span>2022</span>– н.в. клиника Чайка, врач-невролог</p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-  </main>
+		<footer id="contacts" class="footer">
+			<div class="container">
+				<div class="footer__container-top">
+					<div class="footer__container-info">
+						<ul class="footer__list-info">
+							<li class="footer__list-info">Лицензии</li>
+							<li class="footer__list-info">Контакты контролирующих органов</li>
+							<li class="footer__list-info">Нормативные документы</li>
+						</ul>
+						<button class="footer__btn-info bth-reset">
+							Написать гендиректору
+							<svg
+								class="footer__btn-icon"
+								width="35"
+								height="35"
+								viewBox="0 0 35 36"
+								aria-hidden="true"
+							>
+								<use xlink:href="svg/sprite.svg#icon-button-arrow"></use>
+							</svg>
+						</button>
+					</div>
+					<div class="footer__container-contacts">
+						<div class="tell__wrap">
+							<svg
+								width="24"
+								height="25"
+								viewBox="0 0 24 25"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M20.3863 17.9508C20.3863 18.1705 20.3466 18.4573 20.2672 18.8112C20.1878 19.1651 20.1044 19.4438 20.017 19.6472C19.8502 20.054 19.3658 20.4852 18.5637 20.9408C17.8172 21.3557 17.0786 21.5632 16.348 21.5632C16.1335 21.5632 15.925 21.549 15.7225 21.5205C15.52 21.492 15.2917 21.4411 15.0376 21.3679C14.7834 21.2947 14.5948 21.2357 14.4717 21.191C14.3486 21.1462 14.1282 21.0628 13.8106 20.9408C13.4929 20.8187 13.2983 20.7455 13.2269 20.7211C12.4486 20.4364 11.7537 20.0987 11.1421 19.7082C10.1256 19.0655 9.07533 18.1888 7.99128 17.0783C6.90724 15.9677 6.05151 14.8917 5.42411 13.8503C5.04292 13.2239 4.71335 12.512 4.43538 11.7146C4.41155 11.6414 4.34008 11.4421 4.22095 11.1167C4.10182 10.7912 4.02042 10.5654 3.97673 10.4393C3.93306 10.3132 3.87549 10.12 3.80401 9.85964C3.73254 9.5993 3.68289 9.3654 3.65511 9.15792C3.62728 8.95049 3.61341 8.73692 3.61341 8.51723C3.61341 7.76873 3.81593 7.01209 4.22094 6.24733C4.66568 5.42559 5.08661 4.9293 5.48369 4.75844C5.68223 4.66895 5.95423 4.58352 6.2997 4.50217C6.64514 4.4208 6.92511 4.38013 7.13954 4.38013C7.25072 4.38013 7.33411 4.39233 7.38969 4.41674C7.53265 4.46556 7.7431 4.77472 8.02106 5.34424C8.10842 5.49882 8.22755 5.71849 8.37844 6.00324C8.52933 6.288 8.66831 6.54632 8.79538 6.77819C8.92244 7.01006 9.04554 7.2277 9.16467 7.43111C9.1885 7.46365 9.25798 7.56535 9.37313 7.73619C9.48828 7.90705 9.57367 8.05146 9.62926 8.16943C9.68486 8.28739 9.71264 8.40335 9.71264 8.51723C9.71264 8.67995 9.59948 8.88336 9.37313 9.12743C9.1468 9.37152 8.90061 9.59525 8.63457 9.79865C8.36851 10.002 8.12232 10.2177 7.89599 10.4455C7.66963 10.6733 7.55647 10.8604 7.55647 11.0068C7.55647 11.0801 7.57632 11.1716 7.61604 11.2814C7.65574 11.3913 7.68949 11.4747 7.71728 11.5316C7.74508 11.5886 7.80067 11.6862 7.88406 11.8245C7.96745 11.9628 8.01314 12.0401 8.02106 12.0564C8.62463 13.171 9.31556 14.127 10.0938 14.9243C10.8721 15.7216 11.8053 16.4294 12.8933 17.0478C12.9092 17.0559 12.9846 17.1027 13.1196 17.1881C13.2546 17.2735 13.3499 17.3305 13.4055 17.359C13.4611 17.3874 13.5425 17.422 13.6498 17.4627C13.757 17.5034 13.8463 17.5237 13.9178 17.5237C14.0607 17.5237 14.2434 17.4078 14.4658 17.1759C14.6881 16.944 14.8986 16.6918 15.0971 16.4193C15.2957 16.1467 15.5141 15.8945 15.7523 15.6626C15.9906 15.4307 16.1891 15.3148 16.348 15.3148C16.4591 15.3148 16.5723 15.3433 16.6875 15.4002C16.8026 15.4572 16.9436 15.5446 17.1104 15.6626C17.2771 15.7806 17.3764 15.8518 17.4082 15.8762C17.6067 15.9982 17.8191 16.1243 18.0455 16.2545C18.2718 16.3847 18.524 16.5271 18.8019 16.6816C19.0799 16.8362 19.2943 16.9583 19.4452 17.0478C20.0011 17.3325 20.3029 17.5481 20.3506 17.6946C20.3744 17.7515 20.3863 17.8369 20.3863 17.9508Z"
+									stroke="#897CFF"
+									stroke-width="2"
+								/>
+							</svg>
 
-  <footer id="contacts" class="footer">
-    <div class="container">
-      <div class="footer__container-top">
-        <div class="footer__container-info">
-          <ul class="footer__list-info">
-            <li class="footer__list-info">Лицензии</li>
-            <li class="footer__list-info">Контакты контролирующих органов</li>
-            <li class="footer__list-info">Нормативные документы</li>
-          </ul>
-          <button class="footer__btn-info bth-reset">
-            Написать гендиректору
-            <svg class="footer__btn-icon" width="35" height="35" viewBox="0 0 35 36" aria-hidden="true">
-              <use xlink:href="svg/sprite.svg#icon-button-arrow"></use>
-            </svg>
-          </button>
-        </div>
-        <div class="footer__container-contacts">
-          <div class="tell__wrap">
-            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M20.3863 17.9508C20.3863 18.1705 20.3466 18.4573 20.2672 18.8112C20.1878 19.1651 20.1044 19.4438 20.017 19.6472C19.8502 20.054 19.3658 20.4852 18.5637 20.9408C17.8172 21.3557 17.0786 21.5632 16.348 21.5632C16.1335 21.5632 15.925 21.549 15.7225 21.5205C15.52 21.492 15.2917 21.4411 15.0376 21.3679C14.7834 21.2947 14.5948 21.2357 14.4717 21.191C14.3486 21.1462 14.1282 21.0628 13.8106 20.9408C13.4929 20.8187 13.2983 20.7455 13.2269 20.7211C12.4486 20.4364 11.7537 20.0987 11.1421 19.7082C10.1256 19.0655 9.07533 18.1888 7.99128 17.0783C6.90724 15.9677 6.05151 14.8917 5.42411 13.8503C5.04292 13.2239 4.71335 12.512 4.43538 11.7146C4.41155 11.6414 4.34008 11.4421 4.22095 11.1167C4.10182 10.7912 4.02042 10.5654 3.97673 10.4393C3.93306 10.3132 3.87549 10.12 3.80401 9.85964C3.73254 9.5993 3.68289 9.3654 3.65511 9.15792C3.62728 8.95049 3.61341 8.73692 3.61341 8.51723C3.61341 7.76873 3.81593 7.01209 4.22094 6.24733C4.66568 5.42559 5.08661 4.9293 5.48369 4.75844C5.68223 4.66895 5.95423 4.58352 6.2997 4.50217C6.64514 4.4208 6.92511 4.38013 7.13954 4.38013C7.25072 4.38013 7.33411 4.39233 7.38969 4.41674C7.53265 4.46556 7.7431 4.77472 8.02106 5.34424C8.10842 5.49882 8.22755 5.71849 8.37844 6.00324C8.52933 6.288 8.66831 6.54632 8.79538 6.77819C8.92244 7.01006 9.04554 7.2277 9.16467 7.43111C9.1885 7.46365 9.25798 7.56535 9.37313 7.73619C9.48828 7.90705 9.57367 8.05146 9.62926 8.16943C9.68486 8.28739 9.71264 8.40335 9.71264 8.51723C9.71264 8.67995 9.59948 8.88336 9.37313 9.12743C9.1468 9.37152 8.90061 9.59525 8.63457 9.79865C8.36851 10.002 8.12232 10.2177 7.89599 10.4455C7.66963 10.6733 7.55647 10.8604 7.55647 11.0068C7.55647 11.0801 7.57632 11.1716 7.61604 11.2814C7.65574 11.3913 7.68949 11.4747 7.71728 11.5316C7.74508 11.5886 7.80067 11.6862 7.88406 11.8245C7.96745 11.9628 8.01314 12.0401 8.02106 12.0564C8.62463 13.171 9.31556 14.127 10.0938 14.9243C10.8721 15.7216 11.8053 16.4294 12.8933 17.0478C12.9092 17.0559 12.9846 17.1027 13.1196 17.1881C13.2546 17.2735 13.3499 17.3305 13.4055 17.359C13.4611 17.3874 13.5425 17.422 13.6498 17.4627C13.757 17.5034 13.8463 17.5237 13.9178 17.5237C14.0607 17.5237 14.2434 17.4078 14.4658 17.1759C14.6881 16.944 14.8986 16.6918 15.0971 16.4193C15.2957 16.1467 15.5141 15.8945 15.7523 15.6626C15.9906 15.4307 16.1891 15.3148 16.348 15.3148C16.4591 15.3148 16.5723 15.3433 16.6875 15.4002C16.8026 15.4572 16.9436 15.5446 17.1104 15.6626C17.2771 15.7806 17.3764 15.8518 17.4082 15.8762C17.6067 15.9982 17.8191 16.1243 18.0455 16.2545C18.2718 16.3847 18.524 16.5271 18.8019 16.6816C19.0799 16.8362 19.2943 16.9583 19.4452 17.0478C20.0011 17.3325 20.3029 17.5481 20.3506 17.6946C20.3744 17.7515 20.3863 17.8369 20.3863 17.9508Z"
-                stroke="#897CFF" stroke-width="2" />
-            </svg>
+							<ul class="footer__contacts-list-tel">
+								<li class="footer__contacts-item-tel">
+									<a class="footer__contacts-link" href="tel:+74955557177"
+										>+7(495)555-71-77</a
+									>
+								</li>
+								<li class="footer__contacts-item-tel">
+									<a class="footer__contacts-link" href="tel:+79953009911"
+										>+7(995)300-99-11</a
+									>
+								</li>
+								<li class="footer__contacts-item-tel">
+									<a class="footer__contacts-link" href="tel:+79951009911"
+										>+7(995)100-99-11</a
+									>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__container-address">
+							<address class="footer__address">
+								<svg
+									class="job__item-icon"
+									width="24"
+									height="24"
+									aria-hidden="true"
+								>
+									<use xlink:href="svg/sprite.svg#icon-map-pin"></use>
+								</svg>
+								<div>
+									<p class="footer__address--text">
+										г. Лыткарино, кв-л 3A, д.29
+									</p>
+									<p class="footer__address--text">
+										г. Лыткарино, кв-л 2, д.13
+									</p>
+								</div>
+							</address>
+						</div>
+						<ul class="footer__contacts-list-icon">
+							<li class="footer__contacts-item-icon">
+								<a href="#">
+									<svg width="42" height="42" aria-hidden="true">
+										<use xlink:href="svg/sprite.svg#icon-social-vk"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="footer__contacts-item-icon">
+								<a href="#">
+									<svg width="42" height="42" aria-hidden="true">
+										<use xlink:href="svg/sprite.svg#icon-social-telegram"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="footer__contacts-item-icon">
+								<a href="#">
+									<svg width="42" height="42" aria-hidden="true">
+										<use xlink:href="svg/sprite.svg#icon-social-facebook"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__container-bootom">
+					<p class="footer__bootom-text">
+						Семейная клиника «Здоровые дети» © 2012
+					</p>
+				</div>
+			</div>
+		</footer>
 
-            <ul class="footer__contacts-list-tel">
-              <li class="footer__contacts-item-tel">
-                <a class="footer__contacts-link" href="tel:+74955557177">+7(495)555-71-77</a>
-              </li>
-              <li class="footer__contacts-item-tel">
-                <a class="footer__contacts-link" href="tel:+79953009911">+7(995)300-99-11</a>
-              </li>
-              <li class="footer__contacts-item-tel">
-                <a class="footer__contacts-link" href="tel:+79951009911">+7(995)100-99-11</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__container-address">
-            <address class="footer__address">
-              <svg class="job__item-icon" width="24" height="24" aria-hidden="true">
-                <use xlink:href="svg/sprite.svg#icon-map-pin"></use>
-              </svg>
-              <div>
-                <p class="footer__address--text">
-                  г. Лыткарино, кв-л 3A, д.29
-                </p>
-                <p class="footer__address--text">
-                  г. Лыткарино, кв-л 2, д.13
-                </p>
-              </div>
-            </address>
-          </div>
-          <ul class="footer__contacts-list-icon">
-            <li class="footer__contacts-item-icon">
-              <a href="#">
-                <svg width="42" height="42" aria-hidden="true">
-                  <use xlink:href="svg/sprite.svg#icon-social-vk"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__contacts-item-icon">
-              <a href="#">
-                <svg width="42" height="42" aria-hidden="true">
-                  <use xlink:href="svg/sprite.svg#icon-social-telegram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__contacts-item-icon">
-              <a href="#">
-                <svg width="42" height="42" aria-hidden="true">
-                  <use xlink:href="svg/sprite.svg#icon-social-facebook"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer__container-bootom">
-        <p class="footer__bootom-text">
-          Семейная клиника «Здоровые дети» © 2012
-        </p>
-      </div>
-    </div>
-  </footer>
-
-  <script defer src="js/main.js"></script>
-</body>
-
+		<script defer src="js/main.js"></script>
+	</body>
 </html>

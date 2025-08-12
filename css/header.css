@@ -34,6 +34,7 @@
 }
 
 .header__logo-link {
+	width: 280px;
 	flex-shrink: 0;
 	margin-right: 10px;
 }
@@ -44,6 +45,63 @@
 
 .header__text {
 	margin-right: 175px;
+	position: relative;
+	flex-shrink: 0;
+	width: max-content;
+}
+
+.header__popup {
+	position: absolute;
+	top: 100%; /* чтобы появлялся под кнопкой */
+	left: 0;
+	width: 255px;
+	height: 271px;
+	background-color: #eff3ff;
+	padding: 24px 20px;
+	box-sizing: border-box;
+	border: 1px solid #c1baff;
+	border-radius: 8px;
+
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.3s ease, visibility 0.3s ease;
+	pointer-events: none; /* чтобы не мешал, когда скрыт */
+	z-index: 10;
+}
+
+.header__container-info:hover .header__popup,
+.header__container-info:focus-within .header__popup {
+	opacity: 1;
+	visibility: visible;
+	pointer-events: auto;
+}
+
+.header__popup-item {
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 20px;
+}
+
+.header__popup-item svg {
+	margin-right: 8px;
+	flex-shrink: 0;
+}
+
+.header__popup--title {
+	display: block;
+	margin-bottom: 3px;
+	color: #3d3d3d;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 130%;
+}
+
+.header__popup-item p {
+	margin: 0;
+	font-weight: 500;
+	font-size: 13px;
+	color: #6a6a6a;
+	line-height: 140%;
 }
 
 .header__btn-address {

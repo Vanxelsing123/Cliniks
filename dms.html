@@ -1,311 +1,491 @@
 <!DOCTYPE html>
 <html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ДМС</title>
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/style-dms.css" />
+		<link rel="stylesheet" href="css/media.css" />
+	</head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ДМС</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style-dms.css">
-  <link rel="stylesheet" href="css/media.css">
-</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__top">
+					<div class="burger-wrapper">
+						<button
+							class="header__burger-btn bth-reset"
+							id="burger"
+							aria-label="Открыть меню"
+						>
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+						<div class="mobile-nav-wrapper">
+							<nav class="mobile-nav nav__content">
+								<ul class="header__nav-list list-reset">
+									<li class="header__nav-item">
+										<a href="doctors.html" class="header__nav-link">Врачи</a>
+									</li>
+									<li class="header__nav-item">
+										<a href="price.html" class="header__nav-link">Цены</a>
+									</li>
+									<li class="header__nav-item dropdown">
+										<a href="#" class="header__nav-link dropdown-button"
+											>Пациентам</a
+										>
+										<div class="header__nav-dropdown">
+											<a class="header__nav-link-dropdown" href="news.html"
+												>Новости</a
+											>
+											<a class="header__nav-link-dropdown" href="company.html"
+												>О нас</a
+											>
+											<a class="header__nav-link-dropdown" href="visit.html"
+												>Подготовка<br />к визиту</a
+											>
+											<a class="header__nav-link-dropdown" href="tax.html"
+												>Налоговый вычет</a
+											>
+										</div>
+									</li>
+									<li class="header__nav-item">
+										<a href="calculator.html" class="header__nav-link"
+											>Калькулятор<br />анализов</a
+										>
+									</li>
+									<li class="header__nav-item">
+										<a href="stock.html" class="header__nav-link">Акции</a>
+									</li>
+									<li class="header__nav-item">
+										<a href="contacts.html" class="header__nav-link"
+											>Контакты</a
+										>
+									</li>
+								</ul>
 
-<body>
-  <header class="header">
-    <div class="container">
-      <div class="header__top">
-        <div class="burger-wrapper">
-          <button class="header__burger-btn bth-reset" id="burger" aria-label="Открыть меню">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-          <div class="mobile-nav-wrapper">
-            <nav class="mobile-nav nav__content">
-              <ul class="header__nav-list list-reset">
-                <li class="header__nav-item">
-                  <a href="doctors.html" class="header__nav-link">Врачи</a>
-                </li>
-                <li class="header__nav-item">
-                  <a href="price.html" class="header__nav-link">Цены</a>
-                </li>
-                <li class="header__nav-item dropdown">
-                  <a href="#" class="header__nav-link dropdown-button">Пациентам</a>
-                  <div class="header__nav-dropdown">
-                    <a class="header__nav-link-dropdown" href="news.html">Новости</a>
-                    <a class="header__nav-link-dropdown" href="company.html">О нас</a>
-                    <a class="header__nav-link-dropdown" href="visit.html">Подготовка<br />к визиту</a>
-                    <a class="header__nav-link-dropdown" href="tax.html">Налоговый вычет</a>
-                  </div>
-                </li>
-                <li class="header__nav-item">
-                  <a href="calculator.html" class="header__nav-link">Калькулятор<br />анализов</a>
-                </li>
-                <li class="header__nav-item">
-                  <a href="stock.html" class="header__nav-link">Акции</a>
-                </li>
-                <li class="header__nav-item">
-                  <a href="contacts.html" class="header__nav-link">Контакты</a>
-                </li>
-              </ul>
+								<ul class="header__nav-list list-reset">
+									<li class="header__nav-item dropdown">
+										<a href="#" class="header__nav-link dropdown-button"
+											>Сотрудничество</a
+										>
+										<div class="header__nav-dropdown">
+											<a class="header__nav-link-dropdown" href="dms.html"
+												>ДМС</a
+											>
+											<a class="header__nav-link-dropdown" href="vacancies.html"
+												>Вакансии</a
+											>
+											<a class="header__nav-link-dropdown" href="#"
+												>Предприятиям</a
+											>
+										</div>
+									</li>
+									<li class="header__nav-item dropdown">
+										<a href="#" class="header__nav-link dropdown-button"
+											>Услуги
+										</a>
+										<div class="header__nav-dropdown">
+											<div class="header__dropdown-container">
+												<a class="header__nav-link-dropdown" href="#"
+													>Детское отделение</a
+												>
+												<a class="header__nav-link-dropdown" href="#"
+													>Взрослое отделение</a
+												>
+												<a
+													class="header__nav-link-dropdown"
+													href="services.html"
+													>Хирургия</a
+												>
+												<a class="header__nav-link-dropdown" href="#"
+													>Лабораторная<br />диагностика</a
+												>
+												<a class="header__nav-link-dropdown" href="#"
+													>УЗИ, ЭКГ</a
+												>
+												<a class="header__nav-link-dropdown" href="#"
+													>Нейросонография</a
+												>
+											</div>
+											<div>
+												<a class="header__nav-link-dropdown" href="#"
+													>Вызов врача на дом</a
+												>
+												<a class="header__nav-link-dropdown" href="#"
+													>Вакцинация</a
+												>
+												<a class="header__nav-link-dropdown" href="#"
+													>Логопед-дефектолог</a
+												>
+												<a class="header__nav-link-dropdown" href="#"
+													>Аудиометрия</a
+												>
+												<a class="header__nav-link-dropdown" href="#"
+													>Тимпанометрия</a
+												>
+												<a
+													class="header__nav-link-dropdown"
+													href="programs.html"
+													>Комплексные<br />программы</a
+												>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
 
-              <ul class="header__nav-list list-reset">
-                <li class="header__nav-item dropdown">
-                  <a href="#" class="header__nav-link dropdown-button">Сотрудничество</a>
-                  <div class="header__nav-dropdown">
-                    <a class="header__nav-link-dropdown" href="dms.html">ДМС</a>
-                    <a class="header__nav-link-dropdown" href="vacancies.html">Вакансии</a>
-                    <a class="header__nav-link-dropdown" href="#">Предприятиям</a>
-                  </div>
-                </li>
-                <li class="header__nav-item dropdown">
-                  <a href="#" class="header__nav-link dropdown-button">Услуги
-                  </a>
-                  <div class="header__nav-dropdown">
-                    <div class="header__dropdown-container">
-                      <a class="header__nav-link-dropdown" href="#">Детское отделение</a>
-                      <a class="header__nav-link-dropdown" href="#">Взрослое отделение</a>
-                      <a class="header__nav-link-dropdown" href="services.html">Хирургия</a>
-                      <a class="header__nav-link-dropdown" href="#">Лабораторная<br />диагностика</a>
-                      <a class="header__nav-link-dropdown" href="#">УЗИ, ЭКГ</a>
-                      <a class="header__nav-link-dropdown" href="#">Нейросонография</a>
-                    </div>
-                    <div>
-                      <a class="header__nav-link-dropdown" href="#">Вызов врача на дом</a>
-                      <a class="header__nav-link-dropdown" href="#">Вакцинация</a>
-                      <a class="header__nav-link-dropdown" href="#">Логопед-дефектолог</a>
-                      <a class="header__nav-link-dropdown" href="#">Аудиометрия</a>
-                      <a class="header__nav-link-dropdown" href="#">Тимпанометрия</a>
-                      <a class="header__nav-link-dropdown" href="programs.html">Комплексные<br />программы</a>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
+					<div class="header__logo">
+						<a href="index.html" class="header__logo-link">
+							<img src="img/logos.svg" alt="Логотип клиники" />
+						</a>
+					</div>
+					<div class="header__logo--mobile">
+						<a href="index.html" class="header__logo-link">
+							<img
+								class="clinic__logo"
+								src="img/Clinic_logo.svg"
+								alt="Логотип клиники"
+							/>
+						</a>
+					</div>
+					<div class="header__container-info">
+						<div class="header__text">
+							<a href="contacts.html" class="header__btn-address bth-reset">
+								<svg
+									class="header__btn-address-icon"
+									width="30"
+									height="29"
+									aria-hidden="true"
+								>
+									<use xlink:href="svg/sprite.svg#icon-address"></use>
+								</svg>
+								<p class="header__text-address">Адрес и режим работы</p>
+							</a>
+						</div>
+						<div class="header__list list-reset">
+							<a href="schedule.html" class="header__btn-item bth-reset">
+								<svg
+									class="header__btn-icon"
+									width="30"
+									height="29"
+									aria-hidden="true"
+								>
+									<use xlink:href="svg/sprite.svg#icon-booking"></use>
+								</svg>
+								<p class="header__item">Записаться</p>
+							</a>
+							<a href="med-card.html" class="header__btn-item bth-reset">
+								<svg
+									class="header__btn-icon"
+									width="30"
+									height="29"
+									aria-hidden="true"
+								>
+									<use xlink:href="svg/sprite.svg#icon-medcard"></use>
+								</svg>
+								<p class="header__item">Медкарта</p>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="header__bottom">
+					<nav class="header__nav">
+						<ul class="header__nav-list list-reset">
+							<li class="header__nav-item">
+								<a href="doctors.html" class="header__nav-link">Врачи</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="price.html" class="header__nav-link">Цены</a>
+							</li>
+							<li class="header__nav-item dropdown">
+								<a href="#" class="header__nav-link">Услуги </a>
+								<svg width="9" height="7" aria-hidden="true">
+									<use xlink:href="svg/sprite.svg#icon-dropdown-arrow"></use>
+								</svg>
+								<div class="header__nav-dropdown dropdown-content__services">
+									<div>
+										<a class="header__nav-link-dropdown" href="#"
+											>Детское отделение</a
+										>
+										<a class="header__nav-link-dropdown" href="#"
+											>Взрослое отделение</a
+										>
+										<a class="header__nav-link-dropdown" href="services.html"
+											>Хирургия</a
+										>
+										<a class="header__nav-link-dropdown" href="#"
+											>Лабораторная диагностика</a
+										>
+										<a class="header__nav-link-dropdown" href="#">УЗИ, ЭКГ</a>
+										<a class="header__nav-link-dropdown" href="#"
+											>Нейросонография</a
+										>
+									</div>
+									<div>
+										<a class="header__nav-link-dropdown" href="#"
+											>Вызов врача на дом</a
+										>
+										<a class="header__nav-link-dropdown" href="#">Вакцинация</a>
+										<a class="header__nav-link-dropdown" href="#"
+											>Логопед-дефектолог</a
+										>
+										<a class="header__nav-link-dropdown" href="#"
+											>Аудиометрия</a
+										>
+										<a class="header__nav-link-dropdown" href="#"
+											>Тимпанометрия</a
+										>
+										<a class="header__nav-link-dropdown" href="programs.html"
+											>Комплексные программы</a
+										>
+									</div>
+								</div>
+							</li>
+							<li class="header__nav-item dropdown">
+								<a href="#" class="header__nav-link dropdown-button"
+									>Пациентам</a
+								>
+								<svg width="9" height="7" aria-hidden="true">
+									<use xlink:href="svg/sprite.svg#icon-dropdown-arrow"></use>
+								</svg>
+								<div class="header__nav-dropdown dropdown-content">
+									<a class="header__nav-link-dropdown" href="news.html"
+										>Новости</a
+									>
+									<a class="header__nav-link-dropdown" href="company.html"
+										>О нас</a
+									>
+									<a class="header__nav-link-dropdown" href="visit.html"
+										>Подготовка к визиту</a
+									>
+									<a class="header__nav-link-dropdown" href="tax.html"
+										>Налоговый вычет</a
+									>
+								</div>
+							</li>
+							<li class="header__nav-item">
+								<a href="calculator.html" class="header__nav-link"
+									>Калькулятор анализов</a
+								>
+							</li>
+							<li class="header__nav-item">
+								<a href="stock.html" class="header__nav-link">Акции</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="contacts.html" class="header__nav-link">Контакты</a>
+							</li>
+							<li class="header__nav-item dropdown">
+								<a href="#" class="header__nav-link">Сотрудничество</a>
+								<svg width="9" height="7" aria-hidden="true">
+									<use xlink:href="svg/sprite.svg#icon-dropdown-arrow"></use>
+								</svg>
+								<div class="header__nav-dropdown dropdown-content">
+									<a class="header__nav-link-dropdown" href="dms.html">ДМС</a>
+									<a class="header__nav-link-dropdown" href="vacancies.html"
+										>Вакансии</a
+									>
+									<a class="header__nav-link-dropdown" href="#">Предприятиям</a>
+								</div>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
 
-        <div class="header__logo">
-          <a href="index.html" class="header__logo-link">
-            <img src="img/logos.svg" alt="Логотип клиники" />
-          </a>
-        </div>
-        <div class="header__logo--mobile">
-          <a href="index.html" class="header__logo-link">
-            <img class="clinic__logo" src="img/Clinic_logo.svg" alt="Логотип клиники" />
-          </a>
-        </div>
-        <div class="header__container-info">
-          <div class="header__text">
-            <a href="contacts.html" class="header__btn-address bth-reset">
-              <svg class="header__btn-address-icon" width="30" height="29" aria-hidden="true">
-                <use xlink:href="svg/sprite.svg#icon-address"></use>
-              </svg>
-              <p class="header__text-address">Адрес и режим работы</p>
-            </a>
-          </div>
-          <div class="header__list list-reset">
-            <a href="schedule.html" class="header__btn-item bth-reset">
-              <svg class="header__btn-icon" width="30" height="29" aria-hidden="true">
-                <use xlink:href="svg/sprite.svg#icon-booking"></use>
-              </svg>
-              <p class="header__item">Записаться</p>
-            </a>
-            <a href="med-card.html" class="header__btn-item bth-reset">
-              <svg class="header__btn-icon" width="30" height="29" aria-hidden="true">
-                <use xlink:href="svg/sprite.svg#icon-medcard"></use>
-              </svg>
-              <p class="header__item">Медкарта</p>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="header__bottom">
-        <nav class="header__nav">
-          <ul class="header__nav-list list-reset">
-            <li class="header__nav-item">
-              <a href="doctors.html" class="header__nav-link">Врачи</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="price.html" class="header__nav-link">Цены</a>
-            </li>
-            <li class="header__nav-item dropdown">
-              <a href="#" class="header__nav-link">Услуги </a>
-              <svg width="9" height="7" aria-hidden="true">
-                <use xlink:href="svg/sprite.svg#icon-dropdown-arrow"></use>
-              </svg>
-              <div class="header__nav-dropdown dropdown-content__services">
-                <div>
-                  <a class="header__nav-link-dropdown" href="#">Детское отделение</a>
-                  <a class="header__nav-link-dropdown" href="#">Взрослое отделение</a>
-                  <a class="header__nav-link-dropdown" href="services.html">Хирургия</a>
-                  <a class="header__nav-link-dropdown" href="#">Лабораторная диагностика</a>
-                  <a class="header__nav-link-dropdown" href="#">УЗИ, ЭКГ</a>
-                  <a class="header__nav-link-dropdown" href="#">Нейросонография</a>
-                </div>
-                <div>
-                  <a class="header__nav-link-dropdown" href="#">Вызов врача на дом</a>
-                  <a class="header__nav-link-dropdown" href="#">Вакцинация</a>
-                  <a class="header__nav-link-dropdown" href="#">Логопед-дефектолог</a>
-                  <a class="header__nav-link-dropdown" href="#">Аудиометрия</a>
-                  <a class="header__nav-link-dropdown" href="#">Тимпанометрия</a>
-                  <a class="header__nav-link-dropdown" href="programs.html">Комплексные программы</a>
-                </div>
-              </div>
-            </li>
-            <li class="header__nav-item dropdown">
-              <a href="#" class="header__nav-link dropdown-button">Пациентам</a>
-              <svg width="9" height="7" aria-hidden="true">
-                <use xlink:href="svg/sprite.svg#icon-dropdown-arrow"></use>
-              </svg>
-              <div class="header__nav-dropdown dropdown-content">
-                <a class="header__nav-link-dropdown" href="news.html">Новости</a>
-                <a class="header__nav-link-dropdown" href="company.html">О нас</a>
-                <a class="header__nav-link-dropdown" href="visit.html">Подготовка к визиту</a>
-                <a class="header__nav-link-dropdown" href="tax.html">Налоговый вычет</a>
-              </div>
-            </li>
-            <li class="header__nav-item">
-              <a href="calculator.html" class="header__nav-link">Калькулятор анализов</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="stock.html" class="header__nav-link">Акции</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="contacts.html" class="header__nav-link">Контакты</a>
-            </li>
-            <li class="header__nav-item dropdown">
-              <a href="#" class="header__nav-link">Сотрудничество</a>
-              <svg width="9" height="7" aria-hidden="true">
-                <use xlink:href="svg/sprite.svg#icon-dropdown-arrow"></use>
-              </svg>
-              <div class="header__nav-dropdown dropdown-content">
-                <a class="header__nav-link-dropdown" href="dms.html">ДМС</a>
-                <a class="header__nav-link-dropdown" href="vacancies.html">Вакансии</a>
-                <a class="header__nav-link-dropdown" href="#">Предприятиям</a>
-              </div>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
+		<main class="mains">
+			<section class="dms">
+				<div class="container">
+					<div class="dms__container">
+						<h1 class="dms__title">ДМС</h1>
+						<h2 class="dms__titles">
+							Многопрофильная клиника<span><br />«Здоровые дети» –</span>
+						</h2>
+						<p class="dms__text">
+							одна из ведущих клиник Московской области, зарекомендовала себя
+							как надежный медицинский партнер.
+						</p>
+					</div>
+					<div class="dms__insurance">
+						<p class="dms__insurance-text">
+							Российские страховые компании, с которыми мы уже успешно работаем:
+						</p>
+						<ul class="dms__insurance-list list-reset">
+							<li class="dms__insurance-item">
+								<svg
+									class="dms__svg"
+									width="134"
+									height="39"
+									aria-hidden="true"
+								>
+									<use xlink:href="svg/sprite.svg#icon-peco"></use>
+								</svg>
+								<p class="dms__insurance-texts">
+									– Страховое акционерное общество<span>«РЕСО-Гарантия»</span>
+								</p>
+							</li>
+							<li class="dms__insurance-item">
+								<svg
+									class="dms__svg"
+									width="209"
+									height="23"
+									aria-hidden="true"
+								>
+									<use xlink:href="svg/sprite.svg#icon-ingosstrax"></use>
+								</svg>
+								<p class="dms__insurance-texts">
+									– Страховое публичное акционерное общество
+									<span>«Ингосстрах»</span>
+								</p>
+							</li>
+						</ul>
+					</div>
 
-  <main class="mains">
-    <section class="dms">
-      <div class="container">
-        <div class="dms__container">
-          <h1 class="dms__title">ДМС</h1>
-          <h2 class="dms__titles">Многопрофильная клиника<span><br>«Здоровые дети» –</span></h2>
-          <p class="dms__text">одна из ведущих клиник Московской области, зарекомендовала себя
-            как надежный медицинский партнер.</p>
-        </div>
-        <div class="dms__insurance">
-          <p class="dms__insurance-text">
-            Российские страховые компании, с которыми мы уже успешно работаем:
-          </p>
-          <ul class="dms__insurance-list list-reset">
-            <li class="dms__insurance-item">
-              <svg class="dms__svg" width="134" height="39" aria-hidden="true">
-                <use xlink:href="svg/sprite.svg#icon-peco"></use>
-              </svg>
-              <p class="dms__insurance-texts">– Страховое акционерное
-                общество<span>«РЕСО-Гарантия»</span></p>
-            </li>
-            <li class="dms__insurance-item">
-              <svg class="dms__svg" width="209" height="23" aria-hidden="true">
-                <use xlink:href="svg/sprite.svg#icon-ingosstrax"></use>
-              </svg>
-              <p class="dms__insurance-texts">– Страховое публичное
-                акционерное общество <span>«Ингосстрах»</span></p>
-            </li>
-          </ul>
-        </div>
+					<div class="dms__spectrum">
+						<p class="dms__spectrum-text">
+							Мы предлагаем
+							<span>широкий спектр медицинских услуг</span> пациентам всех
+							возрастных категорий, включающий в себя:
+						</p>
+						<ul class="dms__spectrum-list list-reset">
+							<li class="dms__spectrum-item">
+								<h3 class="dms__spectrum-title">
+									<svg
+										class="dms__spectrum-svg"
+										width="48"
+										height="48"
+										aria-hidden="true"
+									>
+										<use xlink:href="svg/sprite.svg#icon-lab"></use>
+									</svg>
+									Лабораторную диагностику
+								</h3>
+							</li>
+							<li class="dms__spectrum-item">
+								<h3 class="dms__spectrum-title">
+									<svg
+										class="dms__spectrum-svg"
+										width="48"
+										height="48"
+										aria-hidden="true"
+									>
+										<use xlink:href="svg/sprite.svg#icon-amb"></use>
+									</svg>
+									Амбулаторное обслуживание по направлениям:
+								</h3>
+								<ul class="dms__spectrum-lists list-reset">
+									<li class="dms__spectrum-items">педиатрия</li>
+									<li class="dms__spectrum-items">терапия</li>
+									<li class="dms__spectrum-items">стоматология</li>
+									<li class="dms__spectrum-items">офтальмология</li>
+									<li class="dms__spectrum-items">хирургия</li>
+									<li class="dms__spectrum-items">оториноларингология</li>
+									<li class="dms__spectrum-items">гинекология</li>
+									<li class="dms__spectrum-items">урология</li>
+									<li class="dms__spectrum-items">эндокринология</li>
+									<li class="dms__spectrum-items">дерматовенерология</li>
+									<li class="dms__spectrum-items">кардиология</li>
+									<li class="dms__spectrum-items">неврология</li>
+									<li class="dms__spectrum-items">логопедия и дефектолог</li>
+									<li class="dms__spectrum-items">косметология</li>
+									<li class="dms__spectrum-items">физиотерапия</li>
+									<li class="dms__spectrum-items">
+										функциональная и ультразвуковая диагностика
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
 
-        <div class="dms__spectrum">
-          <p class="dms__spectrum-text">Мы предлагаем <span>широкий спектр медицинских услуг</span> пациентам всех
-            возрастных категорий, включающий
-            в себя:</p>
-          <ul class="dms__spectrum-list list-reset">
-            <li class="dms__spectrum-item">
-              <h3 class="dms__spectrum-title">
-                <svg class="dms__spectrum-svg" width="48" height="48" aria-hidden="true">
-                  <use xlink:href="svg/sprite.svg#icon-lab"></use>
-                </svg>
-                Лабораторную диагностику
-              </h3>
-            </li>
-            <li class="dms__spectrum-item">
-              <h3 class="dms__spectrum-title">
-                <svg class="dms__spectrum-svg" width="48" height="48" aria-hidden="true">
-                  <use xlink:href="svg/sprite.svg#icon-amb"></use>
-                </svg>
-                Амбулаторное обслуживание по направлениям:
-              </h3>
-              <ul class="dms__spectrum-lists list-reset">
-                <li class="dms__spectrum-items">педиатрия </li>
-                <li class="dms__spectrum-items">терапия </li>
-                <li class="dms__spectrum-items">стоматология </li>
-                <li class="dms__spectrum-items">офтальмология </li>
-                <li class="dms__spectrum-items">хирургия</li>
-                <li class="dms__spectrum-items">оториноларингология</li>
-                <li class="dms__spectrum-items">гинекология</li>
-                <li class="dms__spectrum-items">урология</li>
-                <li class="dms__spectrum-items">эндокринология</li>
-                <li class="dms__spectrum-items">дерматовенерология</li>
-                <li class="dms__spectrum-items">кардиология</li>
-                <li class="dms__spectrum-items">неврология</li>
-                <li class="dms__spectrum-items">логопедия и дефектолог</li>
-                <li class="dms__spectrum-items">косметология</li>
-                <li class="dms__spectrum-items">физиотерапия</li>
-                <li class="dms__spectrum-items">функциональная
-                  и ультразвуковая диагностика </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
+					<div class="dms__cooperation">
+						<h4 class="dms__cooperation-title">
+							Мы стремимся
+							<span>к долгосрочномуи взаимовыгодному сотрудничеству</span> с
+							нашими корпоративными клиентами.
+						</h4>
+						<p class="dms__cooperation-text">Наша цель –</p>
+						<span class="dms__cooperation-span"
+							>обеспечить здоровье и благополучие ваших сотрудников, что, в свою
+							очередь, способствует повышению производительности труда и
+							укреплению имиджа вашей компании.</span
+						>
+					</div>
 
-        <div class="dms__cooperation">
-          <h4 class="dms__cooperation-title">Мы стремимся <span>к долгосрочномуи взаимовыгодному сотрудничеству</span> с
-            нашими корпоративными
-            клиентами.</h4>
-          <p class="dms__cooperation-text">
-            Наша цель –
-          </p>
-          <span class="dms__cooperation-span">обеспечить здоровье и благополучие ваших сотрудников, что, в свою очередь,
-            способствует повышению
-            производительности труда и укреплению имиджа вашей компании.</span>
-        </div>
+					<div class="dms__cooperation-contacts">
+						<p class="dms__footer-text">
+							<svg
+								class="dms__cooperation-svg"
+								width="49"
+								height="48"
+								viewBox="0 0 49 48"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M35.8966 27.4142L41.1929 32.7105C41.9051 33.4227 41.9051 34.5773 41.1929 35.2895C37.3424 39.14 31.2467 39.5732 26.8904 36.306L23.7396 33.9429C20.2525 31.3276 17.1549 28.2299 14.5396 24.7429L12.1764 21.592C8.90924 17.2358 9.34245 11.14 13.1929 7.28954C13.9051 6.57735 15.0598 6.57734 15.772 7.28954L21.0682 12.5858C21.8493 13.3668 21.8493 14.6332 21.0682 15.4142L19.0259 17.4565C18.7013 17.7811 18.6209 18.2769 18.8262 18.6875C21.1995 23.4341 25.0483 27.2829 29.795 29.6563C30.2055 29.8615 30.7013 29.7811 31.0259 29.4565L33.0682 27.4142C33.8493 26.6332 35.1156 26.6332 35.8966 27.4142Z"
+									stroke="#897CFF"
+									stroke-width="2.76923"
+								/>
+							</svg>
+							По вопросам сотрудничества, позвоните по телефону:
+						</p>
+						<a href="tel:+74955557177" class="dms__cooperation-link"
+							>+7 (495) 555-71-77</a
+						>
+					</div>
+					<div class="dms__footer">
+						<ul class="dms__footer-list list-reset">
+							<li class="dms__footer-item">
+								<a href="#"
+									><img
+										class="dms__img"
+										src="img/peco.png"
+										alt="Логотип компании"
+								/></a>
+							</li>
+							<li class="dms__footer-item">
+								<a href="#"
+									><img
+										class="dms__img"
+										src="img/ingo.png"
+										alt="Логотип компании"
+								/></a>
+							</li>
+							<li class="dms__footer-item">
+								<a href="#"
+									><img
+										class="dms__img"
+										src="img/dialab.png"
+										alt="Логотип компании"
+								/></a>
+							</li>
+							<li class="dms__footer-item">
+								<a href="#"
+									><img
+										class="dms__img"
+										src="img/invitro.png"
+										alt="Логотип компании"
+								/></a>
+							</li>
+							<li class="dms__footer-item">
+								<a href="#"
+									><img
+										class="dms__img"
+										src="img/cmd.png"
+										alt="Логотип компании"
+								/></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</main>
 
-        <div class="dms__cooperation-contacts">
-          <p class="dms__footer-text">
-            <svg class="dms__cooperation-svg" width="49" height="48" viewBox="0 0 49 48" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M35.8966 27.4142L41.1929 32.7105C41.9051 33.4227 41.9051 34.5773 41.1929 35.2895C37.3424 39.14 31.2467 39.5732 26.8904 36.306L23.7396 33.9429C20.2525 31.3276 17.1549 28.2299 14.5396 24.7429L12.1764 21.592C8.90924 17.2358 9.34245 11.14 13.1929 7.28954C13.9051 6.57735 15.0598 6.57734 15.772 7.28954L21.0682 12.5858C21.8493 13.3668 21.8493 14.6332 21.0682 15.4142L19.0259 17.4565C18.7013 17.7811 18.6209 18.2769 18.8262 18.6875C21.1995 23.4341 25.0483 27.2829 29.795 29.6563C30.2055 29.8615 30.7013 29.7811 31.0259 29.4565L33.0682 27.4142C33.8493 26.6332 35.1156 26.6332 35.8966 27.4142Z"
-                stroke="#897CFF" stroke-width="2.76923" />
-            </svg>
-            По вопросам сотрудничества,
-            позвоните по телефону:
-          </p>
-          <a href="tel:+74955557177" class="dms__cooperation-link">+7 (495) 555-71-77</a>
-        </div>
-        <div class="dms__footer">
-          <ul class="dms__footer-list list-reset">
-            <li class="dms__footer-item"><a href="#"><im class="dms__img" src="img/peco.png" alt="Логотип компании"></a></li>
-            <li class="dms__footer-item"><a href="#"><img class="dms__img" src="img/ingo.png" alt="Логотип компании"></a></li>
-            <li class="dms__footer-item"><a href="#"><img class="dms__img" src="img/dialab.png" alt="Логотип компании"></a></li>
-            <li class="dms__footer-item"><a href="#"><img class="dms__img" src="img/invitro.png" alt="Логотип компании"></a></li>
-            <li class="dms__footer-item"><a href="#"><img class="dms__img" src="img/cmd.png" alt="Логотип компании"></a></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-  </main>
-
-
-
-  <script defer src="js/main.js"></script>
-</body>
-
+		<script defer src="js/main.js"></script>
+	</body>
 </html>
