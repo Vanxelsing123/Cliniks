@@ -38,7 +38,7 @@ src =
 				},
 				{
 					iconLayout: 'default#image',
-					iconImageHref: 'img/Pin.svg',
+					iconImageHref: 'img/pin.active.svg',
 					iconImageSize: [40, 40],
 					iconImageOffset: [-20, -40],
 				}
@@ -67,3 +67,12 @@ src =
 			})
 		}
 	})
+
+document.querySelectorAll('.map__item').forEach(item => {
+	item.addEventListener('click', () => {
+		document
+			.querySelectorAll('.map__item')
+			.forEach(el => el.classList.remove('active'))
+		item.classList.add('active')
+	})
+})

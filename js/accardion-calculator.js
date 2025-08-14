@@ -248,7 +248,7 @@ function updateSummaryBlock() {
 		if (contactsBlock) contactsBlock.style.display = 'none'
 	} else {
 		summaryBlock.style.display = 'none'
-		if (contactsBlock) contactsBlock.style.display = 'block'
+		if (contactsBlock) contactsBlock.style.display = 'flex'
 	}
 }
 

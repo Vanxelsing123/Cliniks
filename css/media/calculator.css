@@ -148,12 +148,13 @@
 }
 
 @media (max-width: 425px) {
-	.calculator__card-contacts-text svg {
+	.calculator__svg {
 		display: none;
 	}
 	.calculator__card-contacts-text {
 		display: block;
 		font-size: 13px;
+		max-width: 350px;
 	}
 
 	.calculator__card-contacts-link {

@@ -311,8 +311,14 @@ body {
 	color: var(--color-dull-grey);
 }
 
+.calculator__svg {
+	margin-right: 8px;
+}
+
 .calculator__card-contacts-text {
 	display: flex;
+	flex-direction: column;
+	max-width: 225px;
 	align-items: flex-start;
 	font-weight: 400;
 	font-size: 18px;
@@ -330,7 +336,6 @@ body {
 .calculator__card-contacts-link {
 	font-weight: 500;
 	font-size: 24px;
-	padding-left: 55px;
 	line-height: 160%;
 	letter-spacing: -0.02em;
 	color: var(--color-slate-blue);
@@ -506,12 +511,19 @@ body {
 /* стили для блока итоги */
 .calculator__card-summary {
 	display: none;
+	position: fixed;
+	position: fixed;
+	bottom: 20px;
+	right: 0;
+	transform: translateX(-20px);
+	z-index: 9999; /* чтобы всегда был поверх */
 	width: 400px;
 	padding: 25px 30px 5px 30px;
 	border: 1.04px solid #c9c6f0;
 	border-radius: 25px;
 	box-shadow: 0 4px 15px 0 rgba(13, 14, 86, 0.2);
 	background: var(--color-white);
+	will-change: transform;
 }
 
 .calculator__summary-count-container {
