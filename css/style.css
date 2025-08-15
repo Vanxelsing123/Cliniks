@@ -122,12 +122,13 @@ body {
 	position: relative;
 	background-image: url('../img/plashka.png');
 	background-repeat: no-repeat;
-	background-size: cover;
-	max-width: 510px;
+	background-size: 100%;
+	max-width: 570px;
 	display: flex;
 	flex-direction: column;
 	padding: 26px 39px 100px 39px;
 	margin-right: 20px;
+	height: 500px;
 }
 
 .about__title {

@@ -126,6 +126,7 @@ body {
 .tax__titles span {
 	font-weight: 500;
 	color: var(--color-slate-blue);
+	padding-left: 10px;
 }
 
 .tax__text {
@@ -135,6 +136,7 @@ body {
 	letter-spacing: -0.02em;
 	margin-bottom: 40px;
 	color: var(--color-asphalt);
+	max-width: 910px;
 }
 
 .tax__container {
