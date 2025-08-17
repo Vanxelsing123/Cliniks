@@ -431,7 +431,7 @@ select:focus-visible {
 	display: flex;
 	align-items: center;
 	bottom: 2px;
-	right: 0;
+	right: 15px;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 105%;

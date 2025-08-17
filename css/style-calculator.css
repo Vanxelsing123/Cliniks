@@ -318,7 +318,7 @@ body {
 .calculator__card-contacts-text {
 	display: flex;
 	flex-direction: column;
-	max-width: 225px;
+	max-width: 450px;
 	align-items: flex-start;
 	font-weight: 400;
 	font-size: 18px;
@@ -359,10 +359,10 @@ body {
 	align-items: center;
 	width: 100%;
 	margin-bottom: 12px;
-	border: 1px solid #bccaf4;
+	border: 1px solid #c4c3d3;
 	border-radius: 100px;
 	outline: none;
-	background-color: var(--color-lavender);
+	background-color: var(--color-white);
 }
 
 .calculator__card-form svg {
