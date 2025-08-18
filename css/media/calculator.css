@@ -182,7 +182,7 @@
 		width: 360px;
 		position: fixed;
 		bottom: 5px;
-		right: 16px;
+		right: -6px;
 	}
 	.custom-modal-title {
 		font-size: 28px;
@@ -200,7 +200,13 @@
 		align-items: flex-start;
 		gap: 20px;
 		padding: 16px;
+		height: 100%;
 	}
+
+	.custom-modal-price {
+		width: auto;
+	}
+
 	.custom-modal-span {
 		flex: 0 0 30px;
 		color: var(--color-gray-brown);

@@ -615,7 +615,7 @@ body {
 	width: 44px;
 	height: 45px;
 	border-radius: 100px;
-	background-color: var(--color-lavender);
+	background-color: #e5e5ff;
 }
 
 .custom-modal-list {
@@ -652,6 +652,16 @@ body {
 	padding-top: 35px;
 }
 
+.custom-modal-remove-btn {
+	padding: 50px 20px;
+	border-radius: 12px;
+	background: #f5f4ff;
+}
+
+.custom-modal-remove-btn svg {
+	fill: transparent;
+}
+
 .custom-modal-price-block {
 	width: 100%;
 	display: flex;
@@ -667,8 +677,14 @@ body {
 	align-items: center;
 	gap: 50px;
 	padding: 15px 20px;
-	background-color: #eff3ff;
+	background-color: #f5f4ff;
 	border-radius: 12px;
+	margin-right: 4px;
+	height: 160px;
+}
+
+.custom-modal-price {
+	width: 90px;
 }
 
 .custom-modal-span {
