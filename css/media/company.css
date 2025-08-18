@@ -1,11 +1,14 @@
 @media (max-width: 1200px) {
 	.company__container {
 		flex-direction: column;
-		align-items: center;
 	}
 	.container__company {
 		margin-bottom: 20px;
 	}
+
+  .company__list {
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 1024px) {
