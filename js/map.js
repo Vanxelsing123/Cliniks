@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	function init() {
 		map = new ymaps.Map('yandex-map', {
 			center: locations[0].coords,
-			zoom: 15,
+			zoom: 13,
 			controls: ['zoomControl'],
 		})
 

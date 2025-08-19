@@ -288,6 +288,10 @@ body {
 	color: var(--color-dull-grey);
 }
 
+.help__svg {
+	margin-right: 16px;
+}
+
 /* jobs */
 .jobs {
 	padding-top: 60px;
@@ -333,10 +337,18 @@ body {
 	padding-top: 45px;
 }
 
+.jobs__svg--item {
+	margin-right: 16px;
+}
+
 .jobs__svg {
 	position: absolute;
 	top: -55px;
 	right: 0;
+}
+
+.surgery__svg {
+	margin-right: 16px;
 }
 
 .jobs__item--svg-mob {

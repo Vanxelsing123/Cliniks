@@ -33,6 +33,7 @@
 	}
 	.surgery__svg--mobile {
 		display: block;
+		margin-right: 16px;
 	}
 	.jobs__svg {
 		display: none;
@@ -137,7 +138,7 @@
 
 	.jobs__item--svg-mob {
 		display: block;
-		margin-right: 15px;
+		margin-right: 16px;
 	}
 
 	.jobs__svg--item {
