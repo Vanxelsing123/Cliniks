@@ -337,7 +337,7 @@ select:focus-visible {
 
 .doctors__container-wrapp {
 	position: relative;
-	padding: 40px 333px 50px 110px;
+	padding: 40px 333px 50px 40px;
 	background-image: url(../img/plashka2.png);
 	background-repeat: no-repeat;
 	background-size: 100%;
