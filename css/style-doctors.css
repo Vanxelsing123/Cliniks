@@ -430,14 +430,18 @@ select:focus-visible {
 	position: absolute;
 	display: flex;
 	align-items: center;
-	bottom: 2px;
-	right: 15px;
+	bottom: 38px;
+	right: -7px;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 105%;
 	border-radius: 40px;
 	color: var(--color-signa-black);
 	background: linear-gradient(133deg, #c8d3ff 0%, #afa7ff 100%);
+}
+
+.doctors__img--card {
+	object-fit: contain;
 }
 .doctors__btn-icon {
 	margin-left: auto;

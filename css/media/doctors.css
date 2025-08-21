@@ -1,92 +1,106 @@
+@media (max-width: 1350px) {
+	.doctors__container-wrapp {
+		margin-left: 20px;
+	}
+}
+
 @media (max-width: 1200px) {
-  .doctors__list {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .doctors__container-wrapp {
-    background-image: none;
-    padding: 40px 200px 50px 50px;
-  }
+	.doctors__list {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.doctors__container-wrapp {
+		background-image: none;
+		padding: 40px 200px 50px 50px;
+	}
 }
 
 @media (max-width: 1024px) {
-  .doctors__title {
-    margin-top: 24px;
-  }
-  .doctors__title-card {
-    margin-top: 24px;
-  }
+	.doctors__title {
+		margin-top: 24px;
+	}
+	.doctors__title-card {
+		margin-top: 24px;
+	}
+	.doctors__btn {
+		bottom: 0;
+	}
 }
 
 @media (max-width: 768px) {
-  .doctors__list {
-    grid-template-columns: repeat(2, 1fr);
-  }
+	.doctors__list {
+		grid-template-columns: repeat(2, 1fr);
+	}
 
-  .doctors__reception {
-    font-size: 13px;
-  }
+	.doctors__reception {
+		font-size: 13px;
+	}
 
-  .doctors__container-card {
-    flex-direction: column;
-    align-items: center;
-  }
+	.doctors__container-card {
+		flex-direction: column;
+		align-items: center;
+	}
 
-  .doctors__container-wrapp {
-    padding: 9px 53px 0px 0px;
-  }
+	.doctors__container-wrapp {
+		padding: 9px 111px 0px 23px;
+	}
 
-  .doctors__btn {
-    margin-top: 20px;
-    position: relative;
-    width: 340px;
-  }
+	.doctors__btn {
+		margin-top: 20px;
+		position: relative;
+		width: 340px;
+		right: 2px;
+	}
 
-  .doctors__card-name {
-    font-size: 24px;
-  }
+	.doctors__card-name {
+		font-size: 24px;
+	}
 
-  .doctors__text-profession {
-    font-size: 16px;
-  }
+	.doctors__text-profession {
+		font-size: 16px;
+	}
 
-  .about__container-info {
-    margin-right: 40px;
-  }
+	.about__container-info {
+		margin-right: 40px;
+	}
 }
 
 @media (max-width: 425px) {
-  .doctors__title {
-    font-size: 32px;
-    margin-bottom: 20px;
-  }
+	.doctors__title {
+		font-size: 32px;
+		margin-bottom: 20px;
+	}
 
-  .about__container-education {
-    margin-bottom: 30px;
-  }
+	.doctor__card--svg {
+		display: none;
+	}
 
-  .doctors__name {
-    font-size: 16px;
-  }
-  .doctors__profession {
-    font-size: 13px;
-  }
-  .doctors__filters {
-    display: flex;
-  }
+	.about__container-education {
+		margin-bottom: 30px;
+	}
 
-  .about__container {
-    flex-direction: column;
-    align-items: center;
-  }
-  .about__container-info {
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
+	.doctors__name {
+		font-size: 16px;
+	}
+	.doctors__profession {
+		font-size: 13px;
+	}
+	.doctors__filters {
+		display: flex;
+	}
 
-  .doctors__container-wrapp {
-    padding: 9px 0px 0px 0px;
-  }
-  .doctors__list {
-    gap: 15px;
-  }
+	.about__container {
+		flex-direction: column;
+		align-items: center;
+	}
+	.about__container-info {
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+
+	.doctors__container-wrapp {
+		padding: 9px 0px 0px 0px;
+	}
+	.doctors__list {
+		gap: 15px;
+	}
 }
