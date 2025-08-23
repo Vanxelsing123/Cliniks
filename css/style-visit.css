@@ -141,10 +141,15 @@ body {
 .visit__item {
 	display: flex;
 	align-items: flex-start;
+	margin-right: 32px;
+}
+
+.visit__item:last-child {
+	margin-right: 0;
 }
 
 .visit__item svg {
-	margin-right: 20px;
+	margin-right: 12px;
 }
 
 .visit__text {

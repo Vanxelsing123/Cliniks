@@ -167,6 +167,10 @@ body {
 	justify-content: space-between;
 }
 
+.company__mobile {
+	display: none;
+}
+
 .company__wrap {
 	max-width: 720px;
 	display: grid;

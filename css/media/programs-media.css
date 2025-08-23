@@ -77,6 +77,10 @@
 	.main {
 		padding-bottom: 20px;
 	}
+
+	.programs__close-btn {
+		background-color: white;
+	}
 }
 
 @media screen and (max-width: 425px) {

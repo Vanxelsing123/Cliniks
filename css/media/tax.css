@@ -123,3 +123,12 @@
 		max-width: 1400px;
 	}
 }
+
+@media (max-width: 900px) {
+	.tax__btn {
+		margin-top: 24px;
+	}
+	.tax__licenses-btn {
+		margin-top: 24px;
+	}
+}

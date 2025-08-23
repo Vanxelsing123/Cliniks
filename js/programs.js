@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
       </ul>
       
        <button class="programs__btn-buy bth-reset">
-        <a class="programs__medical-wrap-price-link" href="#">Понятно
+        <a class="programs__medical-wrap-price-link" href="#">Отправить заявку
           <svg class="programs__medical-wrap-price-svg" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="22.399" cy="22.7616" r="21.8817" fill="white"></circle>
             <path d="M29.7828 26.8467V15.3781M29.7828 15.3781H18.3143M29.7828 15.3781L15.0165 30.1445" stroke="#535353" stroke-width="2.66" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
       </ul>
      
        <button class="programs__btn-buy bth-reset">
-        <a class="programs__medical-wrap-price-link" href="#">Понятно
+        <a class="programs__medical-wrap-price-link" href="#">Отправить заявку
           <svg class="programs__medical-wrap-price-svg" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="22.399" cy="22.7616" r="21.8817" fill="white"></circle>
             <path d="M29.7828 26.8467V15.3781M29.7828 15.3781H18.3143M29.7828 15.3781L15.0165 30.1445" stroke="#535353" stroke-width="2.66" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
       </ul>
      
        <button class="programs__btn-buy bth-reset">
-        <a class="programs__medical-wrap-price-link" href="#">Понятно
+        <a class="programs__medical-wrap-price-link" href="#">Отправить заявку
           <svg class="programs__medical-wrap-price-svg" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="22.399" cy="22.7616" r="21.8817" fill="white"></circle>
             <path d="M29.7828 26.8467V15.3781M29.7828 15.3781H18.3143M29.7828 15.3781L15.0165 30.1445" stroke="#535353" stroke-width="2.66" stroke-linecap="round" stroke-linejoin="round"></path>

@@ -6,9 +6,17 @@
 		margin-bottom: 20px;
 	}
 
-  .company__list {
-    margin-bottom: 30px;
-  }
+	.company__list {
+		margin-bottom: 30px;
+	}
+	.company__mobile {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.mobile__none {
+		display: none;
+	}
 }
 
 @media (max-width: 1024px) {
