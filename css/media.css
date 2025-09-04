@@ -452,6 +452,7 @@
 
 	.map__item {
 		margin-bottom: 20px;
+		text-align: center;
 	}
 
 	.map__list {
@@ -522,5 +523,90 @@
 
 	.footer__address--text {
 		color: rgba(106, 106, 106, 0.8);
+	}
+}
+
+/* Widget */
+
+.floating-widget {
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	display: flex;
+	flex-direction: column-reverse; /* кнопки идут вверх */
+	align-items: flex-end;
+	gap: 10px;
+	z-index: 999;
+}
+
+.main-btn {
+	width: 56px;
+	height: 56px;
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+	background: none;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* иконки */
+.main-btn .icon {
+	display: none;
+}
+.main-btn .default-icon {
+	display: block;
+}
+.main-btn.cross-active .default-icon {
+	display: none;
+}
+.main-btn.cross-active .cross-icon {
+	display: block;
+}
+
+/* анимация кнопок */
+.extra-btns {
+	display: flex;
+	align-items: flex-end;
+	flex-direction: column;
+	gap: 10px;
+}
+.extra-btn {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+
+	text-decoration: none;
+	font-size: 13px;
+	opacity: 0;
+	transform: translateY(20px) scale(0.95);
+	transition: all 0.3s ease;
+}
+
+.extra-btn span {
+	color: #3d3d3d;
+	padding: 4px 8px;
+	background: linear-gradient(92.08deg, #c8d3ff -18.04%, #afa7ff 111.9%);
+
+	border-radius: 20px;
+}
+
+/* на ПК — по hover */
+.floating-widget:hover .extra-btn {
+	opacity: 1;
+	transform: translateY(0) scale(1);
+}
+
+/* мобильный */
+@media (max-width: 425px) {
+	.floating-widget:hover .extra-btn {
+		opacity: 0;
+		transform: translateY(20px) scale(0.95);
+	}
+	.floating-widget.active .extra-btn {
+		opacity: 1;
+		transform: translateY(0) scale(1);
 	}
 }

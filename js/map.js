@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	let map
 	const locations = [
 		{
-			coords: [55.577721, 37.9076],
+			coords: [55.588466, 37.906643],
 			title: 'Семейная клиника',
 			icon: 'img/pin.active.svg',
 		},
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	function init() {
 		map = new ymaps.Map('yandex-map', {
 			center: locations[0].coords,
-			zoom: 13,
+			zoom: 15,
 			controls: ['zoomControl'],
 		})
 
@@ -68,9 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				})
 
 				// Подсветка активного адреса
-				document
-					.querySelectorAll('.map__item')
-					.forEach(el => el.classList.remove('active'))
+				document.querySelectorAll('.map__item').forEach(el => el.classList.remove('active'))
 				item.classList.add('active')
 			})
 		})
@@ -88,9 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.querySelectorAll('.map__item').forEach(item => {
 	item.addEventListener('click', () => {
-		document
-			.querySelectorAll('.map__item')
-			.forEach(el => el.classList.remove('active'))
+		document.querySelectorAll('.map__item').forEach(el => el.classList.remove('active'))
 		item.classList.add('active')
 	})
 })
