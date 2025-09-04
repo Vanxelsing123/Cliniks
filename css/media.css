@@ -533,7 +533,7 @@
 	right: 20px;
 	bottom: 20px;
 	display: flex;
-	flex-direction: column-reverse; /* кнопки идут вверх */
+	flex-direction: column-reverse;
 	align-items: flex-end;
 	gap: 10px;
 	z-index: 999;
@@ -552,7 +552,6 @@
 	justify-content: center;
 }
 
-/* иконки */
 .main-btn .icon {
 	display: none;
 }
@@ -566,7 +565,6 @@
 	display: block;
 }
 
-/* анимация кнопок */
 .extra-btns {
 	display: flex;
 	align-items: flex-end;
@@ -593,13 +591,11 @@
 	border-radius: 20px;
 }
 
-/* на ПК — по hover */
 .floating-widget:hover .extra-btn {
 	opacity: 1;
 	transform: translateY(0) scale(1);
 }
 
-/* мобильный */
 @media (max-width: 425px) {
 	.floating-widget:hover .extra-btn {
 		opacity: 0;
