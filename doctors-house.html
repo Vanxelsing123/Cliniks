@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Новости</title>
+		<title>Вызов врача на дом</title>
 		<link rel="stylesheet" href="css/normalize.css" />
-		<link rel="stylesheet" href="css/style-news.css" />
+		<link rel="stylesheet" href="css/style-doctor.house.css" />
 		<link rel="stylesheet" href="css/media.css" />
 	</head>
-
 	<body>
 		<header class="header">
 			<div class="container">
@@ -275,77 +274,50 @@
 		</header>
 
 		<main class="main">
-			<section class="news">
+			<section class="doctor__house">
 				<div class="container">
-					<h1 class="news__title">Новости</h1>
-					<div class="container__news">
-						<div class="news__tabs" id="newsTabs">
-							<button class="news__tab-btn active" data-tab="0">Новости клиники</button>
-							<button class="news__tab-btn" data-tab="1">Новые услуги</button>
-							<button class="news__tab-btn" data-tab="2">Комплексные программы</button>
+					<h1 class="doctor__title">Вызов врача <span> на дом</span></h1>
+					<div class="doctor__content">
+						<div class="doctor__left">
+							<h2 class="doctor__title--content">Услуга позволяет</h2>
+
+							<p class="doctor__desc">
+								получить квалифицированную и&nbsp;своевременную помощь в&nbsp;привычной и&nbsp;комфортной для вас и&nbsp;вашего ребёнка.
+							</p>
+							<div class="doctor__svg--content">
+								<div class="doctor__svg">
+									<img src="img/kid.svg" alt="" />
+									<p class="doctor__svg--desc">
+										Вызов врача на дом обеспечивает комфорт ребёнка в привычной обстановке и снижает
+										стресс от встречи с доктором 
+									</p>
+								</div>
+
+								<div class="doctor__svg">
+									<img src="img/virus.svg" alt="" />
+
+									<p class="doctor__svg--desc">
+										Кроме того, это исключает риск заразиться инфекцией по дороге в медицинский
+										центр
+									</p>
+								</div>
+							</div>
 						</div>
-						<ul class="news__list list-reset">
-							<li class="news__item" data-tab="0">
-								<a href="news-card.html">
-									<img class="news__img" src="img/pills.png" alt="Фото Витаминов" />
-								</a>
-								<div class="news__wrap">
-									<p class="news__text">Комплексные программы</p>
-									<time class="news__time" datetime="2024-10-16">16.10.2024</time>
-								</div>
-								<h2 class="news__titles">Лечении аллергии<br />стало удобнее и выгоднее</h2>
-							</li>
-							<li class="news__item" data-tab="0">
-								<a href="#">
-									<img class="news__img" src="img/pills.png" alt="Фото Витаминов" />
-								</a>
-								<div class="news__wrap">
-									<p class="news__text">Комплексные программы</p>
-									<time class="news__time" datetime="2024-10-16">16.10.2024</time>
-								</div>
-								<h2 class="news__titles">Лечении аллергии<br />стало удобнее и выгоднее</h2>
-							</li>
-							<li class="news__item" data-tab="1">
-								<a href="#">
-									<img class="news__img" src="img/pills.png" alt="Фото Витаминов" />
-								</a>
-								<div class="news__wrap">
-									<p class="news__text">Комплексные программы</p>
-									<time class="news__time" datetime="2024-10-16">16.10.2024</time>
-								</div>
-								<h2 class="news__titles">Лечении аллергии<br />стало удобнее и выгоднее</h2>
-							</li>
-							<li class="news__item" data-tab="1">
-								<a href="#">
-									<img class="news__img" src="img/pills.png" alt="Фото Витаминов" />
-								</a>
-								<div class="news__wrap">
-									<p class="news__text">Комплексные программы</p>
-									<time class="news__time" datetime="2024-10-16">16.10.2024</time>
-								</div>
-								<h2 class="news__titles">Лечении аллергии<br />стало удобнее и выгоднее</h2>
-							</li>
-							<li class="news__item" data-tab="2">
-								<a href="#">
-									<img class="news__img" src="img/pills.png" alt="Фото Витаминов" />
-								</a>
-								<div class="news__wrap">
-									<p class="news__text">Комплексные программы</p>
-									<time class="news__time" datetime="2024-10-16">16.10.2024</time>
-								</div>
-								<h2 class="news__titles">Лечении аллергии<br />стало удобнее и выгоднее</h2>
-							</li>
-							<li class="news__item">
-								<a href="#">
-									<img class="news__img" src="img/pills.png" alt="Фото Витаминов" />
-								</a>
-								<div class="news__wrap">
-									<p class="news__text">Комплексные программы</p>
-									<time class="news__time" datetime="2024-10-16">16.10.2024</time>
-								</div>
-								<h2 class="news__titles">Лечении аллергии<br />стало удобнее и выгоднее</h2>
-							</li>
-						</ul>
+						<div class="doctor__right">
+							<img class="doctor__img" src="img/house-doc.png" alt="house-doc">
+							<div class="doctor__right--text">
+							<div class="doctor__right--desc">
+									<p class="doctor__children">
+									Оформить <span>вызов педиатра</span>
+								</p>
+								<span class="doctor__right--desc">
+									можно в рабочие часы клиники
+								</span>
+							</div>
+								<img src="img/home.svg" alt="svg">
+							</div>
+						</div>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -497,7 +469,7 @@
 				</div>
 			</div>
 		</footer>
-		<!-- Widget -->
+
 		<div class="floating-widget">
 			<button class="main-btn" id="mainBtn">
 				<span class="icon default-icon">
@@ -599,7 +571,6 @@
 
 		<script src="js/widget.js"></script>
 
-		<script defer src="js/news.tabs.js"></script>
 		<script defer src="js/main.js"></script>
 	</body>
 </html>

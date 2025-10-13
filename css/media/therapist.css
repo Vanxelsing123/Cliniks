@@ -1,0 +1,76 @@
+@media (max-width: 1024px) {
+	.therapist__title {
+		margin-top: 24px;
+		margin-bottom: 22px;
+	}
+
+	.department__item {
+		gap: 40px;
+	}
+}
+
+@media (max-width: 768px) {
+	.therapist__content {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 425px) {
+	.therapist__title {
+		font-size: 32px;
+	}
+
+	.therapist__left {
+		padding: 0;
+	}
+
+	.therapist__right {
+		display: none;
+	}
+
+	.therapist__title--content {
+		font-size: 24px;
+	}
+
+	.therapist__desc {
+		font-size: 16px;
+	}
+
+	.therapist__svg--desc {
+		max-width: 265px;
+	}
+
+	.therapist__svg svg {
+		width: 52px;
+	}
+
+	.department__item {
+		gap: 0;
+	}
+
+	.depatment__li:last-child {
+		margin-bottom: 0;
+	}
+
+	.therapist__right--text {
+		background-color: var(--color-white);
+		padding: 36px;
+		display: flex;
+		align-items: flex-start;
+	}
+
+	.therapist__children--mob {
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 110%;
+		margin-bottom: 37px;
+	}
+
+	.therapist__children--desc {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 130%;
+		letter-spacing: -0.02em;
+		color: var(--color-grey);
+	}
+}

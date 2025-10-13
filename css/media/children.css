@@ -1,0 +1,95 @@
+@media (max-width: 1024px) {
+	.children__title {
+		margin-top: 24px;
+	}
+
+	.pediatri__content {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.department__item {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 768px) {
+	.department__item {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+@media (max-width: 425px) {
+	.children__title {
+		font-size: 32px;
+	}
+	.chil__det {
+		color: var(--color-black-brown);
+	}
+
+	.chil__otdel {
+		color: var(--color-slate-blue);
+	}
+	.pediatri__left {
+		padding: 0;
+	}
+	.pediatri__title {
+		font-size: 23px;
+	}
+	.pediatri__desc {
+		font-size: 16px;
+	}
+	.pediatri__right {
+		display: none;
+	}
+	.pediatri__svg svg {
+		margin-right: 8px;
+	}
+	.pediatri__svg--desc {
+		max-width: 265px;
+	}
+	.department__title {
+		font-size: 18px;
+		border-bottom: 1px solid var(--color-light-pinkish);
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+	}
+	.depatment__li img {
+		display: none;
+	}
+	.depatment__text p {
+		font-size: 20px;
+	}
+	.department__item {
+		margin-bottom: 24px;
+	}
+
+	.mob__pediatri {
+		display: block;
+	}
+
+	.pediatri__children {
+		color: var(--color-gray-brown);
+	}
+
+	.pediatri__right--text {
+		background-color: var(--color-white);
+		border: 1px solid var(--color-light-pinkish);
+	}
+
+	.pediatri__children--mob {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	.pediatri__children {
+		max-width: 185px;
+		margin-bottom: 20px;
+	}
+
+	.pediatri__children--desc {
+		font-size: 14px;
+		line-height: 130%;
+	}
+}

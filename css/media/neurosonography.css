@@ -1,0 +1,70 @@
+@media (max-width: 1024px) {
+	.neurosonography__content {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.neurosonography__title {
+		margin-top: 24px;
+	}
+}
+
+@media (max-width: 425px) {
+	.neurosonography__title {
+		font-size: 32px;
+		margin-bottom: 22px;
+	}
+	.neurosonography__left {
+		padding: 0;
+	}
+	.neurosonography__title--left {
+		display: none;
+	}
+
+	.neurosonography__desc {
+		font-size: 16px;
+		margin-bottom: 32px;
+	}
+
+	.neurosonography__svg--desc {
+		max-width: 265px;
+		line-height: 130%;
+	}
+
+	.neurosonography__right {
+		display: none;
+	}
+
+	.neurosonography__content {
+		margin-bottom: 56px;
+	}
+
+	.neurosonography__svg svg {
+		width: 52px;
+		height: 53px;
+	}
+	.department__item li {
+		margin-bottom: 36px;
+		max-width: 343px;
+	}
+
+	.department__isled {
+		display: flex;
+		justify-content: space-around;
+		padding: 36px;
+		background-color: var(--color-white);
+		border-radius: 20px;
+		border: 1px solid var(--color-light-pinkish);
+	}
+
+	.department__isled p {
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 110%;
+		color: var(--color-signa-black);
+		max-width: 191px;
+	}
+
+	.isled__color {
+		color: var(--color-slate-blue);
+	}
+}

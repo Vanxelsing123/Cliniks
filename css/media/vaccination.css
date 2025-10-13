@@ -1,0 +1,121 @@
+@media (max-width: 1024px) {
+	.doc__item {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.vaccination__title {
+		margin-top: 24px;
+		margin-bottom: 22px;
+	}
+}
+
+@media (max-width: 768px) {
+	.vaccination__content {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 425px) {
+	.vaccination__title {
+		font-size: 32px;
+	}
+
+	.vaccination__left {
+		padding: 0;
+	}
+
+	.vaccination__title--content {
+		font-size: 23px;
+	}
+
+	.vaccination__desc {
+		font-size: 16px;
+		line-height: 144%;
+		max-width: 313px;
+	}
+
+	.vaccination__svg img {
+		width: 52px;
+	}
+
+	.vaccination__svg--desc {
+		line-height: 130%;
+	}
+
+	.vaccination__right {
+		display: none;
+	}
+
+	.vaccination {
+		margin-bottom: 56px;
+	}
+
+	.organize {
+		margin-bottom: 56px;
+	}
+
+	.organize__title {
+		font-size: 18px;
+		line-height: 140%;
+		max-width: 320px;
+		padding-bottom: 20px;
+		border-bottom: 2px solid var(--color-light-pinkish);
+	}
+
+	.doc__li img {
+		display: none;
+	}
+
+	.doc__li--text p {
+		font-size: 20px;
+	}
+
+	.mob__vaccination {
+		display: flex;
+		margin-top: 56px;
+		background-color: var(--color-white);
+		align-items: flex-start;
+		padding: 36px;
+	}
+
+	.calendar__title {
+		font-size: 18px;
+		line-height: 140%;
+		max-width: 300px;
+		margin-bottom: 20px;
+		padding-bottom: 20px;
+		border-bottom: 2px solid var(--color-light-pinkish);
+	}
+
+	.calendar__decktop {
+		color: var(--color-signa-black);
+	}
+
+	.calendar__mob {
+		color: var(--color-slate-blue);
+	}
+
+	.doc__item {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.calendar__li {
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 16px 0 16px 0;
+		margin-right: 0;
+	}
+
+	.calendar__date {
+		margin-bottom: 4px;
+		font-size: 16px;
+		line-height: 130%;
+		margin-right: 0;
+	}
+
+	.calendar__desc {
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 140%;
+	}
+}

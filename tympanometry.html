@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Новости</title>
+		<title>Тимпанометрия</title>
 		<link rel="stylesheet" href="css/normalize.css" />
-		<link rel="stylesheet" href="css/style-news.css" />
+		<link rel="stylesheet" href="css/style-tympanometry.css" />
 		<link rel="stylesheet" href="css/media.css" />
 	</head>
-
 	<body>
 		<header class="header">
 			<div class="container">
@@ -229,7 +228,7 @@
 										<a class="header__nav-link-dropdown" href="#">Вакцинация</a>
 										<a class="header__nav-link-dropdown" href="#">Логопед-дефектолог</a>
 										<a class="header__nav-link-dropdown" href="#">Аудиометрия</a>
-										<a class="header__nav-link-dropdown" href="#">Тимпанометрия</a>
+										<a class="header__nav-link-dropdown" href="/">Тимпанометрия</a>
 										<a class="header__nav-link-dropdown" href="programs.html"
 											>Комплексные программы</a
 										>
@@ -275,75 +274,67 @@
 		</header>
 
 		<main class="main">
-			<section class="news">
+			<section class="tympanometry">
 				<div class="container">
-					<h1 class="news__title">Новости</h1>
-					<div class="container__news">
-						<div class="news__tabs" id="newsTabs">
-							<button class="news__tab-btn active" data-tab="0">Новости клиники</button>
-							<button class="news__tab-btn" data-tab="1">Новые услуги</button>
-							<button class="news__tab-btn" data-tab="2">Комплексные программы</button>
+					<h1 class="tympanometry__title">Тимпанометрия</h1>
+					<div class="tympanometry__content">
+						<div class="tympanometry__left">
+							<h2 class="tympanometry__title--left">Об <span>исследовании:</span></h2>
+							<p class="tympanometry__desc">
+								метод диагностики патологий среднего уха и барабанной перепонки путем создания
+								необходимого давления в полости наружного уха и измерения частоты отраженного от
+								барабанной перепонки сигнала.
+							</p>
 						</div>
-						<ul class="news__list list-reset">
-							<li class="news__item" data-tab="0">
-								<a href="news-card.html">
-									<img class="news__img" src="img/pills.png" alt="Фото Витаминов" />
-								</a>
-								<div class="news__wrap">
-									<p class="news__text">Комплексные программы</p>
-									<time class="news__time" datetime="2024-10-16">16.10.2024</time>
+						<div class="tympanometry__right">
+							<img src="img/tympanometry.png" alt="tympanometry" />
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="tympanometry__department">
+				<div class="container">
+					<h2 class="department__title">Исследование <span>позволяет установить:</span></h2>
+					<div class="department__content">
+						<ul class="department__item list-reset">
+							<li class="depatment__li">
+								<img src="img/svg-tympano/audiometer.svg" alt="" />
+								<div class="depatment__text">
+									<p>Давление</p>
+									<span>в среднем ухе</span>
 								</div>
-								<h2 class="news__titles">Лечении аллергии<br />стало удобнее и выгоднее</h2>
 							</li>
-							<li class="news__item" data-tab="0">
-								<a href="#">
-									<img class="news__img" src="img/pills.png" alt="Фото Витаминов" />
-								</a>
-								<div class="news__wrap">
-									<p class="news__text">Комплексные программы</p>
-									<time class="news__time" datetime="2024-10-16">16.10.2024</time>
+
+							<li class="depatment__li">
+								<img src="img/svg-tympano/ear-tube.svg" alt="" />
+								<div class="depatment__text">
+									<p>Состояние функции </p>
+									<span>слуховой трубы</span>
 								</div>
-								<h2 class="news__titles">Лечении аллергии<br />стало удобнее и выгоднее</h2>
 							</li>
-							<li class="news__item" data-tab="1">
-								<a href="#">
-									<img class="news__img" src="img/pills.png" alt="Фото Витаминов" />
-								</a>
-								<div class="news__wrap">
-									<p class="news__text">Комплексные программы</p>
-									<time class="news__time" datetime="2024-10-16">16.10.2024</time>
+
+							<li class="depatment__li">
+								<img src="img/svg-tympano/ear.svg" alt="" />
+								<div class="depatment__text">
+									<p>Степень подвижности</p>
+									<span>барабанной перепонки</span>
 								</div>
-								<h2 class="news__titles">Лечении аллергии<br />стало удобнее и выгоднее</h2>
 							</li>
-							<li class="news__item" data-tab="1">
-								<a href="#">
-									<img class="news__img" src="img/pills.png" alt="Фото Витаминов" />
-								</a>
-								<div class="news__wrap">
-									<p class="news__text">Комплексные программы</p>
-									<time class="news__time" datetime="2024-10-16">16.10.2024</time>
+
+							<li class="depatment__li">
+								<img src="img/svg-tympano/ear-structure.svg" alt="" />
+								<div class="depatment__text">
+									<p>Целостность и степень подвижности</p>
+									<span>слуховых косточек</span>
 								</div>
-								<h2 class="news__titles">Лечении аллергии<br />стало удобнее и выгоднее</h2>
 							</li>
-							<li class="news__item" data-tab="2">
-								<a href="#">
-									<img class="news__img" src="img/pills.png" alt="Фото Витаминов" />
-								</a>
-								<div class="news__wrap">
-									<p class="news__text">Комплексные программы</p>
-									<time class="news__time" datetime="2024-10-16">16.10.2024</time>
+							<li class="depatment__li">
+								<img src="img/svg-tympano/ear-sound.svg" alt="" />
+								<div class="depatment__text">
+									<p>Порог акустического рефлекса</p>
+									<span>и некоторые виды нарушения слуха, носящие функциональный характер</span>
 								</div>
-								<h2 class="news__titles">Лечении аллергии<br />стало удобнее и выгоднее</h2>
-							</li>
-							<li class="news__item">
-								<a href="#">
-									<img class="news__img" src="img/pills.png" alt="Фото Витаминов" />
-								</a>
-								<div class="news__wrap">
-									<p class="news__text">Комплексные программы</p>
-									<time class="news__time" datetime="2024-10-16">16.10.2024</time>
-								</div>
-								<h2 class="news__titles">Лечении аллергии<br />стало удобнее и выгоднее</h2>
 							</li>
 						</ul>
 					</div>
@@ -497,7 +488,7 @@
 				</div>
 			</div>
 		</footer>
-		<!-- Widget -->
+
 		<div class="floating-widget">
 			<button class="main-btn" id="mainBtn">
 				<span class="icon default-icon">
@@ -599,7 +590,6 @@
 
 		<script src="js/widget.js"></script>
 
-		<script defer src="js/news.tabs.js"></script>
 		<script defer src="js/main.js"></script>
 	</body>
 </html>

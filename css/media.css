@@ -11,6 +11,14 @@
 @import url('media/price.css');
 @import url('media/schedule.css');
 @import url('media/doctors.css');
+@import url('media/children.css');
+@import url('media/tympanometry.css');
+@import url('media/neurosonography.css');
+@import url('media/therapist.css');
+@import url('media/audiometry.css');
+@import url('media/doctor-house.css');
+@import url('media/vaccination.css');
+@import url('media/diagnostics.css');
 
 @media (max-width: 1400px) {
 	/* .map__container-wraps {
@@ -527,6 +535,10 @@
 }
 
 /* Widget */
+
+.widget__mob {
+	display: none !important;
+}
 
 .floating-widget {
 	position: fixed;

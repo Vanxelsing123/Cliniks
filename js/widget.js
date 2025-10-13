@@ -1,4 +1,5 @@
 const mainBtn = document.getElementById('mainBtn')
+
 const widget = document.querySelector('.floating-widget')
 
 mainBtn.addEventListener('click', () => {

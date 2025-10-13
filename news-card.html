@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,7 +8,6 @@
 		<link rel="stylesheet" href="css/style-news.css" />
 		<link rel="stylesheet" href="css/media.css" />
 	</head>
-
 	<body>
 		<header class="header">
 			<div class="container">
@@ -275,77 +274,77 @@
 		</header>
 
 		<main class="main">
-			<section class="news">
+			<section class="news__card">
 				<div class="container">
 					<h1 class="news__title">Новости</h1>
-					<div class="container__news">
-						<div class="news__tabs" id="newsTabs">
-							<button class="news__tab-btn active" data-tab="0">Новости клиники</button>
-							<button class="news__tab-btn" data-tab="1">Новые услуги</button>
-							<button class="news__tab-btn" data-tab="2">Комплексные программы</button>
+					<div class="news__card--content">
+						<img src="img/news-card.png" alt="" />
+						<div class="news__wrap--card">
+							<p class="news__text">Комплексные программы</p>
+							<time class="news__time" datetime="2024-10-16">16.10.2024</time>
 						</div>
-						<ul class="news__list list-reset">
-							<li class="news__item" data-tab="0">
-								<a href="news-card.html">
-									<img class="news__img" src="img/pills.png" alt="Фото Витаминов" />
-								</a>
-								<div class="news__wrap">
-									<p class="news__text">Комплексные программы</p>
-									<time class="news__time" datetime="2024-10-16">16.10.2024</time>
-								</div>
-								<h2 class="news__titles">Лечении аллергии<br />стало удобнее и выгоднее</h2>
+						<p class="news__card--title">Лечении аллергии стало удобнее и выгоднее</p>
+					</div>
+					<div class="card__content--desc">
+						<p class="text__news--card">
+							Позаботьтесь о стойком иммунитете к сезонному гриппу! Вакцинация против гриппа
+							представляет собой эффективную меру профилактики, рекомендованную Всемирной
+							Организацией Здравоохранения (ВОЗ) и национальными органами здравоохранения.  
+						</p>
+						<span> УЛЬТРИКС-КВАДРИ это:</span>
+						<ul class="card__item">
+							<li>Универсальная вакцина от гриппа для взрослых и детей с 6 месяцев.</li>
+							<li>Четырехвалетная вакцина последнего поколения</li>
+							<li>
+								Защита от актуальных штаммов гриппа  (антигенный состав вакцины совершенствуется
+								каждый год)
 							</li>
-							<li class="news__item" data-tab="0">
-								<a href="#">
-									<img class="news__img" src="img/pills.png" alt="Фото Витаминов" />
-								</a>
-								<div class="news__wrap">
-									<p class="news__text">Комплексные программы</p>
-									<time class="news__time" datetime="2024-10-16">16.10.2024</time>
-								</div>
-								<h2 class="news__titles">Лечении аллергии<br />стало удобнее и выгоднее</h2>
-							</li>
-							<li class="news__item" data-tab="1">
-								<a href="#">
-									<img class="news__img" src="img/pills.png" alt="Фото Витаминов" />
-								</a>
-								<div class="news__wrap">
-									<p class="news__text">Комплексные программы</p>
-									<time class="news__time" datetime="2024-10-16">16.10.2024</time>
-								</div>
-								<h2 class="news__titles">Лечении аллергии<br />стало удобнее и выгоднее</h2>
-							</li>
-							<li class="news__item" data-tab="1">
-								<a href="#">
-									<img class="news__img" src="img/pills.png" alt="Фото Витаминов" />
-								</a>
-								<div class="news__wrap">
-									<p class="news__text">Комплексные программы</p>
-									<time class="news__time" datetime="2024-10-16">16.10.2024</time>
-								</div>
-								<h2 class="news__titles">Лечении аллергии<br />стало удобнее и выгоднее</h2>
-							</li>
-							<li class="news__item" data-tab="2">
-								<a href="#">
-									<img class="news__img" src="img/pills.png" alt="Фото Витаминов" />
-								</a>
-								<div class="news__wrap">
-									<p class="news__text">Комплексные программы</p>
-									<time class="news__time" datetime="2024-10-16">16.10.2024</time>
-								</div>
-								<h2 class="news__titles">Лечении аллергии<br />стало удобнее и выгоднее</h2>
-							</li>
-							<li class="news__item">
-								<a href="#">
-									<img class="news__img" src="img/pills.png" alt="Фото Витаминов" />
-								</a>
-								<div class="news__wrap">
-									<p class="news__text">Комплексные программы</p>
-									<time class="news__time" datetime="2024-10-16">16.10.2024</time>
-								</div>
-								<h2 class="news__titles">Лечении аллергии<br />стало удобнее и выгоднее</h2>
+							<li>Вакцина инактивированная </li>
+							<li>
+								Вакцинация от гриппа помогает в  выработке  иммунных клеток и антител, которые
+								защитят ваш организм от гриппа и  от его тяжелых последствий и осложнений в случае
+								заражения. 
 							</li>
 						</ul>
+						<p class="text__news--card">
+							Оптимальный период для проведения вакцинации (сентябрь-октябрь) обусловлен
+							эпидемиологическими особенностями распространения вируса гриппа. Сезонный подъем
+							заболеваемости, как правило, начинается в ноябре-декабре, достигая пика в зимние
+							месяцы.
+						</p>
+
+						<p class="text__news--card">
+							Формирование полноценного иммунного ответа после вакцинации требует около двух недель,
+							что обусловлено процессами активации иммунной системы и выработки специфических
+							антител к антигенам вируса гриппа.
+						</p>
+
+						<p class="text__news--card">
+							Продолжительность защиты, обеспечиваемой вакциной, варьируется в зависимости от типа
+							вируса гриппа, антигенной структуры штаммов, включенных в состав вакцины, и
+							индивидуальных особенностей иммунной системы вакцинированного человека. 
+						</p>
+
+						<p class="text__news--card">
+							️Ранняя вакцинация, проведенная в период с сентября по октябрь, позволяет обеспечить
+							формирование иммунитета к моменту начала эпидемического сезона, что значительно
+							снижает риск заболевания и развития осложнений.
+						</p>
+
+						<p class="text__news--card">Записаться на вакцинацию : +74955557177</p>
+
+						<a class="btn-card" href="news.html">
+							К другим новостям
+							<svg
+								class="footer__btn-icon"
+								width="35"
+								height="35"
+								viewBox="0 0 35 36"
+								aria-hidden="true"
+							>
+								<use xlink:href="svg/sprite.svg#icon-button-arrow"></use>
+							</svg>
+						</a>
 					</div>
 				</div>
 			</section>
@@ -497,7 +496,7 @@
 				</div>
 			</div>
 		</footer>
-		<!-- Widget -->
+
 		<div class="floating-widget">
 			<button class="main-btn" id="mainBtn">
 				<span class="icon default-icon">
@@ -599,7 +598,6 @@
 
 		<script src="js/widget.js"></script>
 
-		<script defer src="js/news.tabs.js"></script>
 		<script defer src="js/main.js"></script>
 	</body>
 </html>

@@ -66,13 +66,9 @@ function createModal() {
 
 function replaceClasses(el, map) {
 	if (el.classList?.length) {
-		Array.from(el.classList).forEach(
-			c => map[c] && el.classList.replace(c, map[c])
-		)
+		Array.from(el.classList).forEach(c => map[c] && el.classList.replace(c, map[c]))
 	}
-	el.childNodes.forEach(
-		child => child.nodeType === 1 && replaceClasses(child, map)
-	)
+	el.childNodes.forEach(child => child.nodeType === 1 && replaceClasses(child, map))
 }
 
 function updateModalContent(selectedBlocks) {
@@ -131,8 +127,7 @@ function updateModalContent(selectedBlocks) {
 		listEl.appendChild(li)
 	})
 
-	totalSumEl.textContent =
-		calculateTotal(selectedBlocks).toLocaleString('ru-RU') + ' ₽'
+	totalSumEl.textContent = calculateTotal(selectedBlocks).toLocaleString('ru-RU') + ' ₽'
 }
 
 function openModal() {
@@ -165,53 +160,58 @@ function closeModal() {
 }
 
 headers.forEach(header => {
-	let scrollBeforeOpen = 0
 	header.onclick = () => {
 		const content = header.nextElementSibling
 		const svg = header.querySelector('.accordion__svg')
+		const item = header.closest('.calculator__card-accardion-item')
 
+		// Если уже открыт — закрываем
 		if (content.style.maxHeight) {
 			content.style.maxHeight = null
 			content.classList.remove('open')
 			header.classList.remove('transparent')
 			svg?.classList.remove('rotated')
-			window.scrollTo({ top: scrollBeforeOpen, behavior: 'smooth' })
-		} else {
-			// Закрываем все остальные
-			headers.forEach(otherHeader => {
-				if (otherHeader !== header) {
-					const otherContent = otherHeader.nextElementSibling
-					const otherSvg = otherHeader.querySelector('.accordion__svg')
-					if (otherContent.style.maxHeight) {
-						otherContent.style.maxHeight = null
-						otherContent.classList.remove('open')
-						otherHeader.classList.remove('transparent')
-						otherSvg?.classList.remove('rotated')
-					}
-				}
-			})
-
-			// Получаем позицию заголовка относительно страницы
-			const offsetTop = header.getBoundingClientRect().top + window.pageYOffset
-
-			content.style.maxHeight = content.scrollHeight + 'px'
-			content.classList.add('open')
-			header.classList.add('transparent')
-			svg?.classList.add('rotated')
-
-			// Скроллим к заголовку с небольшим отступом сверху
-			const scrollOffset = 20 // можно подкорректировать по желанию
-			window.scrollTo({ top: offsetTop - scrollOffset, behavior: 'smooth' })
+			return
 		}
+
+		// Закрываем все остальные
+		headers.forEach(otherHeader => {
+			if (otherHeader !== header) {
+				const otherContent = otherHeader.nextElementSibling
+				const otherSvg = otherHeader.querySelector('.accordion__svg')
+				if (otherContent.style.maxHeight) {
+					otherContent.style.maxHeight = null
+					otherContent.classList.remove('open')
+					otherHeader.classList.remove('transparent')
+					otherSvg?.classList.remove('rotated')
+				}
+			}
+		})
+
+		// Открываем текущий
+		content.style.maxHeight = content.scrollHeight + 'px'
+		content.classList.add('open')
+		header.classList.add('transparent')
+		svg?.classList.add('rotated')
+
+		// Ждём, пока max-height отработает (анимация)
+		setTimeout(() => {
+			const rect = content.getBoundingClientRect()
+			const scrollOffset = 20
+
+			// Проверка: если верх контента выше видимой зоны
+			if (rect.top < scrollOffset || rect.bottom > window.innerHeight) {
+				const targetY = window.pageYOffset + rect.top - scrollOffset
+				window.scrollTo({ top: targetY, behavior: 'smooth' })
+			}
+		}, 300) // должно совпадать с transition-duration в CSS
 	}
 })
 
 function updateSelectedCount(header) {
 	const content = header.nextElementSibling
 	if (!content) return
-	const count = content.querySelectorAll(
-		'.calculator__card-price-block.active'
-	).length
+	const count = content.querySelectorAll('.calculator__card-price-block.active').length
 	let span = header.querySelector('.selected-count')
 	if (!span) {
 		span = document.createElement('span')
@@ -222,9 +222,7 @@ function updateSelectedCount(header) {
 }
 
 function getAllSelectedPriceBlocks() {
-	return Array.from(
-		document.querySelectorAll('.calculator__card-price-block.active')
-	)
+	return Array.from(document.querySelectorAll('.calculator__card-price-block.active'))
 }
 
 function calculateTotal(selectedBlocks) {

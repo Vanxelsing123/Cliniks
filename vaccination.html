@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Новости</title>
+		<title>Вакцинация</title>
 		<link rel="stylesheet" href="css/normalize.css" />
-		<link rel="stylesheet" href="css/style-news.css" />
+		<link rel="stylesheet" href="css/style-vaccination.css" />
 		<link rel="stylesheet" href="css/media.css" />
 	</head>
-
 	<body>
 		<header class="header">
 			<div class="container">
@@ -23,7 +22,7 @@
 							<nav class="mobile-nav nav__content">
 								<ul class="header__nav-list list-reset">
 									<li class="header__nav-item">
-										<a href="doctors.html" class="header__nav-link">Врачи</a>
+										<a href="vaccinations.html" class="header__nav-link">Врачи</a>
 									</li>
 									<li class="header__nav-item">
 										<a href="price.html" class="header__nav-link">Цены</a>
@@ -205,7 +204,7 @@
 					<nav class="header__nav">
 						<ul class="header__nav-list list-reset">
 							<li class="header__nav-item">
-								<a href="doctors.html" class="header__nav-link">Врачи</a>
+								<a href="vaccinations.html" class="header__nav-link">Врачи</a>
 							</li>
 							<li class="header__nav-item">
 								<a href="price.html" class="header__nav-link">Цены</a>
@@ -275,76 +274,302 @@
 		</header>
 
 		<main class="main">
-			<section class="news">
+			<section class="vaccination">
 				<div class="container">
-					<h1 class="news__title">Новости</h1>
-					<div class="container__news">
-						<div class="news__tabs" id="newsTabs">
-							<button class="news__tab-btn active" data-tab="0">Новости клиники</button>
-							<button class="news__tab-btn" data-tab="1">Новые услуги</button>
-							<button class="news__tab-btn" data-tab="2">Комплексные программы</button>
+					<h1 class="vaccination__title">Вакцинация</h1>
+					<div class="vaccination__content">
+						<div class="vaccination__left">
+							<h2 class="vaccination__title--content"><span>План</span> вакцинации</h2>
+
+							<p class="vaccination__desc">
+								Может быть установлен индивидуально для каждого ребенка, начиная с&nbsp;самого рождения, педиатрами СК&nbsp;&laquo;Здоровые дети&raquo;, в&nbsp;зависимости 
+от&nbsp;его состояния здоровья и&nbsp;уже проведенных прививок.
+							</p>
+							<div class="vaccination__svg--content">
+								<div class="vaccination__svg">
+									<img src="img/sign-up.svg" alt="" />
+									<p class="vaccination__svg--desc">
+										
+В развитых странах отказ от вакцинации воспринимается как недостаточная забота о здоровье ребенка, в то время как большинство детей прививаются по календарю. 
+									</p>
+								</div>
+
+								<div class="vaccination__svg">
+									<img src="img/virus.svg" alt="" />
+
+									<p class="vaccination__svg--desc">
+										
+Несмотря на это, растет число родителей, отказывающихся от прививок, что может привести к негативным последствиям для здоровья их детей в будущем.
+									</p>
+								</div>
+
+								<div class="vaccination__svg">
+									<img src="img/svg-pediatr/syringe.svg" alt="" />
+
+									<p class="vaccination__svg--desc">
+										
+Вакцинация — это эффективный и единственный надежный способ защиты от многих тяжелых заболеваний, позволяющий либо предотвратить их, либо обеспечить легкое течение.
+									</p>
+								</div>
+							</div>
 						</div>
-						<ul class="news__list list-reset">
-							<li class="news__item" data-tab="0">
-								<a href="news-card.html">
-									<img class="news__img" src="img/pills.png" alt="Фото Витаминов" />
-								</a>
-								<div class="news__wrap">
-									<p class="news__text">Комплексные программы</p>
-									<time class="news__time" datetime="2024-10-16">16.10.2024</time>
-								</div>
-								<h2 class="news__titles">Лечении аллергии<br />стало удобнее и выгоднее</h2>
+						<div class="vaccination__right">
+							<img class="vaccination__img" src="img/vaccination.png" alt="house-doc">
+							<div class="vaccination__right--text">
+							<div class="vaccination__right--desc">
+									<p class="vaccination__children">
+									Защитите <span>здоровье своей семьи!</span>
+								</p>
+								<span class="vaccination__right--desc">
+									Приходите в СК «Здоровые дети», прививайте своих детей и прививайтесь сами.
+								</span>
+							</div>
+								<svg
+									width="99"
+									height="98"
+									viewBox="0 0 99 98"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M52.6227 19.3496C52.6229 11.8848 59.1138 5.90581 66.7458 6.76367C72.6347 7.42642 77.3573 12.2569 77.902 18.1562C78.3583 23.0951 75.9514 27.5091 72.1657 29.9658C75.9055 31.5633 78.5376 35.2688 78.5368 39.5898V84.9648C78.5365 88.6109 75.5813 91.5663 71.9352 91.5664H58.6432C57.6809 91.5664 56.7693 91.3531 55.946 90.9814C54.704 92.5386 52.7945 93.5458 50.6481 93.5459H45.3425C42.7085 93.5458 40.4246 92.0377 39.3005 89.8428C38.1032 90.9114 36.5261 91.5674 34.7946 91.5674H29.4899C25.7431 91.5674 22.705 88.529 22.7048 84.7822V77.5586C21.568 77.5128 20.66 76.5796 20.6599 75.4316V45.8115C20.6599 42.1503 22.8273 38.9973 25.9401 37.5439C23.0551 35.5652 21.1523 32.2509 21.152 28.4902C21.152 22.0154 26.7792 16.8304 33.3981 17.5693C38.2591 18.1131 42.2703 21.9489 43.0036 26.7891C43.6764 31.2337 41.6583 35.2689 38.3434 37.543C40.6501 38.6195 42.4327 40.6301 43.2028 43.0898C44.5929 42.217 46.2364 41.71 47.9968 41.71C49.4518 41.71 50.8253 42.0585 52.0427 42.6719V39.5898C52.0427 35.2687 54.6738 31.5645 58.4128 29.9668C54.9356 27.71 52.6229 23.8017 52.6227 19.3496ZM64.5036 52.5498C64.0516 52.4746 63.607 52.579 63.2458 52.8379L63.2448 52.8389L55.0944 58.6475L55.0954 58.6484L53.1472 60.0791L52.9577 60.2188H52.6999C52.6885 60.219 52.6698 60.2197 52.6481 60.2197H52.4284L52.2458 60.0957C51.529 59.6108 50.7013 59.3565 49.8581 59.3564H46.1335C45.3234 59.3564 44.528 59.5918 43.8317 60.0391L43.4343 60.2939L43.0427 60.0303L39.1442 57.3994L39.1364 57.3945L39.1296 57.3896L32.7477 52.8389C32.3816 52.5779 31.9372 52.475 31.487 52.5508C31.0352 52.6269 30.6477 52.8699 30.3884 53.2334C30.1288 53.5972 30.0262 54.041 30.1013 54.4922L30.1374 54.6582C30.2397 55.0387 30.4657 55.3638 30.7839 55.5908H30.7829L38.9391 61.4062L38.9401 61.4072C38.9965 61.4475 39.0548 61.4819 39.1169 61.5127L39.3181 61.5977L39.3903 61.624L39.4557 61.666L41.5182 62.9727L41.8708 63.1963L41.8513 63.6133C41.8508 63.6233 41.8506 63.6328 41.8503 63.6387C41.8501 63.6412 41.8494 63.6451 41.8493 63.6465V86.7607C41.8495 88.6907 43.4142 90.2548 45.3434 90.2549H46.3503V81.0293C46.3503 80.1205 47.087 79.3838 47.9958 79.3838C48.9045 79.3839 49.6413 80.1206 49.6413 81.0293V90.2559H50.6481C52.5772 90.2557 54.141 88.6917 54.1413 86.7627V63.2627L54.4499 63.0488L65.2145 55.585C65.5737 55.3256 65.8137 54.9408 65.8893 54.4922C65.9645 54.0403 65.8608 53.5953 65.6022 53.2344L65.6013 53.2334C65.3419 52.8699 64.9553 52.627 64.5036 52.5508V52.5498ZM25.9968 84.7832C25.997 86.7086 27.5645 88.2764 29.4899 88.2764H34.7946C36.7201 88.2764 38.2876 86.7086 38.2878 84.7832L38.2868 77.5645H25.9968V84.7832ZM62.5153 32.4082C58.549 32.4082 55.3328 35.6235 55.3327 39.5898V45.4873C56.4022 46.9714 57.0427 48.7886 57.0427 50.7588C57.0426 51.7266 56.8861 52.6575 56.6022 53.5303L61.3327 50.1582C62.4104 49.389 63.7301 49.0858 65.0466 49.3047H65.0485C66.278 49.5121 67.3662 50.1556 68.1325 51.125L68.2819 51.3232L68.4421 51.5615C69.1542 52.6905 69.3805 54.0483 69.0681 55.3721L68.9929 55.6553C68.657 56.7882 67.8965 57.7161 66.985 58.3662L58.9606 64.0869L58.9557 64.0908L57.4323 65.1562V86.7627C57.4323 87.184 57.3876 87.593 57.3132 87.9883C57.7229 88.1725 58.1719 88.2764 58.6442 88.2764H63.6442V67.374C63.6442 66.4652 64.381 65.7285 65.2897 65.7285C66.1984 65.7286 66.9352 66.4653 66.9352 67.374V88.2764H71.9352C73.7636 88.2763 75.2445 86.7944 75.2448 84.9668V39.5898C75.2447 35.6235 72.0295 32.4082 68.0632 32.4082H62.5153ZM29.7917 39.9736C26.5666 39.9736 23.9528 42.5874 23.9528 45.8125V74.2725H38.5583V65.2109L36.0056 63.3574L29.0056 58.3662C28.0944 57.7163 27.3318 56.7881 26.9968 55.6533C26.5528 54.1481 26.8161 52.5746 27.7087 51.3223C28.6026 50.0697 30.0071 49.3089 31.5749 49.2383C32.7535 49.1851 33.876 49.601 34.7858 50.25H34.7868L39.3825 53.5273C39.1005 52.6548 38.947 51.7244 38.947 50.7588C38.947 48.9959 39.4581 47.3497 40.3327 45.958V45.8125C40.3327 42.5874 37.7189 39.9736 34.4938 39.9736H29.7917ZM47.9958 45.002C44.823 45.002 42.2388 47.5857 42.238 50.7588C42.2382 53.156 43.7181 55.2143 45.8151 56.0771C45.912 56.0703 46.025 56.0645 46.1325 56.0645H49.8571C49.9645 56.0645 50.0774 56.0703 50.1745 56.0771C52.2717 55.2145 53.7504 53.1565 53.7507 50.7588C53.7507 47.5858 51.1685 45.002 47.9958 45.002ZM32.1423 20.792C27.8977 20.792 24.4431 24.2467 24.4431 28.4912C24.4435 32.7353 27.8973 36.1892 32.1413 36.1885H32.1423C36.3854 36.1882 39.8391 32.7343 39.8395 28.4912C39.8395 24.2468 36.3856 20.7923 32.1423 20.792ZM65.2897 9.97461C60.1207 9.97461 55.9139 14.1806 55.9138 19.3496C55.914 24.5195 60.1208 28.7266 65.2897 28.7266C70.4595 28.7265 74.6655 24.5194 74.6657 19.3496C74.6656 14.1807 70.4597 9.97472 65.2897 9.97461Z"
+										fill="#C1BAFF"
+									/>
+								</svg>
+							</div>
+						</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="organize">
+				<div class="container">
+					<div class="organize__content">
+						<h2 class="organize__title">
+							<span>
+								Организация и проведение 
+									вакцинации	
+							</span> в СК «Здоровые дети»:
+						</h2>
+						<div class="organize__doc">
+							<ul class="doc__item list-reset">
+								<li class="doc__li">
+									<img src="img/svg-pediatr/mask.svg" alt="">
+									<div class="doc__li--text">
+										<p>Обязательный медицинский контроль</p>
+										<span>Перед вакцинацией каждый ребенок проходит осмотр у педиатра, а после процедуры находится под поствакцинальным наблюдением для обеспечения безопасности.</span>
+									</div>
+								</li>
+								<li class="doc__li">
+									<img src="img/file.svg" alt="">
+									<div class="doc__li--text">
+										<p>Документальное подтверждение вакцинации</p>
+										<span>Педиатр оформляет прививочный сертификат, который фиксирует все проведенные прививки, включая&nbsp;те, что были сделаны 
+										в&nbsp;других медучреждениях 
+										(при предоставлении справок).
+										</span>
+									</div>
+								</li>
+								<li class="doc__li">
+									<img src="img/svg-pediatr/syringe.svg" alt="">
+									<div class="doc__li--text">
+										<p>Широкий выбор качественных вакцин</p>
+										<span>В кабинете вакцинации используются как лучшие отечественные, так и импортные препараты, что позволяет выбрать оптимальный вариант.</span>
+									</div>
+								</li>
+								<li class="doc__li">
+									<img src="img/kid.svg" alt="">
+									<div class="doc__li--text">
+										<p>Индивидуальный и комплексный подход</p>
+										<span>Клиника предлагает как разовые прививки, так и комплексные программы вакцинации для детей разных возрастов, обеспечивая защиту от множества заболеваний.</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+						<div class="vaccination__right--text mob__vaccination">
+							<div class="vaccination__right--desc">
+									<p class="vaccination__children">
+									Защитите <span>здоровье своей семьи!</span>
+								</p>
+								<span class="vaccination__right--desc">
+									Приходите в СК «Здоровые дети», прививайте своих детей и прививайтесь сами.
+								</span>
+							</div>
+							<img src="img/svg-pediatr/family.svg" alt="">
+							</div>
+				</div>
+			</section>
+
+			<section class="calendar">
+				<div class="container">
+					<h2 class="calendar__title"> 
+			<span class="calendar__decktop">Календарь</span> обязательных <span class="calendar__mob">профилактических прививок</span>
+					</h2>
+
+					<div class="content__calendar">
+						<ul class="calendar__item">
+							<li class="calendar__li">
+								<p class="calendar__date">
+									Новорожденные
+										(первые 12 часов жизни)
+								</p>
+								<span class="calendar__desc">
+									Первая вакцинация против вирусного гепатита В
+								</span>
 							</li>
-							<li class="news__item" data-tab="0">
-								<a href="#">
-									<img class="news__img" src="img/pills.png" alt="Фото Витаминов" />
-								</a>
-								<div class="news__wrap">
-									<p class="news__text">Комплексные программы</p>
-									<time class="news__time" datetime="2024-10-16">16.10.2024</time>
-								</div>
-								<h2 class="news__titles">Лечении аллергии<br />стало удобнее и выгоднее</h2>
+								<li class="calendar__li">
+								<p class="calendar__date">
+									Новорожденные (3–7 дней)
+								</p>
+								<span class="calendar__desc">
+									Вакцинация против туберкулеза (БЦЖ)
+								</span>
 							</li>
-							<li class="news__item" data-tab="1">
-								<a href="#">
-									<img class="news__img" src="img/pills.png" alt="Фото Витаминов" />
-								</a>
-								<div class="news__wrap">
-									<p class="news__text">Комплексные программы</p>
-									<time class="news__time" datetime="2024-10-16">16.10.2024</time>
-								</div>
-								<h2 class="news__titles">Лечении аллергии<br />стало удобнее и выгоднее</h2>
+							<li class="calendar__li">
+								<p class="calendar__date">
+									1 месяц
+								</p>
+								<span class="calendar__desc">
+									Вторая вакцинация против вирусного гепатита В
+								</span>
 							</li>
-							<li class="news__item" data-tab="1">
-								<a href="#">
-									<img class="news__img" src="img/pills.png" alt="Фото Витаминов" />
-								</a>
-								<div class="news__wrap">
-									<p class="news__text">Комплексные программы</p>
-									<time class="news__time" datetime="2024-10-16">16.10.2024</time>
+							<li class="calendar__li">
+								<p class="calendar__date">
+									3 месяца
+								</p>
+								<div class="calendar__desc--toch">
+									<span class="calendar__desc">
+									Первая вакцинация против дифтерии, коклюша, столбняка (АКДС)
+								</span>
+									<span class="calendar__desc">
+									Первая вакцинация против полиомиелита
+								</span>
 								</div>
-								<h2 class="news__titles">Лечении аллергии<br />стало удобнее и выгоднее</h2>
 							</li>
-							<li class="news__item" data-tab="2">
-								<a href="#">
-									<img class="news__img" src="img/pills.png" alt="Фото Витаминов" />
-								</a>
-								<div class="news__wrap">
-									<p class="news__text">Комплексные программы</p>
-									<time class="news__time" datetime="2024-10-16">16.10.2024</time>
+							<li class="calendar__li">
+								<p class="calendar__date">
+									4,5 месяца
+								</p>
+								<div class="calendar__desc--toch">
+									<span class="calendar__desc">
+									Вторая вакцинация против дифтерии, коклюша, столбняка (АКДС)
+								</span>
+									<span class="calendar__desc">
+									Вторая вакцинация против полиомиелита
+								</span>
 								</div>
-								<h2 class="news__titles">Лечении аллергии<br />стало удобнее и выгоднее</h2>
 							</li>
-							<li class="news__item">
-								<a href="#">
-									<img class="news__img" src="img/pills.png" alt="Фото Витаминов" />
-								</a>
-								<div class="news__wrap">
-									<p class="news__text">Комплексные программы</p>
-									<time class="news__time" datetime="2024-10-16">16.10.2024</time>
+							<li class="calendar__li">
+								<p class="calendar__date">
+									6 месяцев
+								</p>
+								<div class="calendar__desc--toch">
+									<span class="calendar__desc">
+									Третья вакцинация против дифтерии, коклюша, столбняка (АКДС)
+								</span>
+									<span class="calendar__desc">
+									Третья вакцинация против полиомиелита
+								</span>
+								<span class="calendar__desc">
+									Третья вакцинация против вирусного гепатита В
+								</span>
 								</div>
-								<h2 class="news__titles">Лечении аллергии<br />стало удобнее и выгоднее</h2>
 							</li>
+							<li class="calendar__li">
+								<p class="calendar__date">
+									12 месяцев
+								</p>
+								<span class="calendar__desc">
+									Вакцинация против кори, краснухи, эпидемического паротита (КПК)
+								</span>
+							</li>
+							<li class="calendar__li">
+								<p class="calendar__date">
+									18 месяцев
+								</p>
+							<div class="calendar__desc--toch">
+									<span class="calendar__desc">
+									Первая ревакцинация против дифтерии, коклюша, столбняка (АКДС)
+								</span>
+									<span class="calendar__desc">
+									Первая ревакцинация против полиомиелита
+								</span>
+							
+								</div>
+							</li>
+							<li class="calendar__li">
+								<p class="calendar__date">
+									20 месяцев
+								</p>
+								<span class="calendar__desc">
+									Вторая ревакцинация против полиомиелита
+								</span>
+							</li>
+							<li class="calendar__li">
+								<p class="calendar__date">
+									6 лет
+								</p>
+								<span class="calendar__desc">
+									Ревакцинация против кори, краснухи, эпидемического паротита (КПК)
+								</span>
+							</li>
+							<li class="calendar__li">
+								<p class="calendar__date">
+									7 лет
+								</p>
+							<div class="calendar__desc--toch">
+									<span class="calendar__desc">
+									Ревакцинация против туберкулеза (БЦЖ)
+								</span>
+									<span class="calendar__desc">
+								Вторая ревакцинация против дифтерии и столбняка (АДС)
+								</span>
+							
+								</div>
+							</li>
+							<li class="calendar__li">
+								<p class="calendar__date">
+									13 лет
+								</p>
+								<div class="calendar__desc--toch">
+									<span class="calendar__desc">
+									Вакцинация против краснухи (девочки)
+								</span>
+									<span class="calendar__desc">
+								Вакцинация против вирусного гепатита В (ранее не привитые)
+								</span>
+								</div>
+							</li>
+							<li class="calendar__li">
+								<p class="calendar__date">
+									14 лет
+								</p>
+								<div class="calendar__desc--toch">
+									<span class="calendar__desc">
+									Третья ревакцинация против дифтерии и столбняка (АДС)
+								</span>
+									<span class="calendar__desc">
+							Ревакцинация против туберкулеза (БЦЖ)
+								</span>
+									<span class="calendar__desc">
+								Третья ревакцинация против полиомиелита
+								</span>
+								</div>
+							</li>
+							<li class="calendar__li">
+								<p class="calendar__date">
+									Взрослые
+								</p>
+								<div class="calendar__desc--toch">
+									<span class="calendar__desc">
+									Ревакцинация против дифтерии и столбняка — каждые 10 лет от момента последней прививки
+								</span>
+									
+								</div>
+							</li>
+							
 						</ul>
 					</div>
 				</div>
@@ -497,7 +722,7 @@
 				</div>
 			</div>
 		</footer>
-		<!-- Widget -->
+
 		<div class="floating-widget">
 			<button class="main-btn" id="mainBtn">
 				<span class="icon default-icon">
@@ -597,9 +822,16 @@
 			</div>
 		</div>
 
+	<!-- 	чистим отступы -->
+		<script>
+			document.querySelectorAll('.calendar__title').forEach(el => {
+  el.innerHTML = el.innerHTML.replace(/&nbsp;/g, ' ');
+});
+
+		</script>
+
 		<script src="js/widget.js"></script>
 
-		<script defer src="js/news.tabs.js"></script>
 		<script defer src="js/main.js"></script>
 	</body>
 </html>

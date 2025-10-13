@@ -1,0 +1,66 @@
+@media (max-width: 1024px) {
+	.audiometry__title {
+		margin-top: 24px;
+		margin-bottom: 22px;
+	}
+}
+
+@media (max-width: 768px) {
+	.audiometry__content {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}
+
+@media (max-width: 425px) {
+	.audiometry__title {
+		font-size: 32px;
+	}
+	.audiometry__left {
+		padding: 0;
+		margin-bottom: 24px;
+	}
+	.audiometry__title--content {
+		display: none;
+	}
+
+	.title__mob {
+		display: block;
+		font-weight: 400;
+		font-size: 23px;
+		line-height: 156%;
+		letter-spacing: -0.02em;
+		color: var(--color-slate-blue);
+		margin-bottom: 4px;
+	}
+
+	.audiometry__desc {
+		font-size: 16px;
+		line-height: 144%;
+		margin-bottom: 32px;
+	}
+
+	.audiometry__svg img {
+		width: 52px;
+	}
+
+	.audiometry__img {
+		display: none;
+	}
+
+	.audiometry__right--text {
+		background-color: var(--color-white);
+		padding: 36px 36px 40px 36px;
+		align-items: flex-start;
+		border-radius: 20px;
+	}
+	.audiometry__children {
+		line-height: 110%;
+		color: var(--color-signa-black);
+		margin-bottom: 20px;
+	}
+
+	.audiometry__right--desc {
+		font-size: 14px;
+	}
+}

@@ -1,14 +1,13 @@
-<!DOCTYPE html>
-<html lang="ru">
+<!uziTYPE html>
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Новости</title>
+		<title>Диагностика</title>
 		<link rel="stylesheet" href="css/normalize.css" />
-		<link rel="stylesheet" href="css/style-news.css" />
+		<link rel="stylesheet" href="css/style-diagnostics.css" />
 		<link rel="stylesheet" href="css/media.css" />
 	</head>
-
 	<body>
 		<header class="header">
 			<div class="container">
@@ -23,7 +22,7 @@
 							<nav class="mobile-nav nav__content">
 								<ul class="header__nav-list list-reset">
 									<li class="header__nav-item">
-										<a href="doctors.html" class="header__nav-link">Врачи</a>
+										<a href="diagnosticss.html" class="header__nav-link">Врачи</a>
 									</li>
 									<li class="header__nav-item">
 										<a href="price.html" class="header__nav-link">Цены</a>
@@ -205,7 +204,7 @@
 					<nav class="header__nav">
 						<ul class="header__nav-list list-reset">
 							<li class="header__nav-item">
-								<a href="doctors.html" class="header__nav-link">Врачи</a>
+								<a href="diagnosticss.html" class="header__nav-link">Врачи</a>
 							</li>
 							<li class="header__nav-item">
 								<a href="price.html" class="header__nav-link">Цены</a>
@@ -275,78 +274,177 @@
 		</header>
 
 		<main class="main">
-			<section class="news">
+			<section class="diagnostics">
 				<div class="container">
-					<h1 class="news__title">Новости</h1>
-					<div class="container__news">
-						<div class="news__tabs" id="newsTabs">
-							<button class="news__tab-btn active" data-tab="0">Новости клиники</button>
-							<button class="news__tab-btn" data-tab="1">Новые услуги</button>
-							<button class="news__tab-btn" data-tab="2">Комплексные программы</button>
+					<h1 class="diagnostics__title">Диагностика</h1>
+					<div class="diagnostics__content">
+						<div class="diagnostics__left">
+							<h2 class="diagnostics__title--content">УЗИ, ЭКГ, ЭЭГ</h2>
+							<p class="diagnostics__title--mob">
+								Первый врач, к которому родители обращаются, как только в семье появляется ребенок.
+							</p>
+							
+							<div class="diagnostics__svg--content">
+								<div class="diagnostics__svg">
+									<img src="img/svg-pediatr/ultrasound.svg" alt="" />
+									<p class="diagnostics__svg--desc">
+										Наша клиника оснащена новейшим оборудованием экспертного класса для проведения точной и безопасной диагностики.
+									</p>
+								</div>
+
+								<div class="diagnostics__svg">
+									<img src="img/svg-pediatr/mask.svg" alt="" />
+
+									<p class="diagnostics__svg--desc">
+                    Мы помогаем врачам вовремя поставить верный диагноз и назначить эффективное лечение.
+									</p>
+								</div>
+
+						
+							</div>
 						</div>
-						<ul class="news__list list-reset">
-							<li class="news__item" data-tab="0">
-								<a href="news-card.html">
-									<img class="news__img" src="img/pills.png" alt="Фото Витаминов" />
-								</a>
-								<div class="news__wrap">
-									<p class="news__text">Комплексные программы</p>
-									<time class="news__time" datetime="2024-10-16">16.10.2024</time>
+						<div class="diagnostics__right">
+							<img class="diagnostics__img" src="img/diagnostik.png" alt="house-uzi">
+							<div class="diagnostics__right--text">
+							<div class="diagnostics__right--desc">
+									<p class="diagnostics__children">
+									Стоимость <span>исследований</span>
+								</p>
+								<span class="diagnostics__right--desc">
+									Все цены на исследования вы можете найти в разделе «Цены: Функциональная диагностика».
+								</span>
+							</div>
+								<img src="img/file-diagnostic.svg" alt="">
+							</div>
+						</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="uzi">
+				<div class="container">
+					<div class="uzi__content">
+						<h2 class="uzi__title">
+						Ультразвуковые исследования <span>(УЗИ)</span>
+						</h2>
+						<p class="uzi__title--desc">
+							Проводим на японском аппарате экспертного класса ALOKA. УЗИ — это безопасный, безболезненный и высокоинформативный метод исследования, который часто назначается одним из первых.
+						</p>
+						<div class="uzi__doc">
+							<ul class="uzi__item list-reset">
+								<li class="uzi__li">
+									<img src="img/svg-uzi/stomach.svg" alt="">
+									<div class="uzi__li--text">
+										<p>УЗИ</p>
+										<span>органов брюшной полости и почек</span>
+									</div>
+								</li>
+								<li class="uzi__li">
+									<img src="img/svg-uzi/gland.svg" alt="">
+									<div class="uzi__li--text">
+										<p>УЗИ</p>
+										<span>щитовидной железы
+										</span>
+									</div>
+								</li>
+								<li class="uzi__li">
+									<img src="img/kid.svg" alt="">
+									<div class="uzi__li--text">
+										<p>УЗИ</p>
+										<span>органов мошонки (для мальчиков)</span>
+									</div>
+								</li>
+								<li class="uzi__li">
+									<img src="img/svg-uzi/nodes.svg" alt="">
+									<div class="uzi__li--text">
+										<p>УЗИ</p>
+										<span>слюнных желез и лимфатических узлов</span>
+									</div>
+								</li>
+								<li class="uzi__li">
+									<img src="img/svg-pediatr/heart.svg" alt="">
+									<div class="uzi__li--text">
+										<p>ЭхоКГ</p>
+										<span>(эхокардиография или УЗИ сердца) — оценка структуры и функции сердца</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+						
+				</div>
+			</section>
+
+			<section class="diagnostics__heart">
+				<div class="container">
+					<h2 class="heart__title"> 
+			Диагностика <span>сердечно-сосудистой системы</span>
+					</h2>
+					<p class="heart__title--desc">
+						Исследования проводим на швейцарском аппарате SCHILLER.
+					</p>
+					<div class="content__heart">
+						<ul class="heart__item list-reset">
+							<li class="heart__li">
+								<img src="img/svg-uzi/pulse.svg" alt="">
+								<div class="heart__li--desc">
+									<p>ЭКГ (электро-кардиография)</p>
+									<span>
+										Наиболее распространенный метод оценки работы сердца. Позволяет определить ритм, выявить патологии развития, воспалительные процессы и ишемическую болезнь.
+									</span>
 								</div>
-								<h2 class="news__titles">Лечении аллергии<br />стало удобнее и выгоднее</h2>
 							</li>
-							<li class="news__item" data-tab="0">
-								<a href="#">
-									<img class="news__img" src="img/pills.png" alt="Фото Витаминов" />
-								</a>
-								<div class="news__wrap">
-									<p class="news__text">Комплексные программы</p>
-									<time class="news__time" datetime="2024-10-16">16.10.2024</time>
+							<li class="heart__li">
+								<img src="img/svg-uzi/cardio.svg" alt="">
+								<div class="heart__li--desc">
+									<p>Холтер-мониторинг</p>
+									<span>
+										Это расширенная ЭКГ, которая непрерывно записывает работу вашего сердца в течение 24 часов и более. Позволяет зафиксировать нарушения, которые не обнаруживаются при стандартном обследовании.
+									</span>
 								</div>
-								<h2 class="news__titles">Лечении аллергии<br />стало удобнее и выгоднее</h2>
 							</li>
-							<li class="news__item" data-tab="1">
-								<a href="#">
-									<img class="news__img" src="img/pills.png" alt="Фото Витаминов" />
-								</a>
-								<div class="news__wrap">
-									<p class="news__text">Комплексные программы</p>
-									<time class="news__time" datetime="2024-10-16">16.10.2024</time>
+							<li class="heart__li">
+								<img src="img/svg-uzi/monitoring.svg" alt="">
+								<div class="heart__li--desc">
+									<p>СМАД (суточный мониторинг артериального давления)</p>
+									<span>
+										Метод, позволяющий отследить суточные колебания давления в привычном для вас ритме жизни. Помогает выявить скрытые нарушения и подобрать правильную терапию.
+									</span>
 								</div>
-								<h2 class="news__titles">Лечении аллергии<br />стало удобнее и выгоднее</h2>
-							</li>
-							<li class="news__item" data-tab="1">
-								<a href="#">
-									<img class="news__img" src="img/pills.png" alt="Фото Витаминов" />
-								</a>
-								<div class="news__wrap">
-									<p class="news__text">Комплексные программы</p>
-									<time class="news__time" datetime="2024-10-16">16.10.2024</time>
-								</div>
-								<h2 class="news__titles">Лечении аллергии<br />стало удобнее и выгоднее</h2>
-							</li>
-							<li class="news__item" data-tab="2">
-								<a href="#">
-									<img class="news__img" src="img/pills.png" alt="Фото Витаминов" />
-								</a>
-								<div class="news__wrap">
-									<p class="news__text">Комплексные программы</p>
-									<time class="news__time" datetime="2024-10-16">16.10.2024</time>
-								</div>
-								<h2 class="news__titles">Лечении аллергии<br />стало удобнее и выгоднее</h2>
-							</li>
-							<li class="news__item">
-								<a href="#">
-									<img class="news__img" src="img/pills.png" alt="Фото Витаминов" />
-								</a>
-								<div class="news__wrap">
-									<p class="news__text">Комплексные программы</p>
-									<time class="news__time" datetime="2024-10-16">16.10.2024</time>
-								</div>
-								<h2 class="news__titles">Лечении аллергии<br />стало удобнее и выгоднее</h2>
 							</li>
 						</ul>
 					</div>
+				</div>
+			</section>
+
+			<section class="nerf">
+				<div class="container">	
+						<h2 class="nerf__title">
+								Диагностика <span>нервной системы</span>
+						</h2>
+						<div class="content__nerf">
+
+							<img src="img/svg-uzi/brain.svg" alt="">
+							<div class="content__nerf--desc">
+								<p>ЭЭГ (электро-энцефалография)</p>
+								<span>
+									Информативный метод исследования состояния центральной нервной системы. Регистрирует биоэлектрическую активность головного мозга, что помогает в диагностике различных неврологических заболеваний.
+								</span>
+							</div>
+						</div>
+						<div class="diagnostics__right--text diagnostics__mob">
+							<div class="diagnostics__right--desc">
+									<p class="diagnostics__children">
+									Стоимость <span>исследований</span>
+								</p>
+									<img src="img/file.svg" alt="">
+							
+							</div>
+								<span class="diagnostics__right--desc">
+									Все цены на исследования вы можете найти в разделе «Цены: Функциональная диагностика».
+								</span>
+							</div>
 				</div>
 			</section>
 		</main>
@@ -497,7 +595,7 @@
 				</div>
 			</div>
 		</footer>
-		<!-- Widget -->
+
 		<div class="floating-widget">
 			<button class="main-btn" id="mainBtn">
 				<span class="icon default-icon">
@@ -597,9 +695,15 @@
 			</div>
 		</div>
 
+	<!-- 	чистим отступы -->
+		<script>
+			document.querySelectorAll('.calendar__title').forEach(el => {
+  el.innerHTML = el.innerHTML.replace(/&nbsp;/g, ' ');
+});
+</script>
+
 		<script src="js/widget.js"></script>
 
-		<script defer src="js/news.tabs.js"></script>
 		<script defer src="js/main.js"></script>
 	</body>
 </html>
